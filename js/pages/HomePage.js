@@ -78,6 +78,20 @@ export function renderHomePage(container) {
         <div class="result-display yesno-result-display" id="yesnoResult"></div>
       </section>
 
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works">
+        <h2 class="section-title">How YesAndNoWheel Works</h2>
+        <div class="steps-row">
+          <div class="how-step"><div class="how-icon">🎯</div><h3>Choose</h3><p>Pick a mode: Yes/No or Yes/No/Maybe</p></div>
+          <div class="how-arrow">→</div>
+          <div class="how-step"><div class="how-icon">⚙️</div><h3>Customize</h3><p>Set input sets and adjust settings</p></div>
+          <div class="how-arrow">→</div>
+          <div class="how-step"><div class="how-icon">🎰</div><h3>Spin</h3><p>Click SPIN in the center of the wheel</p></div>
+          <div class="how-arrow">→</div>
+          <div class="how-step"><div class="how-icon">🎉</div><h3>Result</h3><p>Get your answer with sound effects!</p></div>
+        </div>
+      </section>
+
       <!-- WHEEL HUB CARDS -->
       <section class="wheels-grid" id="about">
         <h2 class="section-title">Explore All Wheels</h2>
@@ -91,20 +105,6 @@ export function renderHomePage(container) {
               <span class="wheel-card-cta">Spin Now →</span>
             </a>
           `).join('')}
-        </div>
-      </section>
-
-      <!-- HOW IT WORKS -->
-      <section class="how-it-works">
-        <h2 class="section-title">How YesAndNoWheel Works</h2>
-        <div class="steps-row">
-          <div class="how-step"><div class="how-icon">🎯</div><h3>Choose</h3><p>Pick a mode: Yes/No or Yes/No/Maybe</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">⚙️</div><h3>Customize</h3><p>Set input sets and adjust settings</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">🎰</div><h3>Spin</h3><p>Click SPIN in the center of the wheel</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">🎉</div><h3>Result</h3><p>Get your answer with sound effects!</p></div>
         </div>
       </section>
 
