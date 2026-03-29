@@ -51,33 +51,26 @@ export function renderWordWheel(container) {
         <div class="wheel-sidebar" id="wordSidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Word Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Word Wheel</strong> name picker — paste names, upload CSV, and spin</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Add Your List</h3>
-              <p>Paste names directly, upload a CSV/TXT file, or use Advanced Mode on the <strong>Word Wheel</strong>. Perfect for teachers picking students!</p>
+        <p class="howto-intro">The <strong>Word Wheel</strong> is a free random name picker. Paste names, upload a CSV, or type entries manually. Perfect for classrooms, raffles, and random selections.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your List</h3>
+            <p class="howto-step-desc">Paste names directly, upload a CSV/TXT file, or use Advanced Mode. Perfect for teachers picking students!</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Customize Display</h3>
-              <p>Adjust font size for readability in presentations. Large fonts work great on projectors.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Customize Display</h3>
+            <p class="howto-step-desc">Adjust font size for readability in presentations. Large fonts work great on projectors.</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Pick a Winner</h3>
-              <p>Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent!</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Pick a Winner</h3>
+            <p class="howto-step-desc">Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent! Try the <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a> wheel next.</p>
           </div>
         </div>
       </div>

@@ -22,16 +22,27 @@ export function renderZodiacWheel(container) {
         </div>
         <div class="wheel-sidebar" id="zodiacSidebar"></div>
       </div>
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Zodiac Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Zodiac Wheel</strong> — 12 zodiac signs with traits, elements, and compatibility</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Spin the <strong>Zodiac Wheel</strong></h3><p>Click "Consult the Stars" and watch the <strong>Zodiac Wheel</strong> spin through all 12 zodiac signs.</p></div></div>
-          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Discover Your Sign</h3><p>Land on a zodiac sign and instantly see its traits, element, and personality profile.</p></div></div>
-          <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Check Compatibility</h3><p>Learn which signs are most compatible with your result. Great for astrology fans!</p></div></div>
+        <p class="howto-intro">The <strong>Zodiac Wheel</strong> spins through all 12 zodiac signs. Discover traits, elements, and compatibility for each sign. Great for astrology fans and horoscope enthusiasts.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Spin the <strong>Zodiac Wheel</strong></h3>
+            <p class="howto-step-desc">Click "Consult the Stars" and watch the wheel spin through all 12 zodiac signs.</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-inline-img" loading="lazy">
+            </div>
+          </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Discover Your Sign</h3>
+            <p class="howto-step-desc">Land on a zodiac sign and instantly see its traits, element, and personality profile.</p>
+          </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Check Compatibility</h3>
+            <p class="howto-step-desc">Learn which signs are most compatible with your result. Also try the <a href="#country">Country Wheel</a> or <a href="#hair-color">Hair Color Wheel</a>.</p>
+          </div>
         </div>
       </div>
     </div>`;

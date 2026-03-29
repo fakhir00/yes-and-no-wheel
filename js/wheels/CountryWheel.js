@@ -51,33 +51,26 @@ export function renderCountryWheel(container) {
         <div class="wheel-sidebar" id="countrySidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Country Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Country Wheel</strong> — filter by continent and spin to discover a random country</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Filter Regions</h3>
-              <p>Toggle continents on/off to narrow down the 199 countries on the <strong>Country Wheel</strong>. Study just Europe or explore all of Asia!</p>
+        <p class="howto-intro">The <strong>Country Wheel</strong> lets you randomly pick from 199 countries. Filter by continent, spin, and discover a new destination for travel, geography study, or food challenges.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Filter Regions</h3>
+            <p class="howto-step-desc">Toggle continents on/off to narrow down the 199 countries. Study just Europe or explore all of Asia!</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Spin the Globe</h3>
-              <p>Hit the spin button and watch the wheel select a random country from your filtered list.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Spin the Globe</h3>
+            <p class="howto-step-desc">Hit the spin button and watch the <strong>Country Wheel</strong> select a random country from your filtered list.</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Discover</h3>
-              <p>The winning country’s flag appears in the center of the <strong>Country Wheel</strong>! Use it for travel planning, food challenges, or study.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Discover</h3>
+            <p class="howto-step-desc">The winning country's flag appears in the center! Use it for travel, food challenges, or study. Try the <a href="#zodiac">Zodiac Wheel</a> or <a href="#wheel-of-fate">Wheel of Fate</a> next.</p>
           </div>
         </div>
       </div>

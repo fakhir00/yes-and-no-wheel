@@ -32,16 +32,27 @@ export function renderHairColorWheel(container) {
         </div>
         <div class="wheel-sidebar" id="hairSidebar"></div>
       </div>
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Hair Color Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Hair Color Wheel</strong> — classic and fantasy palettes with hex code sync</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Browse Colors</h3><p>Toggle between Classic and Fantasy palettes on the <strong>Hair Color Wheel</strong>, or add custom color names.</p></div></div>
-          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Hex Sync</h3><p>When you type a color name like "Mint Green," the <strong>Hair Color Wheel</strong> auto-matches its hex code!</p></div></div>
-          <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Spin & Inspire</h3><p>Spin the <strong>Hair Color Wheel</strong> to pick your next hair color for OCs or real-life salon visits.</p></div></div>
+        <p class="howto-intro">The <strong>Hair Color Wheel</strong> helps you find your next dye color. Browse Classic or Fantasy palettes, add custom colors with hex sync, and spin for inspiration.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Colors</h3>
+            <p class="howto-step-desc">Toggle between Classic and Fantasy palettes on the <strong>Hair Color Wheel</strong>, or add custom color names.</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-inline-img" loading="lazy">
+            </div>
+          </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Hex Sync</h3>
+            <p class="howto-step-desc">When you type a color name like "Mint Green," the <strong>Hair Color Wheel</strong> auto-matches its hex code!</p>
+          </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin & Inspire</h3>
+            <p class="howto-step-desc">Spin to pick your next hair color for OCs or salon visits. Also try the <a href="#dti-theme">DTI Theme Wheel</a> or <a href="#rainbow">Rainbow Wheel</a>.</p>
+          </div>
         </div>
       </div>
     </div>`;

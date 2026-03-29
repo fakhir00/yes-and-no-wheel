@@ -49,33 +49,26 @@ export function renderDTIWheel(container) {
         <div class="wheel-sidebar" id="dtiSidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>DTI Theme Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>DTI Theme Wheel</strong> — browse 180+ themes and spin for outfit inspiration</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Browse Themes</h3>
-              <p>Explore 180+ pre-loaded themes on the <strong>DTI Theme Wheel</strong>, organized by category. Toggle themes on/off to customize your wheel.</p>
+        <p class="howto-intro">The <strong>DTI Theme Wheel</strong> is built specifically for Dress To Impress players. Browse 180+ pre-loaded themes organized by category and spin for random outfit inspiration.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Themes</h3>
+            <p class="howto-step-desc">Explore 180+ pre-loaded themes on the <strong>DTI Theme Wheel</strong>. Toggle themes on/off to customize your wheel.</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Filter by Category</h3>
-              <p>Use the category buttons to filter by Era, Genre, Aesthetic, Style, Culture, Nature, Concept, or Profession.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Filter by Category</h3>
+            <p class="howto-step-desc">Use the category buttons to filter by Era, Genre, Aesthetic, Style, Culture, Nature, Concept, or Profession.</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Spin the <strong>DTI Theme Wheel</strong></h3>
-              <p>Spin the <strong>DTI Theme Wheel</strong> and use the selected theme for your next DTI outfit challenge!</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>DTI Theme Wheel</strong></h3>
+            <p class="howto-step-desc">Spin and use the selected theme for your next DTI outfit challenge! Also try the <a href="#hair-color">Hair Color Wheel</a> or <a href="#rainbow">Rainbow Wheel</a>.</p>
           </div>
         </div>
       </div>

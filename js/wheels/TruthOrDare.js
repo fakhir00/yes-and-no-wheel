@@ -61,33 +61,26 @@ export function renderTruthOrDare(container) {
         <div class="wheel-sidebar" id="todSidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Play <strong>Spin the Wheel Truth or Dare</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption"><strong>Spin the Wheel Truth or Dare</strong> — neon-themed party game with 200+ prompts</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Add Players</h3>
-              <p>Enter everyone's names in the text box, one per line. The more players, the more fun with <strong>Spin the Wheel Truth or Dare</strong>!</p>
+        <p class="howto-intro"><strong>Spin the Wheel Truth or Dare</strong> is the ultimate party game. Add players, spin to pick someone, then get a random Truth or Dare prompt from our database of 200+ questions.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Players</h3>
+            <p class="howto-step-desc">Enter everyone's names in the text box, one per line. The more players, the more fun!</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Spin to Pick a Player</h3>
-              <p>The wheel selects a random player. No arguments — the wheel has spoken!</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Spin to Pick a Player</h3>
+            <p class="howto-step-desc">The wheel selects a random player. No arguments — the wheel has spoken!</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Truth or Dare</h3>
-              <p>A second spin automatically generates a Truth or Dare prompt from our database of 200+ questions.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Truth or Dare</h3>
+            <p class="howto-step-desc">A second spin automatically generates a Truth or Dare prompt from 200+ questions. Also try the <a href="#word">Word Wheel</a> or <a href="#zodiac">Zodiac Wheel</a>.</p>
           </div>
         </div>
       </div>

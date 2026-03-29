@@ -20,7 +20,7 @@ export function renderHomePage(container) {
       <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
-          <h1 class="hero-title">YES AND NO <span class="hero-highlight">WHEEL</span></h1>
+          <h1 class="hero-title">YES AND NO <span class="hero-highlight">WHEEL</span> — Free Spinner</h1>
           <p class="hero-subtitle">Spin the <strong>Yes and No Wheel</strong> to make instant decisions — let fate choose for you!</p>
         </div>
 

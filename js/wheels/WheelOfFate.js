@@ -40,33 +40,26 @@ export function renderWheelOfFate(container) {
         <div class="wheel-sidebar" id="fateSidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Wheel of Fate</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Wheel of Fate</strong> with cosmic design — weighted outcomes for dramatic storytelling</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Set Your Outcomes</h3>
-              <p>Add dramatic outcomes for your story or roleplay. Use the Advanced Mode on the <strong>Wheel of Fate</strong> for custom entries.</p>
+        <p class="howto-intro">The <strong>Wheel of Fate</strong> is a high-stakes spinner for writers and RPG players. Add dramatic outcomes with weighted probabilities and let destiny decide.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Set Your Outcomes</h3>
+            <p class="howto-step-desc">Add dramatic outcomes for your story or roleplay. Use Advanced Mode on the <strong>Wheel of Fate</strong> for custom entries.</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Adjust Weights</h3>
-              <p>Use the weight sliders to make certain outcomes more or less likely. A 2x weight means that slice is twice as large!</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Adjust Weights</h3>
+            <p class="howto-step-desc">Use the weight sliders to make certain outcomes more or less likely. A 2x weight means that slice is twice as large!</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Seal Your Fate</h3>
-              <p>Spin the <strong>Wheel of Fate</strong> and let destiny decide. The cosmic wheel waits for no one.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Seal Your Fate</h3>
+            <p class="howto-step-desc">Spin the <strong>Wheel of Fate</strong> and let destiny decide. Also try the <a href="#rainbow">Rainbow Wheel</a> or <a href="#country">Country Wheel</a>.</p>
           </div>
         </div>
       </div>

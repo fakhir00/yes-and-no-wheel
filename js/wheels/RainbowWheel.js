@@ -48,33 +48,26 @@ export function renderRainbowWheel(container) {
         <div class="wheel-sidebar" id="rainbowSidebar"></div>
       </div>
 
-      <div class="wheel-instructions">
+      <div class="wheel-instructions howto-tutorial-style">
         <h2>How to Use the <strong>Rainbow Wheel</strong></h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Rainbow Wheel</strong> with ROYGBIV spectrum — spin to pick a colorful winner</p>
-        </div>
-        <div class="instruction-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Add Your Options</h3>
-              <p>Open Advanced Mode on the right and type your choices, one per line. Or use the default entries on the <strong>Rainbow Wheel</strong>!</p>
+        <p class="howto-intro">The <strong>Rainbow Wheel</strong> is a free color-spectrum spinner. Add your options, apply ROYGBIV gradients, and let the vibrant colors pick a winner.</p>
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your Options</h3>
+            <p class="howto-step-desc">Open Advanced Mode and type your choices, one per line. Or use the default entries on the <strong>Rainbow Wheel</strong>.</p>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-inline-img" loading="lazy">
             </div>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Auto-Gradient</h3>
-              <p>Click the "Auto-Gradient" button to apply a beautiful ROYGBIV <strong>rainbow</strong> spectrum to all slices automatically.</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Apply Auto-Gradient</h3>
+            <p class="howto-step-desc">Click the "Auto-Gradient" button to apply a beautiful ROYGBIV <strong>rainbow</strong> spectrum to all slices automatically.</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Spin the <strong>Rainbow Wheel</strong></h3>
-              <p>Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color!</p>
-            </div>
+          <hr class="howto-divider">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>Rainbow Wheel</strong></h3>
+            <p class="howto-step-desc">Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color! Also try the <a href="#word">Word Wheel</a> or <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a>.</p>
           </div>
         </div>
       </div>
