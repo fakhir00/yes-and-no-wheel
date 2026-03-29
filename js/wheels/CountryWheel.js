@@ -18,7 +18,7 @@ export function renderCountryWheel(container) {
     <div class="wheel-page country-theme">
       <div class="wheel-header">
         <h1 class="wheel-title">🌍 Country Wheel</h1>
-        <p class="wheel-subtitle">Pick a random destination for travel, geography study, or food challenges!</p>
+        <p class="wheel-subtitle">Spin the <strong>Country Wheel</strong> to pick a random destination for travel, geography study, or food challenges!</p>
       </div>
 
       <div class="wheel-layout">
@@ -52,13 +52,17 @@ export function renderCountryWheel(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Use the Country Wheel</h2>
+        <h2>How to Use the <strong>Country Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Country Wheel</strong> — filter by continent and spin to discover a random country</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Filter Regions</h3>
-              <p>Toggle continents on/off to narrow down the 199 countries. Study just Europe or explore all of Asia!</p>
+              <p>Toggle continents on/off to narrow down the 199 countries on the <strong>Country Wheel</strong>. Study just Europe or explore all of Asia!</p>
             </div>
           </div>
           <div class="step">
@@ -72,7 +76,7 @@ export function renderCountryWheel(container) {
             <div class="step-number">3</div>
             <div class="step-content">
               <h3>Discover</h3>
-              <p>The winning country's flag appears in the center! Use it for travel planning, food challenges, or study.</p>
+              <p>The winning country’s flag appears in the center of the <strong>Country Wheel</strong>! Use it for travel planning, food challenges, or study.</p>
             </div>
           </div>
         </div>

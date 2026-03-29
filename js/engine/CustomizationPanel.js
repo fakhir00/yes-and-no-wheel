@@ -8,7 +8,7 @@ export class CustomizationPanel {
     this.wheelName = options.wheelName || 'wheel';
     this.storageKey = `custom_${this.wheelName}`;
     this.onEntriesChange = options.onEntriesChange || null;
-    this.isOpen = false;
+    this.isOpen = true; // Always start open
     this.container = null;
   }
 
@@ -27,7 +27,7 @@ export class CustomizationPanel {
 
   _getHTML() {
     return `
-      <button class="custom-toggle-btn" id="customToggle_${this.wheelName}" aria-label="Toggle Advanced Mode">
+      <button class="custom-toggle-btn active" id="customToggle_${this.wheelName}" aria-label="Toggle Advanced Mode">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
@@ -35,7 +35,7 @@ export class CustomizationPanel {
         <span>Advanced Mode</span>
       </button>
 
-      <div class="custom-drawer" id="customDrawer_${this.wheelName}">
+      <div class="custom-drawer open" id="customDrawer_${this.wheelName}">
         <div class="custom-drawer-content">
           <div class="custom-section">
             <h3>📝 Entry Management</h3>

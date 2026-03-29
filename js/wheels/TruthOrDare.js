@@ -14,8 +14,8 @@ export function renderTruthOrDare(container) {
   container.innerHTML = `
     <div class="wheel-page tod-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title neon-text">🎉 Truth or Dare</h1>
-        <p class="wheel-subtitle">Perfect for parties! Add players' names and let the wheel handle the questions.</p>
+        <h1 class="wheel-title neon-text">🎉 Spin the Wheel Truth or Dare</h1>
+        <p class="wheel-subtitle"><strong>Spin the Wheel Truth or Dare</strong> — perfect for parties! Add players' names and let the wheel handle the questions.</p>
       </div>
 
       <div class="wheel-layout">
@@ -62,13 +62,17 @@ export function renderTruthOrDare(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Play Truth or Dare</h2>
+        <h2>How to Play <strong>Spin the Wheel Truth or Dare</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption"><strong>Spin the Wheel Truth or Dare</strong> — neon-themed party game with 200+ prompts</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Add Players</h3>
-              <p>Enter everyone's names in the text box, one per line. The more players, the more fun!</p>
+              <p>Enter everyone's names in the text box, one per line. The more players, the more fun with <strong>Spin the Wheel Truth or Dare</strong>!</p>
             </div>
           </div>
           <div class="step">

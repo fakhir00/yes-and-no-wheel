@@ -14,7 +14,7 @@ export function renderWordWheel(container) {
     <div class="wheel-page word-theme">
       <div class="wheel-header">
         <h1 class="wheel-title">📖 Word Wheel</h1>
-        <p class="wheel-subtitle">Paste your list of names or words, customize the font, and pick a winner instantly.</p>
+        <p class="wheel-subtitle">Spin the <strong>Word Wheel</strong> to randomly pick names or words from your list. Customize the font, upload CSV, and pick a winner instantly.</p>
       </div>
 
       <div class="wheel-layout">
@@ -52,13 +52,17 @@ export function renderWordWheel(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Use the Word Wheel</h2>
+        <h2>How to Use the <strong>Word Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Word Wheel</strong> name picker — paste names, upload CSV, and spin</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Add Your List</h3>
-              <p>Paste names directly, upload a CSV/TXT file, or use Advanced Mode. Perfect for teachers picking students!</p>
+              <p>Paste names directly, upload a CSV/TXT file, or use Advanced Mode on the <strong>Word Wheel</strong>. Perfect for teachers picking students!</p>
             </div>
           </div>
           <div class="step">
@@ -72,7 +76,7 @@ export function renderWordWheel(container) {
             <div class="step-number">3</div>
             <div class="step-content">
               <h3>Pick a Winner</h3>
-              <p>Spin to randomly select from your list. Fair, fun, and transparent!</p>
+              <p>Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent!</p>
             </div>
           </div>
         </div>

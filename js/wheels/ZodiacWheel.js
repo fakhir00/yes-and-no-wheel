@@ -11,7 +11,7 @@ export function renderZodiacWheel(container) {
     <div class="wheel-page zodiac-theme">
       <div class="wheel-header">
         <h1 class="wheel-title zodiac-title">✨ Zodiac Wheel</h1>
-        <p class="wheel-subtitle">Explore the stars and spin to reveal your zodiac destiny.</p>
+        <p class="wheel-subtitle">Spin the <strong>Zodiac Wheel</strong> to explore the stars and reveal your zodiac destiny. Discover traits, elements, and compatibility.</p>
       </div>
       <div class="wheel-layout" id="zodiacSingleLayout">
         <div class="wheel-main">
@@ -23,10 +23,15 @@ export function renderZodiacWheel(container) {
         <div class="wheel-sidebar" id="zodiacSidebar"></div>
       </div>
       <div class="wheel-instructions">
-        <h2>How to Use</h2>
+        <h2>How to Use the <strong>Zodiac Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Zodiac Wheel</strong> — 12 zodiac signs with traits, elements, and compatibility</p>
+        </div>
         <div class="instruction-steps">
-          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Spin</h3><p>Land on a zodiac sign and see its traits and element.</p></div></div>
-          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Discover</h3><p>Learn deeply about the selected star sign's personality.</p></div></div>
+          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Spin the <strong>Zodiac Wheel</strong></h3><p>Click "Consult the Stars" and watch the <strong>Zodiac Wheel</strong> spin through all 12 zodiac signs.</p></div></div>
+          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Discover Your Sign</h3><p>Land on a zodiac sign and instantly see its traits, element, and personality profile.</p></div></div>
+          <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Check Compatibility</h3><p>Learn which signs are most compatible with your result. Great for astrology fans!</p></div></div>
         </div>
       </div>
     </div>`;

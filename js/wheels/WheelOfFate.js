@@ -15,7 +15,7 @@ export function renderWheelOfFate(container) {
     <div class="wheel-page fate-theme">
       <div class="wheel-header">
         <h1 class="wheel-title fate-title">⚔️ Wheel of Fate</h1>
-        <p class="wheel-subtitle">A high-stakes wheel for writers and roleplayers to determine character outcomes.</p>
+        <p class="wheel-subtitle">Spin the <strong>Wheel of Fate</strong> — a high-stakes wheel for writers and roleplayers to determine character outcomes.</p>
       </div>
 
       <div class="wheel-layout">
@@ -41,13 +41,17 @@ export function renderWheelOfFate(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Use the Wheel of Fate</h2>
+        <h2>How to Use the <strong>Wheel of Fate</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Wheel of Fate</strong> with cosmic design — weighted outcomes for dramatic storytelling</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Set Your Outcomes</h3>
-              <p>Add dramatic outcomes for your story or roleplay. Use the Advanced Mode for custom entries.</p>
+              <p>Add dramatic outcomes for your story or roleplay. Use the Advanced Mode on the <strong>Wheel of Fate</strong> for custom entries.</p>
             </div>
           </div>
           <div class="step">
@@ -61,7 +65,7 @@ export function renderWheelOfFate(container) {
             <div class="step-number">3</div>
             <div class="step-content">
               <h3>Seal Your Fate</h3>
-              <p>Hit the button and let destiny decide. The cosmic wheel waits for no one.</p>
+              <p>Spin the <strong>Wheel of Fate</strong> and let destiny decide. The cosmic wheel waits for no one.</p>
             </div>
           </div>
         </div>

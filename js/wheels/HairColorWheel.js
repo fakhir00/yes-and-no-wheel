@@ -10,7 +10,7 @@ export function renderHairColorWheel(container) {
     <div class="wheel-page hair-theme">
       <div class="wheel-header">
         <h1 class="wheel-title hair-title">💇 Hair Color Wheel</h1>
-        <p class="wheel-subtitle">Ideal for OCs or salon inspiration. Choose from classic or fantasy hair dyes!</p>
+        <p class="wheel-subtitle">Spin the <strong>Hair Color Wheel</strong> — ideal for OCs or salon inspiration. Choose from classic or fantasy hair dyes!</p>
       </div>
       <div class="wheel-layout">
         <div class="wheel-main">
@@ -33,11 +33,15 @@ export function renderHairColorWheel(container) {
         <div class="wheel-sidebar" id="hairSidebar"></div>
       </div>
       <div class="wheel-instructions">
-        <h2>How to Use the Hair Color Wheel</h2>
+        <h2>How to Use the <strong>Hair Color Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Hair Color Wheel</strong> — classic and fantasy palettes with hex code sync</p>
+        </div>
         <div class="instruction-steps">
-          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Browse Colors</h3><p>Toggle between Classic and Fantasy palettes, or add custom color names.</p></div></div>
-          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Hex Sync</h3><p>When you type a color name like "Mint Green," the slice auto-matches its hex code!</p></div></div>
-          <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Spin & Inspire</h3><p>Let the wheel pick your next hair color for OCs or real-life salon visits.</p></div></div>
+          <div class="step"><div class="step-number">1</div><div class="step-content"><h3>Browse Colors</h3><p>Toggle between Classic and Fantasy palettes on the <strong>Hair Color Wheel</strong>, or add custom color names.</p></div></div>
+          <div class="step"><div class="step-number">2</div><div class="step-content"><h3>Hex Sync</h3><p>When you type a color name like "Mint Green," the <strong>Hair Color Wheel</strong> auto-matches its hex code!</p></div></div>
+          <div class="step"><div class="step-number">3</div><div class="step-content"><h3>Spin & Inspire</h3><p>Spin the <strong>Hair Color Wheel</strong> to pick your next hair color for OCs or real-life salon visits.</p></div></div>
         </div>
       </div>
     </div>`;

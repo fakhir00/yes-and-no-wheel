@@ -27,7 +27,7 @@ export function renderRainbowWheel(container) {
     <div class="wheel-page rainbow-theme">
       <div class="wheel-header">
         <h1 class="wheel-title rainbow-text">🌈 Rainbow Wheel</h1>
-        <p class="wheel-subtitle">Choose your options, hit spin, and let the colors decide your fate!</p>
+        <p class="wheel-subtitle">Spin the <strong>Rainbow Wheel</strong> — choose your options, hit spin, and let the colors decide your fate!</p>
       </div>
 
       <div class="wheel-layout">
@@ -49,27 +49,31 @@ export function renderRainbowWheel(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Use the Rainbow Wheel</h2>
+        <h2>How to Use the <strong>Rainbow Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Rainbow Wheel</strong> with ROYGBIV spectrum — spin to pick a colorful winner</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Add Your Options</h3>
-              <p>Click "Advanced Mode" and type your choices, one per line. Or use the defaults!</p>
+              <p>Open Advanced Mode on the right and type your choices, one per line. Or use the default entries on the <strong>Rainbow Wheel</strong>!</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-content">
               <h3>Auto-Gradient</h3>
-              <p>Click the "Auto-Gradient" button to apply a beautiful ROYGBIV rainbow spectrum to all slices automatically.</p>
+              <p>Click the "Auto-Gradient" button to apply a beautiful ROYGBIV <strong>rainbow</strong> spectrum to all slices automatically.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Spin & Decide</h3>
-              <p>Hit the SPIN button and watch the wheel determine your fate with vibrant color!</p>
+              <h3>Spin the <strong>Rainbow Wheel</strong></h3>
+              <p>Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color!</p>
             </div>
           </div>
         </div>

@@ -20,8 +20,8 @@ export function renderHomePage(container) {
       <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
-          <h1 class="hero-title">Yes No <span class="hero-highlight">Picker Wheel</span></h1>
-          <p class="hero-subtitle">Decide yes or no by wheel — spin and let fate choose!</p>
+          <h1 class="hero-title">YES AND NO <span class="hero-highlight">WHEEL</span></h1>
+          <p class="hero-subtitle">Spin the <strong>Yes and No Wheel</strong> to make instant decisions — let fate choose for you!</p>
         </div>
 
         <div class="yesno-layout">
@@ -80,7 +80,11 @@ export function renderHomePage(container) {
 
       <!-- HOW IT WORKS -->
       <section class="how-it-works">
-        <h2 class="section-title">How YesAndNoWheel Works</h2>
+        <h2 class="section-title">How the <strong>Yes and No Wheel</strong> Works</h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/yesno-wheel.png" alt="Yes and No Wheel screenshot showing the spinner interface" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>Yes and No Wheel</strong> interface — spin to decide instantly</p>
+        </div>
         <div class="steps-row">
           <div class="how-step"><div class="how-icon">🎯</div><h3>Choose</h3><p>Pick a mode: Yes/No or Yes/No/Maybe</p></div>
           <div class="how-arrow">→</div>

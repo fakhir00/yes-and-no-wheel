@@ -18,7 +18,7 @@ export function renderDTIWheel(container) {
     <div class="wheel-page dti-theme">
       <div class="wheel-header">
         <h1 class="wheel-title dti-title">👗 DTI Theme Wheel</h1>
-        <p class="wheel-subtitle">Specifically for Dress To Impress players — find creative outfit inspiration instantly!</p>
+        <p class="wheel-subtitle">Spin the <strong>DTI Theme Wheel</strong> — specifically for Dress To Impress players — find creative outfit inspiration instantly!</p>
       </div>
 
       <div class="wheel-layout">
@@ -50,13 +50,17 @@ export function renderDTIWheel(container) {
       </div>
 
       <div class="wheel-instructions">
-        <h2>How to Use the DTI Theme Wheel</h2>
+        <h2>How to Use the <strong>DTI Theme Wheel</strong></h2>
+        <div class="howto-screenshot-wrap">
+          <img src="images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-screenshot" loading="lazy">
+          <p class="howto-caption">The <strong>DTI Theme Wheel</strong> — browse 180+ themes and spin for outfit inspiration</p>
+        </div>
         <div class="instruction-steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h3>Browse Themes</h3>
-              <p>Explore 180+ pre-loaded themes organized by category. Toggle themes on/off to customize your wheel.</p>
+              <p>Explore 180+ pre-loaded themes on the <strong>DTI Theme Wheel</strong>, organized by category. Toggle themes on/off to customize your wheel.</p>
             </div>
           </div>
           <div class="step">
@@ -69,8 +73,8 @@ export function renderDTIWheel(container) {
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Spin & Create</h3>
-              <p>Spin the wheel and use the selected theme for your next DTI outfit challenge!</p>
+              <h3>Spin the <strong>DTI Theme Wheel</strong></h3>
+              <p>Spin the <strong>DTI Theme Wheel</strong> and use the selected theme for your next DTI outfit challenge!</p>
             </div>
           </div>
         </div>
