@@ -6,13 +6,13 @@ import { confetti } from '../engine/ConfettiEngine.js';
 export function renderHomePage(container) {
   const wheels = [
     { id: 'rainbow', icon: '🌈', title: 'Rainbow Wheel', desc: 'ROYGBIV spectrum colors decide your fate.', color: '#FF6B6B' },
-    { id: 'fate', icon: '⚔️', title: 'Wheel of Fate', desc: 'Dark cosmic wheel with weighted outcomes.', color: '#6B2D8B' },
+    { id: 'wheel-of-fate', icon: '⚔️', title: 'Wheel of Fate', desc: 'Dark cosmic wheel with weighted outcomes.', color: '#6B2D8B' },
     { id: 'word', icon: '📖', title: 'Word Wheel', desc: 'Pick names from your list. CSV upload.', color: '#3B82F6' },
-    { id: 'tod', icon: '🎉', title: 'Truth or Dare', desc: 'Two-step party wheel with 200+ questions.', color: '#FF006E' },
-    { id: 'dti', icon: '👗', title: 'DTI Theme Wheel', desc: '180+ themes for Dress To Impress.', color: '#FFB6C1' },
+    { id: 'spin-the-wheel-truth-or-dare', icon: '🎉', title: 'Truth or Dare', desc: 'Two-step party wheel with 200+ questions.', color: '#FF006E' },
+    { id: 'dti-theme', icon: '👗', title: 'DTI Theme Wheel', desc: '180+ themes for Dress To Impress.', color: '#FFB6C1' },
     { id: 'country', icon: '🌍', title: 'Country Wheel', desc: '199 countries with region filters.', color: '#059669' },
     { id: 'zodiac', icon: '✨', title: 'Zodiac Wheel', desc: '12 signs with compatibility mode.', color: '#FFD700' },
-    { id: 'hair', icon: '💇', title: 'Hair Color Wheel', desc: 'Classic & fantasy colors with Hex Sync.', color: '#FF69B4' }
+    { id: 'hair-color', icon: '💇', title: 'Hair Color Wheel', desc: 'Classic & fantasy colors with Hex Sync.', color: '#FF69B4' }
   ];
 
   container.innerHTML = `
@@ -79,20 +79,51 @@ export function renderHomePage(container) {
       </section>
 
       <!-- HOW IT WORKS -->
-      <section class="how-it-works">
-        <h2 class="section-title">How the <strong>Yes and No Wheel</strong> Works</h2>
-        <div class="howto-screenshot-wrap">
-          <img src="images/howto/yesno-wheel.png" alt="Yes and No Wheel screenshot showing the spinner interface" class="howto-screenshot" loading="lazy">
-          <p class="howto-caption">The <strong>Yes and No Wheel</strong> interface — spin to decide instantly</p>
-        </div>
-        <div class="steps-row">
-          <div class="how-step"><div class="how-icon">🎯</div><h3>Choose</h3><p>Pick a mode: Yes/No or Yes/No/Maybe</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">⚙️</div><h3>Customize</h3><p>Set input sets and adjust settings</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">🎰</div><h3>Spin</h3><p>Click SPIN in the center of the wheel</p></div>
-          <div class="how-arrow">→</div>
-          <div class="how-step"><div class="how-icon">🎉</div><h3>Result</h3><p>Get your answer with sound effects!</p></div>
+      <section class="how-it-works howto-tutorial">
+        <h2 class="section-title">How to Use the <strong>Yes and No Wheel</strong></h2>
+        <p class="howto-intro">This <strong>Yes and No Wheel</strong> is a free random yes or no generator. By just clicking the "SPIN" button, you will get a yes or no at the end of the spin. It helps you to make a decision quickly.</p>
+
+        <div class="howto-steps-list">
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Choose a mode</h3>
+            <ul class="howto-step-options">
+              <li>Yes or No</li>
+              <li>Yes, No or Maybe</li>
+            </ul>
+            <div class="howto-step-screenshot">
+              <img src="images/howto/yesno-wheel.png" alt="Yes and No Wheel mode selection — YES or NO and YES NO or MAYBE buttons" class="howto-inline-img" loading="lazy">
+            </div>
+          </div>
+
+          <hr class="howto-divider">
+
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Choose the number of input sets</h3>
+            <ul class="howto-step-options">
+              <li>From 1 set to 5 sets</li>
+            </ul>
+          </div>
+
+          <hr class="howto-divider">
+
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Click the "SPIN" button to spin the <strong>Yes No Wheel</strong></h3>
+            <p class="howto-step-desc">Press Ctrl+Enter or click the SPIN button in the center of the wheel to generate a result.</p>
+          </div>
+
+          <hr class="howto-divider">
+
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">4</span> Result is displayed and accumulated</h3>
+            <p class="howto-step-desc">The result counter shows how many times Yes, No, or Maybe has been selected.</p>
+          </div>
+
+          <hr class="howto-divider">
+
+          <div class="howto-step-item">
+            <h3 class="howto-step-heading"><span class="howto-step-num">5</span> Continue spinning or reset</h3>
+            <p class="howto-step-desc">Continue with the next spin or click the reset button to clear results. Explore other wheels like the <a href="#rainbow">Rainbow Wheel</a>, <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a>, or <a href="#word">Word Wheel</a>.</p>
+          </div>
         </div>
       </section>
 
