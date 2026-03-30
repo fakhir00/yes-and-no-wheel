@@ -59,7 +59,7 @@ export function renderCountryWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Filter Regions</h3>
             <p class="howto-step-desc">Toggle continents on/off to narrow down the 199 countries. Study just Europe or explore all of Asia!</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -70,7 +70,7 @@ export function renderCountryWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Discover</h3>
-            <p class="howto-step-desc">The winning country's flag appears in the center! Use it for travel, food challenges, or study. Try the <a href="#zodiac">Zodiac Wheel</a> or <a href="#wheel-of-fate">Wheel of Fate</a> next.</p>
+            <p class="howto-step-desc">The winning country's flag appears in the center! Use it for travel, food challenges, or study. Try the <a href="/zodiac/">Zodiac Wheel</a> or <a href="/wheel-of-fate/">Wheel of Fate</a> next.</p>
           </div>
         </div>
       </div>

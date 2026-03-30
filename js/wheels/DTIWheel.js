@@ -57,7 +57,7 @@ export function renderDTIWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Themes</h3>
             <p class="howto-step-desc">Explore 180+ pre-loaded themes on the <strong>DTI Theme Wheel</strong>. Toggle themes on/off to customize your wheel.</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -68,7 +68,7 @@ export function renderDTIWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>DTI Theme Wheel</strong></h3>
-            <p class="howto-step-desc">Spin and use the selected theme for your next DTI outfit challenge! Also try the <a href="#hair-color">Hair Color Wheel</a> or <a href="#rainbow">Rainbow Wheel</a>.</p>
+            <p class="howto-step-desc">Spin and use the selected theme for your next DTI outfit challenge! Also try the <a href="/hair-color/">Hair Color Wheel</a> or <a href="/rainbow/">Rainbow Wheel</a>.</p>
           </div>
         </div>
       </div>

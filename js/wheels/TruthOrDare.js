@@ -69,7 +69,7 @@ export function renderTruthOrDare(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Players</h3>
             <p class="howto-step-desc">Enter everyone's names in the text box, one per line. The more players, the more fun!</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -80,7 +80,7 @@ export function renderTruthOrDare(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Truth or Dare</h3>
-            <p class="howto-step-desc">A second spin automatically generates a Truth or Dare prompt from 200+ questions. Also try the <a href="#word">Word Wheel</a> or <a href="#zodiac">Zodiac Wheel</a>.</p>
+            <p class="howto-step-desc">A second spin automatically generates a Truth or Dare prompt from 200+ questions. Also try the <a href="/word/">Word Wheel</a> or <a href="/zodiac/">Zodiac Wheel</a>.</p>
           </div>
         </div>
       </div>

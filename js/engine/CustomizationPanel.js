@@ -162,6 +162,7 @@ export class CustomizationPanel {
     document.getElementById(`themeDark_${wn}`).addEventListener('click', () => {
       document.getElementById(`themeDark_${wn}`).classList.add('active');
       document.getElementById(`themeLight_${wn}`).classList.remove('active');
+      document.documentElement.setAttribute('data-theme', 'dark');
       document.body.setAttribute('data-theme', 'dark');
       this.engine.darkMode = true;
       this.engine.draw();
@@ -171,6 +172,7 @@ export class CustomizationPanel {
     document.getElementById(`themeLight_${wn}`).addEventListener('click', () => {
       document.getElementById(`themeLight_${wn}`).classList.add('active');
       document.getElementById(`themeDark_${wn}`).classList.remove('active');
+      document.documentElement.setAttribute('data-theme', 'light');
       document.body.setAttribute('data-theme', 'light');
       this.engine.darkMode = false;
       this.engine.draw();
@@ -277,6 +279,7 @@ export class CustomizationPanel {
 
     // Theme
     const theme = storage.getThemePreference();
+    document.documentElement.setAttribute('data-theme', theme);
     document.body.setAttribute('data-theme', theme);
     this.engine.darkMode = theme === 'dark';
     if (theme === 'light') {

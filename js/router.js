@@ -1,4 +1,4 @@
-// router.js — Hash-based SPA router with all pages
+// router.js — Path-based SPA router (no hash)
 import { renderHomePage } from './pages/HomePage.js';
 import { renderAboutPage } from './pages/AboutPage.js';
 import { renderContactPage } from './pages/ContactPage.js';
@@ -32,7 +32,7 @@ const routes = {
   'country': renderCountryWheel,
   'zodiac': renderZodiacWheel,
   'hair-color': renderHairColorWheel,
-  // Legacy route aliases (for backwards compat)
+  // Legacy hash-to-path aliases
   'fate': renderWheelOfFate,
   'tod': renderTruthOrDare,
   'dti': renderDTIWheel,
@@ -40,27 +40,26 @@ const routes = {
 };
 
 const routeTitles = {
-  '': 'Yes and No Wheel — Free Spinner [2025 Guide]',
-  'home': 'Yes and No Wheel — Free Spinner [2025 Guide]',
+  '': 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
+  'home': 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
   'about-us': 'About Us — YesAndNoWheel.com',
   'contact': 'Contact Us — YesAndNoWheel.com',
   'terms': 'Terms of Service — YesAndNoWheel.com',
   'privacy': 'Privacy Policy — YesAndNoWheel.com',
   'sitemap': 'Sitemap — YesAndNoWheel.com',
   '404': 'Page Not Found — YesAndNoWheel.com',
-  'rainbow': 'Rainbow Wheel — Top Free Spinner [2025]',
-  'wheel-of-fate': 'Wheel of Fate — Best RPG Spinner [2025]',
-  'word': 'Word Wheel — #1 Name Picker Spinner [2025]',
-  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare [2025 Guide]',
-  'dti-theme': 'DTI Theme Wheel — 180+ Themes [2025]',
-  'country': 'Country Wheel — Top 199 Countries [2025]',
-  'zodiac': 'Zodiac Wheel — Best Star Sign Spinner [2025]',
-  'hair-color': 'Hair Color Wheel — Top Dye Picker [2025]',
-  // Legacy
-  'fate': 'Wheel of Fate — Best RPG Spinner [2025]',
-  'tod': 'Spin the Wheel Truth or Dare [2025 Guide]',
-  'dti': 'DTI Theme Wheel — 180+ Themes [2025]',
-  'hair': 'Hair Color Wheel — Top Dye Picker [2025]',
+  'rainbow': 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel [2026]',
+  'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner [2026]',
+  'word': 'Word Wheel — #1 Free Random Name Picker Spinner [2026]',
+  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game [2026]',
+  'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes [2026]',
+  'country': 'Country Wheel — Pick Randomly From Top 199 Countries [2026]',
+  'zodiac': 'Zodiac Wheel — Spin For Your Best Star Sign Destiny [2026]',
+  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color [2026]',
+  'fate': 'Wheel of Fate — The Best Custom RPG Story Spinner [2026]',
+  'tod': 'Spin the Wheel Truth or Dare — Fun Party Game [2026]',
+  'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes [2026]',
+  'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color [2026]',
 };
 
 const routeDescriptions = {
@@ -75,7 +74,6 @@ const routeDescriptions = {
   'country': 'Spin the Country Wheel to pick from 199 countries! Filter by continent with flags. Great for geography games.',
   'zodiac': 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
-  // Legacy
   'fate': 'Spin the Wheel of Fate for dramatic outcomes. Perfect for writers and RPG players. Weighted entries and cosmic design.',
   'tod': 'Spin the Wheel Truth or Dare for parties! 200+ curated prompts with player picker. Free neon-themed game.',
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
@@ -93,14 +91,76 @@ const canonicalSlugs = {
 
 let currentEngine = null;
 
+/**
+ * Extract the route slug from the current URL.
+ * Supports both path-based (/rainbow/) and hash-based (#rainbow) for backwards compat.
+ */
+function getRouteSlug() {
+  // First check for hash (backwards compatibility)
+  const hash = window.location.hash.slice(1);
+  if (hash) {
+    // Redirect hash URLs to path URLs
+    const slug = hash.split('?')[0];
+    const canonical = canonicalSlugs[slug] || slug;
+    const newPath = canonical === 'home' ? '/' : `/${canonical}/`;
+    window.history.replaceState(null, '', newPath);
+    return canonical === 'home' ? '' : canonical;
+  }
+
+  // Path-based routing
+  let path = window.location.pathname;
+  // Remove leading/trailing slashes
+  path = path.replace(/^\/+|\/+$/g, '');
+  // Remove index.html if present
+  path = path.replace(/^index\.html$/i, '');
+  return path;
+}
+
 export function initRouter() {
-  window.addEventListener('hashchange', handleRoute);
+  // Listen for back/forward navigation
+  window.addEventListener('popstate', handleRoute);
+
+  // Intercept all internal link clicks for SPA navigation
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+
+    // Skip external links, mailto, tel, javascript, etc.
+    if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+    // Handle old hash links (convert to path)
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const slug = href.slice(1);
+      const canonical = canonicalSlugs[slug] || slug;
+      const newPath = canonical === 'home' || canonical === '' ? '/' : `/${canonical}/`;
+      window.history.pushState(null, '', newPath);
+      handleRoute();
+      return;
+    }
+
+    // Handle relative path links (internal SPA links)
+    if (href.startsWith('/')) {
+      e.preventDefault();
+      // Ensure trailing slash
+      let path = href;
+      if (path !== '/' && !path.endsWith('/')) {
+        path = path + '/';
+      }
+      window.history.pushState(null, '', path);
+      handleRoute();
+      return;
+    }
+  });
+
+  // Handle initial route
   handleRoute();
 }
 
 function handleRoute() {
-  const hash = window.location.hash.slice(1) || '';
-  const route = hash.split('?')[0];
+  const route = getRouteSlug();
   const app = document.getElementById('app');
 
   if (currentEngine && currentEngine.destroy) currentEngine.destroy();
@@ -114,7 +174,7 @@ function handleRoute() {
       currentEngine = renderer(app);
       document.title = routeTitles[route] || routeTitles[''];
 
-      // Update meta description for SEO
+      // Update meta description
       const desc = routeDescriptions[route] || routeDescriptions[''];
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc && desc) metaDesc.setAttribute('content', desc);
@@ -127,15 +187,24 @@ function handleRoute() {
         canonicalEl.setAttribute('rel', 'canonical');
         document.head.appendChild(canonicalEl);
       }
-      canonicalEl.setAttribute('href', `https://yesandnowheel.com/${canonical}`);
+      const canonicalPath = canonical === 'home' ? '/' : `/${canonical}/`;
+      canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
 
       // Update BreadcrumbList schema
       updateBreadcrumb(route);
 
       // Update active nav
       document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
-        const href = link.getAttribute('href')?.slice(1) || '';
-        link.classList.toggle('active', href === route);
+        const href = link.getAttribute('href');
+        if (!href) return;
+        let linkSlug = '';
+        if (href.startsWith('/')) {
+          linkSlug = href.replace(/^\/+|\/+$/g, '');
+        } else if (href.startsWith('#')) {
+          linkSlug = href.slice(1);
+        }
+        const isActive = linkSlug === route || (linkSlug === 'home' && route === '') || (linkSlug === '' && route === '');
+        link.classList.toggle('active', isActive);
       });
 
       // Close mobile nav
@@ -149,6 +218,13 @@ function handleRoute() {
     requestAnimationFrame(() => {
       app.style.opacity = '1';
       app.style.transform = 'translateY(0)';
+      
+      // Clear transform after animation completes so 'position: fixed' modals work correctly
+      setTimeout(() => {
+        if (app.style.transform === 'translateY(0px)' || app.style.transform === 'translateY(0)') {
+          app.style.transform = '';
+        }
+      }, 300);
     });
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -165,12 +241,23 @@ function updateBreadcrumb(route) {
   }
   const pageName = routeTitles[route]?.split('—')[0]?.trim() || 'Home';
   const canonical = canonicalSlugs[route] || route || 'home';
+  const canonicalPath = canonical === 'home' ? '/' : `/${canonical}/`;
   breadcrumbEl.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yesandnowheel.com/home" },
-      ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com/${canonical}` }] : [])
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yesandnowheel.com/" },
+      ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
     ]
   });
+}
+
+/**
+ * Helper for programmatic navigation from JS code.
+ */
+export function navigateTo(slug) {
+  const canonical = canonicalSlugs[slug] || slug;
+  const path = canonical === 'home' || canonical === '' ? '/' : `/${canonical}/`;
+  window.history.pushState(null, '', path);
+  handleRoute();
 }

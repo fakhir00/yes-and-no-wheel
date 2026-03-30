@@ -30,7 +30,7 @@ export function renderZodiacWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Spin the <strong>Zodiac Wheel</strong></h3>
             <p class="howto-step-desc">Click "Consult the Stars" and watch the wheel spin through all 12 zodiac signs.</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -41,7 +41,7 @@ export function renderZodiacWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Check Compatibility</h3>
-            <p class="howto-step-desc">Learn which signs are most compatible with your result. Also try the <a href="#country">Country Wheel</a> or <a href="#hair-color">Hair Color Wheel</a>.</p>
+            <p class="howto-step-desc">Learn which signs are most compatible with your result. Also try the <a href="/country/">Country Wheel</a> or <a href="/hair-color/">Hair Color Wheel</a>.</p>
           </div>
         </div>
       </div>

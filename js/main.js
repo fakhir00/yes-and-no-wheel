@@ -4,6 +4,7 @@ import { storage } from './engine/StorageManager.js';
 
 // Apply saved theme
 const theme = storage.getThemePreference();
+document.documentElement.setAttribute('data-theme', theme);
 document.body.setAttribute('data-theme', theme);
 
 // Mobile nav toggle
@@ -54,9 +55,10 @@ initRouter();
 
 // Theme Toggle Logic
 function toggleTheme() {
-  const current = document.body.getAttribute('data-theme');
+  const current = document.documentElement.getAttribute('data-theme') || 'dark';
   const next = current === 'dark' ? 'light' : 'dark';
-  document.body.setAttribute('data-theme', next);
+  document.documentElement.setAttribute('data-theme', next);
+  document.body.setAttribute('data-theme', next); // Keep for backwards compatibility with any existing CSS expecting it on body
   storage.setThemePreference(next);
 }
 

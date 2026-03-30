@@ -91,7 +91,7 @@ export function renderHomePage(container) {
               <li>Yes, No or Maybe</li>
             </ul>
             <div class="howto-step-screenshot">
-              <img src="images/howto/yesno-wheel.png" alt="Yes and No Wheel mode selection — YES or NO and YES NO or MAYBE buttons" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/yesno-wheel.png" alt="Yes and No Wheel mode selection — YES or NO and YES NO or MAYBE buttons" class="howto-inline-img" loading="lazy">
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export function renderHomePage(container) {
 
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">5</span> Continue spinning or reset</h3>
-            <p class="howto-step-desc">Continue with the next spin or click the reset button to clear results. Explore other wheels like the <a href="#rainbow">Rainbow Wheel</a>, <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a>, or <a href="#word">Word Wheel</a>.</p>
+            <p class="howto-step-desc">Continue with the next spin or click the reset button to clear results. Explore other wheels like the <a href="/rainbow/">Rainbow Wheel</a>, <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a>, or <a href="/word/">Word Wheel</a>.</p>
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@ export function renderHomePage(container) {
         <p class="section-subtitle">Each wheel is uniquely themed and packed with special features</p>
         <div class="cards-grid">
           ${wheels.map(w => `
-            <a href="#${w.id}" class="wheel-card" style="--card-accent:${w.color}">
+            <a href="/${w.id}/" class="wheel-card" style="--card-accent:${w.color}">
               <div class="wheel-card-icon">${w.icon}</div>
               <h3 class="wheel-card-title">${w.title}</h3>
               <p class="wheel-card-desc">${w.desc}</p>
@@ -143,18 +143,6 @@ export function renderHomePage(container) {
         </div>
       </section>
 
-      <!-- FEATURES -->
-      <section class="features">
-        <h2 class="section-title">Powered by a Real Physics Engine</h2>
-        <div class="features-grid">
-          <div class="feature"><span class="feature-icon">🔬</span><h3>60fps Canvas</h3><p>Smooth rendering using HTML5 Canvas API</p></div>
-          <div class="feature"><span class="feature-icon">⚡</span><h3>Physics Simulation</h3><p>Real acceleration, friction, and deceleration</p></div>
-          <div class="feature"><span class="feature-icon">💾</span><h3>Auto-Save</h3><p>Custom lists persist via LocalStorage</p></div>
-          <div class="feature"><span class="feature-icon">🔊</span><h3>Audio Engine</h3><p>Synthesized sounds via Web Audio API</p></div>
-          <div class="feature"><span class="feature-icon">📱</span><h3>Responsive</h3><p>Works on desktop, tablet, and mobile</p></div>
-          <div class="feature"><span class="feature-icon">🌙</span><h3>Dark Mode</h3><p>Toggle between dark and light themes</p></div>
-        </div>
-      </section>
 
       <!-- FAQ -->
       <section class="faq">

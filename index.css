@@ -921,7 +921,7 @@ a:hover { color: var(--accent-tertiary); }
 
 .howto-step-desc {
   color: var(--text-secondary); font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: 1.7; margin-left: calc(32px + var(--space-md));
 }
 
 .howto-step-desc a {
@@ -1040,10 +1040,12 @@ a:hover { color: var(--accent-tertiary); }
 /* Theme Toggle */
 .theme-toggle-btn {
   background: none; border: none; cursor: pointer;
-  color: var(--text-primary); padding: 8px; border-radius: 50%;
+  padding: 8px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  transition: background var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast);
 }
+[data-theme="dark"] .theme-toggle-btn { color: #ffffff; }
+[data-theme="light"] .theme-toggle-btn { color: #000000; }
 .theme-toggle-btn:hover { background: var(--bg-glass); }
 .theme-toggle-btn svg { width: 20px; height: 20px; }
 [data-theme="light"] .sun-icon { display: none; }

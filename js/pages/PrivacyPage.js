@@ -54,7 +54,7 @@ export function renderPrivacyPage(container) {
 
         <section class="content-section">
           <h2>8. Contact</h2>
-          <p>If you have questions about this Privacy Policy, please <a href="#contact">contact us</a>.</p>
+          <p>If you have questions about this Privacy Policy, please <a href="/contact/">contact us</a>.</p>
         </section>
       </div>
     </div>`;

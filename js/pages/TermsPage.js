@@ -34,7 +34,7 @@ export function renderTermsPage(container) {
 
         <section class="content-section">
           <h2>5. User Data</h2>
-          <p>All user data (custom entries, preferences, spin history) is stored locally in your browser's LocalStorage. We do not collect, transmit, or store any personal data on our servers. See our <a href="#privacy">Privacy Policy</a> for details.</p>
+          <p>All user data (custom entries, preferences, spin history) is stored locally in your browser's LocalStorage. We do not collect, transmit, or store any personal data on our servers. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
         </section>
 
         <section class="content-section">
@@ -54,7 +54,7 @@ export function renderTermsPage(container) {
 
         <section class="content-section">
           <h2>9. Contact</h2>
-          <p>For questions about these Terms, please <a href="#contact">contact us</a>.</p>
+          <p>For questions about these Terms, please <a href="/contact/">contact us</a>.</p>
         </section>
       </div>
     </div>`;

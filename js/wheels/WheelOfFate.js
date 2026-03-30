@@ -48,7 +48,7 @@ export function renderWheelOfFate(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Set Your Outcomes</h3>
             <p class="howto-step-desc">Add dramatic outcomes for your story or roleplay. Use Advanced Mode on the <strong>Wheel of Fate</strong> for custom entries.</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -59,7 +59,7 @@ export function renderWheelOfFate(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Seal Your Fate</h3>
-            <p class="howto-step-desc">Spin the <strong>Wheel of Fate</strong> and let destiny decide. Also try the <a href="#rainbow">Rainbow Wheel</a> or <a href="#country">Country Wheel</a>.</p>
+            <p class="howto-step-desc">Spin the <strong>Wheel of Fate</strong> and let destiny decide. Also try the <a href="/rainbow/">Rainbow Wheel</a> or <a href="/country/">Country Wheel</a>.</p>
           </div>
         </div>
       </div>

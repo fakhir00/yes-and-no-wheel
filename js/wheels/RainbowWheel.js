@@ -56,7 +56,7 @@ export function renderRainbowWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your Options</h3>
             <p class="howto-step-desc">Open Advanced Mode and type your choices, one per line. Or use the default entries on the <strong>Rainbow Wheel</strong>.</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -67,7 +67,7 @@ export function renderRainbowWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>Rainbow Wheel</strong></h3>
-            <p class="howto-step-desc">Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color! Also try the <a href="#word">Word Wheel</a> or <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a>.</p>
+            <p class="howto-step-desc">Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color! Also try the <a href="/word/">Word Wheel</a> or <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a>.</p>
           </div>
         </div>
       </div>

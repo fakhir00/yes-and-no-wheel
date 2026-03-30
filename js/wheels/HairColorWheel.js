@@ -40,7 +40,7 @@ export function renderHairColorWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Colors</h3>
             <p class="howto-step-desc">Toggle between Classic and Fantasy palettes on the <strong>Hair Color Wheel</strong>, or add custom color names.</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -51,7 +51,7 @@ export function renderHairColorWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin & Inspire</h3>
-            <p class="howto-step-desc">Spin to pick your next hair color for OCs or salon visits. Also try the <a href="#dti-theme">DTI Theme Wheel</a> or <a href="#rainbow">Rainbow Wheel</a>.</p>
+            <p class="howto-step-desc">Spin to pick your next hair color for OCs or salon visits. Also try the <a href="/dti-theme/">DTI Theme Wheel</a> or <a href="/rainbow/">Rainbow Wheel</a>.</p>
           </div>
         </div>
       </div>

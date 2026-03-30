@@ -59,7 +59,7 @@ export function renderWordWheel(container) {
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your List</h3>
             <p class="howto-step-desc">Paste names directly, upload a CSV/TXT file, or use Advanced Mode. Perfect for teachers picking students!</p>
             <div class="howto-step-screenshot">
-              <img src="images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-inline-img" loading="lazy">
+              <img src="/images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
@@ -70,7 +70,7 @@ export function renderWordWheel(container) {
           <hr class="howto-divider">
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Pick a Winner</h3>
-            <p class="howto-step-desc">Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent! Try the <a href="#spin-the-wheel-truth-or-dare">Truth or Dare</a> wheel next.</p>
+            <p class="howto-step-desc">Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent! Try the <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a> wheel next.</p>
           </div>
         </div>
       </div>
