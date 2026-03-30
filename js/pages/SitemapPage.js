@@ -1,42 +1,48 @@
 // SitemapPage.js
+import { buildLocalizedPath, getLocalizedRouteContent, getStaticPageContent, splitLocaleFromPath } from '../i18n.js';
+
 export function renderSitemapPage(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const content = getStaticPageContent(locale, 'sitemap');
   const mainPages = [
-    { title: 'Home', hash: '#home' },
-    { title: 'About Us', hash: '#about-us' },
-    { title: 'Contact Us', hash: '#contact' },
-    { title: 'Terms of Service', hash: '#terms' },
-    { title: 'Privacy Policy', hash: '#privacy' },
-    { title: 'Sitemap', hash: '#sitemap' },
+    { title: getLocalizedRouteContent(locale, 'home').title, path: buildLocalizedPath(locale, '') },
+    { title: getLocalizedRouteContent(locale, 'about-us').title, path: buildLocalizedPath(locale, 'about-us') },
+    { title: getLocalizedRouteContent(locale, 'contact').title, path: buildLocalizedPath(locale, 'contact') },
+    { title: getLocalizedRouteContent(locale, 'terms').title, path: buildLocalizedPath(locale, 'terms') },
+    { title: getLocalizedRouteContent(locale, 'privacy').title, path: buildLocalizedPath(locale, 'privacy') },
+    { title: getLocalizedRouteContent(locale, 'faq').title, path: buildLocalizedPath(locale, 'faq') },
+    { title: getLocalizedRouteContent(locale, 'languages').title, path: buildLocalizedPath(locale, 'languages') },
+    { title: getLocalizedRouteContent(locale, 'sitemap').title, path: buildLocalizedPath(locale, 'sitemap') },
   ];
 
   const wheelPages = [
-    { title: '🌈 Rainbow Wheel', hash: '#rainbow', desc: 'Spin the rainbow spectrum' },
-    { title: '⚔️ Wheel of Fate', hash: '#wheel-of-fate', desc: 'Dramatic RPG outcome spinner' },
-    { title: '📖 Word Wheel', hash: '#word', desc: 'Random name & word picker' },
-    { title: '🎉 Spin the Wheel Truth or Dare', hash: '#spin-the-wheel-truth-or-dare', desc: 'Party game with 200+ prompts' },
-    { title: '👗 DTI Theme Wheel', hash: '#dti-theme', desc: '180+ Dress To Impress themes' },
-    { title: '🌍 Country Wheel', hash: '#country', desc: 'Random country from 199 nations' },
-    { title: '✨ Zodiac Wheel', hash: '#zodiac', desc: '12 zodiac signs with traits' },
-    { title: '💇 Hair Color Wheel', hash: '#hair-color', desc: 'Classic & fantasy hair dyes' },
+    { title: `🌈 ${getLocalizedRouteContent(locale, 'rainbow').title}`, path: buildLocalizedPath(locale, 'rainbow') },
+    { title: `⚔️ ${getLocalizedRouteContent(locale, 'wheel-of-fate').title}`, path: buildLocalizedPath(locale, 'wheel-of-fate') },
+    { title: `📖 ${getLocalizedRouteContent(locale, 'word').title}`, path: buildLocalizedPath(locale, 'word') },
+    { title: `🎉 ${getLocalizedRouteContent(locale, 'spin-the-wheel-truth-or-dare').title}`, path: buildLocalizedPath(locale, 'spin-the-wheel-truth-or-dare') },
+    { title: `👗 ${getLocalizedRouteContent(locale, 'dti-theme').title}`, path: buildLocalizedPath(locale, 'dti-theme') },
+    { title: `🌍 ${getLocalizedRouteContent(locale, 'country').title}`, path: buildLocalizedPath(locale, 'country') },
+    { title: `✨ ${getLocalizedRouteContent(locale, 'zodiac').title}`, path: buildLocalizedPath(locale, 'zodiac') },
+    { title: `💇 ${getLocalizedRouteContent(locale, 'hair-color').title}`, path: buildLocalizedPath(locale, 'hair-color') },
   ];
 
   container.innerHTML = `
     <div class="static-page">
-      <h1 class="page-title">Sitemap</h1>
-      <p class="page-intro">A complete list of all pages on YesAndNoWheel.com</p>
+      <h1 class="page-title">${content.title}</h1>
+      <p class="page-intro">${content.intro}</p>
 
       <div class="page-content sitemap-content">
         <section class="content-section">
-          <h2>Pages</h2>
+          <h2>${content.sectionPages}</h2>
           <ul class="sitemap-list">
-            ${mainPages.map(p => `<li><a href="${p.hash}">${p.title}</a></li>`).join('')}
+            ${mainPages.map(p => `<li><a href="${p.path}">${p.title}</a></li>`).join('')}
           </ul>
         </section>
 
         <section class="content-section">
-          <h2>Wheels</h2>
+          <h2>${content.sectionWheels}</h2>
           <ul class="sitemap-list">
-            ${wheelPages.map(p => `<li><a href="${p.hash}">${p.title}</a></li>`).join('')}
+            ${wheelPages.map(p => `<li><a href="${p.path}">${p.title}</a></li>`).join('')}
           </ul>
         </section>
       </div>

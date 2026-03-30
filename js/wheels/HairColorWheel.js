@@ -2,56 +2,60 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { hairColors, hairCategories, nameToHex } from '../data/hairColors.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 const defaultColors = hairColors.slice(0, 16);
 
 export function renderHairColorWheel(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'hair-color');
+  const ui = getWheelUiText(locale);
   container.innerHTML = `
     <div class="wheel-page hair-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title hair-title">💇 Hair Color Wheel</h1>
-        <p class="wheel-subtitle">Spin the <strong>Hair Color Wheel</strong> — ideal for OCs or salon inspiration. Choose from classic or fantasy hair dyes!</p>
+        <h1 class="wheel-title hair-title">💇 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
       <div class="wheel-layout">
         <div class="wheel-main">
           <div class="hair-palette-selector">
-            <h3>🎨 Color Palette</h3>
+            <h3>🎨 ${ui.colorPalette}</h3>
             <div class="hair-cat-btns">
-              <button class="hair-cat-btn active" data-cat="all">All Colors</button>
+              <button class="hair-cat-btn active" data-cat="all">${ui.allColors}</button>
               ${hairCategories.map(c => `<button class="hair-cat-btn" data-cat="${c}">${c}</button>`).join('')}
             </div>
             <div class="hair-color-grid" id="hairColorGrid"></div>
             <div class="hair-custom-add">
-              <input type="text" id="hairCustomName" placeholder="Custom color name (e.g. Mint Green)">
-              <button class="custom-btn" id="hairAddCustom">+ Add</button>
+              <input type="text" id="hairCustomName" placeholder="${ui.customColorPlaceholder}">
+              <button class="custom-btn" id="hairAddCustom">+ ${ui.add}</button>
             </div>
           </div>
           <div class="wheel-canvas-container" id="hairCanvasContainer"><canvas id="hairCanvas"></canvas></div>
-          <button class="spin-btn hair-spin-btn" id="hairSpinBtn"><span class="spin-text">💇 SPIN FOR A COLOR</span></button>
+          <button class="spin-btn hair-spin-btn" id="hairSpinBtn"><span class="spin-text">💇 ${ui.spinForColor}</span></button>
           <div class="result-display" id="hairResult"></div>
         </div>
         <div class="wheel-sidebar" id="hairSidebar"></div>
       </div>
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Use the <strong>Hair Color Wheel</strong></h2>
-        <p class="howto-intro">The <strong>Hair Color Wheel</strong> helps you find your next dye color. Browse Classic or Fantasy palettes, add custom colors with hex sync, and spin for inspiration.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Colors</h3>
-            <p class="howto-step-desc">Toggle between Classic and Fantasy palettes on the <strong>Hair Color Wheel</strong>, or add custom color names.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/hair-color-wheel.png" alt="Hair Color Wheel with classic and fantasy color palettes" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Hex Sync</h3>
-            <p class="howto-step-desc">When you type a color name like "Mint Green," the <strong>Hair Color Wheel</strong> auto-matches its hex code!</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin & Inspire</h3>
-            <p class="howto-step-desc">Spin to pick your next hair color for OCs or salon visits. Also try the <a href="/dti-theme/">DTI Theme Wheel</a> or <a href="/rainbow/">Rainbow Wheel</a>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>
@@ -120,7 +124,7 @@ export function renderHairColorWheel(container) {
   });
 
   document.getElementById('hairSpinBtn').onclick = () => {
-    if (selectedColors.length < 2) { alert('Select at least 2 colors!'); return; }
+    if (selectedColors.length < 2) { alert(ui.selectAtLeastTwoColors); return; }
     engine.spin();
   };
   return engine;

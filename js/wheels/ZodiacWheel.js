@@ -2,46 +2,50 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { zodiacSigns, getCompatibility } from '../data/zodiacData.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 export function renderZodiacWheel(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'zodiac');
+  const ui = getWheelUiText(locale);
   const signEntries = zodiacSigns.map(s => s.symbol + ' ' + s.name);
   const signColors = zodiacSigns.map(s => s.color);
 
   container.innerHTML = `
     <div class="wheel-page zodiac-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title zodiac-title">✨ Zodiac Wheel</h1>
-        <p class="wheel-subtitle">Spin the <strong>Zodiac Wheel</strong> to explore the stars and reveal your zodiac destiny. Discover traits, elements, and compatibility.</p>
+        <h1 class="wheel-title zodiac-title">✨ ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
       <div class="wheel-layout" id="zodiacSingleLayout">
         <div class="wheel-main">
           <div class="wheel-canvas-container celestial-bg" id="zodiacCanvasContainer"><canvas id="zodiacCanvas"></canvas></div>
-          <button class="spin-btn zodiac-spin-btn" id="zodiacSpinBtn"><span class="spin-text">✨ CONSULT THE STARS</span></button>
+          <button class="spin-btn zodiac-spin-btn" id="zodiacSpinBtn"><span class="spin-text">✨ ${ui.consultStars}</span></button>
           <div class="result-display" id="zodiacResult"></div>
           <div class="zodiac-info-panel" id="zodiacInfoPanel"></div>
         </div>
         <div class="wheel-sidebar" id="zodiacSidebar"></div>
       </div>
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Use the <strong>Zodiac Wheel</strong></h2>
-        <p class="howto-intro">The <strong>Zodiac Wheel</strong> spins through all 12 zodiac signs. Discover traits, elements, and compatibility for each sign. Great for astrology fans and horoscope enthusiasts.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Spin the <strong>Zodiac Wheel</strong></h3>
-            <p class="howto-step-desc">Click "Consult the Stars" and watch the wheel spin through all 12 zodiac signs.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/zodiac-wheel.png" alt="Zodiac Wheel with 12 star signs and celestial design" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Discover Your Sign</h3>
-            <p class="howto-step-desc">Land on a zodiac sign and instantly see its traits, element, and personality profile.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Check Compatibility</h3>
-            <p class="howto-step-desc">Learn which signs are most compatible with your result. Also try the <a href="/country/">Country Wheel</a> or <a href="/hair-color/">Hair Color Wheel</a>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Spin the Yes and No Wheel to decide instantly! Free online spinner with 8 wheels. Customizable.">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎰</text></svg>">
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css?v=20260331-homefix">
 
   <script type="application/ld+json">
   {
@@ -79,12 +79,6 @@
   }
   </script>
 
-  <!-- Google Translate Setup -->
-  <style>
-    .goog-te-banner-frame { display: none !important; }
-    body { top: 0 !important; }
-    #google_translate_element { display: none; }
-  </style>
 </head>
 <body data-theme="dark">
 
@@ -105,12 +99,12 @@
       </button>
 
       <ul class="nav-menu" id="navMenu">
-        <li><a href="/" class="nav-link active">🏠 Home</a></li>
+        <li><a href="/" class="nav-link active">🏠 <span id="navHomeLabel">Home</span></a></li>
 
         <!-- Wheels Dropdown -->
         <li class="nav-dropdown" id="wheelsDropdown">
           <button class="nav-link dropdown-trigger" id="wheelsDropdownBtn">
-            🎡 Wheels
+            🎡 <span id="navWheelsLabel">Wheels</span>
             <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="dropdown-menu" id="wheelsDropdownMenu">
@@ -125,8 +119,8 @@
           </div>
         </li>
 
-        <li><a href="/about-us/" class="nav-link">ℹ️ About</a></li>
-        <li><a href="/contact/" class="nav-link">📧 Contact</a></li>
+        <li><a href="/about-us/" class="nav-link">ℹ️ <span id="navAboutLabel">About</span></a></li>
+        <li><a href="/contact/" class="nav-link">📧 <span id="navContactLabel">Contact</span></a></li>
         <li>
           <button class="theme-toggle-btn" id="headerThemeBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
             <span class="sun-icon">☀️</span>
@@ -166,7 +160,7 @@
         </div>
         
         <div class="footer-contact-info" style="margin-top: 24px;">
-          <h4 style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">Contact Info</h4>
+          <h4 id="footerContactHeading" style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">Contact Info</h4>
           <p class="footer-contact-item" style="color: var(--text-secondary); font-size: 0.85rem; padding: 2px 0;">📧 contact@yesandnowheel.com</p>
           <p class="footer-contact-item" style="color: var(--text-secondary); font-size: 0.85rem; padding: 2px 0;">📍 San Francisco, CA 94102</p>
           <p class="footer-contact-item" style="color: var(--text-secondary); font-size: 0.85rem; padding: 2px 0;">📞 +1 (415) 555-0199</p>
@@ -176,31 +170,31 @@
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <h4>Wheels</h4>
+          <h4 id="footerWheelsHeading">Wheels</h4>
           <a href="/rainbow/">Rainbow Wheel</a>
           <a href="/wheel-of-fate/">Wheel of Fate</a>
           <a href="/word/">Word Wheel</a>
           <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a>
         </div>
         <div class="footer-col">
-          <h4>More Wheels</h4>
+          <h4 id="footerMoreWheelsHeading">More Wheels</h4>
           <a href="/dti-theme/">DTI Theme Wheel</a>
           <a href="/country/">Country Wheel</a>
           <a href="/zodiac/">Zodiac Wheel</a>
           <a href="/hair-color/">Hair Color Wheel</a>
         </div>
         <div class="footer-col">
-          <h4>Pages</h4>
-          <a href="/about-us/">About Us</a>
-          <a href="/contact/">Contact Us</a>
-          <a href="/terms/">Terms of Service</a>
-          <a href="/privacy/">Privacy Policy</a>
-          <a href="/sitemap/">Sitemap</a>
+          <h4 id="footerPagesHeading">Pages</h4>
+          <a href="/about-us/" id="footerAboutLink">About Us</a>
+          <a href="/contact/" id="footerContactLink">Contact Us</a>
+          <a href="/terms/" id="footerTermsLink">Terms of Service</a>
+          <a href="/privacy/" id="footerPrivacyLink">Privacy Policy</a>
+          <a href="/sitemap/" id="footerSitemapLink">Sitemap</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom" style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
-      <p>© <span id="footerYear"></span> yesandnowheel — Built with ❤️</p>
+      <p id="footerBuiltWith">© <span id="footerYear"></span> yesandnowheel — Built with ❤️</p>
       
       <!-- Theme Toggle Footer -->
       <button class="theme-toggle-btn" id="footerThemeBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
@@ -210,37 +204,28 @@
 
       <!-- Language Switcher Footer -->
       <div class="lang-switcher">
-        <span style="font-size:1.2rem;">🌐</span>
-        <select id="langSelector" class="lang-select notranslate">
-          <option value="en">English</option>
-          <option value="zh-CN">Chinese (Mandarin)</option>
-          <option value="hi">Hindi</option>
-          <option value="es">Spanish</option>
-          <option value="fr">French</option>
-          <option value="ar">Arabic</option>
-          <option value="bn">Bengali</option>
-          <option value="ru">Russian</option>
-          <option value="pt">Portuguese</option>
-          <option value="ur">Urdu</option>
-          <option value="id">Indonesian</option>
-          <option value="de">German</option>
-          <option value="ja">Japanese</option>
-          <option value="mr">Marathi</option>
-          <option value="te">Telugu</option>
-        </select>
+        <div class="lang-label"><span style="font-size:1.2rem;">🌐</span> <span id="footerLanguageLabel">Language</span></div>
+        <div class="lang-grid" id="langGrid">
+          <button class="lang-chip active" data-lang="en" aria-label="Switch to English">EN</button>
+          <button class="lang-chip" data-lang="zh-CN" aria-label="Switch to Chinese Mandarin">ZH</button>
+          <button class="lang-chip" data-lang="hi" aria-label="Switch to Hindi">HI</button>
+          <button class="lang-chip" data-lang="es" aria-label="Switch to Spanish">ES</button>
+          <button class="lang-chip" data-lang="ar" aria-label="Switch to Arabic">AR</button>
+          <button class="lang-chip" data-lang="fr" aria-label="Switch to French">FR</button>
+          <button class="lang-chip" data-lang="bn" aria-label="Switch to Bengali">BN</button>
+          <button class="lang-chip" data-lang="pt" aria-label="Switch to Portuguese">PT</button>
+          <button class="lang-chip" data-lang="ru" aria-label="Switch to Russian">RU</button>
+          <button class="lang-chip" data-lang="ur" aria-label="Switch to Urdu">UR</button>
+          <button class="lang-chip" data-lang="id" aria-label="Switch to Indonesian">ID</button>
+          <button class="lang-chip" data-lang="de" aria-label="Switch to German">DE</button>
+          <button class="lang-chip" data-lang="ja" aria-label="Switch to Japanese">JA</button>
+          <button class="lang-chip" data-lang="mr" aria-label="Switch to Marathi">MR</button>
+          <button class="lang-chip" data-lang="te" aria-label="Switch to Telugu">TE</button>
+        </div>
       </div>
     </div>
   </footer>
-
-  <!-- Google Translate Element hidden div -->
-  <div id="google_translate_element"></div>
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/main.js?v=20260331-homefix"></script>
   <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

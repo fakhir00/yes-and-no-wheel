@@ -1,6 +1,7 @@
 // CustomizationPanel.js — Advanced mode panel for all wheels
 import { audioManager } from './AudioManager.js';
 import { storage } from './StorageManager.js';
+import { getCustomizationText, splitLocaleFromPath } from '../i18n.js';
 
 export class CustomizationPanel {
   constructor(wheelEngine, options = {}) {
@@ -26,84 +27,86 @@ export class CustomizationPanel {
   }
 
   _getHTML() {
+    const { locale } = splitLocaleFromPath(window.location.pathname);
+    const t = getCustomizationText(locale);
     return `
-      <button class="custom-toggle-btn active" id="customToggle_${this.wheelName}" aria-label="Toggle Advanced Mode">
+      <button class="custom-toggle-btn active" id="customToggle_${this.wheelName}" aria-label="${t.toggleAdvancedMode}">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
         </svg>
-        <span>Advanced Mode</span>
+        <span>${t.advancedMode}</span>
       </button>
 
       <div class="custom-drawer open" id="customDrawer_${this.wheelName}">
         <div class="custom-drawer-content">
           <div class="custom-section">
-            <h3>📝 Entry Management</h3>
+            <h3>📝 ${t.entryManagement}</h3>
             <textarea class="custom-textarea" id="customEntries_${this.wheelName}" 
-              placeholder="Enter items, one per line..." rows="6"></textarea>
+              placeholder="${t.entryPlaceholder}" rows="6"></textarea>
             <div class="custom-btn-row">
-              <button class="custom-btn" id="customApply_${this.wheelName}">Apply</button>
-              <button class="custom-btn secondary" id="customShuffle_${this.wheelName}">🔀 Shuffle</button>
-              <button class="custom-btn danger" id="customClear_${this.wheelName}">🗑 Clear</button>
+              <button class="custom-btn" id="customApply_${this.wheelName}">${t.apply}</button>
+              <button class="custom-btn secondary" id="customShuffle_${this.wheelName}">🔀 ${t.shuffle}</button>
+              <button class="custom-btn danger" id="customClear_${this.wheelName}">🗑 ${t.clear}</button>
             </div>
           </div>
 
           <div class="custom-section">
-            <h3>🎨 Visual Styling</h3>
+            <h3>🎨 ${t.visualStyling}</h3>
             <div class="custom-field">
-              <label>Font Size</label>
+              <label>${t.fontSize}</label>
               <input type="range" min="9" max="24" value="14" id="customFontSize_${this.wheelName}">
               <span id="customFontSizeVal_${this.wheelName}">14px</span>
             </div>
             <div class="custom-field">
-              <label>Theme</label>
+              <label>${t.theme}</label>
               <div class="custom-theme-toggle">
-                <button class="theme-btn active" data-theme="dark" id="themeDark_${this.wheelName}">🌙 Dark</button>
-                <button class="theme-btn" data-theme="light" id="themeLight_${this.wheelName}">☀️ Light</button>
+                <button class="theme-btn active" data-theme="dark" id="themeDark_${this.wheelName}">🌙 ${t.dark}</button>
+                <button class="theme-btn" data-theme="light" id="themeLight_${this.wheelName}">☀️ ${t.light}</button>
               </div>
             </div>
           </div>
 
           <div class="custom-section">
-            <h3>🔊 Audio Controls</h3>
+            <h3>🔊 ${t.audioControls}</h3>
             <div class="custom-field">
-              <label>Tick Sound</label>
+              <label>${t.tickSound}</label>
               <label class="toggle-switch">
                 <input type="checkbox" checked id="customTick_${this.wheelName}">
                 <span class="toggle-slider"></span>
               </label>
             </div>
             <div class="custom-field">
-              <label>Winner Fanfare</label>
+              <label>${t.winnerFanfare}</label>
               <label class="toggle-switch">
                 <input type="checkbox" checked id="customFanfare_${this.wheelName}">
                 <span class="toggle-slider"></span>
               </label>
             </div>
             <div class="custom-field">
-              <label>Volume</label>
+              <label>${t.volume}</label>
               <input type="range" min="0" max="100" value="30" id="customVolume_${this.wheelName}">
             </div>
           </div>
 
           <div class="custom-section">
-            <h3>⚙️ Physics Settings</h3>
+            <h3>⚙️ ${t.physicsSettings}</h3>
             <div class="custom-field">
-              <label>Spin Power</label>
+              <label>${t.spinPower}</label>
               <input type="range" min="1" max="10" value="5" id="customPower_${this.wheelName}">
               <span id="customPowerVal_${this.wheelName}">5</span>
             </div>
             <div class="custom-field">
-              <label>Duration</label>
+              <label>${t.duration}</label>
               <input type="range" min="3" max="20" value="8" id="customDuration_${this.wheelName}">
               <span id="customDurationVal_${this.wheelName}">8s</span>
             </div>
           </div>
 
           <div class="custom-section">
-            <h3>📜 Results History</h3>
+            <h3>📜 ${t.resultsHistory}</h3>
             <div class="history-list" id="customHistory_${this.wheelName}"></div>
-            <button class="custom-btn secondary" id="customClearHistory_${this.wheelName}">Clear History</button>
+            <button class="custom-btn secondary" id="customClearHistory_${this.wheelName}">${t.clearHistory}</button>
           </div>
         </div>
       </div>
@@ -215,9 +218,11 @@ export class CustomizationPanel {
   updateHistory() {
     const historyEl = document.getElementById(`customHistory_${this.wheelName}`);
     if (!historyEl) return;
+    const { locale } = splitLocaleFromPath(window.location.pathname);
+    const t = getCustomizationText(locale);
     const history = storage.getHistory().filter(h => h.wheel === this.wheelName).slice(0, 20);
     if (history.length === 0) {
-      historyEl.innerHTML = '<p class="history-empty">No spins yet</p>';
+      historyEl.innerHTML = `<p class="history-empty">${t.noSpinsYet}</p>`;
       return;
     }
     historyEl.innerHTML = history.map(h => {

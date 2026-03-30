@@ -1,7 +1,8 @@
 // main.js — App entry point
-import { initRouter } from './router.js';
+import { initRouter } from './router.js?v=20260331-homefix';
 import { storage } from './engine/StorageManager.js';
 import { audioManager } from './engine/AudioManager.js';
+import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260331-homefix';
 
 // Apply saved theme
 const theme = storage.getThemePreference();
@@ -72,24 +73,13 @@ if (headerThemeBtn) headerThemeBtn.addEventListener('click', toggleTheme);
 if (footerThemeBtn) footerThemeBtn.addEventListener('click', toggleTheme);
 
 // Language Switcher Logic
-const langSelector = document.getElementById('langSelector');
-if (langSelector) {
-  // Try to set initial value from cookie if present
-  const match = document.cookie.match(/googtrans=\/en\/([^;]+)/);
-  if (match && match[1]) {
-    langSelector.value = match[1];
-  }
-
-  langSelector.addEventListener('change', (e) => {
-    const lang = e.target.value;
-    if (lang === 'en') {
-      // clear cookie for english
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + location.hostname;
-    } else {
-      // update googtrans cookie to trigger translation on reload
-      document.cookie = 'googtrans=/en/' + lang + '; path=/';
-    }
-    window.location.reload();
+const langGrid = document.getElementById('langGrid');
+if (langGrid) {
+  langGrid.addEventListener('click', (e) => {
+    const button = e.target.closest('.lang-chip[data-lang]');
+    if (!button) return;
+    const { slug } = splitLocaleFromPath(window.location.pathname);
+    const lang = button.dataset.lang || 'en';
+    window.location.href = buildLocalizedPath(lang, slug);
   });
 }

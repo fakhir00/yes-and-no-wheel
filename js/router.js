@@ -1,11 +1,13 @@
 // router.js — Path-based SPA router (no hash)
-import { renderHomePage } from './pages/HomePage.js';
+import { renderHomePage } from './pages/HomePage.js?v=20260331-homefix';
 import { renderAboutPage } from './pages/AboutPage.js';
 import { renderContactPage } from './pages/ContactPage.js';
 import { renderTermsPage } from './pages/TermsPage.js';
 import { renderPrivacyPage } from './pages/PrivacyPage.js';
 import { renderSitemapPage } from './pages/SitemapPage.js';
 import { renderNotFoundPage } from './pages/NotFoundPage.js';
+import { renderFaqPage } from './pages/FaqPage.js';
+import { renderLanguagesPage } from './pages/LanguagesPage.js';
 import { renderRainbowWheel } from './wheels/RainbowWheel.js';
 import { renderWheelOfFate } from './wheels/WheelOfFate.js';
 import { renderWordWheel } from './wheels/WordWheel.js';
@@ -14,6 +16,7 @@ import { renderDTIWheel } from './wheels/DTIWheel.js';
 import { renderCountryWheel } from './wheels/CountryWheel.js';
 import { renderZodiacWheel } from './wheels/ZodiacWheel.js';
 import { renderHairColorWheel } from './wheels/HairColorWheel.js';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-homefix';
 
 const routes = {
   '': renderHomePage,
@@ -22,6 +25,8 @@ const routes = {
   'contact': renderContactPage,
   'terms': renderTermsPage,
   'privacy': renderPrivacyPage,
+  'faq': renderFaqPage,
+  'languages': renderLanguagesPage,
   'sitemap': renderSitemapPage,
   '404': renderNotFoundPage,
   'rainbow': renderRainbowWheel,
@@ -46,6 +51,8 @@ const routeTitles = {
   'contact': 'Contact Us — YesAndNoWheel.com',
   'terms': 'Terms of Service — YesAndNoWheel.com',
   'privacy': 'Privacy Policy — YesAndNoWheel.com',
+  'faq': 'Frequently Asked Questions — YesAndNoWheel.com',
+  'languages': 'Languages — YesAndNoWheel.com',
   'sitemap': 'Sitemap — YesAndNoWheel.com',
   '404': 'Page Not Found — YesAndNoWheel.com',
   'rainbow': 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel [2026]',
@@ -66,6 +73,8 @@ const routeDescriptions = {
   '': 'Spin the Yes and No Wheel to decide instantly! Free online spinner with 8 wheels. Customizable and fun. Try it now!',
   'home': 'Spin the Yes and No Wheel to decide instantly! Free online spinner with 8 wheels. Customizable and fun. Try it now!',
   'contact': 'Contact YesAndNoWheel.com — reach out with questions, feedback, or feature requests. We respond within 24-48 hours.',
+  'faq': 'Read common questions and answers about YesAndNoWheel.com, our random wheels, customization features, and device compatibility.',
+  'languages': 'Browse the supported language versions of YesAndNoWheel.com and discover language-specific route paths.',
   'rainbow': 'Spin the Rainbow Wheel and let ROYGBIV colors decide. Free online color spinner with custom entries. Try it now!',
   'wheel-of-fate': 'Spin the Wheel of Fate for dramatic outcomes. Perfect for writers and RPG players. Weighted entries and cosmic design.',
   'word': 'Use the Word Wheel to randomly pick names. Upload CSV, paste names, and spin. Perfect for classrooms and raffles.',
@@ -90,6 +99,7 @@ const canonicalSlugs = {
 };
 
 let currentEngine = null;
+let currentLocale = DEFAULT_LOCALE;
 
 /**
  * Extract the route slug from the current URL.
@@ -102,18 +112,14 @@ function getRouteSlug() {
     // Redirect hash URLs to path URLs
     const slug = hash.split('?')[0];
     const canonical = canonicalSlugs[slug] || slug;
-    const newPath = canonical === 'home' ? '/' : `/${canonical}/`;
+    const newPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
     window.history.replaceState(null, '', newPath);
     return canonical === 'home' ? '' : canonical;
   }
 
-  // Path-based routing
-  let path = window.location.pathname;
-  // Remove leading/trailing slashes
-  path = path.replace(/^\/+|\/+$/g, '');
-  // Remove index.html if present
-  path = path.replace(/^index\.html$/i, '');
-  return path;
+  const { locale, slug } = splitLocaleFromPath(window.location.pathname);
+  currentLocale = locale;
+  return slug.replace(/^index\.html$/i, '');
 }
 
 export function initRouter() {
@@ -135,7 +141,7 @@ export function initRouter() {
       e.preventDefault();
       const slug = href.slice(1);
       const canonical = canonicalSlugs[slug] || slug;
-      const newPath = canonical === 'home' || canonical === '' ? '/' : `/${canonical}/`;
+      const newPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
       window.history.pushState(null, '', newPath);
       handleRoute();
       return;
@@ -144,11 +150,8 @@ export function initRouter() {
     // Handle relative path links (internal SPA links)
     if (href.startsWith('/')) {
       e.preventDefault();
-      // Ensure trailing slash
-      let path = href;
-      if (path !== '/' && !path.endsWith('/')) {
-        path = path + '/';
-      }
+      const { slug } = splitLocaleFromPath(href);
+      const path = buildLocalizedPath(currentLocale, slug);
       window.history.pushState(null, '', path);
       handleRoute();
       return;
@@ -162,6 +165,7 @@ export function initRouter() {
 function handleRoute() {
   const route = getRouteSlug();
   const app = document.getElementById('app');
+  const uiText = getUiText(currentLocale);
 
   if (currentEngine && currentEngine.destroy) currentEngine.destroy();
 
@@ -173,6 +177,8 @@ function handleRoute() {
       const renderer = routes[route] || renderNotFoundPage;
       currentEngine = renderer(app);
       document.title = routeTitles[route] || routeTitles[''];
+      document.documentElement.lang = currentLocale;
+      document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
 
       // Update meta description
       const desc = routeDescriptions[route] || routeDescriptions[''];
@@ -187,11 +193,15 @@ function handleRoute() {
         canonicalEl.setAttribute('rel', 'canonical');
         document.head.appendChild(canonicalEl);
       }
-      const canonicalPath = canonical === 'home' ? '/' : `/${canonical}/`;
+      const canonicalPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
       canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
+      updateAlternateLanguages(canonical);
 
       // Update BreadcrumbList schema
       updateBreadcrumb(route);
+      updateStaticUi(uiText);
+      updateLocalizedLinks();
+      updateLanguageSelector();
 
       // Update active nav
       document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
@@ -241,23 +251,91 @@ function updateBreadcrumb(route) {
   }
   const pageName = routeTitles[route]?.split('—')[0]?.trim() || 'Home';
   const canonical = canonicalSlugs[route] || route || 'home';
-  const canonicalPath = canonical === 'home' ? '/' : `/${canonical}/`;
+  const canonicalPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
+  const homePath = buildLocalizedPath(currentLocale, '');
   breadcrumbEl.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yesandnowheel.com/" },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://yesandnowheel.com${homePath}` },
       ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
     ]
   });
 }
+
+function updateLocalizedLinks() {
+  document.querySelectorAll('a[href^="/"]').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    link.setAttribute('href', localizeHref(href, currentLocale));
+  });
+}
+
+function updateLanguageSelector() {
+  document.querySelectorAll('.lang-chip[data-lang]').forEach((button) => {
+    button.classList.toggle('active', button.dataset.lang === currentLocale);
+  });
+}
+
+function updateStaticUi(uiText) {
+  const mappings = {
+    navHomeLabel: uiText.home,
+    navWheelsLabel: uiText.wheels,
+    navAboutLabel: uiText.about,
+    navContactLabel: uiText.contact,
+    footerContactHeading: uiText.contactInfo,
+    footerWheelsHeading: uiText.wheelsHeading,
+    footerMoreWheelsHeading: uiText.moreWheelsHeading,
+    footerPagesHeading: uiText.pagesHeading,
+    footerAboutLink: uiText.aboutUs,
+    footerContactLink: uiText.contactUs,
+    footerTermsLink: uiText.terms,
+    footerPrivacyLink: uiText.privacy,
+    footerSitemapLink: uiText.sitemap,
+    footerLanguageLabel: uiText.language
+  };
+
+  Object.entries(mappings).forEach(([id, text]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  });
+
+  const footerBuiltWith = document.getElementById('footerBuiltWith');
+  if (footerBuiltWith) {
+    footerBuiltWith.innerHTML = `© <span id="footerYear">${new Date().getFullYear()}</span> yesandnowheel — ${uiText.builtWith} <span aria-hidden="true">❤️</span>`;
+  }
+}
+
+function updateAlternateLanguages(canonicalSlug) {
+  document.querySelectorAll('link[rel="alternate"][data-hreflang="true"]').forEach((el) => el.remove());
+  LOCALES.forEach(({ code }) => {
+    const alternate = document.createElement('link');
+    alternate.setAttribute('rel', 'alternate');
+    alternate.setAttribute('hreflang', code);
+    alternate.setAttribute('href', `https://yesandnowheel.com${buildLocalizedPath(code, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
+    alternate.dataset.hreflang = 'true';
+    document.head.appendChild(alternate);
+  });
+
+  const defaultAlternate = document.createElement('link');
+  defaultAlternate.setAttribute('rel', 'alternate');
+  defaultAlternate.setAttribute('hreflang', 'x-default');
+  defaultAlternate.setAttribute('href', `https://yesandnowheel.com${buildLocalizedPath(DEFAULT_LOCALE, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
+  defaultAlternate.dataset.hreflang = 'true';
+  document.head.appendChild(defaultAlternate);
+}
+
+export function getCurrentLocale() {
+  return normalizeLocale(currentLocale);
+}
+
 
 /**
  * Helper for programmatic navigation from JS code.
  */
 export function navigateTo(slug) {
   const canonical = canonicalSlugs[slug] || slug;
-  const path = canonical === 'home' || canonical === '' ? '/' : `/${canonical}/`;
+  const path = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
   window.history.pushState(null, '', path);
   handleRoute();
 }

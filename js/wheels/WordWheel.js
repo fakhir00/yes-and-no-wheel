@@ -2,6 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -10,11 +11,14 @@ const WORD_COLORS = [
 ];
 
 export function renderWordWheel(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'word');
+  const ui = getWheelUiText(locale);
   container.innerHTML = `
     <div class="wheel-page word-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title">📖 Word Wheel</h1>
-        <p class="wheel-subtitle">Spin the <strong>Word Wheel</strong> to randomly pick names or words from your list. Customize the font, upload CSV, and pick a winner instantly.</p>
+        <h1 class="wheel-title">📖 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
@@ -23,7 +27,7 @@ export function renderWordWheel(container) {
             <canvas id="wordCanvas"></canvas>
           </div>
           <button class="spin-btn word-spin-btn" id="wordSpinBtn">
-            <span class="spin-text">📖 PICK A NAME</span>
+            <span class="spin-text">📖 ${ui.pickAName}</span>
             <div class="spin-ripple"></div>
           </button>
           <div class="result-display" id="wordResult"></div>
@@ -33,18 +37,18 @@ export function renderWordWheel(container) {
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
               </svg>
-              <p>Drag & drop a CSV/TXT file here</p>
-              <span>or</span>
+              <p>${ui.dragDropFile}</p>
+              <span>${ui.or}</span>
               <label class="upload-btn">
-                Browse Files
+                ${ui.browseFiles}
                 <input type="file" accept=".csv,.txt,.xlsx" id="wordFileInput" hidden>
               </label>
             </div>
           </div>
 
           <div class="quick-paste">
-            <textarea id="wordQuickPaste" placeholder="Or paste names/words here, one per line...&#10;Alice&#10;Bob&#10;Charlie&#10;Diana" rows="4"></textarea>
-            <button class="custom-btn" id="wordPasteApply">Load Names</button>
+            <textarea id="wordQuickPaste" placeholder="${ui.quickPastePlaceholder}&#10;Alice&#10;Bob&#10;Charlie&#10;Diana" rows="4"></textarea>
+            <button class="custom-btn" id="wordPasteApply">${ui.loadNames}</button>
           </div>
         </div>
 
@@ -52,25 +56,25 @@ export function renderWordWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Use the <strong>Word Wheel</strong></h2>
-        <p class="howto-intro">The <strong>Word Wheel</strong> is a free random name picker. Paste names, upload a CSV, or type entries manually. Perfect for classrooms, raffles, and random selections.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your List</h3>
-            <p class="howto-step-desc">Paste names directly, upload a CSV/TXT file, or use Advanced Mode. Perfect for teachers picking students!</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Customize Display</h3>
-            <p class="howto-step-desc">Adjust font size for readability in presentations. Large fonts work great on projectors.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Pick a Winner</h3>
-            <p class="howto-step-desc">Spin the <strong>Word Wheel</strong> to randomly select from your list. Fair, fun, and transparent! Try the <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a> wheel next.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>

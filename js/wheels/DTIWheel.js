@@ -3,6 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { dtiThemes, dtiCategories, getEnabledThemes } from '../data/dtiThemes.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -12,26 +13,29 @@ const PASTEL_COLORS = [
 ];
 
 export function renderDTIWheel(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'dti-theme');
+  const ui = getWheelUiText(locale);
   let localThemes = JSON.parse(JSON.stringify(dtiThemes));
 
   container.innerHTML = `
     <div class="wheel-page dti-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title dti-title">👗 DTI Theme Wheel</h1>
-        <p class="wheel-subtitle">Spin the <strong>DTI Theme Wheel</strong> — specifically for Dress To Impress players — find creative outfit inspiration instantly!</p>
+        <h1 class="wheel-title dti-title">👗 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
         <div class="wheel-main">
           <div class="dti-library">
-            <h3>📚 Theme Library <span class="dti-count" id="dtiEnabledCount">${localThemes.filter(t=>t.enabled).length} themes</span></h3>
+            <h3>📚 ${ui.themeLibrary} <span class="dti-count" id="dtiEnabledCount">${ui.themesCount.replace('{count}', localThemes.filter(t=>t.enabled).length)}</span></h3>
             <div class="dti-category-filters" id="dtiFilters">
-              <button class="dti-filter-btn active" data-cat="all">All</button>
+              <button class="dti-filter-btn active" data-cat="all">${ui.all}</button>
               ${dtiCategories.map(c => `<button class="dti-filter-btn" data-cat="${c}">${c}</button>`).join('')}
             </div>
             <div class="dti-toggle-all">
-              <button class="custom-btn secondary" id="dtiSelectAll">Select All</button>
-              <button class="custom-btn secondary" id="dtiDeselectAll">Deselect All</button>
+              <button class="custom-btn secondary" id="dtiSelectAll">${ui.selectAll}</button>
+              <button class="custom-btn secondary" id="dtiDeselectAll">${ui.deselectAll}</button>
             </div>
             <div class="dti-theme-grid" id="dtiThemeGrid"></div>
           </div>
@@ -40,7 +44,7 @@ export function renderDTIWheel(container) {
             <canvas id="dtiCanvas"></canvas>
           </div>
           <button class="spin-btn dti-spin-btn" id="dtiSpinBtn">
-            <span class="spin-text">👗 SPIN FOR A THEME</span>
+            <span class="spin-text">👗 ${ui.spinForTheme}</span>
             <div class="spin-ripple"></div>
           </button>
           <div class="result-display" id="dtiResult"></div>
@@ -50,25 +54,25 @@ export function renderDTIWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Use the <strong>DTI Theme Wheel</strong></h2>
-        <p class="howto-intro">The <strong>DTI Theme Wheel</strong> is built specifically for Dress To Impress players. Browse 180+ pre-loaded themes organized by category and spin for random outfit inspiration.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Browse Themes</h3>
-            <p class="howto-step-desc">Explore 180+ pre-loaded themes on the <strong>DTI Theme Wheel</strong>. Toggle themes on/off to customize your wheel.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Filter by Category</h3>
-            <p class="howto-step-desc">Use the category buttons to filter by Era, Genre, Aesthetic, Style, Culture, Nature, Concept, or Profession.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>DTI Theme Wheel</strong></h3>
-            <p class="howto-step-desc">Spin and use the selected theme for your next DTI outfit challenge! Also try the <a href="/hair-color/">Hair Color Wheel</a> or <a href="/rainbow/">Rainbow Wheel</a>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>
@@ -94,7 +98,7 @@ export function renderDTIWheel(container) {
     onResult: (winner) => {
       audioManager.playFanfare();
       const resultEl = document.getElementById('dtiResult');
-      resultEl.innerHTML = `<div class="result-winner dti-result"><span class="result-emoji">👗</span><span class="result-text">${winner.entry}</span><span class="dti-subtitle">Time to dress to impress!</span></div>`;
+      resultEl.innerHTML = `<div class="result-winner dti-result"><span class="result-emoji">👗</span><span class="result-text">${winner.entry}</span><span class="dti-subtitle">${ui.dtiResultSubtitle}</span></div>`;
       resultEl.classList.add('show');
       customPanel.addResult(winner.entry);
       document.getElementById('dtiSpinBtn').disabled = false;
@@ -135,7 +139,7 @@ export function renderDTIWheel(container) {
   }
 
   function updateCount() {
-    document.getElementById('dtiEnabledCount').textContent = getEnabled().length + ' themes';
+    document.getElementById('dtiEnabledCount').textContent = ui.themesCount.replace('{count}', getEnabled().length);
   }
 
   buildThemeGrid();
@@ -165,7 +169,7 @@ export function renderDTIWheel(container) {
 
   document.getElementById('dtiSpinBtn').addEventListener('click', () => {
     if (getEnabled().length < 2) {
-      alert('Please enable at least 2 themes!');
+      alert(ui.enableAtLeastTwoThemes);
       return;
     }
     engine.spin();

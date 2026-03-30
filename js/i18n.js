@@ -1,0 +1,2305 @@
+export const DEFAULT_LOCALE = 'en';
+
+export const LOCALES = [
+  { code: 'en', label: 'English' },
+  { code: 'zh-CN', label: 'Chinese (Mandarin)' },
+  { code: 'hi', label: 'Hindi' },
+  { code: 'es', label: 'Spanish' },
+  { code: 'ar', label: 'Arabic' },
+  { code: 'fr', label: 'French' },
+  { code: 'bn', label: 'Bengali' },
+  { code: 'pt', label: 'Portuguese' },
+  { code: 'ru', label: 'Russian' },
+  { code: 'ur', label: 'Urdu' },
+  { code: 'id', label: 'Indonesian' },
+  { code: 'de', label: 'German' },
+  { code: 'ja', label: 'Japanese' },
+  { code: 'mr', label: 'Marathi' },
+  { code: 'te', label: 'Telugu' }
+];
+
+export const LOCALE_CODES = new Set(LOCALES.map(locale => locale.code));
+
+export const UI_TRANSLATIONS = {
+  en: {
+    home: 'Home',
+    wheels: 'Wheels',
+    about: 'About',
+    contact: 'Contact',
+    wheelsHeading: 'Wheels',
+    moreWheelsHeading: 'More Wheels',
+    pagesHeading: 'Pages',
+    aboutUs: 'About Us',
+    contactUs: 'Contact Us',
+    terms: 'Terms of Service',
+    privacy: 'Privacy Policy',
+    sitemap: 'Sitemap',
+    contactInfo: 'Contact Info',
+    builtWith: 'Built with',
+    language: 'Language'
+  },
+  'zh-CN': {
+    home: '首页', wheels: '转盘', about: '关于', contact: '联系',
+    wheelsHeading: '转盘', moreWheelsHeading: '更多转盘', pagesHeading: '页面',
+    aboutUs: '关于我们', contactUs: '联系我们', terms: '服务条款', privacy: '隐私政策',
+    sitemap: '网站地图', contactInfo: '联系信息', builtWith: '构建于', language: '语言'
+  },
+  hi: {
+    home: 'होम', wheels: 'व्हील', about: 'जानकारी', contact: 'संपर्क',
+    wheelsHeading: 'व्हील', moreWheelsHeading: 'और व्हील', pagesHeading: 'पेज',
+    aboutUs: 'हमारे बारे में', contactUs: 'संपर्क करें', terms: 'सेवा की शर्तें', privacy: 'गोपनीयता नीति',
+    sitemap: 'साइटमैप', contactInfo: 'संपर्क जानकारी', builtWith: 'साथ बनाया गया', language: 'भाषा'
+  },
+  es: {
+    home: 'Inicio',
+    wheels: 'Ruletas',
+    about: 'Acerca de',
+    contact: 'Contacto',
+    wheelsHeading: 'Ruletas',
+    moreWheelsHeading: 'Mas ruletas',
+    pagesHeading: 'Paginas',
+    aboutUs: 'Sobre nosotros',
+    contactUs: 'Contacto',
+    terms: 'Terminos del servicio',
+    privacy: 'Politica de privacidad',
+    sitemap: 'Mapa del sitio',
+    contactInfo: 'Informacion de contacto',
+    builtWith: 'Hecho con',
+    language: 'Idioma'
+  },
+  ar: {
+    home: 'الرئيسية', wheels: 'العجلات', about: 'حول', contact: 'اتصل',
+    wheelsHeading: 'العجلات', moreWheelsHeading: 'مزيد من العجلات', pagesHeading: 'الصفحات',
+    aboutUs: 'من نحن', contactUs: 'اتصل بنا', terms: 'شروط الخدمة', privacy: 'سياسة الخصوصية',
+    sitemap: 'خريطة الموقع', contactInfo: 'معلومات الاتصال', builtWith: 'صنع بـ', language: 'اللغة'
+  },
+  fr: {
+    home: 'Accueil',
+    wheels: 'Roulettes',
+    about: 'A propos',
+    contact: 'Contact',
+    wheelsHeading: 'Roulettes',
+    moreWheelsHeading: 'Plus de roulettes',
+    pagesHeading: 'Pages',
+    aboutUs: 'A propos',
+    contactUs: 'Contact',
+    terms: "Conditions d'utilisation",
+    privacy: 'Confidentialite',
+    sitemap: 'Plan du site',
+    contactInfo: 'Coordonnees',
+    builtWith: 'Cree avec',
+    language: 'Langue'
+  },
+  bn: {
+    home: 'হোম', wheels: 'চাকা', about: 'সম্পর্কে', contact: 'যোগাযোগ',
+    wheelsHeading: 'চাকা', moreWheelsHeading: 'আরও চাকা', pagesHeading: 'পাতা',
+    aboutUs: 'আমাদের সম্পর্কে', contactUs: 'যোগাযোগ করুন', terms: 'সেবার শর্তাবলি', privacy: 'গোপনীয়তা নীতি',
+    sitemap: 'সাইটম্যাপ', contactInfo: 'যোগাযোগ তথ্য', builtWith: 'দিয়ে তৈরি', language: 'ভাষা'
+  },
+  pt: {
+    home: 'Inicio', wheels: 'Roletas', about: 'Sobre', contact: 'Contato',
+    wheelsHeading: 'Roletas', moreWheelsHeading: 'Mais roletas', pagesHeading: 'Paginas',
+    aboutUs: 'Sobre nos', contactUs: 'Contato', terms: 'Termos de servico', privacy: 'Politica de privacidade',
+    sitemap: 'Mapa do site', contactInfo: 'Informacoes de contato', builtWith: 'Feito com', language: 'Idioma'
+  },
+  ru: {
+    home: 'Главная', wheels: 'Колеса', about: 'О сайте', contact: 'Контакты',
+    wheelsHeading: 'Колеса', moreWheelsHeading: 'Еще колеса', pagesHeading: 'Страницы',
+    aboutUs: 'О нас', contactUs: 'Связаться', terms: 'Условия использования', privacy: 'Политика конфиденциальности',
+    sitemap: 'Карта сайта', contactInfo: 'Контакты', builtWith: 'Сделано с', language: 'Язык'
+  },
+  ur: {
+    home: 'ہوم', wheels: 'ویلز', about: 'متعلق', contact: 'رابطہ',
+    wheelsHeading: 'ویلز', moreWheelsHeading: 'مزید ویلز', pagesHeading: 'صفحات',
+    aboutUs: 'ہمارے بارے میں', contactUs: 'رابطہ کریں', terms: 'سروس کی شرائط', privacy: 'رازداری پالیسی',
+    sitemap: 'سائٹ میپ', contactInfo: 'رابطہ معلومات', builtWith: 'کے ساتھ بنایا گیا', language: 'زبان'
+  },
+  id: {
+    home: 'Beranda', wheels: 'Roda', about: 'Tentang', contact: 'Kontak',
+    wheelsHeading: 'Roda', moreWheelsHeading: 'Roda lainnya', pagesHeading: 'Halaman',
+    aboutUs: 'Tentang kami', contactUs: 'Hubungi kami', terms: 'Syarat layanan', privacy: 'Kebijakan privasi',
+    sitemap: 'Peta situs', contactInfo: 'Info kontak', builtWith: 'Dibuat dengan', language: 'Bahasa'
+  },
+  de: {
+    home: 'Start',
+    wheels: 'Raeder',
+    about: 'Info',
+    contact: 'Kontakt',
+    wheelsHeading: 'Raeder',
+    moreWheelsHeading: 'Weitere Raeder',
+    pagesHeading: 'Seiten',
+    aboutUs: 'Ueber uns',
+    contactUs: 'Kontakt',
+    terms: 'Nutzungsbedingungen',
+    privacy: 'Datenschutz',
+    sitemap: 'Sitemap',
+    contactInfo: 'Kontaktinfo',
+    builtWith: 'Erstellt mit',
+    language: 'Sprache'
+  },
+  ja: {
+    home: 'ホーム', wheels: 'ルーレット', about: '概要', contact: '連絡先',
+    wheelsHeading: 'ルーレット', moreWheelsHeading: 'その他', pagesHeading: 'ページ',
+    aboutUs: '私たちについて', contactUs: 'お問い合わせ', terms: '利用規約', privacy: 'プライバシーポリシー',
+    sitemap: 'サイトマップ', contactInfo: '連絡先情報', builtWith: 'で作成', language: '言語'
+  },
+  mr: {
+    home: 'मुख्यपृष्ठ', wheels: 'व्हील्स', about: 'माहिती', contact: 'संपर्क',
+    wheelsHeading: 'व्हील्स', moreWheelsHeading: 'अधिक व्हील्स', pagesHeading: 'पृष्ठे',
+    aboutUs: 'आमच्याबद्दल', contactUs: 'संपर्क करा', terms: 'सेवा अटी', privacy: 'गोपनीयता धोरण',
+    sitemap: 'साइटमॅप', contactInfo: 'संपर्क माहिती', builtWith: 'सह तयार', language: 'भाषा'
+  },
+  te: {
+    home: 'హోమ్', wheels: 'వీళ్లు', about: 'గురించి', contact: 'సంప్రదించండి',
+    wheelsHeading: 'వీళ్లు', moreWheelsHeading: 'ఇంకా వీళ్లు', pagesHeading: 'పేజీలు',
+    aboutUs: 'మా గురించి', contactUs: 'సంప్రదించండి', terms: 'సేవా నిబంధనలు', privacy: 'గోప్యతా విధానం',
+    sitemap: 'సైట్ మ్యాప్', contactInfo: 'సంప్రదింపు సమాచారం', builtWith: 'తో నిర్మించారు', language: 'భాష'
+  }
+};
+
+export function getUiText(locale) {
+  return UI_TRANSLATIONS[locale] || UI_TRANSLATIONS.en;
+}
+
+export function normalizeLocale(locale) {
+  return LOCALE_CODES.has(locale) ? locale : DEFAULT_LOCALE;
+}
+
+export function splitLocaleFromPath(pathname) {
+  const parts = pathname.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
+  const locale = LOCALE_CODES.has(parts[0]) ? parts.shift() : DEFAULT_LOCALE;
+  return {
+    locale,
+    slug: parts.join('/')
+  };
+}
+
+export function buildLocalizedPath(locale, slug = '') {
+  const safeLocale = normalizeLocale(locale);
+  const normalizedSlug = slug.replace(/^\/+|\/+$/g, '');
+  if (!normalizedSlug) {
+    return safeLocale === DEFAULT_LOCALE ? '/' : `/${safeLocale}/`;
+  }
+  return safeLocale === DEFAULT_LOCALE
+    ? `/${normalizedSlug}/`
+    : `/${safeLocale}/${normalizedSlug}/`;
+}
+
+export function localizeHref(href, locale) {
+  if (!href || !href.startsWith('/')) return href;
+  const { slug } = splitLocaleFromPath(href);
+  return buildLocalizedPath(locale, slug);
+}
+
+export function getLocaleLabel(locale) {
+  return LOCALES.find((item) => item.code === normalizeLocale(locale))?.label || LOCALES[0].label;
+}
+
+const ROUTE_NAMES = {
+  en: {
+    home: 'Yes and No Wheel',
+    'about-us': 'About Us',
+    contact: 'Contact Us',
+    terms: 'Terms of Service',
+    privacy: 'Privacy Policy',
+    sitemap: 'Sitemap',
+    faq: 'Frequently Asked Questions',
+    languages: 'Languages',
+    rainbow: 'Rainbow Wheel',
+    'wheel-of-fate': 'Wheel of Fate',
+    word: 'Word Wheel',
+    'spin-the-wheel-truth-or-dare': 'Truth or Dare Wheel',
+    'dti-theme': 'DTI Theme Wheel',
+    country: 'Country Wheel',
+    zodiac: 'Zodiac Wheel',
+    'hair-color': 'Hair Color Wheel'
+  },
+  'zh-CN': {
+    home: '是或否转盘',
+    'about-us': '关于我们',
+    contact: '联系我们',
+    terms: '服务条款',
+    privacy: '隐私政策',
+    sitemap: '网站地图',
+    faq: '常见问题',
+    languages: '语言',
+    rainbow: '彩虹转盘',
+    'wheel-of-fate': '命运转盘',
+    word: '单词转盘',
+    'spin-the-wheel-truth-or-dare': '真心话大冒险转盘',
+    'dti-theme': 'DTI 主题转盘',
+    country: '国家转盘',
+    zodiac: '星座转盘',
+    'hair-color': '发色转盘'
+  },
+  hi: {
+    home: 'यस और नो व्हील',
+    'about-us': 'हमारे बारे में',
+    contact: 'संपर्क करें',
+    terms: 'सेवा की शर्तें',
+    privacy: 'गोपनीयता नीति',
+    sitemap: 'साइटमैप',
+    faq: 'अक्सर पूछे जाने वाले सवाल',
+    languages: 'भाषाएं',
+    rainbow: 'रेनबो व्हील',
+    'wheel-of-fate': 'व्हील ऑफ फेट',
+    word: 'वर्ड व्हील',
+    'spin-the-wheel-truth-or-dare': 'ट्रुथ ऑर डेयर व्हील',
+    'dti-theme': 'डीटीआई थीम व्हील',
+    country: 'कंट्री व्हील',
+    zodiac: 'ज़ोडिएक व्हील',
+    'hair-color': 'हेयर कलर व्हील'
+  },
+  es: {
+    home: 'Ruleta de Si y No',
+    'about-us': 'Sobre Nosotros',
+    contact: 'Contacto',
+    terms: 'Terminos del Servicio',
+    privacy: 'Politica de Privacidad',
+    sitemap: 'Mapa del Sitio',
+    faq: 'Preguntas Frecuentes',
+    languages: 'Idiomas',
+    rainbow: 'Ruleta Arcoiris',
+    'wheel-of-fate': 'Ruleta del Destino',
+    word: 'Ruleta de Palabras',
+    'spin-the-wheel-truth-or-dare': 'Ruleta Verdad o Reto',
+    'dti-theme': 'Ruleta de Temas DTI',
+    country: 'Ruleta de Paises',
+    zodiac: 'Ruleta del Zodiaco',
+    'hair-color': 'Ruleta de Color de Cabello'
+  },
+  ar: {
+    home: 'عجلة نعم ولا',
+    'about-us': 'من نحن',
+    contact: 'اتصل بنا',
+    terms: 'شروط الخدمة',
+    privacy: 'سياسة الخصوصية',
+    sitemap: 'خريطة الموقع',
+    faq: 'الاسئلة الشائعة',
+    languages: 'اللغات',
+    rainbow: 'عجلة قوس قزح',
+    'wheel-of-fate': 'عجلة القدر',
+    word: 'عجلة الكلمات',
+    'spin-the-wheel-truth-or-dare': 'عجلة الصراحة او الجرأة',
+    'dti-theme': 'عجلة ثيمات DTI',
+    country: 'عجلة الدول',
+    zodiac: 'عجلة الابراج',
+    'hair-color': 'عجلة لون الشعر'
+  },
+  fr: {
+    home: 'Roue Oui Non',
+    'about-us': 'A Propos',
+    contact: 'Contact',
+    terms: 'Conditions de Service',
+    privacy: 'Politique de Confidentialite',
+    sitemap: 'Plan du Site',
+    faq: 'Questions Frequentes',
+    languages: 'Langues',
+    rainbow: 'Roue Arc-en-ciel',
+    'wheel-of-fate': 'Roue du Destin',
+    word: 'Roue des Mots',
+    'spin-the-wheel-truth-or-dare': 'Roue Action ou Verite',
+    'dti-theme': 'Roue de Themes DTI',
+    country: 'Roue des Pays',
+    zodiac: 'Roue du Zodiaque',
+    'hair-color': 'Roue de Couleur de Cheveux'
+  },
+  bn: {
+    home: 'হ্যাঁ না চাকা',
+    'about-us': 'আমাদের সম্পর্কে',
+    contact: 'যোগাযোগ',
+    terms: 'সেবার শর্তাবলি',
+    privacy: 'গোপনীয়তা নীতি',
+    sitemap: 'সাইটম্যাপ',
+    faq: 'প্রশ্নোত্তর',
+    languages: 'ভাষাসমূহ',
+    rainbow: 'রেইনবো চাকা',
+    'wheel-of-fate': 'ভাগ্যের চাকা',
+    word: 'শব্দ চাকা',
+    'spin-the-wheel-truth-or-dare': 'ট্রুথ অর ডেয়ার চাকা',
+    'dti-theme': 'ডিটিআই থিম চাকা',
+    country: 'দেশ চাকা',
+    zodiac: 'রাশিচক্র চাকা',
+    'hair-color': 'চুলের রঙ চাকা'
+  },
+  pt: {
+    home: 'Roda Sim ou Nao',
+    'about-us': 'Sobre Nos',
+    contact: 'Contato',
+    terms: 'Termos de Servico',
+    privacy: 'Politica de Privacidade',
+    sitemap: 'Mapa do Site',
+    faq: 'Perguntas Frequentes',
+    languages: 'Idiomas',
+    rainbow: 'Roda Arco-iris',
+    'wheel-of-fate': 'Roda do Destino',
+    word: 'Roda de Palavras',
+    'spin-the-wheel-truth-or-dare': 'Roda Verdade ou Desafio',
+    'dti-theme': 'Roda de Temas DTI',
+    country: 'Roda de Paises',
+    zodiac: 'Roda do Zodiaco',
+    'hair-color': 'Roda de Cor de Cabelo'
+  },
+  ru: {
+    home: 'Колесо Да Нет',
+    'about-us': 'О Нас',
+    contact: 'Контакты',
+    terms: 'Условия Сервиса',
+    privacy: 'Политика Конфиденциальности',
+    sitemap: 'Карта Сайта',
+    faq: 'Частые Вопросы',
+    languages: 'Языки',
+    rainbow: 'Радужное Колесо',
+    'wheel-of-fate': 'Колесо Судьбы',
+    word: 'Колесо Слов',
+    'spin-the-wheel-truth-or-dare': 'Колесо Правда Или Действие',
+    'dti-theme': 'Колесо Тем DTI',
+    country: 'Колесо Стран',
+    zodiac: 'Колесо Зодиака',
+    'hair-color': 'Колесо Цвета Волос'
+  },
+  ur: {
+    home: 'ہاں یا نہیں ویل',
+    'about-us': 'ہمارے بارے میں',
+    contact: 'رابطہ کریں',
+    terms: 'سروس کی شرائط',
+    privacy: 'رازداری پالیسی',
+    sitemap: 'سائٹ میپ',
+    faq: 'اکثر پوچھے گئے سوالات',
+    languages: 'زبانیں',
+    rainbow: 'رینبو ویل',
+    'wheel-of-fate': 'قسمت کا ویل',
+    word: 'ورڈ ویل',
+    'spin-the-wheel-truth-or-dare': 'ٹروتھ یا ڈیئر ویل',
+    'dti-theme': 'ڈی ٹی آئی تھیم ویل',
+    country: 'ملکوں کا ویل',
+    zodiac: 'زائچہ ویل',
+    'hair-color': 'بالوں کے رنگ کا ویل'
+  },
+  id: {
+    home: 'Roda Ya Tidak',
+    'about-us': 'Tentang Kami',
+    contact: 'Kontak',
+    terms: 'Syarat Layanan',
+    privacy: 'Kebijakan Privasi',
+    sitemap: 'Peta Situs',
+    faq: 'Pertanyaan Umum',
+    languages: 'Bahasa',
+    rainbow: 'Roda Pelangi',
+    'wheel-of-fate': 'Roda Takdir',
+    word: 'Roda Kata',
+    'spin-the-wheel-truth-or-dare': 'Roda Truth or Dare',
+    'dti-theme': 'Roda Tema DTI',
+    country: 'Roda Negara',
+    zodiac: 'Roda Zodiak',
+    'hair-color': 'Roda Warna Rambut'
+  },
+  de: {
+    home: 'Ja Nein Rad',
+    'about-us': 'Uber Uns',
+    contact: 'Kontakt',
+    terms: 'Nutzungsbedingungen',
+    privacy: 'Datenschutzrichtlinie',
+    sitemap: 'Sitemap',
+    faq: 'Haufige Fragen',
+    languages: 'Sprachen',
+    rainbow: 'Regenbogenrad',
+    'wheel-of-fate': 'Rad des Schicksals',
+    word: 'Wortrad',
+    'spin-the-wheel-truth-or-dare': 'Wahrheit oder Pflicht Rad',
+    'dti-theme': 'DTI Themenrad',
+    country: 'Landerrad',
+    zodiac: 'Zodiakrad',
+    'hair-color': 'Haarfarbenrad'
+  },
+  ja: {
+    home: 'はい いいえ ルーレット',
+    'about-us': '私たちについて',
+    contact: 'お問い合わせ',
+    terms: '利用規約',
+    privacy: 'プライバシーポリシー',
+    sitemap: 'サイトマップ',
+    faq: 'よくある質問',
+    languages: '言語',
+    rainbow: 'レインボールーレット',
+    'wheel-of-fate': '運命のルーレット',
+    word: 'ワードルーレット',
+    'spin-the-wheel-truth-or-dare': '真実か挑戦かルーレット',
+    'dti-theme': 'DTIテーマルーレット',
+    country: '国ルーレット',
+    zodiac: '星座ルーレット',
+    'hair-color': 'ヘアカラールーレット'
+  },
+  mr: {
+    home: 'होय नाही व्हील',
+    'about-us': 'आमच्याबद्दल',
+    contact: 'संपर्क',
+    terms: 'सेवा अटी',
+    privacy: 'गोपनीयता धोरण',
+    sitemap: 'साइटमॅप',
+    faq: 'नेहमी विचारले जाणारे प्रश्न',
+    languages: 'भाषा',
+    rainbow: 'रेनबो व्हील',
+    'wheel-of-fate': 'नशिबाचे व्हील',
+    word: 'वर्ड व्हील',
+    'spin-the-wheel-truth-or-dare': 'ट्रुथ ऑर डेअर व्हील',
+    'dti-theme': 'डीटीआय थीम व्हील',
+    country: 'देश व्हील',
+    zodiac: 'राशी व्हील',
+    'hair-color': 'केसांच्या रंगाचे व्हील'
+  },
+  te: {
+    home: 'అవును కాదు వీల్',
+    'about-us': 'మా గురించి',
+    contact: 'సంప్రదించండి',
+    terms: 'సేవా నియమాలు',
+    privacy: 'గోప్యతా విధానం',
+    sitemap: 'సైట్ మ్యాప్',
+    faq: 'తరచుగా అడిగే ప్రశ్నలు',
+    languages: 'భాషలు',
+    rainbow: 'రెయిన్‌బో వీల్',
+    'wheel-of-fate': 'విధి వీల్',
+    word: 'వర్డ్ వీల్',
+    'spin-the-wheel-truth-or-dare': 'ట్రూత్ ఆర్ డేర్ వీల్',
+    'dti-theme': 'డిటిఐ థీమ్ వీల్',
+    country: 'దేశాల వీల్',
+    zodiac: 'రాశిచక్ర వీల్',
+    'hair-color': 'జుట్టు రంగు వీల్'
+  }
+};
+
+const ROUTE_SUBTITLE_TEMPLATES = {
+  en: 'You are viewing the {page} page in {language}.',
+  'zh-CN': '您正在查看 {language} 版本的 {page} 页面。',
+  hi: 'आप {language} में {page} पेज देख रहे हैं।',
+  es: 'Estas viendo la pagina {page} en {language}.',
+  ar: 'أنت تشاهد صفحة {page} باللغة {language}.',
+  fr: 'Vous consultez la page {page} en {language}.',
+  bn: 'আপনি {language} ভাষায় {page} পৃষ্ঠা দেখছেন।',
+  pt: 'Voce esta vendo a pagina {page} em {language}.',
+  ru: 'Вы просматриваете страницу {page} на языке {language}.',
+  ur: 'آپ {language} میں {page} صفحہ دیکھ رہے ہیں۔',
+  id: 'Anda sedang melihat halaman {page} dalam bahasa {language}.',
+  de: 'Sie sehen die Seite {page} auf {language}.',
+  ja: '{language} の {page} ページを表示しています。',
+  mr: 'तुम्ही {language} मधील {page} पृष्ठ पाहत आहात.',
+  te: 'మీరు {language} లో {page} పేజీని చూస్తున్నారు.'
+};
+
+export function getLocalizedRouteContent(locale, route) {
+  const safeLocale = normalizeLocale(locale);
+  const routeKey = route || 'home';
+  const page = ROUTE_NAMES[safeLocale]?.[routeKey] || ROUTE_NAMES.en[routeKey] || ROUTE_NAMES.en.home;
+  const template = ROUTE_SUBTITLE_TEMPLATES[safeLocale] || ROUTE_SUBTITLE_TEMPLATES.en;
+  return {
+    title: page,
+    subtitle: template
+      .replace('{page}', page)
+      .replace('{language}', getLocaleLabel(safeLocale))
+  };
+}
+
+const STATIC_COPY = {
+  en: {
+    overview: 'Overview',
+    features: 'Key Highlights',
+    details: 'More Details',
+    pages: 'Pages',
+    wheels: 'Wheels',
+    yourName: 'Your Name',
+    email: 'Email Address',
+    message: 'Message',
+    send: 'Send Message',
+    sending: 'Sending...',
+    sent: 'Message sent successfully! We will get back to you soon.',
+    responseTime: 'Response Time',
+    featureRequests: 'Feature Requests',
+    emailCard: 'Email',
+    backHome: 'Back to Home',
+    availableLanguages: 'Available Languages',
+    whyLanguageRoutes: 'Why Language Routes?',
+    popularPages: 'Popular Pages',
+    q1: 'Is the site free to use?',
+    a1: 'Yes. The site and its wheel tools are free to use.',
+    q2: 'Does it work on mobile?',
+    a2: 'Yes. The interface is designed for desktop and mobile screens.',
+    q3: 'Can I customize the wheels?',
+    a3: 'Yes. Many wheels include advanced settings for entries, visuals, and spin behavior.',
+    q4: 'Are results random?',
+    a4: 'The wheels use randomized starting conditions and browser-based physics.',
+    lastUpdated: 'Last updated'
+  },
+  es: {
+    overview: 'Resumen', features: 'Puntos Clave', details: 'Mas Detalles', pages: 'Paginas', wheels: 'Ruletas',
+    yourName: 'Tu Nombre', email: 'Correo Electronico', message: 'Mensaje', send: 'Enviar Mensaje', sending: 'Enviando...', sent: 'Mensaje enviado correctamente. Te responderemos pronto.',
+    responseTime: 'Tiempo de Respuesta', featureRequests: 'Sugerencias', emailCard: 'Correo',
+    backHome: 'Volver al Inicio', availableLanguages: 'Idiomas Disponibles', whyLanguageRoutes: 'Por Que Hay Rutas de Idioma?', popularPages: 'Paginas Populares',
+    q1: 'El sitio es gratis?', a1: 'Si. El sitio y sus ruletas son gratis.', q2: 'Funciona en movil?', a2: 'Si. La interfaz funciona en escritorio y movil.',
+    q3: 'Puedo personalizar las ruletas?', a3: 'Si. Muchas ruletas incluyen ajustes avanzados.', q4: 'Los resultados son aleatorios?', a4: 'Las ruletas usan condiciones iniciales aleatorias y fisica del navegador.',
+    lastUpdated: 'Ultima actualizacion'
+  },
+  fr: {
+    overview: 'Vue d ensemble', features: 'Points Clés', details: 'Plus de Details', pages: 'Pages', wheels: 'Roulettes',
+    yourName: 'Votre Nom', email: 'Adresse E-mail', message: 'Message', send: 'Envoyer', sending: 'Envoi...', sent: 'Message envoye avec succes. Nous vous repondrons bientot.',
+    responseTime: 'Temps de Reponse', featureRequests: 'Demandes de Fonction', emailCard: 'E-mail',
+    backHome: 'Retour a l Accueil', availableLanguages: 'Langues Disponibles', whyLanguageRoutes: 'Pourquoi des Routes Linguistiques ?', popularPages: 'Pages Populaires',
+    q1: 'Le site est-il gratuit ?', a1: 'Oui. Le site et ses roulettes sont gratuits.', q2: 'Fonctionne-t-il sur mobile ?', a2: 'Oui. L interface fonctionne sur ordinateur et mobile.',
+    q3: 'Puis-je personnaliser les roulettes ?', a3: 'Oui. De nombreuses roulettes ont des reglages avances.', q4: 'Les resultats sont-ils aleatoires ?', a4: 'Les roulettes utilisent des conditions initiales aleatoires et la physique du navigateur.',
+    lastUpdated: 'Derniere mise a jour'
+  },
+  de: {
+    overview: 'Ubersicht', features: 'Wichtige Punkte', details: 'Weitere Details', pages: 'Seiten', wheels: 'Raeder',
+    yourName: 'Ihr Name', email: 'E-Mail-Adresse', message: 'Nachricht', send: 'Nachricht Senden', sending: 'Wird gesendet...', sent: 'Nachricht erfolgreich gesendet. Wir melden uns bald.',
+    responseTime: 'Antwortzeit', featureRequests: 'Funktionswunsche', emailCard: 'E-Mail',
+    backHome: 'Zuruck zur Startseite', availableLanguages: 'Verfugbare Sprachen', whyLanguageRoutes: 'Warum Sprachrouten?', popularPages: 'Beliebte Seiten',
+    q1: 'Ist die Seite kostenlos?', a1: 'Ja. Die Seite und ihre Raeder sind kostenlos.', q2: 'Funktioniert sie auf Mobilgeraten?', a2: 'Ja. Die Oberflache funktioniert auf Desktop und Mobil.',
+    q3: 'Kann ich die Raeder anpassen?', a3: 'Ja. Viele Raeder haben erweiterte Einstellungen.', q4: 'Sind die Ergebnisse zufallig?', a4: 'Die Raeder nutzen zufallige Startbedingungen und Browser-Physik.',
+    lastUpdated: 'Letzte Aktualisierung'
+  },
+  ar: {
+    overview: 'نظرة عامة', features: 'اهم النقاط', details: 'مزيد من التفاصيل', pages: 'الصفحات', wheels: 'العجلات',
+    yourName: 'اسمك', email: 'البريد الالكتروني', message: 'الرسالة', send: 'ارسال الرسالة', sending: 'جار الارسال...', sent: 'تم ارسال الرسالة بنجاح وسنرد عليك قريبا.',
+    responseTime: 'وقت الرد', featureRequests: 'اقتراحات الميزات', emailCard: 'البريد الالكتروني',
+    backHome: 'العودة للرئيسية', availableLanguages: 'اللغات المتاحة', whyLanguageRoutes: 'لماذا مسارات اللغات؟', popularPages: 'صفحات شائعة',
+    q1: 'هل الموقع مجاني؟', a1: 'نعم. الموقع وعجلاته مجانية.', q2: 'هل يعمل على الهاتف؟', a2: 'نعم. الواجهة تعمل على الكمبيوتر والهاتف.',
+    q3: 'هل يمكنني تخصيص العجلات؟', a3: 'نعم. كثير من العجلات تتضمن اعدادات متقدمة.', q4: 'هل النتائج عشوائية؟', a4: 'العجلات تستخدم شروط بداية عشوائية ومحاكاة فيزيائية في المتصفح.',
+    lastUpdated: 'اخر تحديث'
+  },
+  'zh-CN': {
+    overview: '概览', features: '核心亮点', details: '更多详情', pages: '页面', wheels: '转盘',
+    yourName: '你的名字', email: '电子邮箱', message: '留言', send: '发送消息', sending: '发送中...', sent: '消息已成功发送，我们会尽快回复。',
+    responseTime: '回复时间', featureRequests: '功能建议', emailCard: '邮箱',
+    backHome: '返回首页', availableLanguages: '可用语言', whyLanguageRoutes: '为什么使用语言路由？', popularPages: '热门页面',
+    q1: '网站免费吗？', a1: '是的，网站和所有转盘工具均可免费使用。', q2: '支持手机吗？', a2: '是的，界面支持桌面和移动设备。',
+    q3: '可以自定义转盘吗？', a3: '可以，许多转盘提供高级设置。', q4: '结果是随机的吗？', a4: '转盘使用随机初始条件和浏览器物理模拟。',
+    lastUpdated: '最后更新'
+  },
+  hi: {
+    overview: 'सारांश', features: 'मुख्य बिंदु', details: 'अधिक जानकारी', pages: 'पेज', wheels: 'व्हील',
+    yourName: 'आपका नाम', email: 'ईमेल पता', message: 'संदेश', send: 'संदेश भेजें', sending: 'भेजा जा रहा है...', sent: 'संदेश सफलतापूर्वक भेजा गया। हम जल्द जवाब देंगे।',
+    responseTime: 'जवाब का समय', featureRequests: 'फीचर सुझाव', emailCard: 'ईमेल',
+    backHome: 'होम पर वापस', availableLanguages: 'उपलब्ध भाषाएं', whyLanguageRoutes: 'भाषा रूट क्यों?', popularPages: 'लोकप्रिय पेज',
+    q1: 'क्या साइट मुफ्त है?', a1: 'हाँ, साइट और इसके टूल मुफ्त हैं।', q2: 'क्या यह मोबाइल पर चलता है?', a2: 'हाँ, यह डेस्कटॉप और मोबाइल दोनों पर काम करता है।',
+    q3: 'क्या मैं व्हील को कस्टमाइज़ कर सकता हूँ?', a3: 'हाँ, कई व्हील में उन्नत सेटिंग्स हैं।', q4: 'क्या परिणाम रैंडम हैं?', a4: 'व्हील यादृच्छिक प्रारंभिक स्थितियों और ब्राउज़र-आधारित फिजिक्स का उपयोग करते हैं।',
+    lastUpdated: 'अंतिम अपडेट'
+  },
+  bn: {
+    overview: 'সারসংক্ষেপ', features: 'মূল দিক', details: 'আরও বিস্তারিত', pages: 'পৃষ্ঠা', wheels: 'চাকা',
+    yourName: 'আপনার নাম', email: 'ইমেইল ঠিকানা', message: 'বার্তা', send: 'বার্তা পাঠান', sending: 'পাঠানো হচ্ছে...', sent: 'বার্তা সফলভাবে পাঠানো হয়েছে। আমরা শিগগির উত্তর দেব।',
+    responseTime: 'উত্তরের সময়', featureRequests: 'ফিচার অনুরোধ', emailCard: 'ইমেইল',
+    backHome: 'হোমে ফিরুন', availableLanguages: 'উপলভ্য ভাষা', whyLanguageRoutes: 'ভাষা রুট কেন?', popularPages: 'জনপ্রিয় পৃষ্ঠা',
+    q1: 'সাইট কি ফ্রি?', a1: 'হ্যাঁ, সাইট ও এর টুলগুলো ফ্রি।', q2: 'মোবাইলে কাজ করে?', a2: 'হ্যাঁ, ডেস্কটপ ও মোবাইল দুটোতেই কাজ করে।',
+    q3: 'চাকা কি কাস্টমাইজ করা যায়?', a3: 'হ্যাঁ, অনেক চাকায় উন্নত সেটিংস আছে।', q4: 'ফলাফল কি এলোমেলো?', a4: 'চাকা র্যান্ডম শুরু ও ব্রাউজার ফিজিক্স ব্যবহার করে।',
+    lastUpdated: 'সর্বশেষ আপডেট'
+  },
+  pt: {
+    overview: 'Visao Geral', features: 'Pontos Principais', details: 'Mais Detalhes', pages: 'Paginas', wheels: 'Roletas',
+    yourName: 'Seu Nome', email: 'Endereco de E-mail', message: 'Mensagem', send: 'Enviar Mensagem', sending: 'Enviando...', sent: 'Mensagem enviada com sucesso. Responderemos em breve.',
+    responseTime: 'Tempo de Resposta', featureRequests: 'Pedidos de Recursos', emailCard: 'E-mail',
+    backHome: 'Voltar ao Inicio', availableLanguages: 'Idiomas Disponiveis', whyLanguageRoutes: 'Por que rotas de idioma?', popularPages: 'Paginas Populares',
+    q1: 'O site e gratis?', a1: 'Sim. O site e suas roletas sao gratuitos.', q2: 'Funciona no celular?', a2: 'Sim. Funciona em desktop e mobile.',
+    q3: 'Posso personalizar as roletas?', a3: 'Sim. Muitas roletas possuem configuracoes avancadas.', q4: 'Os resultados sao aleatorios?', a4: 'As roletas usam condicoes iniciais aleatorias e fisica do navegador.',
+    lastUpdated: 'Ultima atualizacao'
+  },
+  ru: {
+    overview: 'Обзор', features: 'Основные моменты', details: 'Подробнее', pages: 'Страницы', wheels: 'Колеса',
+    yourName: 'Ваше имя', email: 'Электронная почта', message: 'Сообщение', send: 'Отправить сообщение', sending: 'Отправка...', sent: 'Сообщение успешно отправлено. Мы скоро ответим.',
+    responseTime: 'Время ответа', featureRequests: 'Предложения функций', emailCard: 'Эл. почта',
+    backHome: 'Назад на главную', availableLanguages: 'Доступные языки', whyLanguageRoutes: 'Зачем языковые маршруты?', popularPages: 'Популярные страницы',
+    q1: 'Сайт бесплатный?', a1: 'Да. Сайт и его инструменты бесплатны.', q2: 'Работает на телефоне?', a2: 'Да. Интерфейс работает на компьютере и телефоне.',
+    q3: 'Можно настроить колеса?', a3: 'Да. Многие колеса имеют расширенные настройки.', q4: 'Результаты случайны?', a4: 'Колеса используют случайные стартовые условия и физику браузера.',
+    lastUpdated: 'Последнее обновление'
+  },
+  ur: {
+    overview: 'جائزہ', features: 'اہم نکات', details: 'مزید تفصیل', pages: 'صفحات', wheels: 'ویلز',
+    yourName: 'آپ کا نام', email: 'ای میل پتہ', message: 'پیغام', send: 'پیغام بھیجیں', sending: 'بھیجا جا رہا ہے...', sent: 'پیغام کامیابی سے بھیج دیا گیا ہے۔ ہم جلد جواب دیں گے۔',
+    responseTime: 'جواب کا وقت', featureRequests: 'فیچر درخواستیں', emailCard: 'ای میل',
+    backHome: 'ہوم پر واپس جائیں', availableLanguages: 'دستیاب زبانیں', whyLanguageRoutes: 'زبان والے راستے کیوں؟', popularPages: 'مقبول صفحات',
+    q1: 'کیا یہ سائٹ مفت ہے؟', a1: 'جی ہاں، سائٹ اور اس کے ٹولز مفت ہیں۔', q2: 'کیا یہ موبائل پر کام کرتی ہے؟', a2: 'جی ہاں، یہ ڈیسک ٹاپ اور موبائل دونوں پر چلتی ہے۔',
+    q3: 'کیا میں وہیلز کو اپنی مرضی سے بدل سکتا ہوں؟', a3: 'جی ہاں، کئی وہیلز میں ایڈوانس سیٹنگز ہیں۔', q4: 'کیا نتائج رینڈم ہوتے ہیں؟', a4: 'وہیلز رینڈم شروعات اور براؤزر فزکس استعمال کرتے ہیں۔',
+    lastUpdated: 'آخری تازہ کاری'
+  },
+  id: {
+    overview: 'Ringkasan', features: 'Sorotan Utama', details: 'Detail Lainnya', pages: 'Halaman', wheels: 'Roda',
+    yourName: 'Nama Anda', email: 'Alamat Email', message: 'Pesan', send: 'Kirim Pesan', sending: 'Mengirim...', sent: 'Pesan berhasil dikirim. Kami akan segera merespons.',
+    responseTime: 'Waktu Respons', featureRequests: 'Permintaan Fitur', emailCard: 'Email',
+    backHome: 'Kembali ke Beranda', availableLanguages: 'Bahasa Tersedia', whyLanguageRoutes: 'Mengapa Rute Bahasa?', popularPages: 'Halaman Populer',
+    q1: 'Apakah situs ini gratis?', a1: 'Ya. Situs dan alat rodanya gratis.', q2: 'Apakah bekerja di ponsel?', a2: 'Ya. Antarmuka bekerja di desktop dan ponsel.',
+    q3: 'Bisakah saya menyesuaikan roda?', a3: 'Ya. Banyak roda memiliki pengaturan lanjutan.', q4: 'Apakah hasilnya acak?', a4: 'Roda menggunakan kondisi awal acak dan fisika browser.',
+    lastUpdated: 'Terakhir diperbarui'
+  },
+  ja: {
+    overview: '概要', features: '主なポイント', details: '詳細', pages: 'ページ', wheels: 'ルーレット',
+    yourName: 'お名前', email: 'メールアドレス', message: 'メッセージ', send: '送信', sending: '送信中...', sent: 'メッセージが送信されました。まもなく返信します。',
+    responseTime: '返信時間', featureRequests: '機能要望', emailCard: 'メール',
+    backHome: 'ホームに戻る', availableLanguages: '利用可能な言語', whyLanguageRoutes: 'なぜ言語ルートなのか？', popularPages: '人気ページ',
+    q1: 'このサイトは無料ですか？', a1: 'はい。サイトとツールは無料です。', q2: 'スマホで使えますか？', a2: 'はい。デスクトップとモバイルの両方で使えます。',
+    q3: 'ルーレットをカスタマイズできますか？', a3: 'はい。多くのルーレットで高度な設定が可能です。', q4: '結果はランダムですか？', a4: 'ランダムな開始条件とブラウザ物理演算を使います。',
+    lastUpdated: '最終更新'
+  },
+  mr: {
+    overview: 'आढावा', features: 'मुख्य मुद्दे', details: 'अधिक माहिती', pages: 'पृष्ठे', wheels: 'व्हील्स',
+    yourName: 'तुमचे नाव', email: 'ईमेल पत्ता', message: 'संदेश', send: 'संदेश पाठवा', sending: 'पाठवले जात आहे...', sent: 'संदेश यशस्वीपणे पाठवला गेला. आम्ही लवकरच उत्तर देऊ.',
+    responseTime: 'उत्तर वेळ', featureRequests: 'फीचर विनंत्या', emailCard: 'ईमेल',
+    backHome: 'मुख्यपृष्ठावर जा', availableLanguages: 'उपलब्ध भाषा', whyLanguageRoutes: 'भाषिक मार्ग का?', popularPages: 'लोकप्रिय पृष्ठे',
+    q1: 'ही साइट मोफत आहे का?', a1: 'होय. साइट आणि तिची साधने मोफत आहेत.', q2: 'मोबाईलवर चालते का?', a2: 'होय. डेस्कटॉप आणि मोबाईल दोन्हीवर चालते.',
+    q3: 'व्हील्स कस्टमाइझ करता येतात का?', a3: 'होय. अनेक व्हील्समध्ये प्रगत सेटिंग्स आहेत.', q4: 'निकाल रँडम असतात का?', a4: 'व्हील्स रँडम सुरुवातीच्या अटी आणि ब्राउझर फिजिक्स वापरतात.',
+    lastUpdated: 'शेवटचे अद्यतन'
+  },
+  te: {
+    overview: 'సారాంశం', features: 'ముఖ్య అంశాలు', details: 'ఇంకా వివరాలు', pages: 'పేజీలు', wheels: 'వీళ్లు',
+    yourName: 'మీ పేరు', email: 'ఇమెయిల్ చిరునామా', message: 'సందేశం', send: 'సందేశం పంపండి', sending: 'పంపిస్తున్నారు...', sent: 'సందేశం విజయవంతంగా పంపబడింది. మేము త్వరలో స్పందిస్తాము.',
+    responseTime: 'స్పందన సమయం', featureRequests: 'ఫీచర్ అభ్యర్థనలు', emailCard: 'ఇమెయిల్',
+    backHome: 'హోమ్‌కు తిరిగి వెళ్లండి', availableLanguages: 'అందుబాటులో ఉన్న భాషలు', whyLanguageRoutes: 'భాషా మార్గాలు ఎందుకు?', popularPages: 'ప్రసిద్ధ పేజీలు',
+    q1: 'సైట్ ఉచితమా?', a1: 'అవును. సైట్ మరియు దాని సాధనాలు ఉచితం.', q2: 'మొబైల్‌లో పనిచేస్తుందా?', a2: 'అవును. డెస్క్‌టాప్ మరియు మొబైల్‌లో పనిచేస్తుంది.',
+    q3: 'వీళ్లను అనుకూలీకరించవచ్చా?', a3: 'అవును. అనేక వీళ్లలో అధునాతన సెట్టింగ్‌లు ఉన్నాయి.', q4: 'ఫలితాలు యాదృచ్ఛికమా?', a4: 'వీళ్లు యాదృచ్ఛిక ప్రారంభ పరిస్థితులు మరియు బ్రౌజర్ ఫిజిక్స్‌ను ఉపయోగిస్తాయి.',
+    lastUpdated: 'చివరి నవీకరణ'
+  }
+};
+
+const STATIC_BODY_TEMPLATES = {
+  en: {
+    section1: '{page} is available in {language} with localized page structure and core browsing text.',
+    section2: 'This version is designed so visitors can move through the site in {language} without relying only on the header or footer.',
+    section3: 'Use the language switcher to keep browsing the same route in another language version at any time.'
+  },
+  es: {
+    section1: '{page} esta disponible en {language} con estructura y texto principal localizados.',
+    section2: 'Esta version permite navegar por el sitio en {language} sin depender solo del encabezado o pie de pagina.',
+    section3: 'Usa el selector de idioma para seguir navegando la misma ruta en otro idioma cuando quieras.'
+  },
+  fr: {
+    section1: '{page} est disponible en {language} avec une structure et un texte principal localises.',
+    section2: 'Cette version permet de parcourir le site en {language} sans dependre uniquement de l en-tete ou du pied de page.',
+    section3: 'Utilisez le selecteur de langue pour rester sur la meme page dans une autre langue a tout moment.'
+  },
+  de: {
+    section1: '{page} ist auf {language} mit lokalisierter Struktur und zentralem Seitentext verfugbar.',
+    section2: 'Diese Version soll das Browsen der Seite auf {language} erleichtern, nicht nur uber Kopf- oder Fusszeile.',
+    section3: 'Mit dem Sprachumschalter konnen Sie jederzeit dieselbe Route in einer anderen Sprache aufrufen.'
+  },
+  ar: {
+    section1: '{page} متاحة باللغة {language} مع بنية صفحة ونص رئيسي مترجم.',
+    section2: 'هذه النسخة تساعد الزائر على تصفح الموقع باللغة {language} وليس فقط عبر الهيدر والفوتر.',
+    section3: 'استخدم محول اللغة للانتقال الى نفس المسار في لغة اخرى في اي وقت.'
+  },
+  'zh-CN': {
+    section1: '{page} 提供 {language} 版本，并包含本地化页面结构与主要文本。',
+    section2: '此版本让访问者可以用 {language} 浏览页面，而不仅仅是看到头部和底部变化。',
+    section3: '你可以随时使用语言切换器在同一路径下切换到其他语言版本。'
+  },
+  hi: {
+    section1: '{page} अब {language} में स्थानीयकृत पेज संरचना और मुख्य पाठ के साथ उपलब्ध है।',
+    section2: 'यह संस्करण केवल हेडर और फुटर ही नहीं, बल्कि {language} में पेज ब्राउज़िंग को भी आसान बनाता है।',
+    section3: 'आप भाषा स्विचर से किसी भी समय इसी रूट को दूसरी भाषा में देख सकते हैं।'
+  },
+  bn: {
+    section1: '{page} এখন {language} ভাষায় লোকালাইজড পেজ কাঠামো ও মূল টেক্সটসহ পাওয়া যাচ্ছে।',
+    section2: 'এই সংস্করণ শুধু হেডার বা ফুটার নয়, {language} ভাষায় পৃষ্ঠা দেখাও সহজ করে।',
+    section3: 'আপনি ভাষা সুইচারের মাধ্যমে একই রুট অন্য ভাষায়ও দেখতে পারবেন।'
+  },
+  pt: {
+    section1: '{page} esta disponivel em {language} com estrutura e texto principal localizados.',
+    section2: 'Esta versao ajuda a navegar no site em {language}, nao apenas ver mudancas no cabecalho e rodape.',
+    section3: 'Use o seletor de idioma para continuar na mesma rota em outro idioma quando quiser.'
+  },
+  ru: {
+    section1: '{page} доступна на языке {language} с локализованной структурой и основным текстом.',
+    section2: 'Эта версия помогает просматривать сайт на {language}, а не только видеть изменения в шапке и подвале.',
+    section3: 'Используйте переключатель языка, чтобы открыть тот же маршрут на другом языке в любое время.'
+  },
+  ur: {
+    section1: '{page} اب {language} میں لوکلائزڈ صفحہ ساخت اور بنیادی متن کے ساتھ دستیاب ہے۔',
+    section2: 'یہ ورژن صرف ہیڈر اور فوٹر نہیں بلکہ پورا صفحہ {language} میں دیکھنے میں مدد دیتا ہے۔',
+    section3: 'آپ کسی بھی وقت زبان بدلنے والے بٹن سے یہی روٹ دوسری زبان میں کھول سکتے ہیں۔'
+  },
+  id: {
+    section1: '{page} tersedia dalam {language} dengan struktur halaman dan teks utama yang dilokalkan.',
+    section2: 'Versi ini membantu pengunjung menjelajahi situs dalam {language}, bukan hanya melihat perubahan di header dan footer.',
+    section3: 'Gunakan pengalih bahasa untuk membuka rute yang sama dalam bahasa lain kapan saja.'
+  },
+  ja: {
+    section1: '{page} は {language} で利用でき、ページ構成と主要テキストもローカライズされています。',
+    section2: 'このバージョンでは、ヘッダーやフッターだけでなく、本文も {language} で閲覧しやすくなっています。',
+    section3: '言語切り替えを使えば、同じルートを別の言語でもいつでも表示できます。'
+  },
+  mr: {
+    section1: '{page} आता {language} मध्ये स्थानिक पृष्ठ रचना आणि मुख्य मजकुरासह उपलब्ध आहे.',
+    section2: 'ही आवृत्ती फक्त हेडर आणि फूटर नाही तर संपूर्ण पृष्ठ {language} मध्ये पाहण्यास मदत करते.',
+    section3: 'भाषा स्विचर वापरून तुम्ही हीच रूट इतर भाषेत कधीही पाहू शकता.'
+  },
+  te: {
+    section1: '{page} ఇప్పుడు {language} లో స్థానికీకరించిన పేజీ నిర్మాణం మరియు ప్రధాన పాఠ్యంతో అందుబాటులో ఉంది.',
+    section2: 'ఈ వెర్షన్ హెడర్, ఫుటర్ మాత్రమే కాకుండా పేజీ శరీరాన్ని కూడా {language} లో చూపించేందుకు సహాయపడుతుంది.',
+    section3: 'మీరు భాషా స్విచర్ ద్వారా ఇదే మార్గాన్ని ఇతర భాషలో ఎప్పుడైనా తెరవవచ్చు.'
+  }
+};
+
+function getStaticCopy(locale) {
+  return STATIC_COPY[normalizeLocale(locale)] || STATIC_COPY.en;
+}
+
+export function getStaticPageContent(locale, route) {
+  const safeLocale = normalizeLocale(locale);
+  const routeInfo = getLocalizedRouteContent(safeLocale, route);
+  const copy = getStaticCopy(safeLocale);
+  const language = getLocaleLabel(safeLocale);
+  const bodyTemplates = STATIC_BODY_TEMPLATES[safeLocale] || STATIC_BODY_TEMPLATES.en;
+
+  if (route === 'contact') {
+    return {
+      title: routeInfo.title,
+      intro: routeInfo.subtitle,
+      form: {
+        name: copy.yourName,
+        email: copy.email,
+        message: copy.message,
+        submit: copy.send,
+        sending: copy.sending,
+        sent: `✅ ${copy.sent}`
+      },
+      cards: [
+        { title: copy.emailCard, body: 'contact@yesandnowheel.com' },
+        { title: copy.responseTime, body: routeInfo.subtitle },
+        { title: copy.featureRequests, body: routeInfo.subtitle }
+      ]
+    };
+  }
+
+  if (route === 'sitemap') {
+    return {
+      title: routeInfo.title,
+      intro: routeInfo.subtitle,
+      sectionPages: copy.pages,
+      sectionWheels: copy.wheels
+    };
+  }
+
+  if (route === 'faq') {
+    return {
+      title: routeInfo.title,
+      intro: routeInfo.subtitle,
+      items: [
+        { q: copy.q1, a: copy.a1 },
+        { q: copy.q2, a: copy.a2 },
+        { q: copy.q3, a: copy.a3 },
+        { q: copy.q4, a: copy.a4 }
+      ]
+    };
+  }
+
+  if (route === 'languages') {
+    return {
+      title: routeInfo.title,
+      intro: routeInfo.subtitle,
+      headings: {
+        available: copy.availableLanguages,
+        why: copy.whyLanguageRoutes,
+        popular: copy.popularPages
+      }
+    };
+  }
+
+  if (route === '404') {
+    return {
+      title: '404',
+      intro: routeInfo.subtitle,
+      backHome: copy.backHome
+    };
+  }
+
+  return {
+    title: routeInfo.title,
+    intro: routeInfo.subtitle,
+    sections: [
+      {
+        heading: copy.overview,
+        body: bodyTemplates.section1
+          .replace('{page}', routeInfo.title)
+          .replace('{language}', language)
+      },
+      {
+        heading: copy.features,
+        body: bodyTemplates.section2
+          .replace('{page}', routeInfo.title)
+          .replace('{language}', language)
+      },
+      {
+        heading: copy.details,
+        body: bodyTemplates.section3
+          .replace('{page}', routeInfo.title)
+          .replace('{language}', language)
+      }
+    ],
+    lastUpdatedLabel: copy.lastUpdated
+  };
+}
+
+const CUSTOMIZATION_TRANSLATIONS = {
+  en: {
+    toggleAdvancedMode: 'Toggle Advanced Mode',
+    advancedMode: 'Advanced Mode',
+    entryManagement: 'Entry Management',
+    entryPlaceholder: 'Enter items, one per line...',
+    apply: 'Apply',
+    shuffle: 'Shuffle',
+    clear: 'Clear',
+    visualStyling: 'Visual Styling',
+    fontSize: 'Font Size',
+    theme: 'Theme',
+    dark: 'Dark',
+    light: 'Light',
+    audioControls: 'Audio Controls',
+    tickSound: 'Tick Sound',
+    winnerFanfare: 'Winner Fanfare',
+    volume: 'Volume',
+    physicsSettings: 'Physics Settings',
+    spinPower: 'Spin Power',
+    duration: 'Duration',
+    resultsHistory: 'Results History',
+    clearHistory: 'Clear History',
+    noSpinsYet: 'No spins yet'
+  },
+  'zh-CN': {
+    toggleAdvancedMode: '切换高级模式',
+    advancedMode: '高级模式',
+    entryManagement: '条目管理',
+    entryPlaceholder: '每行输入一个项目...',
+    apply: '应用',
+    shuffle: '打乱',
+    clear: '清空',
+    visualStyling: '视觉样式',
+    fontSize: '字体大小',
+    theme: '主题',
+    dark: '深色',
+    light: '浅色',
+    audioControls: '音频控制',
+    tickSound: '滴答音效',
+    winnerFanfare: '获胜提示音',
+    volume: '音量',
+    physicsSettings: '物理设置',
+    spinPower: '旋转力度',
+    duration: '持续时间',
+    resultsHistory: '结果历史',
+    clearHistory: '清除历史',
+    noSpinsYet: '还没有旋转记录'
+  },
+  hi: {
+    toggleAdvancedMode: 'एडवांस मोड बदलें',
+    advancedMode: 'एडवांस मोड',
+    entryManagement: 'एंट्री प्रबंधन',
+    entryPlaceholder: 'हर पंक्ति में एक आइटम लिखें...',
+    apply: 'लागू करें',
+    shuffle: 'मिलाएं',
+    clear: 'साफ करें',
+    visualStyling: 'विजुअल स्टाइल',
+    fontSize: 'फॉन्ट आकार',
+    theme: 'थीम',
+    dark: 'डार्क',
+    light: 'लाइट',
+    audioControls: 'ऑडियो नियंत्रण',
+    tickSound: 'टिक ध्वनि',
+    winnerFanfare: 'विजेता धुन',
+    volume: 'वॉल्यूम',
+    physicsSettings: 'फिजिक्स सेटिंग्स',
+    spinPower: 'स्पिन पावर',
+    duration: 'अवधि',
+    resultsHistory: 'परिणाम इतिहास',
+    clearHistory: 'इतिहास साफ करें',
+    noSpinsYet: 'अभी तक कोई स्पिन नहीं'
+  },
+  es: {
+    toggleAdvancedMode: 'Cambiar modo avanzado',
+    advancedMode: 'Modo Avanzado',
+    entryManagement: 'Gestion de Entradas',
+    entryPlaceholder: 'Escribe un elemento por linea...',
+    apply: 'Aplicar',
+    shuffle: 'Mezclar',
+    clear: 'Limpiar',
+    visualStyling: 'Estilo Visual',
+    fontSize: 'Tamano de Fuente',
+    theme: 'Tema',
+    dark: 'Oscuro',
+    light: 'Claro',
+    audioControls: 'Controles de Audio',
+    tickSound: 'Sonido de Tic',
+    winnerFanfare: 'Fanfarria',
+    volume: 'Volumen',
+    physicsSettings: 'Ajustes de Fisica',
+    spinPower: 'Potencia',
+    duration: 'Duracion',
+    resultsHistory: 'Historial',
+    clearHistory: 'Borrar Historial',
+    noSpinsYet: 'Aun no hay giros'
+  },
+  ar: {
+    toggleAdvancedMode: 'تبديل الوضع المتقدم',
+    advancedMode: 'الوضع المتقدم',
+    entryManagement: 'ادارة العناصر',
+    entryPlaceholder: 'اكتب عنصرا واحدا في كل سطر...',
+    apply: 'تطبيق',
+    shuffle: 'خلط',
+    clear: 'مسح',
+    visualStyling: 'المظهر',
+    fontSize: 'حجم الخط',
+    theme: 'السمة',
+    dark: 'داكن',
+    light: 'فاتح',
+    audioControls: 'اعدادات الصوت',
+    tickSound: 'صوت النقر',
+    winnerFanfare: 'صوت الفوز',
+    volume: 'مستوى الصوت',
+    physicsSettings: 'اعدادات الحركة',
+    spinPower: 'قوة الدوران',
+    duration: 'المدة',
+    resultsHistory: 'سجل النتائج',
+    clearHistory: 'مسح السجل',
+    noSpinsYet: 'لا توجد نتائج بعد'
+  },
+  fr: {
+    toggleAdvancedMode: 'Basculer le mode avance',
+    advancedMode: 'Mode Avance',
+    entryManagement: 'Gestion des Entrees',
+    entryPlaceholder: 'Entrez un element par ligne...',
+    apply: 'Appliquer',
+    shuffle: 'Melanger',
+    clear: 'Effacer',
+    visualStyling: 'Style Visuel',
+    fontSize: 'Taille du Texte',
+    theme: 'Theme',
+    dark: 'Sombre',
+    light: 'Clair',
+    audioControls: 'Reglages Audio',
+    tickSound: 'Son du Tic',
+    winnerFanfare: 'Fanfare',
+    volume: 'Volume',
+    physicsSettings: 'Reglages Physiques',
+    spinPower: 'Puissance',
+    duration: 'Duree',
+    resultsHistory: 'Historique',
+    clearHistory: 'Effacer l historique',
+    noSpinsYet: 'Aucun tirage pour le moment'
+  },
+  bn: {
+    toggleAdvancedMode: 'অ্যাডভান্স মোড বদলান',
+    advancedMode: 'অ্যাডভান্স মোড',
+    entryManagement: 'এন্ট্রি ম্যানেজমেন্ট',
+    entryPlaceholder: 'প্রতি লাইনে একটি করে আইটেম লিখুন...',
+    apply: 'প্রয়োগ',
+    shuffle: 'মিশান',
+    clear: 'মুছুন',
+    visualStyling: 'ভিজুয়াল স্টাইল',
+    fontSize: 'ফন্ট সাইজ',
+    theme: 'থিম',
+    dark: 'ডার্ক',
+    light: 'লাইট',
+    audioControls: 'অডিও কন্ট্রোল',
+    tickSound: 'টিক সাউন্ড',
+    winnerFanfare: 'উইনার ফ্যানফেয়ার',
+    volume: 'ভলিউম',
+    physicsSettings: 'ফিজিক্স সেটিংস',
+    spinPower: 'স্পিন পাওয়ার',
+    duration: 'সময়',
+    resultsHistory: 'ফলাফলের ইতিহাস',
+    clearHistory: 'ইতিহাস মুছুন',
+    noSpinsYet: 'এখনও কোনো স্পিন হয়নি'
+  },
+  pt: {
+    toggleAdvancedMode: 'Alternar modo avancado',
+    advancedMode: 'Modo Avancado',
+    entryManagement: 'Gerenciamento de Entradas',
+    entryPlaceholder: 'Digite um item por linha...',
+    apply: 'Aplicar',
+    shuffle: 'Misturar',
+    clear: 'Limpar',
+    visualStyling: 'Estilo Visual',
+    fontSize: 'Tamanho da Fonte',
+    theme: 'Tema',
+    dark: 'Escuro',
+    light: 'Claro',
+    audioControls: 'Controles de Audio',
+    tickSound: 'Som de Tique',
+    winnerFanfare: 'Fanfarra',
+    volume: 'Volume',
+    physicsSettings: 'Configuracoes Fisicas',
+    spinPower: 'Potencia',
+    duration: 'Duracao',
+    resultsHistory: 'Historico',
+    clearHistory: 'Limpar Historico',
+    noSpinsYet: 'Nenhum giro ainda'
+  },
+  ru: {
+    toggleAdvancedMode: 'Переключить расширенный режим',
+    advancedMode: 'Расширенный режим',
+    entryManagement: 'Управление списком',
+    entryPlaceholder: 'Введите по одному пункту в строке...',
+    apply: 'Применить',
+    shuffle: 'Перемешать',
+    clear: 'Очистить',
+    visualStyling: 'Визуальный стиль',
+    fontSize: 'Размер шрифта',
+    theme: 'Тема',
+    dark: 'Темная',
+    light: 'Светлая',
+    audioControls: 'Настройки звука',
+    tickSound: 'Звук тика',
+    winnerFanfare: 'Фанфары победы',
+    volume: 'Громкость',
+    physicsSettings: 'Физика',
+    spinPower: 'Сила вращения',
+    duration: 'Длительность',
+    resultsHistory: 'История результатов',
+    clearHistory: 'Очистить историю',
+    noSpinsYet: 'Пока нет вращений'
+  },
+  ur: {
+    toggleAdvancedMode: 'ایڈوانس موڈ بدلیں',
+    advancedMode: 'ایڈوانس موڈ',
+    entryManagement: 'اندراجات کا نظم',
+    entryPlaceholder: 'ہر سطر میں ایک آئٹم لکھیں...',
+    apply: 'لاگو کریں',
+    shuffle: 'ملا دیں',
+    clear: 'صاف کریں',
+    visualStyling: 'ظاہری انداز',
+    fontSize: 'فونٹ سائز',
+    theme: 'تھیم',
+    dark: 'ڈارک',
+    light: 'لائٹ',
+    audioControls: 'آڈیو کنٹرول',
+    tickSound: 'ٹک آواز',
+    winnerFanfare: 'جیت کی دھن',
+    volume: 'آواز',
+    physicsSettings: 'فزکس سیٹنگز',
+    spinPower: 'اسپن پاور',
+    duration: 'دورانیہ',
+    resultsHistory: 'نتائج کی ہسٹری',
+    clearHistory: 'ہسٹری صاف کریں',
+    noSpinsYet: 'ابھی کوئی اسپن نہیں'
+  },
+  id: {
+    toggleAdvancedMode: 'Ubah mode lanjutan',
+    advancedMode: 'Mode Lanjutan',
+    entryManagement: 'Manajemen Entri',
+    entryPlaceholder: 'Masukkan satu item per baris...',
+    apply: 'Terapkan',
+    shuffle: 'Acak',
+    clear: 'Hapus',
+    visualStyling: 'Gaya Visual',
+    fontSize: 'Ukuran Font',
+    theme: 'Tema',
+    dark: 'Gelap',
+    light: 'Terang',
+    audioControls: 'Kontrol Audio',
+    tickSound: 'Suara Tick',
+    winnerFanfare: 'Fanfare Pemenang',
+    volume: 'Volume',
+    physicsSettings: 'Pengaturan Fisika',
+    spinPower: 'Kekuatan Putar',
+    duration: 'Durasi',
+    resultsHistory: 'Riwayat Hasil',
+    clearHistory: 'Hapus Riwayat',
+    noSpinsYet: 'Belum ada putaran'
+  },
+  de: {
+    toggleAdvancedMode: 'Erweiterten Modus umschalten',
+    advancedMode: 'Erweiterter Modus',
+    entryManagement: 'Eintragsverwaltung',
+    entryPlaceholder: 'Ein Element pro Zeile eingeben...',
+    apply: 'Anwenden',
+    shuffle: 'Mischen',
+    clear: 'Leeren',
+    visualStyling: 'Visueller Stil',
+    fontSize: 'Schriftgroesse',
+    theme: 'Thema',
+    dark: 'Dunkel',
+    light: 'Hell',
+    audioControls: 'Audio-Steuerung',
+    tickSound: 'Tick-Sound',
+    winnerFanfare: 'Siegerfanfare',
+    volume: 'Lautstaerke',
+    physicsSettings: 'Physik-Einstellungen',
+    spinPower: 'Drehkraft',
+    duration: 'Dauer',
+    resultsHistory: 'Verlauf',
+    clearHistory: 'Verlauf loeschen',
+    noSpinsYet: 'Noch keine Drehungen'
+  },
+  ja: {
+    toggleAdvancedMode: '詳細モードを切り替える',
+    advancedMode: '詳細モード',
+    entryManagement: '項目管理',
+    entryPlaceholder: '1行に1項目ずつ入力...',
+    apply: '適用',
+    shuffle: 'シャッフル',
+    clear: 'クリア',
+    visualStyling: '表示スタイル',
+    fontSize: '文字サイズ',
+    theme: 'テーマ',
+    dark: 'ダーク',
+    light: 'ライト',
+    audioControls: '音声設定',
+    tickSound: 'ティック音',
+    winnerFanfare: '当選ファンファーレ',
+    volume: '音量',
+    physicsSettings: '物理設定',
+    spinPower: '回転力',
+    duration: '時間',
+    resultsHistory: '結果履歴',
+    clearHistory: '履歴を消去',
+    noSpinsYet: 'まだ結果がありません'
+  },
+  mr: {
+    toggleAdvancedMode: 'अॅडव्हान्स मोड बदला',
+    advancedMode: 'अॅडव्हान्स मोड',
+    entryManagement: 'एंट्री व्यवस्थापन',
+    entryPlaceholder: 'प्रत्येक ओळीत एक आयटम लिहा...',
+    apply: 'लागू करा',
+    shuffle: 'मिसळा',
+    clear: 'साफ करा',
+    visualStyling: 'दृश्य शैली',
+    fontSize: 'फॉन्ट आकार',
+    theme: 'थीम',
+    dark: 'डार्क',
+    light: 'लाईट',
+    audioControls: 'ऑडिओ नियंत्रणे',
+    tickSound: 'टिक आवाज',
+    winnerFanfare: 'विजेता धून',
+    volume: 'आवाज',
+    physicsSettings: 'फिजिक्स सेटिंग्ज',
+    spinPower: 'स्पिन पॉवर',
+    duration: 'कालावधी',
+    resultsHistory: 'निकाल इतिहास',
+    clearHistory: 'इतिहास साफ करा',
+    noSpinsYet: 'अजून स्पिन नाही'
+  },
+  te: {
+    toggleAdvancedMode: 'అడ్వాన్స్ మోడ్ మార్చండి',
+    advancedMode: 'అడ్వాన్స్ మోడ్',
+    entryManagement: 'ఎంట్రీ నిర్వహణ',
+    entryPlaceholder: 'ప్రతి లైన్లో ఒక అంశం ఇవ్వండి...',
+    apply: 'వర్తింపజేయి',
+    shuffle: 'కలపు',
+    clear: 'తుడిచేయి',
+    visualStyling: 'విజువల్ స్టైల్',
+    fontSize: 'ఫాంట్ పరిమాణం',
+    theme: 'థీమ్',
+    dark: 'డార్క్',
+    light: 'లైట్',
+    audioControls: 'ఆడియో నియంత్రణలు',
+    tickSound: 'టిక్ శబ్దం',
+    winnerFanfare: 'విజేత శబ్దం',
+    volume: 'వాల్యూం',
+    physicsSettings: 'ఫిజిక్స్ సెట్టింగులు',
+    spinPower: 'స్పిన్ శక్తి',
+    duration: 'వ్యవధి',
+    resultsHistory: 'ఫలితాల చరిత్ర',
+    clearHistory: 'చరిత్ర తొలగించు',
+    noSpinsYet: 'ఇంకా స్పిన్ లేదు'
+  }
+};
+
+const WHEEL_SHARED_TRANSLATIONS = {
+  en: {
+    subtitle: 'Use the {page} to spin through choices and get a quick random result.',
+    howToUse: 'How to Use the {page}',
+    howToIntro: 'The {page} is ready to help you spin, explore options, and land on a result in seconds.',
+    step1Title: 'Review Options',
+    step1Desc: 'Look over the available entries and keep the ones you want on the wheel.',
+    step2Title: 'Adjust Settings',
+    step2Desc: 'Use the controls on the page to tune what appears before you spin.',
+    step3Title: 'Spin and Read the Result',
+    step3Desc: 'Press the main spin button and use the winner right away.',
+    spinNow: 'SPIN NOW',
+    resultReady: 'Result ready'
+  },
+  'zh-CN': {
+    subtitle: '使用{page}快速旋转选项并获得随机结果。',
+    howToUse: '如何使用{page}',
+    howToIntro: '{page}可以帮助你快速旋转、浏览选项并立即得到结果。',
+    step1Title: '查看选项',
+    step1Desc: '查看当前可用的项目，并保留你想放在转盘上的内容。',
+    step2Title: '调整设置',
+    step2Desc: '使用页面上的控件来调整旋转前显示的内容。',
+    step3Title: '旋转并查看结果',
+    step3Desc: '点击主旋转按钮并立即使用获胜结果。',
+    spinNow: '立即旋转',
+    resultReady: '结果已生成'
+  },
+  hi: {
+    subtitle: '{page} का उपयोग करके विकल्प घुमाएं और जल्दी रैंडम परिणाम पाएं।',
+    howToUse: '{page} का उपयोग कैसे करें',
+    howToIntro: '{page} आपको जल्दी स्पिन करने, विकल्प देखने और तुरंत परिणाम पाने में मदद करता है।',
+    step1Title: 'विकल्प देखें',
+    step1Desc: 'उपलब्ध एंट्री देखें और जिन्हें रखना है उन्हें व्हील पर रखें।',
+    step2Title: 'सेटिंग बदलें',
+    step2Desc: 'स्पिन से पहले दिखने वाली चीजों को पेज के कंट्रोल से बदलें।',
+    step3Title: 'स्पिन करें और परिणाम देखें',
+    step3Desc: 'मुख्य स्पिन बटन दबाएं और जीतने वाले परिणाम का उपयोग करें।',
+    spinNow: 'अभी घुमाएं',
+    resultReady: 'परिणाम तैयार'
+  },
+  es: {
+    subtitle: 'Usa {page} para girar opciones y obtener un resultado aleatorio rapido.',
+    howToUse: 'Como usar {page}',
+    howToIntro: '{page} te ayuda a girar, revisar opciones y obtener un resultado en segundos.',
+    step1Title: 'Revisa las opciones',
+    step1Desc: 'Mira las entradas disponibles y deja en la ruleta solo las que quieras usar.',
+    step2Title: 'Ajusta la configuracion',
+    step2Desc: 'Usa los controles de la pagina para decidir que aparece antes de girar.',
+    step3Title: 'Gira y lee el resultado',
+    step3Desc: 'Pulsa el boton principal y usa el resultado ganador enseguida.',
+    spinNow: 'GIRAR AHORA',
+    resultReady: 'Resultado listo'
+  },
+  ar: {
+    subtitle: 'استخدم {page} لتدوير الخيارات والحصول على نتيجة عشوائية بسرعة.',
+    howToUse: 'كيفية استخدام {page}',
+    howToIntro: 'يساعدك {page} على التدوير ومراجعة الخيارات والوصول الى نتيجة خلال ثوان.',
+    step1Title: 'راجع الخيارات',
+    step1Desc: 'راجع العناصر المتاحة واترك فقط ما تريد ظهوره على العجلة.',
+    step2Title: 'اضبط الاعدادات',
+    step2Desc: 'استخدم عناصر التحكم في الصفحة لتحديد ما يظهر قبل التدوير.',
+    step3Title: 'قم بالتدوير واقرأ النتيجة',
+    step3Desc: 'اضغط زر التدوير الرئيسي واستخدم النتيجة الفائزة مباشرة.',
+    spinNow: 'ابدأ الدوران',
+    resultReady: 'النتيجة جاهزة'
+  },
+  fr: {
+    subtitle: 'Utilisez {page} pour faire tourner des choix et obtenir rapidement un resultat aleatoire.',
+    howToUse: 'Comment utiliser {page}',
+    howToIntro: '{page} vous aide a faire tourner, parcourir les options et obtenir un resultat en quelques secondes.',
+    step1Title: 'Verifier les options',
+    step1Desc: 'Consultez les entrees disponibles et gardez celles que vous voulez sur la roue.',
+    step2Title: 'Ajuster les reglages',
+    step2Desc: 'Utilisez les controles de la page pour definir ce qui apparait avant le tirage.',
+    step3Title: 'Lancer et lire le resultat',
+    step3Desc: 'Appuyez sur le bouton principal et utilisez le resultat gagnant tout de suite.',
+    spinNow: 'LANCER',
+    resultReady: 'Resultat pret'
+  },
+  bn: {
+    subtitle: '{page} ব্যবহার করে অপশন ঘুরিয়ে দ্রুত একটি র্যান্ডম ফলাফল নিন।',
+    howToUse: '{page} কীভাবে ব্যবহার করবেন',
+    howToIntro: '{page} আপনাকে দ্রুত স্পিন করতে, অপশন দেখতে এবং কয়েক সেকেন্ডে ফল পেতে সাহায্য করে।',
+    step1Title: 'অপশন দেখুন',
+    step1Desc: 'যে এন্ট্রিগুলো রাখতে চান সেগুলো রেখে বাকি অপশন পর্যালোচনা করুন।',
+    step2Title: 'সেটিংস বদলান',
+    step2Desc: 'স্পিনের আগে কী দেখা যাবে তা পেজের কন্ট্রোল দিয়ে ঠিক করুন।',
+    step3Title: 'স্পিন করুন এবং ফল দেখুন',
+    step3Desc: 'মূল স্পিন বাটন চাপুন এবং জেতা ফলটি ব্যবহার করুন।',
+    spinNow: 'এখনই স্পিন',
+    resultReady: 'ফল প্রস্তুত'
+  },
+  pt: {
+    subtitle: 'Use {page} para girar opcoes e obter um resultado aleatorio rapidamente.',
+    howToUse: 'Como usar {page}',
+    howToIntro: '{page} ajuda voce a girar, revisar opcoes e chegar a um resultado em segundos.',
+    step1Title: 'Revise as opcoes',
+    step1Desc: 'Veja as entradas disponiveis e mantenha na roda apenas o que voce quer usar.',
+    step2Title: 'Ajuste as configuracoes',
+    step2Desc: 'Use os controles da pagina para definir o que aparece antes do giro.',
+    step3Title: 'Gire e veja o resultado',
+    step3Desc: 'Pressione o botao principal e use o resultado vencedor na hora.',
+    spinNow: 'GIRAR AGORA',
+    resultReady: 'Resultado pronto'
+  },
+  ru: {
+    subtitle: 'Используйте {page}, чтобы быстро прокрутить варианты и получить случайный результат.',
+    howToUse: 'Как использовать {page}',
+    howToIntro: '{page} помогает быстро крутить колесо, смотреть варианты и получать результат за секунды.',
+    step1Title: 'Проверьте варианты',
+    step1Desc: 'Посмотрите доступные пункты и оставьте на колесе только нужные.',
+    step2Title: 'Настройте параметры',
+    step2Desc: 'Используйте элементы управления, чтобы изменить содержимое до вращения.',
+    step3Title: 'Прокрутите и прочитайте результат',
+    step3Desc: 'Нажмите основную кнопку вращения и сразу используйте победивший результат.',
+    spinNow: 'КРУТИТЬ',
+    resultReady: 'Результат готов'
+  },
+  ur: {
+    subtitle: '{page} استعمال کریں اور تیزی سے ایک رینڈم نتیجہ حاصل کریں۔',
+    howToUse: '{page} کیسے استعمال کریں',
+    howToIntro: '{page} آپ کو جلدی اسپن کرنے، آپشنز دیکھنے اور چند سیکنڈ میں نتیجہ پانے میں مدد دیتا ہے۔',
+    step1Title: 'آپشنز دیکھیں',
+    step1Desc: 'موجود اندراجات دیکھیں اور صرف وہی آئٹمز رکھیں جو آپ وہیل پر چاہتے ہیں۔',
+    step2Title: 'سیٹنگز بدلیں',
+    step2Desc: 'اسپن سے پہلے کیا نظر آئے گا اسے صفحے کے کنٹرولز سے بدلیں۔',
+    step3Title: 'اسپن کریں اور نتیجہ دیکھیں',
+    step3Desc: 'مرکزی اسپن بٹن دبائیں اور جیتنے والا نتیجہ فوراً استعمال کریں۔',
+    spinNow: 'ابھی اسپن کریں',
+    resultReady: 'نتیجہ تیار ہے'
+  },
+  id: {
+    subtitle: 'Gunakan {page} untuk memutar pilihan dan mendapatkan hasil acak dengan cepat.',
+    howToUse: 'Cara menggunakan {page}',
+    howToIntro: '{page} membantu Anda memutar, meninjau opsi, dan mendapatkan hasil dalam hitungan detik.',
+    step1Title: 'Tinjau opsi',
+    step1Desc: 'Lihat entri yang tersedia dan sisakan yang ingin Anda pakai di roda.',
+    step2Title: 'Atur pengaturan',
+    step2Desc: 'Gunakan kontrol di halaman untuk mengubah apa yang muncul sebelum memutar.',
+    step3Title: 'Putar dan lihat hasil',
+    step3Desc: 'Tekan tombol utama lalu gunakan hasil pemenang segera.',
+    spinNow: 'PUTAR SEKARANG',
+    resultReady: 'Hasil siap'
+  },
+  de: {
+    subtitle: 'Nutze {page}, um Optionen zu drehen und schnell ein Zufallsergebnis zu erhalten.',
+    howToUse: 'So verwendest du {page}',
+    howToIntro: '{page} hilft dir dabei, Optionen zu drehen und in Sekunden ein Ergebnis zu bekommen.',
+    step1Title: 'Optionen ansehen',
+    step1Desc: 'Pruefe die verfuegbaren Eintraege und lasse nur die gewuenschten auf dem Rad.',
+    step2Title: 'Einstellungen anpassen',
+    step2Desc: 'Nutze die Steuerelemente auf der Seite, um Inhalte vor dem Drehen anzupassen.',
+    step3Title: 'Drehen und Ergebnis lesen',
+    step3Desc: 'Druecke den Hauptbutton und nutze das Gewinnerergebnis direkt.',
+    spinNow: 'JETZT DREHEN',
+    resultReady: 'Ergebnis bereit'
+  },
+  ja: {
+    subtitle: '{page}を使って選択肢を回し、すばやくランダムな結果を得られます。',
+    howToUse: '{page}の使い方',
+    howToIntro: '{page}は、選択肢を回して数秒で結果にたどり着くためのページです。',
+    step1Title: '選択肢を確認する',
+    step1Desc: '利用可能な項目を確認し、ホイールに残したいものだけを使います。',
+    step2Title: '設定を調整する',
+    step2Desc: '回す前に表示内容をページのコントロールで調整します。',
+    step3Title: '回して結果を見る',
+    step3Desc: 'メインの回転ボタンを押して、当たり結果をすぐ使えます。',
+    spinNow: '今すぐ回す',
+    resultReady: '結果が出ました'
+  },
+  mr: {
+    subtitle: '{page} वापरून पर्याय फिरवा आणि पटकन एक रँडम निकाल मिळवा.',
+    howToUse: '{page} कसे वापरावे',
+    howToIntro: '{page} तुम्हाला पटकन स्पिन करून काही सेकंदांत निकाल मिळवायला मदत करते.',
+    step1Title: 'पर्याय पहा',
+    step1Desc: 'उपलब्ध नोंदी पहा आणि व्हीलवर हव्या त्या नोंदी ठेवा.',
+    step2Title: 'सेटिंग बदला',
+    step2Desc: 'स्पिनपूर्वी काय दिसेल ते पेजवरील कंट्रोल्सने ठरवा.',
+    step3Title: 'स्पिन करा आणि निकाल पहा',
+    step3Desc: 'मुख्य स्पिन बटण दाबा आणि जिंकलेला निकाल लगेच वापरा.',
+    spinNow: 'आता स्पिन करा',
+    resultReady: 'निकाल तयार'
+  },
+  te: {
+    subtitle: '{page} ను ఉపయోగించి ఎంపికలను తిప్పి త్వరగా ఒక యాదృచ్ఛిక ఫలితం పొందండి.',
+    howToUse: '{page} ను ఎలా ఉపయోగించాలి',
+    howToIntro: '{page} మీకు త్వరగా స్పిన్ చేసి కొన్ని సెకన్లలో ఫలితం అందిస్తుంది.',
+    step1Title: 'ఎంపికలను చూడండి',
+    step1Desc: 'అందుబాటులో ఉన్న ఎంట్రీలను చూసి మీకు కావాల్సినవే వీల్‌లో ఉంచండి.',
+    step2Title: 'సెట్టింగులను మార్చండి',
+    step2Desc: 'స్పిన్ ముందు ఏమి కనిపించాలో పేజీ కంట్రోల్స్‌తో మార్చండి.',
+    step3Title: 'స్పిన్ చేసి ఫలితం చూడండి',
+    step3Desc: 'ప్రధాన స్పిన్ బటన్ నొక్కి గెలిచిన ఫలితాన్ని వెంటనే ఉపయోగించండి.',
+    spinNow: 'ఇప్పుడే స్పిన్ చేయండి',
+    resultReady: 'ఫలితం సిద్ధం'
+  }
+};
+
+const WHEEL_UI_TRANSLATIONS = {
+  en: {
+    regionFilters: 'Region Filters',
+    countriesSelected: '{count} countries selected',
+    enableAtLeastTwoRegions: 'Please enable at least 2 regions!',
+    spinGlobe: 'SPIN THE GLOBE',
+    themeLibrary: 'Theme Library',
+    themesCount: '{count} themes',
+    all: 'All',
+    selectAll: 'Select All',
+    deselectAll: 'Deselect All',
+    spinForTheme: 'SPIN FOR A THEME',
+    enableAtLeastTwoThemes: 'Please enable at least 2 themes!',
+    dtiResultSubtitle: 'Time to dress to impress!',
+    colorPalette: 'Color Palette',
+    allColors: 'All Colors',
+    customColorPlaceholder: 'Custom color name (e.g. Mint Green)',
+    add: 'Add',
+    spinForColor: 'SPIN FOR A COLOR',
+    selectAtLeastTwoColors: 'Select at least 2 colors!',
+    autoGradient: 'Auto-Gradient (ROYGBIV)',
+    outcomeWeights: 'Outcome Weights',
+    outcomeWeightHint: 'Drag sliders to make outcomes more or less likely',
+    sealYourFate: 'SEAL YOUR FATE',
+    fateResultSubtitle: 'The fates have spoken.',
+    dragDropFile: 'Drag & drop a CSV/TXT file here',
+    browseFiles: 'Browse Files',
+    or: 'or',
+    quickPastePlaceholder: 'Or paste names/words here, one per line...',
+    loadNames: 'Load Names',
+    pickAName: 'PICK A NAME',
+    pickPlayer: 'Pick Player',
+    truthOrDare: 'Truth or Dare',
+    playersPlaceholder: 'Enter player names, one per line...',
+    loadPlayers: 'Load Players',
+    nextRound: 'Next Round',
+    pickAPlayer: 'PICK A PLAYER',
+    truthOrDarePrompt: 'TRUTH OR DARE?',
+    turnSuffix: '\'s turn!',
+    consultStars: 'CONSULT THE STARS'
+  },
+  es: {
+    regionFilters: 'Filtros de Region',
+    countriesSelected: '{count} paises seleccionados',
+    enableAtLeastTwoRegions: 'Activa al menos 2 regiones.',
+    spinGlobe: 'GIRAR EL GLOBO',
+    themeLibrary: 'Biblioteca de Temas',
+    themesCount: '{count} temas',
+    all: 'Todo',
+    selectAll: 'Seleccionar Todo',
+    deselectAll: 'Quitar Todo',
+    spinForTheme: 'GIRAR TEMA',
+    enableAtLeastTwoThemes: 'Activa al menos 2 temas.',
+    dtiResultSubtitle: 'Hora de vestir para impresionar.',
+    colorPalette: 'Paleta de Color',
+    allColors: 'Todos los Colores',
+    customColorPlaceholder: 'Nombre del color personalizado',
+    add: 'Agregar',
+    spinForColor: 'GIRAR COLOR',
+    selectAtLeastTwoColors: 'Selecciona al menos 2 colores.',
+    autoGradient: 'Auto Degradado (ROYGBIV)',
+    outcomeWeights: 'Pesos de Resultado',
+    outcomeWeightHint: 'Arrastra para hacer los resultados mas o menos probables',
+    sealYourFate: 'SELLA TU DESTINO',
+    fateResultSubtitle: 'El destino ya hablo.',
+    dragDropFile: 'Arrastra un archivo CSV/TXT aqui',
+    browseFiles: 'Buscar Archivos',
+    or: 'o',
+    quickPastePlaceholder: 'O pega nombres o palabras aqui, una por linea...',
+    loadNames: 'Cargar Nombres',
+    pickAName: 'ELEGIR NOMBRE',
+    pickPlayer: 'Elegir Jugador',
+    truthOrDare: 'Verdad o Reto',
+    playersPlaceholder: 'Escribe los nombres de jugadores, uno por linea...',
+    loadPlayers: 'Cargar Jugadores',
+    nextRound: 'Siguiente Ronda',
+    pickAPlayer: 'ELEGIR JUGADOR',
+    truthOrDarePrompt: 'VERDAD O RETO',
+    turnSuffix: ' juega ahora!',
+    consultStars: 'CONSULTAR LAS ESTRELLAS'
+  },
+  fr: {
+    regionFilters: 'Filtres de Region',
+    countriesSelected: '{count} pays selectionnes',
+    enableAtLeastTwoRegions: 'Activez au moins 2 regions.',
+    spinGlobe: 'LANCER LE GLOBE',
+    themeLibrary: 'Bibliotheque de Themes',
+    themesCount: '{count} themes',
+    all: 'Tout',
+    selectAll: 'Tout Selectionner',
+    deselectAll: 'Tout Retirer',
+    spinForTheme: 'LANCER UN THEME',
+    enableAtLeastTwoThemes: 'Activez au moins 2 themes.',
+    dtiResultSubtitle: 'A toi de briller.',
+    colorPalette: 'Palette de Couleurs',
+    allColors: 'Toutes les Couleurs',
+    customColorPlaceholder: 'Nom de couleur personnalise',
+    add: 'Ajouter',
+    spinForColor: 'LANCER UNE COULEUR',
+    selectAtLeastTwoColors: 'Choisissez au moins 2 couleurs.',
+    autoGradient: 'Degrade Auto (ROYGBIV)',
+    outcomeWeights: 'Poids des Resultats',
+    outcomeWeightHint: 'Faites glisser pour rendre certains choix plus probables',
+    sealYourFate: 'SCELLE TON DESTIN',
+    fateResultSubtitle: 'Le destin a parle.',
+    dragDropFile: 'Glissez un fichier CSV/TXT ici',
+    browseFiles: 'Parcourir',
+    or: 'ou',
+    quickPastePlaceholder: 'Ou collez des noms ou mots ici, un par ligne...',
+    loadNames: 'Charger les Noms',
+    pickAName: 'CHOISIR UN NOM',
+    pickPlayer: 'Choisir un Joueur',
+    truthOrDare: 'Action ou Verite',
+    playersPlaceholder: 'Entrez les noms des joueurs, un par ligne...',
+    loadPlayers: 'Charger les Joueurs',
+    nextRound: 'Tour Suivant',
+    pickAPlayer: 'CHOISIR UN JOUEUR',
+    truthOrDarePrompt: 'ACTION OU VERITE',
+    turnSuffix: ' joue maintenant !',
+    consultStars: 'CONSULTER LES ETOILES'
+  },
+  de: {
+    regionFilters: 'Regionsfilter',
+    countriesSelected: '{count} Laender ausgewaehlt',
+    enableAtLeastTwoRegions: 'Bitte mindestens 2 Regionen aktivieren.',
+    spinGlobe: 'GLOBUS DREHEN',
+    themeLibrary: 'Themenbibliothek',
+    themesCount: '{count} Themen',
+    all: 'Alle',
+    selectAll: 'Alle Waehlen',
+    deselectAll: 'Alle Entfernen',
+    spinForTheme: 'THEMA DREHEN',
+    enableAtLeastTwoThemes: 'Bitte mindestens 2 Themen aktivieren.',
+    dtiResultSubtitle: 'Zeit zu beeindrucken.',
+    colorPalette: 'Farbpalette',
+    allColors: 'Alle Farben',
+    customColorPlaceholder: 'Eigener Farbname',
+    add: 'Hinzufuegen',
+    spinForColor: 'FARBE DREHEN',
+    selectAtLeastTwoColors: 'Waehle mindestens 2 Farben.',
+    autoGradient: 'Auto-Verlauf (ROYGBIV)',
+    outcomeWeights: 'Ergebnis-Gewichte',
+    outcomeWeightHint: 'Mit den Reglern machst du Ergebnisse wahrscheinlicher oder seltener',
+    sealYourFate: 'BESIEGLE DEIN SCHICKSAL',
+    fateResultSubtitle: 'Das Schicksal hat gesprochen.',
+    dragDropFile: 'CSV/TXT Datei hier ablegen',
+    browseFiles: 'Dateien Waehlen',
+    or: 'oder',
+    quickPastePlaceholder: 'Oder Namen/Woerter hier einfuegen, eins pro Zeile...',
+    loadNames: 'Namen Laden',
+    pickAName: 'NAMEN ZIEHEN',
+    pickPlayer: 'Spieler Waehlen',
+    truthOrDare: 'Wahrheit oder Pflicht',
+    playersPlaceholder: 'Spielernamen, je eine Zeile...',
+    loadPlayers: 'Spieler Laden',
+    nextRound: 'Naechste Runde',
+    pickAPlayer: 'SPIELER WAEHLEN',
+    truthOrDarePrompt: 'WAHRHEIT ODER PFLICHT',
+    turnSuffix: ' ist dran!',
+    consultStars: 'STERNE FRAGEN'
+  },
+  ar: {
+    regionFilters: 'فلاتر المناطق',
+    countriesSelected: 'تم اختيار {count} دولة',
+    enableAtLeastTwoRegions: 'يرجى تفعيل منطقتين على الاقل.',
+    spinGlobe: 'لف الكرة',
+    themeLibrary: 'مكتبة الثيمات',
+    themesCount: '{count} ثيمات',
+    all: 'الكل',
+    selectAll: 'تحديد الكل',
+    deselectAll: 'الغاء الكل',
+    spinForTheme: 'لف من اجل ثيم',
+    enableAtLeastTwoThemes: 'يرجى تفعيل ثيمين على الاقل.',
+    dtiResultSubtitle: 'حان وقت الابهار.',
+    colorPalette: 'لوحة الالوان',
+    allColors: 'كل الالوان',
+    customColorPlaceholder: 'اسم لون مخصص',
+    add: 'اضافة',
+    spinForColor: 'لف من اجل لون',
+    selectAtLeastTwoColors: 'اختر لونين على الاقل.',
+    autoGradient: 'تدرج تلقائي (ROYGBIV)',
+    outcomeWeights: 'اوزان النتائج',
+    outcomeWeightHint: 'اسحب المؤشرات لجعل بعض النتائج اكثر او اقل احتمالا',
+    sealYourFate: 'اختم قدرك',
+    fateResultSubtitle: 'لقد تكلم القدر.',
+    dragDropFile: 'اسحب ملف CSV/TXT هنا',
+    browseFiles: 'تصفح الملفات',
+    or: 'او',
+    quickPastePlaceholder: 'او الصق الاسماء او الكلمات هنا، واحدا في كل سطر...',
+    loadNames: 'تحميل الاسماء',
+    pickAName: 'اختر اسما',
+    pickPlayer: 'اختر لاعبا',
+    truthOrDare: 'صراحة ام جرأة',
+    playersPlaceholder: 'اكتب اسماء اللاعبين، واحدا في كل سطر...',
+    loadPlayers: 'تحميل اللاعبين',
+    nextRound: 'الجولة التالية',
+    pickAPlayer: 'اختر لاعبا',
+    truthOrDarePrompt: 'صراحة ام جرأة',
+    turnSuffix: ' دوره!',
+    consultStars: 'استشر النجوم'
+  }
+};
+
+const HOME_PAGE_TRANSLATIONS = {
+  en: {
+    heroTitle: 'YES AND NO WHEEL',
+    heroSuffix: 'Free Spinner',
+    heroSubtitle: 'Spin the Yes and No Wheel to make instant decisions and let fate choose for you.',
+    exploreTitle: 'Explore All Wheels',
+    exploreSubtitle: 'Each wheel is uniquely themed and packed with special features.',
+    faqTitle: 'Frequently Asked Questions',
+    spinNow: 'Spin Now',
+    yes: 'YES',
+    no: 'NO',
+    maybe: 'MAYBE',
+    reset: 'Reset Counts',
+    inputs: 'Inputs',
+    mode: 'Mode',
+    yesNoMode: 'YES or NO',
+    yesNoMaybeMode: 'YES NO or MAYBE',
+    inputSets: 'Number of Input Sets',
+    howTitle: 'How to Use the Yes and No Wheel',
+    howIntro: 'Use the wheel to spin for a fast answer whenever you need a simple yes, no, or maybe decision.',
+    step1Title: 'Choose a mode',
+    step1Opt1: 'Yes or No',
+    step1Opt2: 'Yes, No or Maybe',
+    step2Title: 'Choose the number of input sets',
+    step2Option: 'From 1 set to 5 sets',
+    step3Title: 'Spin the wheel',
+    step3Desc: 'Press the spin button in the middle of the wheel to generate a result.',
+    step4Title: 'Review the result',
+    step4Desc: 'The counters track how many times Yes, No, or Maybe has been selected.',
+    step5Title: 'Continue or reset',
+    step5Desc: 'Keep spinning or reset the counters when you want to start fresh.',
+    faqItems: [
+      { q: 'Is YesAndNoWheel.com free to use?', a: 'Yes. All wheels and features are free to use.' },
+      { q: 'Are the spins truly random?', a: 'Yes. The wheel uses randomized starting conditions and browser physics.' },
+      { q: 'Can I save my custom wheel?', a: 'Yes. Entries and settings are saved in your browser.' },
+      { q: 'Does it work on mobile?', a: 'Yes. The site is responsive on phones and tablets.' },
+      { q: 'How many Truth or Dare questions are there?', a: 'There are 200+ curated prompts.' },
+      { q: 'Can I upload my own list?', a: 'Yes. The Word Wheel supports paste and file upload.' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'Bright spectrum spinner for colorful choices.',
+      'wheel-of-fate': 'Dark fantasy wheel with weighted outcomes.',
+      word: 'Pick names or words from your own list.',
+      'spin-the-wheel-truth-or-dare': 'Party wheel with a player step and prompt step.',
+      'dti-theme': 'Outfit inspiration wheel for Dress To Impress.',
+      country: 'Travel picker with region filters.',
+      zodiac: 'Astrology wheel with sign details.',
+      'hair-color': 'Hair color picker for classic and fantasy styles.'
+    }
+  },
+  'zh-CN': {
+    heroTitle: '是或否转盘',
+    heroSuffix: '主页',
+    heroSubtitle: '旋转是或否转盘，快速得到答案。',
+    exploreTitle: '探索全部转盘',
+    exploreSubtitle: '每个转盘都有不同风格和专属功能。',
+    faqTitle: '常见问题',
+    spinNow: '开始',
+    yes: '是',
+    no: '否',
+    maybe: '也许',
+    reset: '重置计数',
+    inputs: '输入',
+    mode: '模式',
+    yesNoMode: '是 或 否',
+    yesNoMaybeMode: '是 否 或 也许',
+    inputSets: '输入组数量',
+    howTitle: '如何使用是或否转盘',
+    howIntro: '需要快速决定时，使用这个主页转盘获得是、否或也许的答案。',
+    step1Title: '选择模式',
+    step1Opt1: '是 或 否',
+    step1Opt2: '是、否 或 也许',
+    step2Title: '选择输入组数量',
+    step2Option: '从 1 组到 5 组',
+    step3Title: '开始旋转',
+    step3Desc: '点击中间的旋转按钮生成结果。',
+    step4Title: '查看结果',
+    step4Desc: '计数器会记录每个结果出现的次数。',
+    step5Title: '继续或重置',
+    step5Desc: '继续旋转，或在需要重新开始时重置计数。',
+    faqItems: [
+      { q: '这个网站免费吗？', a: '是的。所有转盘和功能都可以免费使用。' },
+      { q: '结果真的是随机的吗？', a: '是的。转盘使用随机初始条件和浏览器物理模拟。' },
+      { q: '我可以保存自定义转盘吗？', a: '可以。你的条目和设置会保存在浏览器中。' },
+      { q: '手机上可以使用吗？', a: '可以。整个网站支持手机和平板。' },
+      { q: '真心话大冒险有多少题？', a: '有 200 多条精选提示。' },
+      { q: '我可以上传自己的列表吗？', a: '可以。单词转盘支持粘贴和文件上传。' }
+    ],
+    wheelDescriptions: {
+      rainbow: '明亮的彩色转盘，适合多彩选择。',
+      'wheel-of-fate': '带权重结果的暗黑命运转盘。',
+      word: '从你的列表中随机选择名字或词语。',
+      'spin-the-wheel-truth-or-dare': '适合聚会的双步骤转盘。',
+      'dti-theme': 'Dress To Impress 的穿搭灵感转盘。',
+      country: '带地区筛选的国家选择器。',
+      zodiac: '带星座细节的占星转盘。',
+      'hair-color': '经典与幻想风格发色选择器。'
+    }
+  },
+  hi: {
+    heroTitle: 'यस और नो व्हील',
+    heroSuffix: 'होम',
+    heroSubtitle: 'यस और नो व्हील घुमाइए और जल्दी जवाब पाइए।',
+    exploreTitle: 'सभी व्हील देखें',
+    exploreSubtitle: 'हर व्हील का अपना स्टाइल और फीचर है।',
+    faqTitle: 'अक्सर पूछे जाने वाले सवाल',
+    spinNow: 'घुमाएं',
+    yes: 'हाँ',
+    no: 'नहीं',
+    maybe: 'शायद',
+    reset: 'रीसेट',
+    inputs: 'इनपुट',
+    mode: 'मोड',
+    yesNoMode: 'हाँ या नहीं',
+    yesNoMaybeMode: 'हाँ नहीं या शायद',
+    inputSets: 'इनपुट सेट की संख्या',
+    howTitle: 'यस और नो व्हील का उपयोग कैसे करें',
+    howIntro: 'जब आपको जल्दी फैसला चाहिए, तब होम पेज व्हील से हाँ, नहीं या शायद पाएं।',
+    step1Title: 'मोड चुनें',
+    step1Opt1: 'हाँ या नहीं',
+    step1Opt2: 'हाँ, नहीं या शायद',
+    step2Title: 'इनपुट सेट चुनें',
+    step2Option: '1 से 5 सेट तक',
+    step3Title: 'व्हील घुमाएं',
+    step3Desc: 'बीच वाले स्पिन बटन को दबाकर परिणाम लें।',
+    step4Title: 'परिणाम देखें',
+    step4Desc: 'काउंटर हर परिणाम की गिनती दिखाते हैं।',
+    step5Title: 'जारी रखें या रीसेट करें',
+    step5Desc: 'और स्पिन करें या नई शुरुआत के लिए काउंटर रीसेट करें।',
+    faqItems: [
+      { q: 'क्या यह साइट फ्री है?', a: 'हाँ। सभी व्हील और फीचर मुफ्त हैं।' },
+      { q: 'क्या परिणाम सच में रैंडम हैं?', a: 'हाँ। व्हील रैंडम शुरुआती स्थिति और ब्राउज़र फिजिक्स का उपयोग करता है।' },
+      { q: 'क्या मैं अपना कस्टम व्हील सेव कर सकता हूँ?', a: 'हाँ। आपकी एंट्री और सेटिंग्स ब्राउज़र में सेव रहती हैं।' },
+      { q: 'क्या यह मोबाइल पर काम करता है?', a: 'हाँ। पूरा साइट मोबाइल और टैबलेट पर काम करता है।' },
+      { q: 'ट्रुथ ऑर डेयर में कितने सवाल हैं?', a: '200 से ज्यादा चुने हुए प्रॉम्प्ट हैं।' },
+      { q: 'क्या मैं अपनी लिस्ट अपलोड कर सकता हूँ?', a: 'हाँ। वर्ड व्हील पेस्ट और फाइल अपलोड दोनों सपोर्ट करता है।' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'रंगीन चुनावों के लिए चमकदार व्हील।',
+      'wheel-of-fate': 'वेटेड परिणामों वाला डार्क फेट व्हील।',
+      word: 'अपनी लिस्ट से नाम या शब्द चुनें।',
+      'spin-the-wheel-truth-or-dare': 'पार्टी के लिए दो-स्टेप व्हील।',
+      'dti-theme': 'Dress To Impress के लिए आउटफिट प्रेरणा।',
+      country: 'रीजन फ़िल्टर वाला कंट्री पिकर।',
+      zodiac: 'राशि विवरण वाला ज्योतिष व्हील।',
+      'hair-color': 'क्लासिक और फैंटेसी हेयर कलर पिकर।'
+    }
+  },
+  es: {
+    heroTitle: 'RULETA DE SI Y NO',
+    heroSuffix: 'Gratis',
+    heroSubtitle: 'Gira la ruleta para tomar decisiones instantaneas.',
+    exploreTitle: 'Explora Todas las Ruletas',
+    exploreSubtitle: 'Cada ruleta tiene un estilo propio y funciones especiales.',
+    faqTitle: 'Preguntas Frecuentes',
+    spinNow: 'Girar',
+    yes: 'SI',
+    no: 'NO',
+    maybe: 'QUIZAS',
+    reset: 'Reiniciar',
+    inputs: 'Entradas',
+    mode: 'Modo',
+    yesNoMode: 'SI o NO',
+    yesNoMaybeMode: 'SI NO o QUIZAS',
+    inputSets: 'Numero de grupos',
+    howTitle: 'Como usar la Ruleta de Si y No',
+    howIntro: 'Usa la ruleta para obtener una respuesta rapida cuando necesites decidir entre si, no o quizas.',
+    step1Title: 'Elige un modo',
+    step1Opt1: 'Si o No',
+    step1Opt2: 'Si, No o Quizas',
+    step2Title: 'Elige el numero de grupos',
+    step2Option: 'Desde 1 hasta 5 grupos',
+    step3Title: 'Gira la ruleta',
+    step3Desc: 'Pulsa el boton central para generar un resultado.',
+    step4Title: 'Revisa el resultado',
+    step4Desc: 'Los contadores muestran cuantas veces salio cada opcion.',
+    step5Title: 'Continua o reinicia',
+    step5Desc: 'Sigue girando o reinicia los contadores para empezar de nuevo.',
+    faqItems: [
+      { q: 'El sitio es gratis?', a: 'Si. Todas las ruletas y funciones son gratis.' },
+      { q: 'Los giros son aleatorios?', a: 'Si. Se usan condiciones aleatorias y fisica del navegador.' },
+      { q: 'Puedo guardar mi ruleta?', a: 'Si. Las entradas y ajustes se guardan en tu navegador.' },
+      { q: 'Funciona en movil?', a: 'Si. El sitio es responsive.' },
+      { q: 'Cuantas preguntas de Verdad o Reto hay?', a: 'Hay mas de 200 preguntas.' },
+      { q: 'Puedo subir mi propia lista?', a: 'Si. La ruleta de palabras acepta pegar y subir archivos.' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'Ruleta colorida para elecciones visuales.',
+      'wheel-of-fate': 'Ruleta oscura con resultados ponderados.',
+      word: 'Elige nombres o palabras de tu lista.',
+      'spin-the-wheel-truth-or-dare': 'Ruleta de fiesta con jugador y reto.',
+      'dti-theme': 'Inspiracion de looks para Dress To Impress.',
+      country: 'Selector de viajes con filtros de region.',
+      zodiac: 'Ruleta astrologica con detalles de signos.',
+      'hair-color': 'Selector de color de cabello.'
+    }
+  },
+  fr: {
+    heroTitle: 'ROULETTE OUI NON',
+    heroSuffix: 'Gratuite',
+    heroSubtitle: 'Faites tourner la roue pour obtenir une decision instantanee.',
+    exploreTitle: 'Explorer Toutes les Roues',
+    exploreSubtitle: 'Chaque roue a son style et ses fonctions speciales.',
+    faqTitle: 'Questions Frequentes',
+    spinNow: 'Lancer',
+    yes: 'OUI',
+    no: 'NON',
+    maybe: 'PEUT-ETRE',
+    reset: 'Reinitialiser',
+    inputs: 'Entrees',
+    mode: 'Mode',
+    yesNoMode: 'OUI ou NON',
+    yesNoMaybeMode: 'OUI NON ou PEUT-ETRE',
+    inputSets: 'Nombre de groupes',
+    howTitle: 'Comment utiliser la roue Oui Non',
+    howIntro: 'Utilisez la roue pour obtenir rapidement une reponse oui, non ou peut-etre.',
+    step1Title: 'Choisir un mode',
+    step1Opt1: 'Oui ou Non',
+    step1Opt2: 'Oui, Non ou Peut-etre',
+    step2Title: 'Choisir le nombre de groupes',
+    step2Option: 'De 1 a 5 groupes',
+    step3Title: 'Lancer la roue',
+    step3Desc: 'Appuyez sur le bouton central pour generer un resultat.',
+    step4Title: 'Consulter le resultat',
+    step4Desc: 'Les compteurs suivent les resultats obtenus.',
+    step5Title: 'Continuer ou reinitialiser',
+    step5Desc: 'Continuez a lancer ou remettez les compteurs a zero.',
+    faqItems: [
+      { q: 'Le site est-il gratuit ?', a: 'Oui. Toutes les roues et fonctions sont gratuites.' },
+      { q: 'Les lancers sont-ils aleatoires ?', a: 'Oui. Le site utilise des conditions aleatoires et la physique du navigateur.' },
+      { q: 'Puis-je sauvegarder ma roue ?', a: 'Oui. Les entrees et reglages sont enregistres dans votre navigateur.' },
+      { q: 'Fonctionne-t-il sur mobile ?', a: 'Oui. Le site est responsive.' },
+      { q: 'Combien y a-t-il de questions Action ou Verite ?', a: 'Il y a plus de 200 questions.' },
+      { q: 'Puis-je televerser ma propre liste ?', a: 'Oui. La roue des mots accepte le collage et les fichiers.' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'Roue coloree pour des choix lumineux.',
+      'wheel-of-fate': 'Roue sombre avec issues ponderees.',
+      word: 'Choisissez des noms ou mots de votre liste.',
+      'spin-the-wheel-truth-or-dare': 'Roue de fete avec joueur puis action.',
+      'dti-theme': 'Inspiration de tenues pour Dress To Impress.',
+      country: 'Selection de pays avec filtres regionaux.',
+      zodiac: 'Roue astrologique avec details des signes.',
+      'hair-color': 'Selectionneur de couleur de cheveux.'
+    }
+  },
+  de: {
+    heroTitle: 'JA NEIN RAD',
+    heroSuffix: 'Kostenlos',
+    heroSubtitle: 'Drehe das Rad fuer eine schnelle Entscheidung.',
+    exploreTitle: 'Alle Raeder Entdecken',
+    exploreSubtitle: 'Jedes Rad hat einen eigenen Stil und besondere Funktionen.',
+    faqTitle: 'Haeufige Fragen',
+    spinNow: 'Drehen',
+    yes: 'JA',
+    no: 'NEIN',
+    maybe: 'VIELLEICHT',
+    reset: 'Zuruecksetzen',
+    inputs: 'Eingaben',
+    mode: 'Modus',
+    yesNoMode: 'JA oder NEIN',
+    yesNoMaybeMode: 'JA NEIN oder VIELLEICHT',
+    inputSets: 'Anzahl der Gruppen',
+    howTitle: 'So funktioniert das Ja Nein Rad',
+    howIntro: 'Nutze das Rad fuer eine schnelle Ja-, Nein- oder Vielleicht-Entscheidung.',
+    step1Title: 'Modus waehlen',
+    step1Opt1: 'Ja oder Nein',
+    step1Opt2: 'Ja, Nein oder Vielleicht',
+    step2Title: 'Anzahl der Gruppen waehlen',
+    step2Option: 'Von 1 bis 5 Gruppen',
+    step3Title: 'Rad drehen',
+    step3Desc: 'Druecke den Button in der Mitte, um ein Ergebnis zu erhalten.',
+    step4Title: 'Ergebnis ansehen',
+    step4Desc: 'Die Zaehler zeigen, wie oft jede Option getroffen wurde.',
+    step5Title: 'Weiterdrehen oder zuruecksetzen',
+    step5Desc: 'Drehe weiter oder setze die Zaehler zurueck.',
+    faqItems: [
+      { q: 'Ist die Seite kostenlos?', a: 'Ja. Alle Raeder und Funktionen sind kostenlos.' },
+      { q: 'Sind die Drehungen zufaellig?', a: 'Ja. Das Rad nutzt zufaellige Startwerte und Browser-Physik.' },
+      { q: 'Kann ich mein Rad speichern?', a: 'Ja. Eintraege und Einstellungen bleiben im Browser gespeichert.' },
+      { q: 'Funktioniert die Seite mobil?', a: 'Ja. Die Seite ist responsive.' },
+      { q: 'Wie viele Wahrheit-oder-Pflicht-Fragen gibt es?', a: 'Es gibt ueber 200 Fragen.' },
+      { q: 'Kann ich meine eigene Liste hochladen?', a: 'Ja. Das Wortrad unterstuetzt Einfuegen und Datei-Upload.' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'Farbenfrohes Rad fuer bunte Entscheidungen.',
+      'wheel-of-fate': 'Dunkles Fantasy-Rad mit Gewichtung.',
+      word: 'Ziehe Namen oder Woerter aus deiner Liste.',
+      'spin-the-wheel-truth-or-dare': 'Party-Rad mit Spieler- und Aufgabenphase.',
+      'dti-theme': 'Outfit-Ideen fuer Dress To Impress.',
+      country: 'Reiseauswahl mit Regionsfiltern.',
+      zodiac: 'Astro-Rad mit Sternzeicheninfos.',
+      'hair-color': 'Haarfarben-Auswahlrad.'
+    }
+  },
+  ar: {
+    heroTitle: 'عجلة نعم ولا',
+    heroSuffix: 'مجانية',
+    heroSubtitle: 'لف العجلة للحصول على قرار سريع وفوري.',
+    exploreTitle: 'استكشف كل العجلات',
+    exploreSubtitle: 'كل عجلة لها طابعها وميزاتها الخاصة.',
+    faqTitle: 'الاسئلة الشائعة',
+    spinNow: 'ابدأ',
+    yes: 'نعم',
+    no: 'لا',
+    maybe: 'ربما',
+    reset: 'اعادة التعيين',
+    inputs: 'المدخلات',
+    mode: 'الوضع',
+    yesNoMode: 'نعم او لا',
+    yesNoMaybeMode: 'نعم لا او ربما',
+    inputSets: 'عدد المجموعات',
+    howTitle: 'كيفية استخدام عجلة نعم ولا',
+    howIntro: 'استخدم العجلة للحصول على جواب سريع بنعم او لا او ربما.',
+    step1Title: 'اختر وضعا',
+    step1Opt1: 'نعم او لا',
+    step1Opt2: 'نعم او لا او ربما',
+    step2Title: 'اختر عدد المجموعات',
+    step2Option: 'من مجموعة واحدة الى خمس مجموعات',
+    step3Title: 'لف العجلة',
+    step3Desc: 'اضغط زر الدوران في الوسط للحصول على نتيجة.',
+    step4Title: 'راجع النتيجة',
+    step4Desc: 'تتبع العدادات عدد مرات ظهور كل خيار.',
+    step5Title: 'استمر او اعد التعيين',
+    step5Desc: 'واصل الدوران او اعد العدادات للبداية.',
+    faqItems: [
+      { q: 'هل الموقع مجاني؟', a: 'نعم. جميع العجلات والميزات مجانية.' },
+      { q: 'هل النتائج عشوائية؟', a: 'نعم. تستخدم العجلة بدايات عشوائية ومحاكاة المتصفح.' },
+      { q: 'هل يمكنني حفظ العجلة الخاصة بي؟', a: 'نعم. يتم حفظ الاعدادات في المتصفح.' },
+      { q: 'هل يعمل على الهاتف؟', a: 'نعم. الموقع متجاوب.' },
+      { q: 'كم عدد اسئلة الصراحة والجرأة؟', a: 'يوجد اكثر من 200 سؤال.' },
+      { q: 'هل يمكنني رفع قائمتي الخاصة؟', a: 'نعم. عجلة الكلمات تدعم اللصق ورفع الملفات.' }
+    ],
+    wheelDescriptions: {
+      rainbow: 'عجلة ملونة لخيارات مرئية سريعة.',
+      'wheel-of-fate': 'عجلة خيالية داكنة بنتائج موزونة.',
+      word: 'اختر اسما او كلمة من قائمتك.',
+      'spin-the-wheel-truth-or-dare': 'عجلة حفلات مع لاعب ثم سؤال.',
+      'dti-theme': 'الهام ازياء للعبة Dress To Impress.',
+      country: 'اختيار دول مع فلاتر مناطق.',
+      zodiac: 'عجلة ابراج مع تفاصيل العلامات.',
+      'hair-color': 'عجلة لاختيار لون الشعر.'
+    }
+  }
+};
+
+const HOME_FALLBACK_TRANSLATIONS = {
+  'zh-CN': {
+    heroSuffix: '主页',
+    heroSubtitle: '旋转是或否转盘，快速得到答案。',
+    exploreTitle: '探索全部转盘',
+    exploreSubtitle: '每个转盘都有不同风格和专属功能。',
+    spinNow: '开始',
+    yes: '是',
+    no: '否',
+    maybe: '也许',
+    reset: '重置计数',
+    inputs: '输入',
+    mode: '模式',
+    yesNoMode: '是 或 否',
+    yesNoMaybeMode: '是 否 或 也许',
+    inputSets: '输入组数量',
+    howTitle: '如何使用是或否转盘',
+    howIntro: '需要快速决定时，使用这个主页转盘获得是、否或也许的答案。',
+    step1Title: '选择模式',
+    step1Opt1: '是 或 否',
+    step1Opt2: '是、否 或 也许',
+    step2Title: '选择输入组数量',
+    step2Option: '从 1 组到 5 组',
+    step3Title: '开始旋转',
+    step3Desc: '点击中间的旋转按钮生成结果。',
+    step4Title: '查看结果',
+    step4Desc: '计数器会记录每个结果出现的次数。',
+    step5Title: '继续或重置',
+    step5Desc: '继续旋转，或在需要重新开始时重置计数。'
+  },
+  hi: {
+    heroSuffix: 'होम',
+    heroSubtitle: 'यस और नो व्हील घुमाइए और जल्दी जवाब पाइए।',
+    exploreTitle: 'सभी व्हील देखें',
+    exploreSubtitle: 'हर व्हील का अपना स्टाइल और फीचर है।',
+    spinNow: 'घुमाएं',
+    yes: 'हाँ',
+    no: 'नहीं',
+    maybe: 'शायद',
+    reset: 'रीसेट',
+    inputs: 'इनपुट',
+    mode: 'मोड',
+    yesNoMode: 'हाँ या नहीं',
+    yesNoMaybeMode: 'हाँ नहीं या शायद',
+    inputSets: 'इनपुट सेट की संख्या',
+    howTitle: 'यस और नो व्हील का उपयोग कैसे करें',
+    howIntro: 'जब आपको जल्दी फैसला चाहिए, तब होम पेज व्हील से हाँ, नहीं या शायद पाएं।',
+    step1Title: 'मोड चुनें',
+    step1Opt1: 'हाँ या नहीं',
+    step1Opt2: 'हाँ, नहीं या शायद',
+    step2Title: 'इनपुट सेट चुनें',
+    step2Option: '1 से 5 सेट तक',
+    step3Title: 'व्हील घुमाएं',
+    step3Desc: 'बीच वाले स्पिन बटन को दबाकर परिणाम लें।',
+    step4Title: 'परिणाम देखें',
+    step4Desc: 'काउंटर हर परिणाम की गिनती दिखाते हैं।',
+    step5Title: 'जारी रखें या रीसेट करें',
+    step5Desc: 'और स्पिन करें या नई शुरुआत के लिए काउंटर रीसेट करें।'
+  },
+  bn: {
+    heroSuffix: 'হোম',
+    heroSubtitle: 'হ্যাঁ না চাকাটি ঘুরিয়ে দ্রুত উত্তর নিন।',
+    exploreTitle: 'সব চাকা দেখুন',
+    exploreSubtitle: 'প্রতিটি চাকার নিজস্ব স্টাইল ও ফিচার আছে।',
+    spinNow: 'স্পিন',
+    yes: 'হ্যাঁ',
+    no: 'না',
+    maybe: 'হয়তো',
+    reset: 'রিসেট',
+    inputs: 'ইনপুট',
+    mode: 'মোড',
+    yesNoMode: 'হ্যাঁ বা না',
+    yesNoMaybeMode: 'হ্যাঁ না বা হয়তো',
+    inputSets: 'ইনপুট সেট সংখ্যা',
+    howTitle: 'হ্যাঁ না চাকা কীভাবে ব্যবহার করবেন',
+    howIntro: 'দ্রুত সিদ্ধান্তের জন্য হোম পেজের চাকাটি ঘুরিয়ে হ্যাঁ, না বা হয়তো ফল নিন।',
+    step1Title: 'মোড বেছে নিন',
+    step1Opt1: 'হ্যাঁ বা না',
+    step1Opt2: 'হ্যাঁ, না বা হয়তো',
+    step2Title: 'সেট সংখ্যা বেছে নিন',
+    step2Option: '১ থেকে ৫ সেট',
+    step3Title: 'চাকা ঘোরান',
+    step3Desc: 'মাঝের স্পিন বাটনে চাপুন।',
+    step4Title: 'ফল দেখুন',
+    step4Desc: 'কাউন্টার ফলাফলের সংখ্যা দেখায়।',
+    step5Title: 'চালিয়ে যান বা রিসেট করুন',
+    step5Desc: 'আরও স্পিন করুন অথবা নতুনভাবে শুরু করতে রিসেট করুন।'
+  },
+  pt: {
+    heroSuffix: 'Inicio',
+    heroSubtitle: 'Gire a roda de sim ou nao para obter uma resposta rapida.',
+    exploreTitle: 'Explore Todas as Rodas',
+    exploreSubtitle: 'Cada roda possui um estilo e recursos proprios.',
+    spinNow: 'Girar',
+    yes: 'SIM',
+    no: 'NAO',
+    maybe: 'TALVEZ',
+    reset: 'Reiniciar',
+    inputs: 'Entradas',
+    mode: 'Modo',
+    yesNoMode: 'SIM ou NAO',
+    yesNoMaybeMode: 'SIM NAO ou TALVEZ',
+    inputSets: 'Numero de grupos',
+    howTitle: 'Como usar a roda de sim ou nao',
+    howIntro: 'Quando precisar de uma decisao rapida, use a roda da pagina inicial para obter sim, nao ou talvez.',
+    step1Title: 'Escolha um modo',
+    step1Opt1: 'Sim ou Nao',
+    step1Opt2: 'Sim, Nao ou Talvez',
+    step2Title: 'Escolha o numero de grupos',
+    step2Option: 'De 1 a 5 grupos',
+    step3Title: 'Gire a roda',
+    step3Desc: 'Pressione o botao central para gerar um resultado.',
+    step4Title: 'Veja o resultado',
+    step4Desc: 'Os contadores mostram quantas vezes cada opcao apareceu.',
+    step5Title: 'Continue ou reinicie',
+    step5Desc: 'Continue girando ou reinicie os contadores para comecar novamente.'
+  },
+  ru: {
+    heroSuffix: 'Главная',
+    heroSubtitle: 'Крутите колесо Да Нет и быстро получайте ответ.',
+    exploreTitle: 'Все колеса',
+    exploreSubtitle: 'У каждого колеса свой стиль и полезные функции.',
+    spinNow: 'Крутить',
+    yes: 'ДА',
+    no: 'НЕТ',
+    maybe: 'МОЖЕТ БЫТЬ',
+    reset: 'Сбросить',
+    inputs: 'Ввод',
+    mode: 'Режим',
+    yesNoMode: 'ДА или НЕТ',
+    yesNoMaybeMode: 'ДА НЕТ или МОЖЕТ БЫТЬ',
+    inputSets: 'Количество наборов',
+    howTitle: 'Как использовать колесо Да Нет',
+    howIntro: 'Если нужен быстрый ответ, используйте колесо на главной странице и получите да, нет или может быть.',
+    step1Title: 'Выберите режим',
+    step1Opt1: 'Да или Нет',
+    step1Opt2: 'Да, Нет или Может быть',
+    step2Title: 'Выберите количество наборов',
+    step2Option: 'От 1 до 5 наборов',
+    step3Title: 'Прокрутите колесо',
+    step3Desc: 'Нажмите кнопку вращения в центре.',
+    step4Title: 'Посмотрите результат',
+    step4Desc: 'Счетчики показывают количество каждого результата.',
+    step5Title: 'Продолжайте или сбросьте',
+    step5Desc: 'Продолжайте вращать или сбросьте счетчики для нового старта.'
+  },
+  ur: {
+    heroSuffix: 'ہوم',
+    heroSubtitle: 'ہاں یا نہیں ویل گھمائیں اور فوراً جواب حاصل کریں۔',
+    exploreTitle: 'تمام ویلز دیکھیں',
+    exploreSubtitle: 'ہر ویل کا اپنا انداز اور فیچرز ہیں۔',
+    spinNow: 'اسپن کریں',
+    yes: 'ہاں',
+    no: 'نہیں',
+    maybe: 'شاید',
+    reset: 'ری سیٹ',
+    inputs: 'ان پٹ',
+    mode: 'موڈ',
+    yesNoMode: 'ہاں یا نہیں',
+    yesNoMaybeMode: 'ہاں نہیں یا شاید',
+    inputSets: 'ان پٹ سیٹس کی تعداد',
+    howTitle: 'ہاں یا نہیں ویل کیسے استعمال کریں',
+    howIntro: 'جب آپ کو فوری فیصلہ چاہیے ہو تو ہوم پیج والے ویل سے ہاں، نہیں یا شاید حاصل کریں۔',
+    step1Title: 'موڈ منتخب کریں',
+    step1Opt1: 'ہاں یا نہیں',
+    step1Opt2: 'ہاں، نہیں یا شاید',
+    step2Title: 'سیٹس کی تعداد منتخب کریں',
+    step2Option: '1 سے 5 سیٹس تک',
+    step3Title: 'ویل گھمائیں',
+    step3Desc: 'درمیان والے اسپن بٹن کو دبائیں۔',
+    step4Title: 'نتیجہ دیکھیں',
+    step4Desc: 'کاؤنٹر دکھاتے ہیں کہ ہر نتیجہ کتنی بار آیا۔',
+    step5Title: 'جاری رکھیں یا ری سیٹ کریں',
+    step5Desc: 'مزید اسپن کریں یا نئے آغاز کے لئے کاؤنٹر ری سیٹ کریں۔'
+  },
+  id: {
+    heroSuffix: 'Beranda',
+    heroSubtitle: 'Putar roda ya tidak untuk mendapatkan jawaban cepat.',
+    exploreTitle: 'Jelajahi Semua Roda',
+    exploreSubtitle: 'Setiap roda punya gaya dan fitur yang berbeda.',
+    spinNow: 'Putar',
+    yes: 'YA',
+    no: 'TIDAK',
+    maybe: 'MUNGKIN',
+    reset: 'Reset',
+    inputs: 'Input',
+    mode: 'Mode',
+    yesNoMode: 'YA atau TIDAK',
+    yesNoMaybeMode: 'YA TIDAK atau MUNGKIN',
+    inputSets: 'Jumlah set input',
+    howTitle: 'Cara menggunakan roda ya tidak',
+    howIntro: 'Saat Anda butuh keputusan cepat, gunakan roda di beranda untuk mendapatkan ya, tidak, atau mungkin.',
+    step1Title: 'Pilih mode',
+    step1Opt1: 'Ya atau Tidak',
+    step1Opt2: 'Ya, Tidak atau Mungkin',
+    step2Title: 'Pilih jumlah set',
+    step2Option: 'Dari 1 sampai 5 set',
+    step3Title: 'Putar roda',
+    step3Desc: 'Tekan tombol putar di tengah roda.',
+    step4Title: 'Lihat hasilnya',
+    step4Desc: 'Penghitung menunjukkan berapa kali tiap hasil muncul.',
+    step5Title: 'Lanjutkan atau reset',
+    step5Desc: 'Terus putar atau reset penghitung untuk mulai lagi.'
+  },
+  ja: {
+    heroSuffix: 'ホーム',
+    heroSubtitle: 'はい・いいえルーレットを回してすぐに答えを出せます。',
+    exploreTitle: 'すべてのルーレットを見る',
+    exploreSubtitle: '各ルーレットには独自のスタイルと機能があります。',
+    spinNow: '回す',
+    yes: 'はい',
+    no: 'いいえ',
+    maybe: 'たぶん',
+    reset: 'リセット',
+    inputs: '入力',
+    mode: 'モード',
+    yesNoMode: 'はい または いいえ',
+    yesNoMaybeMode: 'はい いいえ または たぶん',
+    inputSets: '入力セット数',
+    howTitle: 'はい・いいえルーレットの使い方',
+    howIntro: 'すぐに決めたいときは、ホームページのルーレットで はい、いいえ、たぶん を選べます。',
+    step1Title: 'モードを選ぶ',
+    step1Opt1: 'はい または いいえ',
+    step1Opt2: 'はい、いいえ、たぶん',
+    step2Title: 'セット数を選ぶ',
+    step2Option: '1セットから5セットまで',
+    step3Title: 'ルーレットを回す',
+    step3Desc: '中央のスピンボタンを押します。',
+    step4Title: '結果を見る',
+    step4Desc: '各結果が何回出たかをカウンターで確認できます。',
+    step5Title: '続けるかリセットする',
+    step5Desc: 'そのまま続けるか、最初からやり直すためにリセットします。'
+  },
+  mr: {
+    heroSuffix: 'मुख्यपृष्ठ',
+    heroSubtitle: 'होय नाही व्हील फिरवा आणि पटकन उत्तर मिळवा.',
+    exploreTitle: 'सर्व व्हील्स पहा',
+    exploreSubtitle: 'प्रत्येक व्हीलचे स्वतःचे स्वरूप आणि फीचर्स आहेत.',
+    spinNow: 'स्पिन',
+    yes: 'होय',
+    no: 'नाही',
+    maybe: 'कदाचित',
+    reset: 'रीसेट',
+    inputs: 'इनपुट',
+    mode: 'मोड',
+    yesNoMode: 'होय किंवा नाही',
+    yesNoMaybeMode: 'होय नाही किंवा कदाचित',
+    inputSets: 'इनपुट सेटची संख्या',
+    howTitle: 'होय नाही व्हील कसे वापरावे',
+    howIntro: 'लवकर निर्णयासाठी मुख्यपृष्ठावरील व्हील वापरून होय, नाही किंवा कदाचित मिळवा.',
+    step1Title: 'मोड निवडा',
+    step1Opt1: 'होय किंवा नाही',
+    step1Opt2: 'होय, नाही किंवा कदाचित',
+    step2Title: 'सेटची संख्या निवडा',
+    step2Option: '1 ते 5 सेट',
+    step3Title: 'व्हील फिरवा',
+    step3Desc: 'मधला स्पिन बटण दाबा.',
+    step4Title: 'निकाल पहा',
+    step4Desc: 'काउंटर प्रत्येक निकाल किती वेळा आला ते दाखवतात.',
+    step5Title: 'पुढे चालू ठेवा किंवा रीसेट करा',
+    step5Desc: 'पुन्हा स्पिन करा किंवा नव्याने सुरुवात करण्यासाठी रीसेट करा.'
+  },
+  te: {
+    heroSuffix: 'హోమ్',
+    heroSubtitle: 'అవును కాదు వీల్ తిప్పి వెంటనే సమాధానం పొందండి.',
+    exploreTitle: 'అన్ని వీళ్లను చూడండి',
+    exploreSubtitle: 'ప్రతి వీల్‌కు తనదైన స్టైల్ మరియు ఫీచర్లు ఉంటాయి.',
+    spinNow: 'స్పిన్',
+    yes: 'అవును',
+    no: 'కాదు',
+    maybe: 'బహుశా',
+    reset: 'రిసెట్',
+    inputs: 'ఇన్పుట్లు',
+    mode: 'మోడ్',
+    yesNoMode: 'అవును లేదా కాదు',
+    yesNoMaybeMode: 'అవును కాదు లేదా బహుశా',
+    inputSets: 'ఇన్పుట్ సెట్ల సంఖ్య',
+    howTitle: 'అవును కాదు వీల్ ఎలా ఉపయోగించాలి',
+    howIntro: 'త్వరగా నిర్ణయం కావాలంటే హోమ్ పేజీలోని వీల్‌తో అవును, కాదు లేదా బహుశా ఫలితం పొందండి.',
+    step1Title: 'మోడ్ ఎంచుకోండి',
+    step1Opt1: 'అవును లేదా కాదు',
+    step1Opt2: 'అవును, కాదు లేదా బహుశా',
+    step2Title: 'సెట్ల సంఖ్య ఎంచుకోండి',
+    step2Option: '1 నుండి 5 సెట్ల వరకు',
+    step3Title: 'వీల్ తిప్పండి',
+    step3Desc: 'మధ్యలో ఉన్న స్పిన్ బటన్ నొక్కండి.',
+    step4Title: 'ఫలితం చూడండి',
+    step4Desc: 'ప్రతి ఫలితం ఎన్ని సార్లు వచ్చిందో కౌంటర్లు చూపిస్తాయి.',
+    step5Title: 'కొనసాగించండి లేదా రిసెట్ చేయండి',
+    step5Desc: 'మరిన్ని స్పిన్లు చేయండి లేదా మళ్లీ ప్రారంభించడానికి రిసెట్ చేయండి.'
+  }
+};
+
+function fillTemplate(template, page) {
+  return template.replaceAll('{page}', page);
+}
+
+export function getCustomizationText(locale) {
+  return CUSTOMIZATION_TRANSLATIONS[normalizeLocale(locale)] || CUSTOMIZATION_TRANSLATIONS.en;
+}
+
+export function getWheelSharedText(locale, route) {
+  const safeLocale = normalizeLocale(locale);
+  const page = getLocalizedRouteContent(safeLocale, route).title;
+  const copy = WHEEL_SHARED_TRANSLATIONS[safeLocale] || WHEEL_SHARED_TRANSLATIONS.en;
+  return {
+    title: page,
+    subtitle: fillTemplate(copy.subtitle, page),
+    howToUse: fillTemplate(copy.howToUse, page),
+    howToIntro: fillTemplate(copy.howToIntro, page),
+    step1Title: copy.step1Title,
+    step1Desc: copy.step1Desc,
+    step2Title: copy.step2Title,
+    step2Desc: copy.step2Desc,
+    step3Title: copy.step3Title,
+    step3Desc: copy.step3Desc,
+    spinNow: copy.spinNow,
+    resultReady: copy.resultReady
+  };
+}
+
+export function getWheelUiText(locale) {
+  return WHEEL_UI_TRANSLATIONS[normalizeLocale(locale)] || WHEEL_UI_TRANSLATIONS.en;
+}
+
+export function getHomeText(locale) {
+  const safeLocale = normalizeLocale(locale);
+  if (HOME_PAGE_TRANSLATIONS[safeLocale]) {
+    return HOME_PAGE_TRANSLATIONS[safeLocale];
+  }
+
+  const fallback = HOME_FALLBACK_TRANSLATIONS[safeLocale];
+  if (!fallback) {
+    return HOME_PAGE_TRANSLATIONS.en;
+  }
+
+  const faq = getStaticCopy(safeLocale);
+  const wheelDescriptions = {};
+  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']
+    .forEach((route) => {
+      wheelDescriptions[route] = getWheelSharedText(safeLocale, route).subtitle;
+    });
+
+  return {
+    heroTitle: getLocalizedRouteContent(safeLocale, 'home').title,
+    faqTitle: getLocalizedRouteContent(safeLocale, 'faq').title,
+    faqItems: [
+      { q: faq.q1, a: faq.a1 },
+      { q: faq.q2, a: faq.a2 },
+      { q: faq.q3, a: faq.a3 },
+      { q: faq.q4, a: faq.a4 },
+      { q: faq.q1, a: faq.a1 },
+      { q: faq.q3, a: faq.a3 }
+    ],
+    wheelDescriptions,
+    ...fallback
+  };
+}

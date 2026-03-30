@@ -3,6 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -11,11 +12,14 @@ const NEON_COLORS = [
 ];
 
 export function renderTruthOrDare(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'spin-the-wheel-truth-or-dare');
+  const ui = getWheelUiText(locale);
   container.innerHTML = `
     <div class="wheel-page tod-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title neon-text">🎉 Spin the Wheel Truth or Dare</h1>
-        <p class="wheel-subtitle"><strong>Spin the Wheel Truth or Dare</strong> — perfect for parties! Add players' names and let the wheel handle the questions.</p>
+        <h1 class="wheel-title neon-text">🎉 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
@@ -23,25 +27,25 @@ export function renderTruthOrDare(container) {
           <div class="tod-step-indicator">
             <div class="tod-step active" id="todStep1Indicator">
               <span class="tod-step-num">1</span>
-              <span>Pick Player</span>
+              <span>${ui.pickPlayer}</span>
             </div>
             <div class="tod-step-arrow">→</div>
             <div class="tod-step" id="todStep2Indicator">
               <span class="tod-step-num">2</span>
-              <span>Truth or Dare</span>
+              <span>${ui.truthOrDare}</span>
             </div>
           </div>
 
           <div class="tod-player-setup" id="todPlayerSetup">
-            <textarea id="todPlayerNames" placeholder="Enter player names, one per line...&#10;Alex&#10;Jordan&#10;Sam&#10;Taylor" rows="4"></textarea>
-            <button class="custom-btn" id="todLoadPlayers">Load Players</button>
+            <textarea id="todPlayerNames" placeholder="${ui.playersPlaceholder}&#10;Alex&#10;Jordan&#10;Sam&#10;Taylor" rows="4"></textarea>
+            <button class="custom-btn" id="todLoadPlayers">${ui.loadPlayers}</button>
           </div>
 
           <div class="wheel-canvas-container neon-bg" id="todCanvasContainer">
             <canvas id="todCanvas"></canvas>
           </div>
           <button class="spin-btn tod-spin-btn" id="todSpinBtn">
-            <span class="spin-text" id="todSpinText">🎉 PICK A PLAYER</span>
+            <span class="spin-text" id="todSpinText">🎉 ${ui.pickAPlayer}</span>
             <div class="spin-ripple"></div>
           </button>
 
@@ -53,7 +57,7 @@ export function renderTruthOrDare(container) {
               <div class="tod-modal-type" id="todModalType"></div>
               <div class="tod-modal-prompt" id="todModalPrompt"></div>
               <div class="tod-modal-player" id="todModalPlayer"></div>
-              <button class="custom-btn" id="todNextRound">Next Round</button>
+              <button class="custom-btn" id="todNextRound">${ui.nextRound}</button>
             </div>
           </div>
         </div>
@@ -62,25 +66,25 @@ export function renderTruthOrDare(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Play <strong>Spin the Wheel Truth or Dare</strong></h2>
-        <p class="howto-intro"><strong>Spin the Wheel Truth or Dare</strong> is the ultimate party game. Add players, spin to pick someone, then get a random Truth or Dare prompt from our database of 200+ questions.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Players</h3>
-            <p class="howto-step-desc">Enter everyone's names in the text box, one per line. The more players, the more fun!</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Spin to Pick a Player</h3>
-            <p class="howto-step-desc">The wheel selects a random player. No arguments — the wheel has spoken!</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Truth or Dare</h3>
-            <p class="howto-step-desc">A second spin automatically generates a Truth or Dare prompt from 200+ questions. Also try the <a href="/word/">Word Wheel</a> or <a href="/zodiac/">Zodiac Wheel</a>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>
@@ -101,7 +105,7 @@ export function renderTruthOrDare(container) {
         selectedPlayer = winner.entry;
         // Show player result briefly
         const resultEl = document.getElementById('todResult');
-        resultEl.innerHTML = `<div class="result-winner tod-result"><span class="result-emoji">👤</span><span class="result-text">${winner.entry}'s turn!</span></div>`;
+        resultEl.innerHTML = `<div class="result-winner tod-result"><span class="result-emoji">👤</span><span class="result-text">${winner.entry}${ui.turnSuffix}</span></div>`;
         resultEl.classList.add('show');
         
         // Scroll slightly down to ensure it's visible on smaller screens
@@ -117,7 +121,7 @@ export function renderTruthOrDare(container) {
 
           // Set truth or dare wheel
           engine.setEntries(['Truth', 'Dare'], ['#3A86FF', '#FF006E']);
-          document.getElementById('todSpinText').textContent = '🎭 TRUTH OR DARE?';
+          document.getElementById('todSpinText').textContent = `🎭 ${ui.truthOrDarePrompt}`;
           document.getElementById('todSpinBtn').disabled = false;
           resultEl.classList.remove('show');
         }, 1500);
@@ -166,7 +170,7 @@ export function renderTruthOrDare(container) {
       currentStep = 1;
       document.getElementById('todStep1Indicator').classList.add('active');
       document.getElementById('todStep2Indicator').classList.remove('active');
-      document.getElementById('todSpinText').textContent = '🎉 PICK A PLAYER';
+      document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
     }
   });
 
@@ -182,7 +186,7 @@ export function renderTruthOrDare(container) {
         : defaultPlayers,
       NEON_COLORS
     );
-    document.getElementById('todSpinText').textContent = '🎉 PICK A PLAYER';
+    document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
   });
 
   // Set initial player names

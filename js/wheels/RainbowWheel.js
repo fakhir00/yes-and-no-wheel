@@ -2,6 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
+import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 
 const RAINBOW_COLORS = [
   '#FF0000', // Red
@@ -23,11 +24,14 @@ function generateRainbowColors(count) {
 }
 
 export function renderRainbowWheel(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const t = getWheelSharedText(locale, 'rainbow');
+  const ui = getWheelUiText(locale);
   container.innerHTML = `
     <div class="wheel-page rainbow-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title rainbow-text">🌈 Rainbow Wheel</h1>
-        <p class="wheel-subtitle">Spin the <strong>Rainbow Wheel</strong> — choose your options, hit spin, and let the colors decide your fate!</p>
+        <h1 class="wheel-title rainbow-text">🌈 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
@@ -36,11 +40,11 @@ export function renderRainbowWheel(container) {
             <canvas id="rainbowCanvas"></canvas>
           </div>
           <button class="spin-btn rainbow-spin-btn" id="rainbowSpinBtn">
-            <span class="spin-text">🌈 SPIN!</span>
+            <span class="spin-text">🌈 ${t.spinNow}</span>
             <div class="spin-ripple"></div>
           </button>
           <button class="auto-gradient-btn" id="rainbowAutoGradient">
-            ✨ Auto-Gradient (ROYGBIV)
+            ✨ ${ui.autoGradient}
           </button>
           <div class="result-display" id="rainbowResult"></div>
         </div>
@@ -49,25 +53,25 @@ export function renderRainbowWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>How to Use the <strong>Rainbow Wheel</strong></h2>
-        <p class="howto-intro">The <strong>Rainbow Wheel</strong> is a free color-spectrum spinner. Add your options, apply ROYGBIV gradients, and let the vibrant colors pick a winner.</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> Add Your Options</h3>
-            <p class="howto-step-desc">Open Advanced Mode and type your choices, one per line. Or use the default entries on the <strong>Rainbow Wheel</strong>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <p class="howto-step-desc">${t.step1Desc}</p>
             <div class="howto-step-screenshot">
               <img src="/images/howto/rainbow-wheel.png" alt="Rainbow Wheel spinner with ROYGBIV color spectrum" class="howto-inline-img" loading="lazy">
             </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> Apply Auto-Gradient</h3>
-            <p class="howto-step-desc">Click the "Auto-Gradient" button to apply a beautiful ROYGBIV <strong>rainbow</strong> spectrum to all slices automatically.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> Spin the <strong>Rainbow Wheel</strong></h3>
-            <p class="howto-step-desc">Hit the SPIN button and watch the <strong>Rainbow Wheel</strong> determine your fate with vibrant color! Also try the <a href="/word/">Word Wheel</a> or <a href="/spin-the-wheel-truth-or-dare/">Truth or Dare</a>.</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>
