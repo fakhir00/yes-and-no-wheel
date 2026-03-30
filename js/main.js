@@ -1,11 +1,15 @@
 // main.js — App entry point
 import { initRouter } from './router.js';
 import { storage } from './engine/StorageManager.js';
+import { audioManager } from './engine/AudioManager.js';
 
 // Apply saved theme
 const theme = storage.getThemePreference();
 document.documentElement.setAttribute('data-theme', theme);
 document.body.setAttribute('data-theme', theme);
+
+// Prepare mobile audio unlock listeners early so the first user tap can enable sound.
+audioManager.init();
 
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
