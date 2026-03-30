@@ -94,6 +94,10 @@ export function renderCountryWheel(container) {
     entries: currentWheelCountries.map(c => c.flag + ' ' + c.name),
     colors: GEO_COLORS,
     fontSize: 11,
+    spinPower: 4.2,
+    friction: 0.972,
+    stopThreshold: 0.003,
+    maxDuration: 4,
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();

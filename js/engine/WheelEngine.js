@@ -14,9 +14,11 @@ export class WheelEngine {
     // Physics
     this.angle = 0;
     this.angularVelocity = 0;
-    this.friction = options.friction || 0.985;
+    this.baseFriction = typeof options.friction === 'number' ? options.friction : null;
+    this.friction = this.baseFriction ?? 0.985;
     this.spinPower = options.spinPower || 5;
     this.maxDuration = options.maxDuration || 8;
+    this.stopThreshold = options.stopThreshold || 0.001;
     this.isSpinning = false;
     this.spinStartTime = 0;
 
@@ -364,8 +366,12 @@ export class WheelEngine {
     const randomExtra = (Math.random() - 0.5) * 0.1;
     this.angularVelocity = basePower + randomExtra;
 
-    const durationFactor = 1 - ((this.maxDuration - 3) / 17) * 0.012;
-    this.friction = Math.max(0.97, Math.min(0.995, 0.985 * durationFactor));
+    if (this.baseFriction !== null) {
+      this.friction = this.baseFriction;
+    } else {
+      const durationFactor = 1 - ((this.maxDuration - 3) / 17) * 0.012;
+      this.friction = Math.max(0.97, Math.min(0.995, 0.985 * durationFactor));
+    }
 
     if (this.onSpinStart) this.onSpinStart();
     this._animate();
@@ -392,7 +398,7 @@ export class WheelEngine {
 
     this.draw();
 
-    if (this.angularVelocity > 0.001) {
+    if (this.angularVelocity > this.stopThreshold) {
       this._animFrameId = requestAnimationFrame(() => this._animate());
     } else {
       this.angularVelocity = 0;
