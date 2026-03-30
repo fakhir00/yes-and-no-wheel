@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yesandnowheel.com/sitemap.xml
+Sitemap: https://yesandnowheel.com/sitemap-index.xml
