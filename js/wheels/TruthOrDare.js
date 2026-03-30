@@ -103,6 +103,11 @@ export function renderTruthOrDare(container) {
         const resultEl = document.getElementById('todResult');
         resultEl.innerHTML = `<div class="result-winner tod-result"><span class="result-emoji">👤</span><span class="result-text">${winner.entry}'s turn!</span></div>`;
         resultEl.classList.add('show');
+        
+        // Scroll slightly down to ensure it's visible on smaller screens
+        setTimeout(() => {
+          resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
 
         // Auto transition to step 2
         setTimeout(() => {
@@ -128,6 +133,11 @@ export function renderTruthOrDare(container) {
         document.getElementById('todModalPrompt').textContent = prompt;
         document.getElementById('todModalPlayer').textContent = `🎯 ${selectedPlayer}`;
         modal.classList.add('show');
+        
+        // Scroll slightly up so viewport clears any browser UI bars
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 50);
 
         customPanel.addResult(`${selectedPlayer}: ${winner.entry}`);
         document.getElementById('todSpinBtn').disabled = false;

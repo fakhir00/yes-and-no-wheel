@@ -169,7 +169,7 @@ a:hover { color: var(--accent-tertiary); }
   .nav-menu {
     position: fixed; top: 64px; left: 0; right: 0; bottom: 0;
     flex-direction: column; background: var(--bg-primary);
-    padding: var(--space-lg); gap: var(--space-sm);
+    padding: var(--space-lg); padding-bottom: 120px; gap: var(--space-sm);
     transform: translateX(100%); transition: transform var(--transition-base);
     overflow-y: auto;
   }
@@ -1042,10 +1042,10 @@ a:hover { color: var(--accent-tertiary); }
   background: none; border: none; cursor: pointer;
   padding: 8px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  transition: background var(--transition-fast), color var(--transition-fast);
+  font-size: 1.25rem;
+  transition: background var(--transition-fast), transform var(--transition-fast);
 }
-[data-theme="dark"] .theme-toggle-btn { color: #ffffff; }
-[data-theme="light"] .theme-toggle-btn { color: #000000; }
+.theme-toggle-btn:active { transform: scale(0.9); }
 .theme-toggle-btn:hover { background: var(--bg-glass); }
 .theme-toggle-btn svg { width: 20px; height: 20px; }
 [data-theme="light"] .sun-icon { display: none; }
