@@ -739,6 +739,23 @@ function getStaticCopy(locale) {
   return STATIC_COPY[normalizeLocale(locale)] || STATIC_COPY.en;
 }
 
+function buildSupportSections(routeInfo, language, bodyTemplates, copy) {
+  return [
+    {
+      heading: copy.overview,
+      body: `${bodyTemplates.section1.replace('{page}', routeInfo.title).replace('{language}', language)} ${routeInfo.subtitle} This gives visitors clearer context about what they can expect on the page, how the route connects to the rest of the site, and why this page matters inside the larger YesAndNoWheel experience. It also explains the role of the current page before someone jumps to another tool, support page, or language version. By adding this extra guidance, the page becomes more useful for first-time visitors, returning users, and people who arrive directly from search results. That added context reduces confusion and helps readers understand the purpose of the page faster.`
+    },
+    {
+      heading: copy.features,
+      body: `${bodyTemplates.section2.replace('{page}', routeInfo.title).replace('{language}', language)} In practice, that means the page is designed to be simple to scan, easy to navigate, and useful whether someone arrives from search, internal links, or a shared URL. The goal is to keep the information practical while also helping users move to the right tool or support page quickly. This structure also supports a cleaner reading experience because the most important ideas are grouped into sections instead of being scattered across short fragments of text. It gives the page a more complete and reliable reading flow.`
+    },
+    {
+      heading: copy.details,
+      body: `${bodyTemplates.section3.replace('{page}', routeInfo.title).replace('{language}', language)} It also helps explain related routes, clarifies the purpose of the current page, and supports a more complete content footprint so the page is not just functional but also informative. That balance improves usability for readers and creates a stronger site structure overall. As a result, the page can serve both as a practical destination for users and as a stronger supporting page inside the broader site architecture. It also makes the page feel less thin and more complete for search and for users.`
+    }
+  ];
+}
+
 export function getStaticPageContent(locale, route) {
   const safeLocale = normalizeLocale(locale);
   const routeInfo = getLocalizedRouteContent(safeLocale, route);
@@ -750,6 +767,7 @@ export function getStaticPageContent(locale, route) {
     return {
       title: routeInfo.title,
       intro: routeInfo.subtitle,
+      supportSections: buildSupportSections(routeInfo, language, bodyTemplates, copy),
       form: {
         name: copy.yourName,
         email: copy.email,
@@ -770,6 +788,7 @@ export function getStaticPageContent(locale, route) {
     return {
       title: routeInfo.title,
       intro: routeInfo.subtitle,
+      supportSections: buildSupportSections(routeInfo, language, bodyTemplates, copy),
       sectionPages: copy.pages,
       sectionWheels: copy.wheels
     };
@@ -779,6 +798,7 @@ export function getStaticPageContent(locale, route) {
     return {
       title: routeInfo.title,
       intro: routeInfo.subtitle,
+      supportSections: buildSupportSections(routeInfo, language, bodyTemplates, copy),
       items: [
         { q: copy.q1, a: copy.a1 },
         { q: copy.q2, a: copy.a2 },
@@ -792,6 +812,7 @@ export function getStaticPageContent(locale, route) {
     return {
       title: routeInfo.title,
       intro: routeInfo.subtitle,
+      supportSections: buildSupportSections(routeInfo, language, bodyTemplates, copy),
       headings: {
         available: copy.availableLanguages,
         why: copy.whyLanguageRoutes,
@@ -811,26 +832,7 @@ export function getStaticPageContent(locale, route) {
   return {
     title: routeInfo.title,
     intro: routeInfo.subtitle,
-    sections: [
-      {
-        heading: copy.overview,
-        body: bodyTemplates.section1
-          .replace('{page}', routeInfo.title)
-          .replace('{language}', language)
-      },
-      {
-        heading: copy.features,
-        body: bodyTemplates.section2
-          .replace('{page}', routeInfo.title)
-          .replace('{language}', language)
-      },
-      {
-        heading: copy.details,
-        body: bodyTemplates.section3
-          .replace('{page}', routeInfo.title)
-          .replace('{language}', language)
-      }
-    ],
+    sections: buildSupportSections(routeInfo, language, bodyTemplates, copy),
     lastUpdatedLabel: copy.lastUpdated
   };
 }

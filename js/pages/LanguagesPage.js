@@ -32,6 +32,13 @@ export function renderLanguagesPage(container) {
             <li><a href="/zodiac/">Zodiac Wheel</a></li>
           </ul>
         </section>
+
+        ${content.supportSections.map(section => `
+          <section class="content-section">
+            <h2>${section.heading}</h2>
+            <p>${section.body}</p>
+          </section>
+        `).join('')}
       </div>
     </div>`;
 }

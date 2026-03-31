@@ -16,6 +16,13 @@ export function renderFaqPage(container) {
             <p>${item.a}</p>
           </section>
         `).join('')}
+
+        ${content.supportSections.map(section => `
+          <section class="content-section">
+            <h2>${section.heading}</h2>
+            <p>${section.body}</p>
+          </section>
+        `).join('')}
       </div>
     </div>`;
 }

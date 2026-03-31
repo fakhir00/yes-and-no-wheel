@@ -37,6 +37,15 @@ export function renderContactPage(container) {
           `).join('')}
         </div>
       </div>
+
+      <div class="page-content">
+        ${content.supportSections.map(section => `
+          <section class="content-section">
+            <h2>${section.heading}</h2>
+            <p>${section.body}</p>
+          </section>
+        `).join('')}
+      </div>
     </div>`;
 
   document.getElementById('contactForm').addEventListener('submit', (e) => {

@@ -45,6 +45,13 @@ export function renderSitemapPage(container) {
             ${wheelPages.map(p => `<li><a href="${p.path}">${p.title}</a></li>`).join('')}
           </ul>
         </section>
+
+        ${content.supportSections.map(section => `
+          <section class="content-section">
+            <h2>${section.heading}</h2>
+            <p>${section.body}</p>
+          </section>
+        `).join('')}
       </div>
     </div>`;
 }

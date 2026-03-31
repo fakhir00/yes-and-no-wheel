@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260401-meta1';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260401-copy2';
 
-const ASSET_VERSION = '20260401-meta1';
+const ASSET_VERSION = '20260401-copy2';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
