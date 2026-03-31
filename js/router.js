@@ -1,47 +1,31 @@
 // router.js — Path-based SPA router (no hash)
-import { renderHomePage } from './pages/HomePage.js?v=20260331-wheelseo2';
-import { renderAboutPage } from './pages/AboutPage.js?v=20260331-wheelseo2';
-import { renderContactPage } from './pages/ContactPage.js?v=20260331-wheelseo2';
-import { renderTermsPage } from './pages/TermsPage.js?v=20260331-wheelseo2';
-import { renderPrivacyPage } from './pages/PrivacyPage.js?v=20260331-wheelseo2';
-import { renderSitemapPage } from './pages/SitemapPage.js?v=20260331-wheelseo2';
-import { renderNotFoundPage } from './pages/NotFoundPage.js?v=20260331-wheelseo2';
-import { renderFaqPage } from './pages/FaqPage.js?v=20260331-wheelseo2';
-import { renderLanguagesPage } from './pages/LanguagesPage.js?v=20260331-wheelseo2';
-import { renderRainbowWheel } from './wheels/RainbowWheel.js?v=20260331-wheelseo2';
-import { renderWheelOfFate } from './wheels/WheelOfFate.js?v=20260331-wheelseo2';
-import { renderWordWheel } from './wheels/WordWheel.js?v=20260331-wheelseo2';
-import { renderTruthOrDare } from './wheels/TruthOrDare.js?v=20260331-wheelseo2';
-import { renderDTIWheel } from './wheels/DTIWheel.js?v=20260331-wheelseo2';
-import { renderCountryWheel } from './wheels/CountryWheel.js?v=20260331-wheelseo2';
-import { renderZodiacWheel } from './wheels/ZodiacWheel.js?v=20260331-wheelseo2';
-import { renderHairColorWheel } from './wheels/HairColorWheel.js?v=20260331-wheelseo2';
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-wheelseo2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-speed1';
+
+const ASSET_VERSION = '20260331-speed1';
 
 const routes = {
-  '': renderHomePage,
-  'home': renderHomePage,
-  'about-us': renderAboutPage,
-  'contact': renderContactPage,
-  'terms': renderTermsPage,
-  'privacy': renderPrivacyPage,
-  'faq': renderFaqPage,
-  'languages': renderLanguagesPage,
-  'sitemap': renderSitemapPage,
-  '404': renderNotFoundPage,
-  'rainbow': renderRainbowWheel,
-  'wheel-of-fate': renderWheelOfFate,
-  'word': renderWordWheel,
-  'spin-the-wheel-truth-or-dare': renderTruthOrDare,
-  'dti-theme': renderDTIWheel,
-  'country': renderCountryWheel,
-  'zodiac': renderZodiacWheel,
-  'hair-color': renderHairColorWheel,
-  // Legacy hash-to-path aliases
-  'fate': renderWheelOfFate,
-  'tod': renderTruthOrDare,
-  'dti': renderDTIWheel,
-  'hair': renderHairColorWheel,
+  '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
+  'home': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
+  'about-us': () => import(`./pages/AboutPage.js?v=${ASSET_VERSION}`).then((m) => m.renderAboutPage),
+  'contact': () => import(`./pages/ContactPage.js?v=${ASSET_VERSION}`).then((m) => m.renderContactPage),
+  'terms': () => import(`./pages/TermsPage.js?v=${ASSET_VERSION}`).then((m) => m.renderTermsPage),
+  'privacy': () => import(`./pages/PrivacyPage.js?v=${ASSET_VERSION}`).then((m) => m.renderPrivacyPage),
+  'faq': () => import(`./pages/FaqPage.js?v=${ASSET_VERSION}`).then((m) => m.renderFaqPage),
+  'languages': () => import(`./pages/LanguagesPage.js?v=${ASSET_VERSION}`).then((m) => m.renderLanguagesPage),
+  'sitemap': () => import(`./pages/SitemapPage.js?v=${ASSET_VERSION}`).then((m) => m.renderSitemapPage),
+  '404': () => import(`./pages/NotFoundPage.js?v=${ASSET_VERSION}`).then((m) => m.renderNotFoundPage),
+  'rainbow': () => import(`./wheels/RainbowWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderRainbowWheel),
+  'wheel-of-fate': () => import(`./wheels/WheelOfFate.js?v=${ASSET_VERSION}`).then((m) => m.renderWheelOfFate),
+  'word': () => import(`./wheels/WordWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderWordWheel),
+  'spin-the-wheel-truth-or-dare': () => import(`./wheels/TruthOrDare.js?v=${ASSET_VERSION}`).then((m) => m.renderTruthOrDare),
+  'dti-theme': () => import(`./wheels/DTIWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderDTIWheel),
+  'country': () => import(`./wheels/CountryWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderCountryWheel),
+  'zodiac': () => import(`./wheels/ZodiacWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderZodiacWheel),
+  'hair-color': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
+  'fate': () => import(`./wheels/WheelOfFate.js?v=${ASSET_VERSION}`).then((m) => m.renderWheelOfFate),
+  'tod': () => import(`./wheels/TruthOrDare.js?v=${ASSET_VERSION}`).then((m) => m.renderTruthOrDare),
+  'dti': () => import(`./wheels/DTIWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderDTIWheel),
+  'hair': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
 };
 
 const routeTitles = {
@@ -100,6 +84,7 @@ const canonicalSlugs = {
 
 let currentEngine = null;
 let currentLocale = DEFAULT_LOCALE;
+let routeRequestId = 0;
 
 /**
  * Extract the route slug from the current URL.
@@ -162,10 +147,11 @@ export function initRouter() {
   handleRoute();
 }
 
-function handleRoute() {
+async function handleRoute() {
   const route = getRouteSlug();
   const app = document.getElementById('app');
   const uiText = getUiText(currentLocale);
+  const requestId = ++routeRequestId;
 
   if (currentEngine && currentEngine.destroy) currentEngine.destroy();
 
@@ -173,9 +159,12 @@ function handleRoute() {
   app.style.transform = 'translateY(10px)';
 
   setTimeout(() => {
-    try {
-      const renderer = routes[route] || renderNotFoundPage;
-      currentEngine = renderer(app);
+    (async () => {
+      try {
+        const loadRenderer = routes[route] || routes['404'];
+        const renderer = await loadRenderer();
+        if (requestId !== routeRequestId) return;
+        currentEngine = renderer(app);
       document.title = getDocumentTitle(route);
       document.documentElement.lang = currentLocale;
       document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
@@ -220,24 +209,25 @@ function handleRoute() {
       // Close mobile nav
       const navMenu = document.getElementById('navMenu');
       if (navMenu) navMenu.classList.remove('open');
-    } catch (e) {
-      console.error(e);
-      app.innerHTML = `<div style="color:red; padding: 50px;">Error rendering wheel: ${e.message}<br>${e.stack}</div>`;
-    }
+      } catch (e) {
+        console.error(e);
+        app.innerHTML = `<div style="color:red; padding: 50px;">Error rendering wheel: ${e.message}<br>${e.stack}</div>`;
+      }
 
-    requestAnimationFrame(() => {
-      app.style.opacity = '1';
-      app.style.transform = 'translateY(0)';
+      requestAnimationFrame(() => {
+        app.style.opacity = '1';
+        app.style.transform = 'translateY(0)';
       
-      // Clear transform after animation completes so 'position: fixed' modals work correctly
-      setTimeout(() => {
-        if (app.style.transform === 'translateY(0px)' || app.style.transform === 'translateY(0)') {
-          app.style.transform = '';
-        }
-      }, 300);
-    });
+        // Clear transform after animation completes so 'position: fixed' modals work correctly
+        setTimeout(() => {
+          if (app.style.transform === 'translateY(0px)' || app.style.transform === 'translateY(0)') {
+            app.style.transform = '';
+          }
+        }, 300);
+      });
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    })();
   }, 150);
 }
 
