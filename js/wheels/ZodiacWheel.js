@@ -2,7 +2,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { zodiacSigns, getCompatibility } from '../data/zodiacData.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedZodiacSigns, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -11,8 +11,9 @@ export function renderZodiacWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'zodiac');
   const ui = getWheelUiText(locale);
-  const signEntries = zodiacSigns.map(s => s.symbol + ' ' + s.name);
-  const signColors = zodiacSigns.map(s => s.color);
+  const localizedSigns = getLocalizedZodiacSigns(locale, zodiacSigns);
+  const signEntries = localizedSigns.map(s => s.symbol + ' ' + s.name);
+  const signColors = localizedSigns.map(s => s.color);
 
   container.innerHTML = `
     <div class="wheel-page zodiac-theme">
@@ -56,7 +57,7 @@ export function renderZodiacWheel(container) {
     </div>`;
 
   function showInfo(name) {
-    const s = zodiacSigns.find(z => z.name === name);
+    const s = localizedSigns.find(z => z.name === name);
     if (!s) return;
     document.getElementById('zodiacInfoPanel').innerHTML = `<div class="zodiac-info-card"><div class="zodiac-info-header"><span class="zodiac-big-symbol">${s.symbol}</span><div><h3>${s.name}</h3><span class="zodiac-dates">${s.dates}</span></div></div><div class="zodiac-info-body"><div class="zodiac-info-row"><strong>Element:</strong> ${s.element}</div><div class="zodiac-info-row"><strong>Traits:</strong> ${s.traits.join(', ')}</div><div class="zodiac-info-row"><strong>Compatible:</strong> ${s.compatible.join(', ')}</div></div></div>`;
     document.getElementById('zodiacInfoPanel').classList.add('show');
@@ -68,7 +69,7 @@ export function renderZodiacWheel(container) {
     onResult: (w) => {
       audioManager.playFanfare();
       const name = w.entry.split(' ').slice(1).join(' ');
-      const s = zodiacSigns.find(z => z.name === name);
+      const s = localizedSigns.find(z => z.name === name);
       document.getElementById('zodiacResult').innerHTML = `<div class="result-winner zodiac-result"><span class="zodiac-result-symbol">${s?.symbol||'✨'}</span><span class="result-text">${name}</span><span class="zodiac-element">${s?.element||''} Sign</span></div>`;
       document.getElementById('zodiacResult').classList.add('show');
       showInfo(name); cp.addResult(name);

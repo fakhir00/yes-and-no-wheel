@@ -3,7 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedTruthDareLabels, getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -97,7 +97,8 @@ export function renderTruthOrDare(container) {
 
   let currentStep = 1; // 1 = pick player, 2 = truth or dare
   let selectedPlayer = '';
-  const defaultPlayers = ['Alex', 'Jordan', 'Sam', 'Taylor', 'Morgan', 'Casey'];
+  const defaultPlayers = getLocalizedWheelSeedEntries(locale, 'todPlayers');
+  const todLabels = getLocalizedTruthDareLabels(locale);
 
   const engine = new WheelEngine('todCanvas', {
     entries: defaultPlayers,
@@ -124,14 +125,14 @@ export function renderTruthOrDare(container) {
           document.getElementById('todStep2Indicator').classList.add('active');
 
           // Set truth or dare wheel
-          engine.setEntries(['Truth', 'Dare'], ['#3A86FF', '#FF006E']);
+          engine.setEntries([todLabels.truth, todLabels.dare], ['#3A86FF', '#FF006E']);
           document.getElementById('todSpinText').textContent = `🎭 ${ui.truthOrDarePrompt}`;
           document.getElementById('todSpinBtn').disabled = false;
           resultEl.classList.remove('show');
         }, 1500);
       } else {
         // Step 2 result
-        const isTruth = winner.entry === 'Truth';
+        const isTruth = winner.entry === todLabels.truth;
         const prompt = isTruth ? getRandomTruth() : getRandomDare();
 
         // Show modal

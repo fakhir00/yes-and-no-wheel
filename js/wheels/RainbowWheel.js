@@ -2,7 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -82,7 +82,7 @@ export function renderRainbowWheel(container) {
     </div>
   `;
 
-  const defaultEntries = ['Adventure', 'Creativity', 'Love', 'Wisdom', 'Joy', 'Peace', 'Courage'];
+  const defaultEntries = getLocalizedWheelSeedEntries(locale, 'rainbow');
   const defaultColors = generateRainbowColors(defaultEntries.length);
 
   const engine = new WheelEngine('rainbowCanvas', {

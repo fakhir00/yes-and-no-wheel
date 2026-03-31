@@ -2,7 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -74,7 +74,7 @@ export function renderWheelOfFate(container) {
     </div>
   `;
 
-  const defaultEntries = ['Death', 'Mercy', 'Betrayal', 'Love', 'Victory', 'Exile', 'Redemption', 'Sacrifice'];
+  const defaultEntries = getLocalizedWheelSeedEntries(locale, 'wheel-of-fate');
   const defaultWeights = [1, 1, 1, 1, 1, 1, 1, 1];
 
   const engine = new WheelEngine('fateCanvas', {

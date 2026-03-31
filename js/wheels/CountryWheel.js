@@ -3,7 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { countries, continents, getCountriesByFilter } from '../data/countries.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedContinentName, getLocalizedCountryName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -37,7 +37,7 @@ export function renderCountryWheel(container) {
                 const count = countries.filter(co => co.continent === c).length;
                 return `<label class="region-toggle">
                   <input type="checkbox" checked data-continent="${c}">
-                  <span class="region-name">${c}</span>
+                  <span class="region-name">${getLocalizedContinentName(locale, c)}</span>
                   <span class="region-count">(${count})</span>
                 </label>`;
               }).join('')}
@@ -99,7 +99,7 @@ export function renderCountryWheel(container) {
   let currentWheelCountries = getWheelEntries();
 
   const engine = new WheelEngine('countryCanvas', {
-    entries: currentWheelCountries.map(c => c.flag + ' ' + c.name),
+    entries: currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)),
     colors: GEO_COLORS,
     fontSize: 11,
     spinPower: 4.2,
@@ -111,13 +111,15 @@ export function renderCountryWheel(container) {
       audioManager.playFanfare();
       // Find the country
       const countryName = winner.entry.replace(/^[^\s]+\s/, '');
-      const country = countries.find(c => c.name === countryName) || { flag: '🌍', name: countryName };
+      const country = currentWheelCountries.find(c => getLocalizedCountryName(locale, c) === countryName)
+        || countries.find(c => getLocalizedCountryName(locale, c) === countryName)
+        || { flag: '🌍', name: countryName };
 
       const resultEl = document.getElementById('countryResult');
       resultEl.innerHTML = `<div class="result-winner country-result">
         <span class="country-flag-big">${country.flag}</span>
-        <span class="result-text">${country.name}</span>
-        <span class="country-continent">${country.continent || ''}</span>
+        <span class="result-text">${getLocalizedCountryName(locale, country)}</span>
+        <span class="country-continent">${country.continent ? getLocalizedContinentName(locale, country.continent) : ''}</span>
       </div>`;
       resultEl.classList.add('show');
 
@@ -125,7 +127,7 @@ export function renderCountryWheel(container) {
       engine.centerEmoji = country.flag;
       engine.draw();
 
-      customPanel.addResult(country.name);
+      customPanel.addResult(getLocalizedCountryName(locale, country));
       document.getElementById('countrySpinBtn').disabled = false;
     },
     onSpinStart: () => {
@@ -135,7 +137,7 @@ export function renderCountryWheel(container) {
       engine.centerEmoji = '';
       // Resample countries for variety
       currentWheelCountries = getWheelEntries();
-      engine.setEntries(currentWheelCountries.map(c => c.flag + ' ' + c.name), GEO_COLORS);
+      engine.setEntries(currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)), GEO_COLORS);
     }
   });
 
@@ -152,7 +154,7 @@ export function renderCountryWheel(container) {
         enabledContinents = enabledContinents.filter(c => c !== continent);
       }
       currentWheelCountries = getWheelEntries();
-      engine.setEntries(currentWheelCountries.map(c => c.flag + ' ' + c.name), GEO_COLORS);
+      engine.setEntries(currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)), GEO_COLORS);
       document.getElementById('regionSummary').textContent = ui.countriesSelected.replace('{count}', getFilteredCountries().length);
     }
   });

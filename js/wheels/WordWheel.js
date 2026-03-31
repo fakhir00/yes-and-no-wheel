@@ -2,7 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -85,7 +85,7 @@ export function renderWordWheel(container) {
     </div>
   `;
 
-  const defaultEntries = ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve', 'Frank'];
+  const defaultEntries = getLocalizedWheelSeedEntries(locale, 'word');
 
   const engine = new WheelEngine('wordCanvas', {
     entries: defaultEntries,

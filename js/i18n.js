@@ -2272,6 +2272,192 @@ export function getWheelUiText(locale) {
   return WHEEL_UI_TRANSLATIONS[normalizeLocale(locale)] || WHEEL_UI_TRANSLATIONS.en;
 }
 
+const WHEEL_SEED_ENTRIES = {
+  rainbow: {
+    en: ['Adventure', 'Creativity', 'Love', 'Wisdom', 'Joy', 'Peace', 'Courage'],
+    'zh-CN': ['冒险', '创意', '爱', '智慧', '喜悦', '平和', '勇气'],
+    hi: ['रोमांच', 'रचनात्मकता', 'प्यार', 'बुद्धि', 'खुशी', 'शांति', 'साहस'],
+    es: ['Aventura', 'Creatividad', 'Amor', 'Sabiduria', 'Alegria', 'Paz', 'Valor'],
+    ar: ['مغامرة', 'ابداع', 'حب', 'حكمة', 'فرح', 'سلام', 'شجاعة'],
+    fr: ['Aventure', 'Creativite', 'Amour', 'Sagesse', 'Joie', 'Paix', 'Courage'],
+    bn: ['রোমাঞ্চ', 'সৃজনশীলতা', 'ভালবাসা', 'প্রজ্ঞা', 'আনন্দ', 'শান্তি', 'সাহস'],
+    pt: ['Aventura', 'Criatividade', 'Amor', 'Sabedoria', 'Alegria', 'Paz', 'Coragem'],
+    ru: ['Приключение', 'Творчество', 'Любовь', 'Мудрость', 'Радость', 'Покой', 'Смелость'],
+    ur: ['مہم', 'تخلیق', 'محبت', 'حکمت', 'خوشی', 'امن', 'ہمت'],
+    id: ['Petualangan', 'Kreativitas', 'Cinta', 'Kebijaksanaan', 'Sukacita', 'Damai', 'Keberanian'],
+    de: ['Abenteuer', 'Kreativitaet', 'Liebe', 'Weisheit', 'Freude', 'Frieden', 'Mut'],
+    ja: ['冒険', '創造性', '愛', '知恵', '喜び', '平和', '勇気'],
+    mr: ['साहस', 'सर्जनशीलता', 'प्रेम', 'शहाणपण', 'आनंद', 'शांतता', 'धैर्य'],
+    te: ['సాహసం', 'సృజనాత్మకత', 'ప్రేమ', 'జ్ఞానం', 'ఆనందం', 'శాంతి', 'ధైర్యం']
+  },
+  'wheel-of-fate': {
+    en: ['Death', 'Mercy', 'Betrayal', 'Love', 'Victory', 'Exile', 'Redemption', 'Sacrifice'],
+    'zh-CN': ['死亡', '怜悯', '背叛', '爱', '胜利', '流放', '救赎', '牺牲'],
+    hi: ['मृत्यु', 'दया', 'विश्वासघात', 'प्यार', 'विजय', 'निर्वासन', 'मोचन', 'बलिदान'],
+    es: ['Muerte', 'Misericordia', 'Traicion', 'Amor', 'Victoria', 'Exilio', 'Redencion', 'Sacrificio'],
+    ar: ['الموت', 'رحمة', 'خيانة', 'حب', 'نصر', 'منفى', 'خلاص', 'تضحية'],
+    fr: ['Mort', 'Pitie', 'Trahison', 'Amour', 'Victoire', 'Exil', 'Redemption', 'Sacrifice'],
+    bn: ['মৃত্যু', 'দয়া', 'বিশ্বাসঘাতকতা', 'ভালবাসা', 'বিজয়', 'নির্বাসন', 'মুক্তি', 'ত্যাগ'],
+    pt: ['Morte', 'Misericordia', 'Traicao', 'Amor', 'Vitoria', 'Exilio', 'Redencao', 'Sacrificio'],
+    ru: ['Смерть', 'Милость', 'Предательство', 'Любовь', 'Победа', 'Изгнание', 'Искупление', 'Жертва'],
+    ur: ['موت', 'رحم', 'غداری', 'محبت', 'فتح', 'جلاوطنی', 'نجات', 'قربانی'],
+    id: ['Kematian', 'Belas Kasih', 'Pengkhianatan', 'Cinta', 'Kemenangan', 'Pengasingan', 'Penebusan', 'Pengorbanan'],
+    de: ['Tod', 'Gnade', 'Verrat', 'Liebe', 'Sieg', 'Verbannung', 'Erloesung', 'Opfer'],
+    ja: ['死', '慈悲', '裏切り', '愛', '勝利', '追放', '救済', '犠牲'],
+    mr: ['मृत्यू', 'दया', 'विश्वासघात', 'प्रेम', 'विजय', 'हद्दपार', 'मोक्ष', 'बलिदान'],
+    te: ['మరణం', 'కరుణ', 'ద్రోహం', 'ప్రేమ', 'విజయం', 'నిర్బంధం', 'విమోచనం', 'త్యాగం']
+  },
+  word: {
+    en: ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve', 'Frank'],
+    'zh-CN': ['小明', '小红', '子轩', '若曦', '浩然', '欣怡'],
+    hi: ['आरव', 'दिया', 'कबीर', 'अनाया', 'विवान', 'मीरा'],
+    es: ['Sofia', 'Mateo', 'Valeria', 'Diego', 'Camila', 'Lucas'],
+    ar: ['علي', 'سارة', 'عمر', 'ليلى', 'يوسف', 'مريم'],
+    fr: ['Emma', 'Louis', 'Chloe', 'Hugo', 'Lea', 'Noah'],
+    bn: ['আরিফ', 'সুমাইয়া', 'রাহমান', 'তিশা', 'নাবিল', 'মেঘলা'],
+    pt: ['Sofia', 'Miguel', 'Helena', 'Tiago', 'Laura', 'Pedro'],
+    ru: ['Анна', 'Иван', 'София', 'Дмитрий', 'Мария', 'Алексей'],
+    ur: ['علی', 'عائشہ', 'حسن', 'زینب', 'احمد', 'مریم'],
+    id: ['Andi', 'Siti', 'Budi', 'Putri', 'Raka', 'Dewi'],
+    de: ['Mia', 'Leon', 'Emma', 'Paul', 'Lina', 'Ben'],
+    ja: ['はると', 'さくら', 'ゆい', 'そうた', 'あい', 'りく'],
+    mr: ['आरव', 'सायली', 'विहान', 'अन्वी', 'आदित्य', 'मीरा'],
+    te: ['ఆరవ్', 'దియా', 'విహాన్', 'అన్వి', 'ఆదిత్య', 'మీరా']
+  },
+  todPlayers: {
+    en: ['Alex', 'Jordan', 'Sam', 'Taylor', 'Morgan', 'Casey'],
+    'zh-CN': ['小明', '小红', '子轩', '若曦', '浩然', '欣怡'],
+    hi: ['आरव', 'दिया', 'कबीर', 'अनाया', 'विवान', 'मीरा'],
+    es: ['Sofia', 'Mateo', 'Valeria', 'Diego', 'Camila', 'Lucas'],
+    ar: ['علي', 'سارة', 'عمر', 'ليلى', 'يوسف', 'مريم'],
+    fr: ['Emma', 'Louis', 'Chloe', 'Hugo', 'Lea', 'Noah'],
+    bn: ['আরিফ', 'সুমাইয়া', 'রাহমান', 'তিশা', 'নাবিল', 'মেঘলা'],
+    pt: ['Sofia', 'Miguel', 'Helena', 'Tiago', 'Laura', 'Pedro'],
+    ru: ['Анна', 'Иван', 'София', 'Дмитрий', 'Мария', 'Алексей'],
+    ur: ['علی', 'عائشہ', 'حسن', 'زینب', 'احمد', 'مریم'],
+    id: ['Andi', 'Siti', 'Budi', 'Putri', 'Raka', 'Dewi'],
+    de: ['Mia', 'Leon', 'Emma', 'Paul', 'Lina', 'Ben'],
+    ja: ['はると', 'さくら', 'ゆい', 'そうた', 'あい', 'りく'],
+    mr: ['आरव', 'सायली', 'विहान', 'अन्वी', 'आदित्य', 'मीरा'],
+    te: ['ఆరవ్', 'దియా', 'విహాన్', 'అన్వి', 'ఆదిత్య', 'మీరా']
+  }
+};
+
+const TRUTH_DARE_LABELS = {
+  en: { truth: 'Truth', dare: 'Dare' },
+  'zh-CN': { truth: '真心话', dare: '大冒险' },
+  hi: { truth: 'सच', dare: 'हिम्मत' },
+  es: { truth: 'Verdad', dare: 'Reto' },
+  ar: { truth: 'صراحة', dare: 'جرأة' },
+  fr: { truth: 'Verite', dare: 'Action' },
+  bn: { truth: 'সত্য', dare: 'ডেয়ার' },
+  pt: { truth: 'Verdade', dare: 'Desafio' },
+  ru: { truth: 'Правда', dare: 'Действие' },
+  ur: { truth: 'سچ', dare: 'ہمت' },
+  id: { truth: 'Jujur', dare: 'Tantangan' },
+  de: { truth: 'Wahrheit', dare: 'Pflicht' },
+  ja: { truth: '真実', dare: 'チャレンジ' },
+  mr: { truth: 'सत्य', dare: 'चॅलेंज' },
+  te: { truth: 'నిజం', dare: 'డేర్' }
+};
+
+const CONTINENT_LABELS = {
+  en: { Africa: 'Africa', Asia: 'Asia', Europe: 'Europe', 'North America': 'North America', 'South America': 'South America', Oceania: 'Oceania' },
+  'zh-CN': { Africa: '非洲', Asia: '亚洲', Europe: '欧洲', 'North America': '北美洲', 'South America': '南美洲', Oceania: '大洋洲' },
+  hi: { Africa: 'अफ्रीका', Asia: 'एशिया', Europe: 'यूरोप', 'North America': 'उत्तरी अमेरिका', 'South America': 'दक्षिण अमेरिका', Oceania: 'ओशिनिया' },
+  es: { Africa: 'Africa', Asia: 'Asia', Europe: 'Europa', 'North America': 'America del Norte', 'South America': 'America del Sur', Oceania: 'Oceania' },
+  ar: { Africa: 'افريقيا', Asia: 'اسيا', Europe: 'اوروبا', 'North America': 'امريكا الشمالية', 'South America': 'امريكا الجنوبية', Oceania: 'اوقيانوسيا' },
+  fr: { Africa: 'Afrique', Asia: 'Asie', Europe: 'Europe', 'North America': 'Amerique du Nord', 'South America': 'Amerique du Sud', Oceania: 'Oceanie' },
+  bn: { Africa: 'আফ্রিকা', Asia: 'এশিয়া', Europe: 'ইউরোপ', 'North America': 'উত্তর আমেরিকা', 'South America': 'দক্ষিণ আমেরিকা', Oceania: 'ওশেনিয়া' },
+  pt: { Africa: 'Africa', Asia: 'Asia', Europe: 'Europa', 'North America': 'America do Norte', 'South America': 'America do Sul', Oceania: 'Oceania' },
+  ru: { Africa: 'Африка', Asia: 'Азия', Europe: 'Европа', 'North America': 'Северная Америка', 'South America': 'Южная Америка', Oceania: 'Океания' },
+  ur: { Africa: 'افریقہ', Asia: 'ایشیا', Europe: 'یورپ', 'North America': 'شمالی امریکہ', 'South America': 'جنوبی امریکہ', Oceania: 'اوشینیا' },
+  id: { Africa: 'Afrika', Asia: 'Asia', Europe: 'Eropa', 'North America': 'Amerika Utara', 'South America': 'Amerika Selatan', Oceania: 'Oseania' },
+  de: { Africa: 'Afrika', Asia: 'Asien', Europe: 'Europa', 'North America': 'Nordamerika', 'South America': 'Suedamerika', Oceania: 'Ozeanien' },
+  ja: { Africa: 'アフリカ', Asia: 'アジア', Europe: 'ヨーロッパ', 'North America': '北アメリカ', 'South America': '南アメリカ', Oceania: 'オセアニア' },
+  mr: { Africa: 'आफ्रिका', Asia: 'आशिया', Europe: 'युरोप', 'North America': 'उत्तर अमेरिका', 'South America': 'दक्षिण अमेरिका', Oceania: 'ओशेनिया' },
+  te: { Africa: 'ఆఫ్రికా', Asia: 'ఆసియా', Europe: 'యూరప్', 'North America': 'ఉత్తర అమెరికా', 'South America': 'దక్షిణ అమెరికా', Oceania: 'ఓషెనియా' }
+};
+
+const ZODIAC_NAMES = {
+  en: ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'],
+  'zh-CN': ['白羊座', '金牛座', '双子座', '巨蟹座', '狮子座', '处女座', '天秤座', '天蝎座', '射手座', '摩羯座', '水瓶座', '双鱼座'],
+  hi: ['मेष', 'वृषभ', 'मिथुन', 'कर्क', 'सिंह', 'कन्या', 'तुला', 'वृश्चिक', 'धनु', 'मकर', 'कुंभ', 'मीन'],
+  es: ['Aries', 'Tauro', 'Geminis', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Escorpio', 'Sagitario', 'Capricornio', 'Acuario', 'Piscis'],
+  ar: ['الحمل', 'الثور', 'الجوزاء', 'السرطان', 'الاسد', 'العذراء', 'الميزان', 'العقرب', 'القوس', 'الجدي', 'الدلو', 'الحوت'],
+  fr: ['Belier', 'Taureau', 'Gemeaux', 'Cancer', 'Lion', 'Vierge', 'Balance', 'Scorpion', 'Sagittaire', 'Capricorne', 'Verseau', 'Poissons'],
+  bn: ['মেষ', 'বৃষ', 'মিথুন', 'কর্কট', 'সিংহ', 'কন্যা', 'তুলা', 'বৃশ্চিক', 'ধনু', 'মকর', 'কুম্ভ', 'মীন'],
+  pt: ['Aries', 'Touro', 'Gemeos', 'Cancer', 'Leao', 'Virgem', 'Libra', 'Escorpiao', 'Sagitario', 'Capricornio', 'Aquario', 'Peixes'],
+  ru: ['Овен', 'Телец', 'Близнецы', 'Рак', 'Лев', 'Дева', 'Весы', 'Скорпион', 'Стрелец', 'Козерог', 'Водолей', 'Рыбы'],
+  ur: ['حمل', 'ثور', 'جوزا', 'سرطان', 'اسد', 'سنبلہ', 'میزان', 'عقرب', 'قوس', 'جدی', 'دلو', 'حوت'],
+  id: ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'],
+  de: ['Widder', 'Stier', 'Zwillinge', 'Krebs', 'Loewe', 'Jungfrau', 'Waage', 'Skorpion', 'Schuetze', 'Steinbock', 'Wassermann', 'Fische'],
+  ja: ['おひつじ座', 'おうし座', 'ふたご座', 'かに座', 'しし座', 'おとめ座', 'てんびん座', 'さそり座', 'いて座', 'やぎ座', 'みずがめ座', 'うお座'],
+  mr: ['मेष', 'वृषभ', 'मिथुन', 'कर्क', 'सिंह', 'कन्या', 'तुळ', 'वृश्चिक', 'धनु', 'मकर', 'कुंभ', 'मीन'],
+  te: ['మేషం', 'వృషభం', 'మిథునం', 'కర్కాటకం', 'సింహం', 'కన్య', 'తుల', 'వృశ్చికం', 'ధనుస్సు', 'మకరం', 'కుంభం', 'మీనం']
+};
+
+const ELEMENT_NAMES = {
+  en: { Fire: 'Fire', Earth: 'Earth', Air: 'Air', Water: 'Water' },
+  'zh-CN': { Fire: '火', Earth: '土', Air: '风', Water: '水' },
+  hi: { Fire: 'अग्नि', Earth: 'पृथ्वी', Air: 'वायु', Water: 'जल' },
+  es: { Fire: 'Fuego', Earth: 'Tierra', Air: 'Aire', Water: 'Agua' },
+  ar: { Fire: 'نار', Earth: 'ارض', Air: 'هواء', Water: 'ماء' },
+  fr: { Fire: 'Feu', Earth: 'Terre', Air: 'Air', Water: 'Eau' },
+  bn: { Fire: 'আগুন', Earth: 'পৃথিবী', Air: 'বায়ু', Water: 'জল' },
+  pt: { Fire: 'Fogo', Earth: 'Terra', Air: 'Ar', Water: 'Agua' },
+  ru: { Fire: 'Огонь', Earth: 'Земля', Air: 'Воздух', Water: 'Вода' },
+  ur: { Fire: 'آگ', Earth: 'زمین', Air: 'ہوا', Water: 'پانی' },
+  id: { Fire: 'Api', Earth: 'Tanah', Air: 'Udara', Water: 'Air' },
+  de: { Fire: 'Feuer', Earth: 'Erde', Air: 'Luft', Water: 'Wasser' },
+  ja: { Fire: '火', Earth: '地', Air: '風', Water: '水' },
+  mr: { Fire: 'अग्नी', Earth: 'पृथ्वी', Air: 'वायू', Water: 'पाणी' },
+  te: { Fire: 'అగ్ని', Earth: 'భూమి', Air: 'గాలి', Water: 'నీరు' }
+};
+
+function flagToRegionCode(flag) {
+  return [...flag]
+    .map((char) => String.fromCodePoint(char.codePointAt(0) - 127397))
+    .join('');
+}
+
+export function getLocalizedWheelSeedEntries(locale, key) {
+  const safeLocale = normalizeLocale(locale);
+  return WHEEL_SEED_ENTRIES[key]?.[safeLocale] || WHEEL_SEED_ENTRIES[key]?.en || [];
+}
+
+export function getLocalizedTruthDareLabels(locale) {
+  const safeLocale = normalizeLocale(locale);
+  return TRUTH_DARE_LABELS[safeLocale] || TRUTH_DARE_LABELS.en;
+}
+
+export function getLocalizedContinentName(locale, continent) {
+  const safeLocale = normalizeLocale(locale);
+  return CONTINENT_LABELS[safeLocale]?.[continent] || CONTINENT_LABELS.en[continent] || continent;
+}
+
+export function getLocalizedCountryName(locale, country) {
+  const safeLocale = normalizeLocale(locale);
+  try {
+    const code = flagToRegionCode(country.flag);
+    const display = new Intl.DisplayNames([safeLocale], { type: 'region' });
+    return display.of(code) || country.name;
+  } catch {
+    return country.name;
+  }
+}
+
+export function getLocalizedZodiacSigns(locale, zodiacSigns) {
+  const safeLocale = normalizeLocale(locale);
+  const names = ZODIAC_NAMES[safeLocale] || ZODIAC_NAMES.en;
+  const elements = ELEMENT_NAMES[safeLocale] || ELEMENT_NAMES.en;
+  return zodiacSigns.map((sign, index) => ({
+    ...sign,
+    name: names[index] || sign.name,
+    element: elements[sign.element] || sign.element
+  }));
+}
+
 export function getHomeText(locale) {
   const safeLocale = normalizeLocale(locale);
   if (HOME_PAGE_TRANSLATIONS[safeLocale]) {
