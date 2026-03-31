@@ -71,6 +71,15 @@ function getMeta(locale, route) {
   };
 }
 
+function ensureLongMetaDescription(description, locale, route) {
+  const routeInfo = getLocalizedRouteContent(locale, route || 'home');
+  const fallback = locale === DEFAULT_LOCALE
+    ? 'Explore the page, review key features, and move to related wheels, language routes, and support pages across YesAndNoWheel.com.'
+    : `${routeInfo.title} includes related navigation, clearer page context, and links to other helpful routes on YesAndNoWheel.com.`;
+  const enriched = `${description} ${routeInfo.title} is part of the wider YesAndNoWheel.com experience, with related tools, localized routes, and clearer internal navigation for users and search visibility.`;
+  return enriched.length >= 160 ? enriched : `${enriched} ${fallback}`;
+}
+
 function getOutputPath(locale, route) {
   if (locale === DEFAULT_LOCALE) {
     if (!route) return resolve('index.html');
@@ -131,7 +140,8 @@ const locales = [DEFAULT_LOCALE, ...LOCALES.map((locale) => locale.code).filter(
 
 for (const locale of locales) {
   for (const route of ROUTES) {
-    const { title, description } = getMeta(locale, route);
+    const { title, description: rawDescription } = getMeta(locale, route);
+    const description = ensureLongMetaDescription(rawDescription, locale, route);
     const canonicalPath = getCanonicalPath(locale, route);
     const url = `${SITE_URL}${canonicalPath}`;
 

@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260401-copy2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260401-meta2';
 
-const ASSET_VERSION = '20260401-copy2';
+const ASSET_VERSION = '20260401-meta3';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -72,6 +72,13 @@ const routeDescriptions = {
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
 };
+
+function ensureLongMetaDescription(description, route) {
+  const fallback = 'Explore the page, review its main features, and move easily to related wheel tools, language versions, and support pages across YesAndNoWheel.com.';
+  const routeName = getLocalizedRouteContent(currentLocale, route || 'home').title;
+  const enriched = `${description} ${routeName} is part of the wider YesAndNoWheel.com hub, with clear navigation, localized routes, and related tools for faster browsing and stronger page context.`;
+  return enriched.length >= 160 ? enriched : `${enriched} ${fallback}`;
+}
 
 // Canonical slug mapping (legacy routes redirect to canonical)
 const canonicalSlugs = {
@@ -170,9 +177,16 @@ async function handleRoute() {
       document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
 
       // Update meta description
-      const desc = routeDescriptions[route] || routeDescriptions[''];
+      const rawDesc = currentLocale === DEFAULT_LOCALE
+        ? (routeDescriptions[route] || routeDescriptions[''])
+        : getLocalizedRouteContent(currentLocale, route || 'home').subtitle;
+      const desc = ensureLongMetaDescription(rawDesc, route);
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc && desc) metaDesc.setAttribute('content', desc);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc && desc) ogDesc.setAttribute('content', desc);
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDesc && desc) twitterDesc.setAttribute('content', desc);
 
       // Update canonical URL
       const canonical = canonicalSlugs[route] || route || 'home';
