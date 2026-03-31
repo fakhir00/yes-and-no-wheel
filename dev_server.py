@@ -25,7 +25,14 @@ class SpaHandler(SimpleHTTPRequestHandler):
   def do_GET(self):
     requested = Path(self.translate_path(self.path))
 
-    if requested.exists() and not requested.is_dir():
+    if requested.exists():
+      if requested.is_dir() and (requested / 'index.html').exists():
+        return super().do_GET()
+
+      if not requested.is_dir():
+        return super().do_GET()
+
+    if requested.is_dir() and (requested / 'index.html').exists():
       return super().do_GET()
 
     if self.path.startswith('/js/') or self.path.startswith('/images/') or self.path.startswith('/favicon') or self.path.endswith('.css') or self.path.endswith('.xml') or self.path.endswith('.txt'):
