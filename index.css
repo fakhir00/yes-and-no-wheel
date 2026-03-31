@@ -405,6 +405,16 @@ a:hover { color: var(--accent-tertiary); }
   padding: var(--space-xl) 0;
 }
 
+.wheel-seo-content {
+  max-width: 800px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.wheel-seo-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .wheel-header { text-align: center; margin-bottom: var(--space-2xl); }
 
 .wheel-title {
@@ -1517,15 +1527,9 @@ a:hover { color: var(--accent-tertiary); }
 .site-footer {
   position: relative;
   overflow: hidden;
-  background: rgba(10, 10, 26, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-card);
   border-top: 1px solid var(--border-glass);
   margin-top: var(--space-3xl);
-}
-
-[data-theme="light"] .site-footer {
-  background: rgba(245, 245, 255, 0.85);
 }
 
 .footer-container {
@@ -1601,7 +1605,7 @@ a:hover { color: var(--accent-tertiary); }
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: var(--bg-glass);
+  background: var(--bg-card);
   border: 1px solid var(--border-glass);
   border-radius: 12px;
   color: rgba(226, 232, 240, 0.72);

@@ -5,6 +5,7 @@ import { hairColors, hairCategories, nameToHex } from '../data/hairColors.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const defaultColors = hairColors.slice(0, 16);
 
@@ -59,6 +60,7 @@ export function renderHairColorWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'hair-color', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'hair-color')}
     </div>`;

@@ -1,22 +1,22 @@
 // router.js — Path-based SPA router (no hash)
-import { renderHomePage } from './pages/HomePage.js?v=20260331-wheelfaq1';
-import { renderAboutPage } from './pages/AboutPage.js?v=20260331-wheelfaq2';
-import { renderContactPage } from './pages/ContactPage.js?v=20260331-wheelfaq2';
-import { renderTermsPage } from './pages/TermsPage.js?v=20260331-wheelfaq2';
-import { renderPrivacyPage } from './pages/PrivacyPage.js?v=20260331-wheelfaq2';
-import { renderSitemapPage } from './pages/SitemapPage.js?v=20260331-wheelfaq2';
-import { renderNotFoundPage } from './pages/NotFoundPage.js?v=20260331-wheelfaq2';
-import { renderFaqPage } from './pages/FaqPage.js?v=20260331-wheelfaq2';
-import { renderLanguagesPage } from './pages/LanguagesPage.js?v=20260331-wheelfaq2';
-import { renderRainbowWheel } from './wheels/RainbowWheel.js?v=20260331-wheelfaq2';
-import { renderWheelOfFate } from './wheels/WheelOfFate.js?v=20260331-wheelfaq2';
-import { renderWordWheel } from './wheels/WordWheel.js?v=20260331-wheelfaq2';
-import { renderTruthOrDare } from './wheels/TruthOrDare.js?v=20260331-wheelfaq2';
-import { renderDTIWheel } from './wheels/DTIWheel.js?v=20260331-wheelfaq2';
-import { renderCountryWheel } from './wheels/CountryWheel.js?v=20260331-wheelfaq2';
-import { renderZodiacWheel } from './wheels/ZodiacWheel.js?v=20260331-wheelfaq2';
-import { renderHairColorWheel } from './wheels/HairColorWheel.js?v=20260331-wheelfaq2';
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-wheelfaq1';
+import { renderHomePage } from './pages/HomePage.js?v=20260331-wheelseo2';
+import { renderAboutPage } from './pages/AboutPage.js?v=20260331-wheelseo2';
+import { renderContactPage } from './pages/ContactPage.js?v=20260331-wheelseo2';
+import { renderTermsPage } from './pages/TermsPage.js?v=20260331-wheelseo2';
+import { renderPrivacyPage } from './pages/PrivacyPage.js?v=20260331-wheelseo2';
+import { renderSitemapPage } from './pages/SitemapPage.js?v=20260331-wheelseo2';
+import { renderNotFoundPage } from './pages/NotFoundPage.js?v=20260331-wheelseo2';
+import { renderFaqPage } from './pages/FaqPage.js?v=20260331-wheelseo2';
+import { renderLanguagesPage } from './pages/LanguagesPage.js?v=20260331-wheelseo2';
+import { renderRainbowWheel } from './wheels/RainbowWheel.js?v=20260331-wheelseo2';
+import { renderWheelOfFate } from './wheels/WheelOfFate.js?v=20260331-wheelseo2';
+import { renderWordWheel } from './wheels/WordWheel.js?v=20260331-wheelseo2';
+import { renderTruthOrDare } from './wheels/TruthOrDare.js?v=20260331-wheelseo2';
+import { renderDTIWheel } from './wheels/DTIWheel.js?v=20260331-wheelseo2';
+import { renderCountryWheel } from './wheels/CountryWheel.js?v=20260331-wheelseo2';
+import { renderZodiacWheel } from './wheels/ZodiacWheel.js?v=20260331-wheelseo2';
+import { renderHairColorWheel } from './wheels/HairColorWheel.js?v=20260331-wheelseo2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-wheelseo2';
 
 const routes = {
   '': renderHomePage,
@@ -176,7 +176,7 @@ function handleRoute() {
     try {
       const renderer = routes[route] || renderNotFoundPage;
       currentEngine = renderer(app);
-      document.title = routeTitles[route] || routeTitles[''];
+      document.title = getDocumentTitle(route);
       document.documentElement.lang = currentLocale;
       document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
 
@@ -249,7 +249,7 @@ function updateBreadcrumb(route) {
     breadcrumbEl.type = 'application/ld+json';
     document.head.appendChild(breadcrumbEl);
   }
-  const pageName = routeTitles[route]?.split('—')[0]?.trim() || 'Home';
+  const pageName = getLocalizedRouteContent(currentLocale, route || 'home').title || 'Home';
   const canonical = canonicalSlugs[route] || route || 'home';
   const canonicalPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
   const homePath = buildLocalizedPath(currentLocale, '');
@@ -283,6 +283,14 @@ function updateStaticUi(uiText) {
     navWheelsLabel: uiText.wheels,
     navAboutLabel: uiText.about,
     navContactLabel: uiText.contact,
+    navRainbowWheelLabel: getLocalizedRouteContent(currentLocale, 'rainbow').title,
+    navWheelOfFateLabel: getLocalizedRouteContent(currentLocale, 'wheel-of-fate').title,
+    navWordWheelLabel: getLocalizedRouteContent(currentLocale, 'word').title,
+    navTruthOrDareWheelLabel: getLocalizedRouteContent(currentLocale, 'spin-the-wheel-truth-or-dare').title,
+    navDTIWheelLabel: getLocalizedRouteContent(currentLocale, 'dti-theme').title,
+    navCountryWheelLabel: getLocalizedRouteContent(currentLocale, 'country').title,
+    navZodiacWheelLabel: getLocalizedRouteContent(currentLocale, 'zodiac').title,
+    navHairColorWheelLabel: getLocalizedRouteContent(currentLocale, 'hair-color').title,
     footerContactHeading: uiText.contactInfo,
     footerWheelsHeading: uiText.wheelsHeading,
     footerMoreWheelsHeading: uiText.moreWheelsHeading,
@@ -327,6 +335,12 @@ function updateAlternateLanguages(canonicalSlug) {
 
 export function getCurrentLocale() {
   return normalizeLocale(currentLocale);
+}
+
+function getDocumentTitle(route) {
+  const safeRoute = route || 'home';
+  const localizedTitle = getLocalizedRouteContent(currentLocale, safeRoute).title;
+  return `${localizedTitle} — YesAndNoWheel.com`;
 }
 
 

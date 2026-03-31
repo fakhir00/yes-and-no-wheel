@@ -5,6 +5,7 @@ import { zodiacSigns, getCompatibility } from '../data/zodiacData.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 export function renderZodiacWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -49,6 +50,7 @@ export function renderZodiacWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'zodiac', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'zodiac')}
     </div>`;

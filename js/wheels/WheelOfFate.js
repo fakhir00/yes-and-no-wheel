@@ -5,6 +5,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -67,6 +68,7 @@ export function renderWheelOfFate(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'wheel-of-fate', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'wheel-of-fate')}
     </div>

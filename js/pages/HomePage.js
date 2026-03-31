@@ -2,7 +2,8 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-wheelfaq2';
+import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-wheelseo2';
+import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -146,6 +147,8 @@ export function renderHomePage(container) {
           `).join('')}
         </div>
       </section>
+
+      ${renderWheelSeoContent(t.heroTitle, 'home', locale)}
 
       <!-- FAQ -->
       <section class="faq">

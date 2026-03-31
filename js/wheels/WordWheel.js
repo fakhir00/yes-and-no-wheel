@@ -5,6 +5,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -78,6 +79,7 @@ export function renderWordWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'word', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'word')}
     </div>

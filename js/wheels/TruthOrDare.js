@@ -6,6 +6,7 @@ import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -88,6 +89,7 @@ export function renderTruthOrDare(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'spin-the-wheel-truth-or-dare', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'spin-the-wheel-truth-or-dare')}
     </div>

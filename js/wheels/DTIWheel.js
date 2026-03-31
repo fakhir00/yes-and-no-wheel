@@ -6,6 +6,7 @@ import { dtiThemes, dtiCategories, getEnabledThemes } from '../data/dtiThemes.js
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -76,6 +77,7 @@ export function renderDTIWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'dti-theme', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'dti-theme')}
     </div>

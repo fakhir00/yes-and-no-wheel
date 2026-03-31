@@ -6,6 +6,7 @@ import { countries, continents, getCountriesByFilter } from '../data/countries.j
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -78,6 +79,7 @@ export function renderCountryWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'country', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'country')}
     </div>

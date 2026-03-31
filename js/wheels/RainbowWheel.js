@@ -5,6 +5,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
+import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const RAINBOW_COLORS = [
   '#FF0000', // Red
@@ -75,6 +76,7 @@ export function renderRainbowWheel(container) {
         </div>
       </div>
 
+      ${renderWheelSeoContent(t.title, 'rainbow', locale)}
       ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'rainbow')}
     </div>
