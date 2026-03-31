@@ -2,7 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-speed1';
+import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260401-meta1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
 
 export function renderHomePage(container) {
@@ -28,7 +28,7 @@ export function renderHomePage(container) {
       <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
-          <h1 class="hero-title">${t.heroTitle} — ${t.heroSuffix}</h1>
+          <h2 class="hero-title">${t.heroTitle} — ${t.heroSuffix}</h2>
           <p class="hero-subtitle">${t.heroSubtitle}</p>
         </div>
 
@@ -88,7 +88,7 @@ export function renderHomePage(container) {
 
       <!-- HOW IT WORKS -->
       <section class="how-it-works howto-tutorial">
-        <h2 class="section-title">${t.howTitle}</h2>
+        <h1 class="section-title">${t.howTitle}</h1>
         <p class="howto-intro">${t.howIntro}</p>
 
         <div class="howto-steps-list">

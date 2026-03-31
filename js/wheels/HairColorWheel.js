@@ -16,7 +16,7 @@ export function renderHairColorWheel(container) {
   container.innerHTML = `
     <div class="wheel-page hair-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title hair-title">💇 ${t.title}</h1>
+        <h2 class="wheel-title hair-title">💇 ${t.title}</h2>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
       <div class="wheel-layout">
@@ -40,7 +40,7 @@ export function renderHairColorWheel(container) {
         <div class="wheel-sidebar" id="hairSidebar"></div>
       </div>
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
+        <h1>${t.howToUse}</h1>
         <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">

@@ -6,8 +6,8 @@ const SITE_URL = 'https://yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
 
 const ROUTE_TITLES_EN = {
-  '': 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
-  home: 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
+  '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
+  home: 'Yes and No Wheel — #1 Free Random Decision Spinner',
   'about-us': 'About Us — YesAndNoWheel.com',
   contact: 'Contact Us — YesAndNoWheel.com',
   terms: 'Terms of Service — YesAndNoWheel.com',
@@ -15,14 +15,14 @@ const ROUTE_TITLES_EN = {
   faq: 'Frequently Asked Questions — YesAndNoWheel.com',
   languages: 'Languages — YesAndNoWheel.com',
   sitemap: 'Sitemap — YesAndNoWheel.com',
-  rainbow: 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel [2026]',
-  'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner [2026]',
-  word: 'Word Wheel — #1 Free Random Name Picker Spinner [2026]',
-  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game [2026]',
-  'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes [2026]',
-  country: 'Country Wheel — Pick Randomly From Top 199 Countries [2026]',
-  zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny [2026]',
-  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color [2026]'
+  rainbow: 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel',
+  'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
+  word: 'Word Wheel — #1 Free Random Name Picker Spinner',
+  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game',
+  'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
+  country: 'Country Wheel — Pick Randomly From Top 199 Countries',
+  zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
+  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color'
 };
 
 const ROUTE_DESCRIPTIONS_EN = {

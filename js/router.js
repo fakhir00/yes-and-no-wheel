@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-speed1';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260401-meta1';
 
-const ASSET_VERSION = '20260331-speed1';
+const ASSET_VERSION = '20260401-meta1';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -29,8 +29,8 @@ const routes = {
 };
 
 const routeTitles = {
-  '': 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
-  'home': 'Yes and No Wheel — #1 Free Random Decision Spinner [2026]',
+  '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
+  'home': 'Yes and No Wheel — #1 Free Random Decision Spinner',
   'about-us': 'About Us — YesAndNoWheel.com',
   'contact': 'Contact Us — YesAndNoWheel.com',
   'terms': 'Terms of Service — YesAndNoWheel.com',
@@ -39,18 +39,18 @@ const routeTitles = {
   'languages': 'Languages — YesAndNoWheel.com',
   'sitemap': 'Sitemap — YesAndNoWheel.com',
   '404': 'Page Not Found — YesAndNoWheel.com',
-  'rainbow': 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel [2026]',
-  'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner [2026]',
-  'word': 'Word Wheel — #1 Free Random Name Picker Spinner [2026]',
-  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game [2026]',
-  'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes [2026]',
-  'country': 'Country Wheel — Pick Randomly From Top 199 Countries [2026]',
-  'zodiac': 'Zodiac Wheel — Spin For Your Best Star Sign Destiny [2026]',
-  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color [2026]',
-  'fate': 'Wheel of Fate — The Best Custom RPG Story Spinner [2026]',
-  'tod': 'Spin the Wheel Truth or Dare — Fun Party Game [2026]',
-  'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes [2026]',
-  'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color [2026]',
+  'rainbow': 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel',
+  'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
+  'word': 'Word Wheel — #1 Free Random Name Picker Spinner',
+  'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game',
+  'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
+  'country': 'Country Wheel — Pick Randomly From Top 199 Countries',
+  'zodiac': 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
+  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
+  'fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
+  'tod': 'Spin the Wheel Truth or Dare — Fun Party Game',
+  'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
+  'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color',
 };
 
 const routeDescriptions = {
