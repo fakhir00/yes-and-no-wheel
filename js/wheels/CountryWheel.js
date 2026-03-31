@@ -4,7 +4,8 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { countries, continents, getCountriesByFilter } from '../data/countries.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
-import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
+import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -63,9 +64,6 @@ export function renderCountryWheel(container) {
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
             <p class="howto-step-desc">${t.step1Desc}</p>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/country-wheel.png" alt="Country Wheel with region filters and flag display" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
@@ -80,8 +78,8 @@ export function renderCountryWheel(container) {
         </div>
       </div>
 
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'country')}
-      ${renderWheelTextSilo(locale, 'country')}
     </div>
   `;
 

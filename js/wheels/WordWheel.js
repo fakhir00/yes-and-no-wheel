@@ -3,7 +3,8 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
-import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
+import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -63,9 +64,6 @@ export function renderWordWheel(container) {
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
             <p class="howto-step-desc">${t.step1Desc}</p>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/word-wheel.png" alt="Word Wheel name picker with custom entries and Advanced Mode" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
@@ -80,8 +78,8 @@ export function renderWordWheel(container) {
         </div>
       </div>
 
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'word')}
-      ${renderWheelTextSilo(locale, 'word')}
     </div>
   `;
 

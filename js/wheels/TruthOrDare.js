@@ -4,7 +4,8 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
-import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
+import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -73,9 +74,6 @@ export function renderTruthOrDare(container) {
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
             <p class="howto-step-desc">${t.step1Desc}</p>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/truth-or-dare.png" alt="Spin the Wheel Truth or Dare party game with neon design" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
@@ -90,8 +88,8 @@ export function renderTruthOrDare(container) {
         </div>
       </div>
 
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'spin-the-wheel-truth-or-dare')}
-      ${renderWheelTextSilo(locale, 'spin-the-wheel-truth-or-dare')}
     </div>
   `;
 

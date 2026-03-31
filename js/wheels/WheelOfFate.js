@@ -3,7 +3,8 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
-import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
+import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -52,9 +53,6 @@ export function renderWheelOfFate(container) {
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
             <p class="howto-step-desc">${t.step1Desc}</p>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/wheel-of-fate.png" alt="Wheel of Fate with cosmic dark theme and weighted outcomes" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
@@ -69,8 +67,8 @@ export function renderWheelOfFate(container) {
         </div>
       </div>
 
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'wheel-of-fate')}
-      ${renderWheelTextSilo(locale, 'wheel-of-fate')}
     </div>
   `;
 

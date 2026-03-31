@@ -1,22 +1,22 @@
 // router.js — Path-based SPA router (no hash)
-import { renderHomePage } from './pages/HomePage.js?v=20260331-homefix';
-import { renderAboutPage } from './pages/AboutPage.js';
-import { renderContactPage } from './pages/ContactPage.js';
-import { renderTermsPage } from './pages/TermsPage.js';
-import { renderPrivacyPage } from './pages/PrivacyPage.js';
-import { renderSitemapPage } from './pages/SitemapPage.js';
-import { renderNotFoundPage } from './pages/NotFoundPage.js';
-import { renderFaqPage } from './pages/FaqPage.js';
-import { renderLanguagesPage } from './pages/LanguagesPage.js';
-import { renderRainbowWheel } from './wheels/RainbowWheel.js';
-import { renderWheelOfFate } from './wheels/WheelOfFate.js';
-import { renderWordWheel } from './wheels/WordWheel.js';
-import { renderTruthOrDare } from './wheels/TruthOrDare.js';
-import { renderDTIWheel } from './wheels/DTIWheel.js';
-import { renderCountryWheel } from './wheels/CountryWheel.js';
-import { renderZodiacWheel } from './wheels/ZodiacWheel.js';
-import { renderHairColorWheel } from './wheels/HairColorWheel.js';
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-homefix';
+import { renderHomePage } from './pages/HomePage.js?v=20260331-wheelfaq1';
+import { renderAboutPage } from './pages/AboutPage.js?v=20260331-wheelfaq2';
+import { renderContactPage } from './pages/ContactPage.js?v=20260331-wheelfaq2';
+import { renderTermsPage } from './pages/TermsPage.js?v=20260331-wheelfaq2';
+import { renderPrivacyPage } from './pages/PrivacyPage.js?v=20260331-wheelfaq2';
+import { renderSitemapPage } from './pages/SitemapPage.js?v=20260331-wheelfaq2';
+import { renderNotFoundPage } from './pages/NotFoundPage.js?v=20260331-wheelfaq2';
+import { renderFaqPage } from './pages/FaqPage.js?v=20260331-wheelfaq2';
+import { renderLanguagesPage } from './pages/LanguagesPage.js?v=20260331-wheelfaq2';
+import { renderRainbowWheel } from './wheels/RainbowWheel.js?v=20260331-wheelfaq2';
+import { renderWheelOfFate } from './wheels/WheelOfFate.js?v=20260331-wheelfaq2';
+import { renderWordWheel } from './wheels/WordWheel.js?v=20260331-wheelfaq2';
+import { renderTruthOrDare } from './wheels/TruthOrDare.js?v=20260331-wheelfaq2';
+import { renderDTIWheel } from './wheels/DTIWheel.js?v=20260331-wheelfaq2';
+import { renderCountryWheel } from './wheels/CountryWheel.js?v=20260331-wheelfaq2';
+import { renderZodiacWheel } from './wheels/ZodiacWheel.js?v=20260331-wheelfaq2';
+import { renderHairColorWheel } from './wheels/HairColorWheel.js?v=20260331-wheelfaq2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260331-wheelfaq1';
 
 const routes = {
   '': renderHomePage,

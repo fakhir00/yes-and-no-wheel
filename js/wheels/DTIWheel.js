@@ -4,7 +4,8 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { dtiThemes, dtiCategories, getEnabledThemes } from '../data/dtiThemes.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
-import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
+import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -61,9 +62,6 @@ export function renderDTIWheel(container) {
           <div class="howto-step-item">
             <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
             <p class="howto-step-desc">${t.step1Desc}</p>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/dti-theme-wheel.png" alt="DTI Theme Wheel for Dress To Impress outfit inspiration" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
@@ -78,8 +76,8 @@ export function renderDTIWheel(container) {
         </div>
       </div>
 
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'dti-theme')}
-      ${renderWheelTextSilo(locale, 'dti-theme')}
     </div>
   `;
 

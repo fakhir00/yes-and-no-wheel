@@ -1,8 +1,8 @@
 // main.js — App entry point
-import { initRouter } from './router.js?v=20260331-homefix';
+import { initRouter } from './router.js?v=20260331-wheelfaq2';
 import { storage } from './engine/StorageManager.js';
 import { audioManager } from './engine/AudioManager.js';
-import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260331-homefix';
+import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260331-wheelfaq2';
 
 // Apply saved theme
 const theme = storage.getThemePreference();

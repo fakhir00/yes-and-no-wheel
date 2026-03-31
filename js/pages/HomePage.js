@@ -2,8 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-homefix';
-import { renderWheelTextSilo } from '../wheels/WheelSilo.js';
+import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-wheelfaq2';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -98,9 +97,6 @@ export function renderHomePage(container) {
               <li>${t.step1Opt1}</li>
               <li>${t.step1Opt2}</li>
             </ul>
-            <div class="howto-step-screenshot">
-              <img src="/images/howto/yesno-wheel.png" alt="Yes and No Wheel mode selection — YES or NO and YES NO or MAYBE buttons" class="howto-inline-img" loading="lazy">
-            </div>
           </div>
 
           <hr class="howto-divider">
@@ -158,8 +154,6 @@ export function renderHomePage(container) {
           ${t.faqItems.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
         </div>
       </section>
-
-      ${renderWheelTextSilo(locale, 'home')}
     </div>`;
 
   // ---- Yes/No Wheel Logic ----
