@@ -2,7 +2,8 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-homefix';
+import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260331-homefix';
+import { renderWheelTextSilo } from '../wheels/WheelSilo.js';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -140,7 +141,7 @@ export function renderHomePage(container) {
         <p class="section-subtitle">${t.exploreSubtitle}</p>
         <div class="cards-grid">
           ${wheels.map(w => `
-            <a href="/${w.id}/" class="wheel-card" style="--card-accent:${w.color}">
+            <a href="${buildLocalizedPath(locale, w.id)}" class="wheel-card" style="--card-accent:${w.color}">
               <div class="wheel-card-icon">${w.icon}</div>
               <h3 class="wheel-card-title">${w.title}</h3>
               <p class="wheel-card-desc">${w.desc}</p>
@@ -150,7 +151,6 @@ export function renderHomePage(container) {
         </div>
       </section>
 
-
       <!-- FAQ -->
       <section class="faq">
         <h2 class="section-title">${t.faqTitle}</h2>
@@ -158,6 +158,8 @@ export function renderHomePage(container) {
           ${t.faqItems.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
         </div>
       </section>
+
+      ${renderWheelTextSilo(locale, 'home')}
     </div>`;
 
   // ---- Yes/No Wheel Logic ----

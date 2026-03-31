@@ -3,6 +3,7 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { zodiacSigns, getCompatibility } from '../data/zodiacData.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 export function renderZodiacWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -49,6 +50,9 @@ export function renderZodiacWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'zodiac')}
+      ${renderWheelTextSilo(locale, 'zodiac')}
     </div>`;
 
   function showInfo(name) {

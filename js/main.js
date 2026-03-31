@@ -72,6 +72,13 @@ const footerThemeBtn = document.getElementById('footerThemeBtn');
 if (headerThemeBtn) headerThemeBtn.addEventListener('click', toggleTheme);
 if (footerThemeBtn) footerThemeBtn.addEventListener('click', toggleTheme);
 
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // Language Switcher Logic
 const langGrid = document.getElementById('langGrid');
 if (langGrid) {

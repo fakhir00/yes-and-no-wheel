@@ -4,6 +4,7 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { dtiThemes, dtiCategories, getEnabledThemes } from '../data/dtiThemes.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -76,6 +77,9 @@ export function renderDTIWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'dti-theme')}
+      ${renderWheelTextSilo(locale, 'dti-theme')}
     </div>
   `;
 

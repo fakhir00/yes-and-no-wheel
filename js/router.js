@@ -302,7 +302,7 @@ function updateStaticUi(uiText) {
 
   const footerBuiltWith = document.getElementById('footerBuiltWith');
   if (footerBuiltWith) {
-    footerBuiltWith.innerHTML = `© <span id="footerYear">${new Date().getFullYear()}</span> yesandnowheel — ${uiText.builtWith} <span aria-hidden="true">❤️</span>`;
+    footerBuiltWith.innerHTML = `© <span id="footerYear">${new Date().getFullYear()}</span> YesAndNoWheel. All rights reserved.`;
   }
 }
 

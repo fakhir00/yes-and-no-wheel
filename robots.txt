@@ -29,7 +29,7 @@ Sitemap: https://www.yesandnowheel.com/sitemap-index.xml
 
 # Block Ahrefs Crawler
 User-agent: AhrefsBot
-Allow: /
+Disallow: /
 
 # Block Moz Crawler
 User-agent: rogerbot

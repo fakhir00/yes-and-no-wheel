@@ -3,6 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -67,6 +68,9 @@ export function renderWheelOfFate(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'wheel-of-fate')}
+      ${renderWheelTextSilo(locale, 'wheel-of-fate')}
     </div>
   `;
 

@@ -4,6 +4,7 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { countries, continents, getCountriesByFilter } from '../data/countries.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -78,6 +79,9 @@ export function renderCountryWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'country')}
+      ${renderWheelTextSilo(locale, 'country')}
     </div>
   `;
 

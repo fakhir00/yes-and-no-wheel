@@ -4,6 +4,7 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -88,6 +89,9 @@ export function renderTruthOrDare(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'spin-the-wheel-truth-or-dare')}
+      ${renderWheelTextSilo(locale, 'spin-the-wheel-truth-or-dare')}
     </div>
   `;
 

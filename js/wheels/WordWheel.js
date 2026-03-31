@@ -3,6 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -78,6 +79,9 @@ export function renderWordWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'word')}
+      ${renderWheelTextSilo(locale, 'word')}
     </div>
   `;
 

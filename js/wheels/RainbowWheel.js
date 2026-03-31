@@ -3,6 +3,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const RAINBOW_COLORS = [
   '#FF0000', // Red
@@ -75,6 +76,9 @@ export function renderRainbowWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'rainbow')}
+      ${renderWheelTextSilo(locale, 'rainbow')}
     </div>
   `;
 

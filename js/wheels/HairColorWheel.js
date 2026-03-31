@@ -3,6 +3,7 @@ import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { hairColors, hairCategories, nameToHex } from '../data/hairColors.js';
 import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { renderWheelSilo, renderWheelTextSilo } from './WheelSilo.js';
 
 const defaultColors = hairColors.slice(0, 16);
 
@@ -59,6 +60,9 @@ export function renderHairColorWheel(container) {
           </div>
         </div>
       </div>
+
+      ${renderWheelSilo(locale, 'hair-color')}
+      ${renderWheelTextSilo(locale, 'hair-color')}
     </div>`;
 
   let selectedColors = [...defaultColors];
