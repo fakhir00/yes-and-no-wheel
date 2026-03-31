@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
-import { LOCALES, buildLocalizedPath, getLocalizedRouteContent } from '../js/i18n.js';
+import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getWheelSharedText } from '../js/i18n.js';
 
 const SITE_URL = 'https://yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
@@ -46,6 +46,7 @@ const ROUTE_DESCRIPTIONS_EN = {
 };
 
 const ROUTES = ['', 'home', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color'];
+const WHEEL_ROUTES = new Set(['', 'home', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']);
 
 const templatePath = resolve('index.html');
 const template = readFileSync(templatePath, 'utf8');
@@ -83,6 +84,20 @@ function getOutputPath(locale, route) {
 
 function getCanonicalPath(locale, route) {
   return buildLocalizedPath(locale, route === 'home' ? '' : route);
+}
+
+function getSourceH1(locale, route) {
+  const routeKey = route || 'home';
+
+  if (routeKey === 'home') {
+    return getHomeText(locale).howTitle;
+  }
+
+  if (WHEEL_ROUTES.has(routeKey)) {
+    return getWheelSharedText(locale, routeKey).howToUse;
+  }
+
+  return getLocalizedRouteContent(locale, routeKey).title;
 }
 
 function setHtmlLang(html, locale) {
@@ -133,6 +148,10 @@ for (const locale of locales) {
       .replace(
         /"description": "Spin the Yes and No Wheel to make instant decisions! The ultimate decision-making hub with 8 specialized spinning wheels\."/,
         `"description": "${description}"`
+      )
+      .replace(
+        /<div id="app"><\/div>/,
+        `<div id="app"><h1 class="source-route-h1" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">${getSourceH1(locale, route)}</h1></div>`
       );
 
     html = setHtmlLang(html, locale);
