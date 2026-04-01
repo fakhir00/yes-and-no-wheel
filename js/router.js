@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-seo4';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-meta5';
 
-const ASSET_VERSION = '20260402-seo4';
+const ASSET_VERSION = '20260402-meta5';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -82,11 +82,21 @@ function ensureLongTitle(title, route) {
   return fallback.length >= 30 ? fallback : `${fallback} | YesAndNoWheel.com`;
 }
 
-function ensureLongMetaDescription(description, route) {
-  const fallback = 'Explore the page, review its main features, and move easily to related wheel tools, language versions, and support pages across YesAndNoWheel.com.';
-  const routeName = getLocalizedRouteContent(currentLocale, route || 'home').title;
-  const enriched = `${description} ${routeName} is part of the wider YesAndNoWheel.com hub, with clear navigation, localized routes, and related tools for faster browsing and stronger page context.`;
-  return enriched.length >= 160 ? enriched : `${enriched} ${fallback}`;
+function ensureMetaDescription(description, route) {
+  const routeInfo = getLocalizedRouteContent(currentLocale, route || 'home');
+  const base = String(description || '').replace(/\s+/g, ' ').trim();
+  const fallback = `${routeInfo.title} on YesAndNoWheel.com.`;
+  let value = base || fallback;
+
+  if (value.length < 95) {
+    value = `${value} Free online tool with quick access to related wheels and useful random tools.`;
+  }
+
+  if (value.length > 155) {
+    value = value.slice(0, 152).trim().replace(/[,\-;: ]+$/g, '') + '...';
+  }
+
+  return value;
 }
 
 // Canonical slug mapping (legacy routes redirect to canonical)
@@ -190,7 +200,7 @@ async function handleRoute() {
       const rawDesc = currentLocale === DEFAULT_LOCALE
         ? (routeDescriptions[route] || routeDescriptions[''])
         : getLocalizedRouteContent(currentLocale, route || 'home').subtitle;
-      const desc = ensureLongMetaDescription(rawDesc, route);
+      const desc = ensureMetaDescription(rawDesc, route);
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc && desc) metaDesc.setAttribute('content', desc);
       const ogDesc = document.querySelector('meta[property="og:description"]');
