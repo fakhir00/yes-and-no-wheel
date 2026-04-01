@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-speed2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-seo4';
 
-const ASSET_VERSION = '20260402-speed2';
+const ASSET_VERSION = '20260402-seo4';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -72,6 +72,15 @@ const routeDescriptions = {
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
 };
+const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg';
+
+function ensureLongTitle(title, route) {
+  if (title.length >= 30) return title;
+  const safeRoute = route || 'home';
+  const routeInfo = getLocalizedRouteContent(currentLocale, safeRoute);
+  const fallback = `${routeInfo.title} — ${routeInfo.subtitle}`;
+  return fallback.length >= 30 ? fallback : `${fallback} | YesAndNoWheel.com`;
+}
 
 function ensureLongMetaDescription(description, route) {
   const fallback = 'Explore the page, review its main features, and move easily to related wheel tools, language versions, and support pages across YesAndNoWheel.com.';
@@ -175,6 +184,7 @@ async function handleRoute() {
       document.title = getDocumentTitle(route);
       document.documentElement.lang = currentLocale;
       document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
+      const currentTitle = getDocumentTitle(route);
 
       // Update meta description
       const rawDesc = currentLocale === DEFAULT_LOCALE
@@ -187,17 +197,29 @@ async function handleRoute() {
       if (ogDesc && desc) ogDesc.setAttribute('content', desc);
       const twitterDesc = document.querySelector('meta[name="twitter:description"]');
       if (twitterDesc && desc) twitterDesc.setAttribute('content', desc);
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', currentTitle);
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) twitterTitle.setAttribute('content', currentTitle);
 
       // Update canonical URL
-      const canonical = canonicalSlugs[route] || route || 'home';
+      const canonical = route || '';
       let canonicalEl = document.querySelector('link[rel="canonical"]');
       if (!canonicalEl) {
         canonicalEl = document.createElement('link');
         canonicalEl.setAttribute('rel', 'canonical');
         document.head.appendChild(canonicalEl);
       }
-      const canonicalPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
+      const canonicalPath = buildLocalizedPath(currentLocale, canonical);
       canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.setAttribute('content', `https://yesandnowheel.com${canonicalPath}`);
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) ogImage.setAttribute('content', OG_IMAGE_URL);
+      const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
+      if (ogImageSecure) ogImageSecure.setAttribute('content', OG_IMAGE_URL);
+      const twitterImage = document.querySelector('meta[name="twitter:image"]');
+      if (twitterImage) twitterImage.setAttribute('content', OG_IMAGE_URL);
       updateAlternateLanguages(canonical);
 
       // Update BreadcrumbList schema
@@ -346,7 +368,7 @@ export function getCurrentLocale() {
 function getDocumentTitle(route) {
   const safeRoute = route || 'home';
   const localizedTitle = getLocalizedRouteContent(currentLocale, safeRoute).title;
-  return `${localizedTitle} — YesAndNoWheel.com`;
+  return ensureLongTitle(`${localizedTitle} — YesAndNoWheel.com`, safeRoute);
 }
 
 

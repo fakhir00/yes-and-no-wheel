@@ -1,9 +1,10 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
-import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getWheelSharedText } from '../js/i18n.js';
+import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getStaticPageContent, getWheelSharedText } from '../js/i18n.js';
 
 const SITE_URL = 'https://yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
+const OG_IMAGE_URL = `${SITE_URL}/og-image.svg`;
 
 const ROUTE_TITLES_EN = {
   '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
@@ -56,19 +57,28 @@ function removeFaqSchema(html) {
 }
 
 function getMeta(locale, route) {
+  const routeKey = route || 'home';
   if (locale === DEFAULT_LOCALE) {
     return {
-      title: ROUTE_TITLES_EN[route],
+      title: ensureLongTitle(ROUTE_TITLES_EN[route], locale, routeKey),
       description: ROUTE_DESCRIPTIONS_EN[route]
     };
   }
 
-  const routeKey = route || 'home';
   const routeInfo = getLocalizedRouteContent(locale, routeKey);
   return {
-    title: `${routeInfo.title} — YesAndNoWheel.com`,
+    title: ensureLongTitle(`${routeInfo.title} — ${routeInfo.subtitle}`, locale, routeKey),
     description: routeInfo.subtitle
   };
+}
+
+function ensureLongTitle(title, locale, route) {
+  if (title.length >= 30) return title;
+  const routeInfo = getLocalizedRouteContent(locale, route || 'home');
+  const fallback = locale === DEFAULT_LOCALE
+    ? `${routeInfo.title} Guide and Online Tool`
+    : `${routeInfo.title} — ${routeInfo.subtitle}`;
+  return fallback.length >= 30 ? fallback : `${fallback} | YesAndNoWheel.com`;
 }
 
 function ensureLongMetaDescription(description, locale, route) {
@@ -86,13 +96,13 @@ function getOutputPath(locale, route) {
     return resolve(route, 'index.html');
   }
 
-  const localizedPath = buildLocalizedPath(locale, route === 'home' ? '' : route);
+  const localizedPath = buildLocalizedPath(locale, route || '');
   const relative = localizedPath.replace(/^\/+|\/+$/g, '');
   return resolve(relative, 'index.html');
 }
 
 function getCanonicalPath(locale, route) {
-  return buildLocalizedPath(locale, route === 'home' ? '' : route);
+  return buildLocalizedPath(locale, route || '');
 }
 
 function getSourceH1(locale, route) {
@@ -107,6 +117,24 @@ function getSourceH1(locale, route) {
   }
 
   return getLocalizedRouteContent(locale, routeKey).title;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getSourceBodyHtml(locale, route) {
+  const routeKey = route || 'home';
+  const staticContent = getStaticPageContent(locale, routeKey);
+  const sections = staticContent.supportSections || staticContent.sections || [];
+  const intro = staticContent.intro ? `<p>${escapeHtml(staticContent.intro)}</p>` : '';
+  const sectionMarkup = sections.map((section) => `<p>${escapeHtml(section.body)}</p>`).join('');
+  return `${intro}${sectionMarkup}`;
 }
 
 function setHtmlLang(html, locale) {
@@ -153,15 +181,23 @@ for (const locale of locales) {
       .replace(/<meta property="og:description" content="[\s\S]*?">/, `<meta property="og:description" content="${description}">`)
       .replace(/<meta property="og:url" content="[\s\S]*?">/, `<meta property="og:url" content="${url}">`)
       .replace(/<meta property="og:locale" content="[\s\S]*?">/, `<meta property="og:locale" content="${getOgLocale(locale)}">`)
+      .replace(/<meta property="og:image" content="[\s\S]*?">/, `<meta property="og:image" content="${OG_IMAGE_URL}">`)
+      .replace(/<meta property="og:image:secure_url" content="[\s\S]*?">/, `<meta property="og:image:secure_url" content="${OG_IMAGE_URL}">`)
+      .replace(/<meta property="og:image:type" content="[\s\S]*?">/, `<meta property="og:image:type" content="image/svg+xml">`)
+      .replace(/<meta property="og:image:width" content="[\s\S]*?">/, `<meta property="og:image:width" content="1200">`)
+      .replace(/<meta property="og:image:height" content="[\s\S]*?">/, `<meta property="og:image:height" content="630">`)
+      .replace(/<meta property="og:image:alt" content="[\s\S]*?">/, `<meta property="og:image:alt" content="YesAndNoWheel.com spinning wheel preview image">`)
       .replace(/<meta name="twitter:title" content="[\s\S]*?">/, `<meta name="twitter:title" content="${title}">`)
       .replace(/<meta name="twitter:description" content="[\s\S]*?">/, `<meta name="twitter:description" content="${description}">`)
+      .replace(/<meta name="twitter:image" content="[\s\S]*?">/, `<meta name="twitter:image" content="${OG_IMAGE_URL}">`)
+      .replace(/<meta name="twitter:image:alt" content="[\s\S]*?">/, `<meta name="twitter:image:alt" content="YesAndNoWheel.com spinning wheel preview image">`)
       .replace(
         /"description": "Spin the Yes and No Wheel to make instant decisions! The ultimate decision-making hub with 8 specialized spinning wheels\."/,
         `"description": "${description}"`
       )
       .replace(
-        /<div id="app"><\/div>/,
-        `<div id="app"><h1 class="source-route-h1" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">${getSourceH1(locale, route)}</h1></div>`
+        /<div id="app">[\s\S]*?<\/div>\s*\n\s*<!-- Footer -->/,
+        `<div id="app"><div class="source-route-copy" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"><article class="source-route-article"><header><h1 class="source-route-h1">${escapeHtml(getSourceH1(locale, route))}</h1></header><section>${getSourceBodyHtml(locale, route)}</section></article></div></div>\n  </main>\n\n  <!-- Footer -->`
       );
 
     html = setHtmlLang(html, locale);
