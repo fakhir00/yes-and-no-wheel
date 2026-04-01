@@ -2,7 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260402-meta5';
+import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260402-seo1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
 
 export function renderHomePage(container) {
@@ -28,7 +28,7 @@ export function renderHomePage(container) {
       <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
-          <h2 class="hero-title">${t.heroTitle} — ${t.heroSuffix}</h2>
+          <p class="hero-title">${t.heroTitle} — ${t.heroSuffix}</p>
           <p class="hero-subtitle">${t.heroSubtitle}</p>
         </div>
 
@@ -63,7 +63,7 @@ export function renderHomePage(container) {
 
             <div class="yesno-inputs-panel">
               <div class="inputs-header">
-                <h3>${t.inputs}</h3>
+                <p>${t.inputs}</p>
               </div>
               <div class="yesno-mode-row">
                 <label>${t.mode}</label>
@@ -93,7 +93,7 @@ export function renderHomePage(container) {
 
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
             <ul class="howto-step-options">
               <li>${t.step1Opt1}</li>
               <li>${t.step1Opt2}</li>
@@ -103,7 +103,7 @@ export function renderHomePage(container) {
           <hr class="howto-divider">
 
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
             <ul class="howto-step-options">
               <li>${t.step2Option}</li>
             </ul>
@@ -112,21 +112,21 @@ export function renderHomePage(container) {
           <hr class="howto-divider">
 
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
             <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
 
           <hr class="howto-divider">
 
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">4</span> ${t.step4Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">4</span> ${t.step4Title}</h2>
             <p class="howto-step-desc">${t.step4Desc}</p>
           </div>
 
           <hr class="howto-divider">
 
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">5</span> ${t.step5Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">5</span> ${t.step5Title}</h2>
             <p class="howto-step-desc">${t.step5Desc}</p>
           </div>
         </div>

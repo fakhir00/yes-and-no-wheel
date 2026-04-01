@@ -52,6 +52,14 @@ const WHEEL_ROUTES = new Set(['', 'home', 'rainbow', 'wheel-of-fate', 'word', 's
 const templatePath = resolve('index.html');
 const template = readFileSync(templatePath, 'utf8');
 
+function charLength(value) {
+  return [...String(value || '')].length;
+}
+
+function sliceChars(value, maxChars) {
+  return [...String(value || '')].slice(0, maxChars).join('');
+}
+
 function removeFaqSchema(html) {
   return html.replace(/\s*<script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema\.org",\s*"@type": "FAQPage"[\s\S]*?<\/script>/, '');
 }
@@ -88,16 +96,16 @@ function ensureMetaDescription(description, locale, route) {
     ? `${routeInfo.title} on YesAndNoWheel.com with fast access to related wheels and tools.`
     : `${routeInfo.title} on YesAndNoWheel.com.`;
   let value = base || fallback;
+  const additions = [' Learn more.', ' Try now.', ' Online.', ' Fast.', ' Now.', '.'];
 
-  if (value.length < 95) {
-    const extension = locale === DEFAULT_LOCALE
-      ? ' Free online tool with quick access to related wheels and useful random tools.'
-      : ' Free online tool with related wheels and useful random tools.';
-    value = `${value}${extension}`;
+  if (charLength(value) > 155) {
+    value = `${sliceChars(value, 152).trim().replace(/[,\-;: ]+$/g, '')}...`;
   }
 
-  if (value.length > 155) {
-    value = value.slice(0, 152).trim().replace(/[,\-;: ]+$/g, '') + '...';
+  while (charLength(value) < 150) {
+    const room = 155 - charLength(value);
+    const addition = additions.find((item) => charLength(item) <= room) || '.';
+    value += addition;
   }
 
   return value;
@@ -145,8 +153,25 @@ function getSourceBodyHtml(locale, route) {
   const routeKey = route || 'home';
   const staticContent = getStaticPageContent(locale, routeKey);
   const sections = staticContent.supportSections || staticContent.sections || [];
-  const intro = staticContent.intro ? `<p>${escapeHtml(staticContent.intro)}</p>` : '';
-  const sectionMarkup = sections.map((section) => `<p>${escapeHtml(section.body)}</p>`).join('');
+  const intro = staticContent.intro ? `<section><p>${escapeHtml(staticContent.intro)}</p></section>` : '';
+
+  if (WHEEL_ROUTES.has(routeKey)) {
+    const keyword = escapeHtml(getLocalizedRouteContent(locale, routeKey).title);
+    const sectionMarkup = sections.map((section, index) => `
+      <section>
+        <h2>${escapeHtml(section.heading || `Section ${index + 1}`)}: <strong>${keyword}</strong></h2>
+        <p>${escapeHtml(section.body)}</p>
+      </section>
+    `).join('');
+    return `${intro}${sectionMarkup}`;
+  }
+
+  const sectionMarkup = sections.map((section) => `
+    <section>
+      <h2>${escapeHtml(section.heading || section.title || 'More Information')}</h2>
+      <p>${escapeHtml(section.body)}</p>
+    </section>
+  `).join('');
   return `${intro}${sectionMarkup}`;
 }
 
@@ -177,6 +202,33 @@ function getOgLocale(locale) {
   return mapping[locale] || 'en_US';
 }
 
+function getBreadcrumbSchema(locale, route) {
+  const routeKey = route || 'home';
+  const currentTitle = getLocalizedRouteContent(locale, routeKey).title;
+  const homeTitle = getLocalizedRouteContent(locale, 'home').title;
+  const currentPath = buildLocalizedPath(locale, routeKey === 'home' ? '' : routeKey);
+  const homePath = buildLocalizedPath(locale, '');
+
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": homeTitle,
+        "item": `${SITE_URL}${homePath}`
+      },
+      ...(routeKey !== 'home' ? [{
+        "@type": "ListItem",
+        "position": 2,
+        "name": currentTitle,
+        "item": `${SITE_URL}${currentPath}`
+      }] : [])
+    ]
+  }, null, 2);
+}
+
 const locales = [DEFAULT_LOCALE, ...LOCALES.map((locale) => locale.code).filter((code) => code !== DEFAULT_LOCALE)];
 
 for (const locale of locales) {
@@ -204,12 +256,13 @@ for (const locale of locales) {
       .replace(/<meta name="twitter:description" content="[\s\S]*?">/, `<meta name="twitter:description" content="${description}">`)
       .replace(/<meta name="twitter:image" content="[\s\S]*?">/, `<meta name="twitter:image" content="${OG_IMAGE_URL}">`)
       .replace(/<meta name="twitter:image:alt" content="[\s\S]*?">/, `<meta name="twitter:image:alt" content="YesAndNoWheel.com spinning wheel preview image">`)
+      .replace(/<script type="application\/ld\+json" id="breadcrumb-schema">[\s\S]*?<\/script>/, `<script type="application/ld+json" id="breadcrumb-schema">\n${getBreadcrumbSchema(locale, route)}\n  </script>`)
       .replace(
         /"description": "Spin the Yes and No Wheel to make instant decisions! The ultimate decision-making hub with 8 specialized spinning wheels\."/,
         `"description": "${description}"`
       )
       .replace(
-        /<div id="app">[\s\S]*?<\/div>\s*\n\s*<!-- Footer -->/,
+        /<div id="app">[\s\S]*?<\/div>\s*<\/main>\s*<!-- Footer -->/,
         `<div id="app"><div class="source-route-copy" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"><article class="source-route-article"><header><h1 class="source-route-h1">${escapeHtml(getSourceH1(locale, route))}</h1></header><section>${getSourceBodyHtml(locale, route)}</section></article></div></div>\n  </main>\n\n  <!-- Footer -->`
       );
 

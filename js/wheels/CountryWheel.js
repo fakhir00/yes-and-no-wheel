@@ -24,14 +24,14 @@ export function renderCountryWheel(container) {
   container.innerHTML = `
     <div class="wheel-page country-theme">
       <div class="wheel-header">
-        <h2 class="wheel-title">🌍 ${t.title}</h2>
+        <p class="wheel-title">🌍 ${t.title}</p>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
         <div class="wheel-main">
           <div class="region-filters">
-            <h3>🗺️ ${ui.regionFilters}</h3>
+            <p class="region-filters-title">🗺️ ${ui.regionFilters}</p>
             <div class="region-toggle-list" id="regionToggles">
               ${continents.map(c => {
                 const count = countries.filter(co => co.continent === c).length;
@@ -63,17 +63,17 @@ export function renderCountryWheel(container) {
         <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
             <p class="howto-step-desc">${t.step1Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
             <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
             <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>

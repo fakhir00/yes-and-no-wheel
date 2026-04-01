@@ -177,29 +177,30 @@ export function renderWheelSeoContent(primaryKeyword, slug, locale = 'en') {
   const relatedTitle = relatedSlug ? getLocalizedRouteContent(safeLocale, relatedSlug).title : '';
   const related = relatedSlug ? `<a href="${buildLocalizedPath(safeLocale, relatedSlug)}">${relatedTitle}</a>` : '';
   const englishRelated = relatedSlug ? `<a href="${buildLocalizedPath(safeLocale, relatedSlug)}">${getLocalizedRouteContent(safeLocale, relatedSlug).title}</a>` : '';
+  const emphasizedKeyword = `<strong>${primaryKeyword}</strong>`;
 
   if (safeLocale === 'en') {
     const englishContent = {
       home: {
         what: [
-          `${primaryKeyword} is a yes, no, and maybe decision spinner created for users who need quick answers for simple choices, daily decisions, games, and lightweight prompts. It is built for people who want a fast answer without setting up a full custom spinner first. That makes it useful for instant decisions, fun yes-or-no questions, quick maybe answers, casual games, and low-friction random choices, especially when speed matters more than complexity.`,
+          `${emphasizedKeyword} is a yes, no, and maybe decision spinner created for users who need quick answers for simple choices, daily decisions, games, and lightweight prompts. It is built for people who want a fast answer without setting up a full custom spinner first. That makes it useful for instant decisions, fun yes-or-no questions, quick maybe answers, casual games, and low-friction random choices, especially when speed matters more than complexity.`,
           `Visitors can open the page, spin immediately, and get a clear result that still feels interactive and repeatable. The homepage version also acts as the central entry point for the broader wheel cluster, helping users move from simple decisions to more themed tools when needed.`,
           `If you want a more visual and colorful variation after using the main decision wheel, ${englishRelated} is a natural next step. Overall, ${primaryKeyword} works as the main everyday decision wheel for users who want low friction, quick results, and a format that stays useful across repeated visits.`
         ],
         when: [
-          `You should use this ${primaryKeyword} when you want a fast answer without building a full custom list first. It works best for small daily decisions, group votes, playful challenges, content ideas, and quick moments where you want the wheel to answer for you.`,
+          `You should use this ${emphasizedKeyword} when you want a fast answer without building a full custom list first. It works best for small daily decisions, group votes, playful challenges, content ideas, and quick moments where you want the wheel to answer for you.`,
           `Users can open the homepage, spin once, and move forward instead of spending time building options manually. This makes the page useful for repeat visits because the problem it solves is broad, common, and easy to understand.`,
           `A quick yes-or-no style result fits everyday choices, light games, content ideas, and small group activities. In short, use this ${primaryKeyword} when you want the fastest decision wheel on the site, with simple controls, clear answers, and strong repeat value.`
         ]
       },
       generic: {
         what: [
-          `${primaryKeyword} is a focused wheel page built for fast random results and repeat use. Instead of using plain lists or manual picking, this wheel turns selection into a clearer visual experience that is easier to repeat.`,
+          `${emphasizedKeyword} is a focused wheel page built for fast random results and repeat use. Instead of using plain lists or manual picking, this wheel turns selection into a clearer visual experience that is easier to repeat.`,
           `It is useful for themed decisions, repeat visits, group activities, and quick inspiration, which gives the page value beyond a one-time novelty spin. One of the main strengths of ${primaryKeyword} is its balance of usefulness and presentation. Visitors can understand the result quickly, customize the tool when needed, and return without friction.`,
           `That makes the page relevant for entertainment, education, creativity, and practical selection. If you want to explore a related wheel next, ${englishRelated} can support a different kind of spin experience while keeping users inside the same topic cluster. Overall, ${primaryKeyword} stays focused on a clear keyword, a strong use case, and repeatable user intent.`
         ],
         when: [
-          `You should use this ${primaryKeyword} when a themed spinner adds more value than a generic picker. In practical terms, that can include planning, teaching, content creation, hosting, and quick solo inspiration.`,
+          `You should use this ${emphasizedKeyword} when a themed spinner adds more value than a generic picker. In practical terms, that can include planning, teaching, content creation, hosting, and quick solo inspiration.`,
           `In those moments, the wheel does more than generate a result. It adds pace, structure, and a sense of engagement that helps users keep moving instead of hesitating over the next choice. ${primaryKeyword} works best when the visitor wants a relevant themed outcome rather than any random answer.`,
           `The themed focus narrows the decision space while keeping the final result random. In short, use this ${primaryKeyword} when you want a wheel that fits the moment, supports the activity around it, and stays useful across repeated visits.`
         ]
@@ -211,11 +212,11 @@ export function renderWheelSeoContent(primaryKeyword, slug, locale = 'en') {
     return `
       <section class="wheel-seo-content page-content">
         <section class="content-section">
-          <h2>What is ${primaryKeyword}?</h2>
+          <h2>What is <strong>${primaryKeyword}</strong>?</h2>
           ${selected.what.map((paragraph) => `<p>${paragraph}</p>`).join('')}
         </section>
         <section class="content-section">
-          <h2>When to Use This ${primaryKeyword}?</h2>
+          <h2>When to Use This <strong>${primaryKeyword}</strong>?</h2>
           ${selected.when.map((paragraph) => `<p>${paragraph}</p>`).join('')}
         </section>
       </section>
@@ -232,14 +233,14 @@ export function renderWheelSeoContent(primaryKeyword, slug, locale = 'en') {
   return `
     <section class="wheel-seo-content page-content">
       <section class="content-section">
-        <h2>${fill(copy.whatTitle, values)}</h2>
-        <p>${fill(copy.what1, values)}</p>
+        <h2>${fill(copy.whatTitle, { ...values, page: emphasizedKeyword })}</h2>
+        <p>${fill(copy.what1, { ...values, page: emphasizedKeyword })}</p>
         <p>${fill(copy.what2, values)}</p>
         ${related ? `<p>${fill(copy.what3, values)}</p>` : ''}
       </section>
       <section class="content-section">
-        <h2>${fill(copy.whenTitle, values)}</h2>
-        <p>${fill(copy.when1, values)}</p>
+        <h2>${fill(copy.whenTitle, { ...values, page: emphasizedKeyword })}</h2>
+        <p>${fill(copy.when1, { ...values, page: emphasizedKeyword })}</p>
         <p>${fill(copy.when2, values)}</p>
         <p>${fill(copy.when3, values)}</p>
       </section>

@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-meta5';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-seo1';
 
-const ASSET_VERSION = '20260402-meta5';
+const ASSET_VERSION = '20260402-seo1';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -74,6 +74,14 @@ const routeDescriptions = {
 };
 const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg';
 
+function charLength(value) {
+  return [...String(value || '')].length;
+}
+
+function sliceChars(value, maxChars) {
+  return [...String(value || '')].slice(0, maxChars).join('');
+}
+
 function ensureLongTitle(title, route) {
   if (title.length >= 30) return title;
   const safeRoute = route || 'home';
@@ -87,13 +95,18 @@ function ensureMetaDescription(description, route) {
   const base = String(description || '').replace(/\s+/g, ' ').trim();
   const fallback = `${routeInfo.title} on YesAndNoWheel.com.`;
   let value = base || fallback;
+  const additions = currentLocale === DEFAULT_LOCALE
+    ? [' Learn more.', ' Try now.', ' Online.', ' Fast.', ' Now.', '.']
+    : [' Learn more.', ' Try now.', ' Online.', ' Fast.', ' Now.', '.'];
 
-  if (value.length < 95) {
-    value = `${value} Free online tool with quick access to related wheels and useful random tools.`;
+  if (charLength(value) > 155) {
+    value = `${sliceChars(value, 152).trim().replace(/[,\-;: ]+$/g, '')}...`;
   }
 
-  if (value.length > 155) {
-    value = value.slice(0, 152).trim().replace(/[,\-;: ]+$/g, '') + '...';
+  while (charLength(value) < 150) {
+    const room = 155 - charLength(value);
+    const addition = additions.find((item) => charLength(item) <= room) || '.';
+    value += addition;
   }
 
   return value;
@@ -289,11 +302,12 @@ function updateBreadcrumb(route) {
   const canonical = canonicalSlugs[route] || route || 'home';
   const canonicalPath = buildLocalizedPath(currentLocale, canonical === 'home' ? '' : canonical);
   const homePath = buildLocalizedPath(currentLocale, '');
+  const homeName = getLocalizedRouteContent(currentLocale, 'home').title || 'Home';
   breadcrumbEl.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://yesandnowheel.com${homePath}` },
+      { "@type": "ListItem", "position": 1, "name": homeName, "item": `https://yesandnowheel.com${homePath}` },
       ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
     ]
   });

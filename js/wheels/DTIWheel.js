@@ -29,14 +29,14 @@ export function renderDTIWheel(container) {
   container.innerHTML = `
     <div class="wheel-page dti-theme">
       <div class="wheel-header">
-        <h2 class="wheel-title dti-title">👗 ${t.title}</h2>
+        <p class="wheel-title dti-title">👗 ${t.title}</p>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <div class="wheel-layout">
         <div class="wheel-main">
           <div class="dti-library">
-            <h3>📚 ${ui.themeLibrary} <span class="dti-count" id="dtiEnabledCount">${ui.themesCount.replace('{count}', localThemes.filter(t=>t.enabled).length)}</span></h3>
+            <p class="dti-library-title">📚 ${ui.themeLibrary} <span class="dti-count" id="dtiEnabledCount">${ui.themesCount.replace('{count}', localThemes.filter(t=>t.enabled).length)}</span></p>
             <div class="dti-category-filters" id="dtiFilters">
               <button class="dti-filter-btn active" data-cat="all">${ui.all}</button>
               ${dtiCategories.map(c => `<button class="dti-filter-btn" data-cat="${c}">${getLocalizedDtiCategory(locale, c)}</button>`).join('')}
@@ -66,17 +66,17 @@ export function renderDTIWheel(container) {
         <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
             <p class="howto-step-desc">${t.step1Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
             <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h3 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h3>
+            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
             <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
