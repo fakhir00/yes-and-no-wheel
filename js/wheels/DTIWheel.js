@@ -2,8 +2,8 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { dtiThemes, dtiCategories, getEnabledThemes } from '../data/dtiThemes.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { dtiThemes, dtiCategories } from '../data/dtiThemes.js';
+import { getLocalizedDtiCategory, getLocalizedDtiThemeName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -21,6 +21,11 @@ export function renderDTIWheel(container) {
   const ui = getWheelUiText(locale);
   let localThemes = JSON.parse(JSON.stringify(dtiThemes));
 
+  function getDisplayThemeName(theme) {
+    const index = localThemes.indexOf(theme);
+    return getLocalizedDtiThemeName(locale, theme, Math.max(index, 0));
+  }
+
   container.innerHTML = `
     <div class="wheel-page dti-theme">
       <div class="wheel-header">
@@ -34,7 +39,7 @@ export function renderDTIWheel(container) {
             <h3>📚 ${ui.themeLibrary} <span class="dti-count" id="dtiEnabledCount">${ui.themesCount.replace('{count}', localThemes.filter(t=>t.enabled).length)}</span></h3>
             <div class="dti-category-filters" id="dtiFilters">
               <button class="dti-filter-btn active" data-cat="all">${ui.all}</button>
-              ${dtiCategories.map(c => `<button class="dti-filter-btn" data-cat="${c}">${c}</button>`).join('')}
+              ${dtiCategories.map(c => `<button class="dti-filter-btn" data-cat="${c}">${getLocalizedDtiCategory(locale, c)}</button>`).join('')}
             </div>
             <div class="dti-toggle-all">
               <button class="custom-btn secondary" id="dtiSelectAll">${ui.selectAll}</button>
@@ -84,7 +89,7 @@ export function renderDTIWheel(container) {
   `;
 
   function getEnabled() {
-    return localThemes.filter(t => t.enabled).map(t => t.name);
+    return localThemes.filter(t => t.enabled).map(t => getDisplayThemeName(t));
   }
 
   // Limit wheel to max 20 random from enabled
@@ -126,8 +131,8 @@ export function renderDTIWheel(container) {
       const globalIdx = localThemes.indexOf(t);
       return `<label class="dti-theme-item ${t.enabled ? 'enabled' : ''}">
         <input type="checkbox" ${t.enabled ? 'checked' : ''} data-idx="${globalIdx}">
-        <span class="dti-theme-name">${t.name}</span>
-        <span class="dti-theme-cat">${t.category}</span>
+        <span class="dti-theme-name">${getDisplayThemeName(t)}</span>
+        <span class="dti-theme-cat">${getLocalizedDtiCategory(locale, t.category)}</span>
       </label>`;
     }).join('');
 

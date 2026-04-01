@@ -2,7 +2,7 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { hairColors, hairCategories, nameToHex } from '../data/hairColors.js';
-import { getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedHairCategory, getLocalizedHairColorName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
@@ -67,7 +67,13 @@ export function renderHairColorWheel(container) {
 
   let selectedColors = [...defaultColors];
 
-  function getEntries() { return selectedColors.map(c => c.name); }
+  function getDisplayColorName(color) {
+    const sourceIndex = hairColors.findIndex((item) => item.name === color.name && item.hex === color.hex);
+    const index = sourceIndex >= 0 ? sourceIndex : selectedColors.indexOf(color);
+    return getLocalizedHairColorName(locale, color, Math.max(index, 0));
+  }
+
+  function getEntries() { return selectedColors.map((c) => getDisplayColorName(c)); }
   function getColors() { return selectedColors.map(c => c.hex); }
 
   const engine = new WheelEngine('hairCanvas', {
@@ -75,7 +81,7 @@ export function renderHairColorWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (w) => {
       audioManager.playFanfare();
-      const color = selectedColors.find(c => c.name === w.entry);
+      const color = selectedColors.find(c => getDisplayColorName(c) === w.entry);
       const hex = color ? color.hex : w.color;
       document.getElementById('hairResult').innerHTML = `<div class="result-winner hair-result"><div class="hair-swatch" style="background:${hex}"></div><span class="result-text">${w.entry}</span><span class="hair-hex">${hex}</span></div>`;
       document.getElementById('hairResult').classList.add('show');
@@ -95,7 +101,8 @@ export function renderHairColorWheel(container) {
     const list = cat === 'all' ? hairColors : hairColors.filter(c => c.category === cat);
     grid.innerHTML = list.map(c => {
       const active = selectedColors.some(s => s.name === c.name);
-      return `<label class="hair-color-item ${active ? 'active' : ''}" title="${c.name}"><input type="checkbox" ${active ? 'checked' : ''} data-name="${c.name}" data-hex="${c.hex}"><span class="hair-dot" style="background:${c.hex}"></span><span class="hair-color-name">${c.name}</span></label>`;
+      const displayName = getDisplayColorName(c);
+      return `<label class="hair-color-item ${active ? 'active' : ''}" title="${displayName}"><input type="checkbox" ${active ? 'checked' : ''} data-name="${c.name}" data-hex="${c.hex}"><span class="hair-dot" style="background:${c.hex}"></span><span class="hair-color-name">${displayName}</span></label>`;
     }).join('');
     grid.querySelectorAll('input').forEach(cb => {
       cb.addEventListener('change', (e) => {
@@ -108,6 +115,12 @@ export function renderHairColorWheel(container) {
     });
   }
   buildGrid('all');
+
+  document.querySelectorAll('.hair-cat-btn').forEach((button) => {
+    const category = button.dataset.cat;
+    if (category === 'all') return;
+    button.textContent = getLocalizedHairCategory(locale, category);
+  });
 
   document.querySelector('.hair-cat-btns').addEventListener('click', (e) => {
     if (e.target.classList.contains('hair-cat-btn')) {

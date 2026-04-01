@@ -1,8 +1,8 @@
 // main.js — App entry point
-import { initRouter } from './router.js?v=20260401-lang1';
+import { initRouter } from './router.js?v=20260402-lang2';
 import { storage } from './engine/StorageManager.js';
 import { audioManager } from './engine/AudioManager.js';
-import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260401-lang1';
+import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260402-lang2';
 
 // Apply saved theme
 const theme = storage.getThemePreference();

@@ -2415,6 +2415,60 @@ const ELEMENT_NAMES = {
   te: { Fire: 'అగ్ని', Earth: 'భూమి', Air: 'గాలి', Water: 'నీరు' }
 };
 
+const GENERIC_WHEEL_LABELS = {
+  en: { color: 'Color', theme: 'Theme' },
+  'zh-CN': { color: '颜色', theme: '主题' },
+  hi: { color: 'रंग', theme: 'थीम' },
+  es: { color: 'Color', theme: 'Tema' },
+  ar: { color: 'لون', theme: 'سمة' },
+  fr: { color: 'Couleur', theme: 'Theme' },
+  bn: { color: 'রং', theme: 'থিম' },
+  pt: { color: 'Cor', theme: 'Tema' },
+  ru: { color: 'Цвет', theme: 'Тема' },
+  ur: { color: 'رنگ', theme: 'تھیم' },
+  id: { color: 'Warna', theme: 'Tema' },
+  de: { color: 'Farbe', theme: 'Thema' },
+  ja: { color: 'カラー', theme: 'テーマ' },
+  mr: { color: 'रंग', theme: 'थीम' },
+  te: { color: 'రంగు', theme: 'థీమ్' }
+};
+
+const HAIR_CATEGORY_LABELS = {
+  en: { Classic: 'Classic', Fantasy: 'Fantasy', Custom: 'Custom' },
+  'zh-CN': { Classic: '经典', Fantasy: '幻想', Custom: '自定义' },
+  hi: { Classic: 'क्लासिक', Fantasy: 'फैंटेसी', Custom: 'कस्टम' },
+  es: { Classic: 'Clasico', Fantasy: 'Fantasia', Custom: 'Personalizado' },
+  ar: { Classic: 'كلاسيكي', Fantasy: 'خيالي', Custom: 'مخصص' },
+  fr: { Classic: 'Classique', Fantasy: 'Fantaisie', Custom: 'Personnalise' },
+  bn: { Classic: 'ক্লাসিক', Fantasy: 'ফ্যান্টাসি', Custom: 'কাস্টম' },
+  pt: { Classic: 'Classico', Fantasy: 'Fantasia', Custom: 'Personalizado' },
+  ru: { Classic: 'Классика', Fantasy: 'Фэнтези', Custom: 'Свое' },
+  ur: { Classic: 'کلاسک', Fantasy: 'فینٹسی', Custom: 'حسب مرضی' },
+  id: { Classic: 'Klasik', Fantasy: 'Fantasi', Custom: 'Kustom' },
+  de: { Classic: 'Klassisch', Fantasy: 'Fantasy', Custom: 'Benutzerdefiniert' },
+  ja: { Classic: 'クラシック', Fantasy: 'ファンタジー', Custom: 'カスタム' },
+  mr: { Classic: 'क्लासिक', Fantasy: 'फॅन्टसी', Custom: 'कस्टम' },
+  te: { Classic: 'క్లాసిక్', Fantasy: 'ఫాంటసీ', Custom: 'కస్టమ్' }
+};
+
+const DTI_CATEGORY_LABELS = {
+  en: { Era: 'Era', Genre: 'Genre', Aesthetic: 'Aesthetic', Style: 'Style', Culture: 'Culture', Nature: 'Nature', Concept: 'Concept', Profession: 'Profession' },
+  'zh-CN': { Era: '时代', Genre: '类型', Aesthetic: '美学', Style: '风格', Culture: '文化', Nature: '自然', Concept: '概念', Profession: '职业' },
+  hi: { Era: 'युग', Genre: 'शैली', Aesthetic: 'एस्थेटिक', Style: 'स्टाइल', Culture: 'संस्कृति', Nature: 'प्रकृति', Concept: 'कॉन्सेप्ट', Profession: 'पेशा' },
+  es: { Era: 'Epoca', Genre: 'Genero', Aesthetic: 'Estetica', Style: 'Estilo', Culture: 'Cultura', Nature: 'Naturaleza', Concept: 'Concepto', Profession: 'Profesion' },
+  ar: { Era: 'حقبة', Genre: 'نوع', Aesthetic: 'جمالية', Style: 'اسلوب', Culture: 'ثقافة', Nature: 'طبيعة', Concept: 'فكرة', Profession: 'مهنة' },
+  fr: { Era: 'Epoque', Genre: 'Genre', Aesthetic: 'Esthetique', Style: 'Style', Culture: 'Culture', Nature: 'Nature', Concept: 'Concept', Profession: 'Profession' },
+  bn: { Era: 'যুগ', Genre: 'ধরণ', Aesthetic: 'নান্দনিকতা', Style: 'স্টাইল', Culture: 'সংস্কৃতি', Nature: 'প্রকৃতি', Concept: 'ধারণা', Profession: 'পেশা' },
+  pt: { Era: 'Epoca', Genre: 'Genero', Aesthetic: 'Estetica', Style: 'Estilo', Culture: 'Cultura', Nature: 'Natureza', Concept: 'Conceito', Profession: 'Profissao' },
+  ru: { Era: 'Эпоха', Genre: 'Жанр', Aesthetic: 'Эстетика', Style: 'Стиль', Culture: 'Культура', Nature: 'Природа', Concept: 'Концепт', Profession: 'Профессия' },
+  ur: { Era: 'دور', Genre: 'صنف', Aesthetic: 'جمالیاتی', Style: 'اسٹائل', Culture: 'ثقافت', Nature: 'فطرت', Concept: 'تصور', Profession: 'پیشہ' },
+  id: { Era: 'Era', Genre: 'Genre', Aesthetic: 'Estetika', Style: 'Gaya', Culture: 'Budaya', Nature: 'Alam', Concept: 'Konsep', Profession: 'Profesi' },
+  de: { Era: 'Epoche', Genre: 'Genre', Aesthetic: 'Aesthetik', Style: 'Stil', Culture: 'Kultur', Nature: 'Natur', Concept: 'Konzept', Profession: 'Beruf' },
+  ja: { Era: '時代', Genre: 'ジャンル', Aesthetic: '美学', Style: 'スタイル', Culture: '文化', Nature: '自然', Concept: 'コンセプト', Profession: '職業' },
+  mr: { Era: 'युग', Genre: 'प्रकार', Aesthetic: 'अॅस्थेटिक', Style: 'शैली', Culture: 'संस्कृती', Nature: 'निसर्ग', Concept: 'संकल्पना', Profession: 'व्यवसाय' },
+  te: { Era: 'యుగం', Genre: 'శైలి', Aesthetic: 'అందశైలి', Style: 'స్టైల్', Culture: 'సంస్కృతి', Nature: 'ప్రకృతి', Concept: 'కాన్సెప్ట్', Profession: 'వృత్తి' }
+};
+
 function flagToRegionCode(flag) {
   return [...flag]
     .map((char) => String.fromCodePoint(char.codePointAt(0) - 127397))
@@ -2456,6 +2510,36 @@ export function getLocalizedZodiacSigns(locale, zodiacSigns) {
     name: names[index] || sign.name,
     element: elements[sign.element] || sign.element
   }));
+}
+
+export function getLocalizedHairCategory(locale, category) {
+  const safeLocale = normalizeLocale(locale);
+  return HAIR_CATEGORY_LABELS[safeLocale]?.[category] || HAIR_CATEGORY_LABELS.en[category] || category;
+}
+
+export function getLocalizedHairColorName(locale, color, index) {
+  const safeLocale = normalizeLocale(locale);
+  if (safeLocale === 'en' || color.category === 'Custom') {
+    return color.name;
+  }
+  const labels = GENERIC_WHEEL_LABELS[safeLocale] || GENERIC_WHEEL_LABELS.en;
+  const category = getLocalizedHairCategory(safeLocale, color.category || 'Custom');
+  return `${category} ${labels.color} ${index + 1}`;
+}
+
+export function getLocalizedDtiCategory(locale, category) {
+  const safeLocale = normalizeLocale(locale);
+  return DTI_CATEGORY_LABELS[safeLocale]?.[category] || DTI_CATEGORY_LABELS.en[category] || category;
+}
+
+export function getLocalizedDtiThemeName(locale, theme, index) {
+  const safeLocale = normalizeLocale(locale);
+  if (safeLocale === 'en') {
+    return theme.name;
+  }
+  const labels = GENERIC_WHEEL_LABELS[safeLocale] || GENERIC_WHEEL_LABELS.en;
+  const category = getLocalizedDtiCategory(safeLocale, theme.category);
+  return `${category} ${labels.theme} ${index + 1}`;
 }
 
 export function getHomeText(locale) {
