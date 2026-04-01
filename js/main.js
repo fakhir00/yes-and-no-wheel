@@ -1,16 +1,15 @@
 // main.js — App entry point
-import { initRouter } from './router.js?v=20260402-lang2';
+import { initRouter } from './router.js?v=20260402-speed2';
 import { storage } from './engine/StorageManager.js';
 import { audioManager } from './engine/AudioManager.js';
-import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260402-lang2';
+import { buildLocalizedPath, splitLocaleFromPath } from './i18n.js?v=20260402-speed2';
 
 // Apply saved theme
 const theme = storage.getThemePreference();
 document.documentElement.setAttribute('data-theme', theme);
 document.body.setAttribute('data-theme', theme);
 
-// Prepare mobile audio unlock listeners early so the first user tap can enable sound.
-audioManager.init();
+// Defer audio context creation until the user actually interacts with the app.
 
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');

@@ -36,19 +36,28 @@ export const UI_TRANSLATIONS = {
     sitemap: 'Sitemap',
     contactInfo: 'Contact Info',
     builtWith: 'Built with',
-    language: 'Language'
+    language: 'Language',
+    footerDescription: 'Fast decision wheels for quick choices, party games, classrooms, and creative prompts.',
+    faqShort: 'FAQ',
+    rightsReserved: 'All rights reserved.'
   },
   'zh-CN': {
     home: '首页', wheels: '转盘', about: '关于', contact: '联系',
     wheelsHeading: '转盘', moreWheelsHeading: '更多转盘', pagesHeading: '页面',
     aboutUs: '关于我们', contactUs: '联系我们', terms: '服务条款', privacy: '隐私政策',
-    sitemap: '网站地图', contactInfo: '联系信息', builtWith: '构建于', language: '语言'
+    sitemap: '网站地图', contactInfo: '联系信息', builtWith: '构建于', language: '语言',
+    footerDescription: '快速决策转盘，适合即时选择、聚会游戏、课堂活动和创意提示。',
+    faqShort: '常见问题',
+    rightsReserved: '保留所有权利。'
   },
   hi: {
     home: 'होम', wheels: 'व्हील', about: 'जानकारी', contact: 'संपर्क',
     wheelsHeading: 'व्हील', moreWheelsHeading: 'और व्हील', pagesHeading: 'पेज',
     aboutUs: 'हमारे बारे में', contactUs: 'संपर्क करें', terms: 'सेवा की शर्तें', privacy: 'गोपनीयता नीति',
-    sitemap: 'साइटमैप', contactInfo: 'संपर्क जानकारी', builtWith: 'साथ बनाया गया', language: 'भाषा'
+    sitemap: 'साइटमैप', contactInfo: 'संपर्क जानकारी', builtWith: 'साथ बनाया गया', language: 'भाषा',
+    footerDescription: 'तेज़ फैसलों, पार्टी गेम्स, कक्षा गतिविधियों और क्रिएटिव प्रॉम्प्ट्स के लिए फास्ट डिसीजन व्हील्स।',
+    faqShort: 'अक्सर पूछे जाने वाले सवाल',
+    rightsReserved: 'सभी अधिकार सुरक्षित हैं।'
   },
   es: {
     home: 'Inicio',
@@ -65,13 +74,19 @@ export const UI_TRANSLATIONS = {
     sitemap: 'Mapa del sitio',
     contactInfo: 'Informacion de contacto',
     builtWith: 'Hecho con',
-    language: 'Idioma'
+    language: 'Idioma',
+    footerDescription: 'Ruletas rapidas para decisiones, juegos de fiesta, clases y prompts creativos.',
+    faqShort: 'Preguntas frecuentes',
+    rightsReserved: 'Todos los derechos reservados.'
   },
   ar: {
     home: 'الرئيسية', wheels: 'العجلات', about: 'حول', contact: 'اتصل',
     wheelsHeading: 'العجلات', moreWheelsHeading: 'مزيد من العجلات', pagesHeading: 'الصفحات',
     aboutUs: 'من نحن', contactUs: 'اتصل بنا', terms: 'شروط الخدمة', privacy: 'سياسة الخصوصية',
-    sitemap: 'خريطة الموقع', contactInfo: 'معلومات الاتصال', builtWith: 'صنع بـ', language: 'اللغة'
+    sitemap: 'خريطة الموقع', contactInfo: 'معلومات الاتصال', builtWith: 'صنع بـ', language: 'اللغة',
+    footerDescription: 'عجلات قرار سريعة للاختيارات السريعة والعاب الحفلات والصفوف والافكار الابداعية.',
+    faqShort: 'الاسئلة الشائعة',
+    rightsReserved: 'جميع الحقوق محفوظة.'
   },
   fr: {
     home: 'Accueil',
@@ -88,37 +103,55 @@ export const UI_TRANSLATIONS = {
     sitemap: 'Plan du site',
     contactInfo: 'Coordonnees',
     builtWith: 'Cree avec',
-    language: 'Langue'
+    language: 'Langue',
+    footerDescription: 'Roues de decision rapides pour choix express, jeux de fete, classes et idees creatives.',
+    faqShort: 'FAQ',
+    rightsReserved: 'Tous droits reserves.'
   },
   bn: {
     home: 'হোম', wheels: 'চাকা', about: 'সম্পর্কে', contact: 'যোগাযোগ',
     wheelsHeading: 'চাকা', moreWheelsHeading: 'আরও চাকা', pagesHeading: 'পাতা',
     aboutUs: 'আমাদের সম্পর্কে', contactUs: 'যোগাযোগ করুন', terms: 'সেবার শর্তাবলি', privacy: 'গোপনীয়তা নীতি',
-    sitemap: 'সাইটম্যাপ', contactInfo: 'যোগাযোগ তথ্য', builtWith: 'দিয়ে তৈরি', language: 'ভাষা'
+    sitemap: 'সাইটম্যাপ', contactInfo: 'যোগাযোগ তথ্য', builtWith: 'দিয়ে তৈরি', language: 'ভাষা',
+    footerDescription: 'দ্রুত সিদ্ধান্ত, পার্টি গেম, ক্লাসরুম এবং সৃজনশীল আইডিয়ার জন্য দ্রুত হুইল।',
+    faqShort: 'জিজ্ঞাসিত প্রশ্ন',
+    rightsReserved: 'সমস্ত অধিকার সংরক্ষিত।'
   },
   pt: {
     home: 'Inicio', wheels: 'Roletas', about: 'Sobre', contact: 'Contato',
     wheelsHeading: 'Roletas', moreWheelsHeading: 'Mais roletas', pagesHeading: 'Paginas',
     aboutUs: 'Sobre nos', contactUs: 'Contato', terms: 'Termos de servico', privacy: 'Politica de privacidade',
-    sitemap: 'Mapa do site', contactInfo: 'Informacoes de contato', builtWith: 'Feito com', language: 'Idioma'
+    sitemap: 'Mapa do site', contactInfo: 'Informacoes de contato', builtWith: 'Feito com', language: 'Idioma',
+    footerDescription: 'Roletas rapidas para escolhas, jogos de festa, salas de aula e ideias criativas.',
+    faqShort: 'FAQ',
+    rightsReserved: 'Todos os direitos reservados.'
   },
   ru: {
     home: 'Главная', wheels: 'Колеса', about: 'О сайте', contact: 'Контакты',
     wheelsHeading: 'Колеса', moreWheelsHeading: 'Еще колеса', pagesHeading: 'Страницы',
     aboutUs: 'О нас', contactUs: 'Связаться', terms: 'Условия использования', privacy: 'Политика конфиденциальности',
-    sitemap: 'Карта сайта', contactInfo: 'Контакты', builtWith: 'Сделано с', language: 'Язык'
+    sitemap: 'Карта сайта', contactInfo: 'Контакты', builtWith: 'Сделано с', language: 'Язык',
+    footerDescription: 'Быстрые колеса решений для выбора, вечеринок, классов и творческих подсказок.',
+    faqShort: 'FAQ',
+    rightsReserved: 'Все права защищены.'
   },
   ur: {
     home: 'ہوم', wheels: 'ویلز', about: 'متعلق', contact: 'رابطہ',
     wheelsHeading: 'ویلز', moreWheelsHeading: 'مزید ویلز', pagesHeading: 'صفحات',
     aboutUs: 'ہمارے بارے میں', contactUs: 'رابطہ کریں', terms: 'سروس کی شرائط', privacy: 'رازداری پالیسی',
-    sitemap: 'سائٹ میپ', contactInfo: 'رابطہ معلومات', builtWith: 'کے ساتھ بنایا گیا', language: 'زبان'
+    sitemap: 'سائٹ میپ', contactInfo: 'رابطہ معلومات', builtWith: 'کے ساتھ بنایا گیا', language: 'زبان',
+    footerDescription: 'فاسٹ ڈسیژن ویلز فوری انتخاب، پارٹی گیمز، کلاس روم اور تخلیقی آئیڈیاز کے لیے۔',
+    faqShort: 'اکثر پوچھے گئے سوالات',
+    rightsReserved: 'جملہ حقوق محفوظ ہیں۔'
   },
   id: {
     home: 'Beranda', wheels: 'Roda', about: 'Tentang', contact: 'Kontak',
     wheelsHeading: 'Roda', moreWheelsHeading: 'Roda lainnya', pagesHeading: 'Halaman',
     aboutUs: 'Tentang kami', contactUs: 'Hubungi kami', terms: 'Syarat layanan', privacy: 'Kebijakan privasi',
-    sitemap: 'Peta situs', contactInfo: 'Info kontak', builtWith: 'Dibuat dengan', language: 'Bahasa'
+    sitemap: 'Peta situs', contactInfo: 'Info kontak', builtWith: 'Dibuat dengan', language: 'Bahasa',
+    footerDescription: 'Roda keputusan cepat untuk pilihan singkat, game pesta, kelas, dan ide kreatif.',
+    faqShort: 'FAQ',
+    rightsReserved: 'Hak cipta dilindungi.'
   },
   de: {
     home: 'Start',
@@ -135,25 +168,37 @@ export const UI_TRANSLATIONS = {
     sitemap: 'Sitemap',
     contactInfo: 'Kontaktinfo',
     builtWith: 'Erstellt mit',
-    language: 'Sprache'
+    language: 'Sprache',
+    footerDescription: 'Schnelle Entscheidungsraeder fuer spontane Wahl, Partyspiele, Unterricht und kreative Ideen.',
+    faqShort: 'FAQ',
+    rightsReserved: 'Alle Rechte vorbehalten.'
   },
   ja: {
     home: 'ホーム', wheels: 'ルーレット', about: '概要', contact: '連絡先',
     wheelsHeading: 'ルーレット', moreWheelsHeading: 'その他', pagesHeading: 'ページ',
     aboutUs: '私たちについて', contactUs: 'お問い合わせ', terms: '利用規約', privacy: 'プライバシーポリシー',
-    sitemap: 'サイトマップ', contactInfo: '連絡先情報', builtWith: 'で作成', language: '言語'
+    sitemap: 'サイトマップ', contactInfo: '連絡先情報', builtWith: 'で作成', language: '言語',
+    footerDescription: 'すばやい選択、パーティーゲーム、教室、創作アイデアに使える高速ホイールです。',
+    faqShort: 'よくある質問',
+    rightsReserved: '全著作権所有。'
   },
   mr: {
     home: 'मुख्यपृष्ठ', wheels: 'व्हील्स', about: 'माहिती', contact: 'संपर्क',
     wheelsHeading: 'व्हील्स', moreWheelsHeading: 'अधिक व्हील्स', pagesHeading: 'पृष्ठे',
     aboutUs: 'आमच्याबद्दल', contactUs: 'संपर्क करा', terms: 'सेवा अटी', privacy: 'गोपनीयता धोरण',
-    sitemap: 'साइटमॅप', contactInfo: 'संपर्क माहिती', builtWith: 'सह तयार', language: 'भाषा'
+    sitemap: 'साइटमॅप', contactInfo: 'संपर्क माहिती', builtWith: 'सह तयार', language: 'भाषा',
+    footerDescription: 'जलद निवडी, पार्टी गेम्स, वर्गखोली आणि क्रिएटिव्ह कल्पनांसाठी फास्ट डिसिजन व्हील्स.',
+    faqShort: 'नेहमी विचारले जाणारे प्रश्न',
+    rightsReserved: 'सर्व हक्क राखीव.'
   },
   te: {
     home: 'హోమ్', wheels: 'వీళ్లు', about: 'గురించి', contact: 'సంప్రదించండి',
     wheelsHeading: 'వీళ్లు', moreWheelsHeading: 'ఇంకా వీళ్లు', pagesHeading: 'పేజీలు',
     aboutUs: 'మా గురించి', contactUs: 'సంప్రదించండి', terms: 'సేవా నిబంధనలు', privacy: 'గోప్యతా విధానం',
-    sitemap: 'సైట్ మ్యాప్', contactInfo: 'సంప్రదింపు సమాచారం', builtWith: 'తో నిర్మించారు', language: 'భాష'
+    sitemap: 'సైట్ మ్యాప్', contactInfo: 'సంప్రదింపు సమాచారం', builtWith: 'తో నిర్మించారు', language: 'భాష',
+    footerDescription: 'త్వరిత ఎంపికలు, పార్టీ గేమ్స్, తరగతులు మరియు సృజనాత్మక ఆలోచనల కోసం ఫాస్ట్ డిసిషన్ వీల్స్.',
+    faqShort: 'తరచుగా అడిగే ప్రశ్నలు',
+    rightsReserved: 'అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.'
   }
 };
 

@@ -24,7 +24,7 @@ export class WheelEngine {
 
     // Visual
     this.fontSize = options.fontSize || 14;
-    this.fontFamily = options.fontFamily || "'Inter', sans-serif";
+    this.fontFamily = options.fontFamily || "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
     this.pointerAngle = -Math.PI / 2;
     this.centerImage = options.centerImage || null;
     this.centerText = options.centerText || '';
@@ -76,15 +76,18 @@ export class WheelEngine {
   _setupSize() {
     const container = this.canvas.parentElement;
     const size = Math.min(container.clientWidth, container.clientHeight, 600);
-    this.canvas.width = size * window.devicePixelRatio;
-    this.canvas.height = size * window.devicePixelRatio;
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, 1.75);
+    this.canvas.width = size * pixelRatio;
+    this.canvas.height = size * pixelRatio;
     this.canvas.style.width = size + 'px';
     this.canvas.style.height = size + 'px';
-    this.ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+    this.ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    this.pixelRatio = pixelRatio;
     this.size = size;
     this.cx = size / 2;
     this.cy = size / 2;
     this.radius = Math.max(0, size / 2 - 12);
+    this.showGlow = size >= 320 && pixelRatio <= 1.5;
     if (!this.isSpinning) this.draw();
   }
 

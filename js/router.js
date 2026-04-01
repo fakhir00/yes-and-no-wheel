@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-lang2';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-speed2';
 
-const ASSET_VERSION = '20260402-lang2';
+const ASSET_VERSION = '20260402-speed2';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -299,7 +299,9 @@ function updateStaticUi(uiText) {
     footerWheelsHeading: uiText.wheelsHeading,
     footerMoreWheelsHeading: uiText.moreWheelsHeading,
     footerPagesHeading: uiText.pagesHeading,
+    footerDescription: uiText.footerDescription,
     footerAboutLink: uiText.aboutUs,
+    footerFaqLink: uiText.faqShort || getLocalizedRouteContent(currentLocale, 'faq').title,
     footerContactLink: uiText.contactUs,
     footerTermsLink: uiText.terms,
     footerPrivacyLink: uiText.privacy,
@@ -314,7 +316,7 @@ function updateStaticUi(uiText) {
 
   const footerBuiltWith = document.getElementById('footerBuiltWith');
   if (footerBuiltWith) {
-    footerBuiltWith.innerHTML = `© <span id="footerYear">${new Date().getFullYear()}</span> YesAndNoWheel. All rights reserved.`;
+    footerBuiltWith.innerHTML = `© <span id="footerYear">${new Date().getFullYear()}</span> YesAndNoWheel. ${uiText.rightsReserved || 'All rights reserved.'}`;
   }
 }
 
