@@ -213,15 +213,18 @@ export function normalizeLocale(locale) {
 export function splitLocaleFromPath(pathname) {
   const parts = pathname.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
   const locale = LOCALE_CODES.has(parts[0]) ? parts.shift() : DEFAULT_LOCALE;
+  let slug = parts.join('/');
+  if (slug === 'home') slug = ''; // Treat 'home' as empty
   return {
     locale,
-    slug: parts.join('/')
+    slug
   };
 }
 
 export function buildLocalizedPath(locale, slug = '') {
   const safeLocale = normalizeLocale(locale);
-  const normalizedSlug = slug.replace(/^\/+|\/+$/g, '');
+  let normalizedSlug = slug.replace(/^\/+|\/+$/g, '');
+  if (normalizedSlug === 'home') normalizedSlug = ''; // Never generate '/home/'
   if (!normalizedSlug) {
     return safeLocale === DEFAULT_LOCALE ? '/' : `/${safeLocale}/`;
   }

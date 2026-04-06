@@ -2,13 +2,17 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getStaticPageContent, getWheelSharedText } from '../js/i18n.js';
 
-const SITE_URL = 'https://yesandnowheel.com';
+const SITE_URL = 'https://www.yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
+
+import { fileURLToPath } from 'node:url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const projectRoot = resolve(__dirname, '..');
+
 const OG_IMAGE_URL = `${SITE_URL}/og-image.svg`;
 
 const ROUTE_TITLES_EN = {
   '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
-  home: 'Yes and No Wheel — #1 Free Random Decision Spinner',
   'about-us': 'About Us — YesAndNoWheel.com',
   contact: 'Contact Us — YesAndNoWheel.com',
   terms: 'Terms of Service — YesAndNoWheel.com',
@@ -28,7 +32,6 @@ const ROUTE_TITLES_EN = {
 
 const ROUTE_DESCRIPTIONS_EN = {
   '': 'Spin the Yes and No Wheel to decide instantly! Free online spinner with 8 wheels. Customizable and fun. Try it now!',
-  home: 'Spin the Yes and No Wheel to decide instantly! Free online spinner with 8 wheels. Customizable and fun. Try it now!',
   'about-us': 'Learn more about YesAndNoWheel.com, our free spinner tools, and the ideas behind our random decision wheel pages.',
   contact: 'Contact YesAndNoWheel.com — reach out with questions, feedback, or feature requests. We respond within 24-48 hours.',
   terms: 'Read the terms of service for YesAndNoWheel.com and understand how our free wheel tools and content may be used.',
@@ -46,10 +49,10 @@ const ROUTE_DESCRIPTIONS_EN = {
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!'
 };
 
-const ROUTES = ['', 'home', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color'];
-const WHEEL_ROUTES = new Set(['', 'home', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']);
 
-const templatePath = resolve('index.html');
+const templatePath = resolve(projectRoot, 'index.html');
 const template = readFileSync(templatePath, 'utf8');
 
 function charLength(value) {
@@ -113,13 +116,13 @@ function ensureMetaDescription(description, locale, route) {
 
 function getOutputPath(locale, route) {
   if (locale === DEFAULT_LOCALE) {
-    if (!route) return resolve('index.html');
-    return resolve(route, 'index.html');
+    if (!route) return resolve(projectRoot, 'index.html');
+    return resolve(projectRoot, route, 'index.html');
   }
 
   const localizedPath = buildLocalizedPath(locale, route || '');
   const relative = localizedPath.replace(/^\/+|\/+$/g, '');
-  return resolve(relative, 'index.html');
+  return resolve(projectRoot, relative, 'index.html');
 }
 
 function getCanonicalPath(locale, route) {

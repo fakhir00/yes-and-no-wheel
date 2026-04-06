@@ -5,7 +5,6 @@ const ASSET_VERSION = '20260402-seo1';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
-  'home': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
   'about-us': () => import(`./pages/AboutPage.js?v=${ASSET_VERSION}`).then((m) => m.renderAboutPage),
   'contact': () => import(`./pages/ContactPage.js?v=${ASSET_VERSION}`).then((m) => m.renderContactPage),
   'terms': () => import(`./pages/TermsPage.js?v=${ASSET_VERSION}`).then((m) => m.renderTermsPage),
@@ -114,7 +113,7 @@ function ensureMetaDescription(description, route) {
 
 // Canonical slug mapping (legacy routes redirect to canonical)
 const canonicalSlugs = {
-  '': 'home',
+  'home': '',
   'fate': 'wheel-of-fate',
   'tod': 'spin-the-wheel-truth-or-dare',
   'dti': 'dti-theme',
