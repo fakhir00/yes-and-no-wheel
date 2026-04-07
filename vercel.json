@@ -26,10 +26,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.yesandnowheel.com"
+          "value": "yesandnowheel.com"
         }
       ],
-      "destination": "https://yesandnowheel.com/:path*",
+      "destination": "https://www.yesandnowheel.com/:path*",
       "permanent": true
     }
   ],
