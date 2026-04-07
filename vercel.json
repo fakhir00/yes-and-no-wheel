@@ -2,6 +2,17 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "yesandnowheel.com"
+        }
+      ],
+      "destination": "https://www.yesandnowheel.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/home/",
       "destination": "/",
       "permanent": true
@@ -19,17 +30,6 @@
     {
       "source": "/:lang/home",
       "destination": "/:lang/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "yesandnowheel.com"
-        }
-      ],
-      "destination": "https://www.yesandnowheel.com/:path*",
       "permanent": true
     }
   ],
