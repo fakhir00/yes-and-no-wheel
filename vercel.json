@@ -7,7 +7,17 @@
       "permanent": true
     },
     {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/:lang/home/",
+      "destination": "/:lang/",
+      "permanent": true
+    },
+    {
+      "source": "/:lang/home",
       "destination": "/:lang/",
       "permanent": true
     },
