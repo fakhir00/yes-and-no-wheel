@@ -22,10 +22,10 @@ Disallow: *&p=*
 Disallow: *&preview=*
 
 # Sitemap Link 1
-Sitemap: https://www.yesandnowheel.com/sitemap.xml
+Sitemap: https://yesandnowheel.com/sitemap.xml
 
 # Sitemap Link 2
-Sitemap: https://www.yesandnowheel.com/sitemap-index.xml
+Sitemap: https://yesandnowheel.com/sitemap-index.xml
 
 # Block Ahrefs Crawler
 User-agent: AhrefsBot
