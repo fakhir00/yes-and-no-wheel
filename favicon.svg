@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Yes and No Wheel favicon</title>
+  <desc id="desc">Decision wheel favicon with yes and no segments.</desc>
+  <defs>
+    <linearGradient id="ring" x1="36" y1="28" x2="220" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="yesFill" x1="48" y1="56" x2="160" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="noFill" x1="196" y1="60" x2="112" y2="208" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fb7185"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <clipPath id="wheelClip">
+      <circle cx="128" cy="136" r="92"/>
+    </clipPath>
+  </defs>
+
+  <path d="M128 12l22 38a11 11 0 0 1-9.53 16.5h-24.94A11 11 0 0 1 106 50z" fill="#0f172a"/>
+  <path d="M128 22l14.5 25h-29z" fill="#f8fafc"/>
+  <circle cx="128" cy="136" r="104" fill="#0f172a" stroke="url(#ring)" stroke-width="8"/>
+
+  <g clip-path="url(#wheelClip)">
+    <path d="M128 136L128 44A92 92 0 0 1 218.32 124.8L128 136z" fill="#0b1220"/>
+    <path d="M128 136L218.32 124.8A92 92 0 0 1 128 228z" fill="url(#noFill)"/>
+    <path d="M128 136L128 228A92 92 0 0 1 37.68 147.2L128 136z" fill="#0b1220"/>
+    <path d="M128 136L37.68 147.2A92 92 0 0 1 128 44z" fill="url(#yesFill)"/>
+    <path d="M128 44v184M37.68 147.2l180.64-22.4" stroke="#0f172a" stroke-width="8" stroke-linecap="round" opacity="0.68"/>
+  </g>
+
+  <path d="M82 134l21 21 33-41" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 108l38 38M194 108l-38 38" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+
+  <circle cx="128" cy="136" r="28" fill="#f8fafc" opacity="0.96"/>
+  <circle cx="128" cy="136" r="14" fill="#0f172a"/>
+  <circle cx="128" cy="136" r="6" fill="#22d3ee"/>
+</svg>

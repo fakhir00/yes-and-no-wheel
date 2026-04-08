@@ -1,0 +1,21 @@
+{
+  "name": "Yes and No Wheel",
+  "short_name": "YesNoWheel",
+  "description": "Professional yes/no decision wheels, random pickers, and party spinners.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09111f",
+  "theme_color": "#09111f",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

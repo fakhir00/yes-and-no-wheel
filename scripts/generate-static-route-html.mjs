@@ -4,15 +4,16 @@ import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, get
 
 const SITE_URL = 'https://www.yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
+const ASSET_VERSION = '20260408-brand1';
 
 import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(__dirname, '..');
 
-const OG_IMAGE_URL = `${SITE_URL}/og-image.svg`;
+const OG_IMAGE_URL = `${SITE_URL}/og-image.svg?v=${ASSET_VERSION}`;
 
 const ROUTE_TITLES_EN = {
-  '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
+  '': 'Yes and No Wheel | Free Yes or No Spinner',
   'about-us': 'About Us — YesAndNoWheel.com',
   contact: 'Contact Us — YesAndNoWheel.com',
   terms: 'Terms of Service — YesAndNoWheel.com',
@@ -133,7 +134,7 @@ function getSourceH1(locale, route) {
   const routeKey = route || 'home';
 
   if (routeKey === 'home') {
-    return getHomeText(locale).howTitle;
+    return getLocalizedRouteContent(locale, 'home').title;
   }
 
   if (WHEEL_ROUTES.has(routeKey)) {
@@ -254,18 +255,20 @@ for (const locale of locales) {
       .replace(/<meta property="og:image:type" content="[\s\S]*?">/, `<meta property="og:image:type" content="image/svg+xml">`)
       .replace(/<meta property="og:image:width" content="[\s\S]*?">/, `<meta property="og:image:width" content="1200">`)
       .replace(/<meta property="og:image:height" content="[\s\S]*?">/, `<meta property="og:image:height" content="630">`)
-      .replace(/<meta property="og:image:alt" content="[\s\S]*?">/, `<meta property="og:image:alt" content="YesAndNoWheel.com spinning wheel preview image">`)
+      .replace(/<meta property="og:image:alt" content="[\s\S]*?">/, `<meta property="og:image:alt" content="Yes and No Wheel professional brand preview">`)
       .replace(/<meta name="twitter:title" content="[\s\S]*?">/, `<meta name="twitter:title" content="${title}">`)
       .replace(/<meta name="twitter:description" content="[\s\S]*?">/, `<meta name="twitter:description" content="${description}">`)
       .replace(/<meta name="twitter:image" content="[\s\S]*?">/, `<meta name="twitter:image" content="${OG_IMAGE_URL}">`)
-      .replace(/<meta name="twitter:image:alt" content="[\s\S]*?">/, `<meta name="twitter:image:alt" content="YesAndNoWheel.com spinning wheel preview image">`)
+      .replace(/<meta name="twitter:image:alt" content="[\s\S]*?">/, `<meta name="twitter:image:alt" content="Yes and No Wheel professional brand preview">`)
+      .replace(/<link rel="stylesheet" href="\/index\.min\.css\?v=[^"]+">/, `<link rel="stylesheet" href="/index.min.css?v=${ASSET_VERSION}">`)
+      .replace(/<script type="module" src="\/js\/main\.js\?v=[^"]+"><\/script>/, `<script type="module" src="/js/main.js?v=${ASSET_VERSION}"></script>`)
       .replace(/<script type="application\/ld\+json" id="breadcrumb-schema">[\s\S]*?<\/script>/, `<script type="application/ld+json" id="breadcrumb-schema">\n${getBreadcrumbSchema(locale, route)}\n  </script>`)
       .replace(
         /"description": "Spin the Yes and No Wheel to make instant decisions! The ultimate decision-making hub with 8 specialized spinning wheels\."/,
         `"description": "${description}"`
       )
       .replace(
-        /<div id="app">[\s\S]*?<\/div>\s*<\/main>\s*<!-- Footer -->/,
+        /<div id="app">[\s\S]*?<\/div>\s*<\/div>\s*<\/main>\s*<!-- Footer -->/,
         `<div id="app"><div class="source-route-copy" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"><article class="source-route-article"><header><h1 class="source-route-h1">${escapeHtml(getSourceH1(locale, route))}</h1></header><section>${getSourceBodyHtml(locale, route)}</section></article></div></div>\n  </main>\n\n  <!-- Footer -->`
       );
 

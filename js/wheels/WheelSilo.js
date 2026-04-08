@@ -1,7 +1,7 @@
 import { buildLocalizedPath, getLocalizedRouteContent } from '../i18n.js';
 
 const WHEEL_META = {
-  home: { icon: '🎰', accent: '#facc15' },
+  home: { icon: 'Y/N', accent: '#22d3ee' },
   rainbow: { icon: '🌈', accent: '#f97316' },
   'wheel-of-fate': { icon: '⚔️', accent: '#8b5cf6' },
   word: { icon: '📖', accent: '#3b82f6' },

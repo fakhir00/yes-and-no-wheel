@@ -7,7 +7,9 @@ export function renderNotFoundPage(container) {
   container.innerHTML = `
     <div class="static-page not-found-page">
       <div class="not-found-content">
-        <div class="not-found-icon">🎰</div>
+        <div class="not-found-icon">
+          <img src="/images/brand/yes-and-no-wheel-mark.svg" alt="Yes and No Wheel logo" width="96" height="96">
+        </div>
         <h1 class="not-found-title">${content.title}</h1>
         <p class="not-found-text">${content.intro}</p>
         <p class="not-found-sub">${content.intro}</p>

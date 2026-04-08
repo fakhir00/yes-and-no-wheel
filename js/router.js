@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260402-seo1';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260408-brand1';
 
-const ASSET_VERSION = '20260402-seo1';
+const ASSET_VERSION = '20260408-brand1';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -28,8 +28,8 @@ const routes = {
 };
 
 const routeTitles = {
-  '': 'Yes and No Wheel — #1 Free Random Decision Spinner',
-  'home': 'Yes and No Wheel — #1 Free Random Decision Spinner',
+  '': 'Yes and No Wheel | Free Yes or No Spinner',
+  'home': 'Yes and No Wheel | Free Yes or No Spinner',
   'about-us': 'About Us — YesAndNoWheel.com',
   'contact': 'Contact Us — YesAndNoWheel.com',
   'terms': 'Terms of Service — YesAndNoWheel.com',
@@ -71,7 +71,7 @@ const routeDescriptions = {
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
 };
-const OG_IMAGE_URL = 'https://www.yesandnowheel.com/og-image.svg';
+const OG_IMAGE_URL = 'https://www.yesandnowheel.com/og-image.svg?v=20260408-brand1';
 
 function charLength(value) {
   return [...String(value || '')].length;

@@ -23,6 +23,10 @@
   --accent-secondary: #8b5cf6;
   --accent-tertiary: #a78bfa;
   --accent-glow: rgba(99, 102, 241, 0.3);
+  --brand-ink: #0f172a;
+  --brand-cyan: #22d3ee;
+  --brand-cyan-soft: #67e8f9;
+  --brand-coral: #fb7185;
 
   --gradient-primary: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
   --gradient-hero: linear-gradient(135deg, #0a0a1a 0%, #1a103c 50%, #0d1b2a 100%);
@@ -130,6 +134,25 @@ a:hover { color: var(--accent-tertiary); }
 }
 
 .nav-brand-icon { font-size: 1.5rem; }
+
+.nav-brand-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 10px 20px rgba(2, 8, 23, 0.22));
+}
+
+.brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.brand-wordmark-amp {
+  color: var(--brand-cyan-soft);
+}
 
 .nav-menu {
   display: flex; align-items: center; gap: var(--space-xs);
@@ -1087,6 +1110,8 @@ a:hover { color: var(--accent-tertiary); }
 
 .wheel-silo-icon {
   font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 
 .wheel-silo-name {
@@ -1568,6 +1593,15 @@ a:hover { color: var(--accent-tertiary); }
   font-size: 1.5rem;
 }
 
+.footer-brand-link .nav-brand-mark {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-brand-link .brand-wordmark {
+  font-size: 1.05rem;
+}
+
 .footer-desc {
   color: var(--text-secondary);
   font-size: 0.88rem;
@@ -1965,7 +1999,13 @@ a:hover { color: var(--accent-tertiary); }
 }
 
 .not-found-icon {
-  font-size: 5rem; margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.not-found-icon img {
+  width: clamp(88px, 12vw, 112px);
+  height: auto;
+  filter: drop-shadow(0 18px 34px rgba(2, 8, 23, 0.24));
 }
 
 .not-found-title {
