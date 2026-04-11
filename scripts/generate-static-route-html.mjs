@@ -138,7 +138,7 @@ function getSourceH1(locale, route) {
   }
 
   if (WHEEL_ROUTES.has(routeKey)) {
-    return getWheelSharedText(locale, routeKey).howToUse;
+    return getLocalizedRouteContent(locale, routeKey).title;
   }
 
   return getLocalizedRouteContent(locale, routeKey).title;

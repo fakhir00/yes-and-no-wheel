@@ -18,7 +18,7 @@ export function renderZodiacWheel(container) {
   container.innerHTML = `
     <div class="wheel-page zodiac-theme">
       <div class="wheel-header">
-        <p class="wheel-title zodiac-title">✨ ${t.title}</p>
+        <h1 class="wheel-title zodiac-title">✨ ${t.title}</h1>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
       <div class="wheel-layout" id="zodiacSingleLayout">
@@ -31,7 +31,7 @@ export function renderZodiacWheel(container) {
         <div class="wheel-sidebar" id="zodiacSidebar"></div>
       </div>
       <div class="wheel-instructions howto-tutorial-style">
-        <h1>${t.howToUse}</h1>
+        <h2>${t.howToUse}</h2>
         <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">

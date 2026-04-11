@@ -24,7 +24,7 @@ export function renderCountryWheel(container) {
   container.innerHTML = `
     <div class="wheel-page country-theme">
       <div class="wheel-header">
-        <p class="wheel-title">🌍 ${t.title}</p>
+        <h1 class="wheel-title">🌍 ${t.title}</h1>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
@@ -59,7 +59,7 @@ export function renderCountryWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h1>${t.howToUse}</h1>
+        <h2>${t.howToUse}</h2>
         <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
