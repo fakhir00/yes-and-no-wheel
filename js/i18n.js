@@ -2336,21 +2336,21 @@ export function getWheelUiText(locale) {
 
 const WHEEL_SEED_ENTRIES = {
   'random-food': {
-    en: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salad' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
-    'zh-CN': [{ entry: '比萨' }, { entry: '寿司' }, { entry: '汉堡' }, { entry: '玉米面豆卷' }, { entry: '意面' }, { entry: '沙拉' }, { entry: '牛排' }, { entry: '三明治' }],
-    hi: [{ entry: 'पिज्जा' }, { entry: 'सुशी' }, { entry: 'बर्गर' }, { entry: 'टैकोस' }, { entry: 'पास्ता' }, { entry: 'सलाद' }, { entry: 'स्टेक' }, { entry: 'सैंडविच' }],
-    es: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Hamburguesa' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Ensalada' }, { entry: 'Bife' }, { entry: 'Sándwich' }],
-    ar: [{ entry: 'بيتزا' }, { entry: 'سوشي' }, { entry: 'برجر' }, { entry: 'تاكو' }, { entry: 'مكرونة' }, { entry: 'سلطة' }, { entry: 'ستيك' }, { entry: 'ساندويتش' }],
-    fr: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pâtes' }, { entry: 'Salade' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
-    bn: [{ entry: 'পিজা' }, { entry: 'সুশি' }, { entry: 'বার্গার' }, { entry: 'ট্যাকো' }, { entry: 'পাস্তা' }, { entry: 'সালাদ' }, { entry: 'স্টেক' }, { entry: 'স্যান্ডউইচ' }],
-    pt: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Hambúrguer' }, { entry: 'Tacos' }, { entry: 'Massa' }, { entry: 'Salada' }, { entry: 'Bife' }, { entry: 'Sanduíche' }],
-    ru: [{ entry: 'Пицца' }, { entry: 'Суши' }, { entry: 'Бургер' }, { entry: 'Тако' }, { entry: 'Паста' }, { entry: 'Салат' }, { entry: 'Стейк' }, { entry: 'Сэндвич' }],
-    ur: [{ entry: 'پیزا' }, { entry: 'سوشی' }, { entry: 'برگر' }, { entry: 'ٹاکوس' }, { entry: 'پاستا' }, { entry: 'سلاد' }, { entry: 'اسٹیک' }, { entry: 'سینڈوچ' }],
-    id: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salad' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
-    de: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salat' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
-    ja: [{ entry: 'ピザ' }, { entry: '寿司' }, { entry: 'バーガー' }, { entry: 'タコス' }, { entry: 'パスタ' }, { entry: 'サラダ' }, { entry: 'ステーキ' }, { entry: 'サンドイッチ' }],
-    mr: [{ entry: 'पिझ्झा' }, { entry: 'सुशी' }, { entry: 'बर्गर' }, { entry: 'टॅको' }, { entry: 'पास्ता' }, { entry: 'सॅलड' }, { entry: 'स्टेक' }, { entry: 'सँडविच' }],
-    te: [{ entry: 'పిజ్జా' }, { entry: 'సుషీ' }, { entry: 'బర్గర్' }, { entry: 'టాకోస్' }, { entry: 'పాస్తా' }, { entry: 'సలాడ్' }, { entry: 'స్టీక్' }, { entry: 'శాండ్విచ్' }]
+    en: ['Pizza', 'Sushi', 'Burger', 'Tacos', 'Pasta', 'Salad', 'Steak', 'Sandwich'],
+    'zh-CN': ['比萨', '寿司', '汉堡', '玉米面豆卷', '意面', '沙拉', '牛排', '三明治'],
+    hi: ['पिज्जा', 'सुशी', 'बर्गर', 'टैकोस', 'पास्ता', 'सलाद', 'स्टेक', 'सैंडविच'],
+    es: ['Pizza', 'Sushi', 'Hamburguesa', 'Tacos', 'Pasta', 'Ensalada', 'Bife', 'Sándwich'],
+    ar: ['بيتزا', 'سوشي', 'برجر', 'تاكو', 'مكرونة', 'سلطة', 'ستيك', 'ساندويتش'],
+    fr: ['Pizza', 'Sushi', 'Burger', 'Tacos', 'Pâtes', 'Salade', 'Steak', 'Sandwich'],
+    bn: ['পিজা', 'সুশি', 'বার্গার', 'ট্যাকো', 'পাস্তা', 'সালাদ', 'স্টেক', 'স্যান্ডউইচ'],
+    pt: ['Pizza', 'Sushi', 'Hambúrguer', 'Tacos', 'Massa', 'Salada', 'Bife', 'Sanduíche'],
+    ru: ['Пицца', 'Суши', 'Бургер', 'Тако', 'Паста', 'Салат', 'Стейк', 'Сэндвич'],
+    ur: ['پیزا', 'سوشی', 'برگر', 'ٹاکوس', 'پاستا', 'سلاد', 'اسٹیک', 'سینڈوچ'],
+    id: ['Pizza', 'Sushi', 'Burger', 'Tacos', 'Pasta', 'Salad', 'Steak', 'Sandwich'],
+    de: ['Pizza', 'Sushi', 'Burger', 'Tacos', 'Pasta', 'Salat', 'Steak', 'Sandwich'],
+    ja: ['ピザ', '寿司', 'バーガー', 'タコス', 'パスタ', 'サラダ', 'ステーキ', 'サンドイッチ'],
+    mr: ['पिझ्झा', 'सुशी', 'बर्गर', 'टॅको', 'पास्ता', 'सॅलड', 'स्टेक', 'सँडविच'],
+    te: ['పిజ్జా', 'సుషీ', 'బర్గర్', 'టాకోస్', 'పాస్తా', 'సలాడ్', 'స్టీక్', 'శాండ్విచ్']
   },
 
   rainbow: {
