@@ -29,7 +29,7 @@ const ROUTE_TITLES_EN = {
   country: 'Country Wheel — Pick Randomly From Top 199 Countries',
   zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
-  'random-food': 'Random Food Wheel | Food Decision Spinner',
+  'random-food', 'yes-no-oracle': 'Random Food Wheel | Food Decision Spinner',
   'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
   'blog/cant-decide-what-to-eat': "Can't Decide What to Eat for Dinner? | YesAndNoWheel Blog",
   'blog/should-i-let-fate-decide': 'Should I Let Fate Decide? 5 Life Questions | YesAndNoWheel Blog',
@@ -56,7 +56,7 @@ const ROUTE_DESCRIPTIONS_EN = {
   country: 'Spin the Country Wheel to pick from 199 countries! Filter by continent with flags. Great for geography games.',
   zodiac: 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
-  'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
+  'random-food', 'yes-no-oracle': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
   'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
   'blog/cant-decide-what-to-eat': "End the dinner debate! Spin the Random Food Wheel and let fate pick your meal. Decision-making tips and fun ideas.",
   'blog/should-i-let-fate-decide': 'Fate vs free will — 5 life dilemmas to spin the Wheel of Fate. Real scenarios, real decisions, real fun.',
@@ -66,8 +66,8 @@ const ROUTE_DESCRIPTIONS_EN = {
   'blog/hair-color-wheel-bold-choice': 'Should you dye your hair? Spin the Hair Color Wheel for classic and fantasy colors. Take a screenshot for your stylist.'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle']);
 
 const templatePath = resolve(projectRoot, 'index.html');
 const template = readFileSync(templatePath, 'utf8');
