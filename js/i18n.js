@@ -23,7 +23,7 @@ export const LOCALE_CODES = new Set(LOCALES.map(locale => locale.code));
 export const UI_TRANSLATIONS = {
   en: {
     home: 'Home',
-    wheels: 'Wheels',
+    wheels: 'Decision Wheels',
     about: 'About',
     contact: 'Contact',
     wheelsHeading: 'Wheels',
@@ -262,6 +262,7 @@ const ROUTE_NAMES = {
     zodiac: 'Zodiac Wheel',
     'hair-color': 'Hair Color Wheel',
     'random-food': 'Random Food Wheel',
+    'yes-no-oracle': 'Yes No Oracle',
     blog: 'Blog'
   },
   'zh-CN': {
@@ -299,7 +300,8 @@ const ROUTE_NAMES = {
     country: 'कंट्री व्हील',
     zodiac: 'ज़ोडिएक व्हील',
     'hair-color': 'हेयर कलर व्हील',
-    'random-food': 'रैंडम फूड व्हील'
+    'random-food': 'रैंडम फूड व्हील',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   es: {
     home: 'Ruleta de Si y No',
@@ -318,7 +320,8 @@ const ROUTE_NAMES = {
     country: 'Ruleta de Paises',
     zodiac: 'Ruleta del Zodiaco',
     'hair-color': 'Ruleta de Color de Cabello',
-    'random-food': 'Ruleta de Comida Aleatoria'
+    'random-food': 'Ruleta de Comida Aleatoria',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   ar: {
     home: 'عجلة نعم ولا',
@@ -337,7 +340,8 @@ const ROUTE_NAMES = {
     country: 'عجلة الدول',
     zodiac: 'عجلة الابراج',
     'hair-color': 'عجلة لون الشعر',
-    'random-food': 'عجلة الطعام العشوائي'
+    'random-food': 'عجلة الطعام العشوائي',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   fr: {
     home: 'Roue Oui Non',
@@ -356,7 +360,8 @@ const ROUTE_NAMES = {
     country: 'Roue des Pays',
     zodiac: 'Roue du Zodiaque',
     'hair-color': 'Roue de Couleur de Cheveux',
-    'random-food': 'Roue de Nourriture Aléatoire'
+    'random-food': 'Roue de Nourriture Aléatoire',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   bn: {
     home: 'হ্যাঁ না চাকা',
@@ -375,7 +380,8 @@ const ROUTE_NAMES = {
     country: 'দেশ চাকা',
     zodiac: 'রাশিচক্র চাকা',
     'hair-color': 'চুলের রঙ চাকা',
-    'random-food': 'র্যান্ডম ফুড চাকা'
+    'random-food': 'র্যান্ডম ফুড চাকা',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   pt: {
     home: 'Roda Sim ou Nao',
@@ -394,7 +400,8 @@ const ROUTE_NAMES = {
     country: 'Roda de Paises',
     zodiac: 'Roda do Zodiaco',
     'hair-color': 'Roda de Cor de Cabelo',
-    'random-food': 'Roleta de Comida Aleatória'
+    'random-food': 'Roleta de Comida Aleatória',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   ru: {
     home: 'Колесо Да Нет',
@@ -413,7 +420,8 @@ const ROUTE_NAMES = {
     country: 'Колесо Стран',
     zodiac: 'Колесо Зодиака',
     'hair-color': 'Колесо Цвета Волос',
-    'random-food': 'Колесо Случайной Еды'
+    'random-food': 'Колесо Случайной Еды',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   ur: {
     home: 'ہاں یا نہیں ویل',
@@ -432,7 +440,8 @@ const ROUTE_NAMES = {
     country: 'ملکوں کا ویل',
     zodiac: 'زائچہ ویل',
     'hair-color': 'بالوں کے رنگ کا ویل',
-    'random-food': 'رینڈم فوڈ ویل'
+    'random-food': 'رینڈم فوڈ ویل',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   id: {
     home: 'Roda Ya Tidak',
@@ -451,7 +460,8 @@ const ROUTE_NAMES = {
     country: 'Roda Negara',
     zodiac: 'Roda Zodiak',
     'hair-color': 'Roda Warna Rambut',
-    'random-food': 'Roda Makanan Acak'
+    'random-food': 'Roda Makanan Acak',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   de: {
     home: 'Ja Nein Rad',
@@ -470,7 +480,8 @@ const ROUTE_NAMES = {
     country: 'Landerrad',
     zodiac: 'Zodiakrad',
     'hair-color': 'Haarfarbenrad',
-    'random-food': 'Zufälliges Essensrad'
+    'random-food': 'Zufälliges Essensrad',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   ja: {
     home: 'はい いいえ ルーレット',
@@ -489,7 +500,8 @@ const ROUTE_NAMES = {
     country: '国ルーレット',
     zodiac: '星座ルーレット',
     'hair-color': 'ヘアカラールーレット',
-    'random-food': 'ランダムフードルーレット'
+    'random-food': 'ランダムフードルーレット',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   mr: {
     home: 'होय नाही व्हील',
@@ -508,7 +520,8 @@ const ROUTE_NAMES = {
     country: 'देश व्हील',
     zodiac: 'राशी व्हील',
     'hair-color': 'केसांच्या रंगाचे व्हील',
-    'random-food': 'रँडम फूड व्हील'
+    'random-food': 'रँडम फूड व्हील',
+    'yes-no-oracle': 'Yes No Oracle'
   },
   te: {
     home: 'అవును కాదు వీల్',
@@ -527,7 +540,8 @@ const ROUTE_NAMES = {
     country: 'దేశాల వీల్',
     zodiac: 'రాశిచక్ర వీల్',
     'hair-color': 'జుట్టు రంగు వీల్',
-    'random-food': 'రాండమ్ ఫుడ్ వీల్'
+    'random-food': 'రాండమ్ ఫుడ్ వీల్',
+    'yes-no-oracle': 'Yes No Oracle'
   }
 };
 
@@ -568,7 +582,7 @@ const STATIC_COPY = {
     features: 'Key Highlights',
     details: 'More Details',
     pages: 'Pages',
-    wheels: 'Wheels',
+    wheels: 'Decision Wheels',
     yourName: 'Your Name',
     email: 'Email Address',
     message: 'Message',
@@ -2336,6 +2350,21 @@ export function getWheelUiText(locale) {
 }
 
 const WHEEL_SEED_ENTRIES = {
+  'yes-no-oracle': {
+    title: 'Yes No Oracle',
+    subtitle: 'Accurate Yes or No Oracle | Free Online Answers',
+    howToUse: 'How to Use the Yes No Oracle',
+    howToIntro: 'Seek answers to your burning questions with the accurate Yes No Oracle. Fast, simple, and free.',
+    step1Title: 'Ask a Question',
+    step1Desc: 'Focus your mind on a yes or no question that you need guidance on.',
+    step2Title: 'Spin the Oracle',
+    step2Desc: 'Click the central button or anywhere on the oracle to reveal your answer.',
+    step3Title: 'Receive Your Path',
+    step3Desc: 'The oracle will point to Yes, No, or another guiding path. Accept its wisdom!',
+    spinNow: 'Consult Oracle',
+    seoTitle: 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
+    seoParagraph: 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.'
+  },
   'random-food': {
     en: ['Pizza', 'Sushi', 'Burger', 'Tacos', 'Pasta', 'Salad', 'Steak', 'Sandwich'],
     'zh-CN': ['比萨', '寿司', '汉堡', '玉米面豆卷', '意面', '沙拉', '牛排', '三明治'],
@@ -2636,7 +2665,7 @@ export function getHomeText(locale) {
 
   const faq = getStaticCopy(safeLocale);
   const wheelDescriptions = {};
-  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food']
+  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle']
     .forEach((route) => {
       wheelDescriptions[route] = getWheelSharedText(safeLocale, route).subtitle;
     });
