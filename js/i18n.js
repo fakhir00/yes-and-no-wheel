@@ -261,7 +261,8 @@ const ROUTE_NAMES = {
     country: 'Country Wheel',
     zodiac: 'Zodiac Wheel',
     'hair-color': 'Hair Color Wheel',
-    'random-food': 'Random Food Wheel'
+    'random-food': 'Random Food Wheel',
+    blog: 'Blog'
   },
   'zh-CN': {
     home: '是或否转盘',

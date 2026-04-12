@@ -22,6 +22,7 @@ const routes = {
   'zodiac': () => import(`./wheels/ZodiacWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderZodiacWheel),
   'hair-color': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
   'random-food': () => import(`./wheels/FoodWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderFoodWheel),
+  'blog': () => import(`./pages/BlogListPage.js?v=${ASSET_VERSION}`).then((m) => m.renderBlogListPage),
   'fate': () => import(`./wheels/WheelOfFate.js?v=${ASSET_VERSION}`).then((m) => m.renderWheelOfFate),
   'tod': () => import(`./wheels/TruthOrDare.js?v=${ASSET_VERSION}`).then((m) => m.renderTruthOrDare),
   'dti': () => import(`./wheels/DTIWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderDTIWheel),
@@ -49,6 +50,7 @@ const routeTitles = {
   'zodiac': 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
   'random-food': 'Random Food Wheel | Food Decision Spinner',
+  'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
   'fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
   'tod': 'Spin the Wheel Truth or Dare — Fun Party Game',
   'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
@@ -71,6 +73,7 @@ const routeDescriptions = {
   'zodiac': 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
   'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
+  'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
   'fate': 'Spin the Wheel of Fate for dramatic outcomes. Perfect for writers and RPG players. Weighted entries and cosmic design.',
   'tod': 'Spin the Wheel Truth or Dare for parties! 200+ curated prompts with player picker. Free neon-themed game.',
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
@@ -206,7 +209,16 @@ async function handleRoute() {
   setTimeout(() => {
     (async () => {
       try {
-        const loadRenderer = routes[route] || routes['404'];
+        // Resolve blog post sub-routes to the blog post renderer
+        let resolvedRoute = route;
+        if (route.startsWith('blog/') && route !== 'blog') {
+          resolvedRoute = 'blog-post';
+        }
+        let loadRenderer = routes[resolvedRoute];
+        if (!loadRenderer && route.startsWith('blog/')) {
+          loadRenderer = () => import(`./pages/BlogPostPage.js?v=${ASSET_VERSION}`).then((m) => m.renderBlogPostPage);
+        }
+        loadRenderer = loadRenderer || routes['404'];
         const renderer = await loadRenderer();
         if (requestId !== routeRequestId) return;
         currentEngine = renderer(app);
