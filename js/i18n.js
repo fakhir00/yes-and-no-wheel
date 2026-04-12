@@ -260,7 +260,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'DTI Theme Wheel',
     country: 'Country Wheel',
     zodiac: 'Zodiac Wheel',
-    'hair-color': 'Hair Color Wheel'
+    'hair-color': 'Hair Color Wheel',
+    'random-food': 'Random Food Wheel'
   },
   'zh-CN': {
     home: '是或否转盘',
@@ -296,7 +297,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'डीटीआई थीम व्हील',
     country: 'कंट्री व्हील',
     zodiac: 'ज़ोडिएक व्हील',
-    'hair-color': 'हेयर कलर व्हील'
+    'hair-color': 'हेयर कलर व्हील',
+    'random-food': 'रैंडम फूड व्हील'
   },
   es: {
     home: 'Ruleta de Si y No',
@@ -314,7 +316,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'Ruleta de Temas DTI',
     country: 'Ruleta de Paises',
     zodiac: 'Ruleta del Zodiaco',
-    'hair-color': 'Ruleta de Color de Cabello'
+    'hair-color': 'Ruleta de Color de Cabello',
+    'random-food': 'Ruleta de Comida Aleatoria'
   },
   ar: {
     home: 'عجلة نعم ولا',
@@ -332,7 +335,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'عجلة ثيمات DTI',
     country: 'عجلة الدول',
     zodiac: 'عجلة الابراج',
-    'hair-color': 'عجلة لون الشعر'
+    'hair-color': 'عجلة لون الشعر',
+    'random-food': 'عجلة الطعام العشوائي'
   },
   fr: {
     home: 'Roue Oui Non',
@@ -350,7 +354,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'Roue de Themes DTI',
     country: 'Roue des Pays',
     zodiac: 'Roue du Zodiaque',
-    'hair-color': 'Roue de Couleur de Cheveux'
+    'hair-color': 'Roue de Couleur de Cheveux',
+    'random-food': 'Roue de Nourriture Aléatoire'
   },
   bn: {
     home: 'হ্যাঁ না চাকা',
@@ -368,7 +373,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'ডিটিআই থিম চাকা',
     country: 'দেশ চাকা',
     zodiac: 'রাশিচক্র চাকা',
-    'hair-color': 'চুলের রঙ চাকা'
+    'hair-color': 'চুলের রঙ চাকা',
+    'random-food': 'র্যান্ডম ফুড চাকা'
   },
   pt: {
     home: 'Roda Sim ou Nao',
@@ -386,7 +392,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'Roda de Temas DTI',
     country: 'Roda de Paises',
     zodiac: 'Roda do Zodiaco',
-    'hair-color': 'Roda de Cor de Cabelo'
+    'hair-color': 'Roda de Cor de Cabelo',
+    'random-food': 'Roleta de Comida Aleatória'
   },
   ru: {
     home: 'Колесо Да Нет',
@@ -404,7 +411,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'Колесо Тем DTI',
     country: 'Колесо Стран',
     zodiac: 'Колесо Зодиака',
-    'hair-color': 'Колесо Цвета Волос'
+    'hair-color': 'Колесо Цвета Волос',
+    'random-food': 'Колесо Случайной Еды'
   },
   ur: {
     home: 'ہاں یا نہیں ویل',
@@ -422,7 +430,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'ڈی ٹی آئی تھیم ویل',
     country: 'ملکوں کا ویل',
     zodiac: 'زائچہ ویل',
-    'hair-color': 'بالوں کے رنگ کا ویل'
+    'hair-color': 'بالوں کے رنگ کا ویل',
+    'random-food': 'رینڈم فوڈ ویل'
   },
   id: {
     home: 'Roda Ya Tidak',
@@ -440,7 +449,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'Roda Tema DTI',
     country: 'Roda Negara',
     zodiac: 'Roda Zodiak',
-    'hair-color': 'Roda Warna Rambut'
+    'hair-color': 'Roda Warna Rambut',
+    'random-food': 'Roda Makanan Acak'
   },
   de: {
     home: 'Ja Nein Rad',
@@ -458,7 +468,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'DTI Themenrad',
     country: 'Landerrad',
     zodiac: 'Zodiakrad',
-    'hair-color': 'Haarfarbenrad'
+    'hair-color': 'Haarfarbenrad',
+    'random-food': 'Zufälliges Essensrad'
   },
   ja: {
     home: 'はい いいえ ルーレット',
@@ -476,7 +487,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'DTIテーマルーレット',
     country: '国ルーレット',
     zodiac: '星座ルーレット',
-    'hair-color': 'ヘアカラールーレット'
+    'hair-color': 'ヘアカラールーレット',
+    'random-food': 'ランダムフードルーレット'
   },
   mr: {
     home: 'होय नाही व्हील',
@@ -494,7 +506,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'डीटीआय थीम व्हील',
     country: 'देश व्हील',
     zodiac: 'राशी व्हील',
-    'hair-color': 'केसांच्या रंगाचे व्हील'
+    'hair-color': 'केसांच्या रंगाचे व्हील',
+    'random-food': 'रँडम फूड व्हील'
   },
   te: {
     home: 'అవును కాదు వీల్',
@@ -512,7 +525,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'డిటిఐ థీమ్ వీల్',
     country: 'దేశాల వీల్',
     zodiac: 'రాశిచక్ర వీల్',
-    'hair-color': 'జుట్టు రంగు వీల్'
+    'hair-color': 'జుట్టు రంగు వీల్',
+    'random-food': 'రాండమ్ ఫుడ్ వీల్'
   }
 };
 
@@ -2321,6 +2335,24 @@ export function getWheelUiText(locale) {
 }
 
 const WHEEL_SEED_ENTRIES = {
+  'random-food': {
+    en: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salad' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
+    'zh-CN': [{ entry: '比萨' }, { entry: '寿司' }, { entry: '汉堡' }, { entry: '玉米面豆卷' }, { entry: '意面' }, { entry: '沙拉' }, { entry: '牛排' }, { entry: '三明治' }],
+    hi: [{ entry: 'पिज्जा' }, { entry: 'सुशी' }, { entry: 'बर्गर' }, { entry: 'टैकोस' }, { entry: 'पास्ता' }, { entry: 'सलाद' }, { entry: 'स्टेक' }, { entry: 'सैंडविच' }],
+    es: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Hamburguesa' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Ensalada' }, { entry: 'Bife' }, { entry: 'Sándwich' }],
+    ar: [{ entry: 'بيتزا' }, { entry: 'سوشي' }, { entry: 'برجر' }, { entry: 'تاكو' }, { entry: 'مكرونة' }, { entry: 'سلطة' }, { entry: 'ستيك' }, { entry: 'ساندويتش' }],
+    fr: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pâtes' }, { entry: 'Salade' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
+    bn: [{ entry: 'পিজা' }, { entry: 'সুশি' }, { entry: 'বার্গার' }, { entry: 'ট্যাকো' }, { entry: 'পাস্তা' }, { entry: 'সালাদ' }, { entry: 'স্টেক' }, { entry: 'স্যান্ডউইচ' }],
+    pt: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Hambúrguer' }, { entry: 'Tacos' }, { entry: 'Massa' }, { entry: 'Salada' }, { entry: 'Bife' }, { entry: 'Sanduíche' }],
+    ru: [{ entry: 'Пицца' }, { entry: 'Суши' }, { entry: 'Бургер' }, { entry: 'Тако' }, { entry: 'Паста' }, { entry: 'Салат' }, { entry: 'Стейк' }, { entry: 'Сэндвич' }],
+    ur: [{ entry: 'پیزا' }, { entry: 'سوشی' }, { entry: 'برگر' }, { entry: 'ٹاکوس' }, { entry: 'پاستا' }, { entry: 'سلاد' }, { entry: 'اسٹیک' }, { entry: 'سینڈوچ' }],
+    id: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salad' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
+    de: [{ entry: 'Pizza' }, { entry: 'Sushi' }, { entry: 'Burger' }, { entry: 'Tacos' }, { entry: 'Pasta' }, { entry: 'Salat' }, { entry: 'Steak' }, { entry: 'Sandwich' }],
+    ja: [{ entry: 'ピザ' }, { entry: '寿司' }, { entry: 'バーガー' }, { entry: 'タコス' }, { entry: 'パスタ' }, { entry: 'サラダ' }, { entry: 'ステーキ' }, { entry: 'サンドイッチ' }],
+    mr: [{ entry: 'पिझ्झा' }, { entry: 'सुशी' }, { entry: 'बर्गर' }, { entry: 'टॅको' }, { entry: 'पास्ता' }, { entry: 'सॅलड' }, { entry: 'स्टेक' }, { entry: 'सँडविच' }],
+    te: [{ entry: 'పిజ్జా' }, { entry: 'సుషీ' }, { entry: 'బర్గర్' }, { entry: 'టాకోస్' }, { entry: 'పాస్తా' }, { entry: 'సలాడ్' }, { entry: 'స్టీక్' }, { entry: 'శాండ్విచ్' }]
+  },
+
   rainbow: {
     en: ['Adventure', 'Creativity', 'Love', 'Wisdom', 'Joy', 'Peace', 'Courage'],
     'zh-CN': ['冒险', '创意', '爱', '智慧', '喜悦', '平和', '勇气'],
@@ -2603,7 +2635,7 @@ export function getHomeText(locale) {
 
   const faq = getStaticCopy(safeLocale);
   const wheelDescriptions = {};
-  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']
+  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food']
     .forEach((route) => {
       wheelDescriptions[route] = getWheelSharedText(safeLocale, route).subtitle;
     });

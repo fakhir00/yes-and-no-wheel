@@ -523,6 +523,7 @@ a:hover { color: var(--accent-tertiary); }
 
 /* Themed spin buttons */
 .rainbow-spin-btn { background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); }
+.food-spin-btn { background: linear-gradient(90deg, #ff4757, #ff9f43, #feca57); }
 .fate-spin-btn { background: linear-gradient(135deg, #1a0a3e, #4b0e4e, #6b2d8b); }
 .word-spin-btn { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
 .tod-spin-btn { background: linear-gradient(135deg, #ff006e, #fb5607, #ffbe0b); }
@@ -557,6 +558,7 @@ a:hover { color: var(--accent-tertiary); }
 .result-text { font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; }
 
 .rainbow-text { background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #9400d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.food-text { background: linear-gradient(90deg, #ff4757, #ff9f43); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .fate-title { color: #8b5cf6; text-shadow: 0 0 20px rgba(139,92,246,0.5); }
 .neon-text { color: #ff006e; text-shadow: 0 0 20px rgba(255,0,110,0.5), 0 0 40px rgba(255,0,110,0.3); }
 .zodiac-title { color: #ffd700; text-shadow: 0 0 20px rgba(255,215,0,0.5); }

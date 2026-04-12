@@ -21,10 +21,12 @@ const routes = {
   'country': () => import(`./wheels/CountryWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderCountryWheel),
   'zodiac': () => import(`./wheels/ZodiacWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderZodiacWheel),
   'hair-color': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
+  'random-food': () => import(`./wheels/FoodWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderFoodWheel),
   'fate': () => import(`./wheels/WheelOfFate.js?v=${ASSET_VERSION}`).then((m) => m.renderWheelOfFate),
   'tod': () => import(`./wheels/TruthOrDare.js?v=${ASSET_VERSION}`).then((m) => m.renderTruthOrDare),
   'dti': () => import(`./wheels/DTIWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderDTIWheel),
   'hair': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
+  'food': () => import(`./wheels/FoodWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderFoodWheel),
 };
 
 const routeTitles = {
@@ -46,10 +48,12 @@ const routeTitles = {
   'country': 'Country Wheel — Pick Randomly From Top 199 Countries',
   'zodiac': 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
+  'random-food': 'Random Food Wheel | Food Decision Spinner',
   'fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
   'tod': 'Spin the Wheel Truth or Dare — Fun Party Game',
   'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
   'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color',
+  'food': 'Random Food Wheel | Food Decision Spinner',
 };
 
 const routeDescriptions = {
@@ -66,10 +70,12 @@ const routeDescriptions = {
   'country': 'Spin the Country Wheel to pick from 199 countries! Filter by continent with flags. Great for geography games.',
   'zodiac': 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
+  'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
   'fate': 'Spin the Wheel of Fate for dramatic outcomes. Perfect for writers and RPG players. Weighted entries and cosmic design.',
   'tod': 'Spin the Wheel Truth or Dare for parties! 200+ curated prompts with player picker. Free neon-themed game.',
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
+  'food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
 };
 const OG_IMAGE_URL = 'https://www.yesandnowheel.com/og-image.svg?v=20260408-brand1';
 
@@ -118,6 +124,7 @@ const canonicalSlugs = {
   'tod': 'spin-the-wheel-truth-or-dare',
   'dti': 'dti-theme',
   'hair': 'hair-color',
+  'food': 'random-food',
 };
 
 let currentEngine = null;
@@ -340,6 +347,7 @@ function updateStaticUi(uiText) {
     navCountryWheelLabel: getLocalizedRouteContent(currentLocale, 'country').title,
     navZodiacWheelLabel: getLocalizedRouteContent(currentLocale, 'zodiac').title,
     navHairColorWheelLabel: getLocalizedRouteContent(currentLocale, 'hair-color').title,
+    navFoodWheelLabel: getLocalizedRouteContent(currentLocale, 'random-food').title,
     footerContactHeading: uiText.contactInfo,
     footerWheelsHeading: uiText.wheelsHeading,
     footerMoreWheelsHeading: uiText.moreWheelsHeading,

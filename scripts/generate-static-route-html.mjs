@@ -28,7 +28,8 @@ const ROUTE_TITLES_EN = {
   'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
   country: 'Country Wheel — Pick Randomly From Top 199 Countries',
   zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
-  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color'
+  'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
+  'random-food': 'Random Food Wheel | Food Decision Spinner'
 };
 
 const ROUTE_DESCRIPTIONS_EN = {
@@ -47,11 +48,12 @@ const ROUTE_DESCRIPTIONS_EN = {
   'dti-theme': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   country: 'Spin the Country Wheel to pick from 199 countries! Filter by continent with flags. Great for geography games.',
   zodiac: 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
-  'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!'
+  'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
+  'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food']);
 
 const templatePath = resolve(projectRoot, 'index.html');
 const template = readFileSync(templatePath, 'utf8');
