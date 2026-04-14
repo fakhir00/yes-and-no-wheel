@@ -2,6 +2,7 @@
 import { CardEngine } from '../engine/CardEngine.js';
 import { getWheelSharedText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
+import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
 
 const TAROT_ENTRIES = [

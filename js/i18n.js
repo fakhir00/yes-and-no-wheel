@@ -2375,7 +2375,9 @@ const WHEEL_SEED_ENTRIES = {
     step2Title: 'Draw a Card',
     step2Desc: 'Click the central deck or the button to draw your fateful card.',
     step3Title: 'Interpret the Meaning',
-    step3Desc: 'The tarot provides not just a Yes or No, but deeper esoteric meaning.'
+    step3Desc: 'The tarot provides not just a Yes or No, but deeper esoteric meaning.',
+    seoTitle: 'Free Yes or No Tarot Reading Online | Instant Answers',
+    seoParagraph: 'Consult our free interactive Yes No Tarot whenever you need quick esoteric guidance. Drawing a single tarot card can provide instant clarity on pressing questions regarding love, career, or daily decisions. Focus your mind, ask your question, and let the ancient wisdom of the Major Arcana reveal your answer.'
   },
   'yes-no-oracle': {
     title: 'Yes No Oracle',
@@ -2389,6 +2391,8 @@ const WHEEL_SEED_ENTRIES = {
     step3Title: 'Receive Your Path',
     step3Desc: 'The oracle will point to Yes, No, or another guiding path. Accept its wisdom!',
     spinNow: 'Consult Oracle',
+    seoTitle: 'Yes No Oracle | Accurate Yes No Oracle Free Online',
+    seoParagraph: 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and draw a card for instant answers. Perfect for when you are stuck and need divine intervention.',
     seoTitle: 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
     seoParagraph: 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.'
   },
