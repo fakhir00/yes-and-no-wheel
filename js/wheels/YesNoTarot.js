@@ -1,33 +1,23 @@
-// YesNoTarot.js — Yes No Tarot tool using CardEngine
-import { CardEngine } from '../engine/CardEngine.js';
+// YesNoTarot.js — Yes No Tarot Wheel
+import { WheelEngine } from '../engine/WheelEngine.js';
+import { CustomizationPanel } from '../engine/CustomizationPanel.js';
+import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
 
-const TAROT_ENTRIES = [
-  { title: 'The Fool', answer: 'Yes', meaning: 'New beginnings, spontaneity, and a leap of faith into the unknown.', icon: '🎒' },
-  { title: 'The Magician', answer: 'Yes', meaning: 'Tap into your full potential and manifest your desires into reality.', icon: '✨' },
-  { title: 'The High Priestess', answer: 'Maybe', meaning: 'Trust your intuition. The complete answer is not yet revealed to you.', icon: '🌙' },
-  { title: 'The Empress', answer: 'Yes', 'meaning': 'Abundance, nurturing growth, and expressing your creative energy.', icon: '👑' },
-  { title: 'The Emperor', answer: 'Yes', meaning: 'Structure, stability, and establishing authority and logical boundaries.', icon: '⚔️' },
-  { title: 'The Hierophant', answer: 'Maybe', meaning: 'Seek tradition, established systems, and wise counsel before deciding.', icon: '🗝️' },
-  { title: 'The Lovers', answer: 'Yes', meaning: 'Harmony, alignment of values, and choices made out of true love.', icon: '❤️' },
-  { title: 'The Chariot', answer: 'Yes', meaning: 'Overcome obstacles through willful determination, focus, and drive.', icon: '🪖' },
-  { title: 'Strength', answer: 'Yes', meaning: 'Inner courage, compassion, and gentle persuasion will see you through.', icon: '🦁' },
-  { title: 'The Hermit', answer: 'No', meaning: 'Withdraw and reflect. It is time for soul-searching, not immediate action.', icon: '🏮' },
-  { title: 'Wheel of Fortune', answer: 'Maybe', meaning: 'Luck is turning. Karma and fate are at play; stay adaptable to change.', icon: '🎡' },
-  { title: 'Justice', answer: 'Maybe', meaning: 'Actions have consequences. Seek absolute fairness and objective truth.', icon: '⚖️' },
-  { title: 'The Hanged Man', answer: 'No', meaning: 'Pause indefinitely. You must surrender to the present and look from a new angle.', icon: '🪢' },
-  { title: 'Death', answer: 'No', meaning: 'A necessary ending to make way for the new. Do not hold on to the past.', icon: '💀' },
-  { title: 'Temperance', answer: 'Maybe', meaning: 'Seek balance, patience, and moderation. Avoid extremes right now.', icon: '🌊' },
-  { title: 'The Devil', answer: 'No', meaning: 'Beware of unhealthy attachments, restrictions, or toxic repeating patterns.', icon: '⛓️' },
-  { title: 'The Tower', answer: 'No', meaning: 'Sudden upheaval, broken pride, and unexpected but necessary change.', icon: '⚡' },
-  { title: 'The Star', answer: 'Yes', meaning: 'Hope, inspiration, spiritual healing, and renewed faith in the future.', icon: '⭐' },
-  { title: 'The Moon', answer: 'No', meaning: 'Illusions and anxiety cloud your judgment. You do not have all the facts yet.', icon: '🐺' },
-  { title: 'The Sun', answer: 'Yes', meaning: 'Absolute joy, success, vitality, and radiant positive energy.', icon: '☀️' },
-  { title: 'Judgement', answer: 'Yes', meaning: 'Rebirth, inner calling, and absolution. It is time for an important awakening.', icon: '📯' },
-  { title: 'The World', answer: 'Yes', meaning: 'Completion, wholeness, achievement, and concluding a major life cycle.', icon: '🌍' }
+const TAROT_COLORS = [
+  '#2a0a4a', '#3f1163', '#5a189a', '#7b2cbf', '#9d4edd', '#c77dff'
+];
+
+const TAROT_DEFAULT_ENTRIES = [
+  'The Fool (Yes)', 'The Magician (Yes)', 'The High Priestess (Maybe)', 'The Empress (Yes)',
+  'The Emperor (Yes)', 'The Hierophant (Maybe)', 'The Lovers (Yes)', 'The Chariot (Yes)',
+  'Strength (Yes)', 'The Hermit (No)', 'Wheel of Fortune (Maybe)', 'Justice (Maybe)',
+  'The Hanged Man (No)', 'Death (No)', 'Temperance (Maybe)', 'The Devil (No)',
+  'The Tower (No)', 'The Star (Yes)', 'The Moon (No)', 'The Sun (Yes)',
+  'Judgement (Yes)', 'The World (Yes)'
 ];
 
 export function renderYesNoTarot(container) {
@@ -35,14 +25,26 @@ export function renderYesNoTarot(container) {
   const t = getWheelSharedText(locale, 'yes-no-tarot');
   
   container.innerHTML = `
-    <div class="wheel-page tool-page tarot-page">
+    <div class="wheel-page tarot-theme">
       <div class="wheel-header">
         <h1 class="wheel-title tarot-text">🃏 ${t.title}</h1>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
-      <!-- Card Engine Container -->
-      <div id="tarotCardContainer"></div>
+      <div class="wheel-layout">
+        <div class="wheel-main">
+          <div class="wheel-canvas-container" id="tarotCanvasContainer">
+            <canvas id="tarotCanvas"></canvas>
+          </div>
+          <button class="spin-btn tarot-spin-btn" id="tarotSpinBtn">
+            <span class="spin-text">🃏 ${t.spinNow || 'Spin Now'}</span>
+            <div class="spin-ripple"></div>
+          </button>
+          <div class="result-display" id="tarotResult"></div>
+        </div>
+
+        <div class="wheel-sidebar" id="tarotSidebar"></div>
+      </div>
 
       <div class="wheel-instructions howto-tutorial-style">
         <h2>${t.howToUse}</h2>
@@ -66,15 +68,42 @@ export function renderYesNoTarot(container) {
       </div>
 
       ${renderWheelSeoContent(t.title, 'yes-no-tarot', locale)}
+      ${renderWheelFaq(locale)}
       ${renderWheelSilo(locale, 'yes-no-tarot')}
     </div>
   `;
 
-  // Initialize Card Engine
-  const engine = new CardEngine('tarotCardContainer', {
-    entries: TAROT_ENTRIES,
-    theme: 'tarot-theme'
+  const getColors = (len) => Array.from({ length: len }, (_, i) => TAROT_COLORS[i % TAROT_COLORS.length]);
+  
+  const engine = new WheelEngine('tarotCanvas', {
+    entries: TAROT_DEFAULT_ENTRIES,
+    colors: getColors(TAROT_DEFAULT_ENTRIES.length),
+    onTick: () => audioManager.playTick(),
+    onResult: (winner) => {
+      audioManager.playFanfare();
+      const resultEl = document.getElementById('tarotResult');
+      resultEl.innerHTML = `<div class="result-winner tarot-result"><span class="result-emoji">🃏</span><span class="result-text">${winner.entry}</span></div>`;
+      resultEl.classList.add('show');
+      customPanel.addResult(winner.entry);
+      document.getElementById('tarotSpinBtn').disabled = false;
+    },
+    onSpinStart: () => {
+      audioManager.init();
+      document.getElementById('tarotResult').classList.remove('show');
+      document.getElementById('tarotSpinBtn').disabled = true;
+    }
   });
+
+  const customPanel = new CustomizationPanel(engine, {
+    wheelName: 'yes-no-tarot',
+    onEntriesChange: (entries) => {
+      engine.setEntries(entries, getColors(entries.length));
+    }
+  });
+  customPanel.render('tarotSidebar');
+  customPanel.setEntries(TAROT_DEFAULT_ENTRIES);
+
+  document.getElementById('tarotSpinBtn').addEventListener('click', () => engine.spin());
 
   return engine;
 }

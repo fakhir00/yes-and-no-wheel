@@ -1,19 +1,19 @@
-// YesNoOracleWheel.js — Yes No Oracle tool updated to use CardEngine
-import { CardEngine } from '../engine/CardEngine.js';
+// YesNoOracleWheel.js — Yes No Oracle tool updated to use WheelEngine
+import { WheelEngine } from '../engine/WheelEngine.js';
+import { CustomizationPanel } from '../engine/CustomizationPanel.js';
+import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
 
-const ORACLE_ENTRIES = [
-  { title: 'The Sun', answer: 'Yes', meaning: 'A bright, positive outcome is highly anticipated.', icon: '☀️' },
-  { title: 'The Moon', answer: 'No', meaning: 'Not right now; hidden factors exist that you do not yet see.', icon: '🌙' },
-  { title: 'The Stars', answer: 'Maybe', meaning: 'The future is uncertain, but follow your hope and true north.', icon: '✨' },
-  { title: 'The Anchor', answer: 'No', meaning: 'Stay grounded where you are. Do not make sudden moves.', icon: '⚓' },
-  { title: 'The Key', answer: 'Yes', meaning: 'An opportunity is unlocking for you. Proceed with confidence.', icon: '🗝️' },
-  { title: 'The Crossroad', answer: 'Maybe', meaning: 'The choice is truly yours to make. There is no wrong path.', icon: '🚏' },
-  { title: 'The Mirror', answer: 'No', meaning: 'Reflect on your true motives before acting on this query.', icon: '🪞' },
-  { title: 'The Dove', answer: 'Yes', meaning: 'Proceed with peace, gentleness, and an open heart.', icon: '🕊️' }
+const ORACLE_COLORS = [
+  '#0d1b2a', '#1b263b', '#415a77', '#778da9', '#e0e1dd'
+];
+
+const ORACLE_DEFAULT_ENTRIES = [
+  'The Sun (Yes)', 'The Moon (No)', 'The Stars (Maybe)', 'The Anchor (No)',
+  'The Key (Yes)', 'The Crossroad (Maybe)', 'The Mirror (No)', 'The Dove (Yes)'
 ];
 
 export function renderYesNoOracleWheel(container) {
@@ -21,14 +21,26 @@ export function renderYesNoOracleWheel(container) {
   const t = getWheelSharedText(locale, 'yes-no-oracle');
   
   container.innerHTML = `
-    <div class="wheel-page tool-page oracle-page">
+    <div class="wheel-page oracle-theme">
       <div class="wheel-header">
         <h1 class="wheel-title oracle-text">🔮 ${t.title}</h1>
         <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
-      <!-- Card Engine Container -->
-      <div id="oracleCardContainer"></div>
+      <div class="wheel-layout">
+        <div class="wheel-main">
+          <div class="wheel-canvas-container" id="oracleCanvasContainer">
+            <canvas id="oracleCanvas"></canvas>
+          </div>
+          <button class="spin-btn oracle-spin-btn" id="oracleSpinBtn">
+            <span class="spin-text">🔮 ${t.spinNow || 'Spin Now'}</span>
+            <div class="spin-ripple"></div>
+          </button>
+          <div class="result-display" id="oracleResult"></div>
+        </div>
+
+        <div class="wheel-sidebar" id="oracleSidebar"></div>
+      </div>
 
       <div class="wheel-instructions howto-tutorial-style">
         <h2>${t.howToUse}</h2>
@@ -57,11 +69,37 @@ export function renderYesNoOracleWheel(container) {
     </div>
   `;
 
-  // Initialize Card Engine
-  const engine = new CardEngine('oracleCardContainer', {
-    entries: ORACLE_ENTRIES,
-    theme: 'oracle-theme'
+  const getColors = (len) => Array.from({ length: len }, (_, i) => ORACLE_COLORS[i % ORACLE_COLORS.length]);
+  
+  const engine = new WheelEngine('oracleCanvas', {
+    entries: ORACLE_DEFAULT_ENTRIES,
+    colors: getColors(ORACLE_DEFAULT_ENTRIES.length),
+    onTick: () => audioManager.playTick(),
+    onResult: (winner) => {
+      audioManager.playFanfare();
+      const resultEl = document.getElementById('oracleResult');
+      resultEl.innerHTML = `<div class="result-winner oracle-result"><span class="result-emoji">🔮</span><span class="result-text">${winner.entry}</span></div>`;
+      resultEl.classList.add('show');
+      customPanel.addResult(winner.entry);
+      document.getElementById('oracleSpinBtn').disabled = false;
+    },
+    onSpinStart: () => {
+      audioManager.init();
+      document.getElementById('oracleResult').classList.remove('show');
+      document.getElementById('oracleSpinBtn').disabled = true;
+    }
   });
+
+  const customPanel = new CustomizationPanel(engine, {
+    wheelName: 'yes-no-oracle',
+    onEntriesChange: (entries) => {
+      engine.setEntries(entries, getColors(entries.length));
+    }
+  });
+  customPanel.render('oracleSidebar');
+  customPanel.setEntries(ORACLE_DEFAULT_ENTRIES);
+
+  document.getElementById('oracleSpinBtn').addEventListener('click', () => engine.spin());
 
   return engine;
 }
