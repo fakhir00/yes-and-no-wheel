@@ -20,42 +20,42 @@ export function renderYesNoOracleWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'yes-no-oracle');
   
-  container.innerHTML = \`
+  container.innerHTML = `
     <div class="wheel-page tool-page oracle-page">
       <div class="wheel-header">
-        <h1 class="wheel-title oracle-text">🔮 \${t.title}</h1>
-        <p class="wheel-subtitle">\${t.subtitle}</p>
+        <h1 class="wheel-title oracle-text">🔮 ${t.title}</h1>
+        <p class="wheel-subtitle">${t.subtitle}</p>
       </div>
 
       <!-- Card Engine Container -->
       <div id="oracleCardContainer"></div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>\${t.howToUse}</h2>
-        <p class="howto-intro">\${t.howToIntro}</p>
+        <h2>${t.howToUse}</h2>
+        <p class="howto-intro">${t.howToIntro}</p>
         <div class="howto-steps-list">
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> \${t.step1Title}</h2>
-            <p class="howto-step-desc">\${t.step1Desc}</p>
+            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
+            <p class="howto-step-desc">${t.step1Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> \${t.step2Title}</h2>
-            <p class="howto-step-desc">\${t.step2Desc}</p>
+            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
+            <p class="howto-step-desc">${t.step2Desc}</p>
           </div>
           <hr class="howto-divider">
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> \${t.step3Title}</h2>
-            <p class="howto-step-desc">\${t.step3Desc}</p>
+            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
+            <p class="howto-step-desc">${t.step3Desc}</p>
           </div>
         </div>
       </div>
 
-      \${renderWheelSeoContent(t.title, 'yes-no-oracle', locale)}
-      \${renderWheelFaq(locale)}
-      \${renderWheelSilo(locale, 'yes-no-oracle')}
+      ${renderWheelSeoContent(t.title, 'yes-no-oracle', locale)}
+      ${renderWheelFaq(locale)}
+      ${renderWheelSilo(locale, 'yes-no-oracle')}
     </div>
-  \`;
+  `;
 
   // Initialize Card Engine
   const engine = new CardEngine('oracleCardContainer', {
