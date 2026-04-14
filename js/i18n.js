@@ -27,6 +27,7 @@ export const UI_TRANSLATIONS = {
     about: 'About',
     contact: 'Contact',
     wheelsHeading: 'Wheels',
+    tarotAndOracleHeading: 'Tarot & Oracle',
     moreWheelsHeading: 'More Wheels',
     pagesHeading: 'Pages',
     aboutUs: 'About Us',
@@ -263,6 +264,7 @@ const ROUTE_NAMES = {
     'hair-color': 'Hair Color Wheel',
     'random-food': 'Random Food Wheel',
     'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot',
     blog: 'Blog'
   },
   'zh-CN': {
@@ -301,7 +303,8 @@ const ROUTE_NAMES = {
     zodiac: 'ज़ोडिएक व्हील',
     'hair-color': 'हेयर कलर व्हील',
     'random-food': 'रैंडम फूड व्हील',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   es: {
     home: 'Ruleta de Si y No',
@@ -321,7 +324,8 @@ const ROUTE_NAMES = {
     zodiac: 'Ruleta del Zodiaco',
     'hair-color': 'Ruleta de Color de Cabello',
     'random-food': 'Ruleta de Comida Aleatoria',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   ar: {
     home: 'عجلة نعم ولا',
@@ -341,7 +345,8 @@ const ROUTE_NAMES = {
     zodiac: 'عجلة الابراج',
     'hair-color': 'عجلة لون الشعر',
     'random-food': 'عجلة الطعام العشوائي',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   fr: {
     home: 'Roue Oui Non',
@@ -361,7 +366,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roue du Zodiaque',
     'hair-color': 'Roue de Couleur de Cheveux',
     'random-food': 'Roue de Nourriture Aléatoire',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   bn: {
     home: 'হ্যাঁ না চাকা',
@@ -381,7 +387,8 @@ const ROUTE_NAMES = {
     zodiac: 'রাশিচক্র চাকা',
     'hair-color': 'চুলের রঙ চাকা',
     'random-food': 'র্যান্ডম ফুড চাকা',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   pt: {
     home: 'Roda Sim ou Nao',
@@ -401,7 +408,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roda do Zodiaco',
     'hair-color': 'Roda de Cor de Cabelo',
     'random-food': 'Roleta de Comida Aleatória',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   ru: {
     home: 'Колесо Да Нет',
@@ -421,7 +429,8 @@ const ROUTE_NAMES = {
     zodiac: 'Колесо Зодиака',
     'hair-color': 'Колесо Цвета Волос',
     'random-food': 'Колесо Случайной Еды',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   ur: {
     home: 'ہاں یا نہیں ویل',
@@ -441,7 +450,8 @@ const ROUTE_NAMES = {
     zodiac: 'زائچہ ویل',
     'hair-color': 'بالوں کے رنگ کا ویل',
     'random-food': 'رینڈم فوڈ ویل',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   id: {
     home: 'Roda Ya Tidak',
@@ -461,7 +471,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roda Zodiak',
     'hair-color': 'Roda Warna Rambut',
     'random-food': 'Roda Makanan Acak',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   de: {
     home: 'Ja Nein Rad',
@@ -481,7 +492,8 @@ const ROUTE_NAMES = {
     zodiac: 'Zodiakrad',
     'hair-color': 'Haarfarbenrad',
     'random-food': 'Zufälliges Essensrad',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   ja: {
     home: 'はい いいえ ルーレット',
@@ -501,7 +513,8 @@ const ROUTE_NAMES = {
     zodiac: '星座ルーレット',
     'hair-color': 'ヘアカラールーレット',
     'random-food': 'ランダムフードルーレット',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   mr: {
     home: 'होय नाही व्हील',
@@ -521,7 +534,8 @@ const ROUTE_NAMES = {
     zodiac: 'राशी व्हील',
     'hair-color': 'केसांच्या रंगाचे व्हील',
     'random-food': 'रँडम फूड व्हील',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   },
   te: {
     home: 'అవును కాదు వీల్',
@@ -541,7 +555,8 @@ const ROUTE_NAMES = {
     zodiac: 'రాశిచక్ర వీల్',
     'hair-color': 'జుట్టు రంగు వీల్',
     'random-food': 'రాండమ్ ఫుడ్ వీల్',
-    'yes-no-oracle': 'Yes No Oracle'
+    'yes-no-oracle': 'Yes No Oracle',
+    'yes-no-tarot': 'Yes No Tarot'
   }
 };
 
@@ -2350,6 +2365,18 @@ export function getWheelUiText(locale) {
 }
 
 const WHEEL_SEED_ENTRIES = {
+  'yes-no-tarot': {
+    title: 'Yes No Tarot',
+    subtitle: 'Free Interactive Yes or No Tarot Reading',
+    howToUse: 'How to Read the Yes No Tarot',
+    howToIntro: 'Focus your mind, ask your question, and let the cards reveal the answer.',
+    step1Title: 'Set Your Intention',
+    step1Desc: 'Think of a specific yes/no question you need answered.',
+    step2Title: 'Draw a Card',
+    step2Desc: 'Click the central deck or the button to draw your fateful card.',
+    step3Title: 'Interpret the Meaning',
+    step3Desc: 'The tarot provides not just a Yes or No, but deeper esoteric meaning.'
+  },
   'yes-no-oracle': {
     title: 'Yes No Oracle',
     subtitle: 'Accurate Yes or No Oracle | Free Online Answers',
@@ -2665,7 +2692,7 @@ export function getHomeText(locale) {
 
   const faq = getStaticCopy(safeLocale);
   const wheelDescriptions = {};
-  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle']
+  ['rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle', 'yes-no-tarot']
     .forEach((route) => {
       wheelDescriptions[route] = getWheelSharedText(safeLocale, route).subtitle;
     });

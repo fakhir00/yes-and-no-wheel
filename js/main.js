@@ -29,21 +29,21 @@ if (navToggle && navMenu) {
   });
 }
 
-// Wheels dropdown
-const dropdownBtn = document.getElementById('wheelsDropdownBtn');
-const dropdown = document.getElementById('wheelsDropdown');
-if (dropdownBtn && dropdown) {
-  dropdownBtn.addEventListener('click', (e) => {
+// Dropdowns (Wheels, Tarot, etc)
+document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+  const btn = dropdown.querySelector('.dropdown-trigger');
+  if (!btn) return;
+  
+  btn.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
+    
+    // Close other open dropdowns first
+    document.querySelectorAll('.nav-dropdown.open').forEach(openDrop => {
+      if (openDrop !== dropdown) openDrop.classList.remove('open');
+    });
+    
     dropdown.classList.toggle('open');
-  });
-
-  // Close dropdown when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove('open');
-    }
   });
 
   // Close dropdown when a link is clicked
@@ -52,7 +52,16 @@ if (dropdownBtn && dropdown) {
       dropdown.classList.remove('open');
     });
   });
-}
+});
+
+// Close ALL dropdowns when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(dropdown => {
+      dropdown.classList.remove('open');
+    });
+  }
+});
 
 // Init router
 initRouter();
