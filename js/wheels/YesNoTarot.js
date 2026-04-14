@@ -1,23 +1,33 @@
-// YesNoTarot.js — Yes No Tarot Wheel
-import { WheelEngine } from '../engine/WheelEngine.js';
-import { CustomizationPanel } from '../engine/CustomizationPanel.js';
+// YesNoTarot.js — Yes No Tarot Grid Engine
 import { audioManager } from '../engine/AudioManager.js';
 import { getWheelSharedText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
 
-const TAROT_COLORS = [
-  '#2a0a4a', '#3f1163', '#5a189a', '#7b2cbf', '#9d4edd', '#c77dff'
-];
-
 const TAROT_DEFAULT_ENTRIES = [
-  'The Fool (Yes)', 'The Magician (Yes)', 'The High Priestess (Maybe)', 'The Empress (Yes)',
-  'The Emperor (Yes)', 'The Hierophant (Maybe)', 'The Lovers (Yes)', 'The Chariot (Yes)',
-  'Strength (Yes)', 'The Hermit (No)', 'Wheel of Fortune (Maybe)', 'Justice (Maybe)',
-  'The Hanged Man (No)', 'Death (No)', 'Temperance (Maybe)', 'The Devil (No)',
-  'The Tower (No)', 'The Star (Yes)', 'The Moon (No)', 'The Sun (Yes)',
-  'Judgement (Yes)', 'The World (Yes)'
+  { name: 'The Fool', answer: 'Yes' },
+  { name: 'The Magician', answer: 'Yes' },
+  { name: 'The High Priestess', answer: 'Maybe' },
+  { name: 'The Empress', answer: 'Yes' },
+  { name: 'The Emperor', answer: 'Yes' },
+  { name: 'The Hierophant', answer: 'Maybe' },
+  { name: 'The Lovers', answer: 'Yes' },
+  { name: 'The Chariot', answer: 'Yes' },
+  { name: 'Strength', answer: 'Yes' },
+  { name: 'The Hermit', answer: 'No' },
+  { name: 'Wheel of Fortune', answer: 'Maybe' },
+  { name: 'Justice', answer: 'Maybe' },
+  { name: 'The Hanged Man', answer: 'No' },
+  { name: 'Death', answer: 'No' },
+  { name: 'Temperance', answer: 'Maybe' },
+  { name: 'The Devil', answer: 'No' },
+  { name: 'The Tower', answer: 'No' },
+  { name: 'The Star', answer: 'Yes' },
+  { name: 'The Moon', answer: 'No' },
+  { name: 'The Sun', answer: 'Yes' },
+  { name: 'Judgement', answer: 'Yes' },
+  { name: 'The World', answer: 'Yes' }
 ];
 
 export function renderYesNoTarot(container) {
@@ -25,46 +35,32 @@ export function renderYesNoTarot(container) {
   const t = getWheelSharedText(locale, 'yes-no-tarot');
   
   container.innerHTML = `
-    <div class="wheel-page tarot-theme">
+    <div class="wheel-page tool-page tarot-mockup-page">
       <div class="wheel-header">
-        <h1 class="wheel-title tarot-text">🃏 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title tarot-text">Yes or No Tarot Reading</h1>
+        <p class="wheel-subtitle dark-subtitle">Draw mystical tarot cards for instant yes or no guidance.<br>Let ancient wisdom illuminate your path forward.</p>
       </div>
 
-      <div class="wheel-layout">
-        <div class="wheel-main">
-          <div class="wheel-canvas-container" id="tarotCanvasContainer">
-            <canvas id="tarotCanvas"></canvas>
-          </div>
-          <button class="spin-btn tarot-spin-btn" id="tarotSpinBtn">
-            <span class="spin-text">🃏 ${t.spinNow || 'Spin Now'}</span>
-            <div class="spin-ripple"></div>
-          </button>
-          <div class="result-display" id="tarotResult"></div>
-        </div>
-
-        <div class="wheel-sidebar" id="tarotSidebar"></div>
+      <div class="tarot-instruction-box">
+        <strong>Yes or No Tarot Reading</strong>
+        <p>Focus on your question and select a card, or let the universe choose for you.</p>
       </div>
 
-      <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
-        <div class="howto-steps-list">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
-        </div>
+      <h2 class="tarot-grid-title">Choose Your Card</h2>
+
+      <div class="tarot-card-grid">
+        <div class="tarot-card-item" data-index="0">Card 1</div>
+        <div class="tarot-card-item" data-index="1">Card 2</div>
+        <div class="tarot-card-item" data-index="2">Card 3</div>
+        <div class="tarot-card-item" data-index="3">Card 4</div>
+        <div class="tarot-card-item" data-index="4">Card 5</div>
+        <div class="tarot-card-item" data-index="5">Card 6</div>
+      </div>
+
+      <div class="tarot-result-display" style="display: none;" id="tarotOutcome"></div>
+
+      <div class="tarot-action-area">
+        <button class="tarot-universe-btn" id="tarotUniverseBtn">Let the Universe Choose</button>
       </div>
 
       ${renderWheelSeoContent(t.title, 'yes-no-tarot', locale)}
@@ -73,37 +69,58 @@ export function renderYesNoTarot(container) {
     </div>
   `;
 
-  const getColors = (len) => Array.from({ length: len }, (_, i) => TAROT_COLORS[i % TAROT_COLORS.length]);
+  // Attach functionality
+  const cards = container.querySelectorAll('.tarot-card-item');
+  const universeBtn = container.getElementById('tarotUniverseBtn');
+  const resultDisplay = container.querySelector('#tarotOutcome');
+  const grid = container.querySelector('.tarot-card-grid');
   
-  const engine = new WheelEngine('tarotCanvas', {
-    entries: TAROT_DEFAULT_ENTRIES,
-    colors: getColors(TAROT_DEFAULT_ENTRIES.length),
-    onTick: () => audioManager.playTick(),
-    onResult: (winner) => {
-      audioManager.playFanfare();
-      const resultEl = document.getElementById('tarotResult');
-      resultEl.innerHTML = `<div class="result-winner tarot-result"><span class="result-emoji">🃏</span><span class="result-text">${winner.entry}</span></div>`;
-      resultEl.classList.add('show');
-      customPanel.addResult(winner.entry);
-      document.getElementById('tarotSpinBtn').disabled = false;
-    },
-    onSpinStart: () => {
-      audioManager.init();
-      document.getElementById('tarotResult').classList.remove('show');
-      document.getElementById('tarotSpinBtn').disabled = true;
+  let isDrawn = false;
+
+  const revealCard = (chosenElement) => {
+    if (isDrawn) return;
+    isDrawn = true;
+    
+    // Pick random
+    const randIndex = Math.floor(Math.random() * TAROT_DEFAULT_ENTRIES.length);
+    const result = TAROT_DEFAULT_ENTRIES[randIndex];
+    
+    audioManager.init();
+    audioManager.playFanfare();
+
+    cards.forEach(card => card.classList.add('faded'));
+    if (chosenElement) {
+      chosenElement.classList.remove('faded');
+      chosenElement.classList.add('selected-card');
     }
-  });
 
-  const customPanel = new CustomizationPanel(engine, {
-    wheelName: 'yes-no-tarot',
-    onEntriesChange: (entries) => {
-      engine.setEntries(entries, getColors(entries.length));
-    }
-  });
-  customPanel.render('tarotSidebar');
-  customPanel.setEntries(TAROT_DEFAULT_ENTRIES);
+    grid.style.display = 'none';
 
-  document.getElementById('tarotSpinBtn').addEventListener('click', () => engine.spin());
+    resultDisplay.innerHTML = `
+      <div class="tarot-drawn-card">
+        <h3>${result.name}</h3>
+        <div class="tarot-drawn-answer ${result.answer.toLowerCase()}">${result.answer}</div>
+      </div>
+      <button class="tarot-universe-btn" id="tarotResetBtn" style="margin-top: 1rem;">Draw Again</button>
+    `;
+    resultDisplay.style.display = 'flex';
+    universeBtn.style.display = 'none';
 
-  return engine;
+    container.getElementById('tarotResetBtn').addEventListener('click', () => {
+      isDrawn = false;
+      cards.forEach(card => {
+        card.classList.remove('faded');
+        card.classList.remove('selected-card');
+      });
+      resultDisplay.style.display = 'none';
+      grid.style.display = 'grid';
+      universeBtn.style.display = 'inline-block';
+    });
+  };
+
+  cards.forEach(card => card.addEventListener('click', () => revealCard(card)));
+  universeBtn.addEventListener('click', () => revealCard(null));
+
+  // Note: We return a simulated engine object to prevent router errors
+  return { destroy: () => {} };
 }
