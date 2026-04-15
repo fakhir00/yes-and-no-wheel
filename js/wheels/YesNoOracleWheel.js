@@ -120,9 +120,7 @@ export function renderYesNoOracleWheel(container) {
     const userQuestion = textarea.value.trim() || "Will my path be clear?";
     
     // Transition to Step 2 (Thinking)
-    textarea.disabled = true;
-    submitBtn.textContent = 'Consulting the Oracle...';
-    submitBtn.classList.add('disabled-state');
+    inputContainer.style.display = 'none';
     
     contemplateBox.style.display = 'flex';
 
