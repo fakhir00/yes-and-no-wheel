@@ -32,7 +32,7 @@ const TAROT_DEFAULT_ENTRIES = [
 
 export function renderYesNoTarot(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
-  const t = getWheelSharedText(locale, 'yes-no-tarot');
+  const t = getWheelSharedText(locale, 'tarot');
   
   container.innerHTML = `
     <div class="wheel-page tool-page tarot-mockup-page">
@@ -63,15 +63,15 @@ export function renderYesNoTarot(container) {
         <button class="tarot-universe-btn" id="tarotUniverseBtn">Let the Universe Choose</button>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'yes-no-tarot', locale)}
+      ${renderWheelSeoContent(t.title, 'tarot', locale)}
       ${renderWheelFaq(locale)}
-      ${renderWheelSilo(locale, 'yes-no-tarot')}
+      ${renderWheelSilo(locale, 'tarot')}
     </div>
   `;
 
   // Attach functionality
   const cards = container.querySelectorAll('.tarot-card-item');
-  const universeBtn = container.getElementById('tarotUniverseBtn');
+  const universeBtn = container.querySelector('#tarotUniverseBtn');
   const resultDisplay = container.querySelector('#tarotOutcome');
   const grid = container.querySelector('.tarot-card-grid');
   
@@ -106,7 +106,7 @@ export function renderYesNoTarot(container) {
     resultDisplay.style.display = 'flex';
     universeBtn.style.display = 'none';
 
-    container.getElementById('tarotResetBtn').addEventListener('click', () => {
+    container.querySelector('#tarotResetBtn').addEventListener('click', () => {
       isDrawn = false;
       cards.forEach(card => {
         card.classList.remove('faded');

@@ -30,8 +30,8 @@ const ROUTE_TITLES_EN = {
   zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
   'random-food': 'Random Food Wheel | Food Decision Spinner',
-  'yes-no-oracle': 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
-  'yes-no-tarot': 'Yes No Tarot | Free Yes or No Tarot Reading',
+  'oracle': 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
+  'tarot': 'Yes No Tarot | Free Yes or No Tarot Reading',
   'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
   'blog/cant-decide-what-to-eat': "Can't Decide What to Eat for Dinner? | YesAndNoWheel Blog",
   'blog/should-i-let-fate-decide': 'Should I Let Fate Decide? 5 Life Questions | YesAndNoWheel Blog',
@@ -59,8 +59,8 @@ const ROUTE_DESCRIPTIONS_EN = {
   zodiac: 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
   'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
-  'yes-no-oracle': 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.',
-  'yes-no-tarot': 'Draw a free Yes No Tarot card to instantly find answers. Our interactive card drawer reveals your fate with precise meanings and esoteric guidance.',
+  'oracle': 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.',
+  'tarot': 'Draw a free Yes No Tarot card to instantly find answers. Our interactive card drawer reveals your fate with precise meanings and esoteric guidance.',
   'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
   'blog/cant-decide-what-to-eat': "End the dinner debate! Spin the Random Food Wheel and let fate pick your meal. Decision-making tips and fun ideas.",
   'blog/should-i-let-fate-decide': 'Fate vs free will — 5 life dilemmas to spin the Wheel of Fate. Real scenarios, real decisions, real fun.',
@@ -70,8 +70,8 @@ const ROUTE_DESCRIPTIONS_EN = {
   'blog/hair-color-wheel-bold-choice': 'Should you dye your hair? Spin the Hair Color Wheel for classic and fantasy colors. Take a screenshot for your stylist.'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle', 'yes-no-tarot', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'yes-no-oracle', 'yes-no-tarot']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot']);
 
 const templatePath = resolve(projectRoot, 'index.html');
 const template = readFileSync(templatePath, 'utf8');

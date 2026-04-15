@@ -18,7 +18,7 @@ const ORACLE_DEFAULT_ENTRIES = [
 
 export function renderYesNoOracleWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
-  const t = getWheelSharedText(locale, 'yes-no-oracle');
+  const t = getWheelSharedText(locale, 'oracle');
   
   container.innerHTML = `
     <div class="wheel-page tool-page oracle-mockup-page">
@@ -40,9 +40,9 @@ export function renderYesNoOracleWheel(container) {
 
       <div class="oracle-result-display" style="display: none;" id="oracleOutcome"></div>
 
-      ${renderWheelSeoContent(t.title, 'yes-no-oracle', locale)}
+      ${renderWheelSeoContent(t.title, 'oracle', locale)}
       ${renderWheelFaq(locale)}
-      ${renderWheelSilo(locale, 'yes-no-oracle')}
+      ${renderWheelSilo(locale, 'oracle')}
     </div>
   `;
 
