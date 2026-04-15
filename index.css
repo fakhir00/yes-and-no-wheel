@@ -2727,3 +2727,141 @@ a:hover { color: var(--accent-tertiary); }
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(157, 145, 203, 0.4);
 }
+
+/* Oracle 3-Step Styles */
+
+.oracle-submit-btn.disabled-state {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.oracle-contemplate-box {
+  background: var(--surface-1);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 3rem auto;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.oracle-contemplate-box .oracle-crystal {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px rgba(139, 127, 206, 0.4));
+  animation: floatCrystal 3s ease-in-out infinite;
+}
+
+@keyframes floatCrystal {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.oracle-contemplate-box h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.oracle-contemplate-box p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.oracle-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.oracle-dots span {
+  width: 12px;
+  height: 12px;
+  background-color: #8b7fce;
+  border-radius: 50%;
+  animation: pulseDot 1.4s infinite ease-in-out both;
+}
+.oracle-dots span:nth-child(1) { animation-delay: -0.32s; }
+.oracle-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes pulseDot {
+  0%, 80%, 100% { transform: scale(0); opacity: 0.3; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+/* Step 3 (Result) Specifics */
+.oracle-emoji-hero {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  animation: dropInSpin 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes dropInSpin {
+  0% { transform: translateY(-50px) scale(0.5) rotate(-20deg); opacity: 0; }
+  100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+}
+
+.oracle-h3-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.oracle-italic-message {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0 auto 2rem auto;
+  max-width: 90%;
+}
+
+.oracle-energy-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.oracle-energy-tag .energy-pill {
+  border: 1px solid var(--border-light);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--surface-2);
+}
+
+.oracle-question-echo {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.oracle-outline-btn {
+  width: 100%;
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.oracle-outline-btn:hover {
+  background: var(--surface-2);
+}
