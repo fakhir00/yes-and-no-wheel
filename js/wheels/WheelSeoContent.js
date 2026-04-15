@@ -9,7 +9,10 @@ const SEO_LINK_MAP = {
   'dti-theme': 'hair-color',
   country: 'zodiac',
   zodiac: 'rainbow',
-  'hair-color': 'dti-theme'
+  'hair-color': 'dti-theme',
+  'random-food': 'country',
+  'tarot': 'oracle',
+  'oracle': 'tarot'
 };
 
 const SEO_COPY = {
