@@ -71,10 +71,12 @@ export function renderYesNoOracleWheel(container) {
       </div>
       <button class="tarot-universe-btn" id="oracleResetBtn" style="margin-top: 1rem;">Ask Another Question</button>
     `;
+    resultDisplay.classList.add('oracle-result-active', 'tarot-result-expanded');
     resultDisplay.style.display = 'flex';
 
     container.querySelector('#oracleResetBtn').addEventListener('click', () => {
       isDrawn = false;
+      resultDisplay.classList.remove('oracle-result-active');
       resultDisplay.style.display = 'none';
       container.querySelector('#oracleQuestion').value = '';
       inputContainer.style.display = 'flex';

@@ -271,10 +271,12 @@ export function renderYesNoTarot(container) {
       <button class="tarot-full-btn" id="tarotResetBtn">Draw Another Card</button>
     `;
     
+    resultDisplay.classList.add('reveal-active');
     resultDisplay.style.display = 'flex';
 
     container.querySelector('#tarotResetBtn').addEventListener('click', () => {
       isDrawn = false;
+      resultDisplay.classList.remove('reveal-active');
       resultDisplay.style.display = 'none';
       grid.style.display = 'grid';
       actionArea.style.display = 'block';

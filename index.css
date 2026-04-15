@@ -2568,3 +2568,162 @@ a:hover { color: var(--accent-tertiary); }
   background: #9d91cb;
   color: #fff;
 }
+
+/* ==========================================================================
+   TAROT & ORACLE EXPANDED RESULTS & DRAMATIC REVEALS
+   ========================================================================== */
+
+/* Tarot Expanded Result Styles */
+.tarot-result-expanded {
+  background: var(--surface-1);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 40px rgba(139, 127, 206, 0.1);
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+
+@keyframes dramaticFlipReveal {
+  0% { opacity: 0; transform: perspective(800px) rotateY(90deg) scale(0.8); }
+  50% { opacity: 1; transform: perspective(800px) rotateY(-10deg) scale(1.05); }
+  100% { opacity: 1; transform: perspective(800px) rotateY(0deg) scale(1); }
+}
+
+@keyframes mysteriousFadeUp {
+  0% { opacity: 0; transform: translateY(30px); filter: blur(5px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.tarot-result-expanded.reveal-active {
+  animation: mysteriousFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.oracle-result-active {
+  animation: mysteriousFadeUp 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.tarot-drawn-card-graphic {
+  background: #8b7fce;
+  width: 160px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(139, 127, 206, 0.4);
+}
+
+.tarot-result-expanded.reveal-active .tarot-drawn-card-graphic {
+  animation: dramaticFlipReveal 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.tarot-drawn-card-graphic .card-title-drawn {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.tarot-drawn-card-graphic .card-element-drawn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+.tarot-drawn-card-graphic .element-circle {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.tarot-drawn-pill {
+  background: #8b7fce;
+  color: white;
+  padding: 0.5rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.tarot-drawn-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 2rem 0;
+}
+
+.tarot-drawn-section {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.tarot-drawn-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 auto 2rem auto;
+  max-width: 90%;
+}
+
+.tarot-drawn-meta {
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+.tarot-drawn-meta strong {
+  color: var(--text-main);
+  margin-right: 0.5rem;
+}
+
+.tarot-full-btn {
+  width: 100%;
+  background: #8b7fce;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tarot-full-btn:hover {
+  background: #7a6ebd;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 127, 206, 0.4);
+}
+
+/* Oracle Fixes */
+.oracle-mockup-page .oracle-textarea {
+  min-height: 120px;
+}
+.oracle-mockup-page .oracle-submit-btn {
+  background: #b2a8d5;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.oracle-mockup-page .oracle-submit-btn:hover {
+  background: #9d91cb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(157, 145, 203, 0.4);
+}
