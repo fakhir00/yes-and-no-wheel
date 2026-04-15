@@ -2542,7 +2542,7 @@ a:hover { color: var(--accent-tertiary); }
 
 .oracle-textarea {
   width: 100%;
-  border: 1px solid var(--border-light);
+  border: 2px solid #555;
   border-radius: 6px;
   padding: 1rem;
   font-size: 1rem;
@@ -2551,6 +2551,7 @@ a:hover { color: var(--accent-tertiary); }
   resize: vertical;
   min-height: 100px;
   outline: none;
+  font-family: inherit;
 }
 .oracle-textarea:focus {
   border-color: #8b7fce;
