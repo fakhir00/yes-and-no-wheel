@@ -4,7 +4,7 @@ import { audioManager } from './AudioManager.js';
 export class CardEngine {
   constructor(containerId, options = {}) {
     this.container = document.getElementById(containerId);
-    if (!this.container) throw new Error(\`Container \${containerId} not found\`);
+    if (!this.container) throw new Error(`Container ${containerId} not found`);
 
     this.options = {
       entries: options.entries || [], // Array of objects: { title, answer, meaning, image, icon }
@@ -20,12 +20,12 @@ export class CardEngine {
   }
 
   initHTML() {
-    this.container.innerHTML = \`
-      <div class="card-engine-wrap \${this.options.theme}">
+    this.container.innerHTML = `
+      <div class="card-engine-wrap ${this.options.theme}">
         <div class="card-deck-area">
           <div class="card-scene">
             <div class="card-object" id="activeCard">
-              <div class="card-face card-back" style="background-image: url('\${this.options.defaultBackImage}')"></div>
+              <div class="card-face card-back" style="background-image: url('${this.options.defaultBackImage}')"></div>
               <div class="card-face card-front">
                 <div class="card-front-inner">
                   <div class="card-icon" id="cardIcon">✨</div>
@@ -45,7 +45,7 @@ export class CardEngine {
           <p id="resultMeaning"></p>
         </div>
       </div>
-    \`;
+    `;
 
     this.cardEl = this.container.querySelector('#activeCard');
     this.drawBtn = this.container.querySelector('#drawBtn');
@@ -103,7 +103,7 @@ export class CardEngine {
       
       // Show meaning
       setTimeout(() => {
-        this.container.querySelector('#resultTitle').innerHTML = \`You drew: <strong>\${card.title}</strong>\`;
+        this.container.querySelector('#resultTitle').innerHTML = `You drew: <strong>${card.title}</strong>`;
         this.container.querySelector('#resultMeaning').textContent = card.meaning || '';
         this.resultPanel.classList.add('show');
         

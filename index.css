@@ -2155,11 +2155,13 @@ a:hover { color: var(--accent-tertiary); }
 /* Main Pages */
 .tarot-page .wheel-header .wheel-title {
   background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .oracle-page .wheel-header .wheel-title {
   background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

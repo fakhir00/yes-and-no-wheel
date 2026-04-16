@@ -1,18 +1,19 @@
-// BlogListPage.js — Premium blog listing page
+// BlogListPage.js — Premium blog listing page with i18n
 import { BLOG_POSTS } from '../data/blogPosts.js';
-import { splitLocaleFromPath, buildLocalizedPath } from '../i18n.js?v=20260408-brand1';
+import { splitLocaleFromPath, buildLocalizedPath, getBlogText } from '../i18n.js?v=20260408-brand1';
 
 export function renderBlogListPage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
+  const b = getBlogText(locale);
 
   container.innerHTML = `
     <div class="bl-page">
       <section class="bl-hero" aria-labelledby="blog-title">
         <div class="bl-hero-glow"></div>
         <div class="bl-hero-inner">
-          <span class="bl-badge">🎡 Guides & Articles on Decision-Making</span>
-          <h1 id="blog-title">YesAndNoWheel Blog</h1>
-          <p class="bl-hero-sub">Real-life decision hacks, party game ideas, creative prompts, and travel inspiration — all powered by a spin of the wheel.</p>
+          <span class="bl-badge">${b.badge}</span>
+          <h1 id="blog-title">${b.pageTitle}</h1>
+          <p class="bl-hero-sub">${b.pageSub}</p>
         </div>
       </section>
 
@@ -24,13 +25,13 @@ export function renderBlogListPage(container) {
               <div class="bl-card-body">
                 <div class="bl-card-meta">
                   <span class="bl-tag" style="--tag-c:${post.categoryColor}">${post.category}</span>
-                  <time datetime="${post.date}">${fmtDate(post.date)}</time>
+                  <time datetime="${post.date}">${fmtDate(post.date, locale)}</time>
                   <span>•</span>
                   <span>${post.readTime}</span>
                 </div>
                 <h3>${post.title}</h3>
                 <p>${post.excerpt}</p>
-                <span class="bl-card-arrow">Read Article →</span>
+                <span class="bl-card-arrow">${b.readArticle}</span>
               </div>
             </a>
           `).join('')}
@@ -39,15 +40,16 @@ export function renderBlogListPage(container) {
 
       <section class="bl-cta-section">
         <div class="bl-cta-box">
-          <h2>🎡 Try Our Decision Wheels</h2>
-          <p>Ready to stop overthinking? Pick a wheel, spin it, and let fate decide. Free, fast, no sign-up required.</p>
-          <a href="/" class="bl-cta-btn">Explore All Wheels →</a>
+          <h2>${b.ctaTitle}</h2>
+          <p>${b.ctaSub}</p>
+          <a href="${buildLocalizedPath(locale, '')}" class="bl-cta-btn">${b.ctaBtn}</a>
         </div>
       </section>
     </div>
   `;
 }
 
-function fmtDate(s) {
-  return new Date(s + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+function fmtDate(s, locale) {
+  const loc = locale === 'zh-CN' ? 'zh-CN' : (locale || 'en');
+  return new Date(s + 'T00:00:00').toLocaleDateString(loc, { month: 'long', day: 'numeric', year: 'numeric' });
 }

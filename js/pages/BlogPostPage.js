@@ -1,9 +1,10 @@
-// BlogPostPage.js — Premium individual blog post with interactive elements
+// BlogPostPage.js — Premium individual blog post with interactive elements + i18n
 import { BLOG_POSTS, getBlogBySlug } from '../data/blogPosts.js';
-import { splitLocaleFromPath, buildLocalizedPath } from '../i18n.js?v=20260408-brand1';
+import { splitLocaleFromPath, buildLocalizedPath, getBlogText } from '../i18n.js?v=20260408-brand1';
 
 export function renderBlogPostPage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
+  const b = getBlogText(locale);
   const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
   const parts = path.split('/');
   let slug = '';
@@ -12,7 +13,7 @@ export function renderBlogPostPage(container) {
 
   const post = getBlogBySlug(slug);
   if (!post) {
-    container.innerHTML = `<div class="static-page"><h1 class="page-title">Post Not Found</h1><p class="page-intro">This blog post doesn't exist.</p><a href="${buildLocalizedPath(locale, 'blog')}" class="bl-cta-btn" style="margin-top:24px;display:inline-flex;">← Back to Blog</a></div>`;
+    container.innerHTML = `<div class="static-page"><h1 class="page-title">${b.postNotFound}</h1><p class="page-intro">${b.postNotFoundDesc}</p><a href="${buildLocalizedPath(locale, 'blog')}" class="bl-cta-btn" style="margin-top:24px;display:inline-flex;">${b.backToBlog}</a></div>`;
     return;
   }
 
@@ -26,14 +27,14 @@ export function renderBlogPostPage(container) {
       <header class="bp-hero">
         <div class="bp-hero-glow" style="--pc:${post.categoryColor}"></div>
         <div class="bp-hero-inner">
-          <a href="${buildLocalizedPath(locale, 'blog')}" class="bp-back">← Back to Blog</a>
+          <a href="${buildLocalizedPath(locale, 'blog')}" class="bp-back">${b.backToBlog}</a>
           <div class="bp-meta-row">
             <span class="bl-tag" style="--tag-c:${post.categoryColor}">${post.category}</span>
             <span>${post.readTime}</span>
           </div>
           <h1>${post.title}</h1>
           <p class="bp-lead">${post.excerpt}</p>
-          <div class="bp-date"><time datetime="${post.date}">${fmtDate(post.date)}</time> • by YesAndNoWheel Team</div>
+          <div class="bp-date"><time datetime="${post.date}">${fmtDate(post.date, locale)}</time> • by YesAndNoWheel Team</div>
         </div>
       </header>
 
@@ -47,7 +48,7 @@ export function renderBlogPostPage(container) {
         <!-- TOC -->
         ${tocItems.length > 1 ? `
         <nav class="bp-toc" aria-label="Table of Contents">
-          <h4>📑 In This Article</h4>
+          <h4>${b.inThisArticle}</h4>
           <ol>${tocItems.map(t => `<li><a href="#${t.id}">${t.text}</a></li>`).join('')}</ol>
         </nav>` : ''}
 
@@ -57,14 +58,14 @@ export function renderBlogPostPage(container) {
         <!-- PRO TIP -->
         <div class="bp-callout tip">
           <span class="bp-callout-icon">💡</span>
-          <div><strong>Pro Tip</strong><p>${getProTip(post.slug)}</p></div>
+          <div><strong>${b.proTip}</strong><p>${getProTip(post.slug)}</p></div>
         </div>
 
         <!-- CTA -->
         <div class="bp-cta-box" style="--cta-c:${post.categoryColor}">
           <div class="bp-cta-emoji">${post.heroEmoji}</div>
           <h3>${post.ctaText}</h3>
-          <p>Click below to try the wheel featured in this article — free, instant, no sign-up.</p>
+          <p>${b.ctaPostSub}</p>
           <a href="${post.ctaUrl}" class="bl-cta-btn">${post.icon} ${post.ctaText} →</a>
         </div>
 
@@ -72,8 +73,8 @@ export function renderBlogPostPage(container) {
         <div class="bp-author">
           <div class="bp-author-avatar">🎡</div>
           <div>
-            <h4><a href="/about-us/">YesAndNoWheel Team</a></h4>
-            <p>Building free decision-making tools for everyone. We create fun, interactive spinning wheels to help you stop overthinking and start doing.</p>
+            <h4><a href="${buildLocalizedPath(locale, 'about-us')}">YesAndNoWheel Team</a></h4>
+            <p>${b.authorBio}</p>
           </div>
         </div>
       </div>
@@ -81,18 +82,18 @@ export function renderBlogPostPage(container) {
       <!-- RELATED -->
       ${related.length ? `
       <section class="bp-related">
-        <h2>Keep Reading</h2>
+        <h2>${b.keepReading}</h2>
         <div class="bl-grid">${related.map(r => `
           <a href="${buildLocalizedPath(locale, 'blog/' + r.slug)}" class="bl-card">
             <img src="${r.image}" alt="${r.imageAlt}" class="bl-card-img" loading="lazy" width="680" height="380">
             <div class="bl-card-body">
               <div class="bl-card-meta">
                 <span class="bl-tag" style="--tag-c:${r.categoryColor}">${r.category}</span>
-                <time datetime="${r.date}">${fmtDate(r.date)}</time><span>•</span><span>${r.readTime}</span>
+                <time datetime="${r.date}">${fmtDate(r.date, locale)}</time><span>•</span><span>${r.readTime}</span>
               </div>
               <h3>${r.title}</h3>
               <p>${r.excerpt}</p>
-              <span class="bl-card-arrow">Read Article →</span>
+              <span class="bl-card-arrow">${b.readArticle}</span>
             </div>
           </a>`).join('')}
         </div>
@@ -128,7 +129,10 @@ export function renderBlogPostPage(container) {
 }
 
 /* helpers */
-function fmtDate(s) { return new Date(s + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); }
+function fmtDate(s, locale) {
+  const loc = locale === 'zh-CN' ? 'zh-CN' : (locale || 'en');
+  return new Date(s + 'T00:00:00').toLocaleDateString(loc, { month: 'long', day: 'numeric', year: 'numeric' });
+}
 
 function extractHeadings(html) {
   const out = []; let i = 0;
