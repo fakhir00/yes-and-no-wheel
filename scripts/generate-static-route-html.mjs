@@ -2,7 +2,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getStaticPageContent, getWheelSharedText } from '../js/i18n.js';
 
-const SITE_URL = 'https://www.yesandnowheel.com';
+const SITE_URL = 'https://yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
 const ASSET_VERSION = '20260408-brand1';
 

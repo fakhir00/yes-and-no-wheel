@@ -86,7 +86,7 @@ const routeDescriptions = {
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
   'food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
 };
-const OG_IMAGE_URL = 'https://www.yesandnowheel.com/og-image.svg?v=20260408-brand1';
+const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg?v=20260408-brand1';
 
 function charLength(value) {
   return [...String(value || '')].length;
@@ -258,9 +258,9 @@ async function handleRoute() {
         document.head.appendChild(canonicalEl);
       }
       const canonicalPath = buildLocalizedPath(currentLocale, canonical);
-      canonicalEl.setAttribute('href', `https://www.yesandnowheel.com${canonicalPath}`);
+      canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
       const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute('content', `https://www.yesandnowheel.com${canonicalPath}`);
+      if (ogUrl) ogUrl.setAttribute('content', `https://yesandnowheel.com${canonicalPath}`);
       const ogImage = document.querySelector('meta[property="og:image"]');
       if (ogImage) ogImage.setAttribute('content', OG_IMAGE_URL);
       const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
@@ -331,8 +331,8 @@ function updateBreadcrumb(route) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": homeName, "item": `https://www.yesandnowheel.com${homePath}` },
-    ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://www.yesandnowheel.com${canonicalPath}` }] : [])
+    { "@type": "ListItem", "position": 1, "name": homeName, "item": `https://yesandnowheel.com${homePath}` },
+    ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
     ]
   });
 }
@@ -400,7 +400,7 @@ function updateAlternateLanguages(canonicalSlug) {
     const alternate = document.createElement('link');
     alternate.setAttribute('rel', 'alternate');
     alternate.setAttribute('hreflang', code);
-    alternate.setAttribute('href', `https://www.yesandnowheel.com${buildLocalizedPath(code, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
+    alternate.setAttribute('href', `https://yesandnowheel.com${buildLocalizedPath(code, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
     alternate.dataset.hreflang = 'true';
     document.head.appendChild(alternate);
   });
@@ -408,7 +408,7 @@ function updateAlternateLanguages(canonicalSlug) {
   const defaultAlternate = document.createElement('link');
   defaultAlternate.setAttribute('rel', 'alternate');
   defaultAlternate.setAttribute('hreflang', 'x-default');
-  defaultAlternate.setAttribute('href', `https://www.yesandnowheel.com${buildLocalizedPath(DEFAULT_LOCALE, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
+  defaultAlternate.setAttribute('href', `https://yesandnowheel.com${buildLocalizedPath(DEFAULT_LOCALE, canonicalSlug === 'home' ? '' : canonicalSlug)}`);
   defaultAlternate.dataset.hreflang = 'true';
   document.head.appendChild(defaultAlternate);
 }
