@@ -13,18 +13,8 @@
       "permanent": true
     },
     {
-      "source": "/home/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/home",
       "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/:lang/home/",
-      "destination": "/:lang/",
       "permanent": true
     },
     {
@@ -34,7 +24,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!images/|js/|favicon.*|.*\\.css|.*\\.js|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.ico).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
