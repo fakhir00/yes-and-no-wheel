@@ -11,20 +11,10 @@
       "destination": "https://www.yesandnowheel.com/:path*",
       "permanent": true
     },
+
     {
-      "source": "/:path+/",
-      "destination": "https://www.yesandnowheel.com/:path+/",
-      "has": [
-        {
-          "type": "host",
-          "value": "yesandnowheel.com"
-        }
-      ],
-      "permanent": true
-    },
-    {
-      "source": "/:path+",
-      "destination": "https://www.yesandnowheel.com/:path+/",
+      "source": "/:path([^.]+[^/])",
+      "destination": "https://www.yesandnowheel.com/:path/",
       "has": [
         {
           "type": "host",
