@@ -4,10 +4,18 @@ import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
 import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
+import { EN_HOME_HERO_FALLBACK, EN_HOME_MARKDOWN_FILE, extractHomeHero, renderHomeMarkdownToHtml } from '../utils/homeMarkdown.js';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getHomeText(locale);
+  const isEnglishHome = locale === 'en';
+  const heroText = isEnglishHome
+    ? EN_HOME_HERO_FALLBACK
+    : {
+      title: `${t.heroTitle} — ${t.heroSuffix}`,
+      subtitle: t.heroSubtitle
+    };
   const wheels = [
     { id: 'rainbow', icon: '🌈', color: '#FF6B6B' },
     { id: 'wheel-of-fate', icon: '⚔️', color: '#6B2D8B' },
@@ -28,8 +36,8 @@ export function renderHomePage(container) {
       <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
-          <h1 class="hero-title">${t.heroTitle} — ${t.heroSuffix}</h1>
-          <p class="hero-subtitle">${t.heroSubtitle}</p>
+          <h1 class="hero-title" id="homeHeroTitle">${heroText.title}</h1>
+          <h2 class="hero-subtitle" id="homeHeroSubtitle">${heroText.subtitle}</h2>
         </div>
 
         <div class="yesno-layout">
@@ -148,7 +156,9 @@ export function renderHomePage(container) {
         </div>
       </section>
 
-      ${renderWheelSeoContent(t.heroTitle, 'home', locale)}
+      ${isEnglishHome
+    ? `<div class="home-rich-content page-content wheel-seo-content" id="homeRichContent">${renderWheelSeoContent(t.heroTitle, 'home', locale)}</div>`
+    : renderWheelSeoContent(t.heroTitle, 'home', locale)}
 
       <!-- FAQ -->
       <section class="faq">
@@ -158,6 +168,10 @@ export function renderHomePage(container) {
         </div>
       </section>
     </div>`;
+
+  if (isEnglishHome) {
+    hydrateEnglishHomeMarkdown(container);
+  }
 
   // ---- Yes/No Wheel Logic ----
   let mode = 'yesno'; // 'yesno' or 'yesnomaybe'
@@ -273,4 +287,30 @@ export function renderHomePage(container) {
   });
 
   return engine;
+}
+
+async function hydrateEnglishHomeMarkdown(container) {
+  const heroTitleEl = container.querySelector('#homeHeroTitle');
+  const heroSubtitleEl = container.querySelector('#homeHeroSubtitle');
+  const contentEl = container.querySelector('#homeRichContent');
+
+  if (!heroTitleEl || !heroSubtitleEl || !contentEl) return;
+
+  try {
+    const response = await fetch(EN_HOME_MARKDOWN_FILE, { cache: 'no-cache' });
+    if (!response.ok) return;
+
+    const markdown = await response.text();
+    const hero = extractHomeHero(markdown, EN_HOME_HERO_FALLBACK);
+
+    heroTitleEl.textContent = hero.title || EN_HOME_HERO_FALLBACK.title;
+    heroSubtitleEl.textContent = hero.subtitle || EN_HOME_HERO_FALLBACK.subtitle;
+
+    contentEl.innerHTML = renderHomeMarkdownToHtml(markdown, {
+      skipFirstHeading: true,
+      skipFirstSubtitle: true
+    });
+  } catch (error) {
+    console.warn('Failed to hydrate home markdown content.', error);
+  }
 }
