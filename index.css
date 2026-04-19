@@ -1829,6 +1829,257 @@ a:hover { color: var(--accent-tertiary); }
   color: var(--accent-primary); text-decoration: underline;
 }
 
+/* Rich content sub-headings */
+.content-section h3 {
+  font-family: var(--font-display); font-size: 1.15rem;
+  font-weight: 600; margin-bottom: var(--space-sm);
+  margin-top: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.content-section h4 {
+  font-family: var(--font-display); font-size: 1rem;
+  font-weight: 600; margin-bottom: var(--space-xs);
+  margin-top: var(--space-md);
+  color: var(--text-primary);
+}
+
+.content-section ul, .content-section ol {
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.content-section ul li, .content-section ol li {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-xs);
+}
+
+/* Collapsible details within content sections */
+.content-section .faq-item {
+  margin-bottom: var(--space-sm);
+}
+
+.content-section .faq-answer {
+  padding: var(--space-sm) var(--space-lg) var(--space-lg);
+}
+
+.content-section .faq-answer p {
+  margin-bottom: var(--space-sm);
+}
+
+.content-section .faq-answer ul {
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.content-section .faq-answer h4 {
+  margin-top: var(--space-md);
+}
+
+/* ================================================================
+   Info Callout Boxes
+   ================================================================ */
+.info-callout {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+}
+
+.info-callout .callout-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.info-callout .callout-content {
+  flex: 1;
+}
+
+.info-callout .callout-content strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.info-callout .callout-content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-callout.tip {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.info-callout.note {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.info-callout.warning {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+/* ================================================================
+   Comparison Tables
+   ================================================================ */
+.comparison-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-lg) 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.comparison-table thead {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.comparison-table th {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-tertiary);
+  border-bottom: 2px solid var(--border-glass);
+  white-space: nowrap;
+}
+
+.comparison-table td {
+  padding: var(--space-sm) var(--space-lg);
+  border-bottom: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(99, 102, 241, 0.04);
+}
+
+.comparison-table a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+/* ================================================================
+   Stats Row
+   ================================================================ */
+.home-rich-content .stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.home-rich-content .stat-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.home-rich-content .stat-box:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary);
+}
+
+.home-rich-content .stat-box .stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent-tertiary);
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
+}
+
+.home-rich-content .stat-box .stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ================================================================
+   Styled Steps (ordered list)
+   ================================================================ */
+.styled-steps {
+  counter-reset: step-counter;
+  list-style: none;
+  padding: 0;
+  margin: var(--space-lg) 0;
+}
+
+.styled-steps li {
+  counter-increment: step-counter;
+  position: relative;
+  padding: var(--space-md) var(--space-md) var(--space-md) 50px;
+  margin-bottom: var(--space-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  transition: border-color var(--transition-fast);
+}
+
+.styled-steps li:hover {
+  border-color: var(--accent-primary);
+}
+
+.styled-steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ================================================================
+   FAQ Answer within home content
+   ================================================================ */
+.faq .faq-answer {
+  padding: 0 var(--space-lg) var(--space-lg);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.faq .faq-question {
+  font-weight: 600;
+}
+
 .styled-list {
   list-style: none; padding: 0;
 }

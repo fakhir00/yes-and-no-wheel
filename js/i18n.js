@@ -1725,13 +1725,12 @@ const HOME_PAGE_TRANSLATIONS = {
     step5Title: 'Continue or reset',
     step5Desc: 'Keep spinning or reset the counters when you want to start fresh.',
     faqItems: [
-      { q: '❓ Is the Yes or No Wheel truly random?', a: 'Yes! Our random decision generator uses cryptographically secure random number generation, making outcomes genuinely unpredictable and unbiased. We employ the same technology used in cryptographic security systems to ensure absolute fairness.' },
-      { q: '❓ Can I use the Yes No Spinner for important life decisions?', a: 'While the yes or no decision maker tool is fun and convenient, major life decisions should involve careful consideration. We recommend using it for low-stakes decisions, breaking decision deadlocks, fun and entertainment, and educational activities. It is not recommended for major financial, medical, or legal decisions.' },
-      { q: '❓ Does the Decision Wheel have a memory?', a: 'No! Each spin of our yes no picker is completely independent. Previous results do not affect future spins, maintaining true randomness. This is a fundamental principle of probability theory called "statistical independence."' },
-      { q: '❓ How is this different from flipping a coin?', a: 'The free yes or no wheel online offers several advantages: no physical object needed, visual engagement and animation, history tracking options, multiple outcome modes (yes/no/maybe), instant accessibility, works on all devices, and cryptographic randomness that is more random than physical coins.' },
-      { q: '❓ Can I customize the Yes or No Wheel?', a: 'Absolutely! Our platform offers extensive customization including custom colors and themes, custom categories and outcomes, adjustable probabilities, and the ability to save personalized configurations. Try our specialized wheels for unique experiences.' },
-      { q: '❓ Is there a mobile app for the Yes No Spinner?', a: 'Our random yes no generator works perfectly in mobile browsers without requiring app downloads. Simply visit the website on any device — iPhone, iPad, Android phones and tablets, desktop computers, and laptops. No app store visit needed — instant access!' },
-      { q: '❓ What other random generators do you offer?', a: 'Beyond yes/no decisions, we provide specialized tools including DTI Theme Generator for creative themes, Random Word Generator for vocabulary tools, Truth or Dare Wheel for party games, Country Generator for geographic randomization, Zodiac Wheel for astrological insights, Hair Color Generator for style decisions, and Random Food Generator for meal choices.' }
+      { q: 'Is YesAndNoWheel.com free to use?', a: 'Yes. All wheels and features are free to use.' },
+      { q: 'Are the spins truly random?', a: 'Yes. The wheel uses randomized starting conditions and browser physics.' },
+      { q: 'Can I save my custom wheel?', a: 'Yes. Entries and settings are saved in your browser.' },
+      { q: 'Does it work on mobile?', a: 'Yes. The site is responsive on phones and tablets.' },
+      { q: 'How many Truth or Dare questions are there?', a: 'There are 200+ curated prompts.' },
+      { q: 'Can I upload my own list?', a: 'Yes. The Word Wheel supports paste and file upload.' }
     ],
     wheelDescriptions: {
       rainbow: 'Bright spectrum spinner for colorful choices.',
