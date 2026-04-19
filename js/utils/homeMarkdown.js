@@ -129,6 +129,8 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
   let paragraphLines = [];
   let listType = '';
   let blockquoteLines = [];
+  let inFaqSection = false;
+  const detailsModeStack = [];
 
   const closeParagraph = () => {
     if (!paragraphLines.length) return;
@@ -154,6 +156,26 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
     closeBlockquote();
   };
 
+  const renderFencedBlock = (fenceLines, language) => {
+    const cleaned = fenceLines.map((line) => line.replace(/\s+$/g, ''));
+    const nonEmpty = cleaned.filter((line) => line.trim().length > 0);
+    const isChecklist = language === 'markdown' && nonEmpty.length > 0 && nonEmpty.every((line) => /^✅\s+/.test(line.trim()));
+
+    if (isChecklist) {
+      html.push('<ul class="home-markdown-checklist">');
+      nonEmpty.forEach((line) => {
+        const text = line.trim().replace(/^✅\s+/, '');
+        html.push(`<li>${formatInline(text)}</li>`);
+      });
+      html.push('</ul>');
+      return;
+    }
+
+    const safeLanguage = language ? ` data-language="${escapeHtml(language)}"` : '';
+    const codeBody = escapeHtml(cleaned.join('\n'));
+    html.push(`<pre class="home-markdown-code"${safeLanguage}><code>${codeBody}</code></pre>`);
+  };
+
   for (let i = 0; i < lines.length; i++) {
     const rawLine = lines[i];
     const line = rawLine.trim();
@@ -163,18 +185,39 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
       continue;
     }
 
+    const fenceMatch = line.match(/^```(\w+)?$/);
+    if (fenceMatch) {
+      closeAllTextBlocks();
+      const language = (fenceMatch[1] || '').toLowerCase();
+      const fenceLines = [];
+      i++;
+      while (i < lines.length && !/^```$/.test(lines[i].trim())) {
+        fenceLines.push(lines[i]);
+        i++;
+      }
+      renderFencedBlock(fenceLines, language);
+      continue;
+    }
+
     if (/^<details\b/i.test(line)) {
       closeAllTextBlocks();
-      const detailsTag = /class\s*=/i.test(line)
-        ? line
-        : line.replace(/^<details\b/i, '<details class="home-markdown-details"');
-      html.push(detailsTag);
+      const keepDropdown = inFaqSection;
+      detailsModeStack.push(keepDropdown ? 'faq' : 'flat');
+      if (keepDropdown) {
+        const detailsTag = /class\s*=/i.test(line)
+          ? line
+          : line.replace(/^<details\b/i, '<details class="home-markdown-details"');
+        html.push(detailsTag);
+      } else {
+        html.push('<section class="home-inline-section">');
+      }
       continue;
     }
 
     if (/^<\/details>/i.test(line)) {
       closeAllTextBlocks();
-      html.push('</details>');
+      const mode = detailsModeStack.pop() || 'flat';
+      html.push(mode === 'faq' ? '</details>' : '</section>');
       continue;
     }
 
@@ -185,7 +228,12 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
       const summaryContent = /<[^>]+>/.test(summaryInner)
         ? summaryInner
         : formatInline(summaryInner);
-      html.push(`<summary>${summaryContent}</summary>`);
+      const mode = detailsModeStack[detailsModeStack.length - 1] || 'flat';
+      if (mode === 'faq') {
+        html.push(`<summary>${summaryContent}</summary>`);
+      } else {
+        html.push(`<h4 class="home-inline-summary">${summaryContent}</h4>`);
+      }
       continue;
     }
 
@@ -234,7 +282,12 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
     if (headingMatch) {
       closeAllTextBlocks();
       const level = headingMatch[1].length;
-      html.push(`<h${level}>${formatInline(headingMatch[2])}</h${level}>`);
+      const headingText = headingMatch[2];
+      const plainHeading = stripInlineMarkdown(headingText).toLowerCase();
+      if (level === 2) {
+        inFaqSection = plainHeading.includes('common questions about yes or no wheels');
+      }
+      html.push(`<h${level}>${formatInline(headingText)}</h${level}>`);
       continue;
     }
 
