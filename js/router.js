@@ -419,6 +419,15 @@ export function getCurrentLocale() {
 
 function getDocumentTitle(route) {
   const safeRoute = route || 'home';
+  const canonicalRoute = canonicalSlugs[safeRoute] || safeRoute;
+
+  if (currentLocale === DEFAULT_LOCALE) {
+    const explicitTitle = routeTitles[canonicalRoute] || routeTitles[safeRoute];
+    if (explicitTitle) {
+      return ensureLongTitle(explicitTitle, canonicalRoute);
+    }
+  }
+
   const localizedTitle = getLocalizedRouteContent(currentLocale, safeRoute).title;
   return ensureLongTitle(`${localizedTitle} — YesAndNoWheel.com`, safeRoute);
 }
