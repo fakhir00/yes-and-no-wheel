@@ -1,7 +1,7 @@
 export const EN_HOME_MARKDOWN_FILE = '/Yes%20or%20No%20Wheel.txt';
 
 export const EN_HOME_HERO_FALLBACK = {
-  title: 'Yes and No Wheel | Free Yes or No Spinner',
+  title: 'Yes or No Wheel: Your Free Online Decision-Making Companion',
   subtitle: 'Make Quick Decisions with Our Random Yes No Generator'
 };
 

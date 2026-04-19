@@ -1412,6 +1412,10 @@ a:hover { color: var(--accent-tertiary); }
   margin-bottom: var(--space-xl);
 }
 
+.yesno-header .hero-title {
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+}
+
 .yesno-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;

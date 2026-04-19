@@ -304,7 +304,7 @@ async function hydrateEnglishHomeMarkdown(container) {
     const markdown = await response.text();
     const hero = extractHomeHero(markdown, EN_HOME_HERO_FALLBACK);
 
-    heroTitleEl.textContent = hero.title || EN_HOME_HERO_FALLBACK.title;
+    heroTitleEl.textContent = EN_HOME_HERO_FALLBACK.title;
     heroSubtitleEl.textContent = hero.subtitle || EN_HOME_HERO_FALLBACK.subtitle;
 
     contentEl.innerHTML = renderHomeMarkdownToHtml(markdown, {
