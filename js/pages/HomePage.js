@@ -4,6 +4,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
 import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
+import { renderHomePageSeoContent } from './HomePageContent.js';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -148,13 +149,13 @@ export function renderHomePage(container) {
         </div>
       </section>
 
-      ${renderWheelSeoContent(t.heroTitle, 'home', locale)}
+      ${renderHomePageSeoContent()}
 
       <!-- FAQ -->
       <section class="faq">
         <h2 class="section-title">${t.faqTitle}</h2>
         <div class="faq-list">
-          ${t.faqItems.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+          ${t.faqItems.map((item) => `<details class="faq-item"><summary class="faq-question">${item.q}</summary><div class="faq-answer"><p>${item.a}</p></div></details>`).join('')}
         </div>
       </section>
     </div>`;
