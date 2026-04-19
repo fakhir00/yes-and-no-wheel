@@ -1413,7 +1413,7 @@ a:hover { color: var(--accent-tertiary); }
 }
 
 .yesno-header .hero-title {
-  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  font-size: clamp(1.85rem, 4.2vw, 3.2rem);
 }
 
 .yesno-layout {
