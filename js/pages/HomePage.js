@@ -160,13 +160,14 @@ export function renderHomePage(container) {
     ? `<div class="home-rich-content page-content wheel-seo-content" id="homeRichContent">${renderWheelSeoContent(t.heroTitle, 'home', locale)}</div>`
     : renderWheelSeoContent(t.heroTitle, 'home', locale)}
 
+      ${isEnglishHome ? '' : `
       <!-- FAQ -->
       <section class="faq">
         <h2 class="section-title">${t.faqTitle}</h2>
         <div class="faq-list">
           ${t.faqItems.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
         </div>
-      </section>
+      </section>`}
     </div>`;
 
   if (isEnglishHome) {
