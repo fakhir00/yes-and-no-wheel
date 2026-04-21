@@ -7,6 +7,7 @@ import { getLocalizedContinentName, getLocalizedCountryName, getWheelSharedText,
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -97,6 +98,14 @@ export function renderCountryWheel(container) {
   }
 
   let currentWheelCountries = getWheelEntries();
+  const spinBtn = document.getElementById('countrySpinBtn');
+  const resultEl = document.getElementById('countryResult');
+  const resultMode = setupWheelResultOnlyMode({
+    layoutEl: container.querySelector('.wheel-layout'),
+    mainEl: container.querySelector('.wheel-main'),
+    resultEl,
+    onSpinAgain: () => spinBtn.click()
+  });
 
   const engine = new WheelEngine('countryCanvas', {
     entries: currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)),
@@ -115,25 +124,26 @@ export function renderCountryWheel(container) {
         || countries.find(c => getLocalizedCountryName(locale, c) === countryName)
         || { flag: '🌍', name: countryName };
 
-      const resultEl = document.getElementById('countryResult');
       resultEl.innerHTML = `<div class="result-winner country-result">
         <span class="country-flag-big">${country.flag}</span>
         <span class="result-text">${getLocalizedCountryName(locale, country)}</span>
         <span class="country-continent">${country.continent ? getLocalizedContinentName(locale, country.continent) : ''}</span>
       </div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
 
       // Set flag as center emoji
       engine.centerEmoji = country.flag;
       engine.draw();
 
       customPanel.addResult(getLocalizedCountryName(locale, country));
-      document.getElementById('countrySpinBtn').disabled = false;
+      spinBtn.disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      document.getElementById('countryResult').classList.remove('show');
-      document.getElementById('countrySpinBtn').disabled = true;
+      resultMode.reset();
+      resultEl.classList.remove('show');
+      spinBtn.disabled = true;
       engine.centerEmoji = '';
       // Resample countries for variety
       currentWheelCountries = getWheelEntries();
@@ -159,7 +169,7 @@ export function renderCountryWheel(container) {
     }
   });
 
-  document.getElementById('countrySpinBtn').addEventListener('click', () => {
+  spinBtn.addEventListener('click', () => {
     if (getFilteredCountries().length < 2) {
       alert(ui.enableAtLeastTwoRegions);
       return;

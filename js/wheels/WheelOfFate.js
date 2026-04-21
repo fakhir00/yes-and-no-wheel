@@ -6,6 +6,7 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -76,6 +77,14 @@ export function renderWheelOfFate(container) {
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'wheel-of-fate');
   const defaultWeights = [1, 1, 1, 1, 1, 1, 1, 1];
+  const spinBtn = document.getElementById('fateSpinBtn');
+  const resultEl = document.getElementById('fateResult');
+  const resultMode = setupWheelResultOnlyMode({
+    layoutEl: container.querySelector('.wheel-layout'),
+    mainEl: container.querySelector('.wheel-main'),
+    resultEl,
+    onSpinAgain: () => spinBtn.click()
+  });
 
   const engine = new WheelEngine('fateCanvas', {
     entries: defaultEntries,
@@ -84,16 +93,17 @@ export function renderWheelOfFate(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
-      const resultEl = document.getElementById('fateResult');
       resultEl.innerHTML = `<div class="result-winner fate-result"><span class="result-emoji">⚔️</span><span class="result-text">${winner.entry}</span><span class="fate-subtitle">${ui.fateResultSubtitle}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
-      document.getElementById('fateSpinBtn').disabled = false;
+      spinBtn.disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      document.getElementById('fateResult').classList.remove('show');
-      document.getElementById('fateSpinBtn').disabled = true;
+      resultMode.reset();
+      resultEl.classList.remove('show');
+      spinBtn.disabled = true;
     }
   });
 
@@ -131,7 +141,7 @@ export function renderWheelOfFate(container) {
   customPanel.render('fateSidebar');
   customPanel.setEntries(defaultEntries);
 
-  document.getElementById('fateSpinBtn').addEventListener('click', () => engine.spin());
+  spinBtn.addEventListener('click', () => engine.spin());
 
   return engine;
 }

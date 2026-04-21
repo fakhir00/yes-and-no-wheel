@@ -522,6 +522,29 @@ a:hover { color: var(--accent-tertiary); }
 
 .spin-btn:hover .spin-ripple { opacity: 1; }
 
+.spin-again-btn {
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 12px 28px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 0 26px rgba(59, 130, 246, 0.25);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
+}
+
+.spin-again-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 34px rgba(59, 130, 246, 0.35);
+}
+
+.spin-again-btn:active {
+  transform: translateY(0);
+}
+
 /* Themed spin buttons */
 .rainbow-spin-btn { background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); }
 .food-spin-btn { background: linear-gradient(90deg, #ff4757, #ff9f43, #feca57); }
@@ -579,6 +602,33 @@ a:hover { color: var(--accent-tertiary); }
 /* Hair result */
 .hair-swatch { width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--border-glass); }
 .hair-hex { font-size: 0.85rem; color: var(--text-muted); font-family: monospace; }
+
+.wheel-layout.result-only-active {
+  grid-template-columns: 1fr;
+}
+
+.wheel-layout.result-only-active .wheel-sidebar {
+  display: none !important;
+}
+
+.wheel-main.result-only-active > * {
+  display: none !important;
+}
+
+.wheel-main.result-only-active > .result-display {
+  display: block !important;
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+  margin: 0 auto var(--space-sm);
+}
+
+.wheel-main.result-only-active > .spin-again-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 /* ================================================================
    Customization Panel
@@ -776,6 +826,8 @@ a:hover { color: var(--accent-tertiary); }
 .tod-modal-type.dare { color: #ff006e; }
 .tod-modal-prompt { font-size: 1.15rem; line-height: 1.6; margin-bottom: var(--space-lg); color: var(--text-secondary); }
 .tod-modal-player { font-size: 1.1rem; font-weight: 700; margin-bottom: var(--space-lg); }
+.tod-final-prompt { margin: 0; color: var(--text-secondary); line-height: 1.7; font-size: 1.02rem; }
+.tod-final-player { color: var(--text-primary); font-weight: 700; }
 
 /* DTI components */
 .dti-library { width: 100%; max-width: 500px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: var(--space-lg); }
@@ -1413,7 +1465,7 @@ a:hover { color: var(--accent-tertiary); }
 }
 
 .yesno-header .hero-title {
-  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  font-size: clamp(1.85rem, 4.2vw, 3.2rem);
 }
 
 .yesno-layout {
@@ -1551,6 +1603,23 @@ a:hover { color: var(--accent-tertiary); }
 /* Yes/No Result */
 .yesno-result-display {
   margin: var(--space-lg) auto 0;
+}
+
+.yesno-section.result-only-active .yesno-layout {
+  display: none;
+}
+
+.yesno-section.result-only-active .yesno-result-display {
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+}
+
+.yesno-section .home-spin-again-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-sm) auto 0;
 }
 
 .yes-result .result-text { color: #22c55e; }

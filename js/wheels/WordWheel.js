@@ -6,6 +6,7 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -86,6 +87,14 @@ export function renderWordWheel(container) {
   `;
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'word');
+  const spinBtn = document.getElementById('wordSpinBtn');
+  const resultEl = document.getElementById('wordResult');
+  const resultMode = setupWheelResultOnlyMode({
+    layoutEl: container.querySelector('.wheel-layout'),
+    mainEl: container.querySelector('.wheel-main'),
+    resultEl,
+    onSpinAgain: () => spinBtn.click()
+  });
 
   const engine = new WheelEngine('wordCanvas', {
     entries: defaultEntries,
@@ -94,16 +103,17 @@ export function renderWordWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
-      const resultEl = document.getElementById('wordResult');
       resultEl.innerHTML = `<div class="result-winner word-result"><span class="result-emoji">🎯</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
-      document.getElementById('wordSpinBtn').disabled = false;
+      spinBtn.disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      document.getElementById('wordResult').classList.remove('show');
-      document.getElementById('wordSpinBtn').disabled = true;
+      resultMode.reset();
+      resultEl.classList.remove('show');
+      spinBtn.disabled = true;
     }
   });
 
@@ -112,7 +122,7 @@ export function renderWordWheel(container) {
   customPanel.setEntries(defaultEntries);
 
   // Spin button
-  document.getElementById('wordSpinBtn').addEventListener('click', () => engine.spin());
+  spinBtn.addEventListener('click', () => engine.spin());
 
   // Quick paste
   document.getElementById('wordPasteApply').addEventListener('click', () => {
