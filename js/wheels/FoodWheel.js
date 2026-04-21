@@ -6,7 +6,6 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
-import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const FOOD_COLORS = [
   '#ff4757', // Red
@@ -79,14 +78,6 @@ export function renderFoodWheel(container) {
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'random-food');
   const getColors = (len) => Array.from({ length: len }, (_, i) => FOOD_COLORS[i % FOOD_COLORS.length]);
   const defaultColors = getColors(defaultEntries.length);
-  const spinBtn = document.getElementById('foodSpinBtn');
-  const resultEl = document.getElementById('foodResult');
-  const resultMode = setupWheelResultOnlyMode({
-    layoutEl: container.querySelector('.wheel-layout'),
-    mainEl: container.querySelector('.wheel-main'),
-    resultEl,
-    onSpinAgain: () => spinBtn.click()
-  });
 
   const engine = new WheelEngine('foodCanvas', {
     entries: defaultEntries,
@@ -94,17 +85,16 @@ export function renderFoodWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
+      const resultEl = document.getElementById('foodResult');
       resultEl.innerHTML = `<div class="result-winner food-result"><span class="result-emoji">🍔</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
-      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
-      spinBtn.disabled = false;
+      document.getElementById('foodSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      resultMode.reset();
-      resultEl.classList.remove('show');
-      spinBtn.disabled = true;
+      document.getElementById('foodResult').classList.remove('show');
+      document.getElementById('foodSpinBtn').disabled = true;
     }
   });
 
@@ -117,7 +107,7 @@ export function renderFoodWheel(container) {
   customPanel.render('foodSidebar');
   customPanel.setEntries(defaultEntries);
 
-  spinBtn.addEventListener('click', () => engine.spin());
+  document.getElementById('foodSpinBtn').addEventListener('click', () => engine.spin());
 
   return engine;
 }

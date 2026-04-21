@@ -7,7 +7,6 @@ import { getLocalizedDtiCategory, getLocalizedDtiThemeName, getWheelSharedText, 
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
-import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -100,14 +99,6 @@ export function renderDTIWheel(container) {
     const shuffled = [...enabled].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 20);
   }
-  const spinBtn = document.getElementById('dtiSpinBtn');
-  const resultEl = document.getElementById('dtiResult');
-  const resultMode = setupWheelResultOnlyMode({
-    layoutEl: container.querySelector('.wheel-layout'),
-    mainEl: container.querySelector('.wheel-main'),
-    resultEl,
-    onSpinAgain: () => spinBtn.click()
-  });
 
   const engine = new WheelEngine('dtiCanvas', {
     entries: getWheelEntries(),
@@ -115,17 +106,16 @@ export function renderDTIWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
+      const resultEl = document.getElementById('dtiResult');
       resultEl.innerHTML = `<div class="result-winner dti-result"><span class="result-emoji">👗</span><span class="result-text">${winner.entry}</span><span class="dti-subtitle">${ui.dtiResultSubtitle}</span></div>`;
       resultEl.classList.add('show');
-      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
-      spinBtn.disabled = false;
+      document.getElementById('dtiSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      resultMode.reset();
-      resultEl.classList.remove('show');
-      spinBtn.disabled = true;
+      document.getElementById('dtiResult').classList.remove('show');
+      document.getElementById('dtiSpinBtn').disabled = true;
       // Re-randomize which entries are shown
       engine.setEntries(getWheelEntries(), PASTEL_COLORS);
     }
@@ -186,7 +176,7 @@ export function renderDTIWheel(container) {
     updateCount();
   });
 
-  spinBtn.addEventListener('click', () => {
+  document.getElementById('dtiSpinBtn').addEventListener('click', () => {
     if (getEnabled().length < 2) {
       alert(ui.enableAtLeastTwoThemes);
       return;

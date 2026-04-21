@@ -7,7 +7,6 @@ import { getLocalizedTruthDareLabels, getLocalizedWheelSeedEntries, getWheelShar
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
-import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -100,37 +99,6 @@ export function renderTruthOrDare(container) {
   let selectedPlayer = '';
   const defaultPlayers = getLocalizedWheelSeedEntries(locale, 'todPlayers');
   const todLabels = getLocalizedTruthDareLabels(locale);
-  const spinBtn = document.getElementById('todSpinBtn');
-  const spinText = document.getElementById('todSpinText');
-  const resultEl = document.getElementById('todResult');
-
-  function getConfiguredPlayers() {
-    const players = document.getElementById('todPlayerNames').value
-      .split('\n')
-      .map((s) => s.trim())
-      .filter((s) => s);
-    return players.length > 0 ? players : defaultPlayers;
-  }
-
-  function resetToStep1() {
-    currentStep = 1;
-    document.getElementById('todStep1Indicator').classList.add('active');
-    document.getElementById('todStep2Indicator').classList.remove('active');
-    engine.setEntries(getConfiguredPlayers(), NEON_COLORS);
-    spinText.textContent = `🎉 ${ui.pickAPlayer}`;
-    resultEl.classList.remove('show');
-    spinBtn.disabled = false;
-  }
-
-  const resultMode = setupWheelResultOnlyMode({
-    layoutEl: container.querySelector('.wheel-layout'),
-    mainEl: container.querySelector('.wheel-main'),
-    resultEl,
-    onSpinAgain: () => {
-      resetToStep1();
-      spinBtn.click();
-    }
-  });
 
   const engine = new WheelEngine('todCanvas', {
     entries: defaultPlayers,
@@ -141,6 +109,7 @@ export function renderTruthOrDare(container) {
       if (currentStep === 1) {
         selectedPlayer = winner.entry;
         // Show player result briefly
+        const resultEl = document.getElementById('todResult');
         resultEl.innerHTML = `<div class="result-winner tod-result"><span class="result-emoji">👤</span><span class="result-text">${winner.entry}${ui.turnSuffix}</span></div>`;
         resultEl.classList.add('show');
         
@@ -157,8 +126,8 @@ export function renderTruthOrDare(container) {
 
           // Set truth or dare wheel
           engine.setEntries([todLabels.truth, todLabels.dare], ['#3A86FF', '#FF006E']);
-          spinText.textContent = `🎭 ${ui.truthOrDarePrompt}`;
-          spinBtn.disabled = false;
+          document.getElementById('todSpinText').textContent = `🎭 ${ui.truthOrDarePrompt}`;
+          document.getElementById('todSpinBtn').disabled = false;
           resultEl.classList.remove('show');
         }, 1500);
       } else {
@@ -166,28 +135,27 @@ export function renderTruthOrDare(container) {
         const isTruth = winner.entry === todLabels.truth;
         const prompt = isTruth ? getRandomTruth() : getRandomDare();
 
-        resultEl.innerHTML = `<div class="result-winner tod-result tod-final-result">
-          <span class="result-emoji">${isTruth ? '💬' : '🔥'}</span>
-          <span class="result-text">${winner.entry}</span>
-          <p class="tod-final-prompt">${prompt}</p>
-          <span class="tod-final-player">🎯 ${selectedPlayer}</span>
-        </div>`;
-        resultEl.classList.add('show');
-        resultMode.showResultOnly();
-
+        // Show modal
+        const modal = document.getElementById('todModal');
+        document.getElementById('todModalType').textContent = winner.entry;
+        document.getElementById('todModalType').className = `tod-modal-type ${isTruth ? 'truth' : 'dare'}`;
+        document.getElementById('todModalPrompt').textContent = prompt;
+        document.getElementById('todModalPlayer').textContent = `🎯 ${selectedPlayer}`;
+        modal.classList.add('show');
+        
+        // Scroll slightly up so viewport clears any browser UI bars
         setTimeout(() => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }, 50);
 
         customPanel.addResult(`${selectedPlayer}: ${winner.entry}`);
-        spinBtn.disabled = false;
+        document.getElementById('todSpinBtn').disabled = false;
       }
     },
     onSpinStart: () => {
       audioManager.init();
-      resultMode.reset();
-      resultEl.classList.remove('show');
-      spinBtn.disabled = true;
+      document.getElementById('todResult').classList.remove('show');
+      document.getElementById('todSpinBtn').disabled = true;
     }
   });
 
@@ -195,7 +163,7 @@ export function renderTruthOrDare(container) {
   customPanel.render('todSidebar');
 
   // Spin button
-  spinBtn.addEventListener('click', () => engine.spin());
+  document.getElementById('todSpinBtn').addEventListener('click', () => engine.spin());
 
   // Load players
   document.getElementById('todLoadPlayers').addEventListener('click', () => {
@@ -207,15 +175,23 @@ export function renderTruthOrDare(container) {
       currentStep = 1;
       document.getElementById('todStep1Indicator').classList.add('active');
       document.getElementById('todStep2Indicator').classList.remove('active');
-      spinText.textContent = `🎉 ${ui.pickAPlayer}`;
-      resultMode.reset();
+      document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
     }
   });
 
   // Next round
   document.getElementById('todNextRound').addEventListener('click', () => {
     document.getElementById('todModal').classList.remove('show');
-    resetToStep1();
+    currentStep = 1;
+    document.getElementById('todStep1Indicator').classList.add('active');
+    document.getElementById('todStep2Indicator').classList.remove('active');
+    engine.setEntries(
+      document.getElementById('todPlayerNames').value.split('\n').map(s => s.trim()).filter(s => s).length > 0
+        ? document.getElementById('todPlayerNames').value.split('\n').map(s => s.trim()).filter(s => s)
+        : defaultPlayers,
+      NEON_COLORS
+    );
+    document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
   });
 
   // Set initial player names

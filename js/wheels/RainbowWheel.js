@@ -6,7 +6,6 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
-import { setupWheelResultOnlyMode } from './resultOnlyMode.js';
 
 const RAINBOW_COLORS = [
   '#FF0000', // Red
@@ -85,14 +84,6 @@ export function renderRainbowWheel(container) {
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'rainbow');
   const defaultColors = generateRainbowColors(defaultEntries.length);
-  const spinBtn = document.getElementById('rainbowSpinBtn');
-  const resultEl = document.getElementById('rainbowResult');
-  const resultMode = setupWheelResultOnlyMode({
-    layoutEl: container.querySelector('.wheel-layout'),
-    mainEl: container.querySelector('.wheel-main'),
-    resultEl,
-    onSpinAgain: () => spinBtn.click()
-  });
 
   const engine = new WheelEngine('rainbowCanvas', {
     entries: defaultEntries,
@@ -100,17 +91,16 @@ export function renderRainbowWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
+      const resultEl = document.getElementById('rainbowResult');
       resultEl.innerHTML = `<div class="result-winner rainbow-result"><span class="result-emoji">🌈</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
-      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
-      spinBtn.disabled = false;
+      document.getElementById('rainbowSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
-      resultMode.reset();
-      resultEl.classList.remove('show');
-      spinBtn.disabled = true;
+      document.getElementById('rainbowResult').classList.remove('show');
+      document.getElementById('rainbowSpinBtn').disabled = true;
     }
   });
 
@@ -123,7 +113,7 @@ export function renderRainbowWheel(container) {
   customPanel.render('rainbowSidebar');
   customPanel.setEntries(defaultEntries);
 
-  spinBtn.addEventListener('click', () => engine.spin());
+  document.getElementById('rainbowSpinBtn').addEventListener('click', () => engine.spin());
 
   document.getElementById('rainbowAutoGradient').addEventListener('click', () => {
     const colors = generateRainbowColors(engine.entries.length);

@@ -92,7 +92,6 @@ export function renderHomePage(container) {
 
         <!-- Result display -->
         <div class="result-display yesno-result-display" id="yesnoResult"></div>
-        <button type="button" class="spin-again-btn home-spin-again-btn" id="yesnoSpinAgainBtn" hidden>Spin Again</button>
       </section>
 
       <!-- HOW IT WORKS -->
@@ -179,9 +178,6 @@ export function renderHomePage(container) {
   let mode = 'yesno'; // 'yesno' or 'yesnomaybe'
   let counts = { yes: 0, no: 0, maybe: 0 };
   let inputSets = 1;
-  const yesnoSection = container.querySelector('.yesno-section');
-  const yesnoResultEl = document.getElementById('yesnoResult');
-  const yesnoSpinAgainBtn = document.getElementById('yesnoSpinAgainBtn');
   const labels = {
     yes: t.yes,
     no: t.no,
@@ -227,18 +223,15 @@ export function renderHomePage(container) {
       }
       updateCounters();
 
+      const resultEl = document.getElementById('yesnoResult');
       const emoji = entry === labels.yes ? '✅' : entry === labels.no ? '❌' : '🤔';
       const colorClass = entry === labels.yes ? 'yes-result' : entry === labels.no ? 'no-result' : 'maybe-result';
-      yesnoResultEl.innerHTML = `<div class="result-winner ${colorClass}"><span class="result-emoji">${emoji}</span><span class="result-text">${entry}!</span></div>`;
-      yesnoResultEl.classList.add('show');
-      yesnoSection.classList.add('result-only-active');
-      yesnoSpinAgainBtn.hidden = false;
+      resultEl.innerHTML = `<div class="result-winner ${colorClass}"><span class="result-emoji">${emoji}</span><span class="result-text">${entry}!</span></div>`;
+      resultEl.classList.add('show');
     },
     onSpinStart: () => {
       audioManager.init();
-      yesnoSection.classList.remove('result-only-active');
-      yesnoSpinAgainBtn.hidden = true;
-      yesnoResultEl.classList.remove('show');
+      document.getElementById('yesnoResult').classList.remove('show');
     }
   });
 
@@ -292,12 +285,6 @@ export function renderHomePage(container) {
     audioManager.tickEnabled = soundOn;
     audioManager.fanfareEnabled = soundOn;
     document.getElementById('yesnoSoundBtn').classList.toggle('muted', !soundOn);
-  });
-
-  yesnoSpinAgainBtn.addEventListener('click', () => {
-    yesnoSection.classList.remove('result-only-active');
-    yesnoSpinAgainBtn.hidden = true;
-    engine.spin();
   });
 
   return engine;
