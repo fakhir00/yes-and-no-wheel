@@ -5,7 +5,7 @@ import { confetti } from '../engine/ConfettiEngine.js';
 import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
 import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
-import { EN_HOME_HERO_FALLBACK, EN_HOME_MARKDOWN_FILE, extractHomeHero, renderHomeMarkdownToHtml } from '../utils/homeMarkdown.js';
+import { EN_HOME_HERO_FALLBACK, extractHomeHero, renderHomeMarkdownToHtml, getLocalizedHomeMarkdownFile } from '../utils/homeMarkdown.js';
 
 export function renderHomePage(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
@@ -157,23 +157,10 @@ export function renderHomePage(container) {
         </div>
       </section>
 
-      ${isEnglishHome
-    ? `<div class="home-rich-content page-content wheel-seo-content" id="homeRichContent">${renderWheelSeoContent(t.heroTitle, 'home', locale)}</div>`
-    : renderWheelSeoContent(t.heroTitle, 'home', locale)}
-
-      ${isEnglishHome ? '' : `
-      <!-- FAQ -->
-      <section class="faq">
-        <h2 class="section-title">${t.faqTitle}</h2>
-        <div class="faq-list">
-          ${t.faqItems.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
-        </div>
-      </section>`}
+      <div class="home-rich-content page-content wheel-seo-content" id="homeRichContent">${renderWheelSeoContent(t.heroTitle, 'home', locale)}</div>
     </div>`;
 
-  if (isEnglishHome) {
-    hydrateEnglishHomeMarkdown(container);
-  }
+  hydrateLocalizedHomeMarkdown(container, locale, t);
 
   // ---- Yes/No Wheel Logic ----
   let mode = 'yesno'; // 'yesno' or 'yesnomaybe'
@@ -305,7 +292,7 @@ export function renderHomePage(container) {
   return engine;
 }
 
-async function hydrateEnglishHomeMarkdown(container) {
+async function hydrateLocalizedHomeMarkdown(container, locale, t) {
   const heroTitleEl = container.querySelector('#homeHeroTitle');
   const heroSubtitleEl = container.querySelector('#homeHeroSubtitle');
   const contentEl = container.querySelector('#homeRichContent');
@@ -313,14 +300,21 @@ async function hydrateEnglishHomeMarkdown(container) {
   if (!heroTitleEl || !heroSubtitleEl || !contentEl) return;
 
   try {
-    const response = await fetch(EN_HOME_MARKDOWN_FILE, { cache: 'no-cache' });
+    const fileUrl = getLocalizedHomeMarkdownFile(locale);
+    const response = await fetch(fileUrl, { cache: 'no-cache' });
     if (!response.ok) return;
 
     const markdown = await response.text();
-    const hero = extractHomeHero(markdown, EN_HOME_HERO_FALLBACK);
+    const heroInfo = locale === 'en' ? EN_HOME_HERO_FALLBACK : { title: `${t.heroTitle} — ${t.heroSuffix}`, subtitle: t.heroSubtitle };
+    const hero = extractHomeHero(markdown, heroInfo);
 
-    heroTitleEl.textContent = EN_HOME_HERO_FALLBACK.title;
-    heroSubtitleEl.textContent = hero.subtitle || EN_HOME_HERO_FALLBACK.subtitle;
+    if (locale === 'en') {
+      heroTitleEl.textContent = hero.title;
+      heroSubtitleEl.textContent = hero.subtitle;
+    } else {
+      heroTitleEl.textContent = hero.title || heroInfo.title;
+      heroSubtitleEl.textContent = hero.subtitle || heroInfo.subtitle;
+    }
 
     contentEl.innerHTML = renderHomeMarkdownToHtml(markdown, {
       skipFirstHeading: true,

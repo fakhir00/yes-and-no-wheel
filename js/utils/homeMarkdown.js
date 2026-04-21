@@ -1,4 +1,9 @@
-export const EN_HOME_MARKDOWN_FILE = '/Yes%20or%20No%20Wheel.txt';
+export function getLocalizedHomeMarkdownFile(locale) {
+  if (!locale || locale === 'en') {
+    return '/Yes%20or%20No%20Wheel.txt';
+  }
+  return `/Yes%20or%20No%20Wheel_${locale}.txt`;
+}
 
 export const EN_HOME_HERO_FALLBACK = {
   title: 'Yes or No Wheel: Your Free Online Decision-Making Companion',
