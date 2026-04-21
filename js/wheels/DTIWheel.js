@@ -7,6 +7,7 @@ import { getLocalizedDtiCategory, getLocalizedDtiThemeName, getWheelSharedText, 
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -19,7 +20,9 @@ export function renderDTIWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'dti-theme');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   let localThemes = JSON.parse(JSON.stringify(dtiThemes));
+  let resultMode;
 
   function getDisplayThemeName(theme) {
     const index = localThemes.indexOf(theme);
@@ -109,11 +112,13 @@ export function renderDTIWheel(container) {
       const resultEl = document.getElementById('dtiResult');
       resultEl.innerHTML = `<div class="result-winner dti-result"><span class="result-emoji">👗</span><span class="result-text">${winner.entry}</span><span class="dti-subtitle">${ui.dtiResultSubtitle}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
       document.getElementById('dtiSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('dtiResult').classList.remove('show');
       document.getElementById('dtiSpinBtn').disabled = true;
       // Re-randomize which entries are shown
@@ -123,6 +128,16 @@ export function renderDTIWheel(container) {
 
   const customPanel = new CustomizationPanel(engine, { wheelName: 'dti' });
   customPanel.render('dtiSidebar');
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#dtiResult',
+    spinAgainText,
+    onSpinAgain: () => {
+      if (getEnabled().length >= 2) {
+        engine.spin();
+      }
+    }
+  });
 
   function buildThemeGrid(filter = 'all') {
     const grid = document.getElementById('dtiThemeGrid');

@@ -6,6 +6,7 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const RAINBOW_COLORS = [
   '#FF0000', // Red
@@ -30,6 +31,7 @@ export function renderRainbowWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'rainbow');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page rainbow-theme">
       <div class="wheel-header">
@@ -84,6 +86,7 @@ export function renderRainbowWheel(container) {
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'rainbow');
   const defaultColors = generateRainbowColors(defaultEntries.length);
+  let resultMode;
 
   const engine = new WheelEngine('rainbowCanvas', {
     entries: defaultEntries,
@@ -94,11 +97,13 @@ export function renderRainbowWheel(container) {
       const resultEl = document.getElementById('rainbowResult');
       resultEl.innerHTML = `<div class="result-winner rainbow-result"><span class="result-emoji">🌈</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
       document.getElementById('rainbowSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('rainbowResult').classList.remove('show');
       document.getElementById('rainbowSpinBtn').disabled = true;
     }
@@ -112,6 +117,12 @@ export function renderRainbowWheel(container) {
   });
   customPanel.render('rainbowSidebar');
   customPanel.setEntries(defaultEntries);
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#rainbowResult',
+    spinAgainText,
+    onSpinAgain: () => engine.spin()
+  });
 
   document.getElementById('rainbowSpinBtn').addEventListener('click', () => engine.spin());
 

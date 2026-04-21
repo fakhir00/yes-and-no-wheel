@@ -6,14 +6,17 @@ import { getLocalizedZodiacSigns, getWheelSharedText, getWheelUiText, splitLocal
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 export function renderZodiacWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'zodiac');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   const localizedSigns = getLocalizedZodiacSigns(locale, zodiacSigns);
   const signEntries = localizedSigns.map(s => s.symbol + ' ' + s.name);
   const signColors = localizedSigns.map(s => s.color);
+  let resultMode;
 
   container.innerHTML = `
     <div class="wheel-page zodiac-theme">
@@ -72,14 +75,21 @@ export function renderZodiacWheel(container) {
       const s = localizedSigns.find(z => z.name === name);
       document.getElementById('zodiacResult').innerHTML = `<div class="result-winner zodiac-result"><span class="zodiac-result-symbol">${s?.symbol||'✨'}</span><span class="result-text">${name}</span><span class="zodiac-element">${s?.element||''} Sign</span></div>`;
       document.getElementById('zodiacResult').classList.add('show');
+      resultMode.showResultOnly();
       showInfo(name); cp.addResult(name);
       document.getElementById('zodiacSpinBtn').disabled = false;
     },
-    onSpinStart: () => { audioManager.init(); document.getElementById('zodiacResult').classList.remove('show'); document.getElementById('zodiacInfoPanel').classList.remove('show'); document.getElementById('zodiacSpinBtn').disabled = true; }
+    onSpinStart: () => { audioManager.init(); resultMode.hideResultOnly(); document.getElementById('zodiacResult').classList.remove('show'); document.getElementById('zodiacInfoPanel').classList.remove('show'); document.getElementById('zodiacSpinBtn').disabled = true; }
   });
 
   const cp = new CustomizationPanel(engine, { wheelName: 'zodiac' });
   cp.render('zodiacSidebar');
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#zodiacResult',
+    spinAgainText,
+    onSpinAgain: () => engine.spin()
+  });
   document.getElementById('zodiacSpinBtn').onclick = () => engine.spin();
 
   return engine;

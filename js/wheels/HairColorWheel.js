@@ -6,6 +6,7 @@ import { getLocalizedHairCategory, getLocalizedHairColorName, getWheelSharedText
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const defaultColors = hairColors.slice(0, 16);
 
@@ -13,6 +14,7 @@ export function renderHairColorWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'hair-color');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page hair-theme">
       <div class="wheel-header">
@@ -66,6 +68,7 @@ export function renderHairColorWheel(container) {
     </div>`;
 
   let selectedColors = [...defaultColors];
+  let resultMode;
 
   function getDisplayColorName(color) {
     const sourceIndex = hairColors.findIndex((item) => item.name === color.name && item.hex === color.hex);
@@ -85,16 +88,27 @@ export function renderHairColorWheel(container) {
       const hex = color ? color.hex : w.color;
       document.getElementById('hairResult').innerHTML = `<div class="result-winner hair-result"><div class="hair-swatch" style="background:${hex}"></div><span class="result-text">${w.entry}</span><span class="hair-hex">${hex}</span></div>`;
       document.getElementById('hairResult').classList.add('show');
+      resultMode.showResultOnly();
       engine.centerText = w.entry;
       engine.draw();
       cp.addResult(w.entry);
       document.getElementById('hairSpinBtn').disabled = false;
     },
-    onSpinStart: () => { audioManager.init(); document.getElementById('hairResult').classList.remove('show'); document.getElementById('hairSpinBtn').disabled = true; engine.centerText = ''; }
+    onSpinStart: () => { audioManager.init(); resultMode.hideResultOnly(); document.getElementById('hairResult').classList.remove('show'); document.getElementById('hairSpinBtn').disabled = true; engine.centerText = ''; }
   });
 
   const cp = new CustomizationPanel(engine, { wheelName: 'hair' });
   cp.render('hairSidebar');
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#hairResult',
+    spinAgainText,
+    onSpinAgain: () => {
+      if (selectedColors.length >= 2) {
+        engine.spin();
+      }
+    }
+  });
 
   function buildGrid(cat) {
     const grid = document.getElementById('hairColorGrid');

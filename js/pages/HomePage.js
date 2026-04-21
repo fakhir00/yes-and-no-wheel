@@ -4,6 +4,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
 import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
+import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
 import { EN_HOME_HERO_FALLBACK, EN_HOME_MARKDOWN_FILE, extractHomeHero, renderHomeMarkdownToHtml } from '../utils/homeMarkdown.js';
 
 export function renderHomePage(container) {
@@ -178,6 +179,7 @@ export function renderHomePage(container) {
   let mode = 'yesno'; // 'yesno' or 'yesnomaybe'
   let counts = { yes: 0, no: 0, maybe: 0 };
   let inputSets = 1;
+  let yesnoResultMode;
   const labels = {
     yes: t.yes,
     no: t.no,
@@ -228,11 +230,24 @@ export function renderHomePage(container) {
       const colorClass = entry === labels.yes ? 'yes-result' : entry === labels.no ? 'no-result' : 'maybe-result';
       resultEl.innerHTML = `<div class="result-winner ${colorClass}"><span class="result-emoji">${emoji}</span><span class="result-text">${entry}!</span></div>`;
       resultEl.classList.add('show');
+      yesnoResultMode.showResultOnly();
     },
     onSpinStart: () => {
       audioManager.init();
+      yesnoResultMode.hideResultOnly();
       document.getElementById('yesnoResult').classList.remove('show');
     }
+  });
+
+  yesnoResultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#yesnoResult',
+    layoutSelector: '.yesno-layout',
+    mainSelector: null,
+    sectionSelector: '.yesno-section',
+    spinAgainText: t.spinAgain || 'Spin Again',
+    buttonClassName: 'home-spin-again-btn',
+    onSpinAgain: () => engine.spin()
   });
 
   function updateCounters() {

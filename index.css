@@ -522,6 +522,33 @@ a:hover { color: var(--accent-tertiary); }
 
 .spin-btn:hover .spin-ripple { opacity: 1; }
 
+.spin-again-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 14px 34px;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.spin-again-btn.show {
+  display: inline-flex;
+}
+
+.spin-again-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-glow);
+}
+
 /* Themed spin buttons */
 .rainbow-spin-btn { background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); }
 .food-spin-btn { background: linear-gradient(90deg, #ff4757, #ff9f43, #feca57); }
@@ -546,6 +573,18 @@ a:hover { color: var(--accent-tertiary); }
 
 .result-display.show {
   opacity: 1; transform: translateY(0) scale(1); pointer-events: auto;
+}
+
+.wheel-layout.result-only-active {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.wheel-layout.result-only-active .wheel-sidebar {
+  display: none;
+}
+
+.wheel-main.result-only-active > *:not(.result-display):not(.spin-again-btn) {
+  display: none !important;
 }
 
 .result-winner {
@@ -1551,6 +1590,24 @@ a:hover { color: var(--accent-tertiary); }
 /* Yes/No Result */
 .yesno-result-display {
   margin: var(--space-lg) auto 0;
+}
+
+.yesno-section.result-only-active .yesno-layout {
+  display: none;
+}
+
+.home-spin-again-btn {
+  margin: var(--space-md) auto 0;
+}
+
+.tod-final-prompt {
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.tod-final-player {
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .yes-result .result-text { color: #22c55e; }

@@ -7,6 +7,7 @@ import { getLocalizedContinentName, getLocalizedCountryName, getWheelSharedText,
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -19,6 +20,7 @@ export function renderCountryWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'country');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   let enabledContinents = [...continents];
 
   container.innerHTML = `
@@ -97,6 +99,7 @@ export function renderCountryWheel(container) {
   }
 
   let currentWheelCountries = getWheelEntries();
+  let resultMode;
 
   const engine = new WheelEngine('countryCanvas', {
     entries: currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)),
@@ -122,6 +125,7 @@ export function renderCountryWheel(container) {
         <span class="country-continent">${country.continent ? getLocalizedContinentName(locale, country.continent) : ''}</span>
       </div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
 
       // Set flag as center emoji
       engine.centerEmoji = country.flag;
@@ -132,6 +136,7 @@ export function renderCountryWheel(container) {
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('countryResult').classList.remove('show');
       document.getElementById('countrySpinBtn').disabled = true;
       engine.centerEmoji = '';
@@ -143,6 +148,16 @@ export function renderCountryWheel(container) {
 
   const customPanel = new CustomizationPanel(engine, { wheelName: 'country' });
   customPanel.render('countrySidebar');
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#countryResult',
+    spinAgainText,
+    onSpinAgain: () => {
+      if (getFilteredCountries().length >= 2) {
+        engine.spin();
+      }
+    }
+  });
 
   // Region toggles
   document.getElementById('regionToggles').addEventListener('change', (e) => {

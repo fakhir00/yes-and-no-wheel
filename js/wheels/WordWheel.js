@@ -6,6 +6,7 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -17,6 +18,7 @@ export function renderWordWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'word');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page word-theme">
       <div class="wheel-header">
@@ -86,6 +88,7 @@ export function renderWordWheel(container) {
   `;
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'word');
+  let resultMode;
 
   const engine = new WheelEngine('wordCanvas', {
     entries: defaultEntries,
@@ -97,11 +100,13 @@ export function renderWordWheel(container) {
       const resultEl = document.getElementById('wordResult');
       resultEl.innerHTML = `<div class="result-winner word-result"><span class="result-emoji">🎯</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
       document.getElementById('wordSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('wordResult').classList.remove('show');
       document.getElementById('wordSpinBtn').disabled = true;
     }
@@ -110,6 +115,12 @@ export function renderWordWheel(container) {
   const customPanel = new CustomizationPanel(engine, { wheelName: 'word' });
   customPanel.render('wordSidebar');
   customPanel.setEntries(defaultEntries);
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#wordResult',
+    spinAgainText,
+    onSpinAgain: () => engine.spin()
+  });
 
   // Spin button
   document.getElementById('wordSpinBtn').addEventListener('click', () => engine.spin());

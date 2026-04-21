@@ -6,6 +6,7 @@ import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, split
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -18,6 +19,7 @@ export function renderWheelOfFate(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'wheel-of-fate');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page fate-theme">
       <div class="wheel-header">
@@ -76,6 +78,7 @@ export function renderWheelOfFate(container) {
 
   const defaultEntries = getLocalizedWheelSeedEntries(locale, 'wheel-of-fate');
   const defaultWeights = [1, 1, 1, 1, 1, 1, 1, 1];
+  let resultMode;
 
   const engine = new WheelEngine('fateCanvas', {
     entries: defaultEntries,
@@ -87,11 +90,13 @@ export function renderWheelOfFate(container) {
       const resultEl = document.getElementById('fateResult');
       resultEl.innerHTML = `<div class="result-winner fate-result"><span class="result-emoji">⚔️</span><span class="result-text">${winner.entry}</span><span class="fate-subtitle">${ui.fateResultSubtitle}</span></div>`;
       resultEl.classList.add('show');
+      resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
       document.getElementById('fateSpinBtn').disabled = false;
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('fateResult').classList.remove('show');
       document.getElementById('fateSpinBtn').disabled = true;
     }
@@ -130,6 +135,12 @@ export function renderWheelOfFate(container) {
   });
   customPanel.render('fateSidebar');
   customPanel.setEntries(defaultEntries);
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#fateResult',
+    spinAgainText,
+    onSpinAgain: () => engine.spin()
+  });
 
   document.getElementById('fateSpinBtn').addEventListener('click', () => engine.spin());
 

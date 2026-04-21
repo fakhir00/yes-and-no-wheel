@@ -7,6 +7,7 @@ import { getLocalizedTruthDareLabels, getLocalizedWheelSeedEntries, getWheelShar
 import { renderWheelSilo } from './WheelSilo.js';
 import { renderWheelFaq } from './WheelFaq.js';
 import { renderWheelSeoContent } from './WheelSeoContent.js';
+import { createResultOnlyMode } from './resultOnlyMode.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -18,6 +19,7 @@ export function renderTruthOrDare(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'spin-the-wheel-truth-or-dare');
   const ui = getWheelUiText(locale);
+  const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page tod-theme">
       <div class="wheel-header">
@@ -99,6 +101,23 @@ export function renderTruthOrDare(container) {
   let selectedPlayer = '';
   const defaultPlayers = getLocalizedWheelSeedEntries(locale, 'todPlayers');
   const todLabels = getLocalizedTruthDareLabels(locale);
+  let resultMode;
+
+  function getActivePlayers() {
+    const typedPlayers = document.getElementById('todPlayerNames').value
+      .split('\n')
+      .map((value) => value.trim())
+      .filter(Boolean);
+    return typedPlayers.length >= 2 ? typedPlayers : defaultPlayers;
+  }
+
+  function resetToPlayerStep(engine) {
+    currentStep = 1;
+    document.getElementById('todStep1Indicator').classList.add('active');
+    document.getElementById('todStep2Indicator').classList.remove('active');
+    engine.setEntries(getActivePlayers(), NEON_COLORS);
+    document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
+  }
 
   const engine = new WheelEngine('todCanvas', {
     entries: defaultPlayers,
@@ -135,18 +154,15 @@ export function renderTruthOrDare(container) {
         const isTruth = winner.entry === todLabels.truth;
         const prompt = isTruth ? getRandomTruth() : getRandomDare();
 
-        // Show modal
-        const modal = document.getElementById('todModal');
-        document.getElementById('todModalType').textContent = winner.entry;
-        document.getElementById('todModalType').className = `tod-modal-type ${isTruth ? 'truth' : 'dare'}`;
-        document.getElementById('todModalPrompt').textContent = prompt;
-        document.getElementById('todModalPlayer').textContent = `🎯 ${selectedPlayer}`;
-        modal.classList.add('show');
-        
-        // Scroll slightly up so viewport clears any browser UI bars
-        setTimeout(() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 50);
+        const resultEl = document.getElementById('todResult');
+        resultEl.innerHTML = `<div class="result-winner tod-result">
+          <span class="result-emoji">${isTruth ? '🗣️' : '🔥'}</span>
+          <span class="result-text">${winner.entry}</span>
+          <p class="tod-final-prompt">${prompt}</p>
+          <p class="tod-final-player">🎯 ${selectedPlayer}</p>
+        </div>`;
+        resultEl.classList.add('show');
+        resultMode.showResultOnly();
 
         customPanel.addResult(`${selectedPlayer}: ${winner.entry}`);
         document.getElementById('todSpinBtn').disabled = false;
@@ -154,6 +170,7 @@ export function renderTruthOrDare(container) {
     },
     onSpinStart: () => {
       audioManager.init();
+      resultMode.hideResultOnly();
       document.getElementById('todResult').classList.remove('show');
       document.getElementById('todSpinBtn').disabled = true;
     }
@@ -161,6 +178,16 @@ export function renderTruthOrDare(container) {
 
   const customPanel = new CustomizationPanel(engine, { wheelName: 'tod' });
   customPanel.render('todSidebar');
+  resultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#todResult',
+    spinAgainText,
+    onSpinAgain: () => {
+      document.getElementById('todModal').classList.remove('show');
+      resetToPlayerStep(engine);
+      engine.spin();
+    }
+  });
 
   // Spin button
   document.getElementById('todSpinBtn').addEventListener('click', () => engine.spin());
@@ -172,26 +199,16 @@ export function renderTruthOrDare(container) {
     if (players.length >= 2) {
       engine.setEntries(players, NEON_COLORS);
       customPanel.setEntries(players);
-      currentStep = 1;
-      document.getElementById('todStep1Indicator').classList.add('active');
-      document.getElementById('todStep2Indicator').classList.remove('active');
-      document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
+      resetToPlayerStep(engine);
     }
   });
 
   // Next round
   document.getElementById('todNextRound').addEventListener('click', () => {
     document.getElementById('todModal').classList.remove('show');
-    currentStep = 1;
-    document.getElementById('todStep1Indicator').classList.add('active');
-    document.getElementById('todStep2Indicator').classList.remove('active');
-    engine.setEntries(
-      document.getElementById('todPlayerNames').value.split('\n').map(s => s.trim()).filter(s => s).length > 0
-        ? document.getElementById('todPlayerNames').value.split('\n').map(s => s.trim()).filter(s => s)
-        : defaultPlayers,
-      NEON_COLORS
-    );
-    document.getElementById('todSpinText').textContent = `🎉 ${ui.pickAPlayer}`;
+    resultMode.hideResultOnly();
+    document.getElementById('todResult').classList.remove('show');
+    resetToPlayerStep(engine);
   });
 
   // Set initial player names
