@@ -234,7 +234,7 @@ export function renderHomePage(container) {
     sectionSelector: '.yesno-section',
     spinAgainText: t.spinAgain || 'Spin Again',
     buttonClassName: 'home-spin-again-btn',
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
 
   function updateCounters() {

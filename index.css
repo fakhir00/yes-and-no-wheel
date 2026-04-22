@@ -1597,7 +1597,13 @@ a:hover { color: var(--accent-tertiary); }
 }
 
 .home-spin-again-btn {
-  margin: var(--space-md) auto 0;
+  margin: var(--space-lg) auto 0;
+  display: none;
+  justify-content: center;
+}
+
+.home-spin-again-btn.show {
+  display: flex;
 }
 
 .tod-final-prompt {
