@@ -116,7 +116,7 @@ export function renderFoodWheel(container) {
     root: container,
     resultSelector: '#foodResult',
     spinAgainText,
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
 
   document.getElementById('foodSpinBtn').addEventListener('click', () => engine.spin());

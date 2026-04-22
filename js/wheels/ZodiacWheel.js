@@ -88,7 +88,7 @@ export function renderZodiacWheel(container) {
     root: container,
     resultSelector: '#zodiacResult',
     spinAgainText,
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
   document.getElementById('zodiacSpinBtn').onclick = () => engine.spin();
 

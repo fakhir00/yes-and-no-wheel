@@ -121,7 +121,7 @@ export function renderRainbowWheel(container) {
     root: container,
     resultSelector: '#rainbowResult',
     spinAgainText,
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
 
   document.getElementById('rainbowSpinBtn').addEventListener('click', () => engine.spin());

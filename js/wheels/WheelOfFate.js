@@ -139,7 +139,7 @@ export function renderWheelOfFate(container) {
     root: container,
     resultSelector: '#fateResult',
     spinAgainText,
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
 
   document.getElementById('fateSpinBtn').addEventListener('click', () => engine.spin());

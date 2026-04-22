@@ -103,11 +103,7 @@ export function renderHairColorWheel(container) {
     root: container,
     resultSelector: '#hairResult',
     spinAgainText,
-    onSpinAgain: () => {
-      if (selectedColors.length >= 2) {
-        engine.spin();
-      }
-    }
+    onSpinAgain: () => {}
   });
 
   function buildGrid(cat) {

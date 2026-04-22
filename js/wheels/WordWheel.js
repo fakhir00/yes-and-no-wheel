@@ -32,7 +32,7 @@ export function renderWordWheel(container) {
             <canvas id="wordCanvas"></canvas>
           </div>
           <button class="spin-btn word-spin-btn" id="wordSpinBtn">
-            <span class="spin-text">📖 ${ui.pickAName}</span>
+            <span class="spin-text">📖 ${ui.pickAWord}</span>
             <div class="spin-ripple"></div>
           </button>
           <div class="result-display" id="wordResult"></div>
@@ -52,8 +52,8 @@ export function renderWordWheel(container) {
           </div>
 
           <div class="quick-paste">
-            <textarea id="wordQuickPaste" placeholder="${ui.quickPastePlaceholder}&#10;Alice&#10;Bob&#10;Charlie&#10;Diana" rows="4"></textarea>
-            <button class="custom-btn" id="wordPasteApply">${ui.loadNames}</button>
+            <textarea id="wordQuickPaste" placeholder="${ui.quickPastePlaceholder}&#10;Apple&#10;Banana&#10;Cherry&#10;Dragon" rows="4"></textarea>
+            <button class="custom-btn" id="wordPasteApply">${ui.loadWords}</button>
           </div>
         </div>
 
@@ -119,7 +119,7 @@ export function renderWordWheel(container) {
     root: container,
     resultSelector: '#wordResult',
     spinAgainText,
-    onSpinAgain: () => engine.spin()
+    onSpinAgain: () => {}
   });
 
   // Spin button

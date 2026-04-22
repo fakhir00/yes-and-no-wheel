@@ -132,11 +132,7 @@ export function renderDTIWheel(container) {
     root: container,
     resultSelector: '#dtiResult',
     spinAgainText,
-    onSpinAgain: () => {
-      if (getEnabled().length >= 2) {
-        engine.spin();
-      }
-    }
+    onSpinAgain: () => {}
   });
 
   function buildThemeGrid(filter = 'all') {

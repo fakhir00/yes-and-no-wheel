@@ -185,7 +185,6 @@ export function renderTruthOrDare(container) {
     onSpinAgain: () => {
       document.getElementById('todModal').classList.remove('show');
       resetToPlayerStep(engine);
-      engine.spin();
     }
   });
 

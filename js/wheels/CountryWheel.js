@@ -152,11 +152,7 @@ export function renderCountryWheel(container) {
     root: container,
     resultSelector: '#countryResult',
     spinAgainText,
-    onSpinAgain: () => {
-      if (getFilteredCountries().length >= 2) {
-        engine.spin();
-      }
-    }
+    onSpinAgain: () => {}
   });
 
   // Region toggles
