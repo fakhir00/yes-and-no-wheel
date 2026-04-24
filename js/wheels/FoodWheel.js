@@ -19,6 +19,14 @@ const FOOD_COLORS = [
   '#3742fa', // Indigo
 ];
 
+const FOOD_EMOJI_REGEX = /\p{Extended_Pictographic}(?:\uFE0F|\u200D\p{Extended_Pictographic})*/gu;
+
+function getFoodResultEmoji(entry) {
+  if (typeof entry !== 'string') return '🍽️';
+  const matches = entry.match(FOOD_EMOJI_REGEX);
+  return matches && matches.length ? matches[matches.length - 1] : '🍽️';
+}
+
 export function renderFoodWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'random-food');
@@ -90,7 +98,8 @@ export function renderFoodWheel(container) {
     onResult: (winner) => {
       audioManager.playFanfare();
       const resultEl = document.getElementById('foodResult');
-      resultEl.innerHTML = `<div class="result-winner food-result"><span class="result-emoji">🍔</span><span class="result-text">${winner.entry}</span></div>`;
+      const resultEmoji = getFoodResultEmoji(winner.entry);
+      resultEl.innerHTML = `<div class="result-winner food-result"><span class="result-emoji">${resultEmoji}</span><span class="result-text">${winner.entry}</span></div>`;
       resultEl.classList.add('show');
       resultMode.showResultOnly();
       customPanel.addResult(winner.entry);
