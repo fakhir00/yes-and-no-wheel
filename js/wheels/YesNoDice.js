@@ -311,37 +311,52 @@ export async function renderYesNoDice(container) {
           <h2 class="hero-subtitle" id="homeHeroSubtitle">Roll the 3D dice for interactive, gamified decision-making.</h2>
         </div>
 
-        <div class="dice-layout">
-          <!-- LEFT COLUMN: CONTROLS -->
-          <div class="yesno-controls">
-            <div class="yesno-inputs-panel">
-              <div class="inputs-header"><p>Mode</p></div>
+        <div class="dice-premium-layout">
+          <!-- LEFT: 3D Canvas -->
+          <div class="dice-premium-canvas-area">
+            <div class="dice-premium-overlay">
+              <div id="diceStatus" class="dice-premium-status">
+                <div class="dice-premium-status-dot"></div>
+                <span>Ready to roll</span>
+              </div>
+            </div>
+            <div class="dice-premium-canvas-wrapper" id="diceCanvasContainer">
+              <div id="diceLoading" class="dice-loading-overlay">Loading 3D Engine...</div>
+            </div>
+            <div id="diceResultDisplay" class="dice-premium-result-pop"></div>
+          </div>
+
+          <!-- RIGHT: Controls & Insights -->
+          <div class="dice-premium-sidebar">
+            <div class="dice-premium-card" style="padding: 10px;">
+              <button class="dice-premium-roll-btn" id="rollDiceBtn" disabled>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                Roll Dice
+              </button>
+              <div class="dice-premium-shortcut">Press <kbd>SPACE</kbd> to roll</div>
+            </div>
+
+            <div class="dice-premium-card">
+              <div class="dice-premium-card-title">Settings</div>
               <div class="yesno-mode-row">
+                <label style="display:block; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">Mode</label>
                 <div class="mode-toggle-group">
                   <button class="mode-btn active" data-val="1">Single</button>
                   <button class="mode-btn" data-val="3">Best of 3</button>
                   <button class="mode-btn" data-val="5">Best of 5</button>
                 </div>
               </div>
-            </div>
 
-            <div class="yesno-inputs-panel">
-              <div class="inputs-header">
-                <p>Probability</p>
-                <div style="font-size: 0.8rem; margin-top: 4px;">
-                  <span style="color: #10b981;" id="diceProbLabelYes">50% Yes</span>
-                  <span style="opacity: 0.4; margin: 0 4px;">|</span>
-                  <span style="color: #ef4444;" id="diceProbLabelNo">50% No</span>
-                </div>
-              </div>
-              <div class="yesno-sets-row" style="margin-top: 10px;">
+              <div class="yesno-sets-row" style="margin-top: 24px;">
+                <label style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">
+                  <span>Probability</span>
+                  <span><span id="diceProbLabelYes" style="color: var(--success); font-weight: bold;">50% Yes</span> <span style="opacity:0.3">|</span> <span id="diceProbLabelNo" style="color: var(--danger); font-weight: bold;">50% No</span></span>
+                </label>
                 <input type="range" id="diceProbSlider" min="0" max="100" value="50" step="10" class="dice-prob-slider">
               </div>
-            </div>
 
-            <div class="yesno-inputs-panel">
-              <div class="inputs-header" style="display: flex; justify-content: space-between; align-items: center;">
-                <p>Auto-roll</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
+                <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin:0;">Auto-roll</label>
                 <label class="toggle-switch">
                   <input type="checkbox" id="diceAutoRoll">
                   <span class="toggle-slider"></span>
@@ -349,86 +364,41 @@ export async function renderYesNoDice(container) {
               </div>
             </div>
 
-            <div class="yesno-counters" style="margin-top: var(--space-lg); width: 100%;">
-              <div class="yesno-counter yes-counter">
-                <span class="counter-num" id="diceStatYes">0</span>
-                <span class="counter-label">Yes</span>
-              </div>
-              <div class="yesno-counter no-counter">
-                <span class="counter-num" id="diceStatNo">0</span>
-                <span class="counter-label">No</span>
-              </div>
-            </div>
-
-            <button class="reset-counts-btn" id="rollDiceBtn" disabled style="width: 100%; margin-top: var(--space-lg); font-size: 1.25rem; padding: 1.1rem; border-radius: 12px; background: var(--gradient-primary); color: white; display: flex; align-items: center; justify-content: center; gap: 8px;">
-              <span>Roll Dice</span>
-            </button>
-            <p style="text-align: center; font-size: 0.75rem; opacity: 0.5; margin-top: 8px;">Press <kbd>SPACE</kbd> to roll</p>
-          </div>
-
-          <!-- CENTER COLUMN: DICE AREA -->
-          <div class="dice-main">
-            <div id="diceStatus" class="ready-pill">
-               <span>Ready to roll</span>
-            </div>
-            
-            <div class="dice-canvas-wrapper" id="diceCanvasContainer">
-              <div id="diceLoading" class="dice-loading-overlay">Loading 3D...</div>
-            </div>
-
-            <div style="margin-top: var(--space-lg); opacity: 0.7;">Click or press <kbd>SPACE</kbd> to roll</div>
-            <div class="result-display yesno-result-display" id="diceResultDisplay"></div>
-          </div>
-
-          <!-- RIGHT COLUMN: INSIGHTS -->
-          <div class="yesno-controls">
-            <div class="yesno-inputs-panel">
-               <div class="inputs-header"><p>Session Insights</p></div>
-               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                 <div style="background: var(--bg-card); border: 1px solid var(--border-glass); padding: 12px; border-radius: 8px; text-align: center;">
-                   <span style="font-size: 0.7rem; opacity: 0.5; display: block;">Total Rolls</span>
-                   <span style="font-size: 1.25rem; font-weight: 800;" id="diceStatTotal">0</span>
-                 </div>
-                 <div style="background: var(--bg-card); border: 1px solid var(--border-glass); padding: 12px; border-radius: 8px; text-align: center;">
-                   <span style="font-size: 0.7rem; opacity: 0.5; display: block;">Win Rate</span>
-                   <span style="font-size: 1.25rem; font-weight: 800;" id="diceStatWinRate">0%</span>
-                 </div>
-               </div>
-            </div>
-
-            <div class="yesno-inputs-panel">
-              <div class="inputs-header"><p>Results Ratio</p></div>
-              <div style="height: 180px; position: relative;">
-                <canvas id="diceRatioChart"></canvas>
+            <div class="dice-premium-card">
+              <div class="dice-premium-card-title">Live Statistics</div>
+              <div class="dice-premium-mini-stats">
+                <div class="dice-premium-stat-box">
+                  <div class="dice-premium-stat-label">Yes</div>
+                  <div class="dice-premium-stat-value yes" id="diceStatYes">0</div>
+                </div>
+                <div class="dice-premium-stat-box">
+                  <div class="dice-premium-stat-label">No</div>
+                  <div class="dice-premium-stat-value no" id="diceStatNo">0</div>
+                </div>
+                <div class="dice-premium-stat-box">
+                  <div class="dice-premium-stat-label">Total Rolls</div>
+                  <div class="dice-premium-stat-value" id="diceStatTotal">0</div>
+                </div>
+                <div class="dice-premium-stat-box">
+                  <div class="dice-premium-stat-label">Win Rate</div>
+                  <div class="dice-premium-stat-value" id="diceStatWinRate">0%</div>
+                </div>
               </div>
             </div>
 
-            <div class="yesno-inputs-panel">
-              <div class="inputs-header"><p>Active Streaks</p></div>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                 <div style="text-align: center;">
-                    <span style="font-size: 0.75rem; color: #10b981; display: block;">Yes Streak</span>
-                    <span style="font-size: 1.5rem; font-weight: 900; color: #10b981;" id="diceStatStreakYes">0</span>
-                 </div>
-                 <div style="text-align: center;">
-                    <span style="font-size: 0.75rem; color: #ef4444; display: block;">No Streak</span>
-                    <span style="font-size: 1.5rem; font-weight: 900; color: #ef4444;" id="diceStatStreakNo">0</span>
-                 </div>
+            <!-- Psychology Modal (Inline Card) -->
+            <div id="dicePsychSection" class="dice-premium-card dice-premium-psych">
+              <div class="dice-premium-card-title" style="color: var(--accent-tertiary)">Your Reaction Matters</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">Usually, your initial reaction to a random result matters more than the result itself. It reveals what you truly wanted all along.</p>
+              <div class="dice-premium-psych-btns">
+                <button id="dicePsychYes" class="dice-premium-psych-btn">😊 Glad</button>
+                <button id="dicePsychNo" class="dice-premium-psych-btn">😕 Wanted the other</button>
               </div>
+              <p id="dicePsychConclusion" style="display: none; margin-top: 15px; font-size: 0.85rem; color: var(--text-primary); font-weight: 700;"></p>
             </div>
           </div>
         </div>
 
-        <!-- Psychology Section (formatted as How-To) -->
-        <section id="dicePsychSection" class="wheel-instructions howto-tutorial-style" style="max-width: 900px; margin: 0 auto; display: none;">
-          <h2>Your Reaction Matters</h2>
-          <p class="howto-intro">Usually, your initial reaction to a random result matters more than the result itself. It reveals what you truly wanted all along.</p>
-          <div class="reaction-btns" style="display: flex; gap: 1rem; justify-content: center; margin: 2rem 0;">
-            <button id="dicePsychYes" class="reset-counts-btn" style="background: var(--bg-card); border-radius: 50px; padding: 12px 30px;">😊 Yes, I'm glad</button>
-            <button id="dicePsychNo" class="reset-counts-btn" style="background: var(--bg-card); border-radius: 50px; padding: 12px 30px;">😕 No, I wanted the other</button>
-          </div>
-          <p id="dicePsychConclusion" style="text-align: center; color: var(--accent-primary); font-weight: 700; min-height: 24px;"></p>
-        </section>
       </section>
 
       <!-- SEO Content -->
@@ -532,30 +502,8 @@ export async function renderYesNoDice(container) {
 
   const statusBadge = document.getElementById('diceStatus');
   const statTotal = document.getElementById('diceStatTotal');
-  const ratioChartCtx = document.getElementById('diceRatioChart').getContext('2d');
-
   // Activate Button
   rollDiceBtn.disabled = false;
-
-  // --- CHART ---
-  const biasChart = new window.Chart(ratioChartCtx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Yes', 'No'],
-      datasets: [{
-        data: [state.yesCount || 1, state.noCount || 1],
-        backgroundColor: ['#10b981', '#ef4444'],
-        borderWidth: 0
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'bottom', labels: { color: getComputedStyle(document.body).getPropertyValue('--text-primary') } }
-      }
-    }
-  });
 
   function updateStatsUI() {
     if (statTotal) statTotal.innerText = state.totalRolls;
@@ -578,13 +526,6 @@ export async function renderYesNoDice(container) {
     const streakNo = document.getElementById('diceStatStreakNo');
     if (streakYes) streakYes.innerText = (state.streakType === 'YES' ? state.currentStreak : 0);
     if (streakNo) streakNo.innerText = (state.streakType === 'NO' ? state.currentStreak : 0);
-
-    // Chart
-    if (biasChart) {
-      biasChart.data.datasets[0].data = [state.yesCount, state.noCount];
-      if (state.yesCount === 0 && state.noCount === 0) biasChart.data.datasets[0].data = [1, 1];
-      biasChart.update();
-    }
 
     localStorage.setItem('yesnodice_state', JSON.stringify(state));
   }
@@ -613,9 +554,8 @@ export async function renderYesNoDice(container) {
   });
 
   function showResult(text, isYes) {
-    const emoji = isYes ? '✅' : '❌';
-    const colorClass = isYes ? 'yes-result' : 'no-result';
-    resultDisplay.innerHTML = '<div class="result-winner ' + colorClass + '"><span class="result-emoji">' + emoji + '</span><span class="result-text">' + text + '</span></div>';
+    const colorClass = isYes ? 'yes' : 'no';
+    resultDisplay.innerHTML = '<div class="dice-premium-result-text ' + colorClass + '">' + text + '</div>';
     resultDisplay.classList.add('show');
   }
 
