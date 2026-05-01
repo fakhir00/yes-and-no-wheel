@@ -508,7 +508,10 @@ export async function renderYesNoDice(container) {
     sectionSelector: '.yesno-section',
     spinAgainText: 'Roll Again',
     buttonClassName: 'home-spin-again-btn',
-    onSpinAgain: () => {}
+    onSpinAgain: () => {
+      // Trigger a new roll automatically when they click Roll Again
+      setTimeout(doRoll, 100);
+    }
   });
 
   function updateStatsUI() {
@@ -559,12 +562,14 @@ export async function renderYesNoDice(container) {
     });
   });
 
-  function showResult(text, isYes) {
+  function showResult(text, isYes, isFinal = true) {
     const emoji = isYes ? '✅' : '❌';
     const colorClass = isYes ? 'yes-result' : 'no-result';
     resultDisplay.innerHTML = '<div class="result-winner ' + colorClass + '"><span class="result-emoji">' + emoji + '</span><span class="result-text">' + text + '</span></div>';
     resultDisplay.classList.add('show');
-    yesnoResultMode.showResultOnly();
+    if (isFinal) {
+      yesnoResultMode.showResultOnly();
+    }
   }
 
   function showPsychologyMode(result) {
@@ -606,7 +611,9 @@ export async function renderYesNoDice(container) {
     }
 
     if (navigator.vibrate) navigator.vibrate(50);
-    const probYes = parseInt(probSlider.value) / 100;
+    let probYes = parseFloat(probSlider.value) / 100;
+    if (isNaN(probYes)) probYes = 0.5;
+    
     rollDiceBtn.disabled = true;
     diceEngine.roll(probYes);
   }
@@ -619,7 +626,7 @@ export async function renderYesNoDice(container) {
 
     if (rollMode > 1) {
       currentSeries.push(result);
-      showResult(result + '!', isYes);
+      showResult(result + '!', isYes, false);
 
       const winsNeeded = Math.ceil(rollMode / 2);
       let yesC = currentSeries.filter(x => x === 'YES').length;
@@ -628,7 +635,7 @@ export async function renderYesNoDice(container) {
       if (yesC >= winsNeeded || noC >= winsNeeded) {
         const finalWinner = yesC > noC ? 'YES' : 'NO';
         setTimeout(() => {
-          showResult(finalWinner + ' WINS!', finalWinner === 'YES');
+          showResult(finalWinner + ' WINS!', finalWinner === 'YES', true);
           currentSeries = [];
           processFinalResult(finalWinner);
         }, 1000);
@@ -636,7 +643,7 @@ export async function renderYesNoDice(container) {
         setTimeout(doRoll, 1000);
       }
     } else {
-      showResult(result + '!', isYes);
+      showResult(result + '!', isYes, true);
       processFinalResult(result);
     }
   }
