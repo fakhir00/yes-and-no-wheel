@@ -525,10 +525,7 @@ export async function renderYesNoDice(container) {
     sectionSelector: '.yesno-section',
     spinAgainText: 'Roll Again',
     buttonClassName: 'home-spin-again-btn',
-    onSpinAgain: () => {
-      // Trigger a new roll automatically when they click Roll Again
-      setTimeout(doRoll, 100);
-    }
+    onSpinAgain: () => {}
   });
 
   function updateStatsUI() {
