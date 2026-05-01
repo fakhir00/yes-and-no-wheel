@@ -1,4 +1,5 @@
 import { audioManager } from '../engine/AudioManager.js';
+import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -29,7 +30,7 @@ function ensureDependencies() {
   ]);
 }
 
-const DICE_SIZE = 2;
+const DICE_SIZE = 3.5;
 
 class DicePhysics {
   constructor(containerEl, onResult) {
@@ -104,35 +105,46 @@ class DicePhysics {
     this.world.addContactMaterial(contactMaterial);
   }
 
-  createTextDisplay(text, colorHex, bgColorHex) {
+  createTextDisplay(text, colorHex, bgColor1, bgColor2) {
     const canvas = document.createElement('canvas');
     canvas.width = 512;
     canvas.height = 512;
     const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = bgColorHex;
+    const grad = ctx.createLinearGradient(0, 0, 512, 512);
+    grad.addColorStop(0, bgColor1);
+    grad.addColorStop(1, bgColor2);
+    ctx.fillStyle = grad;
     ctx.fillRect(0, 0, 512, 512);
 
     ctx.strokeStyle = '#ffffff';
-    ctx.lineWidth = 20;
-    ctx.strokeRect(10, 10, 492, 492);
+    ctx.lineWidth = 24;
+    ctx.strokeRect(12, 12, 488, 488);
 
+    ctx.shadowColor = 'rgba(0,0,0,0.6)';
+    ctx.shadowBlur = 15;
+    ctx.shadowOffsetX = 5;
+    ctx.shadowOffsetY = 5;
     ctx.fillStyle = colorHex;
-    ctx.font = 'bold 160px "Outfit", Arial, sans-serif';
+    ctx.font = '900 180px "Outfit", Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(text, 256, 256);
 
     const texture = new window.THREE.CanvasTexture(canvas);
-    return new window.THREE.MeshStandardMaterial({ map: texture, roughness: 0.3, metalness: 0.1 });
+    return new window.THREE.MeshStandardMaterial({ 
+      map: texture, 
+      roughness: 0.1, 
+      metalness: 0.3 
+    });
   }
 
   updateDiceFaces(probYes) {
     let numYes = Math.round(probYes * 6);
     let numNo = 6 - numYes;
 
-    const matYes = this.createTextDisplay('YES', '#ffffff', '#10b981');
-    const matNo = this.createTextDisplay('NO', '#ffffff', '#ef4444');
+    const matYes = this.createTextDisplay('YES', '#ffffff', '#34d399', '#059669');
+    const matNo = this.createTextDisplay('NO', '#ffffff', '#fb7185', '#be123c');
 
     this.materials = [];
     this.faceAssignments = [];
@@ -488,6 +500,17 @@ export async function renderYesNoDice(container) {
   // Activate Button
   rollDiceBtn.disabled = false;
 
+  const yesnoResultMode = createResultOnlyMode({
+    root: container,
+    resultSelector: '#diceResultDisplay',
+    layoutSelector: '.yesno-layout',
+    mainSelector: null,
+    sectionSelector: '.yesno-section',
+    spinAgainText: 'Roll Again',
+    buttonClassName: 'home-spin-again-btn',
+    onSpinAgain: () => {}
+  });
+
   function updateStatsUI() {
     if (statTotal) statTotal.innerText = state.totalRolls;
 
@@ -541,6 +564,7 @@ export async function renderYesNoDice(container) {
     const colorClass = isYes ? 'yes-result' : 'no-result';
     resultDisplay.innerHTML = '<div class="result-winner ' + colorClass + '"><span class="result-emoji">' + emoji + '</span><span class="result-text">' + text + '</span></div>';
     resultDisplay.classList.add('show');
+    yesnoResultMode.showResultOnly();
   }
 
   function showPsychologyMode(result) {
@@ -571,6 +595,7 @@ export async function renderYesNoDice(container) {
     audioManager.init();
     audioManager.playTick();
 
+    yesnoResultMode.hideResultOnly();
     resultDisplay.classList.remove('show');
     resultDisplay.innerHTML = '';
     psychSection.style.display = 'none';
