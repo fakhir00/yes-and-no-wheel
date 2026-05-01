@@ -227,6 +227,8 @@ class DicePhysics {
 
     this.updateDiceFaces(probabilityYes);
 
+    if (this.diceBody.wakeUp) this.diceBody.wakeUp();
+
     this.diceBody.position.set(
       (Math.random() - 0.5) * 4,
       12 + Math.random() * 5,
@@ -346,7 +348,9 @@ export async function renderYesNoDice(container) {
                 <span class="counter-label">No</span>
               </div>
             </div>
-            <button class="reset-counts-btn" id="rollDiceBtn" disabled style="width: 100%; margin-bottom: var(--space-lg); font-size: 1.1rem; padding: 12px; border-radius: 8px; background: var(--gradient-primary); color: white; border: none; cursor: pointer;">
+            <button class="reset-counts-btn" id="diceResetBtn" style="margin-bottom: var(--space-md);">↻ Reset Stats</button>
+
+            <button id="rollDiceBtn" disabled style="width: 100%; margin-bottom: var(--space-lg); font-size: 1.1rem; padding: 12px; border-radius: 8px; background: var(--gradient-primary); color: white; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4); text-transform: uppercase; font-weight: 800; letter-spacing: 1px;">
               Roll Dice
             </button>
 
@@ -497,6 +501,19 @@ export async function renderYesNoDice(container) {
 
   const statusBadge = document.getElementById('diceStatus');
   const statTotal = document.getElementById('diceStatTotal');
+  const resetBtn = document.getElementById('diceResetBtn');
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      state.yesCount = 0;
+      state.noCount = 0;
+      state.totalRolls = 0;
+      state.currentStreak = 0;
+      state.streakType = null;
+      updateStatsUI();
+    });
+  }
+
   // Activate Button
   rollDiceBtn.disabled = false;
 
