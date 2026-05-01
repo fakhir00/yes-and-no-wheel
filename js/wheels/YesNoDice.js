@@ -27,7 +27,9 @@ function ensureDependencies() {
     loadScript('https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js'),
     loadScript('https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js'),
     loadScript('https://cdn.jsdelivr.net/npm/chart.js')
-  ]);
+  ]).then(() => {
+    return loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/RoundedBoxGeometry.js');
+  });
 }
 
 const DICE_SIZE = 3.5;
@@ -111,31 +113,59 @@ class DicePhysics {
     canvas.height = 512;
     const ctx = canvas.getContext('2d');
 
-    const grad = ctx.createLinearGradient(0, 0, 512, 512);
+    // 1. Fill entire face with white (to act as the white dice body)
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, 512, 512);
+
+    // 2. Draw a rounded colored inner square for the face
+    const padding = 30;
+    const size = 512 - padding * 2;
+    const radius = 60;
+    
+    ctx.beginPath();
+    ctx.moveTo(padding + radius, padding);
+    ctx.lineTo(padding + size - radius, padding);
+    ctx.quadraticCurveTo(padding + size, padding, padding + size, padding + radius);
+    ctx.lineTo(padding + size, padding + size - radius);
+    ctx.quadraticCurveTo(padding + size, padding + size, padding + size - radius, padding + size);
+    ctx.lineTo(padding + radius, padding + size);
+    ctx.quadraticCurveTo(padding, padding + size, padding, padding + size - radius);
+    ctx.lineTo(padding, padding + radius);
+    ctx.quadraticCurveTo(padding, padding, padding + radius, padding);
+    ctx.closePath();
+
+    const grad = ctx.createLinearGradient(padding, padding, padding, padding + size);
     grad.addColorStop(0, bgColor1);
     grad.addColorStop(1, bgColor2);
     ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, 512, 512);
-
-    ctx.strokeStyle = '#ffffff';
-    ctx.lineWidth = 24;
-    ctx.strokeRect(12, 12, 488, 488);
-
-    ctx.shadowColor = 'rgba(0,0,0,0.6)';
+    
+    // Add inner glow/shadow to the inset
+    ctx.shadowColor = 'rgba(0,0,0,0.3)';
     ctx.shadowBlur = 15;
-    ctx.shadowOffsetX = 5;
+    ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 5;
+    ctx.fill();
+
+    // Reset shadow for text
+    ctx.shadowColor = 'rgba(0,0,0,0.5)';
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    // Text
     ctx.fillStyle = colorHex;
-    ctx.font = '900 180px "Outfit", Arial, sans-serif';
+    ctx.font = '900 140px "Outfit", Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(text, 256, 256);
+    ctx.fillText(text, 256, 256 + 10); // slight y adjustment for Outfit font baseline
 
     const texture = new window.THREE.CanvasTexture(canvas);
+    texture.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
+    
     return new window.THREE.MeshStandardMaterial({ 
       map: texture, 
-      roughness: 0.1, 
-      metalness: 0.3 
+      roughness: 0.15, 
+      metalness: 0.1 
     });
   }
 
@@ -171,7 +201,13 @@ class DicePhysics {
   }
 
   createDice() {
-    const geometry = new window.THREE.BoxGeometry(DICE_SIZE, DICE_SIZE, DICE_SIZE);
+    let geometry;
+    if (window.THREE.RoundedBoxGeometry) {
+      geometry = new window.THREE.RoundedBoxGeometry(DICE_SIZE, DICE_SIZE, DICE_SIZE, 6, 0.5);
+    } else {
+      geometry = new window.THREE.BoxGeometry(DICE_SIZE, DICE_SIZE, DICE_SIZE);
+    }
+    
     this.updateDiceFaces(0.5);
     this.diceMesh = new window.THREE.Mesh(geometry, this.materials);
     this.diceMesh.castShadow = true;
@@ -196,28 +232,55 @@ class DicePhysics {
     this.world.addBody(planeBody);
 
     const planeGeom = new window.THREE.PlaneGeometry(100, 100);
-    const planeMat = new window.THREE.ShadowMaterial({ opacity: 0.3 });
+    const planeMat = new window.THREE.ShadowMaterial({ opacity: 0.4 });
     const planeMesh = new window.THREE.Mesh(planeGeom, planeMat);
     planeMesh.rotation.x = -Math.PI / 2;
     planeMesh.position.y = 0;
     planeMesh.receiveShadow = true;
     this.scene.add(planeMesh);
 
+    // Glowing rings on the floor
+    const ringGeom = new window.THREE.RingGeometry(7, 7.5, 64);
+    const ringMat = new window.THREE.MeshBasicMaterial({ color: 0x00ffff, side: window.THREE.DoubleSide, transparent: true, opacity: 0.5, blending: window.THREE.AdditiveBlending });
+    const ringMesh = new window.THREE.Mesh(ringGeom, ringMat);
+    ringMesh.rotation.x = -Math.PI / 2;
+    ringMesh.position.y = 0.01;
+    this.scene.add(ringMesh);
+    
+    const ringGeom2 = new window.THREE.RingGeometry(6.5, 7, 64);
+    const ringMat2 = new window.THREE.MeshBasicMaterial({ color: 0xff00ff, side: window.THREE.DoubleSide, transparent: true, opacity: 0.5, blending: window.THREE.AdditiveBlending });
+    const ringMesh2 = new window.THREE.Mesh(ringGeom2, ringMat2);
+    ringMesh2.rotation.x = -Math.PI / 2;
+    ringMesh2.position.y = 0.01;
+    this.scene.add(ringMesh2);
+
+    // Starry Background
+    const starGeom = new window.THREE.BufferGeometry();
+    const starCount = 300;
+    const starPos = new Float32Array(starCount * 3);
+    for(let i=0; i<starCount*3; i++) {
+        starPos[i] = (Math.random() - 0.5) * 150;
+    }
+    starGeom.setAttribute('position', new window.THREE.BufferAttribute(starPos, 3));
+    const starMat = new window.THREE.PointsMaterial({ color: 0xffffff, size: 0.2, transparent: true, opacity: 0.8 });
+    this.stars = new window.THREE.Points(starGeom, starMat);
+    this.scene.add(this.stars);
+
     const wallThickness = 1;
-    const w1 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(10, 10, wallThickness)) });
-    w1.position.set(0, 5, -6);
+    const w1 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(15, 15, wallThickness)) });
+    w1.position.set(0, 5, -8);
     this.world.addBody(w1);
 
-    const w2 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(10, 10, wallThickness)) });
-    w2.position.set(0, 5, 6);
+    const w2 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(15, 15, wallThickness)) });
+    w2.position.set(0, 5, 8);
     this.world.addBody(w2);
 
-    const w3 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(wallThickness, 10, 10)) });
-    w3.position.set(-6, 5, 0);
+    const w3 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(wallThickness, 15, 15)) });
+    w3.position.set(-8, 5, 0);
     this.world.addBody(w3);
 
-    const w4 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(wallThickness, 10, 10)) });
-    w4.position.set(6, 5, 0);
+    const w4 = new window.CANNON.Body({ mass: 0, shape: new window.CANNON.Box(new window.CANNON.Vec3(wallThickness, 15, 15)) });
+    w4.position.set(8, 5, 0);
     this.world.addBody(w4);
   }
 
