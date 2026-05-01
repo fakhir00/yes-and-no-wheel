@@ -44,6 +44,6 @@ class SpaHandler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
   os.chdir(ROOT)
-  server = ThreadingHTTPServer(('127.0.0.1', 8000), SpaHandler)
-  print('Serving SPA at http://127.0.0.1:8000')
+  server = ThreadingHTTPServer(('127.0.0.1', 8088), SpaHandler)
+  print('Serving SPA at http://127.0.0.1:8088')
   server.serve_forever()

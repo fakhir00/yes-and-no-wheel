@@ -1,7 +1,7 @@
 // router.js — Path-based SPA router (no hash)
-import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260408-brand1';
+import { DEFAULT_LOCALE, LOCALES, buildLocalizedPath, getLocalizedRouteContent, getUiText, localizeHref, normalizeLocale, splitLocaleFromPath } from './i18n.js?v=20260501-dicefix';
 
-const ASSET_VERSION = '20260408-brand2';
+const ASSET_VERSION = '20260501-dicefix';
 
 const routes = {
   '': () => import(`./pages/HomePage.js?v=${ASSET_VERSION}`).then((m) => m.renderHomePage),
@@ -30,6 +30,7 @@ const routes = {
   'dti': () => import(`./wheels/DTIWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderDTIWheel),
   'hair': () => import(`./wheels/HairColorWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderHairColorWheel),
   'food': () => import(`./wheels/FoodWheel.js?v=${ASSET_VERSION}`).then((m) => m.renderFoodWheel),
+  'yes-and-no-dice': () => import(`./wheels/YesNoDice.js?v=${ASSET_VERSION}`).then((m) => m.renderYesNoDice),
 };
 
 const routeTitles = {
@@ -60,6 +61,7 @@ const routeTitles = {
   'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
   'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color',
   'food': 'Random Food Wheel | Food Decision Spinner',
+  'yes-and-no-dice': 'Yes and No Dice | Free 3D Interactive Gamified Decision Maker',
 };
 
 const routeDescriptions = {
@@ -85,8 +87,9 @@ const routeDescriptions = {
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
   'food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
+  'yes-and-no-dice': 'Roll the Yes and No Dice to decide instantly! A fun, highly interactive 3D physics dice simulator for your daily decisions.',
 };
-const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg?v=20260408-brand1';
+const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg?v=20260501-dicefix';
 
 function charLength(value) {
   return [...String(value || '')].length;
@@ -228,70 +231,70 @@ async function handleRoute() {
         const renderer = await loadRenderer();
         if (requestId !== routeRequestId) return;
         currentEngine = renderer(app);
-      document.title = getDocumentTitle(route);
-      document.documentElement.lang = currentLocale;
-      document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
-      const currentTitle = getDocumentTitle(route);
+        document.title = getDocumentTitle(route);
+        document.documentElement.lang = currentLocale;
+        document.documentElement.dir = currentLocale === 'ar' ? 'rtl' : 'ltr';
+        const currentTitle = getDocumentTitle(route);
 
-      // Update meta description
-      const rawDesc = currentLocale === DEFAULT_LOCALE
-        ? (routeDescriptions[route] || routeDescriptions[''])
-        : getLocalizedRouteContent(currentLocale, route || 'home').subtitle;
-      const desc = ensureMetaDescription(rawDesc, route);
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc && desc) metaDesc.setAttribute('content', desc);
-      const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc && desc) ogDesc.setAttribute('content', desc);
-      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-      if (twitterDesc && desc) twitterDesc.setAttribute('content', desc);
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.setAttribute('content', currentTitle);
-      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-      if (twitterTitle) twitterTitle.setAttribute('content', currentTitle);
+        // Update meta description
+        const rawDesc = currentLocale === DEFAULT_LOCALE
+          ? (routeDescriptions[route] || routeDescriptions[''])
+          : getLocalizedRouteContent(currentLocale, route || 'home').subtitle;
+        const desc = ensureMetaDescription(rawDesc, route);
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && desc) metaDesc.setAttribute('content', desc);
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc && desc) ogDesc.setAttribute('content', desc);
+        const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twitterDesc && desc) twitterDesc.setAttribute('content', desc);
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', currentTitle);
+        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twitterTitle) twitterTitle.setAttribute('content', currentTitle);
 
-      // Update canonical URL
-      const canonical = route || '';
-      let canonicalEl = document.querySelector('link[rel="canonical"]');
-      if (!canonicalEl) {
-        canonicalEl = document.createElement('link');
-        canonicalEl.setAttribute('rel', 'canonical');
-        document.head.appendChild(canonicalEl);
-      }
-      const canonicalPath = buildLocalizedPath(currentLocale, canonical);
-      canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
-      const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute('content', `https://yesandnowheel.com${canonicalPath}`);
-      const ogImage = document.querySelector('meta[property="og:image"]');
-      if (ogImage) ogImage.setAttribute('content', OG_IMAGE_URL);
-      const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
-      if (ogImageSecure) ogImageSecure.setAttribute('content', OG_IMAGE_URL);
-      const twitterImage = document.querySelector('meta[name="twitter:image"]');
-      if (twitterImage) twitterImage.setAttribute('content', OG_IMAGE_URL);
-      updateAlternateLanguages(canonical);
-
-      // Update BreadcrumbList schema
-      updateBreadcrumb(route);
-      updateStaticUi(uiText);
-      updateLocalizedLinks();
-      updateLanguageSelector();
-
-      // Update active nav
-      document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href) return;
-        let linkSlug = '';
-        if (href.startsWith('/')) {
-          linkSlug = href.replace(/^\/+|\/+$/g, '');
-        } else if (href.startsWith('#')) {
-          linkSlug = href.slice(1);
+        // Update canonical URL
+        const canonical = route || '';
+        let canonicalEl = document.querySelector('link[rel="canonical"]');
+        if (!canonicalEl) {
+          canonicalEl = document.createElement('link');
+          canonicalEl.setAttribute('rel', 'canonical');
+          document.head.appendChild(canonicalEl);
         }
-        const isActive = linkSlug === route || (linkSlug === 'home' && route === '') || (linkSlug === '' && route === '');
-        link.classList.toggle('active', isActive);
-      });
+        const canonicalPath = buildLocalizedPath(currentLocale, canonical);
+        canonicalEl.setAttribute('href', `https://yesandnowheel.com${canonicalPath}`);
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', `https://yesandnowheel.com${canonicalPath}`);
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage) ogImage.setAttribute('content', OG_IMAGE_URL);
+        const ogImageSecure = document.querySelector('meta[property="og:image:secure_url"]');
+        if (ogImageSecure) ogImageSecure.setAttribute('content', OG_IMAGE_URL);
+        const twitterImage = document.querySelector('meta[name="twitter:image"]');
+        if (twitterImage) twitterImage.setAttribute('content', OG_IMAGE_URL);
+        updateAlternateLanguages(canonical);
 
-      // Close mobile nav
-      const navMenu = document.getElementById('navMenu');
-      if (navMenu) navMenu.classList.remove('open');
+        // Update BreadcrumbList schema
+        updateBreadcrumb(route);
+        updateStaticUi(uiText);
+        updateLocalizedLinks();
+        updateLanguageSelector();
+
+        // Update active nav
+        document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href) return;
+          let linkSlug = '';
+          if (href.startsWith('/')) {
+            linkSlug = href.replace(/^\/+|\/+$/g, '');
+          } else if (href.startsWith('#')) {
+            linkSlug = href.slice(1);
+          }
+          const isActive = linkSlug === route || (linkSlug === 'home' && route === '') || (linkSlug === '' && route === '');
+          link.classList.toggle('active', isActive);
+        });
+
+        // Close mobile nav
+        const navMenu = document.getElementById('navMenu');
+        if (navMenu) navMenu.classList.remove('open');
       } catch (e) {
         console.error(e);
         app.innerHTML = `<div style="color:red; padding: 50px;">Error rendering wheel: ${e.message}<br>${e.stack}</div>`;
@@ -300,7 +303,7 @@ async function handleRoute() {
       requestAnimationFrame(() => {
         app.style.opacity = '1';
         app.style.transform = 'translateY(0)';
-      
+
         // Clear transform after animation completes so 'position: fixed' modals work correctly
         setTimeout(() => {
           if (app.style.transform === 'translateY(0px)' || app.style.transform === 'translateY(0)') {
@@ -331,8 +334,8 @@ function updateBreadcrumb(route) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": homeName, "item": `https://yesandnowheel.com${homePath}` },
-    ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
+      { "@type": "ListItem", "position": 1, "name": homeName, "item": `https://yesandnowheel.com${homePath}` },
+      ...(route && route !== 'home' ? [{ "@type": "ListItem", "position": 2, "name": pageName, "item": `https://yesandnowheel.com${canonicalPath}` }] : [])
     ]
   });
 }

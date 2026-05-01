@@ -60,6 +60,10 @@ export function renderWordWheel(container) {
         <div class="wheel-sidebar" id="wordSidebar"></div>
       </div>
 
+      <div class="wheel-instructions howto-tutorial-style" style="margin: 2rem 0; text-align: center; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1.5rem;">
+        <p style="margin: 0; font-size: 1.15rem;">🎲 <strong>Need a quick answer?</strong> Try our <a href="/yes-and-no-dice/" style="color: var(--accent-primary); font-weight: 700; text-decoration: underline;">Yes and No Dice tool</a> for a realistic 3D experience.</p>
+      </div>
+
       <div class="wheel-instructions howto-tutorial-style">
         <h2>${t.howToUse}</h2>
         <p class="howto-intro">${t.howToIntro}</p>
@@ -119,7 +123,7 @@ export function renderWordWheel(container) {
     root: container,
     resultSelector: '#wordResult',
     spinAgainText,
-    onSpinAgain: () => {}
+    onSpinAgain: () => { }
   });
 
   // Spin button

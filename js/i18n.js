@@ -265,6 +265,7 @@ const ROUTE_NAMES = {
     'random-food': 'Random Food Wheel',
     'oracle': 'Yes No Oracle',
     'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Yes and No Dice',
     blog: 'Blog'
   },
   'zh-CN': {
