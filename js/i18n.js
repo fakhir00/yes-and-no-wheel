@@ -284,7 +284,8 @@ const ROUTE_NAMES = {
     'dti-theme': 'DTI 主题转盘',
     country: '国家转盘',
     zodiac: '星座转盘',
-    'hair-color': '发色转盘'
+    'hair-color': '发色转盘',
+    'yes-and-no-dice': '是或否骰子'
   },
   hi: {
     home: 'यस और नो व्हील',
@@ -305,7 +306,8 @@ const ROUTE_NAMES = {
     'hair-color': 'हेयर कलर व्हील',
     'random-food': 'रैंडम फूड व्हील',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'यस और नो डाइस'
   },
   es: {
     home: 'Ruleta de Si y No',
@@ -326,7 +328,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Ruleta de Color de Cabello',
     'random-food': 'Ruleta de Comida Aleatoria',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Dados de Sí y No'
   },
   ar: {
     home: 'عجلة نعم ولا',
@@ -347,7 +350,8 @@ const ROUTE_NAMES = {
     'hair-color': 'عجلة لون الشعر',
     'random-food': 'عجلة الطعام العشوائي',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'نرد نعم ولا'
   },
   fr: {
     home: 'Roue Oui Non',
@@ -368,7 +372,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Roue de Couleur de Cheveux',
     'random-food': 'Roue de Nourriture Aléatoire',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Dés Oui Non'
   },
   bn: {
     home: 'হ্যাঁ না চাকা',
@@ -389,7 +394,8 @@ const ROUTE_NAMES = {
     'hair-color': 'চুলের রঙ চাকা',
     'random-food': 'র্যান্ডম ফুড চাকা',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'হ্যাঁ না পাশা'
   },
   pt: {
     home: 'Roda Sim ou Nao',
@@ -410,7 +416,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Roda de Cor de Cabelo',
     'random-food': 'Roleta de Comida Aleatória',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Dados Sim ou Não'
   },
   ru: {
     home: 'Колесо Да Нет',
@@ -431,7 +438,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Колесо Цвета Волос',
     'random-food': 'Колесо Случайной Еды',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Кубик Да Нет'
   },
   ur: {
     home: 'ہاں یا نہیں ویل',
@@ -452,7 +460,8 @@ const ROUTE_NAMES = {
     'hair-color': 'بالوں کے رنگ کا ویل',
     'random-food': 'رینڈم فوڈ ویل',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'ہاں یا نہیں ڈائస్'
   },
   id: {
     home: 'Roda Ya Tidak',
@@ -473,7 +482,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Roda Warna Rambut',
     'random-food': 'Roda Makanan Acak',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Dadu Ya Tidak'
   },
   de: {
     home: 'Ja Nein Rad',
@@ -494,7 +504,8 @@ const ROUTE_NAMES = {
     'hair-color': 'Haarfarbenrad',
     'random-food': 'Zufälliges Essensrad',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'Ja Nein Würfel'
   },
   ja: {
     home: 'はい いいえ ルーレット',
@@ -515,7 +526,8 @@ const ROUTE_NAMES = {
     'hair-color': 'ヘアカラールーレット',
     'random-food': 'ランダムフードルーレット',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'はい いいえ ダイス'
   },
   mr: {
     home: 'होय नाही व्हील',
@@ -536,7 +548,8 @@ const ROUTE_NAMES = {
     'hair-color': 'केसांच्या रंगाचे व्हील',
     'random-food': 'रँडम फूड व्हील',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'होय नाही डाइस'
   },
   te: {
     home: 'అవును కాదు వీల్',
@@ -557,7 +570,8 @@ const ROUTE_NAMES = {
     'hair-color': 'జుట్టు రంగు వీల్',
     'random-food': 'రాండమ్ ఫుడ్ వీల్',
     'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot'
+    'tarot': 'Yes No Tarot',
+    'yes-and-no-dice': 'అవును కాదు పాచికలు'
   }
 };
 
