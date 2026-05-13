@@ -284,7 +284,7 @@ export const BLOG_POSTS = [
     excerpt: 'Too many countries, too little time. Spin the Country Wheel, get a random destination, and start your virtual world tour tonight.',
     targetKeyword: 'random country wheel for travel',
     ctaText: 'Spin the Country Wheel Now',
-    ctaUrl: '',
+    ctaUrl: '/country/',
     heroEmoji: '✈️',
     content: `
       <p>There are <strong>195 countries</strong> in the world — and we've loaded <strong>199 onto our Country Wheel</strong> (because disputed territories deserve travel love too). Between them, you'll find ancient deserts, volcanic islands, neon-lit megacities, fjords that'll make you forget your own name, and street food that will restructure your entire understanding of what food can be. You want to visit all of them. Your bank account has other plans.</p>
