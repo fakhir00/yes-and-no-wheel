@@ -140,7 +140,7 @@ export const BLOG_POSTS = [
     excerpt: 'Writers, artists, and journalers — stop staring at a blank page. Spin for a random word and turn it into something creative.',
     targetKeyword: 'generate random words with word wheel for writing',
     ctaText: 'Spin Your Word Now',
-    ctaUrl: '/word/',
+    ctaUrl: '',
     heroEmoji: '✍️',
     content: `
       <p>Every writer knows the feeling. The cursor blinks mockingly on an empty page. Your brain, previously full of brilliant ideas in the shower, has decided to take an unauthorized vacation the moment you sit down to write. You <em>want</em> to create, but you can't find the spark. The page stays blank. The clock keeps ticking. The self-doubt starts narrating.</p>
@@ -176,19 +176,19 @@ export const BLOG_POSTS = [
 
       <h2>For Journalers: The Daily Prompt Wheel</h2>
 
-      <p>Load the <a href="/word/">Word Wheel</a> with emotional prompts: "Gratitude," "Fear," "Hope," "Memory," "Tomorrow," "Forgiveness," "Rage," "Joy," "Loss," "Beginning." Spin each morning. Write 200 words about whatever comes up. Don't filter. Don't perform. Just write the truth as you understand it at 7 AM with coffee in hand.</p>
+      <p>Load the Word Wheel with emotional prompts: "Gratitude," "Fear," "Hope," "Memory," "Tomorrow," "Forgiveness," "Rage," "Joy," "Loss," "Beginning." Spin each morning. Write 200 words about whatever comes up. Don't filter. Don't perform. Just write the truth as you understand it at 7 AM with coffee in hand.</p>
 
       <p>In a month, you'll have 6,000 words of raw, honest self-reflection. You'll have a journal that actually reflects the messy, beautiful complexity of your inner life — not a curated highlight reel of "things I'm grateful for" (though those are fine too). Some of the most powerful journaling happens when the prompt catches you off guard. "Forgiveness" on a Tuesday you weren't expecting it? That entry might change your week.</p>
 
       <h2>Build a Daily Creative Routine in 30 Seconds</h2>
 
-      <p>The biggest myth about creativity is that it requires inspiration. It doesn't. It requires <strong>a trigger</strong>. Professional writers don't wait for the muse — they sit down at the same time every day and start typing. The <a href="/word/">Word Wheel</a> gives you that trigger in under a second. Spin once. Read the word. Start writing. That's it. No elaborate morning routine, no expensive tools, no courses about "unlocking your creative potential." Just a word and a blank page.</p>
+      <p>The biggest myth about creativity is that it requires inspiration. It doesn't. It requires <strong>a trigger</strong>. Professional writers don't wait for the muse — they sit down at the same time every day and start typing. The Word Wheel gives you that trigger in under a second. Spin once. Read the word. Start writing. That's it. No elaborate morning routine, no expensive tools, no courses about "unlocking your creative potential." Just a word and a blank page.</p>
 
       <p>What makes this approach powerful is its <strong>compounding effect</strong>. Day one, you write 200 words about "Telescope." Day seven, you've written about seven unrelated topics and your brain has started making connections between them. By day thirty, you've accidentally developed a writing voice, a creative rhythm, and a library of raw material you can mine for essays, stories, poems, or social media captions for months. All because a spinning wheel gave you permission to stop overthinking and start creating.</p>
 
       <h2>Start Creating, Not Deciding</h2>
 
-      <p>The blank page isn't the enemy — the <em>decision</em> of what to put on it is. Every minute you spend deciding what to write is a minute you're not writing. The <a href="/word/">Word Wheel</a> eliminates that gap. It makes the first move so you can make the next hundred. Spin, write, repeat. Your creative practice starts with a single click.</p>
+      <p>The blank page isn't the enemy — the <em>decision</em> of what to put on it is. Every minute you spend deciding what to write is a minute you're not writing. The Word Wheel eliminates that gap. It makes the first move so you can make the next hundred. Spin, write, repeat. Your creative practice starts with a single click.</p>
     `
   },
   {
