@@ -66,7 +66,7 @@ export function renderBlogPostPage(container) {
           <div class="bp-cta-emoji">${post.heroEmoji}</div>
           <h3>${post.ctaText}</h3>
           <p>${b.ctaPostSub}</p>
-          <a href="${post.ctaUrl}" class="bl-cta-btn">${post.icon} ${post.ctaText} →</a>
+          ${post.ctaUrl ? `<a href="${post.ctaUrl}" class="bl-cta-btn">${post.icon} ${post.ctaText} →</a>` : `<span class="bl-cta-btn" style="opacity:0.7;cursor:default">${post.icon} ${post.ctaText} →</span>`}
         </div>
 
         <!-- AUTHOR -->

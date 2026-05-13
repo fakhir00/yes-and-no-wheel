@@ -284,7 +284,7 @@ export const BLOG_POSTS = [
     excerpt: 'Too many countries, too little time. Spin the Country Wheel, get a random destination, and start your virtual world tour tonight.',
     targetKeyword: 'random country wheel for travel',
     ctaText: 'Spin the Country Wheel Now',
-    ctaUrl: '/country/',
+    ctaUrl: '',
     heroEmoji: '✈️',
     content: `
       <p>There are <strong>195 countries</strong> in the world — and we've loaded <strong>199 onto our Country Wheel</strong> (because disputed territories deserve travel love too). Between them, you'll find ancient deserts, volcanic islands, neon-lit megacities, fjords that'll make you forget your own name, and street food that will restructure your entire understanding of what food can be. You want to visit all of them. Your bank account has other plans.</p>
@@ -301,7 +301,7 @@ export const BLOG_POSTS = [
 
       <h2>The 3-Prompt Travel Challenge</h2>
 
-      <p>Here's a game you can play right now. Spin the <a href="/country/">Country Wheel</a>. Whatever country appears, do these three things within 15 minutes. No exceptions.</p>
+      <p>Here's a game you can play right now. Spin the Country Wheel. Whatever country appears, do these three things within 15 minutes. No exceptions.</p>
 
       <h3>Prompt 1: Google One Mind-Blowing Fact</h3>
       <p>Every country has something that'll make your jaw drop. Land on <strong>Bhutan</strong>? Discover that it measures national success by <em>Gross National Happiness</em> instead of GDP, and it's the only carbon-negative country on earth. Land on <strong>Iceland</strong>? Find out there are literally zero mosquitoes. Land on <strong>Palau</strong>? Learn that it has a marine sanctuary the size of France. You just got smarter in 45 seconds.</p>
@@ -314,7 +314,7 @@ export const BLOG_POSTS = [
 
       <h2>The Virtual World Tour Date Night</h2>
 
-      <p>Here's a date night (or solo night, or roommate night — we don't gatekeep) idea that costs less than a takeout order: Spin the <a href="/country/">Country Wheel</a> <strong>5 times</strong>. Write down the five countries. Then for each one:</p>
+      <p>Here's a date night (or solo night, or roommate night — we don't gatekeep) idea that costs less than a takeout order: Spin the Country Wheel <strong>5 times</strong>. Write down the five countries. Then for each one:</p>
 
       <ul>
         <li>Watch a 5-minute travel video on YouTube (search: "[country] 4K travel")</li>
@@ -332,13 +332,13 @@ export const BLOG_POSTS = [
 
       <h2>Using the Country Wheel for Education</h2>
 
-      <p>Teachers have discovered that the <a href="/country/">Country Wheel</a> is one of the most engaging classroom tools they've ever used. Instead of assigning countries for geography projects manually — which always results in complaints about who got "the boring one" — spin the wheel and let fate decide. Students immediately invest more energy when randomness is involved, because it feels like a game rather than an assignment. And when a student lands on a country they've never heard of, that's not a problem — that's the entire point.</p>
+      <p>Teachers have discovered that the Country Wheel is one of the most engaging classroom tools they've ever used. Instead of assigning countries for geography projects manually — which always results in complaints about who got "the boring one" — spin the wheel and let fate decide. Students immediately invest more energy when randomness is involved, because it feels like a game rather than an assignment. And when a student lands on a country they've never heard of, that's not a problem — that's the entire point.</p>
 
       <p>Homeschool parents use the wheel for <strong>weekly geography lessons</strong>: spin on Monday, spend the week learning about that country's geography, culture, food, and language. By the end of the school year, a child has explored 40+ countries in depth — more than most adults learn about in a lifetime. It turns passive memorization into active exploration, and it costs nothing except curiosity and a willingness to let a spinning wheel set the curriculum.</p>
 
       <h2>Start Spinning, Stop Scrolling</h2>
 
-      <p>The world is waiting. You don't need a perfect plan — you need a starting point. Let the <a href="/country/">Country Wheel</a> give you one. Because the best trips don't start with a spreadsheet. They start with a moment of "Why not?" And the wheel is the fastest way to get there.</p>
+      <p>The world is waiting. You don't need a perfect plan — you need a starting point. Let the Country Wheel give you one. Because the best trips don't start with a spreadsheet. They start with a moment of "Why not?" And the wheel is the fastest way to get there.</p>
     `
   },
   {
