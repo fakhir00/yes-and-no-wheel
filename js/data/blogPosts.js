@@ -140,7 +140,7 @@ export const BLOG_POSTS = [
     excerpt: 'Writers, artists, and journalers — stop staring at a blank page. Spin for a random word and turn it into something creative.',
     targetKeyword: 'generate random words with word wheel for writing',
     ctaText: 'Spin Your Word Now',
-    ctaUrl: '',
+    ctaUrl: '/word/',
     heroEmoji: '✍️',
     content: `
       <p>Every writer knows the feeling. The cursor blinks mockingly on an empty page. Your brain, previously full of brilliant ideas in the shower, has decided to take an unauthorized vacation the moment you sit down to write. You <em>want</em> to create, but you can't find the spark. The page stays blank. The clock keeps ticking. The self-doubt starts narrating.</p>
