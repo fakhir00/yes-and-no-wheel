@@ -3,11 +3,10 @@ import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { countries, continents, getCountriesByFilter } from '../data/countries.js';
-import { getLocalizedContinentName, getLocalizedCountryName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedContinentName, getLocalizedCountryName, getWheelSharedText, getWheelUiText, splitLocaleFromPath, buildLocalizedPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const GEO_COLORS = [
   '#2563EB', '#059669', '#D97706', '#DC2626', '#7C3AED',
@@ -16,18 +15,63 @@ const GEO_COLORS = [
   '#1D4ED8', '#047857', '#B45309', '#B91C1C', '#6D28D9'
 ];
 
+const COUNTRY_FAQ = [
+  { q: 'What is the country wheel?', a: 'The country wheel is a spinning tool that randomly selects from 199 countries. Each country displays its flag emoji and name on the wheel segment. You can filter by continent to narrow the pool before spinning.' },
+  { q: 'How many countries are on the wheel?', a: 'The wheel includes 199 countries from all seven continents. The default pool includes every country in the database, but you can filter by continent to reduce the selection to specific regions.' },
+  { q: 'Can I filter by continent?', a: 'Yes. The continent filter section above the wheel shows checkboxes for Africa, Asia, Europe, North America, South America, Oceania, and Antarctica. Toggle continents on or off to control which countries appear on the wheel.' },
+  { q: 'How does the country randomizer work?', a: 'The wheel uses browser-based physics simulation with randomized starting velocity and friction. Each spin produces an unpredictable result because the initial conditions vary every time. The country that the wheel lands on is determined by the physics simulation, not by a predetermined algorithm.' },
+  { q: 'Can I use this for travel planning?', a: 'The country wheel is useful for picking a random travel destination when you are open to anywhere. Spin the wheel and let it choose a country for your next trip. Filter by continent if you have a regional preference.' },
+  { q: 'Is the country wheel free?', a: 'The country wheel is completely free with no signup, no ads, and no usage limits. You can spin as many times as you want.' },
+];
+
+function renderCountryFaq(locale) {
+  const c = getWheelPageContent(locale, 'country');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderCountryContent(locale) {
+  const c = getWheelPageContent(locale, 'country');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
 export function renderCountryWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'country');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'country');
   let enabledContinents = [...continents];
 
   container.innerHTML = `
     <div class="wheel-page country-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title">🌍 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title">${c.title || 'Country Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
 
       <div class="wheel-layout">
@@ -61,28 +105,21 @@ export function renderCountryWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the Country Wheel'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'country', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderCountryContent(locale)}
+      ${renderCountryFaq(locale)}
       ${renderWheelSilo(locale, 'country')}
     </div>
   `;
@@ -93,7 +130,6 @@ export function renderCountryWheel(container) {
 
   function getWheelEntries() {
     const filtered = getFilteredCountries();
-    // Show all filtered countries on wheel, randomly shuffled
     const shuffled = [...filtered].sort(() => Math.random() - 0.5);
     return shuffled;
   }
@@ -112,7 +148,6 @@ export function renderCountryWheel(container) {
     onTick: () => audioManager.playTick(),
     onResult: (winner) => {
       audioManager.playFanfare();
-      // Find the country
       const countryName = winner.entry.replace(/^[^\s]+\s/, '');
       const country = currentWheelCountries.find(c => getLocalizedCountryName(locale, c) === countryName)
         || countries.find(c => getLocalizedCountryName(locale, c) === countryName)
@@ -127,7 +162,6 @@ export function renderCountryWheel(container) {
       resultEl.classList.add('show');
       resultMode.showResultOnly();
 
-      // Set flag as center emoji
       engine.centerEmoji = country.flag;
       engine.draw();
 
@@ -140,7 +174,6 @@ export function renderCountryWheel(container) {
       document.getElementById('countryResult').classList.remove('show');
       document.getElementById('countrySpinBtn').disabled = true;
       engine.centerEmoji = '';
-      // Resample countries for variety
       currentWheelCountries = getWheelEntries();
       engine.setEntries(currentWheelCountries.map(c => c.flag + ' ' + getLocalizedCountryName(locale, c)), GEO_COLORS);
     }
@@ -155,7 +188,6 @@ export function renderCountryWheel(container) {
     onSpinAgain: () => {}
   });
 
-  // Region toggles
   document.getElementById('regionToggles').addEventListener('change', (e) => {
     if (e.target.type === 'checkbox') {
       const continent = e.target.dataset.continent;

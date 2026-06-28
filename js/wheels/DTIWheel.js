@@ -5,9 +5,8 @@ import { audioManager } from '../engine/AudioManager.js';
 import { dtiThemes, dtiCategories } from '../data/dtiThemes.js';
 import { getLocalizedDtiCategory, getLocalizedDtiThemeName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const PASTEL_COLORS = [
   '#FFB6C1', '#FFD1DC', '#FFDAB9', '#E6E6FA', '#B0E0E6',
@@ -16,11 +15,47 @@ const PASTEL_COLORS = [
   '#FAFAD2', '#FFF0F5', '#E6E6FA', '#F0F8FF', '#F5F5DC'
 ];
 
+function renderDtiContent(locale) {
+  const c = getWheelPageContent(locale, 'dti-theme');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
+function renderDtiFaq(locale) {
+  const c = getWheelPageContent(locale, 'dti-theme');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
 export function renderDTIWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'dti-theme');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'dti-theme');
   let localThemes = JSON.parse(JSON.stringify(dtiThemes));
   let resultMode;
 
@@ -32,8 +67,8 @@ export function renderDTIWheel(container) {
   container.innerHTML = `
     <div class="wheel-page dti-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title dti-title">👗 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title dti-title">${c.title || 'DTI Theme Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
 
       <div class="wheel-layout">
@@ -65,28 +100,22 @@ export function renderDTIWheel(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the DTI Theme Wheel'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'dti-theme', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderDtiContent(locale)}
+      ${renderDtiFaq(locale)}
+
       ${renderWheelSilo(locale, 'dti-theme')}
     </div>
   `;

@@ -4,66 +4,96 @@ import { audioManager } from '../engine/AudioManager.js';
 import { hairColors, hairCategories, nameToHex } from '../data/hairColors.js';
 import { getLocalizedHairCategory, getLocalizedHairColorName, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const defaultColors = hairColors.slice(0, 16);
+
+function renderHairContent(locale) {
+  const c = getWheelPageContent(locale, 'hair-color');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
+function renderHairFaq(locale) {
+  const c = getWheelPageContent(locale, 'hair-color');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
 
 export function renderHairColorWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'hair-color');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'hair-color');
   container.innerHTML = `
     <div class="wheel-page hair-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title hair-title">💇 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title hair-title">${c.title || 'Hair Color Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
       <div class="wheel-layout">
         <div class="wheel-main">
           <div class="hair-palette-selector">
-            <p class="hair-palette-title">🎨 ${ui.colorPalette}</p>
+            <p class="hair-palette-title">Color Palette</p>
             <div class="hair-cat-btns">
-              <button class="hair-cat-btn active" data-cat="all">${ui.allColors}</button>
+              <button class="hair-cat-btn active" data-cat="all">All Colors</button>
               ${hairCategories.map(c => `<button class="hair-cat-btn" data-cat="${c}">${c}</button>`).join('')}
             </div>
             <div class="hair-color-grid" id="hairColorGrid"></div>
             <div class="hair-custom-add">
-              <input type="text" id="hairCustomName" placeholder="${ui.customColorPlaceholder}">
-              <button class="custom-btn" id="hairAddCustom">+ ${ui.add}</button>
+              <input type="text" id="hairCustomName" placeholder="Add custom color name">
+              <button class="custom-btn" id="hairAddCustom">+ Add</button>
             </div>
           </div>
           <div class="wheel-canvas-container" id="hairCanvasContainer"><canvas id="hairCanvas"></canvas></div>
-          <button class="spin-btn hair-spin-btn" id="hairSpinBtn"><span class="spin-text">💇 ${ui.spinForColor}</span></button>
+          <button class="spin-btn hair-spin-btn" id="hairSpinBtn"><span class="spin-text">Spin for Color</span></button>
           <div class="result-display" id="hairResult"></div>
         </div>
         <div class="wheel-sidebar" id="hairSidebar"></div>
       </div>
+
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the Hair Color Wheel'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'hair-color', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderHairContent(locale)}
+      ${renderHairFaq(locale)}
+
       ${renderWheelSilo(locale, 'hair-color')}
     </div>`;
 
@@ -140,7 +170,6 @@ export function renderHairColorWheel(container) {
     }
   });
 
-  // Hex Sync: custom color name
   document.getElementById('hairAddCustom').addEventListener('click', () => {
     const name = document.getElementById('hairCustomName').value.trim();
     if (!name) return;

@@ -6,8 +6,8 @@ export function getLocalizedHomeMarkdownFile(locale) {
 }
 
 export const EN_HOME_HERO_FALLBACK = {
-  title: 'Yes or No Wheel: Your Free Online Decision-Making Companion',
-  subtitle: 'Make Quick Decisions with Our Random Yes No Generator'
+  title: 'Yes or No Wheel — Free Online Decision Spinner',
+  subtitle: 'Spin the wheel for an instant yes or no answer. Free, no signup, truly random.'
 };
 
 function escapeHtml(value) {
@@ -29,7 +29,7 @@ function formatBasicInline(escapedText) {
 
 function formatInline(text) {
   const links = [];
-  const withTokens = String(text).replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, label, url) => {
+  const withTokens = String(text).replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
     const token = `@@LINK_${links.length}@@`;
     links.push({ label, url });
     return token;
@@ -43,7 +43,9 @@ function formatInline(text) {
 
     const safeUrl = escapeHtml(link.url);
     const safeLabel = formatBasicInline(escapeHtml(link.label));
-    return `<a href="${safeUrl}" target="_blank" rel="noopener">${safeLabel}</a>`;
+    const isExternal = /^https?:\/\//.test(safeUrl);
+    const attrs = isExternal ? ' target="_blank" rel="noopener"' : '';
+    return `<a href="${safeUrl}"${attrs}>${safeLabel}</a>`;
   });
 
   return output;
@@ -290,7 +292,7 @@ export function renderHomeMarkdownToHtml(markdown, options = {}) {
       const headingText = headingMatch[2];
       const plainHeading = stripInlineMarkdown(headingText).toLowerCase();
       if (level === 2) {
-        inFaqSection = plainHeading.includes('common questions about yes or no wheels');
+        inFaqSection = plainHeading.includes('frequently asked questions') || plainHeading.includes('common questions about yes or no wheels');
       }
       html.push(`<h${level}>${formatInline(headingText)}</h${level}>`);
       continue;

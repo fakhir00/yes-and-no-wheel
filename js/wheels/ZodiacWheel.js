@@ -1,18 +1,53 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { zodiacSigns, getCompatibility } from '../data/zodiacData.js';
+import { zodiacSigns } from '../data/zodiacData.js';
 import { getLocalizedZodiacSigns, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
+
+function renderZodiacContent(locale) {
+  const c = getWheelPageContent(locale, 'zodiac');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
+function renderZodiacFaq(locale) {
+  const c = getWheelPageContent(locale, 'zodiac');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
 
 export function renderZodiacWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'zodiac');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'zodiac');
   const localizedSigns = getLocalizedZodiacSigns(locale, zodiacSigns);
   const signEntries = localizedSigns.map(s => s.symbol + ' ' + s.name);
   const signColors = localizedSigns.map(s => s.color);
@@ -21,8 +56,8 @@ export function renderZodiacWheel(container) {
   container.innerHTML = `
     <div class="wheel-page zodiac-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title zodiac-title">✨ ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title zodiac-title">${c.title || 'Zodiac Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
       <div class="wheel-layout" id="zodiacSingleLayout">
         <div class="wheel-main">
@@ -34,28 +69,22 @@ export function renderZodiacWheel(container) {
         <div class="wheel-sidebar" id="zodiacSidebar"></div>
       </div>
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the Zodiac Wheel'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'zodiac', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderZodiacContent(locale)}
+      ${renderZodiacFaq(locale)}
+
       ${renderWheelSilo(locale, 'zodiac')}
     </div>`;
 

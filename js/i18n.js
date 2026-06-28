@@ -1710,9 +1710,9 @@ const WHEEL_UI_TRANSLATIONS = {
 
 const HOME_PAGE_TRANSLATIONS = {
   en: {
-    heroTitle: 'YES AND NO WHEEL',
+    heroTitle: 'Yes or No Wheel — Free Online Decision Spinner',
     heroSuffix: 'Free Spinner',
-    heroSubtitle: 'Spin the Yes and No Wheel to make instant decisions and let fate choose for you.',
+    heroSubtitle: 'Spin the wheel for an instant yes or no answer. Free, no signup, truly random.',
     exploreTitle: 'Explore All Wheels',
     exploreSubtitle: 'Each wheel is uniquely themed and packed with special features.',
     faqTitle: 'Frequently Asked Questions',
@@ -1726,7 +1726,7 @@ const HOME_PAGE_TRANSLATIONS = {
     yesNoMode: 'YES or NO',
     yesNoMaybeMode: 'YES NO or MAYBE',
     inputSets: 'Number of Input Sets',
-    howTitle: 'How to Use the Yes and No Wheel',
+    howTitle: 'How to Use the Yes or No Wheel',
     howIntro: 'Use the wheel to spin for a fast answer whenever you need a simple yes, no, or maybe decision.',
     step1Title: 'Choose a mode',
     step1Opt1: 'Yes or No',
@@ -1740,12 +1740,16 @@ const HOME_PAGE_TRANSLATIONS = {
     step5Title: 'Continue or reset',
     step5Desc: 'Keep spinning or reset the counters when you want to start fresh.',
     faqItems: [
-      { q: 'Is YesAndNoWheel.com free to use?', a: 'Yes. All wheels and features are free to use.' },
-      { q: 'Are the spins truly random?', a: 'Yes. The wheel uses randomized starting conditions and browser physics.' },
-      { q: 'Can I save my custom wheel?', a: 'Yes. Entries and settings are saved in your browser.' },
-      { q: 'Does it work on mobile?', a: 'Yes. The site is responsive on phones and tablets.' },
-      { q: 'How many Truth or Dare questions are there?', a: 'There are 200+ curated prompts.' },
-      { q: 'Can I upload my own list?', a: 'Yes. The Word Wheel supports paste and file upload.' }
+      { q: 'What is a yes or no wheel?', a: 'A yes or no wheel is a digital spinner tool that randomly selects between two outcomes — yes and no — to help you make binary decisions instantly.' },
+      { q: 'How does the yes or no wheel work?', a: 'The wheel uses JavaScript-based randomization running in your browser. Both outcomes have exactly 50% probability. No server call is needed.' },
+      { q: 'Is the yes or no wheel really random?', a: 'Yes. It uses JavaScript random number generation with uniform distribution. Each spin is statistically independent.' },
+      { q: 'Is the yes or no wheel free to use?', a: 'Yes, completely free. No signup, no payment, no hidden costs.' },
+      { q: 'Do I need to create an account?', a: 'No. Just visit the page and spin.' },
+      { q: 'Can I use this for important life decisions?', a: 'The wheel is designed for fun, simple decisions. For serious choices, consult trusted people and your own judgment.' },
+      { q: 'What is the difference between a yes or no wheel and a coin flip?', a: 'Both produce 50/50 outcomes. The wheel has a visual spin animation that builds anticipation. Both are equally fair.' },
+      { q: 'Can kids use the yes or no wheel?', a: 'Yes. It is safe, simple, and fun for all ages.' },
+      { q: 'Does the wheel save my questions or answers?', a: 'No. Everything happens in your browser. We do not store or transmit any input.' },
+      { q: 'Can I share my result with friends?', a: 'Yes. Take a screenshot or just tell them what you got.' }
     ],
     wheelDescriptions: {
       rainbow: 'Bright spectrum spinner for colorful choices.',

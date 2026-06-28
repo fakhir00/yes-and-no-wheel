@@ -2,11 +2,10 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath, buildLocalizedPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const FATE_COLORS = [
   '#2D1B69', '#4A1A6B', '#6B2D8B', '#8B3FA0', '#3D1E75',
@@ -15,16 +14,52 @@ const FATE_COLORS = [
   '#1E1B4B', '#3730A3', '#4338CA', '#6366F1', '#8B5CF6'
 ];
 
+function renderFateFaq(locale) {
+  const c = getWheelPageContent(locale, 'wheel-of-fate');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderFateContent(locale) {
+  const c = getWheelPageContent(locale, 'wheel-of-fate');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
 export function renderWheelOfFate(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'wheel-of-fate');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'wheel-of-fate');
   container.innerHTML = `
     <div class="wheel-page fate-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title fate-title">⚔️ ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title fate-title">${c.title || 'Wheel of Fate'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
 
       <div class="wheel-layout">
@@ -50,28 +85,21 @@ export function renderWheelOfFate(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the Wheel of Fate'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'wheel-of-fate', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderFateContent(locale)}
+      ${renderFateFaq(locale)}
       ${renderWheelSilo(locale, 'wheel-of-fate')}
     </div>
   `;

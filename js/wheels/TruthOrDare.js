@@ -5,9 +5,8 @@ import { audioManager } from '../engine/AudioManager.js';
 import { getRandomTruth, getRandomDare } from '../data/truthOrDareDB.js';
 import { getLocalizedTruthDareLabels, getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const NEON_COLORS = [
   '#FF006E', '#FB5607', '#FFBE0B', '#3A86FF', '#8338EC',
@@ -15,16 +14,52 @@ const NEON_COLORS = [
   '#073B4C', '#F72585', '#7209B7', '#4361EE', '#4CC9F0'
 ];
 
+function renderTodContent(locale) {
+  const c = getWheelPageContent(locale, 'spin-the-wheel-truth-or-dare');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
+function renderTodFaq(locale) {
+  const c = getWheelPageContent(locale, 'spin-the-wheel-truth-or-dare');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
 export function renderTruthOrDare(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'spin-the-wheel-truth-or-dare');
+  const c = getWheelPageContent(locale, 'spin-the-wheel-truth-or-dare');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
   container.innerHTML = `
     <div class="wheel-page tod-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title neon-text">🎉 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title neon-text">${c.title || 'Truth or Dare Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
 
       <div class="wheel-layout">
@@ -71,28 +106,22 @@ export function renderTruthOrDare(container) {
       </div>
 
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Play Truth or Dare'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'spin-the-wheel-truth-or-dare', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderTodContent(locale)}
+      ${renderTodFaq(locale)}
+
       ${renderWheelSilo(locale, 'spin-the-wheel-truth-or-dare')}
     </div>
   `;

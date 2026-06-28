@@ -1,5 +1,7 @@
 import { audioManager } from '../engine/AudioManager.js';
 import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
+import { splitLocaleFromPath } from '../i18n.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -378,14 +380,51 @@ class DicePhysics {
   }
 }
 
+function renderDiceContent(locale) {
+  const c = getWheelPageContent(locale, 'yes-and-no-dice');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
+function renderDiceFaq(locale) {
+  const c = getWheelPageContent(locale, 'yes-and-no-dice');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
 export async function renderYesNoDice(container) {
+  const { locale } = splitLocaleFromPath(window.location.pathname);
+  const c = getWheelPageContent(locale, 'yes-and-no-dice');
   // Inject HTML Shell — mirrors HomePage.js yesno-section exactly
   container.innerHTML = `
     <div class="home-page">
       <section class="yesno-section">
         <div class="yesno-header">
-          <h1 class="hero-title" id="homeHeroTitle">🎲 Yes and No Dice</h1>
-          <h2 class="hero-subtitle" id="homeHeroSubtitle">Roll the 3D dice for interactive, gamified decision-making.</h2>
+          <h1 class="hero-title" id="homeHeroTitle">🎲 ${c.title || 'Yes and No Dice'}</h1>
+          <h2 class="hero-subtitle" id="homeHeroSubtitle">${c.subtitle || ''}</h2>
         </div>
 
         <div class="yesno-layout">
@@ -463,69 +502,8 @@ export async function renderYesNoDice(container) {
 
       </section>
 
-      <!-- SEO Content -->
-      <section class="wheel-seo-content page-content">
-        <section class="content-section">
-          <h1>Yes and No Dice</h1>
-          <p>Using the yes and no dice is simple and fun. Just click the Roll Dice button to launch the 3D physics dice into the air. The dice tumbles realistically and lands on either Yes or No, giving you a clear answer in seconds. You can customize the probability slider to weight your rolls toward Yes or No, making it ideal for situations where one outcome feels slightly more likely. Choose between Single, Best of 3, or Best of 5 modes to add extra rounds to your decision. The tool works on any device, no downloads needed. If you want a more traditional spinner, try our <a href="/">yes or no wheel</a>.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>How to Use Yes and No Dice Online</h2>
-          <p>Whether you need a quick answer for a small daily choice or are using it for a game, rolling the dice is an intuitive way to decide. This 3D physics engine ensures every roll is independent and fair. If you are looking for more complex options, try our <a href="/wheel-of-fate/">random decision maker tool</a> which allows for custom entries.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>Yes or No Dice for Quick Decisions</h2>
-          <p>Struggling with a small decision? The yes or no dice makes it effortless. Whether you need to decide if you should order takeout, skip the gym, or text someone back, this dice gives you a fast, no-pressure answer. It removes the stress of overthinking everyday choices. The 3D physics engine makes every roll feel real and satisfying. Unlike a basic <a href="/oracle/">coin flip tool</a>, the dice adds visual excitement and gamification to your decision-making process. Roll once for an instant verdict, or use Best of 5 for bigger choices.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>Random Yes No Generator with Dice</h2>
-          <p>This random yes no generator uses a physically simulated 3D dice to produce unbiased results. Each roll is powered by a real-time physics engine with gravity, spin, and bounce, so the outcome is genuinely random and unpredictable. The probability slider lets you adjust the odds from 0% to 100% Yes, giving you control when you want weighted randomness. Track your results with the built-in insights panel showing total rolls, streaks, and a visual ratio chart. Every roll is stored locally, so your stats persist across sessions.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>Should I Do It? Use Yes and No Dice</h2>
-          <p>When you are stuck asking yourself "should I do it?", let the yes and no dice decide for you. Sometimes the best way to find clarity is to let chance reveal how you really feel. After each roll, the optional psychology mode asks if you are happy with the result. Your reaction often reveals your true preference more than any rational analysis could. If the dice says No but you feel disappointed, you already know your real answer. This tool turns indecision into self-discovery with every roll.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>Online Decision Maker Dice Tool</h2>
-          <p>This online decision maker dice tool combines advanced 3D physics with a clean, intuitive interface. It is designed to be more engaging than a basic yes/no generator. Features include adjustable probability weighting, multi-round series modes, auto-roll sequences, and a live statistics dashboard. The confetti celebration on Yes results adds a rewarding touch to every positive outcome. The tool is completely free, works on mobile and desktop, and requires no sign-up. It is the most feature-rich yes and no dice tool available online.</p>
-        </section>
-      </section>
-
-      <!-- FAQ Section -->
-      <section class="faq wheel-faq">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>What is a yes and no dice?</summary>
-            <p>A yes and no dice is a digital decision-making tool that simulates rolling a physical dice. Instead of numbers, the faces show Yes or No. You roll it whenever you need a quick, random answer to a binary question. It is a fun alternative to coin flips.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Is yes and no dice truly random?</summary>
-            <p>Yes, the dice uses a real-time 3D physics simulation with randomized spin, velocity, and position for each roll. The result depends on how the dice physically settles, making it genuinely unpredictable. You can also adjust the probability slider for weighted outcomes.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Can I use yes and no dice for decisions?</summary>
-            <p>Absolutely. The yes and no dice is perfect for everyday decisions like what to eat, whether to go out, or choosing between two options. For bigger decisions, try the Best of 5 mode or use the psychology feature to discover your true preference.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>How does this dice generator work?</summary>
-            <p>The tool uses Three.js for 3D rendering and Cannon.js for physics simulation. When you click Roll, the dice is launched with random force and spin. It bounces off invisible walls and settles naturally. The top face determines your Yes or No result.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Is this better than a coin flip?</summary>
-            <p>The yes and no dice offers several advantages over a coin flip. It includes adjustable probability weighting, multi-round modes, streak tracking, visual statistics, and a psychology feature. The 3D animation also makes it more engaging and satisfying to use than a simple heads or tails flip.</p>
-          </details>
-        </div>
-      </section>
+      ${renderDiceContent(locale)}
+      ${renderDiceFaq(locale)}
     </div>
   `;
 

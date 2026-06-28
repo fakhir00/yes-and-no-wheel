@@ -344,12 +344,33 @@ a:hover {
   background-clip: text;
 }
 
-.hero-subtitle {
+.hero-subtitle,
+.hero-value-prop {
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-secondary);
   font-weight: 500;
   max-width: 600px;
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-lg);
+}
+
+.hero-trust-signals {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.hero-trust-signals span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-full);
+  background: var(--bg-glass);
 }
 
 .hero-cta {

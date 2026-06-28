@@ -2,11 +2,10 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { CustomizationPanel } from '../engine/CustomizationPanel.js';
 import { audioManager } from '../engine/AudioManager.js';
-import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath } from '../i18n.js';
+import { getLocalizedWheelSeedEntries, getWheelSharedText, getWheelUiText, splitLocaleFromPath, buildLocalizedPath } from '../i18n.js';
 import { renderWheelSilo } from './WheelSilo.js';
-import { renderWheelFaq } from './WheelFaq.js';
-import { renderWheelSeoContent } from './WheelSeoContent.js';
 import { createResultOnlyMode } from './resultOnlyMode.js';
+import { getWheelPageContent } from '../wheelContent.js';
 
 const WORD_COLORS = [
   '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6',
@@ -14,16 +13,61 @@ const WORD_COLORS = [
   '#84CC16', '#A855F7', '#22D3EE', '#FB923C', '#E879F9'
 ];
 
+const WORD_FAQ = [
+  { q: 'What is the word wheel?', a: 'The word wheel is a random word picker that spins a wheel of custom text entries. You can type words manually, paste a list, or upload a CSV file. The wheel randomly selects one entry when it stops spinning.' },
+  { q: 'How do I add my own words?', a: 'Three methods are available. Type words directly into the quick-paste textarea (one word per line) and click Load. Upload a CSV or text file using the file picker or drag-and-drop zone. Or use the customization sidebar to add, edit, and remove entries one at a time.' },
+  { q: 'What file formats are supported?', a: 'The word wheel accepts CSV, TXT, and XLSX files. For CSV files, entries can be separated by commas or line breaks. For TXT files, each line is treated as one entry. The file is parsed entirely in your browser — no data is uploaded to a server.' },
+  { q: 'Can I use this for classroom activities?', a: 'The word wheel works well for classrooms. Teachers use it to pick student names for activities, assign groups, select vocabulary words for practice, or choose topics for discussion. The visual spinning makes the selection process engaging for students.' },
+  { q: 'Is there a limit to how many words I can add?', a: 'There is no hard limit, but the wheel becomes harder to read with more than about 50 entries because the segments become very small. For best results, keep the list under 30 entries. The customization sidebar lets you manage any number of entries.' },
+  { q: 'Is the word wheel free?', a: 'The word wheel is completely free with no signup, no ads, and no usage limits. Your word lists are processed entirely in your browser and are not stored on any server.' },
+];
+
+function renderWordFaq(locale) {
+  const c = getWheelPageContent(locale, 'word');
+  if (!c || !c.faq) return '';
+  return `
+    <section class="faq wheel-faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        ${c.faq.map((item) => `<details class="faq-item"><summary>${item.q}</summary><p>${item.a}</p></details>`).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderWordContent(locale) {
+  const c = getWheelPageContent(locale, 'word');
+  if (!c || !c.sections) return '';
+  let html = '<section class="wheel-seo-content page-content">';
+  for (const sec of c.sections) {
+    html += '<section class="content-section">';
+    html += `<h2>${sec.title}</h2>`;
+    if (sec.content) {
+      for (const p of sec.content) html += `<p>${p}</p>`;
+    }
+    if (sec.subsections) {
+      for (const sub of sec.subsections) {
+        html += `<h3>${sub.title}</h3>`;
+        html += `<p>${sub.content}</p>`;
+      }
+    }
+    html += '</section>';
+  }
+  html += '</section>';
+  return html;
+}
+
 export function renderWordWheel(container) {
   const { locale } = splitLocaleFromPath(window.location.pathname);
   const t = getWheelSharedText(locale, 'word');
   const ui = getWheelUiText(locale);
   const spinAgainText = ui.spinAgain || 'Spin Again';
+  const c = getWheelPageContent(locale, 'word');
   container.innerHTML = `
     <div class="wheel-page word-theme">
       <div class="wheel-header">
-        <h1 class="wheel-title">📖 ${t.title}</h1>
-        <p class="wheel-subtitle">${t.subtitle}</p>
+        <h1 class="wheel-title">${c.title || 'Word Wheel'}</h1>
+        <p class="wheel-subtitle">${c.subtitle || ''}</p>
       </div>
 
       <div class="wheel-layout">
@@ -60,33 +104,22 @@ export function renderWordWheel(container) {
         <div class="wheel-sidebar" id="wordSidebar"></div>
       </div>
 
-      <div class="wheel-instructions howto-tutorial-style" style="margin: 2rem 0; text-align: center; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1.5rem;">
-        <p style="margin: 0; font-size: 1.15rem;">🎲 <strong>Need a quick answer?</strong> Try our <a href="/yes-and-no-dice/" style="color: var(--accent-primary); font-weight: 700; text-decoration: underline;">Yes and No Dice tool</a> for a realistic 3D experience.</p>
-      </div>
-
       <div class="wheel-instructions howto-tutorial-style">
-        <h2>${t.howToUse}</h2>
-        <p class="howto-intro">${t.howToIntro}</p>
+        <h2>${c.howToUse?.title || 'How to Use the Word Wheel'}</h2>
+        <p class="howto-intro">${c.howToUse?.intro || ''}</p>
         <div class="howto-steps-list">
+          ${(c.howToUse?.steps || []).map((step, i) => `
           <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <p class="howto-step-desc">${t.step1Desc}</p>
+            <h3 class="howto-step-heading"><span class="howto-step-num">${i + 1}</span> ${step.title}</h3>
+            <p class="howto-step-desc">${step.desc}</p>
           </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <p class="howto-step-desc">${t.step2Desc}</p>
-          </div>
-          <hr class="howto-divider">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
+          ${i < (c.howToUse?.steps?.length || 0) - 1 ? '<hr class="howto-divider">' : ''}
+          `).join('')}
         </div>
       </div>
 
-      ${renderWheelSeoContent(t.title, 'word', locale)}
-      ${renderWheelFaq(locale)}
+      ${renderWordContent(locale)}
+      ${renderWordFaq(locale)}
       ${renderWheelSilo(locale, 'word')}
     </div>
   `;
@@ -126,10 +159,8 @@ export function renderWordWheel(container) {
     onSpinAgain: () => { }
   });
 
-  // Spin button
   document.getElementById('wordSpinBtn').addEventListener('click', () => engine.spin());
 
-  // Quick paste
   document.getElementById('wordPasteApply').addEventListener('click', () => {
     const text = document.getElementById('wordQuickPaste').value;
     const entries = text.split('\n').map(s => s.trim()).filter(s => s);
@@ -139,14 +170,12 @@ export function renderWordWheel(container) {
     }
   });
 
-  // File upload
   document.getElementById('wordFileInput').addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (!file) return;
     const reader = new FileReader();
     reader.onload = (ev) => {
       const text = ev.target.result;
-      // Parse CSV or plain text
       let entries;
       if (file.name.endsWith('.csv')) {
         entries = text.split(/[\r\n,]+/).map(s => s.trim()).filter(s => s && s !== '');
@@ -162,7 +191,6 @@ export function renderWordWheel(container) {
     reader.readAsText(file);
   });
 
-  // Drag & drop
   const dropZone = document.getElementById('wordDropZone');
   dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
   dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));

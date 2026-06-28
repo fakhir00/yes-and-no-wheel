@@ -2,8 +2,7 @@
 import { WheelEngine } from '../engine/WheelEngine.js';
 import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
-import { buildLocalizedPath, getHomeText, getLocalizedRouteContent, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
-import { renderWheelSeoContent } from '../wheels/WheelSeoContent.js';
+import { buildLocalizedPath, getHomeText, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
 import { EN_HOME_HERO_FALLBACK, extractHomeHero, renderHomeMarkdownToHtml, getLocalizedHomeMarkdownFile } from '../utils/homeMarkdown.js';
 
@@ -17,28 +16,16 @@ export function renderHomePage(container) {
       title: `${t.heroTitle} — ${t.heroSuffix}`,
       subtitle: t.heroSubtitle
     };
-  const wheels = [
-    { id: 'rainbow', icon: '🌈', color: '#FF6B6B' },
-    { id: 'wheel-of-fate', icon: '⚔️', color: '#6B2D8B' },
-    { id: 'word', icon: '📖', color: '#3B82F6' },
-    { id: 'spin-the-wheel-truth-or-dare', icon: '🎉', color: '#FF006E' },
-    { id: 'dti-theme', icon: '👗', color: '#FFB6C1' },
-    { id: 'country', icon: '🌍', color: '#059669' },
-    { id: 'zodiac', icon: '✨', color: '#FFD700' },
-    { id: 'hair-color', icon: '💇', color: '#FF69B4' }
-  ].map((wheel) => ({
-    ...wheel,
-    title: getLocalizedRouteContent(locale, wheel.id).title,
-    desc: t.wheelDescriptions?.[wheel.id] || getLocalizedRouteContent(locale, wheel.id).subtitle
-  }));
 
   container.innerHTML = `
     <div class="home-page">
-      <!-- YES / NO PICKER WHEEL SECTION -->
       <section class="yesno-section">
         <div class="yesno-header">
           <h1 class="hero-title" id="homeHeroTitle">${heroText.title}</h1>
-          <h2 class="hero-subtitle" id="homeHeroSubtitle">${heroText.subtitle}</h2>
+          <p class="hero-value-prop" id="homeHeroSubtitle">${heroText.subtitle}</p>
+          <div class="hero-trust-signals" id="homeTrustSignals">
+            <span>Free</span><span>No signup</span><span>Private</span><span>Truly random</span>
+          </div>
         </div>
 
         <div class="yesno-layout">
@@ -91,73 +78,10 @@ export function renderHomePage(container) {
           </div>
         </div>
 
-        <!-- Result display -->
         <div class="result-display yesno-result-display" id="yesnoResult"></div>
       </section>
 
-      <!-- HOW IT WORKS -->
-      <section class="how-it-works howto-tutorial">
-        <h2 class="section-title">${t.howTitle}</h2>
-        <p class="howto-intro">${t.howIntro}</p>
-
-        <div class="howto-steps-list">
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">1</span> ${t.step1Title}</h2>
-            <ul class="howto-step-options">
-              <li>${t.step1Opt1}</li>
-              <li>${t.step1Opt2}</li>
-            </ul>
-          </div>
-
-          <hr class="howto-divider">
-
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">2</span> ${t.step2Title}</h2>
-            <ul class="howto-step-options">
-              <li>${t.step2Option}</li>
-            </ul>
-          </div>
-
-          <hr class="howto-divider">
-
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">3</span> ${t.step3Title}</h2>
-            <p class="howto-step-desc">${t.step3Desc}</p>
-          </div>
-
-          <hr class="howto-divider">
-
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">4</span> ${t.step4Title}</h2>
-            <p class="howto-step-desc">${t.step4Desc}</p>
-          </div>
-
-          <hr class="howto-divider">
-
-          <div class="howto-step-item">
-            <h2 class="howto-step-heading"><span class="howto-step-num">5</span> ${t.step5Title}</h2>
-            <p class="howto-step-desc">${t.step5Desc}</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHEEL HUB CARDS -->
-      <section class="wheels-grid" id="about">
-        <h2 class="section-title">${t.exploreTitle}</h2>
-        <p class="section-subtitle">${t.exploreSubtitle}</p>
-        <div class="cards-grid">
-          ${wheels.map(w => `
-            <a href="${buildLocalizedPath(locale, w.id)}" class="wheel-card" style="--card-accent:${w.color}">
-              <div class="wheel-card-icon">${w.icon}</div>
-              <h3 class="wheel-card-title">${w.title}</h3>
-              <p class="wheel-card-desc">${w.desc}</p>
-              <span class="wheel-card-cta">${t.spinNow} →</span>
-            </a>
-          `).join('')}
-        </div>
-      </section>
-
-      <div class="home-rich-content page-content wheel-seo-content" id="homeRichContent">${renderWheelSeoContent(t.heroTitle, 'home', locale)}</div>
+      <div class="home-rich-content page-content" id="homeRichContent"></div>
     </div>`;
 
   hydrateLocalizedHomeMarkdown(container, locale, t);
