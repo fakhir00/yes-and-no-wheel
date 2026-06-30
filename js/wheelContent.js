@@ -1506,110 +1506,110 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "रेन्बो व्हील्",
-            "subtitle": "रंगिरॆ व्हिल्.",
+            "title": "వర్ణపట చక్రం",
+            "subtitle": "రంగుల చక్రం.",
             "howToUse": {
-                  "title": "How to Use the Rainbow Wheel",
-                  "intro": "The rainbow wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "వర్ణపట చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "వర్ణపట చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Review the Entries",
-                              "desc": "Look at the default entries on the wheel. Each segment has a label and a distinct rainbow color. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "ఎంట్రీలను సమీక్షించండి",
+                              "desc": "చక్రంపై డిఫాల్ట్ ఎంట్రీలను చూడండి. ప్రతి విభాగానికి లేబుల్ మరియు విభిన్న వర్ణపట రంగు ఉంటుంది. మీకు కావలసినవి ఉంచండి, లేదా మీ స్వంత ఎంట్రీలను జోడించడానికి అనుకూలన సైడ్‌బార్ తెరవండి."
                         },
                         {
-                              "title": "Customize If Needed",
-                              "desc": "Use the sidebar to rename entries, change colors, or adjust the number of segments. The auto-gradient button regenerates the color distribution to keep all segments visually distinct."
+                              "title": "అవసరమైతే అనుకూలీకరించండి",
+                              "desc": "ఎంట్రీలను పేరు మార్చడానికి, రంగులు మార్చడానికి లేదా విభాగాల సంఖ్యను సర్దుబాటు చేయడానికి సైడ్‌బార్ ఉపయోగించండి. ఆటో-గ్రేడియంట్ బటన్ అన్ని విభాగాలు దృశ్యపరంగా విభిన్నంగా ఉండేలా రంగు పంపిణీని మళ్ళీ రూపొందిస్తుంది."
                         },
                         {
-                              "title": "Spin and See the Result",
-                              "desc": "Press the spin button and watch the rainbow colors blur as the wheel rotates. When it stops, the winning segment appears with a fanfare. Use the result to make your decision."
+                              "title": "తిప్పి ఫలితాన్ని చూడండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు చక్రం తిరిగేటప్పుడు వర్ణపట రంగులు మసకగా మారడం చూడండి. ఇది ఆగినప్పుడు, విజేత విభాగం ఫ్యాన్‌ఫేర్‌తో కనిపిస్తుంది. మీ నిర్ణయం తీసుకోవడానికి ఫలితాన్ని ఉపయోగించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Rainbow Wheel?",
+                        "title": "వర్ణపట చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "A rainbow wheel is a colorful variation of the classic spinning wheel that assigns a distinct color from the visible light spectrum to each segment. Where a standard yes or no wheel might use two solid colors, a rainbow wheel distributes hues like red, orange, yellow, green, blue, indigo, and violet across the entire wheel, creating a visually striking spinning experience.",
-                              "The concept behind the rainbow wheel draws from the same principle that makes rainbow gradients popular in design, art, and nature. Each color occupies an equal portion of the wheel, so the visual variety does not affect the randomness of the outcome. The result is still determined by physics-based simulation, not by color preference or segment size.",
-                              "Rainbow wheels are popular with educators, event organizers, and anyone who finds a plain two-color spinner too plain. The spectrum of colors makes each spin feel more lively, which is especially useful when you need to hold attention in a group setting or make a decision feel more fun than it actually is."
+                              "వర్ణపట చక్రం అనేది క్లాసిక్ స్పిన్నింగ్ చక్రం యొక్క రంగురంగుల వైవిధ్యం, ఇది దృశ్యమాన కాంతి వర్ణపటం నుండి ప్రతి విభాగానికి విభిన్న రంగును కేటాయిస్తుంది. ప్రామాణిక అవును/కాదు చక్రం రెండు గట్టి రంగులను ఉపయోగించే చోట, వర్ణపట చక్రం ఎరుపు, నారింజ, పసుపు, ఆకుపచ్చ, నీలం, ఇండిగో మరియు ఊదా రంగులను మొత్తం చక్రం అంతటా పంపిణీ చేస్తుంది, దృశ్యపరంగా ఆకట్టుకునే స్పిన్నింగ్ అనుభవాన్ని సృష్టిస్తుంది.",
+                              "వర్ణపట చక్రం వెనుక ఉన్న భావన డిజైన్, కళ మరియు ప్రకృతిలో వర్ణపట గ్రేడియంట్లను ప్రజాదరణ చేసేదానికి సమానమైన సూత్రం నుండి తీసుకోబడింది. ప్రతి రంగు చక్రంలో సమాన భాగాన్ని ఆక్రమిస్తుంది, కాబట్టి దృశ్య వైవిధ్యం ఫలితం యాదృచ్ఛికతను ప్రభావితం చేయదు. ఫలితం ఇప్పటికీ భౌతిక-ఆధారిత సిమ్యులేషన్ ద్వారా నిర్ణయించబడుతుంది, రంగు ప్రాధాన్యత లేదా విభాగం పరిమాణం ద్వారా కాదు.",
+                              "వర్ణపట చక్రాలు విద్యావేత్తలు, కార్యక్రమ నిర్వాహకులు మరియు సాదా రెండు-రంగు స్పిన్నర్ చాలా సాదాగా అనిపించే ఎవరికైనా ప్రజాదరణ పొందాయి. రంగుల వర్ణపటం ప్రతి స్పిన్‌ను మరింత ఉల్లాసంగా అనిపిస్తుంది, ఇది సమూహ సెట్టింగ్‌లో దృష్టిని నిలుపుకోవాల్సినప్పుడు లేదా నిర్ణయాన్ని వాస్తవం కంటే ఎక్కువ ఆనందంగా అనిపించాల్సినప్పుడు ప్రత్యేకంగా ఉపయోగకరంగా ఉంటుంది."
                         ]
                   },
                   {
-                        "title": "How the Rainbow Wheel Works",
+                        "title": "వర్ణపట చక్రం ఎలా పనిచేస్తుంది",
                         "content": [
-                              "The rainbow wheel uses the same randomization engine as every other spinner on this site. When you click the spin button, the wheel receives a random starting velocity and begins rotating. Browser-based physics simulate friction and deceleration until the wheel comes to a complete stop on a random segment.",
-                              "What makes the rainbow version visually different is the color distribution. Each segment is assigned a hue from a circular color gradient, typically based on the HSL color model. This means adjacent segments always have distinct, high-contrast colors, making it easy to see where the wheel lands even at high speed.",
-                              "The auto-gradient feature regenerates the color distribution based on the current number of entries. If you add or remove segments, the wheel recalculates the spacing to keep colors evenly distributed."
+                              "వర్ణపట చక్రం ఈ సైట్‌లోని ప్రతి ఇతర స్పిన్నర్ వలె అదే యాదృచ్ఛిక ఇంజిన్‌ను ఉపయోగిస్తుంది. మీరు స్పిన్ బటన్ క్లిక్ చేసినప్పుడు, చక్రం యాదృచ్ఛిక ప్రారంభ వేగాన్ని అందుకుంటుంది మరియు తిరగడం ప్రారంభిస్తుంది. బ్రౌజర్-ఆధారిత భౌతికశాస్త్రం చక్రం యాదృచ్ఛిక విభాగంపై పూర్తిగా ఆగేవరకు ఘర్షణ మరియు డీసెలరేషన్‌ను సిమ్యులేట్ చేస్తుంది.",
+                              "వర్ణపట వెర్షన్‌ను దృశ్యపరంగా భిన్నంగా చేసేది రంగు పంపిణీ. ప్రతి విభాగానికి వృత్తాకార రంగు గ్రేడియంట్ నుండి రంగు కేటాయించబడుతుంది, సాధారణంగా HSL రంగు మోడల్ ఆధారంగా. దీని అర్థం పక్కపక్కన ఉన్న విభాగాలు ఎల్లప్పుడూ విభిన్న, అధిక-కాంట్రాస్ట్ రంగులను కలిగి ఉంటాయి, అధిక వేగంలో కూడా చక్రం ఎక్కడ పడుతుందో చూడటం సులభం చేస్తుంది.",
+                              "ఆటో-గ్రేడియంట్ ఫీచర్ ప్రస్తుత ఎంట్రీల సంఖ్య ఆధారంగా రంగు పంపిణీని మళ్ళీ రూపొందిస్తుంది. మీరు విభాగాలను జోడించినా లేదా తీసివేసినా, చక్రం రంగులు సమానంగా పంపిణీ చేయబడేలా స్పేసింగ్‌ను మళ్ళీ లెక్కిస్తుంది."
                         ]
                   },
                   {
-                        "title": "When to Use a Rainbow Wheel",
+                        "title": "వర్ణపట చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "Rainbow wheels work best in situations where visual engagement matters as much as the random outcome. Here are the most common scenarios where a colorful spinner adds value:"
+                              "వర్ణపట చక్రాలు దృశ్య ఎంగేజ్‌మెంట్ యాదృచ్ఛిక ఫలితంతో సమానంగా ముఖ్యమైన పరిస్థితులలో ఉత్తమంగా పనిచేస్తాయి. రంగురంగుల స్పిన్నర్ విలువను జోడించే అత్యంత సాధారణ దృశ్యాలు ఇక్కడ ఉన్నాయి:"
                         ],
                         "subsections": [
                               {
-                                    "title": "Classroom and Educational Settings",
-                                    "content": "Teachers use rainbow wheels to pick students for activities, assign groups, or make lesson transitions more exciting. The bright colors hold children's attention better than a plain spinner, and the visual variety makes repeated spins feel fresh throughout a school day."
+                                    "title": "తరగతి గది మరియు విద్యా సెట్టింగ్‌లు",
+                                    "content": "ఉపాధ్యాయులు కార్యకలాపాల కోసం విద్యార్థులను ఎంపిక చేయడానికి, సమూహాలను కేటాయించడానికి లేదా పాఠ మార్పులను మరింత ఉత్తేజకరంగా చేయడానికి వర్ణపట చక్రాలను ఉపయోగిస్తారు. ప్రకాశవంతమైన రంగులు పిల్లల దృష్టిని సాదా స్పిన్నర్ కంటే మెరుగ్గా నిలుపుకుంటాయి, మరియు దృశ్య వైవిధ్యం పాఠశాల దినం అంతటా పునరావృత స్పిన్లను తాజాగా అనిపిస్తుంది."
                               },
                               {
-                                    "title": "Party Games and Social Gatherings",
-                                    "content": "At parties, a rainbow wheel adds flair to decision-making games. Whether you are deciding who goes next, picking a challenge, or choosing a snack, the colorful display makes the moment feel more like a game and less like a random assignment."
+                                    "title": "పార్టీ ఆటలు మరియు సామాజిక సమావేశాలు",
+                                    "content": "పార్టీలలో, వర్ణపట చక్రం నిర్ణయం తీసుకునే ఆటలకు ఫ్లేర్ జోడిస్తుంది. తదుపరి ఎవరు వెళ్తారో నిర్ణయించడం, సవాల్ ఎంచుకోవడం లేదా స్నాక్ ఎంచుకోవడం ఏదైనా, రంగురంగుల ప్రదర్శన క్షణాన్ని ఆట లాగా తక్కువ యాదృచ్ఛిక అసైన్‌మెంట్ లాగా అనిపించేలా చేస్తుంది."
                               },
                               {
-                                    "title": "Creative Projects and Design Inspiration",
-                                    "content": "Designers and artists sometimes use a rainbow wheel to pick color palettes, assign themes, or make random creative decisions. The fact that the wheel itself displays a full spectrum makes it a natural fit for creative contexts."
+                                    "title": "సృజనాత్మక ప్రాజెక్టులు మరియు డిజైన్ ప్రేరణ",
+                                    "content": "డిజైనర్లు మరియు కళాకారులు కొన్నిసార్లు రంగు ప్యాలెట్లను ఎంపిక చేయడానికి, థీమ్‌లను కేటాయించడానికి లేదా యాదృచ్ఛిక సృజనాత్మక నిర్ణయాలు తీసుకోవడానికి వర్ణపట చక్రాన్ని ఉపయోగిస్తారు. చక్రం స్వయంగా పూర్తి వర్ణపటాన్ని ప్రదర్శించే వాస్తవం సృజనాత్మక సందర్భాలకు సహజమైన ఫిట్‌గా చేస్తుంది."
                               },
                               {
-                                    "title": "Daily Decisions That Need a Fun Twist",
-                                    "content": "For personal use, the rainbow wheel turns mundane choices into small moments of entertainment. Picking what to eat, deciding which errand to run first, or choosing a weekend activity all become slightly more enjoyable when the wheel brings a burst of color to the process."
+                                    "title": "ఫన్ ట్విస్ట్ అవసరమైన రోజువారీ నిర్ణయాలు",
+                                    "content": "వ్యక్తిగత ఉపయోగం కోసం, వర్ణపట చక్రం సాధారణ ఎంపికలను వినోదం యొక్క చిన్న క్షణాలుగా మారుస్తుంది. ఏమి తినాలో ఎంచుకోవడం, ఏ పని ముందుగా నడపాలో నిర్ణయించడం లేదా వారాంతం కార్యకలాపాన్ని ఎంచుకోవడం అన్నీ చక్రం ప్రక్రియకు రంగు తుఫాను తెచ్చినప్పుడు కొంచెం ఆనందంగా మారతాయి."
                               }
                         ]
                   },
                   {
-                        "title": "Rainbow Wheel vs Standard Yes or No Wheel",
+                        "title": "వర్ణపట చక్రం vs ప్రామాణిక అవును/కాదు చక్రం",
                         "content": [
-                              "Both tools use the same underlying randomization. The difference is entirely visual. A standard yes or no wheel displays two segments with solid contrasting colors. A rainbow wheel applies a spectrum gradient across all segments, regardless of how many there are.",
-                              "Choose the standard wheel when you want a clean, minimal look and do not need extra visual stimulation. Choose the rainbow wheel when you want the spin to feel more like an event."
+                              "రెండు సాధనాలు అదే అంతర్లీన యాదృచ్ఛికతను ఉపయోగిస్తాయి. తేడా పూర్తిగా దృశ్యపరమైనది. ప్రామాణిక అవును/కాదు చక్రం గట్టి వ్యతిరేక రంగులతో రెండు విభాగాలను ప్రదర్శిస్తుంది. వర్ణపట చక్రం ఎన్ని ఉన్నా అన్ని విభాగాలపై వర్ణపట గ్రేడియంట్‌ను వర్తింపజేస్తుంది.",
+                              "మీకు క్లీన్, కనీస రూపం కావాలి మరియు అదనపు దృశ్య ఉత్తేజం అవసరం లేనప్పుడు ప్రామాణిక చక్రాన్ని ఎంచుకోండి. స్పిన్ మరింత ఈవెంట్ లాగా అనిపించాలనుకున్నప్పుడు వర్ణపట చక్రాన్ని ఎంచుకోండి."
                         ]
                   },
                   {
-                        "title": "Customizing the Rainbow Wheel",
+                        "title": "వర్ణపట చక్రాన్ని అనుకూలీకరించడం",
                         "content": [
-                              "The customization panel lets you change almost everything about the wheel. You can add or remove entries, rename segments, and adjust colors. The auto-gradient button regenerates the color distribution so that all segments remain visually distinct even as the count changes.",
-                              "For users who want more control, the sidebar panel provides entry management, visual styling, and physics settings. You can adjust spin duration, friction, and result display behavior."
+                              "అనుకూలన ప్యానెల్ చక్రం గురించి దాదాపు ప్రతిదాన్ని మార్చడానికి మిమ్మల్ని అనుమతిస్తుంది. మీరు ఎంట్రీలను జోడించవచ్చు లేదా తీసివేయవచ్చు, విభాగాలను పేరు మార్చవచ్చు మరియు రంగులను సర్దుబాటు చేయవచ్చు. ఆటో-గ్రేడియంట్ బటన్ సంఖ్య మారినప్పుడు కూడా అన్ని విభాగాలు దృశ్యపరంగా విభిన్నంగా ఉండేలా రంగు పంపిణీని మళ్ళీ రూపొందిస్తుంది.",
+                              "ఎక్కువ నియంత్రణ కావలసిన వినియోగదారుల కోసం, సైడ్‌బార్ ప్యానెల్ ఎంట్రీ నిర్వహణ, దృశ్య శైలి మరియు భౌతిక సెట్టింగ్‌లను అందిస్తుంది. మీరు స్పిన్ వ్యవధి, ఘర్షణ మరియు ఫలిత ప్రదర్శన ప్రవర్తనను సర్దుబాటు చేయవచ్చు."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a rainbow wheel?",
-                        "a": "A rainbow wheel is a colorful spinning tool that assigns a rainbow gradient to each segment. Instead of plain text labels, every slice gets a distinct hue from the visible light spectrum, making the spin more visually engaging while keeping the same probability as a standard spinner."
+                        "q": "వర్ణపట చక్రం అంటే ఏమిటి?",
+                        "a": "వర్ణపట చక్రం అనేది రంగురంగుల స్పిన్నింగ్ సాధనం, ఇది ప్రతి విభాగానికి వర్ణపట గ్రేడియంట్ కేటాయిస్తుంది. సాదా టెక్స్ట్ లేబుల్లకు బదులుగా, ప్రతి ముక్క దృశ్యమాన కాంతి వర్ణపటం నుండి విభిన్న రంగును పొందుతుంది, ప్రామాణిక స్పిన్నర్ వలె అదే సంభావ్యతను ఉంచుతూ స్పిన్‌ను మరింత దృశ్యపరంగా ఆకట్టుకునేలా చేస్తుంది."
                   },
                   {
-                        "q": "How is a rainbow wheel different from a regular yes or no wheel?",
-                        "a": "A regular yes or no wheel uses two segments with solid colors. A rainbow wheel distributes multiple colors evenly around the wheel, so even when the outcome is the same, the visual presentation is more dynamic. The randomization logic is identical."
+                        "q": "వర్ణపట చక్రం క్రమబద్ధమైన అవును/కాదు చక్రం నుండి ఎలా భిన్నంగా ఉంటుంది?",
+                        "a": "క్రమబద్ధమైన అవును/కాదు చక్రం గట్టి రంగులతో రెండు విభాగాలను ఉపయోగిస్తుంది. వర్ణపట చక్రం బహుళ రంగులను చక్రం చుట్టూ సమానంగా పంపిణీ చేస్తుంది, కాబట్టి ఫలితం అదేగా ఉన్నా, దృశ్య ప్రదర్శన మరింత డైనమిక్‌గా ఉంటుంది. యాదృచ్ఛిక తర్కం సమానంగా ఉంటుంది."
                   },
                   {
-                        "q": "Is the rainbow wheel truly random?",
-                        "a": "Yes. The wheel uses browser-based physics simulation with randomized starting velocity, friction, and angle. Each spin produces an unpredictable result because the initial conditions vary every time."
+                        "q": "వర్ణపట చక్రం నిజంగా యాదృచ్ఛికంగా ఉందా?",
+                        "a": "అవును. చక్రం యాదృచ్ఛికీకరించిన ప్రారంభ వేగం, ఘర్షణ మరియు కోణంతో బ్రౌజర్-ఆధారిత భౌతిక సిమ్యులేషన్‌ను ఉపయోగిస్తుంది. ప్రతి స్పిన్ ప్రారంభ పరిస్థితులు ప్రతిసారీ మారుతుంది కాబట్టి ఊహించలేని ఫలితాన్ని ఉత్పత్తి చేస్తుంది."
                   },
                   {
-                        "q": "Can kids use the rainbow wheel?",
-                        "a": "The rainbow wheel is well-suited for children. The bright colors make it visually appealing for classroom activities, and the simple spin mechanic requires no reading or setup."
+                        "q": "పిల్లలు వర్ణపట చక్రాన్ని ఉపయోగించవచ్చా?",
+                        "a": "వర్ణపట చక్రం పిల్లలకు బాగా అనుకూలంగా ఉంటుంది. ప్రకాశవంతమైన రంగులు దానిని తరగతి గది కార్యకలాపాల కోసం దృశ్యపరంగా ఆకర్షణీయంగా చేస్తాయి, మరియు సరళమైన స్పిన్ మెకానిక్ చదవడం లేదా సెటప్ అవసరం లేదు."
                   },
                   {
-                        "q": "Can I add my own entries to the rainbow wheel?",
-                        "a": "Yes. The customization sidebar lets you add, remove, or rename any entry on the wheel. You can type custom labels, change segment colors, and adjust the number of slices."
+                        "q": "నేను నా స్వంత ఎంట్రీలను వర్ణపట చక్రానికి జోడించవచ్చా?",
+                        "a": "అవును. అనుకూలన సైడ్‌బార్ చక్రంపై ఏదైనా ఎంట్రీని జోడించడానికి, తీసివేయడానికి లేదా పేరు మార్చడానికి మిమ్మల్ని అనుమతిస్తుంది. మీరు కస్టమ్ లేబుల్లను టైప్ చేయవచ్చు, విభాగం రంగులను మార్చవచ్చు మరియు ముక్కల సంఖ్యను సర్దుబాటు చేయవచ్చు."
                   },
                   {
-                        "q": "Is the rainbow wheel free to use?",
-                        "a": "The rainbow wheel is completely free with no signup, no ads covering the tool, and no usage limits."
+                        "q": "వర్ణపట చక్రం ఉచితంగా ఉపయోగించవచ్చా?",
+                        "a": "వర్ణపట చక్రం సైనప్, సాధనాన్ని కవర్ చేసే ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   },
                   {
-                        "q": "Does the rainbow wheel work on mobile?",
-                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport, and the spin button and result display adjust for touch interaction."
+                        "q": "వర్ణపట చక్రం మొబైల్‌పై పనిచేస్తుందా?",
+                        "a": "చక్రం ఏదైనా స్క్రీన్ పరిమాణానికి అనుగుణంగా ఉంటుంది. ఫోన్లు మరియు టాబ్లెట్లపై, క్యాన్వాస్ వ్యూపోర్ట్‌కు అనుగుణంగా స్కేల్ అవుతుంది, మరియు స్పిన్ బటన్ మరియు ఫలిత ప్రదర్శన టచ్ పరస్పర చర్య కోసం సర్దుబాటు అవుతాయి."
                   }
             ]
       }
@@ -3090,108 +3090,108 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "नियति व्हील्",
-            "subtitle": "नियति-थीम् स्पिनर्.",
+            "title": "విధి చక్రం",
+            "subtitle": "విధి-థీమ్ స్పిన్నర్.",
             "howToUse": {
-                  "title": "How to Use the Wheel of Fate",
-                  "intro": "The wheel of fate is ready to spin in seconds. Here is how it works:",
+                  "title": "విధి చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "విధి చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Review the Outcomes",
-                              "desc": "Look at the default outcomes on the wheel. Each segment represents a possible fate. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "ఫలితాలను సమీక్షించండి",
+                              "desc": "చక్రంపై డిఫాల్ట్ ఫలితాలను చూడండి. ప్రతి విభాగం సాధ్యమైన విధిని సూచిస్తుంది. మీకు కావలసినవి ఉంచండి, లేదా మీ స్వంత ఫలితాలను జోడించడానికి అనుకూలన సైడ్‌బార్ తెరవండి."
                         },
                         {
-                              "title": "Adjust the Weights",
-                              "desc": "Use the weight sliders below the wheel to make certain outcomes more or less likely. A weight of 3x makes an outcome three times more probable than a 1x weight."
+                              "title": "బరువులను సర్దుబాటు చేయండి",
+                              "desc": "కొన్ని ఫలితాలను ఎక్కువ లేదా తక్కువ సంభావ్యంగా చేయడానికి చక్రం క్రింద బరువు స్లైడర్లను ఉపయోగించండి. 3x బరువు ఫలితాన్ని 1x బరువు కంటే మూడు రెట్లు ఎక్కువ సంభావ్యంగా చేస్తుంది."
                         },
                         {
-                              "title": "Spin and Accept the Result",
-                              "desc": "Press the spin button and watch the cosmic wheel rotate. When it stops, the winning fate appears with a dramatic reveal. Accept what the fates have chosen."
+                              "title": "తిప్పి ఫలితాన్ని అంగీకరించండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు అంతరిక్ష చక్రం తిరగడం చూడండి. ఇది ఆగినప్పుడు, విజేత విధి నాటకీయ వెల్లడితో కనిపిస్తుంది. విధులు ఎంచుకున్నదాన్ని అంగీకరించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Wheel of Fate?",
+                        "title": "విధి చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The wheel of fate is a decision spinner built around the idea of destiny. Where a standard random wheel presents neutral choices, the wheel of fate frames outcomes as dramatic turning points — moments where the course of events shifts in an unexpected direction. The dark cosmic visual theme, weighted probability system, and thematic default entries all reinforce this sense of gravity.",
-                              "The concept draws from centuries of cultural storytelling about fate, destiny, and the forces that shape human experience. From the Greek Moirai who spun the thread of life, to the medieval Rota Fortunae that symbolized the rise and fall of kings, the idea of a spinning wheel determining outcomes has deep roots in mythology and philosophy.",
-                              "This digital version translates that mythology into a practical tool. The wheel of fate gives users a way to let chance decide between multiple outcomes while retaining control over how likely each outcome is."
+                              "విధి చక్రం అనేది నియతి భావన చుట్టూ నిర్మించిన నిర్ణయ స్పిన్నర్. ప్రామాణిక యాదృచ్ఛిక చక్రం తటస్థ ఎంపికలను ప్రదర్శించే చోట, విధి చక్రం ఫలితాలను నాటకీయ మలుపులుగా చిత్రీకరిస్తుంది — సంఘటనల కోర్సు అనూహ్య దిశలో మారే క్షణాలు. చీకటి అంతరిక్ష దృశ్య థీమ్, బరువు సంభావ్యత వ్యవస్థ మరియు థీమ్ డిఫాల్ట్ ఎంట్రీలు ఈ గురుత్వ భావనను బలపరుస్తాయి.",
+                              "ఈ భావన విధి, నియతి మరియు మానవ అనుభవాన్ని రూపొందించే శక్తుల గురించి శతాబ్దాల సాంస్కృతిక కథనాల నుండి తీసుకోబడింది. జీవిత దారాన్ని తిప్పిన గ్రీకు మోయిరాయి నుండి రాజుల ఎదుగుదల మరియు పతనాన్ని సూచించిన మధ్యయుగ రోటా ఫోర్టునే వరకు, ఫలితాలను నిర్ణయించే స్పిన్నింగ్ చక్రం ఆలోచన పురాణం మరియు తత్వశాస్త్రంలో లోతైన మూలాలను కలిగి ఉంది.",
+                              "ఈ డిజిటల్ వెర్షన్ ఆ పురాణాన్ని ఆచరణాత్మక సాధనంగా అనువదిస్తుంది. విధి చక్రం వినియోగదారులకు ప్రతి ఫలితం ఎంత సంభావ్యమో నియంత్రణను నిలుపుకుంటూనే అనేక ఫలితాల మధ్య సంభావ్యతను నిర్ణయించనివ్వే మార్గాన్ని ఇస్తుంది."
                         ]
                   },
                   {
-                        "title": "The History Behind the Wheel of Fate",
+                        "title": "విధి చక్రం వెనుక చరిత్ర",
                         "content": [
-                              "The idea of fate as a spinning wheel appears across many cultures. In Greek mythology, the three Moirai — Clotho, Lachesis, and Atropos — controlled the thread of human life. Clotho spun it, Lachesis measured it, and Atropos cut it.",
-                              "The Roman concept of Fortuna expanded this idea. Fortuna was the goddess of chance, and her wheel — the Rota Fortunae — could raise a person to power or cast them into ruin without warning.",
-                              "In modern culture, the wheel of fate appears in video games, fantasy literature, and tabletop RPGs as a mechanic for determining random outcomes with narrative weight."
+                              "విధి స్పిన్నింగ్ చక్రంగా భావన అనేక సంస్కృతులలో కనిపిస్తుంది. గ్రీకు పురాణంలో, మూడు మోయిరాయి — క్లోథో, లాచెసిస్ మరియు అట్రోపోస్ — మానవ జీవిత దారాన్ని నియంత్రించారు. క్లోథో దానిని తిప్పింది, లాచెసిస్ దానిని కొలిచింది, మరియు అట్రోపోస్ దానిని కత్తిరించింది.",
+                              "రోమన్ ఫోర్టునా భావన ఈ ఆలోచనను విస్తరించింది. ఫోర్టునా సంభావ్యత దేవత, మరియు ఆమె చక్రం — రోటా ఫోర్టునే — వ్యక్తిని హెచ్చరిక లేకుండా అధికారంలోకి ఎత్తవచ్చు లేదా శిథిలాలలోకి పడవేయవచ్చు.",
+                              "ఆధునిక సంస్కృతిలో, విధి చక్రం వీడియో గేమ్‌లు, ఫాంటసీ సాహిత్యం మరియు టేబుల్‌టాప్ ఆర్‌పిజిలలో నారేటివ్ బరువుతో యాదృచ్ఛిక ఫలితాలను నిర్ణయించే మెకానిక్‌గా కనిపిస్తుంది."
                         ]
                   },
                   {
-                        "title": "How the Weighted System Works",
+                        "title": "బరువు వ్యవస్థ ఎలా పనిచేస్తుంది",
                         "content": [
-                              "Unlike a standard spinner where every outcome has equal probability, the wheel of fate includes a weight editor. Each segment has a slider that ranges from 1x to 5x. A weight of 1x gives the segment normal probability.",
-                              "This system is useful when you want certain outcomes to be rare while others are common. For example, in an RPG scenario, you might set Victory to 4x and Betrayal to 1x.",
-                              "The customization sidebar also lets you add or remove entries entirely. When you change the entry list, the weight editor resets to even distribution across all new segments."
+                              "ప్రతి ఫలితం సమాన సంభావ్యతను కలిగి ఉన్న ప్రామాణిక స్పిన్నర్ వలె కాకుండా, విధి చక్రంలో బరువు ఎడిటర్ ఉంటుంది. ప్రతి విభాగానికి 1x నుండి 5x వరకు స్లైడర్ ఉంటుంది. 1x బరువు విభాగానికి సాధారణ సంభావ్యతను ఇస్తుంది.",
+                              "కొన్ని ఫలితాలు అరుదుగా మరియు ఇతరవి సాధారణంగా ఉండాలనుకున్నప్పుడు ఈ వ్యవస్థ ఉపయోగకరంగా ఉంటుంది. ఉదాహరణకు, ఆర్‌పిజి దృశ్యంలో, మీరు విజయాన్ని 4x మరియు ద్రోహాన్ని 1x గా సెట్ చేయవచ్చు.",
+                              "అనుకూలన సైడ్‌బార్ మీకు ఎంట్రీలను పూర్తిగా జోడించడానికి లేదా తీసివేయడానికి కూడా అనుమతిస్తుంది. మీరు ఎంట్రీ జాబితాను మార్చినప్పుడు, బరువు ఎడిటర్ అన్ని కొత్త విభాగాలలో సమాన పంపిణీకి రీసెట్ అవుతుంది."
                         ]
                   },
                   {
-                        "title": "When to Use the Wheel of Fate",
+                        "title": "విధి చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The wheel of fate works best when the decision carries emotional weight or when the framing matters as much as the outcome itself."
+                              "నిర్ణయం భావోద్వేగ బరువును మోస్తుంది లేదా ఫ్రేమింగ్ ఫలితంతో సమానంగా ముఖ్యమైనప్పుడు విధి చక్రం ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Tabletop RPGs and Storytelling",
-                                    "content": "Dungeon masters and game masters use the wheel of fate to resolve dramatic moments in their campaigns. The weighted system lets the GM calibrate odds to match the narrative."
+                                    "title": "టేబుల్‌టాప్ ఆర్‌పిజిలు మరియు కథనం",
+                                    "content": "డన్జియన్ మాస్టర్లు మరియు గేమ్ మాస్టర్లు తమ క్యాంపెయిన్‌లలో నాటకీయ క్షణాలను పరిష్కరించడానికి విధి చక్రాన్ని ఉపయోగిస్తారు. బరువు వ్యవస్థ GM కథనంతో సరిపోలడానికి అవకాశాలను క్యాలిబ్రేట్ చేయడానికి అనుమతిస్తుంది."
                               },
                               {
-                                    "title": "Writing and Creative Decisions",
-                                    "content": "Authors facing writer's block or looking for plot twists can spin the wheel to determine a character's next move. The fate-themed framing turns a random selection into a creative prompt."
+                                    "title": "రచన మరియు సృజనాత్మక నిర్ణయాలు",
+                                    "content": "రచయితల నిరోధం ఎదుర్కొంటున్న లేదా ప్లాట్ ట్విస్ట్‌ల కోసం చూస్తున్న రచయితలు పాత్ర తదుపరి కదలికను నిర్ణయించడానికి చక్రాన్ని తిప్పవచ్చు. విధి-థీమ్ ఫ్రేమింగ్ యాదృచ్ఛిక ఎంపికను సృజనాత్మక ప్రాంప్ట్‌గా మారుస్తుంది."
                               },
                               {
-                                    "title": "Personal Crossroads",
-                                    "content": "When facing a real decision that feels significant — a career change, a move to a new city, whether to take a risk — the wheel of fate adds a sense of ceremony to the process."
+                                    "title": "వ్యక్తిగత క్రాస్‌రోడ్స్",
+                                    "content": "ముఖ్యమైనదిగా అనిపించే నిజమైన నిర్ణయాన్ని ఎదుర్కొన్నప్పుడు — కెరీర్ మార్పు, కొత్త నగరానికి మారడం, ప్రమాదం తీసుకోవాలా లేదా — విధి చక్రం ప్రక్రియకు వేడుక భావాన్ని జోడిస్తుంది."
                               },
                               {
-                                    "title": "Group Games and Activities",
-                                    "content": "For party games or group activities, the wheel of fate adds drama that a standard spinner lacks. The dark aesthetic and thematic outcomes make each spin feel like an event."
+                                    "title": "సమూహ ఆటలు మరియు కార్యకలాపాలు",
+                                    "content": "పార్టీ ఆటలు లేదా సమూహ కార్యకలాపాల కోసం, విధి చక్రం ప్రామాణిక స్పిన్నర్‌కు లేని నాటకాన్ని జోడిస్తుంది. చీకటి ఎస్తెటిక్ మరియు థీమ్ ఫలితాలు ప్రతి స్పిన్‌ను ఈవెంట్ లాగా అనిపిస్తాయి."
                               }
                         ]
                   },
                   {
-                        "title": "Wheel of Fate vs Other Decision Tools",
+                        "title": "విధి చక్రం vs ఇతర నిర్ణయ సాధనాలు",
                         "content": [
-                              "The yes or no wheel is the simplest decision tool — two outcomes, equal probability, instant result. The wheel of fate adds complexity through multiple outcomes and adjustable weights.",
-                              "The oracle tool takes a different approach entirely. Instead of spinning a wheel, you type a question and receive a cryptic answer. The wheel of fate gives you a concrete outcome to act on.",
-                              "For RPG players, the yes and no dice tool offers a different physical metaphor. Rolling dice feels different from spinning a wheel."
+                              "అవును/కాదు చక్రం అత్యంత సరళమైన నిర్ణయ సాధనం — రెండు ఫలితాలు, సమాన సంభావ్యత, తక్షణ ఫలితం. విధి చక్రం బహుళ ఫలితాలు మరియు సర్దుబాటు చేయగల బరువుల ద్వారా సంక్లిష్టతను జోడిస్తుంది.",
+                              "ఓరాకిల్ సాధనం పూర్తిగా భిన్నమైన విధానాన్ని తీసుకుంటుంది. చక్రాన్ని తిప్పడానికి బదులుగా, మీరు ప్రశ్నను టైప్ చేసి రహస్య సమాధానాన్ని అందుకుంటారు. విధి చక్రం మీకు చర్య తీసుకోవడానికి నిర్దిష్ట ఫలితాన్ని ఇస్తుంది.",
+                              "ఆర్‌పిజి ప్లేయర్ల కోసం, అవును/కాదు పాసాలు సాధనం భిన్నమైన భౌతిక రూపకాన్ని అందిస్తుంది. పాసాలు రోల్ చేయడం చక్రం తిప్పడం నుండి భిన్నంగా అనిపిస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the wheel of fate?",
-                        "a": "The wheel of fate is a destiny-themed decision spinner that uses weighted outcomes and a dark cosmic visual design. Each segment represents a possible fate or outcome."
+                        "q": "విధి చక్రం అంటే ఏమిటి?",
+                        "a": "విధి చక్రం అనేది బరువు ఫలితాలు మరియు చీకటి అంతరిక్ష దృశ్య డిజైన్ ఉపయోగించే నియతి-థీమ్ నిర్ణయ స్పిన్నర్. ప్రతి విభాగం సాధ్యమైన విధి లేదా ఫలితాన్ని సూచిస్తుంది."
                   },
                   {
-                        "q": "How is the wheel of fate different from a yes or no wheel?",
-                        "a": "A yes or no wheel presents two equally likely outcomes. The wheel of fate offers multiple outcomes with adjustable probability weights."
+                        "q": "విధి చక్రం అవును/కాదు చక్రం నుండి ఎలా భిన్నంగా ఉంటుంది?",
+                        "a": "అవును/కాదు చక్రం రెండు సమానంగా సంభావ్య ఫలితాలను ప్రదర్శిస్తుంది. విధి చక్రం సర్దుబాటు చేయగల సంభావ్యత బరువులతో బహుళ ఫలితాలను అందిస్తుంది."
                   },
                   {
-                        "q": "What are outcome weights?",
-                        "a": "Outcome weights let you adjust the probability of each segment appearing as the result. A weight of 1x means normal probability. Setting a segment to 3x makes it three times more likely to win."
+                        "q": "ఫలిత బరువులు అంటే ఏమిటి?",
+                        "a": "ఫలిత బరువులు ఫలితంగా కనిపించే ప్రతి విభాగం సంభావ్యతను సర్దుబాటు చేయడానికి మిమ్మల్ని అనుమతిస్తాయి. 1x బరువు సాధారణ సంభావ్యత అని అర్థం. విభాగాన్ని 3x గా సెట్ చేయడం దానిని మూడు రెట్లు ఎక్కువ గెలిచే అవకాశంగా చేస్తుంది."
                   },
                   {
-                        "q": "Can I use the wheel of fate for RPGs?",
-                        "a": "The wheel of fate is designed with tabletop RPG players in mind. The default entries include dramatic outcomes like Destiny, Redemption, Sacrifice, and Betrayal."
+                        "q": "నేను విధి చక్రాన్ని ఆర్‌పిజిల కోసం ఉపయోగించవచ్చా?",
+                        "a": "విధి చక్రం టేబుల్‌టాప్ ఆర్‌పిజి ప్లేయర్లను దృష్టిలో ఉంచుకుని రూపొందించబడింది. డిఫాల్ట్ ఎంట్రీలలో నియతి, విముక్తి, త్యాగం మరియు ద్రోహం వంటి నాటకీయ ఫలితాలు ఉన్నాయి."
                   },
                   {
-                        "q": "Is the wheel of fate random?",
-                        "a": "Yes. The wheel uses browser-based physics with randomized starting conditions. Weighted entries affect the probability distribution but do not guarantee outcomes."
+                        "q": "విధి చక్రం యాదృచ్ఛికంగా ఉందా?",
+                        "a": "అవును. చక్రం యాదృచ్ఛికీకరించిన ప్రారంభ పరిస్థితులతో బ్రౌజర్-ఆధారిత భౌతికశాస్త్రాన్ని ఉపయోగిస్తుంది. బరువు ఎంట్రీలు సంభావ్యత పంపిణీని ప్రభావితం చేస్తాయి కానీ ఫలితాలను హామీ ఇవ్వవు."
                   },
                   {
-                        "q": "Can I add my own fates to the wheel?",
-                        "a": "Yes. Open the customization sidebar to add, remove, or rename any entry. After changing entries, reset the weight sliders to distribute probability evenly."
+                        "q": "నేను నా స్వంత విధులను చక్రానికి జోడించవచ్చా?",
+                        "a": "అవును. ఏదైనా ఎంట్రీని జోడించడానికి, తీసివేయడానికి లేదా పేరు మార్చడానికి అనుకూలన సైడ్‌బార్ తెరవండి. ఎంట్రీలను మార్చిన తర్వాత, సంభావ్యతను సమానంగా పంపిణీ చేయడానికి బరువు స్లైడర్లను రీసెట్ చేయండి."
                   }
             ]
       }
@@ -4560,100 +4560,100 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "अवुनु का ओराकल्",
-            "subtitle": "प्रश्न टैईप् चेयि एमै एलोमेलो समाधानं प्रापिंचहवालि.",
+            "title": "అవును/కాదు ఓరాకిల్",
+            "subtitle": "అవును లేదా కాదు ప్రశ్నను టైప్ చేసి జ్ఞానం మరియు మార్గదర్శనతో యాదృచ్ఛిక సమాధానాన్ని అందుకోండి. ఓరాకిల్ ఎనిమిది సాధ్యమైన ఫలితాలను బ్రౌజర్-ఆధారిత యాదృచ్ఛికీకరణ ద్వారా ఛానల్ చేస్తుంది.",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "అవును/కాదు ఓరాకిల్‌ను ఎలా ఉపయోగించాలి",
+                  "intro": "ఓరాకిల్ మీ ప్రశ్నలకు సమాధానమివ్వడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "మీ ప్రశ్నను టైప్ చేయండి",
+                              "desc": "టెక్స్ట్ ఏరియాలో అవును లేదా కాదు ప్రశ్నను నమోదు చేయండి. ఓరాకిల్ మీరు ఎదుర్కొంటున్న నిర్ణయాల గురించి స్పష్టమైన, నిర్దిష్ట ప్రశ్నలతో ఉత్తమంగా పనిచేస్తుంది."
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "జ్ఞానం కోసం అన్వేషించండి",
+                              "desc": "జ్ఞానం కోసం అన్వేషించండి బటన్‌ను క్లిక్ చేసి ఓరాకిల్ మీ ప్రశ్నను ధ్యానించేటప్పుడు వేచి ఉండండి. సమాధానం వెల్లడించబడే ముందు సంక్షిప్త ఆలస్యం ప్రతిష్టను పెంచుతుంది."
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "సమాధానం చదవండి",
+                              "desc": "ఓరాకిల్ థీమ్ సందేశం, జ్ఞాన వచనం మరియు ఎనర్జీ ట్యాగ్‌తో పాటు అవును, కాదు లేదా బహుశా సమాధానాన్ని వెల్లడిస్తుంది. సమాధానం మీ నిర్ణయం గురించి మీకు ఎలా అనిపిస్తుందో ప్రతిబింబించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "అవును/కాదు ఓరాకిల్ అంటే ఏమిటి?",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "అవును/కాదు ఓరాకిల్ అనేది నిర్మాణాత్మక మూడు-దశల ప్రక్రియ ద్వారా అవును లేదా కాదు ప్రశ్నలకు సమాధానమిచ్చే డిజిటల్ భవిష్యవాణి సాధనం. మీరు ఇన్‌పుట్ ఫీల్డ్‌లో ప్రశ్నను టైప్ చేస్తారు, ఓరాకిల్ ధ్యానించేటప్పుడు వేచి ఉంటారు మరియు ఎనిమిది సాధ్యమైన ఫలితాల నుండి యాదృచ్ఛిక సమాధానాన్ని అందుకుంటారు.",
+                              "స్పిన్నింగ్ చక్రం లేదా నాణెం ఫ్లిప్ వలె కాకుండా, ఓరాకిల్ యాదృచ్ఛికీకరణకు కథన పొరను జోడిస్తుంది. ధ్యాన ఆలస్యం ప్రతిష్టను సృష్టిస్తుంది, థీమ్ సందేశాలు ప్రతి సమాధానానికి అర్థం భావాన్ని ఇస్తాయి మరియు ఎనర్జీ ట్యాగ్‌లు ఫలితాన్ని వివరించడానికి షార్ట్‌హాండ్ అందిస్తాయి.",
+                              "సాధనం పూర్తిగా మీ బ్రౌజర్‌లో నడుస్తుంది. ప్రశ్నలు నిల్వ చేయబడవు, ప్రసారం చేయబడవు లేదా లాగ్ చేయబడవు. ఓరాకిల్ క్లయింట్-సైడ్ యాదృచ్ఛికీకరణ ఉపయోగించి తన సమాధానాన్ని ఉత్పత్తి చేస్తుంది."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "ఓరాకిల్ ఎలా పనిచేస్తుంది",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "ఓరాకిల్ మూడు-దశల ప్రవాహాన్ని అనుసరిస్తుంది. మొదట, మీరు మీ ప్రశ్నను టెక్స్ట్‌ఏరియాలో టైప్ చేస్తారు. మీరు జ్ఞానం కోసం అన్వేషించండి క్లిక్ చేసినప్పుడు, ఇన్‌పుట్ ఏరియా మాయమై ధ్యాన స్క్రీన్‌తో భర్తీ అవుతుంది.",
+                              "2.5 సెకన్ల ఆలస్యం తర్వాత, ఓరాకిల్ తన సమాధానాన్ని వెల్లడిస్తుంది. ఫలితంలో అవును, కాదు లేదా బహుశా పిల్ల్, ఎమోజీ, ఉల్లేఖించిన సందేశం, జ్ఞాన వచనం మరియు ఎనర్జీ ట్యాగ్ ఉంటాయి.",
+                              "మరొక ప్రశ్న అడగండి బటన్ ప్రవాహాన్ని రీసెట్ చేస్తుంది, ఫలితాన్ని క్లియర్ చేసి ఇన్‌పుట్ స్క్రీన్‌కు తిరిగి వెళ్తుంది. మీరు అపరిమిత ప్రశ్నలు అడగవచ్చు."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "ఓరాకిల్‌ను ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "సరళమైన అవును లేదా కాదు కంటే ఎక్కువ కావలసినప్పుడు ఓరాకిల్ ఉత్తమంగా పనిచేస్తుంది. ప్రతి సమాధానంలోని అదనపు సందర్భం మీకు ప్రతిబింబించడానికి ఏదో ఇస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "మీరు ఇప్పటికే సమాధానం తెలిసిన నిర్ణయాలు",
+                                    "content": "తరచుగా, ప్రజలు ఇప్పటికే చేసిన కానీ భరోసా కోసం కోరుకునే నిర్ణయాల గురించి ఓరాకిల్‌ను అడుగుతారు. ఓరాకిల్ కాదు అని చెప్పి మీరు నిరాశ చెందితే, ఆ ప్రతిస్పందన మీరు నిజంగా కోరుకునేదాన్ని మీకు చెబుతుంది."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "సృజనాత్మక రచన మరియు కథనం",
+                                    "content": "రచయితలు సృజనాత్మక డెడ్‌లాక్‌లను బద్దలు కొట్టడానికి ఓరాకిల్‌ను ఉపయోగిస్తారు. ఎనర్జీ ట్యాగ్‌లు మరియు జ్ఞాన వచనం సాదా అవును లేదా కాదు చేయలేని కొత్త ఆలోచనలను ప్రేరేపించగలవు."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "వినోద సమూహ కార్యకలాపాలు",
+                                    "content": "సామాజిక సెట్టింగ్‌లలో, ఓరాకిల్ స్పిన్నర్‌కు లేని నాటకాన్ని జోడిస్తుంది. ధ్యాన ఆలస్యం, థీమ్ సందేశం మరియు ఎనర్జీ ట్యాగ్ సమూహానికి చర్చించడానికి ఏదో ఇస్తాయి."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "వ్యక్తిగత ప్రతిబింబం",
+                                    "content": "కొందరు ఓరాకిల్‌ను జర్నలింగ్ ప్రాంప్ట్‌గా ఉపయోగిస్తారు. వారు ప్రశ్నను టైప్ చేసి, సమాధానాన్ని అందుకుని, ప్రతిస్పందన వారి నిజమైన భావాలతో ఎలా ప్రతిధ్వనించిందో రాస్తారు."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "ఓరాకిల్ vs ఇతర నిర్ణయ సాధనాలు",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "అవును/కాదు చక్రం అదనపు సందర్భం లేకుండా బైనరీ ఫలితాన్ని ఇస్తుంది. ఓరాకిల్ టెక్స్ట్ ఇన్‌పుట్, ధ్యాన ఆలస్యం మరియు థీమ్ అవుట్‌పుట్ తో భిన్నమైన విధానాన్ని తీసుకుంటుంది.",
+                              "టారో కార్డ్ రీడర్ కార్డ్‌లు, అర్థాలు మరియు మార్గదర్శనతో మరింత కథన లోతును జోడిస్తుంది. ఓరాకిల్ అవును, కాదు లేదా బహుశా సమాధానాలతో సరళంగా ఉంటుంది.",
+                              "విధి చక్రం నాటకీయ థీమింగ్‌తో బరువు ఫలితాలను అందిస్తుంది. ఓరాకిల్ తత్వశాస్త్ర బరువుతో ఒకే సమాధానం కావలసిన వ్యక్తిగత అవును/కాదు ప్రశ్నల కోసం మెరుగైనది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "అవును/కాదు ఓరాకిల్ అంటే ఏమిటి?",
+                        "a": "అవును/కాదు ఓరాకిల్ అనేది అనుబంధ సందేశాలు మరియు జ్ఞాన వచనంతో మీ ప్రశ్నలకు అవును, కాదు లేదా బహుశా సమాధానాలను అందించే వచన-ఆధారిత నిర్ణయ సాధనం."
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "ఓరాకిల్ అవును/కాదు చక్రం నుండి ఎలా భిన్నంగా ఉంటుంది?",
+                        "a": "ఓరాకిల్ స్పిన్నింగ్ చక్రం స్థానంలో టెక్స్ట్ ఇన్‌పుట్ మరియు ధ్యాన యానిమేషన్ ఉపయోగిస్తుంది. ఇది రెండు స్థానంలో మూడు సాధ్యమైన సమాధానాలను ఉత్పత్తి చేస్తుంది మరియు ప్రతి సమాధానం తత్వశాస్త్ర సందేశాన్ని కలిగి ఉంటుంది."
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "ఓరాకిల్ యాదృచ్ఛికంగా ఉందా?",
+                        "a": "అవును. ఓరాకిల్ బ్రౌజర్-ఆధారిత యాదృచ్ఛికీకరణ ఉపయోగించి ఎనిమిది సాధ్యమైన ఫలితాల నుండి యాదృచ్ఛిక ఫలితాన్ని ఎంచుకుంటుంది."
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "నేను ఓరాకిల్‌ను ఏ రకమైన ప్రశ్న అడగవచ్చా?",
+                        "a": "ఓరాకిల్ అవును లేదా కాదు ప్రశ్నలతో ఉత్తమంగా పనిచేస్తుంది — మీరు బైనరీ లేదా దాదాపు బైనరీ సమాధానం కోరుకునే నిర్ణయాలు."
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "ఎనర్జీ ట్యాగ్ అంటే ఏమిటి?",
+                        "a": "ప్రతి ఓరాకిల్ ఫలితంలో పునర్జన్మ, ఓర్పు లేదా రహస్యం వంటి ఎనర్జీ ట్యాగ్ ఉంటుంది. ఇవి సమాధానం సాధారణ స్వరాన్ని వివరించే థీమ్ లేబుల్స్."
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "ఓరాకిల్ ఉపయోగించడం ఉచితమా?",
+                        "a": "అవును/కాదు ఓరాకిల్ సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -6134,108 +6134,108 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "अवुनु का टारो रीडिंग्",
-            "subtitle": "मेजर आर्काना कार्ड वीयावपुष्टं.",
+            "title": "అవును/కాదు టారో రీడింగ్",
+            "subtitle": "మేజర్ ఆర్కానా కార్డులతో సమాధానం.",
             "howToUse": {
-                  "title": "How to Use the Tarot Card Drawer",
-                  "intro": "The tarot card drawer follows a simple flow:",
+                  "title": "టారో కార్డ్ డ్రాయర్ ఎలా ఉపయోగించాలి",
+                  "intro": "టారో కార్డ్ డ్రాయర్ సరళమైన విధానాన్ని అనుసరిస్తుంది:",
                   "steps": [
                         {
-                              "title": "Focus on Your Question",
-                              "desc": "Think of a clear yes or no question. The clearer and more specific your question, the more useful the card's guidance text will be."
+                              "title": "మీ ప్రశ్నపై దృష్టి పెట్టండి",
+                              "desc": "స్పష్టమైన అవును/కాదు ప్రశ్న గురించి ఆలోచించండి. మీ ప్రశ్న ఎంత స్పష్టంగా మరియు నిర్దిష్టంగా ఉంటే, కార్డ్ మార్గదర్శక వచనం అంత ఉపయోగకరంగా ఉంటుంది."
                         },
                         {
-                              "title": "Choose or Let the Universe Pick",
-                              "desc": "Select one of six face-down cards in the grid, or click Let the Universe Choose to have a card selected randomly. The card flip animation reveals the drawn card."
+                              "title": "ఎంచుకోండి లేదా యూనివర్స్ ను ఎంచుకోనివ్వండి",
+                              "desc": "గ్రిడ్‌లోని ఆరు బోర్లా ఉన్న కార్డులలో ఒకదాన్ని ఎంచుకోండి, లేదా యూనివర్స్ ను ఎంచుకోనివ్వు క్లిక్ చేసి యాదృచ్ఛికంగా కార్డ్ ఎంపిక చేయండి. కార్డ్ ఫ్లిప్ యానిమేషన్ డ్రా చేసిన కార్డును వెల్లడిస్తుంది."
                         },
                         {
-                              "title": "Read the Guidance",
-                              "desc": "Read the guidance text carefully. It often provides nuance that the yes or no answer alone does not capture. The guidance adds the interpretive layer that makes tarot more than a coin flip."
+                              "title": "మార్గదర్శకత్వం చదవండి",
+                              "desc": "మార్గదర్శక వచనాన్ని జాగ్రత్తగా చదవండి. ఇది తరచుగా అవును/కాదు సమాధానం మాత్రమే సంగ్రహించలేని సూక్ష్మతను అందిస్తుంది. మార్గదర్శకత్వం టారోను నాణెం విసిరేయడం కంటే ఎక్కువగా చేసే వివరణాత్మక పొరను జోడిస్తుంది."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "అవును/కాదు టారో రీడింగ్ అంటే ఏమిటి?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
-                              "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
-                              "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
+                              "అవును/కాదు టారో రీడింగ్ అనేది సరళీకృత భవిష్య కథన పద్ధతి, ఇది టారో కార్డులను ఉపయోగించి బైనరీ లేదా దాదాపు బైనరీ సమాధానాన్ని ఉత్పత్తి చేస్తుంది. పూర్తి పది-కార్డ్ స్ప్రెడ్ వేయడానికి బదులుగా, మీరు మేజర్ ఆర్కానా నుండి ఒక కార్డ్ డ్రా చేసి దాని సమాధాన కీవర్డ్ ను అర్థం చేసుకుంటారు.",
+                              "ఈ ఫార్మాట్ పూర్తి రీడింగ్ సంక్లిష్టత లేకుండా శీఘ్ర సమాధానం అవసరమయ్యే రీడర్లు ఉపయోగించే శీఘ్ర టారో సంప్రదింపు పద్ధతుల్లో మూలాలను కలిగి ఉంది.",
+                              "ఈ పేజీలోని సాధనం 21 మేజర్ ఆర్కానా కార్డులను ఉపయోగిస్తుంది, ప్రతి కార్డుకు ముందే సమాధానం, అర్థం, మార్గదర్శక వచనం మరియు మూలక సంబంధం కేటాయించబడ్డాయి."
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "ఈ రీడింగ్‌లో మేజర్ ఆర్కానా కార్డులు",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "మేజర్ ఆర్కానా 0 నుండి 21 వరకు 22 కార్డులను కలిగి ఉంటుంది. ఈ సాధనం ది ఫూల్ నుండి ది వరల్డ్ వరకు అన్ని 21 నాన్-న్యూమరల్ కార్డులను ఉపయోగిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "అవును అని సమాధానమిచ్చే కార్డులు",
+                                    "content": "అనేక మేజర్ ఆర్కానా కార్డులు సానుకూల సమాధానాల వైపు మొగ్గు చూపుతాయి. ది ఫూల్ కొత్త ప్రారంభాలను సూచిస్తుంది. ది మేజిషియన్ వనరులను సూచిస్తుంది. ది ఎంప్రెస్ సమృద్ధిని సూచిస్తుంది. ది ఛారియట్ విజయాన్ని సూచిస్తుంది. ది స్టార్ ఆశను సూచిస్తుంది."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "కాదు అని సమాధానమిచ్చే కార్డులు",
+                                    "content": "ఇతర కార్డులు జాగ్రత్త లేదా నిరాకరణను సూచిస్తాయి. ది హెర్మిట్ ఏకాంతాన్ని కోరుతుంది. డెత్ ముగింపులను సూచిస్తుంది. ది టవర్ తిరుగుబాటును సూచిస్తుంది. ది మూన్ భ్రమను సూచిస్తుంది."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "బహుశా అని సమాధానమిచ్చే కార్డులు",
+                                    "content": "కొన్ని కార్డులు మధ్యస్థ స్థానాన్ని ఆక్రమిస్తాయి. ది హై ప్రీస్టెస్ అంతర్ దృష్టిని సూచిస్తుంది. ది హైరోఫాంట్ సంప్రదాయాన్ని సూచిస్తుంది. జస్టిస్ న్యాయతను డిమాండ్ చేస్తుంది. టెంపరెన్స్ మోడరేషన్ కోసం పిలుపునిస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "నిర్ణయాల కోసం టారో రీడింగ్ ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "అవును/కాదు టారో పూర్తిగా యాంత్రిక యాదృచ్ఛిక ఫలితం కంటే ప్రతిబింబ ప్రాంప్ట్ కావాల్సిన నిర్ణయాలకు ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "అస్పష్టమైన భావాలను స్పష్టం చేయడం",
+                                    "content": "మీరు ఎంపిక గురించి అనిశ్చితంగా ఉన్నప్పుడు కానీ ఎందుకు వివరించలేనప్పుడు, టారో కార్డ్ డ్రా చేయడం అంతర్లీన ఆందోళనను ఉపరితలంపైకి తీసుకురాగలదు."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "సృజనాత్మక రచన మరియు మెదడు దాడి",
+                                    "content": "రచయితలు టారో కార్డులను పాత్ర ప్రాంప్ట్లుగా ఉపయోగిస్తారు. కల్పిత పాత్ర కోసం డ్రా చేసిన కార్డ్ వారి తదుపరి చర్య లేదా భావోద్వేగ స్థితిని నిర్ణయించగలదు."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "సమూహ చర్చలు మరియు ఐస్‌బ్రేకర్లు",
+                                    "content": "సామాజిక సెట్టింగ్‌లలో, టారో కార్డులు డ్రా చేయడం భాగస్వామ్య అనుభవాన్ని సృష్టిస్తుంది. ప్రతి వ్యక్తి ఒక కార్డ్ డ్రా చేస్తాడు, మార్గదర్శకత్వాన్ని బిగ్గరగా చదువుతాడు మరియు అది వారి పరిస్థితికి ఎలా సంబంధించినదో చర్చిస్తాడు."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "టారో vs ఇతర నిర్ణయ సాధనాలు",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "అవును/కాదు చక్రం అత్యంత వేగవంతమైన నిర్ణయ సాధనం. టారో రీడింగ్ కార్డ్ అర్థాలు మరియు మార్గదర్శక వచనం ద్వారా కథన లోతును జోడిస్తుంది.",
+                              "అవును/కాదు ఓరకిల్ అవును/కాదు/బహుశా సమాధానాలు మరియు తాత్త్విక సందేశాలతో మధ్యస్థ స్థానాన్ని అందిస్తుంది. టారో మరింత పొరలుగా ఉంటుంది.",
+                              "విధి చక్రం సంభావ్యత ముఖ్యమైన దృశ్యాలకు బరువున్న ఫలితాలను ఉపయోగిస్తుంది. టారో రీడింగ్ ప్రతి కార్డుకు సమాన సంభావ్యతను ఇస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "అవును/కాదు టారో రీడింగ్ అంటే ఏమిటి?",
+                        "a": "అవును/కాదు టారో రీడింగ్ అనేది సరళీకృత టారో భవిష్య కథన రూపం, ఇది సంక్లిష్ట స్ప్రెడ్‌కు బదులుగా అవును, కాదు లేదా బహుశా సమాధానాన్ని ఉత్పత్తి చేస్తుంది."
                   },
                   {
-                        "q": "How does the card draw work?",
-                        "a": "When you click a card or press Let the Universe Choose, the tool randomly selects one of 21 Major Arcana cards with a pre-assigned answer."
+                        "q": "కార్డ్ డ్రా ఎలా పనిచేస్తుంది?",
+                        "a": "మీరు కార్డ్ క్లిక్ చేసినప్పుడు లేదా యూనివర్స్ ను ఎంచుకోనివ్వు నొక్కినప్పుడు, సాధనం ముందే కేటాయించిన సమాధానంతో 21 మేజర్ ఆర్కానా కార్డులలో ఒకదాన్ని యాదృచ్ఛికంగా ఎంచుకుంటుంది."
                   },
                   {
-                        "q": "What are the Major Arcana?",
-                        "a": "The Major Arcana is a set of 22 cards in a standard tarot deck that represent major life themes and archetypes."
+                        "q": "మేజర్ ఆర్కానా అంటే ఏమిటి?",
+                        "a": "మేజర్ ఆర్కానా అనేది ప్రామాణిక టారో డెక్‌లోని 22 కార్డుల సమితి, ఇవి ప్రధాన జీవిత థీమ్లు మరియు నమూనాలను సూచిస్తాయి."
                   },
                   {
-                        "q": "Can I trust the tarot reading?",
-                        "a": "The tarot reading is random — it does not predict the future. It is a tool for reflection and creative thinking."
+                        "q": "నేను టారో రీడింగ్‌ను విశ్వసించవచ్చా?",
+                        "a": "టారో రీడింగ్ యాదృచ్ఛికంగా ఉంటుంది — ఇది భవిష్యత్తును అంచనా వేయదు. ఇది ప్రతిబింబం మరియు సృజనాత్మక ఆలోచన కోసం ఒక సాధనం."
                   },
                   {
-                        "q": "Is this a real tarot reading?",
-                        "a": "This tool uses the Major Arcana from traditional tarot, but it does not follow established tarot reading practices like full spreads."
+                        "q": "ఇది నిజమైన టారో రీడింగ్‌నా?",
+                        "a": "ఈ సాధనం సంప్రదాయ టారో నుండి మేజర్ ఆర్కానాను ఉపయోగిస్తుంది, కానీ ఇది పూర్తి స్ప్రెడ్ల వంటి స్థాపిత టారో రీడింగ్ పద్ధతులను అనుసరించదు."
                   },
                   {
-                        "q": "Can I use this for serious decisions?",
-                        "a": "The tarot reading can prompt reflection on a decision, but it should not be the sole basis for important choices."
+                        "q": "నేను దీన్ని తీవ్రమైన నిర్ణయాలకు ఉపయోగించవచ్చా?",
+                        "a": "టారో రీడింగ్ నిర్ణయంపై ప్రతిబింబాన్ని ప్రేరేపించగలదు, కానీ ఇది ముఖ్యమైన ఎంపికలకు ఏకైక ఆధారంగా ఉండకూడదు."
                   }
             ]
       }
@@ -7660,104 +7660,104 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "अवुनु मरियु पासालु",
-            "subtitle": "इंटराक्टिव 3D पासालु विस्राम्.",
+            "title": "అవును మరియు కాదు పాసాలు",
+            "subtitle": "ఇంటరాక్టివ్ 3D పాసాలు విశ్రాంతి.",
             "howToUse": {
-                  "title": "How to Use the Yes and No Dice",
-                  "intro": "The dice tool is ready to roll in seconds. Here is how it works:",
+                  "title": "అవును మరియు కాదు పాసాలను ఎలా ఉపయోగించాలి",
+                  "intro": "పాసాలు సాధనం సెకన్లలో రోల్ చేయడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Set Your Preferences",
-                              "desc": "Choose between Single, Best of 3, or Best of 5 mode. Adjust the probability slider to weight Yes versus No outcomes. Toggle auto-roll if you want continuous results."
+                              "title": "మీ ప్రాధాన్యతలను సెట్ చేయండి",
+                              "desc": "సింగిల్, 3 లో బెస్ట్ లేదా 5 లో బెస్ట్ మోడ్ మధ్య ఎంచుకోండి. అవును vs కాదు ఫలితాలను బరువు చేయడానికి సంభావ్యత స్లైడర్‌ను సర్దుబాటు చేయండి. నిరంతర ఫలితాలు కావలసినట్లయితే ఆటో-రోల్ టోగుల్ చేయండి."
                         },
                         {
-                              "title": "Roll the Dice",
-                              "desc": "Click the Roll Dice button or press the spacebar. Watch the 3D die tumble through space, bounce off surfaces, and settle on a random result."
+                              "title": "పాసాలు రోల్ చేయండి",
+                              "desc": "పాసాలు రోల్ చేయండి బటన్ క్లిక్ చేయండి లేదా స్పేస్‌బార్ నొక్కండి. 3D పాసం అంతరిక్షంలో పడిపోవడం, ఉపరితలాల నుండి బౌన్స్ అవ్వడం మరియు యాదృచ్ఛిక ఫలితంపై సెట్ల్ అవ్వడం చూడండి."
                         },
                         {
-                              "title": "Review Your Statistics",
-                              "desc": "The statistics dashboard tracks your total rolls, Yes count, No count, current streak, and win rate. Stats persist across sessions."
+                              "title": "మీ గణాంకాలను సమీక్షించండి",
+                              "desc": "గణాంకాల డ్యాష్‌బోర్డ్ మీ మొత్తం రోల్‌లు, అవును కౌంట్, కాదు కౌంట్, ప్రస్తుత స్ట్రీక్ మరియు విన్ రేటును ట్రాక్ చేస్తుంది. సెషన్ల అంతటా స్టాట్స్ కొనసాగుతాయి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes and No Dice Tool?",
+                        "title": "అవును మరియు కాదు పాసాలు సాధనం అంటే ఏమిటి?",
                         "content": [
-                              "The Yes and No Dice tool is a 3D physics-based decision maker that rolls a virtual die with Yes and No faces. Instead of clicking a spinner or flipping a coin, you watch a realistic 3D die tumble through space, bounce off surfaces, and settle on a random result.",
-                              "Each die face shows either Yes or No in bold text on a colored background — green for Yes, red for No. The probability slider lets you adjust how many faces show Yes versus No.",
-                              "The tool runs entirely in your browser using Three.js for 3D rendering and Cannon.js for physics simulation. No server communication happens during a roll."
+                              "అవును మరియు కాదు పాసాలు సాధనం అనేది అవును మరియు కాదు ముఖాలతో వర్చువల్ పాసాన్ని రోల్ చేసే 3D భౌతికశాస్త్ర ఆధారిత నిర్ణయం. స్పిన్నర్ క్లిక్ చేయడం లేదా నాణెం ఫ్లిప్ చేయడం స్థానంలో, మీరు వాస్తవిక 3D పాసం అంతరిక్షంలో పడిపోవడం, ఉపరితలాల నుండి బౌన్స్ అవ్వడం మరియు యాదృచ్ఛిక ఫలితంపై సెట్ల్ అవ్వడం చూస్తారు.",
+                              "ప్రతి పాసా ముఖం రంగు నేపథ్యంపై బోల్డ్ టెక్స్ట్‌లో అవును లేదా కాదు చూపిస్తుంది — అవును కోసం ఆకుపచ్చ, కాదు కోసం ఎరుపు. సంభావ్యత స్లైడర్ ఎన్ని ముఖాలు అవును vs కాదు చూపిస్తాయో సర్దుబాటు చేయడానికి మిమ్మల్ని అనుమతిస్తుంది.",
+                              "సాధనం Three.js మరియు Cannon.js ఉపయోగించి 3D రెండరింగ్ మరియు భౌతికశాస్త్ర సిమ్యులేషన్ కోసం పూర్తిగా మీ బ్రౌజర్‌లో నడుస్తుంది. రోల్ సమయంలో సర్వర్ కమ్యూనికేషన్ జరగదు."
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "3D భౌతికశాస్త్ర ఇంజిన్ ఎలా పనిచేస్తుంది",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "మీరు పాసాలు రోల్ చేయండి బటన్ క్లిక్ చేసినప్పుడు, భౌతికశాస్త్ర ఇంజిన్ నేల పైన యాదృచ్ఛిక స్థానం నుండి పాసాన్ని ప్రారంభిస్తుంది. పాసా మూడు కొలతలలో యాదృచ్ఛిక వేగం మరియు స్పిన్ కోసం యాదృచ్ఛిక కోణీయ వేగాన్ని అందుకుంటుంది.",
+                              "ఇంజిన్ క్వాటెర్నియన్ల ఉపయోగించి పాసా ఓరియంటేషన్‌ను ట్రాక్ చేస్తుంది — గింబాల్ లాక్‌ను నివారించే మరియు నుణించిన భ్రమణ ఇంటర్‌పోలేషన్ అందించే గణిత ప్రతినిధానం.",
+                              "ఫలితాన్ని కనుగొనడానికి, ఇంజిన్ ప్రతి పాసా ముఖం నార్మల్ వెక్టర్‌ను ప్రపంచం యొక్క అప్ దిశతో పోల్చడం ద్వారా ఏ ముఖం ఎక్కువగా నేరుగా పైకి చూపుతుందో తనిఖీ చేస్తుంది."
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "గేమ్ మోడ్‌లు మరియు సంభావ్యత నియంత్రణ",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "పాసాలు సాధనం చివరి సమాధానాన్ని ఎన్ని రోల్‌లు నిర్ణయిస్తాయో మార్చే మూడు గేమ్ మోడ్‌లను అందిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "సింగిల్ రోల్ మోడ్",
+                                    "content": "సింగిల్ మోడ్‌లో, ఒక రోల్ చివరి ఫలితాన్ని ఉత్పత్తి చేస్తుంది. ఇది వేగవంతమైన ఎంపిక మరియు సరళమైన అవును లేదా కాదు ప్రశ్నలతో బాగా పనిచేస్తుంది."
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "3 లో బెస్ట్ మోడ్",
+                                    "content": "3 లో బెస్ట్ విజేతను నిర్ణయించడానికి మూడులో రెండు రోల్‌లు అవసరం. ఈ మోడ్ నాటకాన్ని జోడిస్తుంది మరియు పాసాకు మరిన్ని అవకాశాలను ఇస్తుంది."
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "5 లో బెస్ట్ మోడ్",
+                                    "content": "5 లో బెస్ట్ గెలవడానికి ఐదులో మూడు రోల్‌లు అవసరం. ఈ మోడ్ దీర్ఘ ప్రక్రియకు తగినంత ముఖ్యమైనదిగా అనిపించే నిర్ణయాల కోసం ఉత్తమం."
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "సంభావ్యత స్లైడర్",
+                                    "content": "సంభావ్యత స్లైడర్ 0% అవును నుండి 100% అవును వరకు పాసా ముఖ పంపిణీని సర్దుబాటు చేస్తుంది. 50% వద్ద, పాసా సమతుల్యంగా ఉంటుంది."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
+                        "title": "పాసాలు vs స్పిన్నింగ్ చక్రం ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
+                              "అవును/కాదు చక్రం మరియు అవును మరియు కాదు పాసాలు రెండూ యాదృచ్ఛిక బైనరీ ఫలితాలను ఉత్పత్తి చేస్తాయి. తేడా అనుభవంలో మరియు నిర్ణయ సందర్భంలో ఉంది.",
+                              "స్పిన్నింగ్ చక్రం దృశ్యమాన మరియు నిరంతరం — మీరు దానిని తిరగడం మరియు నెమ్మదిగా ఆగడం చూస్తారు. పాసాలు సాధనం స్పర్శ మరియు భౌతికం. 3D యానిమేషన్, బౌన్స్ భౌతికశాస్త్రం మరియు యాదృచ్ఛిక పడిపోవడం నిజమైన పాసం రోల్ చేయడంలా అనిపిస్తుంది.",
+                              "అవును మరియు కాదు కంటే ఎక్కువ ఫలితాలు కావలసిన నిర్ణయాల కోసం, యాదృచ్ఛిక ఆహార చక్రం లేదా దేశ చక్రాన్ని పరిగణించండి."
                         ]
                   },
                   {
-                        "title": "Tracking Your Roll Statistics",
+                        "title": "మీ రోల్ గణాంకాలను ట్రాక్ చేయడం",
                         "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
+                              "పాసాలు సాధనం మీ బ్రౌజర్ స్థానిక నిల్వలో ప్రతి రోల్‌ను రికార్డ్ చేస్తుంది. గణాంకాల డ్యాష్‌బోర్డ్ మీ మొత్తం రోల్‌లు, అవును కౌంట్, కాదు కౌంట్, ప్రస్తుత స్ట్రీక్ మరియు విన్ రేటును చూపిస్తుంది.",
+                              "స్టాట్స్ సెషన్ల అంతటా కొనసాగుతాయి, కాబట్టి మీరు బ్రౌజర్‌ను మూసివేసి మీ సంचిత చరిత్రను చూడటానికి తర్వాత తిరిగి రావచ్చు.",
+                              "మనస్తత్వశాస్త్ర ఫీచర్ స్వ-ట్రాకింగ్ యొక్క మరొక పొరను జోడిస్తుంది. సుమారు ఐదులో ఒక సింగిల్ రోల్ తర్వాత, సాధనం మీరు ఫలితంతో సంతోషంగా ఉన్నారా అని అడుగుతుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes and no dice?",
-                        "a": "A yes and no dice is a digital decision-making tool that simulates rolling a physical dice. Instead of numbers, the faces show Yes or No."
+                        "q": "అవును మరియు కాదు పాసాలు అంటే ఏమిటి?",
+                        "a": "అవును మరియు కాదు పాసాలు అనేది భౌతిక పాసాలు రోల్ చేయడాన్ని అనుకరించే డిజిటల్ నిర్ణయ సాధనం. సంఖ్యల స్థానంలో, ముఖాలు అవును లేదా కాదు చూపిస్తాయి."
                   },
                   {
-                        "q": "Is yes and no dice truly random?",
-                        "a": "Yes, the dice uses a real-time 3D physics simulation with randomized spin, velocity, and position for each roll."
+                        "q": "అవును మరియు కాదు పాసాలు నిజంగా యాదృచ్ఛికమా?",
+                        "a": "అవును, పాసాలు ప్రతి రోల్ కోసం యాదృచ్ఛికీకరించిన స్పిన్, వేగం మరియు స్థానంతో రియల్-టైమ్ 3D భౌతికశాస్త్ర సిమ్యులేషన్ ఉపయోగిస్తుంది."
                   },
                   {
-                        "q": "Can I use yes and no dice for decisions?",
-                        "a": "Absolutely. The yes and no dice is perfect for everyday decisions like what to eat, whether to go out, or choosing between two options."
+                        "q": "నేను నిర్ణయాల కోసం అవును మరియు కాదు పాసాలు ఉపయోగించవచ్చా?",
+                        "a": "ఖచ్చితంగా. అవును మరియు కాదు పాసాలు ఏమి తినాలి, బయటకు వెళ్ళాలా లేదా రెండు ఎంపికల మధ్య ఎంచుకోవడం వంటి ప్రతిరోజూ నిర్ణయాల కోసం అద్భుతంగా ఉంటుంది."
                   },
                   {
-                        "q": "How does this dice generator work?",
-                        "a": "The tool uses Three.js for 3D rendering and Cannon.js for physics simulation. When you click Roll, the dice is launched with random force and spin."
+                        "q": "ఈ పాసాలు జనరేటర్ ఎలా పనిచేస్తుంది?",
+                        "a": "సాధనం 3D రెండరింగ్ కోసం Three.js మరియు భౌతికశాస్త్ర సిమ్యులేషన్ కోసం Cannon.js ఉపయోగిస్తుంది. మీరు రోల్ క్లిక్ చేసినప్పుడు, పాసాలు యాదృచ్ఛిక బలం మరియు స్పిన్‌తో ప్రారంభించబడతాయి."
                   },
                   {
-                        "q": "Is this better than a coin flip?",
-                        "a": "The yes and no dice offers adjustable probability weighting, multi-round modes, streak tracking, visual statistics, and a psychology feature."
+                        "q": "ఇది నాణెం ఫ్లిప్ కంటే మెరుగైనదా?",
+                        "a": "అవును మరియు కాదు పాసాలు సర్దుబాటు చేయగల సంభావ్యత బరువు, బహుళ-రౌండ్ మోడ్‌లు, స్ట్రీక్ ట్రాకింగ్, దృశ్య గణాంకాలు మరియు మనస్తత్వశాస్త్ర ఫీచర్‌ను అందిస్తుంది."
                   }
             ]
       }
@@ -9126,100 +9126,100 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "देशाल व्हील्",
-            "subtitle": "193 देशाल नुंसा यादृचिक ऎरा ओर्का.",
+            "title": "దేశ చక్రం",
+            "subtitle": "జెండాలతో 199 దేశాల నుండి యాదృచ్ఛికంగా ఎంచుకోండి. ఖండం ద్వారా ఫిల్టర్ చేసి మీ ఎంపికను తగ్గించండి.",
             "howToUse": {
-                  "title": "How to Use the Country Wheel",
-                  "intro": "The country wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "దేశ చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "దేశ చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Select Continents",
-                              "desc": "Use the continent checkboxes above the wheel to choose which regions to include. All continents are selected by default."
+                              "title": "ఖండాలను ఎంచుకోండి",
+                              "desc": "చక్రం పైన ఖండ చెక్‌బాక్స్‌లను ఉపయోగించి ఏ ప్రాంతాలను చేర్చాలో ఎంచుకోండి. డిఫాల్ట్‌గా అన్ని ఖండాలు ఎంచుకోబడతాయి."
                         },
                         {
-                              "title": "Review the Country Pool",
-                              "desc": "The region summary shows how many countries are currently selected. The wheel reshuffles countries from your selected continents each time you spin."
+                              "title": "దేశ పూల్‌ను సమీక్షించండి",
+                              "desc": "ప్రాంత సారాంశం ప్రస్తుతం ఎన్ని దేశాలు ఎంచుకోబడ్డాయో చూపిస్తుంది. మీరు ప్రతిసారీ స్పిన్ చేసినప్పుడు చక్రం మీ ఎంచుకున్న ఖండాల నుండి దేశాలను మళ్ళీ కలపజేస్తుంది."
                         },
                         {
-                              "title": "Spin and Discover",
-                              "desc": "Press the spin button and watch the flags rotate. When the wheel stops, the winning country appears with its flag, name, and continent."
+                              "title": "తిప్పండి మరియు కనుగొనండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు జెండాలు తిరగడం చూడండి. చక్రం ఆగినప్పుడు, విజేత దేశం తన జెండా, పేరు మరియు ఖండంతో కనిపిస్తుంది."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Country Wheel?",
+                        "title": "దేశ చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The country wheel is a geographic decision tool that randomly selects from 199 countries using a spinning wheel interface. Each segment displays a country's flag emoji and name.",
-                              "Unlike a simple random country generator that produces a text result, the wheel shows all available countries simultaneously. Watching the flags blur past as the wheel spins creates anticipation.",
-                              "The country database includes all 199 countries recognized by the United Nations, organized by continent."
+                              "దేశ చక్రం అనేది స్పిన్నింగ్ చక్ర ఇంటర్‌ఫేస్ ఉపయోగించి 199 దేశాల నుండి యాదృచ్ఛికంగా ఎంచుకునే భౌగోళిక నిర్ణయ సాధనం. ప్రతి విభాగం దేశ జెండా ఎమోజీ మరియు పేరును ప్రదర్శిస్తుంది.",
+                              "వచన ఫలితాన్ని ఉత్పత్తి చేసే సరళమైన యాదృచ్ఛిక దేశ జనరేటర్ వలె కాకుండా, చక్రం అన్ని అందుబాటులో ఉన్న దేశాలను ఏకకాలంలో చూపిస్తుంది. చక్రం తిరిగేటప్పుడు జెండాలు మెరుస్తూ వెళ్ళడం చూడటం ప్రతిష్టను సృష్టిస్తుంది.",
+                              "దేశ డేటాబేస్ యూనియన్ దేశాల సమూహం గుర్తించిన అన్ని 199 దేశాలను కలిగి ఉంది, ఖండం ద్వారా నిర్వహించబడుతుంది."
                         ]
                   },
                   {
-                        "title": "How the Country Filters Work",
+                        "title": "దేశ ఫిల్టర్లు ఎలా పనిచేస్తాయి",
                         "content": [
-                              "Above the wheel, the continent filter section displays checkboxes for each of the seven continents. By default, all continents are selected.",
-                              "The region summary counter updates in real time as you toggle continents. The wheel reshuffles its entries whenever the filter changes.",
-                              "You can also use the customization sidebar to add, remove, or rename individual countries."
+                              "చక్రం పైన, ఖండ ఫిల్టర్ విభాగం ఏడు ఖండాలలో ప్రతి ఒక్కటి కోసం చెక్‌బాక్స్‌లను ప్రదర్శిస్తుంది. డిఫాల్ట్‌గా, అన్ని ఖండాలు ఎంచుకోబడతాయి.",
+                              "మీరు ఖండాలను టోగుల్ చేసినప్పుడు ప్రాంత సారాంశ కౌంటర్ రియల్ టైమ్‌లో నవీకరించబడుతుంది. ఫిల్టర్ మారినప్పుడల్లా చక్రం తన ఎంట్రీలను మళ్ళీ కలపజేస్తుంది.",
+                              "మీరు వ్యక్తిగత దేశాలను జోడించడానికి, తీసివేయడానికి లేదా పేరు మార్చడానికి అనుకూలన సైడ్‌బార్‌ను కూడా ఉపయోగించవచ్చు."
                         ]
                   },
                   {
-                        "title": "When to Use the Country Wheel",
+                        "title": "దేశ చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The country wheel works best when you need to make a random geographic selection."
+                              "మీరు యాదృచ్ఛిక భౌగోళిక ఎంపిక చేయాల్సినప్పుడు దేశ చక్రం ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Travel Planning and Dream Destinations",
-                                    "content": "When you want to travel but cannot decide where, the country wheel removes the paradox of choice. Spin the wheel and let it pick a destination."
+                                    "title": "ప్రయాణ ప్లానింగ్ మరియు కలల గమ్యస్థానాలు",
+                                    "content": "మీరు ప్రయాణించాలనుకుని ఎక్కడికి వెళ్ళాలో నిర్ణయించలేకపోతే, దేశ చక్రం ఎంపిక వైరుధ్యాన్ని తొలగిస్తుంది. చక్రాన్ని తిప్పి గమ్యస్థానాన్ని ఎంచుకోనివ్వండి."
                               },
                               {
-                                    "title": "Educational Activities and Geography Games",
-                                    "content": "Teachers use the country wheel for geography lessons, cultural studies, and classroom games."
+                                    "title": "విద్యా కార్యకలాపాలు మరియు భూగోళశాస్త్ర ఆటలు",
+                                    "content": "ఉపాధ్యాయులు భూగోళశాస్త్ర పాఠాలు, సాంస్కృతిక అధ్యయనాలు మరియు తరగతి గది ఆటల కోసం దేశ చక్రాన్ని ఉపయోగిస్తారు."
                               },
                               {
-                                    "title": "Cultural Exploration and Food Challenges",
-                                    "content": "Group challenges where each person cooks a dish from a randomly selected country work well with the wheel."
+                                    "title": "సాంస్కృతిక అన్వేషణ మరియు ఆహార సవాళ్లు",
+                                    "content": "ప్రతి వ్యక్తి యాదృచ్ఛికంగా ఎంచుకున్న దేశం నుండి వంటకం చేసే సమూహ సవాళ్లు చక్రంతో బాగా పనిచేస్తాయి."
                               },
                               {
-                                    "title": "Decision Making and Random Selection",
-                                    "content": "For personal decisions where geography is a factor — choosing where to study abroad, picking a language to learn."
+                                    "title": "నిర్ణయం తీసుకోవడం మరియు యాదృచ్ఛిక ఎంపిక",
+                                    "content": "విదేశాల్లో చదువుకోవడానికి ఎక్కడ ఎంచుకోవాలి, నేర్చుకోవడానికి భాషను ఎంచుకోవడం వంటి భౌగోళికత ఒక కారకమైన వ్యక్తిగత నిర్ణయాల కోసం."
                               }
                         ]
                   },
                   {
-                        "title": "Country Wheel vs Other Randomizers",
+                        "title": "దేశ చక్రం vs ఇతర రాండమైజర్లు",
                         "content": [
-                              "The yes or no wheel handles binary decisions with two outcomes. The country wheel handles geographic decisions with 199 outcomes.",
-                              "For random selections that are not geographic, the word wheel lets you upload custom text entries. The random food wheel handles meal decisions.",
-                              "If you want a different kind of geographic randomizer, the zodiac wheel uses astrological signs instead of countries."
+                              "అవును/కాదు చక్రం రెండు ఫలితాలతో బైనరీ నిర్ణయాలను నిర్వహిస్తుంది. దేశ చక్రం 199 ఫలితాలతో భౌగోళిక నిర్ణయాలను నిర్వహిస్తుంది.",
+                              "భౌగోళికం కాని యాదృచ్ఛిక ఎంపికల కోసం, పద చక్రం మీరు అనుకూలిత వచన ఎంట్రీలను అప్‌లోడ్ చేయడానికి అనుమతిస్తుంది. యాదృచ్ఛిక ఆహార చక్రం భోజన నిర్ణయాలను నిర్వహిస్తుంది.",
+                              "మీరు భిన్నమైన రకం భౌగోళిక రాండమైజర్ కావలసినట్లయితే, రాశిచక్రం దేశాల స్థానంలో జ్యోతిష్య సంకేతాలను ఉపయోగిస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the country wheel?",
-                        "a": "The country wheel is a spinning tool that randomly selects from 199 countries. Each country displays its flag emoji and name."
+                        "q": "దేశ చక్రం అంటే ఏమిటి?",
+                        "a": "దేశ చక్రం 199 దేశాల నుండి యాదృచ్ఛికంగా ఎంచుకునే స్పిన్నింగ్ సాధనం. ప్రతి దేశం తన జెండా ఎమోజీ మరియు పేరును ప్రదర్శిస్తుంది."
                   },
                   {
-                        "q": "How many countries are on the wheel?",
-                        "a": "The wheel includes 199 countries from all seven continents."
+                        "q": "చక్రంలో ఎన్ని దేశాలు ఉన్నాయి?",
+                        "a": "చక్రంలో అన్ని ఏడు ఖండాల నుండి 199 దేశాలు ఉన్నాయి."
                   },
                   {
-                        "q": "Can I filter by continent?",
-                        "a": "Yes. The continent filter section shows checkboxes for Africa, Asia, Europe, North America, South America, Oceania, and Antarctica."
+                        "q": "నేను ఖండం ద్వారా ఫిల్టర్ చేయవచ్చా?",
+                        "a": "అవును. ఖండ ఫిల్టర్ విభాగం ఆఫ్రికా, ఆసియా, యూరప్, ఉత్తర అమెరికా, దక్షిణ అమెరికా, ఓషియానియా మరియు అంటార్కిటికా కోసం చెక్‌బాక్స్‌లను చూపిస్తుంది."
                   },
                   {
-                        "q": "How does the country randomizer work?",
-                        "a": "The wheel uses browser-based physics simulation with randomized starting velocity and friction."
+                        "q": "దేశ రాండమైజర్ ఎలా పనిచేస్తుంది?",
+                        "a": "చక్రం యాదృచ్ఛికీకరించిన ప్రారంభ వేగం మరియు ఘర్షణతో బ్రౌజర్-ఆధారిత భౌతికశాస్త్ర సిమ్యులేషన్ ఉపయోగిస్తుంది."
                   },
                   {
-                        "q": "Can I use this for travel planning?",
-                        "a": "The country wheel is useful for picking a random travel destination when you are open to anywhere."
+                        "q": "నేను దీనిని ప్రయాణ ప్లానింగ్ కోసం ఉపయోగించవచ్చా?",
+                        "a": "మీరు ఎక్కడైనా సిద్ధంగా ఉన్నప్పుడు యాదృచ్ఛిక ప్రయాణ గమ్యస్థానాన్ని ఎంచుకోవడానికి దేశ చక్రం ఉపయోగకరంగా ఉంటుంది."
                   },
                   {
-                        "q": "Is the country wheel free?",
-                        "a": "The country wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "దేశ చక్రం ఉచితమా?",
+                        "a": "దేశ చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -10756,112 +10756,112 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "पदमाल व्हील्",
-            "subtitle": "यादृचिक पदम ऎराता.",
+            "title": "పద చక్రం",
+            "subtitle": "మీ అనుకూలిత వచన ఎంట్రీలను తిప్పే యాదృచ్ఛిక పద ఎంపిక. పేర్లు, పదాలు లేదా పదబంధాలను లోడ్ చేసి యాదృచ్ఛిక ఎంపిక కోసం స్పిన్ చేయండి.",
             "howToUse": {
-                  "title": "How to Use the Word Wheel",
-                  "intro": "The word wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "పద చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "పద చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Load Your Words",
-                              "desc": "Type words into the quick-paste textarea, upload a CSV or text file, or add entries through the customization sidebar. Each word or phrase becomes a segment on the wheel."
+                              "title": "మీ పదాలను లోడ్ చేయండి",
+                              "desc": "క్విక్-పేస్ట్ టెక్స్ట్‌ఏరియాలో పదాలను టైప్ చేయండి, CSV లేదా టెక్స్ట్ ఫైల్‌ను అప్‌లోడ్ చేయండి లేదా అనుకూలన సైడ్‌బార్ ద్వారా ఎంట్రీలను జోడించండి. ప్రతి పదం లేదా పదబంధం చక్రంపై ఒక విభాగంగా మారుతుంది."
                         },
                         {
-                              "title": "Review and Adjust",
-                              "desc": "Check that all entries loaded correctly. Use the sidebar to remove duplicates, fix typos, or add missing entries. The wheel updates in real time."
+                              "title": "సమీక్షించండి మరియు సర్దుబాటు చేయండి",
+                              "desc": "అన్ని ఎంట్రీలు సరిగ్గా లోడ్ అయ్యాయని నిర్ధారించండి. నకిలీలను తీసివేయడానికి, టైపోలను పరిష్కరించడానికి లేదా లోపించిన ఎంట్రీలను జోడించడానికి సైడ్‌బార్ ఉపయోగించండి. చక్రం రియల్ టైమ్‌లో నవీకరించబడుతుంది."
                         },
                         {
-                              "title": "Spin and Select",
-                              "desc": "Press the spin button and watch the words rotate. When the wheel stops, the winning entry appears. Use the result for your activity, game, or decision."
+                              "title": "తిప్పండి మరియు ఎంచుకోండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు పదాలు తిరగడం చూడండి. చక్రం ఆగినప్పుడు, విజేత ఎంట్రీ కనిపిస్తుంది. మీ కార్యకలాపం, ఆట లేదా నిర్ణయం కోసం ఫలితాన్ని ఉపయోగించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Word Wheel?",
+                        "title": "పద చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The word wheel is a random text picker that spins a wheel of custom entries. Unlike the yes or no wheel which has two fixed outcomes, the word wheel accepts any text you provide.",
-                              "The tool supports three input methods: manual entry through a textarea, file upload via CSV or text files, and direct editing through the customization sidebar.",
-                              "Each entry gets a distinct color on the wheel, and the segments are sized proportionally to the total number of entries."
+                              "పద చక్రం అనేది అనుకూలిత ఎంట్రీల చక్రాన్ని తిప్పే యాదృచ్ఛిక వచన ఎంపిక. రెండు స్థిర ఫలితాలు కలిగి ఉన్న అవును/కాదు చక్రం వలె కాకుండా, పద చక్రం మీరు అందించే ఏదైనా వచనాన్ని స్వీకరిస్తుంది.",
+                              "సాధనం మూడు ఇన్‌పుట్ పద్ధతులను మద్దతు ఇస్తుంది: టెక్స్ట్‌ఏరియా ద్వారా మాన్యువల్ ఎంట్రీ, CSV లేదా టెక్స్ట్ ఫైల్‌ల ద్వారా ఫైల్ అప్‌లోడ్ మరియు అనుకూలన సైడ్‌బార్ ద్వారా ప్రత్యక్ష ఎడిటింగ్.",
+                              "ప్రతి ఎంట్రీకి చక్రంపై వేర్వేరు రంగు వస్తుంది మరియు విభాగాలు మొత్తం ఎంట్రీల సంఖ్యకు అనులోమంగా పరిమాణంలో ఉంటాయి."
                         ]
                   },
                   {
-                        "title": "How to Load Words Into the Wheel",
+                        "title": "చక్రంలో పదాలను ఎలా లోడ్ చేయాలి",
                         "content": [
-                              "The word wheel provides three ways to get your entries onto the wheel."
+                              "పద చక్రం మీ ఎంట్రీలను చక్రంపైకి తీసుకురావడానికి మూడు మార్గాలను అందిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Quick Paste Method",
-                                    "content": "The quick-paste textarea sits below the wheel. Type or paste one word or phrase per line, then click the Load Words button."
+                                    "title": "క్విక్ పేస్ట్ పద్ధతి",
+                                    "content": "క్విక్-పేస్ట్ టెక్స్ట్‌ఏరియా చక్రం క్రింద ఉంటుంది. ప్రతి పంక్తిలో ఒక పదం లేదా పదబంధాన్ని టైప్ చేయండి లేదా పేస్ట్ చేయండి, తర్వాత పదాలను లోడ్ చేయండి బటన్ క్లిక్ చేయండి."
                               },
                               {
-                                    "title": "File Upload Method",
-                                    "content": "The file upload zone supports CSV, TXT, and XLSX formats. Click Browse Files or drag a file onto the drop zone."
+                                    "title": "ఫైల్ అప్‌లోడ్ పద్ధతి",
+                                    "content": "ఫైల్ అప్‌లోడ్ జోన్ CSV, TXT మరియు XLSX ఫార్మాట్‌లను మద్దతు ఇస్తుంది. ఫైల్‌లను బ్రౌజ్ చేయండి క్లిక్ చేయండి లేదా ఫైల్‌ను డ్రాప్ జోన్‌పైకి లాగండి."
                               },
                               {
-                                    "title": "Customization Sidebar",
-                                    "content": "The sidebar panel provides a form-based interface for adding, editing, and removing individual entries."
+                                    "title": "అనుకూలన సైడ్‌బార్",
+                                    "content": "సైడ్‌బార్ ప్యానెల్ వ్యక్తిగత ఎంట్రీలను జోడించడానికి, సవరించడానికి మరియు తీసివేయడానికి ఫారమ్-ఆధారిత ఇంటర్‌ఫేస్‌ను అందిస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "Use Cases for the Word Wheel",
+                        "title": "పద చక్రం ఉపయోగ సందర్భాలు",
                         "content": [
-                              "The word wheel handles any scenario where you need to randomly select from a custom list."
+                              "మీరు అనుకూలిత జాబితా నుండి యాదృచ్ఛికంగా ఎంచుకోవాల్సిన ప్రతి పరిస్థితిని పద చక్రం నిర్వహిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Name Picking and Random Selection",
-                                    "content": "The most common use is picking a random name from a list. Teachers use it to select students for activities."
+                                    "title": "పేర్లు ఎంచుకోవడం మరియు యాదృచ్ఛిక ఎంపిక",
+                                    "content": "అత్యంత సాధారణ ఉపయోగం జాబితా నుండి యాదృచ్ఛిక పేరును ఎంచుకోవడం. ఉపాధ్యాయులు కార్యకలాపాల కోసం విద్యార్థులను ఎంచుకోవడానికి దీనిని ఉపయోగిస్తారు."
                               },
                               {
-                                    "title": "Classroom and Educational Activities",
-                                    "content": "Educators use the word wheel for vocabulary practice, spelling bee preparation, and language learning exercises."
+                                    "title": "తరగతి గది మరియు విద్యా కార్యకలాపాలు",
+                                    "content": "విద్యావంతులు పదజాలం అభ్యాసం, స్పెల్లింగ్ బీ సన్నాహం మరియు భాష నేర్చుకునే వ్యాయామాల కోసం పద చక్రాన్ని ఉపయోగిస్తారు."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers load word lists with character names, plot prompts, or theme keywords. Spinning the wheel produces a random combination."
+                                    "title": "సృజనాత్మక రచన మరియు బ్రెయిన్‌స్టార్మింగ్",
+                                    "content": "రచయితలు పాత్ర పేర్లు, ప్లాట్ ప్రాంప్ట్‌లు లేదా థీమ్ కీవర్డ్‌లతో పద జాబితాలను లోడ్ చేస్తారు. చక్రాన్ని తిప్పడం యాదృచ్ఛిక కలయికను ఉత్పత్తి చేస్తుంది."
                               },
                               {
-                                    "title": "Party Games and Social Activities",
-                                    "content": "For group games, load a list of challenges, topics, or categories. The wheel determines who goes next."
+                                    "title": "పార్టీ ఆటలు మరియు సామాజిక కార్యకలాపాలు",
+                                    "content": "సమూహ ఆటల కోసం, సవాళ్లు, అంశాలు లేదా వర్గాల జాబితాను లోడ్ చేయండి. చక్రం తదుపరి ఎవరు వెళ్తారో నిర్ణయిస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "Word Wheel vs Other Random Pickers",
+                        "title": "పద చక్రం vs ఇతర యాదృచ్ఛిక ఎంపికలు",
                         "content": [
-                              "The country wheel includes a pre-loaded database of 199 countries. The word wheel starts empty and requires you to provide entries.",
-                              "The random food wheel comes pre-loaded with common meal options. The word wheel handles any text, making it the most versatile random picker.",
-                              "For binary decisions, the yes and no dice tool provides a different visual experience with 3D physics."
+                              "దేశ చక్రం 199 దేశాల ముందే లోడ్ చేయబడిన డేటాబేస్‌ను కలిగి ఉంది. పద చక్రం ఖాళీగా ప్రారంభమై మీరు ఎంట్రీలను అందించాల్సి ఉంటుంది.",
+                              "యాదృచ్ఛిక ఆహార చక్రం సాధారణ భోజన ఎంపికలతో ముందే లోడ్ చేయబడి ఉంటుంది. పద చక్రం ఏదైనా వచనాన్ని నిర్వహిస్తుంది, దీనిని అత్యంత బహుముఖ యాదృచ్ఛిక ఎంపికగా చేస్తుంది.",
+                              "బైనరీ నిర్ణయాల కోసం, అవును మరియు కాదు పాసాలు సాధనం 3D భౌతికశాస్త్రంతో భిన్నమైన దృశ్య అనుభవాన్ని అందిస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the word wheel?",
-                        "a": "The word wheel is a random word picker that spins a wheel of custom text entries."
+                        "q": "పద చక్రం అంటే ఏమిటి?",
+                        "a": "పద చక్రం అనేది అనుకూలిత వచన ఎంట్రీల చక్రాన్ని తిప్పే యాదృచ్ఛిక పద ఎంపిక."
                   },
                   {
-                        "q": "How do I add my own words?",
-                        "a": "Three methods are available: type words into the textarea, upload a CSV or text file, or use the customization sidebar."
+                        "q": "నేను నా స్వంత పదాలను ఎలా జోడించాలి?",
+                        "a": "మూడు పద్ధతులు అందుబాటులో ఉన్నాయి: టెక్స్ట్‌ఏరియాలో పదాలను టైప్ చేయండి, CSV లేదా టెక్స్ట్ ఫైల్‌ను అప్‌లోడ్ చేయండి లేదా అనుకూలన సైడ్‌బార్ ఉపయోగించండి."
                   },
                   {
-                        "q": "What file formats are supported?",
-                        "a": "The word wheel accepts CSV, TXT, and XLSX files."
+                        "q": "ఏ ఫైల్ ఫార్మాట్‌లు మద్దతు ఇవ్వబడతాయి?",
+                        "a": "పద చక్రం CSV, TXT మరియు XLSX ఫైల్‌లను స్వీకరిస్తుంది."
                   },
                   {
-                        "q": "Can I use this for classroom activities?",
-                        "a": "The word wheel works well for classrooms. Teachers use it to pick student names and assign groups."
+                        "q": "నేను దీనిని తరగతి గది కార్యకలాపాల కోసం ఉపయోగించవచ్చా?",
+                        "a": "పద చక్రం తరగతి గదులకు బాగా పనిచేస్తుంది. ఉపాధ్యాయులు విద్యార్థి పేర్లను ఎంచుకోవడానికి మరియు సమూహాలను కేటాయించడానికి దీనిని ఉపయోగిస్తారు."
                   },
                   {
-                        "q": "Is there a limit to how many words I can add?",
-                        "a": "There is no hard limit, but the wheel becomes harder to read with more than about 50 entries."
+                        "q": "నేను ఎన్ని పదాలను జోడించగలను?",
+                        "a": "కఠినమైన పరిమితి లేదు, కానీ 50 కంటే ఎక్కువ ఎంట్రీలతో చక్రం చదవడం కష్టమవుతుంది."
                   },
                   {
-                        "q": "Is the word wheel free?",
-                        "a": "The word wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "పద చక్రం ఉచితమా?",
+                        "a": "పద చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -12314,106 +12314,106 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "सत्यम् लेका साहस् व्हील्",
-            "subtitle": "द्वि-इस्टॆप पार्टी व्हील्।",
+            "title": "సత్యం లేదా సాహసం చక్రం",
+            "subtitle": "ద్వి-దశ పార్టీ చక్రం. ఆటగాళ్లను ఎంచుకుని సత్యం లేదా సాహసాన్ని కేటాయిస్తుంది. 200 కంటే ఎక్కువ క్యూరేటెడ్ ప్రాంప్ట్‌లు బిల్ట్ ఇన్.",
             "howToUse": {
-                  "title": "How to Play Truth or Dare",
-                  "intro": "The Truth or Dare wheel runs in two steps. Here is how each round works:",
+                  "title": "సత్యం లేదా సాహసం ఎలా ఆడాలి",
+                  "intro": "సత్యం లేదా సాహసం చక్రం రెండు దశలలో నడుస్తుంది. ప్రతి రౌండ్ ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Enter Player Names",
-                              "desc": "Type player names into the textarea, one per line. Click Load Players to update the wheel. If you skip this step, the tool uses default placeholder names."
+                              "title": "ఆటగాళ్ల పేర్లను నమోదు చేయండి",
+                              "desc": "ఆటగాళ్ల పేర్లను టెక్స్ట్‌ఏరియాలో టైప్ చేయండి, ఒక్కో పంక్తిలో ఒక్కొక్కటి. చక్రాన్ని నవీకరించడానికి ఆటగాళ్లను లోడ్ చేయండి క్లిక్ చేయండి. ఈ దశను దాటవేస్తే, సాధనం డిఫాల్ట్ ప్లేస్‌హోల్డర్ పేర్లను ఉపయోగిస్తుంది."
                         },
                         {
-                              "title": "Spin to Pick a Player",
-                              "desc": "Press the spin button to randomly select a player. The wheel displays all names and stops on the chosen player."
+                              "title": "ఆటగాడిని ఎంచుకోవడానికి స్పిన్ చేయండి",
+                              "desc": "యాదృచ్ఛికంగా ఆటగాడిని ఎంచుకోవడానికి స్పిన్ బటన్ నొక్కండి. చక్రం అన్ని పేర్లను ప్రదర్శిస్తుంది మరియు ఎంచుకున్న ఆటగాడిపై ఆగుతుంది."
                         },
                         {
-                              "title": "Spin for Truth or Dare",
-                              "desc": "The wheel reloads with Truth and Dare segments. Spin again to determine the challenge type. A random prompt from the selected category is displayed."
+                              "title": "సత్యం లేదా సాహసం కోసం స్పిన్ చేయండి",
+                              "desc": "చక్రం సత్యం మరియు సాహసం విభాగాలతో మళ్ళీ లోడ్ అవుతుంది. సవాలు రకాన్ని నిర్ణయించడానికి మళ్ళీ స్పిన్ చేయండి. ఎంచుకున్న వర్గం నుండి యాదృచ్ఛిక ప్రాంప్ట్ ప్రదర్శించబడుతుంది."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Truth or Dare Wheel?",
+                        "title": "సత్యం లేదా సాహసం చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The Truth or Dare wheel is a two-step party game spinner that randomly assigns truths and dares to players. The wheel operates in two distinct phases: first selecting a player, then choosing between Truth and Dare.",
-                              "The tool includes a built-in database of over 200 prompts — roughly evenly split between truths and dares. The neon-themed visual design with glowing colors sets the mood for a party atmosphere.",
-                              "The wheel segments display player names during step one and the Truth/Dare choice during step two, making the selection process visible to everyone."
+                              "సత్యం లేదా సాహసం చక్రం అనేది ఆటగాళ్లకు సత్యాలు మరియు సాహసాలను యాదృచ్ఛికంగా కేటాయించే ద్వి-దశ పార్టీ ఆట స్పిన్నర్. చక్రం రెండు వేర్వేరు దశలలో పనిచేస్తుంది: మొదట ఆటగాడిని ఎంచుకుని, తర్వాత సత్యం మరియు సాహసం మధ్య ఎంచుకుంటుంది.",
+                              "సాధనంలో 200 కంటే ఎక్కువ ప్రాంప్ట్‌ల బిల్ట్-ఇన్ డేటాబేస్ ఉంది — సుమారు సత్యాలు మరియు సాహసాల మధ్య సమానంగా విభజించబడింది. నియాన్-థీమ్ దృశ్య డిజైన్ పార్టీ వాతావరణానికి మూడ్ సెట్ చేస్తుంది.",
+                              "చక్ర విభాగాలు దశ 1 సమయంలో ఆటగాళ్ల పేర్లను మరియు దశ 2 సమయంలో సత్యం/సాహసం ఎంపికను ప్రదర్శిస్తాయి, ఎంపిక ప్రక్రియ అందరికీ కనిపించేలా చేస్తుంది."
                         ]
                   },
                   {
-                        "title": "How the Two-Step Process Works",
+                        "title": "ద్వి-దశ ప్రక్రియ ఎలా పనిచేస్తుంది",
                         "content": [
-                              "The Truth or Dare wheel uses a sequential spinning system that determines both the player and the challenge type through separate spins."
+                              "సత్యం లేదా సాహసం చక్రం వేర్వేరు స్పిన్‌ల ద్వారా ఆటగాడిని మరియు సవాలు రకాన్ని నిర్ణయించే క్రమబద్ధమైన స్పిన్నింగ్ వ్యవస్థను ఉపయోగిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Step 1: Player Selection",
-                                    "content": "The first spin selects a random player from your list. The wheel displays all player names as segments. After a brief pause, the wheel automatically transitions to step two."
+                                    "title": "దశ 1: ఆటగాడి ఎంపిక",
+                                    "content": "మొదటి స్పిన్ మీ జాబితా నుండి యాదృచ్ఛిక ఆటగాడిని ఎంచుకుంటుంది. చక్రం అన్ని ఆటగాళ్ల పేర్లను విభాగాలుగా ప్రదర్శిస్తుంది. సంక్షిప్త విరామం తర్వాత, చక్రం స్వయంచాలకంగా దశ 2 కి మారుతుంది."
                               },
                               {
-                                    "title": "Step 2: Truth or Dare Selection",
-                                    "content": "The second spin chooses between Truth and Dare. The wheel reloads with just two segments. When this spin completes, a random prompt from the corresponding category is displayed."
+                                    "title": "దశ 2: సత్యం లేదా సాహసం ఎంపిక",
+                                    "content": "రెండవ స్పిన్ సత్యం మరియు సాహసం మధ్య ఎంచుకుంటుంది. చక్రం రెండు విభాగాలతో మాత్రమే మళ్ళీ లోడ్ అవుతుంది. ఈ స్పిన్ పూర్తయినప్పుడు, సంబంధిత వర్గం నుండి యాదృచ్ఛిక ప్రాంప్ట్ ప్రదర్శించబడుతుంది."
                               },
                               {
-                                    "title": "Customization and Control",
-                                    "content": "The customization sidebar lets you modify the wheel entries, colors, and behavior. You can add or remove player names and adjust the visual theme."
+                                    "title": "అనుకూలనం మరియు నియంత్రణ",
+                                    "content": "అనుకూలన సైడ్‌బార్ మీకు చక్ర ఎంట్రీలు, రంగులు మరియు ప్రవర్తనను సవరించడానికి అనుమతిస్తుంది. మీరు ఆటగాళ్ల పేర్లను జోడించవచ్చు లేదా తీసివేయవచ్చు మరియు దృశ్య థీమ్‌ను సర్దుబాటు చేయవచ్చు."
                               }
                         ]
                   },
                   {
-                        "title": "When to Play Truth or Dare",
+                        "title": "సత్యం లేదా సాహసం ఎప్పుడు ఆడాలి",
                         "content": [
-                              "The Truth or Dare wheel works best in social settings where people are comfortable sharing personal information."
+                              "సత్యం లేదా సాహసం చక్రం వ్యక్తిగత సమాచారాన్ని పంచుకోవడంలో సౌకర్యంగా ఉన్న సామాజిక సెట్టింగ్‌లలో ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "House Parties and Sleepovers",
-                                    "content": "The classic Truth or Dare scenario. The wheel adds structure by removing the debate over whose turn it is."
+                                    "title": "ఇంటి పార్టీలు మరియు స్లీపోవర్లు",
+                                    "content": "క్లాసిక్ సత్యం లేదా సాహసం దృశ్యం. ఎవరి టర్న్ అనే వాదనను తొలగించడం ద్వారా చక్రం నిర్మాణాన్ని జోడిస్తుంది."
                               },
                               {
-                                    "title": "Birthday Parties and Celebrations",
-                                    "content": "At birthday parties, the Truth or Dare wheel serves as an icebreaker that gets guests interacting."
+                                    "title": "పుట్టినరోజు పార్టీలు మరియు వేడుకలు",
+                                    "content": "పుట్టినరోజు పార్టీలలో, సత్యం లేదా సాహసం చక్రం అతిథులను పరస్పరం సంభాషించేలా చేసే ఐస్‌బ్రేకర్‌గా పనిచేస్తుంది."
                               },
                               {
-                                    "title": "Remote Gatherings and Video Calls",
-                                    "content": "The wheel works on any device with a browser, making it suitable for remote parties."
+                                    "title": "రిమోట్ సమావేశాలు మరియు వీడియో కాల్స్",
+                                    "content": "చక్రం బ్రౌజర్ ఉన్న ఏదైనా పరికరంలో పనిచేస్తుంది, రిమోట్ పార్టీలకు అనుకూలంగా చేస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "Truth or Dare vs Other Party Games",
+                        "title": "సత్యం లేదా సాహసం vs ఇతర పార్టీ ఆటలు",
                         "content": [
-                              "The yes or no wheel handles binary decisions but does not include the social interaction element. The random food wheel solves a different problem. The Truth or Dare wheel combines randomization with social interaction, making it the most engaging party tool on the site."
+                              "అవును/కాదు చక్రం బైనరీ నిర్ణయాలను నిర్వహిస్తుంది కానీ సామాజిక పరస్పర చర్య మూలకాన్ని చేర్చదు. యాదృచ్ఛిక ఆహార చక్రం భిన్నమైన సమస్యను పరిష్కరిస్తుంది. సత్యం లేదా సాహసం చక్రం యాదృచ్ఛికీకరణను సామాజిక పరస్పర చర్యతో కలుపుతుంది, దీనిని సైట్‌లో అత్యంత ఆకర్షణీయమైన పార్టీ సాధనగా చేస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "How does the Truth or Dare wheel work?",
-                        "a": "The wheel operates in two steps. First, it picks a random player. Then it spins again to choose between Truth and Dare."
+                        "q": "సత్యం లేదా సాహసం చక్రం ఎలా పనిచేస్తుంది?",
+                        "a": "చక్రం రెండు దశలలో పనిచేస్తుంది. మొదట, యాదృచ్ఛిక ఆటగాడిని ఎంచుకుంటుంది. తర్వాత సత్యం మరియు సాహసం మధ్య ఎంచుకోవడానికి మళ్ళీ స్పిన్ చేస్తుంది."
                   },
                   {
-                        "q": "How many truth and dare prompts are included?",
-                        "a": "The tool includes over 200 curated prompts — roughly 100 truths and 100 dares."
+                        "q": "ఎన్ని సత్యం మరియు సాహసం ప్రాంప్ట్‌లు చేర్చబడ్డాయి?",
+                        "a": "సాధనంలో 200 కంటే ఎక్కువ క్యూరేటెడ్ ప్రాంప్ట్‌లు ఉన్నాయి — సుమారు 100 సత్యాలు మరియు 100 సాహసాలు."
                   },
                   {
-                        "q": "Can I add custom player names?",
-                        "a": "Yes. The player setup textarea accepts one name per line."
+                        "q": "నేను అనుకూలిత ఆటగాళ్ల పేర్లను జోడించవచ్చా?",
+                        "a": "అవును. ఆటగాడి సెటప్ టెక్స్ట్‌ఏరియా ప్రతి పంక్తిలో ఒక పేరును స్వీకరిస్తుంది."
                   },
                   {
-                        "q": "Is this appropriate for kids?",
-                        "a": "The prompt database includes a mix of difficulty levels. Review the prompts before playing with younger children."
+                        "q": "ఇది పిల్లలకు తగినదా?",
+                        "a": "ప్రాంప్ట్ డేటాబేస్ కష్టత స్థాయిల మిశ్రమాన్ని కలిగి ఉంది. చిన్న పిల్లలతో ఆడటానికి ముందు ప్రాంప్ట్‌లను సమీక్షించండి."
                   },
                   {
-                        "q": "Can I use this for remote parties?",
-                        "a": "The Truth or Dare wheel works on any device with a browser. Share the URL with friends on a video call."
+                        "q": "నేను దీనిని రిమోట్ పార్టీల కోసం ఉపయోగించవచ్చా?",
+                        "a": "సత్యం లేదా సాహసం చక్రం బ్రౌజర్ ఉన్న ఏదైనా పరికరంలో పనిచేస్తుంది. వీడియో కాల్‌పై మిత్రులతో URL పంచుకోండి."
                   },
                   {
-                        "q": "Is the Truth or Dare wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "సత్యం లేదా సాహసం చక్రం ఉచితమా?",
+                        "a": "చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -13894,108 +13894,108 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "DTI थीम् व्हील्",
-            "subtitle": "यादृचिक थीम् जेनेरेटर्।",
+            "title": "DTI థీమ్ చక్రం",
+            "subtitle": "Dress To Impress కోసం యాదృచ్ఛిక థీమ్ జనరేటర్. 180+ థీమ్‌లు వర్గం ద్వారా. దుస్తుల ప్రేరణ కోసం స్పిన్ చేయండి.",
             "howToUse": {
-                  "title": "How to Use the DTI Theme Wheel",
-                  "intro": "The DTI Theme Wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "DTI థీమ్ చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "DTI థీమ్ చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Browse the Theme Library",
-                              "desc": "Scroll through the theme grid above the wheel. Each theme has a category tag. Use the category filters to narrow the selection."
+                              "title": "థీమ్ లైబ్రరీని బ్రౌజ్ చేయండి",
+                              "desc": "చక్రం పైన థీమ్ గ్రిడ్ ద్వారా స్క్రోల్ చేయండి. ప్రతి థీమ్‌కు వర్గ ట్యాగ్ ఉంటుంది. ఎంపికను తగ్గించడానికి వర్గ ఫిల్టర్లను ఉపయోగించండి."
                         },
                         {
-                              "title": "Enable Your Favorites",
-                              "desc": "Toggle themes on or off using the checkboxes. Only enabled themes appear on the wheel. Use Select All or Deselect All to manage the full list."
+                              "title": "మీ ఫేవరెట్లను ప్రారంభించండి",
+                              "desc": "చెక్‌బాక్స్‌లను ఉపయోగించి థీమ్‌లను ఆన్ లేదా ఆఫ్ టోగుల్ చేయండి. ప్రారంభించిన థీమ్‌లు మాత్రమే చక్రంపై కనిపిస్తాయి. పూర్తి జాబితాను నిర్వహించడానికి అన్నింటినీ ఎంచుకోండి లేదా అన్నింటినీ ఎంచుకోకండి ఉపయోగించండి."
                         },
                         {
-                              "title": "Spin for Your Theme",
-                              "desc": "Press the spin button and watch the themes rotate. When the wheel stops, the winning theme appears. Use it as your outfit inspiration."
+                              "title": "మీ థీమ్ కోసం స్పిన్ చేయండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు థీమ్‌లు తిరగడం చూడండి. చక్రం ఆగినప్పుడు, విజేత థీమ్ కనిపిస్తుంది. దీనిని మీ దుస్తుల ప్రేరణగా ఉపయోగించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the DTI Theme Wheel?",
+                        "title": "DTI థీమ్ చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The DTI Theme Wheel is a random theme generator designed for players of Dress To Impress, a popular fashion styling game.",
-                              "The tool includes over 180 themes organized into categories like Fantasy, Vintage, Streetwear, Formal, Casual, and more.",
-                              "The wheel randomly selects up to 20 enabled themes per spin, ensuring variety across multiple rounds."
+                              "DTI థీమ్ చక్రం అనేది Dress To Impress ఆటగాళ్ల కోసం రూపొందించిన యాదృచ్ఛిక థీమ్ జనరేటర్.",
+                              "సాధనంలో ఫాంటసీ, వింటేజ్, స్ట్రీట్‌వేర్, ఫార్మల్, క్యాజువల్ మరియు మరిన్ని వర్గాలలో సంఘటించబడిన 180 కంటే ఎక్కువ థీమ్‌లు ఉన్నాయి.",
+                              "చక్రం బహుళ రౌండ్లలో వైవిధ్యాన్ని నిర్ధారిస్తూ, ప్రతి స్పిన్ కోసం 20 ప్రారంభించిన థీమ్‌ల వరకు యాదృచ్ఛికంగా ఎంచుకుంటుంది."
                         ]
                   },
                   {
-                        "title": "How the Theme Library Works",
+                        "title": "థీమ్ లైబ్రరీ ఎలా పనిచేస్తుంది",
                         "content": [
-                              "The theme library sits above the wheel and displays all available themes in a scrollable grid."
+                              "థీమ్ లైబ్రరీ చక్రం పైన ఉంటుంది మరియు అందుబాటులో ఉన్న అన్ని థీమ్‌లను స్క్రోల్ చేయగల గ్రిడ్‌లో ప్రదర్శిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Category Filtering",
-                                    "content": "The category buttons include All plus every category in the theme database. Clicking a category filters the grid."
+                                    "title": "వర్గ ఫిల్టరింగ్",
+                                    "content": "వర్గ బటన్లు అన్నింటిని ప్లస్ థీమ్ డేటాబేస్‌లోని ప్రతి వర్గాన్ని కలిగి ఉంటాయి. వర్గాన్ని క్లిక్ చేయడం గ్రిడ్‌ను ఫిల్టర్ చేస్తుంది."
                               },
                               {
-                                    "title": "Theme Selection",
-                                    "content": "Each theme has a checkbox that toggles it on or off. Enabled themes appear on the wheel; disabled themes do not."
+                                    "title": "థీమ్ ఎంపిక",
+                                    "content": "ప్రతి థీమ్‌కు దానిని ఆన్ లేదా ఆఫ్ టోగుల్ చేసే చెక్‌బాక్స్ ఉంటుంది. ప్రారంభించిన థీమ్‌లు చక్రంపై కనిపిస్తాయి; నిలిపివేసిన థీమ్‌లు కనిపించవు."
                               },
                               {
-                                    "title": "Random Theme Sampling",
-                                    "content": "When you spin, the wheel randomly samples up to 20 from the enabled pool. This ensures the wheel remains readable."
+                                    "title": "యాదృచ్ఛిక థీమ్ నమూనా",
+                                    "content": "మీరు స్పిన్ చేసినప్పుడు, చక్రం ప్రారంభించిన పూల్ నుండి 20 వరకు యాదృచ్ఛికంగా నమూనా చేస్తుంది. ఇది చక్రం చదవగలిగేలా ఉండటాన్ని నిర్ధారిస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the DTI Theme Wheel",
+                        "title": "DTI థీమ్ చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The DTI Theme Wheel works best when you need outfit inspiration for Dress To Impress challenges."
+                              "Dress To Impress సవాళ్ల కోసం మీకు దుస్తుల ప్రేరణ కావలసినప్పుడు DTI థీమ్ చక్రం ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Daily Challenge Practice",
-                                    "content": "DTI daily challenges assign a theme. The wheel lets you practice with random themes before the daily challenge drops."
+                                    "title": "రోజువారీ సవాలు అభ్యాసం",
+                                    "content": "DTI రోజువారీ సవాళ్లు థీమ్‌ను కేటాయిస్తాయి. రోజువారీ సవాలు పడటానికి ముందు చక్రం యాదృచ్ఛిక థీమ్‌లతో అభ్యాసం చేయడానికి మిమ్మల్ని అనుమతిస్తుంది."
                               },
                               {
-                                    "title": "Party Games and Group Challenges",
-                                    "content": "Friends who play DTI together can use the wheel for competitive styling sessions."
+                                    "title": "పార్టీ ఆటలు మరియు సమూహ సవాళ్లు",
+                                    "content": "DTI ఆడే మిత్రులు పోటీతత్వ స్టైలింగ్ సెషన్ల కోసం చక్రాన్ని ఉపయోగించవచ్చు."
                               },
                               {
-                                    "title": "Creative Fashion Exploration",
-                                    "content": "Even outside of DTI, the theme wheel serves as a fashion brainstorming tool."
+                                    "title": "సృజనాత్మక ఫ్యాషన్ అన్వేషణ",
+                                    "content": "DTI బయట కూడా, థీమ్ చక్రం ఫ్యాషన్ బ్రెయిన్‌స్టార్మింగ్ సాధనగా పనిచేస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "DTI Theme Wheel vs Other Spinners",
+                        "title": "DTI థీమ్ చక్రం vs ఇతర స్పిన్నర్లు",
                         "content": [
-                              "The yes or no wheel handles binary decisions. The DTI Theme Wheel handles selecting from a large, categorized database of fashion themes.",
-                              "The hair color wheel shares the fashion context but focuses specifically on hair dye colors.",
-                              "The zodiac wheel offers a different kind of themed randomization with astrological signs."
+                              "అవును/కాదు చక్రం బైనరీ నిర్ణయాలను నిర్వహిస్తుంది. DTI థీమ్ చక్రం పెద్ద, వర్గీకరించబడిన ఫ్యాషన్ థీమ్‌ల డేటాబేస్ నుండి ఎంచుకోవడాన్ని నిర్వహిస్తుంది.",
+                              "జుట్టు రంగు చక్రం ఫ్యాషన్ సందర్భాన్ని పంచుకుంటుంది కానీ ప్రత్యేకంగా హెయిర్ డై రంగులపై దృష్టి పెడుతుంది.",
+                              "రాశిచక్రం జ్యోతిష్య సంకేతాలతో భిన్నమైన రకం థీమ్ యాదృచ్ఛికీకరణను అందిస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the DTI Theme Wheel?",
-                        "a": "The DTI Theme Wheel is a random theme generator for Dress To Impress players with over 180 themes."
+                        "q": "DTI థీమ్ చక్రం అంటే ఏమిటి?",
+                        "a": "DTI థీమ్ చక్రం 180 కంటే ఎక్కువ థీమ్‌లతో Dress To Impress ఆటగాళ్ల కోసం యాదృచ్ఛిక థీమ్ జనరేటర్."
                   },
                   {
-                        "q": "How many themes are included?",
-                        "a": "The wheel includes over 180 themes across multiple categories."
+                        "q": "ఎన్ని థీమ్‌లు చేర్చబడ్డాయి?",
+                        "a": "చక్రంలో బహుళ వర్గాలలో 180 కంటే ఎక్కువ థీమ్‌లు ఉన్నాయి."
                   },
                   {
-                        "q": "Can I filter by category?",
-                        "a": "Yes. The category filter buttons let you view themes from specific categories."
+                        "q": "నేను వర్గం ద్వారా ఫిల్టర్ చేయవచ్చా?",
+                        "a": "అవును. వర్గ ఫిల్టర్ బటన్లు మీకు నిర్దిష్ట వర్గాల నుండి థీమ్‌లను చూడటానికి అనుమతిస్తాయి."
                   },
                   {
-                        "q": "How does the random sampling work?",
-                        "a": "When you spin, the wheel randomly selects up to 20 enabled themes from your full list."
+                        "q": "యాదృచ్ఛిక నమూనా ఎలా పనిచేస్తుంది?",
+                        "a": "మీరు స్పిన్ చేసినప్పుడు, చక్రం మీ పూర్తి జాబితా నుండి 20 ప్రారంభించిన థీమ్‌ల వరకు యాదృచ్ఛికంగా ఎంచుకుంటుంది."
                   },
                   {
-                        "q": "Can I add custom themes?",
-                        "a": "Yes. The customization sidebar lets you add, edit, or remove themes."
+                        "q": "నేను అనుకూలిత థీమ్‌లను జోడించవచ్చా?",
+                        "a": "అవును. అనుకూలన సైడ్‌బార్ మీకు థీమ్‌లను జోడించడానికి, సవరించడానికి లేదా తీసివేయడానికి అనుమతిస్తుంది."
                   },
                   {
-                        "q": "Is the DTI Theme Wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "DTI థీమ్ చక్రం ఉచితమా?",
+                        "a": "చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -14503,23 +14503,22 @@ const WHEEL_PAGE_CONTENT = {
       },
     de: {
             "title": "Tierkreisrad",
-            "subtitle": "Zufällige Auswahl eines Tierkreiszeichens.",
+            "subtitle": "Drehen Sie, um ein zufälliges Tierkreiszeichen auszuwählen. Jedes Zeichen zeigt sein Symbol, Element, Eigenschaften und Kompatibilität an.",
             "howToUse": {
                   "title": "So verwenden Sie das Tierkreisrad",
-                  "intro": "Das Rad ist bereit:",
+                  "intro": "Das Tierkreisrad ist in Sekundenschnelle bereit zum Drehen. So funktioniert es:",
                   "steps": [
                         {
-                              "title": "Zeichen überprüfen",
-                              "desc": "Schauen Sie sich die 12 Zeichen an."
+                              "title": "Zeichen ansehen",
+                              "desc": "Das Rad zeigt alle 12 Tierkreiszeichen mit ihren Symbolen und farbcodierten Segmenten. Jedes Zeichen steht für einen anderen astrologischen Archetyp mit einzigartigen Eigenschaften."
                         },
                         {
-                              "title": "Drehen",
-                              "desc": "Drücken Sie Drehen."
+                              "title": "Rad drehen",
+                              "desc": "Drücken Sie die Dreh-Taste und beobachten Sie, wie die Zeichen rotieren. Das Rad verwendet physikbasierte Zufallsauswahl, um ein Zeichen zu ermitteln. Das Ergebnis zeigt den Namen, das Symbol, das Element und den Datumsbereich an."
                         },
                         {
-                              "title": "Details lesen",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs.",
-                              "desc": "Schauen Sie sich das Profil an."
+                              "title": "Zeichendetails lesen",
+                              "desc": "Nach dem Dreh erscheint ein Informationsbereich mit den Eigenschaften des ausgewählten Zeichens, seinem Element und den kompatiblen Zeichen. Nutzen Sie diese Informationen für Spiele, Gespräche oder kreative Ideen."
                         }
                   ]
             },
@@ -14527,123 +14526,124 @@ const WHEEL_PAGE_CONTENT = {
                   {
                         "title": "Was ist das Tierkreisrad?",
                         "content": [
-                              "Ein zufälliger Tierkreiszeichen-Auswähler."
+                              "Das Tierkreisrad ist ein zufälliger Auswähler für Tierkreiszeichen, der durch alle 12 astrologischen Zeichen dreht. Jedes Zeichen zeigt sein Symbol, seinen Namen und seine Farbe auf dem Rádsegment. Wenn das Rad stoppt, erscheint das ausgewählte Zeichen mit seinem Element, seinen Persönlichkeitsmerkmalen, dem Datumsbereich und kompatiblen Zeichen.",
+                              "Dieses Werkzeug basiert auf der westlichen astrologischen Tradition, die den Tierkreis in 12 Zeichen unterteilt, basierend auf der Position der Sonne zum Zeitpunkt der Geburt. Jedes Zeichen ist einem der vier Elemente – Feuer, Erde, Luft oder Wasser – zugeordnet und hat spezifische Persönlichkeitsmerkmale.",
+                              "Im Gegensatz zu einem Horoskop, das Ereignisse basierend auf Ihrem tatsächlichen Zeichen vorhersagt, wählt dieses Rad unabhängig von Ihrem Geburtstag ein zufälliges Zeichen aus. Es eignet sich hervorragend für Spiele, kreative Übungen und zur Persönlichkeitserkundung."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "Wie das Rad die Zeichen auswählt",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "Das Tierkreisrad verwendet physikbasierte Zufallsauswahl, um faire und unvorhersehbare Ergebnisse zu gewährleisten. Jedes der 12 Zeichen belegt ein gleich großes Segment auf dem Rad, sodass alle Zeichen die gleiche Wahrscheinlichkeit haben, ausgewählt zu werden. Das Rad dreht sich mit variabler Geschwindigkeit und Verzögerung, was es unmöglich macht, vorherzusagen, welches Zeichen gewählt wird.",
+                              "Wenn das Rad stoppt, zeigt es den Namen, das Symbol und das Element des Zeichens direkt im Ergebnisbereich an. Darunter klappt ein Informationsbereich auf, der das vollständige Zeichenprofil zeigt, einschließlich Datumsbereich, Persönlichkeitsmerkmale und kompatible Zeichen."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "Die 12 Tierkreiszeichen und ihre Elemente",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "Jedes Tierkreiszeichen gehört zu einem der vier Elemente, und die Elemente prägen die Persönlichkeit des Zeichens auf grundlegende Weise. Das Rad farbcodiert die Zeichen nach ihrem Element, sodass das visuelle Muster auch während einer schnellen Drehung klar erkennbar ist."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "Feuerzeichen: Widder, Löwe, Schütze",
+                                    "content": "Feuerzeichen zeichnen sich durch Leidenschaft, Energie und Tatendrang aus. Der Widder führt mit Initiative und Kühnheit. Der Löwe zieht mit Charisma und Kreativität die Aufmerksamkeit auf sich. Der Schütze sucht Abenteuer und philosophische Wahrheit. Feuerzeichen sind extrovertiert, wettbewerbsorientiert und von Inspiration getrieben."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "Erdzeichen: Stier, Jungfrau, Steinbock",
+                                    "content": "Erdzeichen legen Wert auf Stabilität, Praktikabilität und materiellen Komfort. Der Stier baut mit Geduld und sinnlicher Wertschätzung auf. Die Jungfrau analysiert mit Detailgenauigkeit und Dienstbereitschaft. Der Steinbock erreicht Ziele durch Disziplin und Ehrgeiz. Erdzeichen sind zuverlässig, methodisch und in der Realität verankert."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "Luftzeichen: Zwillinge, Waage, Wassermann",
+                                    "content": "Luftzeichen priorisieren Kommunikation, Ideen und soziale Verbindungen. Die Zwillinge verarbeiten mit Neugier und Anpassungsfähigkeit. Die Waage sucht Harmonie durch Ausgewogenheit und Ästhetik. Der Wassermann innoviert durch Unabhängigkeit und humanitäre Vision. Luftzeichen sind intellektuell, gesellig und ideenorientiert."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "Wasserzeichen: Krebs, Skorpion, Fische",
+                                    "content": "Wasserzeichen agieren durch Emotion, Intuition und Tiefe. Der Krebs nährt mit Empathie und Beschützerinstinkt. Der Skorpion transformiert durch Intensität und psychologische Einsicht. Die Fische verbinden durch Mitgefühl und spirituelle Vorstellungskraft. Wasserzeichen sind sensibel, wahrnehmungsfähig und emotional intelligent."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "Wann sollte man das Tierkreisrad verwenden?",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "Das Tierkreisrad eignet sich am besten, wenn Sie ein zufälliges astrologisches Zeichen für Spiele, kreative Impulse oder Persönlichkeitsdiskussionen benötigen. Im Gegensatz zu einfachen Zufallsgeneratoren wie einer Essensrad bietet das Tierkreisrad Ergebnisse mit eingebauten Persönlichkeitsdaten und symbolischen Assoziationen."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "Partyspiele und Eisbrecher",
+                                    "content": "In sozialen Situationen bestimmt das Tierkreisrad, welches Zeichen jede Person bei astrologisch thematisierten Spielen spielt. Drehen Sie für ein zufälliges Zeichen und beantworten Sie Fragen zu seinen Eigenschaften, oder verwenden Sie es zur Zuweisung von Rollen in Rollenspielen. Die visuelle Darstellung mit Symbolen und Farben macht die Auswahl für Gruppen ansprechend."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "Kreatives Schreiben und Charakterentwicklung",
+                                    "content": "Schriftsteller verwenden das Tierkreisrad, um fiktiven Charakteren Persönlichkeitsarchetypen zuzuweisen. Drehen Sie für ein Zeichen, lesen Sie die Eigenschaften und nutzen Sie diese als Ausgangspunkt für die Charakterentwicklung. Die elementaren Assoziationen bieten zusätzliche Tiefe."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "Persönlichkeitsdiskussionen und Selbstreflexion",
+                                    "content": "Obwohl das Rad zufällig auswählt und nicht auf Ihrem Geburtsdatum basiert, kann die Beschreibung des Zeichens interessante Selbstreflexion anregen. Wenn das Rad ein Zeichen auswählt, dessen Eigenschaften bei Ihnen Anklang finden, sagt das etwas über Ihre Persönlichkeit aus."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "Bildungsaktivitäten",
+                                    "content": "Lehrer verwenden das Tierkreisrad für Astronomieunterricht, Kulturstudien oder Statistikübungen. Das Rad bietet einen Zufallsauswahlmechanismus, der diese Aktivitäten interaktiv und unterhaltsam macht."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "Tägliche Entscheidungsfindung",
+                                    "content": "Manche Menschen nutzen das Tierkreisrad als leichtes Entscheidungswerkzeug. Wenn Sie eine risikoarme Wahl treffen müssen und das Ergebnis interessanter als ein Münzwurf sein soll, drehen Sie das Rad und lassen Sie die Eigenschaften des Zeichens einen Ansatz vorschlagen."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "Tierkreisrad vs. andere Zufallsgeneratoren",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "Das Ja-Nein-Rad liefert binäre Ergebnisse ohne interpretativen Kontext. Das Tierkreisrad liefert Ergebnisse mit eingebauter Bedeutung – jedes Zeichen hat Eigenschaften, Elemente und Kompatibilitätsdaten, die der zufälligen Auswahl Tiefe verleihen.",
+                              "Der Ja-Nein-Orakel bietet philosophische Orientierung durch thematische Botschaften. Das Tierkreisrad bietet persönlichkeitsbasierte Informationen durch astrologische Archetypen. Beide fügen zufälligen Ergebnissen Kontext hinzu, aber das Orakel verwendet mystische Sprache, während das Tierkreisrad Persönlichkeitspsychologie verwendet.",
+                              "Der Tarotkartenleser verwendet Karten der Großen Arkana zur reflektierenden Führung. Das Tierkreisrad verwendet astrologische Zeichen zur Persönlichkeitserkundung. Beide dienen als Werkzeuge zur Selbstreflexion durch Zufallsauswahl, schöpfen jedoch aus unterschiedlichen Symbolsystemen."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "Wie viele Zeichen?",
-                        "a": "12."
+                        "q": "Was ist das Tierkreisrad?",
+                        "a": "Das Tierkreisrad ist ein zufälliger Auswähler für Tierkreiszeichen, der durch alle 12 astrologischen Zeichen dreht. Jedes Zeichen zeigt sein Symbol, Element, Eigenschaften und Kompatibilitätsinformationen an, wenn es ausgewählt wird."
                   },
                   {
-                        "q": "Kann ich Zeichen ändern?",
-                        "a": "Nein."
+                        "q": "Wie viele Tierkreiszeichen sind auf dem Rad?",
+                        "a": "Das Rad enthält alle 12 Zeichen des westlichen Tierkreises: Widder, Stier, Zwillinge, Krebs, Löwe, Jungfrau, Waage, Skorpion, Schütze, Steinbock, Wassermann und Fische."
                   },
                   {
-                        "q": "Ist das Ergebnis zufällig?",
-                        "a": "Ja."
+                        "q": "Basiert das auf meinem tatsächlichen Geburtszeichen?",
+                        "a": "Nein. Das Tierkreisrad wählt ein Zeichen zufällig aus, unabhängig von Ihrem tatsächlichen Geburtstag. Es ist für Spiele, kreative Übungen und Persönlichkeitserkundung gedacht, nicht für ernsthafte astrologische Beratung."
                   },
                   {
-                        "q": "Werden Elemente angezeigt?",
-                        "a": "Ja."
+                        "q": "Welche Informationen enthält jedes Zeichen?",
+                        "a": "Jedes Zeichenergebnis zeigt den Namen, das Symbol, das Element (Feuer, Erde, Luft oder Wasser), den Datumsbereich, die Persönlichkeitsmerkmale und die kompatiblen Zeichen. Diese Informationen erscheinen im Informationsbereich, nachdem das Rad gestoppt ist."
                   },
                   {
-                        "q": "Ist es kostenlos?",
-                        "a": "Ja."
+                        "q": "Kann ich das für Partyspiele verwenden?",
+                        "a": "Ja. Das Tierkreisrad eignet sich hervorragend für astrologisch thematisierte Partyspiele, bei denen Spieler zufällige Zeichen erhalten und Fragen zu deren Eigenschaften beantworten müssen."
                   },
                   {
-                        "q": "Ist es vertraulich?",
-                        "a": "Ja."
+                        "q": "Ist das Tierkreisrad kostenlos?",
+                        "a": "Ja. Das Rad ist völlig kostenlos, ohne Anmeldung, ohne Werbung und ohne Nutzungsbeschränkungen. Sie können so oft drehen, wie Sie möchten."
                   }
             ]
       },
     pt: {
             "title": "Roda do Zodíaco",
-            "subtitle": "Seleção aleatória de signos do zodíaco.",
+            "subtitle": "Gire a roda e descubra um signo do zodíaco aleatório com informações detalhadas sobre personalidade, elemento, compatibilidade e muito mais.",
             "howToUse": {
                   "title": "Como usar a Roda do Zodíaco",
-                  "intro": "A roda está pronta:",
+                  "intro": "A roda está pronta para ser girada em segundos. Veja como funciona:",
                   "steps": [
                         {
-                              "title": "Verificar signos",
-                              "desc": "Veja os 12 signos."
+                              "title": "Verificar os signos",
+                              "desc": "A roda exibe todos os 12 signos do zodíaco com seus símbolos e segmentos coloridos. Cada signo representa um arquétipo astrológico diferente com características únicas."
                         },
                         {
-                              "title": "Girar",
-                              "desc": "Pressione girar."
+                              "title": "Girar a roda",
+                              "desc": "Pressione o botão de girar e observe os signos rodarem. O resultado inclui o nome do signo, o símbolo, o elemento e o período de datas correspondente."
                         },
                         {
-                              "title": "Ler detalhes",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs.",
-                              "desc": "Veja o perfil."
+                              "title": "Ler os detalhes do signo",
+                              "desc": "Após a roda parar, um painel de informações é exibido mostrando as características do signo sorteado, sua associação elemental e os signos compatíveis."
                         }
                   ]
             },
@@ -14651,101 +14651,103 @@ const WHEEL_PAGE_CONTENT = {
                   {
                         "title": "O que é a Roda do Zodíaco?",
                         "content": [
-                              "Um seletor de signos do zodíaco aleatórios."
+                              "A Roda do Zodíaco é um seletor aleatório de signos astrológicos que percorre todos os 12 signos do zodíaco ocidental. Diferente de um horóscopo tradicional que prevê eventos diários com base no seu signo real de nascimento, esta ferramenta escolhe um signo aleatoriamente, independentemente da sua data de aniversário real.",
+                              "A ferramenta é inspirada na tradição astrológica ocidental, que divide o zodíaco em 12 signos baseados na posição do Sol no momento do nascimento. Cada signo possui características próprias de personalidade, elementos regentes, planetas governantes e compatibilidades que foram estudados e refinados ao longo de milhares de anos de tradição astrológica.",
+                              "Seja para jogos, inspiração criativa, estudos educacionais ou simplesmente por diversão, a Roda do Zodíaco oferece uma maneira rápida e interativa de explorar o rico universo da astrologia ocidental sem qualquer compromisso com a precisão astronómica real."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "Como a Roda Seleciona os Signos",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "A Roda do Zodíaco utiliza uma simulação física baseada em física real para garantir resultados justos e imprevisíveis. Cada um dos 12 signos ocupa um segmento igual na roda, assegurando que todos os signos têm exatamente a mesma probabilidade de serem sorteados a cada giro.",
+                              "Quando a roda para, o resultado exibe o nome do signo, o seu símbolo astrológico e o elemento correspondente diretamente na área de resultado. Abaixo do resultado, um painel de informações expande-se para mostrar o perfil completo do signo, incluindo características de personalidade, associações elementares e signos compatíveis."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "Os 12 Signos do Zodíaco e Seus Elementos",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "Cada signo do zodíaco pertence a um dos quatro elementos clássicos — Fogo, Terra, Ar e Água — e esses elementos moldam a personalidade do signo de maneiras fundamentais. Compreender o elemento de cada signo ajuda a revelar traços profundos da sua natureza."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "Signos de Fogo: Áries, Leão, Sagitário",
+                                    "content": "Os signos de fogo são caracterizados por paixão, energia e ação. Áries lidera com iniciativa e coragem. Leão comanda atenção através do carisma e da generosidade. Sagitário busca aventura e conhecimento através da exploração."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "Signos de Terra: Touro, Virgem, Capricórnio",
+                                    "content": "Os signos de terra valorizam estabilidade, praticidade e conforto material. Touro constrói através da paciência e da perseverança. Virgem analisa através da atenção aos detalhes e da precisão. Capricórnio alcança através da disciplina e da ambição."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "Signos de Ar: Gémeos, Libra, Aquário",
+                                    "content": "Os signos de ar priorizam a comunicação, as ideias e a conexão social. Gémeos processa informação através da curiosidade intelectual. Libra busca harmonia e equilíbrio nos relacionamentos. Aquário inova através da independência e do pensamento original."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "Signos de Água: Câncer, Escorpião, Peixes",
+                                    "content": "Os signos de água operam através da emoção, da intuição e da profundidade emocional. Câncer nutre através da empatia e do cuidado. Escorpião transforma-se através da intensidade e da regeneração. Peixes conecta-se através da compaixão e da sensibilidade espiritual."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "Quando Usar a Roda do Zodíaco",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "A Roda do Zodíaco funciona melhor quando precisa de um signo astrológico aleatório para jogos, ideias criativas, discussões sobre personalidade ou atividades educacionais. A sua versatilidade torna-a útil em diversas situações do dia a dia."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "Jogos de Grupo e Quebra-Gelos",
+                                    "content": "Em eventos sociais e festas, a Roda do Zodíaco determina qual signo cada pessoa representa em jogos temáticos de astrologia, tornando a experiência mais divertida e interativa para todos os participantes."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "Escrita Criativa e Desenvolvimento de Personagens",
+                                    "content": "Escritores e criadores de conteúdo utilizam a Roda do Zodíaco para atribuir arquétipos de personalidade a personagens fictícios, enriquecendo a profundidade psicológica e as motivações das suas criações literárias."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "Discussões sobre Personalidade e Autorreflexão",
+                                    "content": "A descrição do signo sorteado pode provocar reflexões interessantes sobre traços de personalidade, mesmo sabendo que a roda seleciona aleatoriamente. É uma ferramenta lúdica para autoconhecimento e conversas em grupo."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "Atividades Educacionais",
+                                    "content": "Professores e educadores utilizam a Roda do Zodíaco em aulas de astronomia, estudos culturais sobre mitologia grega e romana, ou como ferramenta prática para exercícios de probabilidade e estatística."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "Tomada de Decisão Diária",
+                                    "content": "Algumas pessoas utilizam a Roda do Zodíaco como uma ferramenta lúdica de tomada de decisão, deixando o acaso astrológico inspirar escolhas do dia a dia de forma leve e divertida."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "Roda do Zodíaco vs Outros Randomizadores",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "A Roda do Sim ou Não produz resultados binários sem contexto interpretativo, enquanto a Roda do Zodíaco gera resultados com significado inerente baseado em séculos de tradição astrológica e simbolismo.",
+                              "O Oráculo Sim Não oferece orientação filosófica através de mensagens temáticas, enquanto a Roda do Zodíaco fornece informações detalhadas sobre personalidade e características baseadas no signo sorteado.",
+                              "O Leitor de Tarot utiliza cartas do Arcano Maior para orientação reflexiva e espiritual, enquanto a Roda do Zodíaco explora os signos astrológicos para descoberta de traços de personalidade e compatibilidades interpessoais."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "Quantos signos?",
-                        "a": "12."
+                        "q": "Quantos signos existem na Roda do Zodíaco?",
+                        "a": "A Roda do Zodíaco contém todos os 12 signos do zodíaco ocidental: Áries, Touro, Gémeos, Câncer, Leão, Virgem, Libra, Escorpião, Sagitário, Capricórnio, Aquário e Peixes."
                   },
                   {
-                        "q": "Posso mudar signos?",
-                        "a": "Não."
+                        "q": "Posso personalizar ou remover signos da roda?",
+                        "a": "Não, a Roda do Zodíaco apresenta sempre os 12 signos tradicionais do zodíaco ocidental. Não é possível adicionar, remover ou modificar signos para preservar a integridade astrológica da ferramenta."
                   },
                   {
-                        "q": "O resultado é aleatório?",
-                        "a": "Sim."
+                        "q": "O resultado é realmente aleatório ou há algum viés?",
+                        "a": "Sim, o resultado é completamente aleatório. A roda utiliza uma simulação física baseada em física real que garante que todos os 12 signos têm exatamente a mesma probabilidade de serem sorteados a cada giro, sem qualquer viés ou padrão predefinido."
                   },
                   {
-                        "q": "Elementos são mostrados?",
-                        "a": "Sim."
+                        "q": "Os elementos dos signos são mostrados no resultado?",
+                        "a": "Sim, o resultado exibe o elemento correspondente ao signo sorteado (Fogo, Terra, Ar ou Água), juntamente com o símbolo astrológico e as características principais. O painel de informações também mostra as compatibilidades com outros signos."
                   },
                   {
-                        "q": "É gratuita?",
-                        "a": "Sim."
+                        "q": "A Roda do Zodíaco é gratuita?",
+                        "a": "Sim, a Roda do Zodíaco é completamente gratuita e não requer qualquer tipo de registo, subscrição ou pagamento. Pode utilizá-la quantas vezes quiser, sem limitações ou anúncios intrusivos."
                   },
                   {
-                        "q": "É confidencial?",
-                        "a": "Sim."
+                        "q": "Os meus dados são guardados ou partilhados quando uso a roda?",
+                        "a": "Não, a Roda do Zodíaco é totalmente confidencial. Nenhum dado pessoal é recolhido, armazenado ou partilhado. Todas as rotações e resultados são processados localmente no seu dispositivo, garantindo total privacidade e segurança."
                   }
             ]
       },
@@ -14753,124 +14755,124 @@ const WHEEL_PAGE_CONTENT = {
             "title": "عجلة الأبراج",
             "subtitle": "اختيار عشوائي لبرج.",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "كيفية استخدام عجلة الأبراج",
+                  "intro": "عجلة الأبراج جاهزة للدوران في ثوانٍ. إليك كيفية عملها:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "مراجعة الأبراج",
+                              "desc": "تعرض العجلة جميع الأبراج الـ12 برموزها وأقسامها الملونة. يمثل كل برج نموذجًا فلكيًا مختلفًا بخصائص شخصية فريدة وارتباطات عنصرية."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "تدوير العجلة",
+                              "desc": "اضغط على زر التدوير وشاهد الأبراج وهي تدور. تستخدم العجلة عشوائية فيزيائية لضمان نتائج عادلة وغير متوقعة. تشمل النتيجة اسم البرج ورمزه وعنصره ونطاق التاريخ."
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "قراءة تفاصيل البرج",
+                              "desc": "بعد التدوير، تظهر لوحة معلومات تعرض خصائص البرج المختار وارتباطاته العنصرية والأبراج المتوافقة معه. استخدم هذه المعلومات للألعاب أو المناقشات الشخصية أو الإلهام الإبداعي."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "ما هي عجلة الأبراج؟",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "عجلة الأبراج هي أداة اختيار عشوائي للأبراج تدور عبر جميع الأبراج الفلكية الـ12. يعرض كل برج رمزه واسمه ولونه على قطاع العجلة. عندما تتوقف العجلة، يظهر البرج المختار مع عنصره وخصائص شخصيته ونطاق تاريخه والأبراج المتوافقة معه.",
+                              "تستمد هذه الأداة من التقاليد الفلكية الغربية، التي تقسم دائرة البروج إلى 12 برجًا بناءً على موقع الشمس عند الولادة. يرتبط كل برج بأحد العناصر الأربعة — النار والأرض والهواء والماء — ويمتلك خصائص شخصية مميزة.",
+                              "على عكس برج اليومي الذي يتنبأ بالأحداث اليومية بناءً على برج ميلادك الفعلي، تختار هذه العجلة برجًا عشوائيًا بغض النظر عن تاريخ ميلادك الحقيقي. إنها مفيدة للألعاب والتمارين الإبداعية واستكشاف الشخصية."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "كيف تختار العجلة الأبراج",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "تستخدم عجلة الأبراج عشوائية فيزيائية لضمان نتائج عادلة وغير متوقعة. تشغل جميع الأبراج الـ12 أقسامًا متساوية على العجلة، مما يضمن احتمالية متساوية لاختيار كل برج. تدور العجلة بسرعة وتباطؤ متغيرين، مما يجعل من المستحيل تخمين أو التأثير على البرج الذي سيتم اختياره.",
+                              "عندما تتوقف العجلة، تعرض اسم البرج ورمزه وعنصره مباشرة في منطقة النتيجة. أسفل النتيجة، تتوسع لوحة معلومات لعرض الملف الكامل للبرج بما في ذلك نطاق التاريخ وخصائص الشخصية والأبراج المتوافقة."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "الأبراج الـ12 وعناصرها",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "ينتمي كل برج إلى أحد العناصر الأربعة، وتشكل العناصر شخصية البرج بطرق أساسية. تقوم العجلة بترميز الأبراج بالألوان حسب العنصر، مما يحافظ وضوح الأنماط البصرية حتى أثناء الدوران السريع."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "أبراج النار: الحمل، الأسد، القوس",
+                                    "content": "تتميز أبراج النار بالشغف والطاقة والعمل. يتقدم الحمل بالمبادرة والشجاعة. يجذب الأسد الانتباه بالكاريزما والإبداع. يبحث القوس عن المغامرة والحقيقة الفلسفية. أبراج النار منفتحة وتنافسية ومحركة بالإلهام."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "أبراج الأرض: الثور، العذراء، الجدي",
+                                    "content": "تقدر أبراج الأرض الاستقرار والعملية والراحة المادية. يبني الثور بالصبر والتقدير الحسي. تحلل العذراء بالتفاصيل والخدمة. يحقق الجدي بالانضباط والطموح. أبراج الأرض موثوقة ومنظمة ومتأصلة في الواقع."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "أبراج الهواء: الجوزاء، الميزان، الدلو",
+                                    "content": "تعطي أبراج الهواء الأولوية للتواصل والأفكار والاتصال الاجتماعي. يعالج الجوزاء بالفضول والقدرة على التكيف. يبحث الميزان عن التوازن والانسجام من خلال الجماليات. يبتكر الدلو بالاستقلال والرؤية الإنسانية. أبراج الهواء فكرية واجتماعية ومحركة بالأفكار."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "أبراج الماء: السرطان، العقرب، الحوت",
+                                    "content": "تعمل أبراج الماء من خلال العاطفة والحدس والعمق. يغذي السرطان بالتعاطف والغريزة الحمائية. يتحول العقرب بالشدة والبصيرة النفسية. يتصل الحوت بالرحمة والخيال الروحي. أبراج الماء حساسة ومتقبلة وذكية عاطفيًا."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "متى تستخدم عجلة الأبراج",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "تعمل عجلة الأبراج بشكل أفضل عندما تحتاج إلى برج فلكي عشوائي للألعاب أو الاستفسارات الإبداعية أو مناقشات الشخصية. على عكس الأدوات العشوائية البسيطة، تقدم عجلة الأبراج نتائج تأتي مع بيانات شخصية مدمجة وارتباطات رمزية."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "ألعاب الحفلات وكسر الجليد",
+                                    "content": "في البيئات الاجتماعية، تحدد عجلة الأبراج البرج الذي يلعبه كل شخص في الألعاب ذات الطابع الفلكي. العرض البصري بالرموز والألوان جذاب للمجموعات."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "الكتابة الإبداعية وتطوير الشخصيات",
+                                    "content": "يستخدم الكتاب عجلة الأبراج لتعيين نماذج الشخصيات للشخصيات الخيالية. قم بالتدوير للحصول على برج، واقرأ الخصائص، واستخدمها كنقطة انطلاق لتطوير الشخصية. توفر الارتباطات العنصرية عمقًا إضافيًا."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "مناقشات الشخصية والتأمل الذاتي",
+                                    "content": "على الرغم من أن العجلة تختار عشوائيًا بدلاً من تاريخ ميلادك الفعلي، يمكن أن يحفز وصف البرج تأملاً ذاتيًا مثيرًا للاهتمام. إذا اختارت العجلة برجًا تتطابق خصائصه معك، فقد يخبرك ذلك شيئًا عن شخصيتك."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "الأنشطة التعليمية",
+                                    "content": "يستخدم المعلمون عجلة الأبراج لدروس علم الفلك أو الدراسات الثقافية أو تمارين الإحصاء. توفر العجلة آلية أخذ عينات عشوائية تجعل هذه الأنشطة تفاعلية."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "اتخاذ القرارات اليومية",
+                                    "content": "يستخدم بعض الأشخاص عجلة الأبراج كأداة خفيفة لاتخاذ القرارات. عندما تحتاج إلى قرار منخفض المخاطر، قم بتدوير العجلة ودع خصائص البرج تقترح نهجًا."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "عجلة الأبراج مقابل الأدوات العشوائية الأخرى",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "عجلة نعم أو لا تنتج نتائج ثنائية بدون سياق تفسيري. تنتج عجلة الأبراج نتائج ذات معنى مدمج — كل برج يحتوي على خصائص وعناصر وبيانات توافق تضيف عمقًا إلى الاختيار العشوائي.",
+                              "يقدم أوراكل نعم أو لا إرشادًا فلسفيًا عبر رسائل ذات طابع موضوعي. توفر عجلة الأبراج معلومات قائمة على الشخصية من خلال النماذج الفلكية. يضيف كلاهما سياقًا للنتائج العشوائية، لكن الأوراكل يستخدم لغة غامضة بينما تستخدم عجلة الأبراج علم نفس الشخصية.",
+                              "يستخدم قارئ بطاقات التاروت بطاقات آركانا الرئيسية للإرشاد التأملي. تستخدم عجلة الأبراج العلامات الفلكية لاستكشاف الشخصية. كلاهما يعمل كأدوات للتأمل الذاتي من خلال الاختيار العشوائي، ولكنهما يأتيان من أنظمة رمزية مختلفة."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "ما هي عجلة الأبراج؟",
+                        "a": "عجلة الأبراج هي أداة اختيار عشوائي للأبراج تدور عبر جميع الأبراج الفلكية الـ12. يعرض كل برج رمزه وعنصره وخصائصه ومعلومات التوافق."
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "كم عدد الأبراج على العجلة؟",
+                        "a": "تحتوي العجلة على جميع الأبراج الغربية الـ12: الحمل، الثور، الجوزاء، السرطان، الأسد، العذراء، الميزان، العقرب، القوس، الجدي، الدلو، الحوت."
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "هل هذا يعتمد على برج ميلادي الفعلي؟",
+                        "a": "لا. تختار عجلة الأبراج برجًا عشوائيًا بغض النظر عن تاريخ ميلادك الفعلي. إنها مصممة للألعاب والتمارين الإبداعية واستكشاف الشخصية."
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "ما هي المعلومات التي يتضمنها كل برج؟",
+                        "a": "تظهر نتيجة كل برج اسم البرج ورمزه وعنصره (نار، أرض، هواء أو ماء) ونطاق التاريخ وخصائص الشخصية والأبراج المتوافقة. تظهر هذه المعلومات في لوحة المعلومات بعد توقف العجلة."
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "هل يمكنني استخدام هذا لألعاب الحفلات؟",
+                        "a": "نعم. تعمل عجلة الأبراج بشكل رائع لألعاب الحفلات ذات الطابع الفلكي حيث يتم تعيين أبراج عشوائية للاعبين."
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "هل عجلة الأبراج مجانية؟",
+                        "a": "نعم. العجلة مجانية بالكامل، بدون اشتراك أو إعلانات أو حدود استخدام. يمكنك التدوير بقدر ما تريد."
                   }
             ]
       },
@@ -14878,124 +14880,124 @@ const WHEEL_PAGE_CONTENT = {
             "title": "星座转盘",
             "subtitle": "随机选择星座。",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "如何使用星座转盘",
+                  "intro": "星座转盘只需几秒即可开始转动。使用方法如下：",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "查看星座",
+                              "desc": "转盘显示全部12个星座及其符号和彩色分区。每个星座代表不同的占星原型，具有独特的性格特征和元素关联。"
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "转动转盘",
+                              "desc": "按下旋转按钮，观察星座转动。转盘基于物理的随机化确保公平不可预测的结果。结果包括星座名称、符号、元素和日期范围。"
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "阅读星座详情",
+                              "desc": "转动后，信息面板会显示所选星座的特征、元素关联和兼容星座。利用这些信息进行游戏、性格讨论或创意启发。"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "什么是星座转盘？",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "星座转盘是一种随机星座选择器，可在所有12个占星星座中随机选择。每个星座在转盘分区上显示其符号、名称和颜色。转盘停止时，所选星座会显示其元素、性格特征、日期范围和兼容星座。",
+                              "该工具基于西方占星传统，根据出生时太阳的位置将黄道分为12个星座。每个星座与四大元素之一相关——火、土、风或水——并具有独特的性格特征。",
+                              "与根据实际出生星座预测日常事件的星座运势不同，星座转盘不考虑您的实际出生日期而随机选择星座。它适用于游戏、创意练习和性格探索。"
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "转盘如何选择星座",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "星座转盘使用基于物理的随机化确保公平且不可预测的结果。所有12个星座在转盘上占据相等区域，确保每个星座被选中的概率相同。转盘以可变速度和减速度旋转，使得无法预测或影响选择结果。",
+                              "转盘停止时，结果区域直接显示星座名称、符号和元素。结果下方，信息面板会展开显示完整的星座档案，包括日期范围、性格特征和兼容星座。"
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12星座及其元素",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "每个星座属于四大元素之一，元素从根本上塑造星座性格。转盘按元素对星座进行颜色编码，确保即使快速旋转时视觉模式也清晰可见。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "火象星座：白羊座、狮子座、射手座",
+                                    "content": "火象星座以激情、能量和行动力为特征。白羊座以主动性和勇气引领。狮子座以魅力和创造力吸引注意。射手座追求冒险和哲学真理。火象星座外向、好胜、受灵感驱动。"
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "土象星座：金牛座、处女座、摩羯座",
+                                    "content": "土象星座重视稳定、实用和物质舒适。金牛座以耐心和感官欣赏为基础。处女座通过细节和服务进行分析。摩羯座通过纪律和雄心来成就。土象星座可靠、有条理、扎根现实。"
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "风象星座：双子座、天秤座、水瓶座",
+                                    "content": "风象星座优先考虑沟通、思想和社交联系。双子座通过好奇心和适应力处理信息。天秤座通过平衡和审美寻求和谐。水瓶座通过独立和人道主义视野进行创新。风象星座理性、社交、受思想驱动。"
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "水象星座：巨蟹座、天蝎座、双鱼座",
+                                    "content": "水象星座通过情感、直觉和深度运作。巨蟹座通过同理心和保护本能进行滋养。天蝎座通过强度和心理学洞察力进行转变。双鱼座通过慈悲和精神想象力建立连接。水象星座敏感、善解人意、情感智慧丰富。"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "何时使用星座转盘",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "当您需要用于游戏、创意提示或性格讨论的随机占星星座时，星座转盘最为适用。与简单的随机工具不同，星座转盘提供的结果带有内置的性格数据和象征关联。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "派對游戏和破冰活动",
+                                    "content": "在社交场合中，星座转盘决定每个人在占星主题游戏中扮演的星座。带有符号和颜色的视觉呈现方式对团体活动具有吸引力。"
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "创意写作和角色发展",
+                                    "content": "作家使用星座转盘为虚构角色分配性格原型。旋转获取一个星座，阅读其特质，并将其用作角色发展的起点。元素关联提供额外深度。"
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "性格讨论和自我反思",
+                                    "content": "尽管转盘随机选择而非根据您的实际出生日期，但星座描述可以引发有趣的自我反思。如果转盘选中的星座特质与您相符，这或许能说明您的性格特点。"
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "教育活动",
+                                    "content": "教师将星座转盘用于天文学课程、文化研究或统计练习。转盘提供随机抽样机制，使这些活动具有互动性。"
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "日常决策",
+                                    "content": "有些人将星座转盘用作轻松的决策工具。当需要做出低风险决定时，转动转盘并让星座特质建议一种方法。"
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "星座转盘与其他随机工具的比较",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "是非转盘产生二元结果，没有解读背景。星座转盘产生附带内置意义的结果——每个星座都有增加随机选择深度的特质、元素和兼容性数据。",
+                              "是非神谕通过主题信息提供哲学指导。星座转盘通过占星原型提供基于性格的信息。两者都为随机结果增加背景，但神谕使用神秘语言，而星座转盘使用性格心理学。",
+                              "塔罗牌阅读器使用大阿尔卡纳牌进行反思指导。星座转盘使用占星星座进行性格探索。两者都通过随机选择作为自我反思的工具，但来自不同的符号系统。"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "什么是星座转盘？",
+                        "a": "星座转盘是一种随机星座选择器，可在所有12个占星星座中随机选择。每个星座显示其符号、元素、特质和兼容性信息。"
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "转盘上有多少个星座？",
+                        "a": "转盘上包含全部12个西方星座：白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、摩羯座、水瓶座和双鱼座。"
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "这是基于我的实际出生星座吗？",
+                        "a": "不是。星座转盘不考虑您的实际出生日期而随机选择星座。它专为游戏、创意练习和性格探索而设计。"
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "每个星座包含哪些信息？",
+                        "a": "每个星座结果显示星座名称、符号、元素（火、土、风或水）、日期范围、性格特征和兼容星座。这些信息在转盘停止后的信息面板中显示。"
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "我可以将其用于派对游戏吗？",
+                        "a": "可以。星座转盘非常适合占星主题的派对游戏，玩家会被分配随机星座。"
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "星座转盘免费吗？",
+                        "a": "是的。转盘完全免费，无需注册、无广告、无使用限制。您可以随意旋转任意次数。"
                   }
             ]
       },
@@ -15126,251 +15128,251 @@ const WHEEL_PAGE_CONTENT = {
       },
     ja: {
             "title": "星座ホイール",
-            "subtitle": "星座をランダムに選択。",
+            "subtitle": "ランダムに星座を選んで、その特徴や性質を探ろう。",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "星座ホイールの使い方",
+                  "intro": "星座ホイールはすぐに回せます。使い方は以下の通りです：",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "星座を確認する",
+                              "desc": "ホイールには12星座すべてがシンボルと色分けされたセグメントで表示されています。各星座は異なる占星術的アーキタイプを表しています。"
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "ホイールを回す",
+                              "desc": "回すボタンを押して、星座が回転するのを見てください。結果には星座名、シンボル、元素、期間が表示されます。"
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "星座の詳細を読む",
+                              "desc": "スピン後、情報パネルが表示され、選ばれた星座の特徴、元素の関連性、相性の良い星座が表示されます。"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "星座ホイールとは？",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "星座ホイールは、12の占星術サインをランダムに選ぶルーレットです。",
+                              "このツールは西洋占星術の伝統に基づいており、黄道帯を誕生時の太陽の位置に基づいて12の星座に分けています。",
+                              "実際の誕生日に基づいて日々の出来事を予測する星占いとは異なり、星座ホイールは誕生日に関係なくランダムに星座を選びます。"
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "ホイールの選択方法",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "星座ホイールは物理ベースの乱数生成を使用して、公平で予測不可能な結果を保証します。12の星座はそれぞれホイール上で等しいセグメントを占めています。",
+                              "ホイールが止まると、結果エリアに星座名、シンボル、元素が直接表示されます。結果の下には情報パネルが展開され、星座の詳細プロフィールが表示されます。"
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12星座とその元素",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "各星座は4つの元素のいずれかに属し、元素は星座の性格を基本的な形で形成しています。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "火の星座：牡羊座、獅子座、射手座",
+                                    "content": "火の星座は情熱、エネルギー、行動力が特徴です。牡羊座は率先して導きます。獅子座はカリスマ性で注目を集めます。射手座は冒険を求めます。"
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "地の星座：牡牛座、乙女座、山羊座",
+                                    "content": "地の星座は安定性、実用性、物質的な快適さを重視します。牡牛座は忍耐強く築きます。乙女座は細部を分析します。山羊座は規律によって達成します。"
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "風の星座：双子座、天秤座、水瓶座",
+                                    "content": "風の星座はコミュニケーション、アイデア、社会的つながりを優先します。双子座は好奇心で情報を処理します。天秤座は調和を求めます。水瓶座は独立心で革新します。"
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "水の星座：蟹座、蠍座、魚座",
+                                    "content": "水の星座は感情、直観、深さを通じて機能します。蟹座は共感力で育みます。蠍座は強烈さで変容します。魚座は思いやりでつながります。"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "星座ホイールを使うタイミング",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "星座ホイールは、ゲーム、クリエイティブなプロンプト、性格診断の話題など、ランダムな星座が必要なときに最適です。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "パーティーゲームとアイスブレイク",
+                                    "content": "社交の場では、星座ホイールを使って占星術テーマのゲームで各人の役割を決めます。"
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "創作文章とキャラクター開発",
+                                    "content": "作家は星座ホイールを使って架空のキャラクターに性格アーキタイプを割り当てます。"
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "性格診断と自己反省",
+                                    "content": "星座の説明は、ホイールがランダムに選んだとしても、興味深い自己反省を促すことができます。"
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "教育活動",
+                                    "content": "教師は星座ホイールを天文学の授業、文化研究、統計演習に使用します。"
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "日常の意思決定",
+                                    "content": "星座ホイールを軽い気持ちでの意思決定ツールとして使う人もいます。"
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "星座ホイールと他のランダムツールの比較",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "はい・いいえホイールは解釈のない二択の結果を表示します。星座ホイールは意味のある情報を提供します。",
+                              "Yes No Oracleはテーマ別のメッセージで哲学的なガイダンスを提供します。星座ホイールは性格に基づく情報を提供します。",
+                              "タロットカードリーダーは大アルカナカードを使って内省的なガイダンスを提供します。星座ホイールは占星術のサインを使って性格の探求を提供します。"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "星座ホイールとは何ですか？",
+                        "a": "星座ホイールは12の占星術サインをランダムに選ぶルーレットツールです。"
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "ホイールにはいくつの星座がありますか？",
+                        "a": "西洋占星術の12星座すべてが含まれています。"
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "これは実際の誕生日の星座に基づいていますか？",
+                        "a": "いいえ。星座ホイールは実際の誕生日に関係なくランダムに星座を選びます。"
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "各星座にはどのような情報が含まれていますか？",
+                        "a": "各結果には星座名、シンボル、元素、期間、性格特性、相性の良い星座が表示されます。"
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "パーティーゲームに使えますか？",
+                        "a": "はい。星座ホイールは占星術テーマのパーティーゲームに最適です。"
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "星座ホイールは無料ですか？",
+                        "a": "登録不要、広告なし、使用制限なしで完全に無料です。"
                   }
             ]
       },
     bn: {
             "title": "রাশির চাকা",
-            "subtitle": "যেলোমেলো রাশি নির্বাচন।",
+            "subtitle": "যেকোনো রাশি সম্পর্কে জানতে এলোমেলোভাবে নির্বাচন করে দেখুন।",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "রাশির চাকা ব্যবহারের নিয়ম",
+                  "intro": "রাশির চাকা ব্যবহার করতে প্রস্তুত? নিচের ধাপগুলো অনুসরণ করুন:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "রাশিগুলো দেখুন",
+                              "desc": "চাকাটিতে ১২টি রাশি তাদের প্রতীক ও রঙিন ভাগসহ প্রদর্শিত হয়। প্রতিটি রাশি একটি ভিন্ন জ্যোতিষশাস্ত্রীয় আর্কিটাইপ উপস্থাপন করে।"
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "চাকাটি ঘোরান",
+                              "desc": "ঘোরান বোতাম টিপুন এবং রাশিগুলো ঘুরতে দেখুন। ফলাফলে রাশির নাম, প্রতীক, মৌল ও তারিখের পরিসর দেখানো হয়।"
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "রাশির বিবরণ পড়ুন",
+                              "desc": "ঘোরার পর একটি তথ্য প্যানেল দেখা যায় যাতে নির্বাচিত রাশির বৈশিষ্ট্য, মৌলিক সম্পর্ক ও সামঞ্জস্যপূর্ণ রাশি দেখানো হয়।"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "রাশির চাকা কী?",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "রাশির চাকা একটি এলোমেলো রাশি নির্বাচক যা ১২টি জ্যোতিষশাস্ত্রীয় রাশির মধ্যে দিয়ে ঘোরে।",
+                              "এই টুলটি পাশ্চাত্য জ্যোতিষশাস্ত্রীয় ঐতিহ্যের উপর ভিত্তি করে তৈরি, যা জন্মের সময় সূর্যের অবস্থানের ভিত্তিতে রাশিচক্রকে ১২টি রাশিতে বিভক্ত করে।",
+                              "আপনার প্রকৃত জন্মরাশির ভিত্তিতে দৈনিক ভবিষ্যদ্বাণী দেওয়া রাশিফলের মতো নয়, রাশির চাকা আপনার প্রকৃত জন্মতারিখ নির্বিশেষে এলোমেলোভাবে একটি রাশি নির্বাচন করে।"
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "চাকা কীভাবে রাশি নির্বাচন করে",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "রাশির চাকা পদার্থবিজ্ঞান-ভিত্তিক র্যান্ডমাইজেশন ব্যবহার করে ন্যায্য ও অপ্রত্যাশিত ফলাফল নিশ্চিত করে। ১২টি রাশির প্রতিটি চাকার উপর সমান ভাগ দখল করে।",
+                              "চাকা থামলে, ফলাফল এলাকায় সরাসরি রাশির নাম, প্রতীক ও মৌল দেখানো হয়। ফলাফলের নিচে একটি তথ্য প্যানেল বিস্তৃত হয়ে সম্পূর্ণ রাশি প্রোফাইল প্রদর্শন করে।"
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "১২টি রাশি ও তাদের মৌল",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "প্রতিটি রাশি চারটি মৌলের একটির অন্তর্গত, এবং মৌলগুলো মৌলিক উপায়ে রাশির ব্যক্তিত্ব গঠন করে।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "অগ্নি রাশি: মেষ, সিংহ, ধনু",
+                                    "content": "অগ্নি রাশি আবেগ, শক্তি ও কর্ম দ্বারা চিহ্নিত। মেষ উদ্যোগে নেতৃত্ব দেয়। সিংহ ক্যারিশমার মাধ্যমে মনোযোগ আকর্ষণ করে। ধনু দুঃসাহসিকতার সন্ধান করে।"
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "পৃথিবী রাশি: বৃষ, কন্যা, মকর",
+                                    "content": "পৃথিবী রাশি স্থিতিশীলতা, ব্যবহারিকতা ও বস্তুগত আরামকে মূল্য দেয়। বৃষ ধৈর্যের মাধ্যমে নির্মাণ করে। কন্যা বিশদ বিশ্লেষণ করে। মকর শৃঙ্খলার মাধ্যমে অর্জন করে।"
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "বায়ু রাশি: মিথুন, তুলা, কুম্ভ",
+                                    "content": "বায়ু রাশি যোগাযোগ, ধারণা ও সামাজিক সংযোগকে অগ্রাধিকার দেয়। মিথুন কৌতূহলের মাধ্যমে তথ্য প্রক্রিয়া করে। তুলা সামঞ্জস্য চায়। কুম্ভ স্বাধীনতার মাধ্যমে উদ্ভাবন করে।"
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "জল রাশি: কর্কট, বৃশ্চিক, মীন",
+                                    "content": "জল রাশি আবেগ, অন্তর্দৃষ্টি ও গভীরতার মাধ্যমে কাজ করে। কর্কট সহানুভূতির মাধ্যমে লালন করে। বৃশ্চিক তীব্রতার মাধ্যমে রূপান্তরিত করে। মীন করুণার মাধ্যমে সংযোগ স্থাপন করে।"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "রাশির চাকা কখন ব্যবহার করবেন",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "রাশির চাকা সবচেয়ে ভালো কাজ করে যখন আপনার গেম, সৃজনশীল প্রম্পট বা ব্যক্তিত্ব আলোচনার জন্য একটি এলোমেলো জ্যোতিষশাস্ত্রীয় রাশির প্রয়োজন হয়।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "পার্টি গেম ও আইসব্রেকার",
+                                    "content": "সামাজিক পরিবেশে, রাশির চাকা নির্ধারণ করে যে জ্যোতিষশাস্ত্র-থিমযুক্ত গেমগুলিতে প্রতিটি ব্যক্তি কোন রাশি হিসেবে খেলবে।"
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "সৃজনশীল লেখা ও চরিত্র বিকাশ",
+                                    "content": "লেখকরা কাল্পনিক চরিত্রগুলিতে ব্যক্তিত্বের আর্কিটাইপ বরাদ্দ করতে রাশির চাকা ব্যবহার করেন।"
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "ব্যক্তিত্ব আলোচনা ও আত্ম-প্রতিফলন",
+                                    "content": "রাশির বর্ণনা আকর্ষণীয় আত্ম-প্রতিফলন ঘটাতে পারে, যদিও চাকাটি এলোমেলোভাবে নির্বাচন করে।"
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "শিক্ষামূলক কার্যক্রম",
+                                    "content": "শিক্ষকরা জ্যোতির্বিজ্ঞান পাঠ, সাংস্কৃতিক অধ্যয়ন বা পরিসংখ্যান অনুশীলনের জন্য রাশির চাকা ব্যবহার করেন।"
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "দৈনন্দিন সিদ্ধান্ত গ্রহণ",
+                                    "content": "কিছু লোক হালকা মনের সিদ্ধান্ত গ্রহণের সরঞ্জাম হিসেবে রাশির চাকা ব্যবহার করেন।"
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "রাশির চাকা বনাম অন্যান্য র্যান্ডমাইজার",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "হ্যাঁ বা না চাকা ব্যাখ্যামূলক প্রসঙ্গ ছাড়াই বাইনারি ফলাফল দেয়। রাশির চাকা অর্থপূর্ণ তথ্যসহ ফলাফল দেয়।",
+                              "Yes No Oracle থিমযুক্ত বার্তার মাধ্যমে দার্শনিক দিকনির্দেশনা দেয়। রাশির চাকা ব্যক্তিত্ব-ভিত্তিক তথ্য দেয়।",
+                              "ট্যারট কার্ড রিডার প্রতিফলনমূলক দিকনির্দেশনার জন্য মেজর আরকানা কার্ড ব্যবহার করে। রাশির চাকা ব্যক্তিত্ব অন্বেষণের জন্য জ্যোতিষশাস্ত্রীয় রাশি ব্যবহার করে।"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "রাশির চাকা কী?",
+                        "a": "রাশির চাকা একটি এলোমেলো রাশি নির্বাচক যা ১২টি জ্যোতিষশাস্ত্রীয় রাশির মধ্যে দিয়ে ঘোরে।"
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "চাকাটিতে কয়টি রাশি আছে?",
+                        "a": "পাশ্চাত্য জ্যোতিষশাস্ত্রের ১২টি রাশিই অন্তর্ভুক্ত রয়েছে।"
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "এটা কি আমার প্রকৃত জন্মরাশির উপর ভিত্তি করে?",
+                        "a": "না। রাশির চাকা আপনার প্রকৃত জন্মতারিখ নির্বিশেষে এলোমেলোভাবে একটি রাশি নির্বাচন করে।"
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "প্রতিটি রাশির জন্য কী কী তথ্য দেখানো হয়?",
+                        "a": "প্রতিটি ফলাফলে রাশির নাম, প্রতীক, মৌল, তারিখের পরিসর, ব্যক্তিত্বের বৈশিষ্ট্য ও সামঞ্জস্যপূর্ণ রাশি দেখানো হয়।"
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "এটা কি পার্টি গেমের জন্য ব্যবহার করা যায়?",
+                        "a": "হ্যাঁ। রাশির চাকা জ্যোতিষশাস্ত্র-থিমযুক্ত পার্টি গেমের জন্য উপযুক্ত।"
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "রাশির চাকা কি বিনামূল্যে?",
+                        "a": "চাকাটি সম্পূর্ণ বিনামূল্যে, কোনও নিবন্ধন, বিজ্ঞাপন বা ব্যবহারের সীমা নেই।"
                   }
             ]
       },
@@ -15378,124 +15380,124 @@ const WHEEL_PAGE_CONTENT = {
             "title": "برج کا پہیۇۇۇ",
             "subtitle": "بے ترتیب برج انتخابں؄",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "برج کا پہیہ استعمال کرنے کا طریقہ",
+                  "intro": "برج کا پہیہ سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ ہے کہ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "برجوں کا جائزہ لیں",
+                              "desc": "پہیہ تمام 12 برجوں کو ان کی علامتوں اور رنگ کوڈ والے حصوں کے ساتھ دکھاتا ہے۔ ہر برج منفرد شخصیت کی خصوصیات اور عنصری روابط کے ساتھ ایک مختلف نجومی نمونے کی نمائندگی کرتا ہے۔"
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "پہیہ گھمائیں",
+                              "desc": "سپن بٹن دبائیں اور برجوں کو گھومتے دیکھیں۔ پہیہ منصفانہ اور غیر متوقع نتائج کے لیے طبیعیات پر مبنی تصادفی کا استعمال کرتا ہے۔ نتیجے میں برج کا نام، علامت، عنصر اور تاریخ کی حد شامل ہے۔"
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "برج کی تفصیلات پڑھیں",
+                              "desc": "گھومنے کے بعد، ایک معلوماتی پینل منتخب برج کی خصوصیات، عنصری وابستگی اور مطابقت رکھنے والے برجوں کو دکھاتا ہے۔ اس معلومات کو کھیلوں، شخصیت کی گفتگو یا تخلیقی اشاروں کے لیے استعمال کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "برج کا پہیہ کیا ہے؟",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "برج کا پہیہ ایک تصادفی برج منتخب کنندہ ہے جو تمام 12 نجومی برجوں میں سے گردش کرتا ہے۔ ہر برج پہیے کے حصے پر اپنی علامت، نام اور رنگ دکھاتا ہے۔ جب پہیہ رکتا ہے، منتخب برج اپنے عنصر، شخصیت کی خصوصیات، تاریخ کی حد اور مطابقت پذیر برجوں کے ساتھ ظاہر ہوتا ہے۔",
+                              "یہ آلہ مغربی نجومی روایت سے ماخوذ ہے، جو برجوں کو پیدائش کے وقت سورج کی پوزیشن کی بنیاد پر 12 برجوں میں تقسیم کرتا ہے۔ ہر برج چار عناصر میں سے ایک سے وابستہ ہے — آگ، زمین، ہوا یا پانی — اور مخصوص شخصیت کی خصوصیات رکھتا ہے۔",
+                              "عام زائچہ کے برعکس جو آپ کے حقیقی پیدائشی برج کی بنیاد پر پیش گوئی کرتا ہے، یہ پہیہ آپ کی حقیقی تاریخ پیدائش سے قطع نظر تصادفی طور پر ایک برج منتخب کرتا ہے۔ یہ کھیلوں، تخلیقی مشقوں اور شخصیت کی کھوج کے لیے مفید ہے۔"
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "پہیہ برج کیسے منتخب کرتا ہے",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "برج کا پہیہ منصفانہ اور غیر متوقع نتائج یقینی بنانے کے لیے طبیعیات پر مبنی تصادفی کا استعمال کرتا ہے۔ تمام 12 برج پہیے پر برابر حصے رکھتے ہیں، جس سے ہر برج کے منتخب ہونے کا یکساں امکان ہوتا ہے۔ پہیہ متغیر رفتار اور مندی کے ساتھ گھومتا ہے، جس سے اندازہ لگانا یا متاثر کرنا ناممکن ہو جاتا ہے کہ کون سا برج منتخب ہوگا۔",
+                              "جب پہیہ رکتا ہے، یہ برج کا نام، علامت اور عنصر براہ راست نتیجہ والے حصے میں دکھاتا ہے۔ نتیجے کے نیچے، ایک معلوماتی پینل تاریخ کی حد، شخصیت کی خصوصیات اور مطابقت پذیر برجوں سمیت مکمل برج پروفائل دکھانے کے لیے پھیلتا ہے۔"
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12 برج اور ان کے عناصر",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "ہر برج چار عناصر میں سے ایک سے تعلق رکھتا ہے، اور عناصر برج کی شخصیت کو بنیادی طور پر تشکیل دیتے ہیں۔ پہیہ عنصر کے لحاظ سے برجوں کو رنگ کوڈ کرتا ہے، تیز گردش کے دوران بھی بصری نمونوں کو واضح رکھتا ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "آگ کے برج: حمل، اسد، قوس",
+                                    "content": "آگ کے برج جذبہ، توانائی اور عمل سے پہچانے جاتے ہیں۔ حمل پہل اور حوصلے کے ساتھ آگے بڑھتا ہے۔ اسد کرشمہ اور تخلیقی صلاحیتوں کے ذریعے توجہ حاصل کرتا ہے۔ قوس مہم جوئی اور فلسفیانہ سچائی کی تلاش کرتا ہے۔ آگ کے برج برونفعال، مسابقتی اور الہام سے چلتے ہیں۔"
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "زمین کے برج: ثور، سنبلہ، جدی",
+                                    "content": "زمین کے برج استحکام، عملیت اور مادی سکون کو اہمیت دیتے ہیں۔ ثور صبر اور حسی تعریف کے ذریعے تعمیر کرتا ہے۔ سنبلہ تفصیل اور خدمت کے ذریعے تجزیہ کرتا ہے۔ جدی نظم و ضبط اور عزائم کے ذریعے کامیابی حاصل کرتا ہے۔ زمین کے برج قابل اعتماد، منظم اور حقیقت میں جڑے ہوتے ہیں۔"
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "ہوا کے برج: جوزا، میزان، دلو",
+                                    "content": "ہوا کے برج مواصلات، خیالات اور سماجی تعلق کو ترجیح دیتے ہیں۔ جوزا تجسس اور موافقت کے ذریعے عمل کرتا ہے۔ میزان توازن اور جمالیات کے ذریعے ہم آہنگی چاہتا ہے۔ دلو آزادی اور انسانی بصارت کے ذریعے جدت پیدا کرتا ہے۔ ہوا کے برج فکری، سماجی اور خیال سے چلتے ہیں۔"
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "پانی کے برج: سرطان، عقرب، حوت",
+                                    "content": "پانی کے برج جذبات، وجدان اور گہرائی کے ذریعے کام کرتے ہیں۔ سرطان ہمدردی اور حفاظتی جبلت کے ذریعے پرورش کرتا ہے۔ عقرب شدت اور نفسیاتی بصیرت کے ذریعے تبدیل ہوتا ہے۔ حوت شفقت اور روحانی تخیل کے ذریعے جڑتا ہے۔ پانی کے برج حساس، قبول کرنے والے اور جذباتی طور پر ذہین ہوتے ہیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "برج کے پہیے کا استعمال کب کریں",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "برج کا پہیہ اس وقت بہترین کام کرتا ہے جب آپ کو کھیلوں، تخلیقی اشاروں یا شخصیت کی گفتگو کے لیے تصادفی نجومی برج کی ضرورت ہوتی ہے۔ سادہ تصادفی آلات کے برعکس، برج کا پہیہ ایسے نتائج دیتا ہے جو اندرونی شخصیت کے ڈیٹا اور علامتی روابط کے ساتھ آتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "پارٹی گیمز اور آئس بریکرز",
+                                    "content": "سماجی ترتیبات میں، برج کا پہیہ طے کرتا ہے کہ ہر شخص نجومی تھیم والے کھیلوں میں کون سا برج ادا کرے گا۔ علامتوں اور رنگوں کے ساتھ بصری پیشکش گروپوں کے لیے پرکشش ہے۔"
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "تخلیقی تحریر اور کردار کی ترقی",
+                                    "content": "مصنفین فرضی کرداروں کو شخصیت کے نمونے دینے کے لیے برج کے پہیے کا استعمال کرتے ہیں۔ ایک برج کے لیے گھمائیں، خصوصیات پڑھیں، اور انہیں کردار کی ترقی کے لیے نقطہ آغاز کے طور پر استعمال کریں۔ عنصری روابط اضافی گہرائی فراہم کرتے ہیں۔"
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "شخصیت کی گفتگو اور خود عکاسی",
+                                    "content": "اگرچہ پہیہ آپ کی حقیقی تاریخ پیدائش کے بجائے تصادفی طور پر منتخب کرتا ہے، برج کی تفصیل دلچسپ خود عکاسی کو تحریک دے سکتی ہے۔ اگر پہیہ ایسا برج منتخب کرتا ہے جس کی خصوصیات آپ سے ملتی ہیں، تو یہ آپ کی شخصیت کے بارے میں کچھ کہہ سکتا ہے۔"
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "تعلیمی سرگرمیاں",
+                                    "content": "اساتذہ فلکیات کے اسباق، ثقافتی مطالعات یا شماریات کی مشقوں کے لیے برج کے پہیے کا استعمال کرتے ہیں۔ پہیہ تصادفی نمونے لینے کا طریقہ کار فراہم کرتا ہے جو ان سرگرمیوں کو متعامل بناتا ہے۔"
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "روزمرہ فیصلہ سازی",
+                                    "content": "کچھ لوگ برج کے پہیے کو ہلکے پھلکے فیصلہ سازی کے آلے کے طور پر استعمال کرتے ہیں۔ جب آپ کو کم خطرہ والا فیصلہ کرنا ہو، پہیہ گھمائیں اور برج کی خصوصیات کو ایک طریقہ تجویز کرنے دیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "برج کا پہیہ بمقابلہ دیگر تصادفی آلات",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "ہاں یا نہاں کا پہیہ بغیر کسی تشریحی سیاق و سباق کے ثنائی نتائج دیتا ہے۔ برج کا پہیہ ایسے نتائج دیتا ہے جو اندرونی معنی کے ساتھ آتے ہیں — ہر برج میں خصوصیات، عناصر اور مطابقت کا ڈیٹا ہوتا ہے جو تصادفی انتخاب میں گہرائی کا اضافہ کرتا ہے۔",
+                              "ہاں یا نہاں اوریکل فلسفیانہ رہنمائی فراہم کرتا ہے۔ برج کا پہیہ نجومی نمونوں کے ذریعے شخصیت پر مبنی معلومات فراہم کرتا ہے۔ دونوں تصادفی نتائج میں سیاق و سباق کا اضافہ کرتے ہیں، لیکن اوریکل پراسرار زبان استعمال کرتا ہے جبکہ برج کا پہیہ شخصیت نفسیات استعمال کرتا ہے۔",
+                              "ٹیرو کارڈ ریڈر عکاس رہنمائی کے لیے میجر آرکانا کارڈ استعمال کرتا ہے۔ برج کا پہیہ شخصیت کی کھوج کے لیے نجومی برجوں کا استعمال کرتا ہے۔ دونوں تصادفی انتخاب کے ذریعے خود عکاسی کے آلات کے طور پر کام کرتے ہیں، لیکن مختلف علامتی نظاموں سے آتے ہیں۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "برج کا پہیہ کیا ہے؟",
+                        "a": "برج کا پہیہ ایک تصادفی برج منتخب کنندہ ہے جو تمام 12 نجومی برجوں میں سے گردش کرتا ہے۔ ہر برج اپنی علامت، عنصر، خصوصیات اور مطابقت کی معلومات دکھاتا ہے۔"
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "پہیے پر کتنے برج ہیں؟",
+                        "a": "پہیے پر تمام 12 مغربی برج ہیں: حمل، ثور، جوزا، سرطان، اسد، سنبلہ، میزان، عقرب، قوس، جدی، دلو، حوت۔"
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "کیا یہ میرے حقیقی پیدائشی برج پر مبنی ہے؟",
+                        "a": "نہیں۔ برج کا پہیہ آپ کی حقیقی تاریخ پیدائش سے قطع نظر تصادفی طور پر ایک برج منتخب کرتا ہے۔ یہ کھیلوں، تخلیقی مشقوں اور شخصیت کی کھوج کے لیے ڈیزائن کیا گیا ہے۔"
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "ہر برج میں کیا معلومات شامل ہیں؟",
+                        "a": "ہر برج کے نتیجے میں برج کا نام، علامت، عنصر (آگ، زمین، ہوا یا پانی)، تاریخ کی حد، شخصیت کی خصوصیات اور مطابقت پذیر برج دکھائے جاتے ہیں۔ یہ معلومات پہیہ رکنے کے بعد معلوماتی پینل میں ظاہر ہوتی ہے۔"
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "کیا میں اسے پارٹی گیمز کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "ہاں۔ برج کا پہیہ نجومی تھیم والی پارٹی گیمز کے لیے بہت اچھا کام کرتا ہے جہاں کھلاڑیوں کو تصادفی برج تفویض کیے جاتے ہیں۔"
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا برج کا پہیہ مفت ہے؟",
+                        "a": "ہاں۔ پہیہ مکمل طور پر مفت ہے، بغیر کسی سائن اپ، اشتہار یا استعمال کی حد کے۔ آپ جتنی بار چاہیں گھما سکتے ہیں۔"
                   }
             ]
       },
@@ -15503,124 +15505,124 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Zodiak",
             "subtitle": "Pilihan acak tanda zodiak.",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Zodiak",
+                  "intro": "Roda zodiak siap diputar dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "Lihat Tanda-Tanda Zodiak",
+                              "desc": "Roda menampilkan 12 tanda zodiak dengan simbol dan segmen berkode warna. Setiap tanda mewakili arketipe astrologi berbeda dengan karakteristik kepribadian unik dan hubungan elemen."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "Putar Roda",
+                              "desc": "Tekan tombol putar dan saksikan tanda-tanda berputar. Roda menggunakan pengacakan berbasis fisika untuk memastikan hasil yang adil dan tidak terduga. Hasilnya mencakup nama tanda, simbol, elemen, dan rentang tanggal."
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "Baca Detail Tanda",
+                              "desc": "Setelah putaran, panel informasi muncul menampilkan ciri-ciri tanda terpilih, hubungan elemen, dan tanda yang kompatibel. Gunakan informasi ini untuk permainan, diskusi kepribadian, atau inspirasi kreatif."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "Apa Itu Roda Zodiak?",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "Roda zodiak adalah pemilih tanda zodiak acak yang berputar melalui 12 tanda astrologi. Setiap tanda menampilkan simbol, nama, dan warnanya pada segmen roda. Saat roda berhenti, tanda terpilih muncul dengan elemen, ciri kepribadian, rentang tanggal, dan tanda kompatibelnya.",
+                              "Alat ini berasal dari tradisi astrologi Barat, yang membagi zodiak menjadi 12 tanda berdasarkan posisi matahari saat kelahiran. Setiap tanda terkait dengan salah satu dari empat elemen — api, tanah, udara, atau air — dan memiliki karakteristik kepribadian khas.",
+                              "Berbeda dengan ramalan bintang yang memprediksi peristiwa harian berdasarkan tanda kelahiran Anda, roda ini memilih tanda secara acak tanpa memperhatikan tanggal lahir Anda. Ini berguna untuk permainan, latihan kreatif, dan eksplorasi kepribadian."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "Bagaimana Roda Memilih Tanda",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "Roda zodiak menggunakan pengacakan berbasis fisika untuk memastikan hasil yang adil dan tidak terduga. Semua 12 tanda menempati segmen yang sama pada roda, memastikan setiap tanda memiliki probabilitas yang sama untuk dipilih. Roda berputar dengan kecepatan dan perlambatan variabel, membuat tidak mungkin menebak atau mempengaruhi tanda mana yang akan dipilih.",
+                              "Saat roda berhenti, ia menampilkan nama tanda, simbol, dan elemen langsung di area hasil. Di bawah hasil, panel informasi meluas untuk menampilkan profil tanda lengkap termasuk rentang tanggal, ciri kepribadian, dan tanda kompatibel."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12 Tanda Zodiak dan Elemennya",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "Setiap tanda zodiak termasuk dalam salah satu dari empat elemen, dan elemen membentuk kepribadian tanda secara fundamental. Roda memberi kode warna pada tanda berdasarkan elemen, menjaga pola visual tetap jelas bahkan selama putaran cepat."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "Tanda Api: Aries, Leo, Sagitarius",
+                                    "content": "Tanda api dicirikan oleh gairah, energi, dan tindakan. Aries memimpin dengan inisiatif dan keberanian. Leo menarik perhatian melalui karisma dan kreativitas. Sagitarius mencari petualangan dan kebenaran filosofis. Tanda api ekstrovert, kompetitif, dan digerakkan oleh inspirasi."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "Tanda Tanah: Taurus, Virgo, Capricorn",
+                                    "content": "Tanda tanah menghargai stabilitas, kepraktisan, dan kenyamanan materi. Taurus membangun melalui kesabaran dan apresiasi sensorik. Virgo menganalisis melalui detail dan pelayanan. Capricorn mencapai melalui disiplin dan ambisi. Tanda tanah dapat diandalkan, teratur, dan berakar pada kenyataan."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "Tanda Udara: Gemini, Libra, Aquarius",
+                                    "content": "Tanda udara memprioritaskan komunikasi, ide, dan koneksi sosial. Gemini memproses melalui rasa ingin tahu dan kemampuan beradaptasi. Libra mencari harmoni melalui keseimbangan dan estetika. Aquarius berinovasi melalui kemandirian dan visi kemanusiaan. Tanda udara intelektual, sosial, dan digerakkan oleh ide."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "Tanda Air: Cancer, Scorpio, Pisces",
+                                    "content": "Tanda air beroperasi melalui emosi, intuisi, dan kedalaman. Cancer memelihara melalui empati dan naluri protektif. Scorpio bertransformasi melalui intensitas dan wawasan psikologis. Pisces terhubung melalui belas kasih dan imajinasi spiritual. Tanda air sensitif, reseptif, dan cerdas secara emosional."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "Kapan Menggunakan Roda Zodiak",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "Roda zodiak bekerja paling baik saat Anda membutuhkan tanda astrologi acak untuk permainan, prompt kreatif, atau diskusi kepribadian. Tidak seperti alat acak sederhana, roda zodiak memberikan hasil yang disertai data kepribadian bawaan dan hubungan simbolis."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "Permainan Pesta dan Pemecah Kebekuan",
+                                    "content": "Dalam pengaturan sosial, roda zodiak menentukan tanda mana yang dimainkan setiap orang dalam permainan bertema astrologi. Penyajian visual dengan simbol dan warna menarik untuk kelompok."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "Penulisan Kreatif dan Pengembangan Karakter",
+                                    "content": "Penulis menggunakan roda zodiak untuk memberikan arketipe kepribadian pada karakter fiksi. Putar untuk mendapatkan tanda, baca ciri-cirinya, dan gunakan sebagai titik awal pengembangan karakter. Hubungan elemen memberikan kedalaman tambahan."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "Diskusi Kepribadian dan Refleksi Diri",
+                                    "content": "Meskipun roda memilih secara acak daripada berdasarkan tanggal lahir Anda, deskripsi tanda dapat mendorong refleksi diri yang menarik. Jika roda memilih tanda yang ciri-cirinya cocok dengan Anda, itu mungkin mengatakan sesuatu tentang kepribadian Anda."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "Kegiatan Pendidikan",
+                                    "content": "Guru menggunakan roda zodiak untuk pelajaran astronomi, studi budaya, atau latihan statistik. Roda menyediakan mekanisme pengambilan sampel acak yang membuat kegiatan ini interaktif."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "Pengambilan Keputusan Sehari-hari",
+                                    "content": "Beberapa orang menggunakan roda zodiak sebagai alat pengambilan keputusan ringan. Saat Anda perlu membuat keputusan berisiko rendah, putar roda dan biarkan ciri-ciri tanda menyarankan pendekatan."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "Roda Zodiak vs Alat Acak Lainnya",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "Roda ya atau tidak menghasilkan hasil biner tanpa konteks interpretatif. Roda zodiak menghasilkan hasil dengan makna bawaan — setiap tanda berisi ciri, elemen, dan data kompatibilitas yang menambah kedalaman pada pemilihan acak.",
+                              "Yes No Oracle memberikan panduan filosofis melalui pesan bertema. Roda zodiak menyediakan informasi berbasis kepribadian melalui arketipe astrologi. Keduanya menambah konteks pada hasil acak, tetapi Oracle menggunakan bahasa mistis sementara roda zodiak menggunakan psikologi kepribadian.",
+                              "Pembaca kartu tarot menggunakan kartu Major Arcana untuk panduan reflektif. Roda zodiak menggunakan tanda astrologi untuk eksplorasi kepribadian. Keduanya berfungsi sebagai alat refleksi diri melalui pemilihan acak, tetapi berasal dari sistem simbolis yang berbeda."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "Apa itu roda zodiak?",
+                        "a": "Roda zodiak adalah pemilih tanda zodiak acak yang berputar melalui 12 tanda astrologi. Setiap tanda menampilkan simbol, elemen, ciri, dan informasi kompatibilitasnya."
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "Berapa banyak tanda zodiak di roda?",
+                        "a": "Roda ini mencakup 12 tanda zodiak Barat: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagitarius, Capricorn, Aquarius, Pisces."
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "Apakah ini berdasarkan tanda lahir saya?",
+                        "a": "Tidak. Roda zodiak memilih tanda secara acak tanpa memperhatikan tanggal lahir Anda. Ini dirancang untuk permainan, latihan kreatif, dan eksplorasi kepribadian."
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "Informasi apa yang disertakan setiap tanda?",
+                        "a": "Setiap hasil tanda menampilkan nama tanda, simbol, elemen (api, tanah, udara, atau air), rentang tanggal, ciri kepribadian, dan tanda kompatibel. Informasi ini muncul di panel informasi setelah roda berhenti."
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "Bisakah saya menggunakan ini untuk permainan pesta?",
+                        "a": "Ya. Roda zodiak sangat bagus untuk permainan pesta bertema astrologi di mana pemain diberi tanda acak."
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda zodiak gratis?",
+                        "a": "Ya. Roda ini sepenuhnya gratis, tanpa pendaftaran, iklan, atau batasan penggunaan. Anda dapat memutar sebanyak yang Anda mau."
                   }
             ]
       },
@@ -15628,249 +15630,249 @@ const WHEEL_PAGE_CONTENT = {
             "title": "राशि चाक",
             "subtitle": "यादृच्झिक राशि निवड।",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "राशि चाक कसे वापरावे",
+                  "intro": "राशि चाक सेकंदात फिरण्यासाठी तयार आहे. हे असे कार्य करते:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "राशी पहा",
+                              "desc": "चाक सर्व 12 राशी त्यांच्या चिन्हे आणि रंग-कोडित विभागांसह दर्शविते. प्रत्येक राशी अद्वितीय व्यक्तिमत्त्व वैशिष्ट्ये आणि मूलभूत संबंधांसह भिन्न ज्योतिषीय आदर्श दर्शविते."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "चाक फिरवा",
+                              "desc": "फिरवा बटण दाबा आणि राशी फिरताना पहा. चाक न्याय्य आणि अनपेक्षित परिणामांसाठी भौतिकशास्त्र-आधारित यादृच्छिकता वापरते. परिणामात राशीचे नाव, चिन्ह, मूलद्रव्य आणि तारीख श्रेणी समाविष्ट आहे."
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "राशी तपशील वाचा",
+                              "desc": "फिरवल्यानंतर, एक माहिती पॅनेल निवडलेल्या राशीची वैशिष्ट्ये, मूलभूत संबंध आणि सुसंगत राशी दर्शविते. ही माहिती खेळ, व्यक्तिमत्त्व चर्चा किंवा सर्जनशील संकेतांसाठी वापरा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "राशि चाक म्हणजे काय?",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "राशि चाक हा एक यादृच्छिक राशी निवडक आहे जो सर्व 12 ज्योतिषीय राशींमधून फिरतो. प्रत्येक राशी चाकाच्या विभागावर आपले चिन्ह, नाव आणि रंग दर्शविते. जेव्हा चाक थांबते, तेव्हा निवडलेली राशी आपले मूलद्रव्य, व्यक्तिमत्त्व वैशिष्ट्ये, तारीख श्रेणी आणि सुसंगत राशींसह दिसते.",
+                              "हे साधन पाश्चात्य ज्योतिषीय परंपरेवर आधारित आहे, जे जन्माच्या वेळी सूर्याच्या स्थितीनुसार राशीचक्र 12 राशींमध्ये विभागते. प्रत्येक राशी चार मूलद्रव्यांपैकी एकाशी संबंधित आहे — अग्नी, पृथ्वी, वायू किंवा जल — आणि विशिष्ट व्यक्तिमत्त्व वैशिष्ट्ये आहेत.",
+                              "सामान्य राशीभविष्याच्या विपरीत जे आपल्या वास्तविक जन्मराशीवर आधारित भविष्यवाणी करते, हे चाक आपल्या वास्तविक जन्मतारखेची पर्वा न करता यादृच्छिकपणे एक राशी निवडते. हे खेळ, सर्जनशील सराव आणि व्यक्तिमत्त्व अन्वेषणासाठी उपयुक्त आहे."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "चाक राशी कशी निवडते",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "राशि चाक न्याय्य आणि अनपेक्षित परिणाम सुनिश्चित करण्यासाठी भौतिकशास्त्र-आधारित यादृच्छिकता वापरते. सर्व 12 राशी चाकावर समान विभाग व्यापतात, प्रत्येक राशीच्या निवडीची समान शक्यता सुनिश्चित करतात. चाक परिवर्तनीय गती आणि मंदीसह फिरते, ज्यामुळे कोणती राशी निवडली जाईल याचा अंदाज लावणे किंवा प्रभावित करणे अशक्य होते.",
+                              "जेव्हा चाक थांबते, तेव्हा ते राशीचे नाव, चिन्ह आणि मूलद्रव्य थेट निकाल क्षेत्रात दर्शविते. निकालाच्या खाली, एक माहिती पॅनेल तारीख श्रेणी, व्यक्तिमत्त्व वैशिष्ट्ये आणि सुसंगत राशींसह संपूर्ण राशी प्रोफाइल दर्शविण्यासाठी विस्तृत होते."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12 राशी आणि त्यांची मूलद्रव्ये",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "प्रत्येक राशी चार मूलद्रव्यांपैकी एकाशी संबंधित आहे, आणि मूलद्रव्ये राशीच्या व्यक्तिमत्त्वाला मूलभूतपणे आकार देतात. चाक मूलद्रव्यानुसार राशींना रंग-कोड करते, वेगवान फिरवणुकीदरम्यानही दृश्य नमुने स्पष्ट ठेवते."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "अग्नी राशी: मेष, सिंह, धनु",
+                                    "content": "अग्नी राशी उत्कटता, ऊर्जा आणि कृतीने ओळखल्या जातात. मेष पुढाकार आणि शौर्याने पुढे जातो. सिंह करिष्मा आणि सर्जनशीलतेने लक्ष वेधतो. धनु साहस आणि तात्त्विक सत्य शोधतो. अग्नी राशी बहिर्मुखी, स्पर्धात्मक आणि प्रेरणेने चालणाऱ्या असतात."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "पृथ्वी राशी: वृषभ, कन्या, मकर",
+                                    "content": "पृथ्वी राशी स्थिरता, व्यावहारिकता आणि भौतिक आरामाला महत्त्व देतात. वृषभ संयम आणि संवेदी प्रशंसेद्वारे निर्माण करतो. कन्या तपशील आणि सेवेद्वारे विश्लेषण करते. मकर शिस्त आणि महत्त्वाकांक्षेद्वारे साध्य करतो. पृथ्वी राशी विश्वासार्ह, सुव्यवस्थित आणि वास्तवात मूळ असतात."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "वायू राशी: मिथुन, तूळ, कुंभ",
+                                    "content": "वायू राशी संवाद, कल्पना आणि सामाजिक जोडणीला प्राधान्य देतात. मिथुन जिज्ञासा आणि अनुकूलतेद्वारे प्रक्रिया करतो. तूळ संतुलन आणि सौंदर्यशास्त्राद्वारे सुसंवाद शोधते. कुंभ स्वातंत्र्य आणि मानवतावादी दृष्टीद्वारे नवकल्पना करतो. वायू राशी बौद्धिक, सामाजिक आणि कल्पनेने चालणाऱ्या असतात."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "जल राशी: कर्क, वृश्चिक, मीन",
+                                    "content": "जल राशी भावना, अंतर्ज्ञान आणि खोलीद्वारे कार्य करतात. कर्क सहानुभूती आणि संरक्षणात्मक प्रवृत्तीद्वारे पोषण करतो. वृश्चिक तीव्रता आणि मानसशास्त्रीय अंतर्दृष्टीद्वारे रूपांतरित होतो. मीन करुणा आणि आध्यात्मिक कल्पनेद्वारे जोडतो. जल राशी संवेदनशील, ग्रहणशील आणि भावनिकदृष्ट्या बुद्धिमान असतात."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "राशि चाक कधी वापरावे",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "राशि चाक सर्वोत्तम कार्य करते जेव्हा आपल्याला खेळ, सर्जनशील संकेत किंवा व्यक्तिमत्त्व चर्चेसाठी यादृच्छिक ज्योतिषीय राशीची आवश्यकता असते. साध्या यादृच्छिक साधनांच्या विपरीत, राशि चाक असे परिणाम देते जे अंतर्निहित व्यक्तिमत्त्व डेटा आणि प्रतीकात्मक संबंधांसह येतात."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "पार्टी खेळ आणि आइसब्रेकर",
+                                    "content": "सामाजिक सेटिंग्जमध्ये, राशि चाक ठरवते की प्रत्येक व्यक्ती ज्योतिष-थीम असलेल्या खेळांमध्ये कोणती राशी खेळेल. चिन्हे आणि रंगांसह दृश्य सादरीकरण गटांसाठी आकर्षक आहे."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "सर्जनशील लेखन आणि पात्र विकास",
+                                    "content": "लेखक काल्पनिक पात्रांना व्यक्तिमत्त्व आदर्श नियुक्त करण्यासाठी राशि चाक वापरतात. राशीसाठी फिरवा, वैशिष्ट्ये वाचा आणि पात्र विकासासाठी प्रारंभ बिंदू म्हणून वापरा. मूलभूत संबंध अतिरिक्त खोली प्रदान करतात."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "व्यक्तिमत्त्व चर्चा आणि आत्म-चिंतन",
+                                    "content": "जरी चाक आपल्या वास्तविक जन्मतारखेऐवजी यादृच्छिकपणे निवडते, राशीचे वर्णन मनोरंजक आत्म-चिंतनास उत्तेजित करू शकते. जर चाक अशी राशी निवडते ज्याची वैशिष्ट्ये आपल्याशी जुळतात, तर ते आपल्या व्यक्तिमत्त्वाबद्दल काहीतरी सांगू शकते."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "शैक्षणिक क्रियाकलाप",
+                                    "content": "शिक्षक खगोलशास्त्र धडे, सांस्कृतिक अभ्यास किंवा सांख्यिकी सरावासाठी राशि चाक वापरतात. चाक यादृच्छिक नमुना घेण्याची यंत्रणा प्रदान करते जी या क्रियाकलापांना परस्परसंवादी बनवते."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "दैनंदिन निर्णय घेणे",
+                                    "content": "काही लोक राशि चाक हलक्या-फुलक्या निर्णय घेण्याचे साधन म्हणून वापरतात. जेव्हा आपल्याला कमी जोखीम असलेला निर्णय घ्यायचा असेल, चाक फिरवा आणि राशीच्या वैशिष्ट्यांना दृष्टिकोन सुचवू द्या."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "राशि चाक विरुद्ध इतर यादृच्छिक साधने",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "होय किंवा नाही चाक कोणत्याही व्याख्यात्मक संदर्भाशिवाय द्विआधारी परिणाम देते. राशि चाक असे परिणाम देते जे अंतर्निहित अर्थासह येतात — प्रत्येक राशीत वैशिष्ट्ये, मूलद्रव्ये आणि सुसंगतता डेटा असतो जो यादृच्छिक निवडीत खोली वाढवतो.",
+                              "होय किंवा नाही ओरॅकल तात्त्विक मार्गदर्शन प्रदान करते. राशि चाक ज्योतिषीय आदर्शांद्वारे व्यक्तिमत्त्व-आधारित माहिती प्रदान करते. दोन्ही यादृच्छिक निकालांमध्ये संदर्भ जोडतात, परंतु ओरॅकल गूढ भाषा वापरते तर राशि चाक व्यक्तिमत्त्व मानसशास्त्र वापरते.",
+                              "टॅरो कार्ड रीडर चिंतनशील मार्गदर्शनासाठी मेजर आर्काना कार्ड वापरते. राशि चाक व्यक्तिमत्त्व अन्वेषणासाठी ज्योतिषीय राशी वापरते. दोन्ही यादृच्छिक निवडीद्वारे आत्म-चिंतनाची साधने म्हणून कार्य करतात, परंतु भिन्न प्रतीकात्मक प्रणालींमधून येतात."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "राशि चाक म्हणजे काय?",
+                        "a": "राशि चाक हा एक यादृच्छिक राशी निवडक आहे जो सर्व 12 ज्योतिषीय राशींमधून फिरतो. प्रत्येक राशी आपले चिन्ह, मूलद्रव्य, वैशिष्ट्ये आणि सुसंगतता माहिती दर्शविते."
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "चाकावर किती राशी आहेत?",
+                        "a": "चाकावर सर्व 12 पाश्चात्य राशी आहेत: मेष, वृषभ, मिथुन, कर्क, सिंह, कन्या, तूळ, वृश्चिक, धनु, मकर, कुंभ, मीन."
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "हे माझ्या वास्तविक जन्मराशीवर आधारित आहे का?",
+                        "a": "नाही. राशि चाक आपल्या वास्तविक जन्मतारखेची पर्वा न करता यादृच्छिकपणे एक राशी निवडते. हे खेळ, सर्जनशील सराव आणि व्यक्तिमत्त्व अन्वेषणासाठी डिझाइन केले आहे."
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "प्रत्येक राशीमध्ये कोणती माहिती समाविष्ट आहे?",
+                        "a": "प्रत्येक राशी निकालात राशीचे नाव, चिन्ह, मूलद्रव्य (अग्नी, पृथ्वी, वायू किंवा जल), तारीख श्रेणी, व्यक्तिमत्त्व वैशिष्ट्ये आणि सुसंगत राशी दर्शविल्या जातात. ही माहिती चाक थांबल्यानंतर माहिती पॅनेलमध्ये दिसते."
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "मी हे पार्टी खेळांसाठी वापरू शकतो का?",
+                        "a": "होय. राशि चाक ज्योतिष-थीम असलेल्या पार्टी खेळांसाठी उत्तम कार्य करते जिथे खेळाडूंना यादृच्छिक राशी नियुक्त केल्या जातात."
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "राशि चाक मोफत आहे का?",
+                        "a": "होय. चाक पूर्णपणे मोफत आहे, कोणत्याही साइनअप, जाहिरात किंवा वापर मर्यादेशिवाय. आपण जितक्या वेळा इच्छिता तितक्या वेळा फिरवू शकता."
                   }
             ]
       },
     te: {
-            "title": "राशि व्हील्",
-            "subtitle": "यादृचिक राशि ऎरा ओर्का।",
+            "title": "రాశి చక్రం",
+            "subtitle": "యాదృచ్ఛిక రాశి ఎంపిక.",
             "howToUse": {
-                  "title": "How to Use the Zodiac Wheel",
-                  "intro": "The zodiac wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "రాశి చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "రాశి చక్రం సెకన్లలో తిరగడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Review the Signs",
-                              "desc": "The wheel displays all 12 zodiac signs with their symbols and color-coded segments. Each sign represents a different astrological archetype."
+                              "title": "రాశులను సమీక్షించండి",
+                              "desc": "చక్రం అన్ని 12 రాశులను వాటి చిహ్నాలు మరియు రంగు-కోడ్ విభాగాలతో ప్రదర్శిస్తుంది. ప్రతి రాశి ప్రత్యేక వ్యక్తిత్వ లక్షణాలు మరియు మూలక సంబంధాలతో వేర్వేరు జ్యోతిష నమూనాను సూచిస్తుంది."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the signs rotate. The result includes the sign name, symbol, element, and date range."
+                              "title": "చక్రాన్ని తిప్పండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు రాశులు తిరుగుతూ చూడండి. చక్రం న్యాయమైన మరియు ఊహించలేని ఫలితాల కోసం భౌతిక-ఆధారిత యాదృచ్ఛికతను ఉపయోగిస్తుంది. ఫలితంలో రాశి పేరు, చిహ్నం, మూలకం మరియు తేదీ పరిధి ఉన్నాయి."
                         },
                         {
-                              "title": "Read the Sign Details",
-                              "content": "After the spin, an info panel appears showing the selected sign traits, elemental association, and compatible signs."
+                              "title": "రాశి వివరాలను చదవండి",
+                              "desc": "తిప్పిన తర్వాత, ఒక సమాచార ప్యానెల్ ఎంచుకున్న రాశి లక్షణాలు, మూలక అనుబంధం మరియు అనుకూల రాశులను చూపిస్తుంది. ఈ సమాచారాన్ని ఆటలు, వ్యక్తిత్వ చర్చలు లేదా సృజనాత్మక ప్రాంప్ట్ల కోసం ఉపయోగించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Zodiac Wheel?",
+                        "title": "రాశి చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs.",
-                              "The tool draws from the Western astrological tradition, which divides the zodiac into 12 signs based on the sun position at the time of birth.",
-                              "Unlike a horoscope that predicts daily events based on your actual birth sign, the zodiac wheel randomly selects a sign regardless of your actual birthday."
+                              "రాశి చక్రం అనేది అన్ని 12 జ్యోతిష రాశుల ద్వారా తిరిగే యాదృచ్ఛిక రాశి ఎంపిక సాధనం. ప్రతి రాశి చక్రం విభాగంలో దాని చిహ్నం, పేరు మరియు రంగును ప్రదర్శిస్తుంది. చక్రం ఆగినప్పుడు, ఎంచుకున్న రాశి దాని మూలకం, వ్యక్తిత్వ లక్షణాలు, తేదీ పరిధి మరియు అనుకూల రాశులతో కనిపిస్తుంది.",
+                              "ఈ సాధనం పాశ్చాత్య జ్యోతిష సంప్రదాయం నుండి ఉద్భవించింది, ఇది రాశిచక్రాన్ని జన్మ సమయంలో సూర్య స్థానం ఆధారంగా 12 రాశులుగా విభజిస్తుంది. ప్రతి రాశి నాలుగు మూలకాలలో ఒకదానితో సంబంధం కలిగి ఉంటుంది — అగ్ని, భూమి, వాయు లేదా జలం — మరియు విలక్షణమైన వ్యక్తిత్వ లక్షణాలను కలిగి ఉంటుంది.",
+                              "మీ వాస్తవ జన్మ రాశి ఆధారంగా రోజువారీ సంఘటనలను అంచనా వేసే జాతకం వలె కాకుండా, ఈ చక్రం మీ వాస్తవ పుట్టిన తేదీతో సంబంధం లేకుండా యాదృచ్ఛికంగా ఒక రాశిని ఎంచుకుంటుంది. ఇది ఆటలు, సృజనాత్మక అభ్యాసాలు మరియు వ్యక్తిత్వ అన్వేషణకు ఉపయోగపడుతుంది."
                         ]
                   },
                   {
-                        "title": "How the Wheel Selects Signs",
+                        "title": "చక్రం రాశిని ఎలా ఎంచుకుంటుంది",
                         "content": [
-                              "The zodiac wheel uses physics-based randomization to ensure fair and unpredictable results. Each of the 12 signs occupies an equal segment on the wheel.",
-                              "When the wheel stops, it displays the sign name, symbol, and element directly on the result area. Below the result, an information panel expands to show the full sign profile."
+                              "రాశి చక్రం న్యాయమైన మరియు ఊహించలేని ఫలితాలను నిర్ధారించడానికి భౌతిక-ఆధారిత యాదృచ్ఛికతను ఉపయోగిస్తుంది. అన్ని 12 రాశులు చక్రంలో సమాన విభాగాన్ని ఆక్రమిస్తాయి, ప్రతి రాశి ఎంపికకు సమాన సంభావ్యతను నిర్ధారిస్తుంది. చక్రం వేరియబుల్ వేగం మరియు మందగింపుతో తిరుగుతుంది, ఏ రాశి ఎంచుకోబడుతుందో ఊహించడం లేదా ప్రభావితం చేయడం అసాధ్యం చేస్తుంది.",
+                              "చక్రం ఆగినప్పుడు, అది రాశి పేరు, చిహ్నం మరియు మూలకాన్ని నేరుగా ఫలిత ప్రాంతంలో ప్రదర్శిస్తుంది. ఫలితం క్రింద, ఒక సమాచార ప్యానెల్ తేదీ పరిధి, వ్యక్తిత్వ లక్షణాలు మరియు అనుకూల రాశులతో సహా పూర్తి రాశి ప్రొఫైల్ను చూపించడానికి విస్తరిస్తుంది."
                         ]
                   },
                   {
-                        "title": "The 12 Zodiac Signs and Their Elements",
+                        "title": "12 రాశులు మరియు వాటి మూలకాలు",
                         "content": [
-                              "Each zodiac sign belongs to one of four elements, and the elements shape the sign personality in fundamental ways."
+                              "ప్రతి రాశి నాలుగు మూలకాలలో ఒకదానికి చెందినది, మరియు మూలకాలు రాశి వ్యక్తిత్వాన్ని ప్రాథమిక మార్గాల్లో ఆకృతి చేస్తాయి. చక్రం మూలకం ప్రకారం రాశులను రంగు-కోడ్ చేస్తుంది, వేగవంతమైన భ్రమణ సమయంలో కూడా దృశ్య నమూనాలను స్పష్టంగా ఉంచుతుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Fire Signs: Aries, Leo, Sagittarius",
-                                    "content": "Fire signs are characterized by passion, energy, and action. Aries leads with initiative. Leo commands attention through charisma. Sagittarius seeks adventure."
+                                    "title": "అగ్ని రాశులు: మేషం, సింహం, ధనస్సు",
+                                    "content": "అగ్ని రాశులు ఉత్సాహం, శక్తి మరియు చర్య ద్వారా వర్గీకరించబడతాయి. మేషం చొరవ మరియు ధైర్యంతో ముందుకు నడిపిస్తుంది. సింహం ఆకర్షణ మరియు సృజనాత్మకత ద్వారా దృష్టిని ఆకర్షిస్తుంది. ధనస్సు సాహసం మరియు తాత్త్విక సత్యాన్ని కోరుతుంది. అగ్ని రాశులు బహిర్ముఖ, పోటీ మరియు ప్రేరణతో నడపబడతాయి."
                               },
                               {
-                                    "title": "Earth Signs: Taurus, Virgo, Capricorn",
-                                    "content": "Earth signs value stability, practicality, and material comfort. Taurus builds through patience. Virgo analyzes through detail. Capricorn achieves through discipline."
+                                    "title": "భూమి రాశులు: వృషభం, కన్య, మకరం",
+                                    "content": "భూమి రాశులు స్థిరత్వం, ఆచరణాత్మకత మరియు భౌతిక సౌకర్యానికి విలువ ఇస్తాయి. వృషభం సహనం మరియు ఇంద్రియ ప్రశంస ద్వారా నిర్మిస్తుంది. కన్య వివరాలు మరియు సేవ ద్వారా విశ్లేషిస్తుంది. మకరం క్రమశిక్షణ మరియు ఆశయం ద్వారా సాధిస్తుంది. భూమి రాశులు నమ్మదగిన, వ్యవస్థీకృత మరియు వాస్తవికతలో పాతుకుపోయినవి."
                               },
                               {
-                                    "title": "Air Signs: Gemini, Libra, Aquarius",
-                                    "content": "Air signs prioritize communication, ideas, and social connection. Gemini processes through curiosity. Libra seeks harmony. Aquarius innovates through independence."
+                                    "title": "వాయు రాశులు: మిథునం, తుల, కుంభం",
+                                    "content": "వాయు రాశులు కమ్యూనికేషన్, ఆలోచనలు మరియు సామాజిక సంబంధానికి ప్రాధాన్యత ఇస్తాయి. మిథునం ఉత్సుకత మరియు అనుకూలత ద్వారా ప్రాసెస్ చేస్తుంది. తుల సమతుల్యత మరియు సౌందర్యం ద్వారా సామరస్యాన్ని కోరుతుంది. కుంభం స్వాతంత్ర్యం మరియు మానవతా దృష్టి ద్వారా ఆవిష్కరిస్తుంది. వాయు రాశులు తెలివైన, సామాజిక మరియు ఆలోచన-చోదితమైనవి."
                               },
                               {
-                                    "title": "Water Signs: Cancer, Scorpio, Pisces",
-                                    "content": "Water signs operate through emotion, intuition, and depth. Cancer nurtures through empathy. Scorpio transforms through intensity. Pisces connects through compassion."
+                                    "title": "జల రాశులు: కర్కాటకం, వృశ్చికం, మీనం",
+                                    "content": "జల రాశులు భావోద్వేగం, అంతర్ దృష్టి మరియు లోతు ద్వారా పనిచేస్తాయి. కర్కాటకం సహానుభూతి మరియు రక్షణ స్వభావం ద్వారా పోషిస్తుంది. వృశ్చికం తీవ్రత మరియు మానసిక అంతర్దృష్టి ద్వారా రూపాంతరం చెందుతుంది. మీనం కరుణ మరియు ఆధ్యాత్మిక ఊహ ద్వారా కనెక్ట్ అవుతుంది. జల రాశులు సున్నితమైన, గ్రహణశీల మరియు భావోద్వేగపరంగా తెలివైనవి."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Zodiac Wheel",
+                        "title": "రాశి చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The zodiac wheel works best when you need a random astrological sign for games, creative prompts, or personality discussions."
+                              "రాశి చక్రం ఆటలు, సృజనాత్మక ప్రాంప్ట్లు లేదా వ్యక్తిత్వ చర్చల కోసం మీకు యాదృచ్ఛిక జ్యోతిష రాశి అవసరమైనప్పుడు ఉత్తమంగా పనిచేస్తుంది. సాధారణ యాదృచ్ఛిక సాధనాల వలె కాకుండా, రాశి చక్రం అంతర్లీన వ్యక్తిత్వ డేటా మరియు ప్రతీకాత్మక సంబంధాలతో వచ్చే ఫలితాలను ఇస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Party Games and Icebreakers",
-                                    "content": "In social settings, the zodiac wheel determines which sign each person plays in astrology-themed games."
+                                    "title": "పార్టీ ఆటలు మరియు ఐస్‌బ్రేకర్లు",
+                                    "content": "సామాజిక సెట్టింగ్‌లలో, రాశి చక్రం జ్యోతిష-థీమ్ ఆటలలో ప్రతి వ్యక్తి ఏ రాశి పాత్ర పోషిస్తుందో నిర్ణయిస్తుంది. చిహ్నాలు మరియు రంగులతో దృశ్య ప్రదర్శన సమూహాలకు ఆకర్షణీయంగా ఉంటుంది."
                               },
                               {
-                                    "title": "Creative Writing and Character Development",
-                                    "content": "Writers use the zodiac wheel to assign personality archetypes to fictional characters."
+                                    "title": "సృజనాత్మక రచన మరియు పాత్ర అభివృద్ధి",
+                                    "content": "రచయితలు కల్పిత పాత్రలకు వ్యక్తిత్వ నమూనాలను కేటాయించడానికి రాశి చక్రాన్ని ఉపయోగిస్తారు. రాశి కోసం తిప్పండి, లక్షణాలను చదవండి మరియు పాత్ర అభివృద్ధికి ప్రారంభ బిందువుగా ఉపయోగించండి. మూలక సంబంధాలు అదనపు లోతును అందిస్తాయి."
                               },
                               {
-                                    "title": "Personality Discussions and Self-Reflection",
-                                    "content": "The sign description can prompt interesting self-reflection even though the wheel selects randomly."
+                                    "title": "వ్యక్తిత్వ చర్చలు మరియు స్వీయ-ప్రతిబింబం",
+                                    "content": "చక్రం మీ వాస్తవ పుట్టిన తేదీకి బదులుగా యాదృచ్ఛికంగా ఎంచుకున్నప్పటికీ, రాశి వివరణ ఆసక్తికరమైన స్వీయ-ప్రతిబింబాన్ని ప్రేరేపించగలదు. చక్రం మీతో సరిపోలే లక్షణాలతో రాశిని ఎంచుకుంటే, అది మీ వ్యక్తిత్వం గురించి ఏదో చెప్పవచ్చు."
                               },
                               {
-                                    "title": "Educational Activities",
-                                    "content": "Teachers use the zodiac wheel for astronomy lessons, cultural studies, or statistics exercises."
+                                    "title": "విద్యా కార్యకలాపాలు",
+                                    "content": "ఉపాధ్యాయులు ఖగోళ పాఠాలు, సాంస్కృతిక అధ్యయనాలు లేదా గణాంక వ్యాయామాల కోసం రాశి చక్రాన్ని ఉపయోగిస్తారు. చక్రం యాదృచ్ఛిక నమూనా యంత్రాంగాన్ని అందిస్తుంది, ఇది ఈ కార్యకలాపాలను ఇంటరాక్టివ్‌గా చేస్తుంది."
                               },
                               {
-                                    "title": "Daily Decision Making",
-                                    "content": "Some people use the zodiac wheel as a lighthearted decision-making tool."
+                                    "title": "రోజువారీ నిర్ణయం తీసుకోవడం",
+                                    "content": "కొంతమంది రాశి చక్రాన్ని తేలికపాటి నిర్ణయం తీసుకునే సాధనంగా ఉపయోగిస్తారు. మీరు తక్కువ-రిస్క్ నిర్ణయం తీసుకోవలసి వచ్చినప్పుడు, చక్రాన్ని తిప్పండి మరియు రాశి లక్షణాలను ఒక విధానాన్ని సూచించనివ్వండి."
                               }
                         ]
                   },
                   {
-                        "title": "Zodiac Wheel vs Other Randomizers",
+                        "title": "రాశి చక్రం vs ఇతర యాదృచ్ఛిక సాధనాలు",
                         "content": [
-                              "The yes or no wheel produces binary results with no interpretive context. The zodiac wheel produces results with built-in meaning.",
-                              "The Yes No Oracle provides philosophical guidance through themed messages. The zodiac wheel provides personality-based information.",
-                              "The tarot card reader uses Major Arcana cards for reflective guidance. The zodiac wheel uses astrological signs for personality exploration."
+                              "అవును లేదా కాదు చక్రం ఎటువంటి వివరణాత్మక సందర్భం లేకుండా బైనరీ ఫలితాలను ఉత్పత్తి చేస్తుంది. రాశి చక్రం అంతర్నిర్మిత అర్థంతో ఫలితాలను ఉత్పత్తి చేస్తుంది — ప్రతి రాశిలో లక్షణాలు, మూలకాలు మరియు అనుకూలత డేటా ఉంటుంది, ఇది యాదృచ్ఛిక ఎంపికకు లోతును జోడిస్తుంది.",
+                              "అవును లేదా కాదు ఓరకిల్ థీమ్ సందేశాల ద్వారా తాత్త్విక మార్గదర్శకత్వాన్ని అందిస్తుంది. రాశి చక్రం జ్యోతిష నమూనాల ద్వారా వ్యక్తిత్వ-ఆధారిత సమాచారాన్ని అందిస్తుంది. రెండూ యాదృచ్ఛిక ఫలితాలకు సందర్భాన్ని జోడిస్తాయి, కానీ ఓరకిల్ రహస్య భాషను ఉపయోగిస్తుంది, రాశి చక్రం వ్యక్తిత్వ మనస్తత్వశాస్త్రాన్ని ఉపయోగిస్తుంది.",
+                              "టారో కార్డ్ రీడర్ ప్రతిబింబ మార్గదర్శకత్వం కోసం మేజర్ ఆర్కానా కార్డులను ఉపయోగిస్తుంది. రాశి చక్రం వ్యక్తిత్వ అన్వేషణ కోసం జ్యోతిష రాశులను ఉపయోగిస్తుంది. రెండూ యాదృచ్ఛిక ఎంపిక ద్వారా స్వీయ-ప్రతిబింబ సాధనాలుగా పనిచేస్తాయి, కానీ వేర్వేరు ప్రతీకాత్మక వ్యవస్థల నుండి వస్తాయి."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the zodiac wheel?",
-                        "a": "The zodiac wheel is a random zodiac sign picker that spins through all 12 astrological signs."
+                        "q": "రాశి చక్రం అంటే ఏమిటి?",
+                        "a": "రాశి చక్రం అనేది అన్ని 12 జ్యోతిష రాశుల ద్వారా తిరిగే యాదృచ్ఛిక రాశి ఎంపిక సాధనం. ప్రతి రాశి దాని చిహ్నం, మూలకం, లక్షణాలు మరియు అనుకూలత సమాచారాన్ని ప్రదర్శిస్తుంది."
                   },
                   {
-                        "q": "How many zodiac signs are on the wheel?",
-                        "a": "The wheel includes all 12 Western zodiac signs."
+                        "q": "చక్రంలో ఎన్ని రాశులు ఉన్నాయి?",
+                        "a": "చక్రంలో అన్ని 12 పాశ్చాత్య రాశులు ఉన్నాయి: మేషం, వృషభం, మిథునం, కర్కాటకం, సింహం, కన్య, తుల, వృశ్చికం, ధనస్సు, మకరం, కుంభం, మీనం."
                   },
                   {
-                        "q": "Is this based on my actual birth sign?",
-                        "a": "No. The zodiac wheel randomly selects a sign regardless of your actual birthday."
+                        "q": "ఇది నా వాస్తవ జన్మ రాశిపై ఆధారపడి ఉందా?",
+                        "a": "లేదు. రాశి చక్రం మీ వాస్తవ పుట్టిన తేదీతో సంబంధం లేకుండా యాదృచ్ఛికంగా ఒక రాశిని ఎంచుకుంటుంది. ఇది ఆటలు, సృజనాత్మక అభ్యాసాలు మరియు వ్యక్తిత్వ అన్వేషణ కోసం రూపొందించబడింది."
                   },
                   {
-                        "q": "What information does each sign include?",
-                        "a": "Each sign result shows the sign name, symbol, element, date range, personality traits, and compatible signs."
+                        "q": "ప్రతి రాశిలో ఏ సమాచారం ఉంటుంది?",
+                        "a": "ప్రతి రాశి ఫలితం రాశి పేరు, చిహ్నం, మూలకం (అగ్ని, భూమి, వాయు లేదా జలం), తేదీ పరిధి, వ్యక్తిత్వ లక్షణాలు మరియు అనుకూల రాశులను చూపిస్తుంది. ఈ సమాచారం చక్రం ఆగిన తర్వాత సమాచార ప్యానెల్‌లో కనిపిస్తుంది."
                   },
                   {
-                        "q": "Can I use this for party games?",
-                        "a": "Yes. The zodiac wheel works well for astrology-themed party games."
+                        "q": "నేను దీన్ని పార్టీ ఆటల కోసం ఉపయోగించవచ్చా?",
+                        "a": "అవును. రాశి చక్రం జ్యోతిష-థీమ్ పార్టీ ఆటలకు బాగా పనిచేస్తుంది, ఇక్కడ ఆటగాళ్లకు యాదృచ్ఛిక రాశులు కేటాయించబడతాయి."
                   },
                   {
-                        "q": "Is the zodiac wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "రాశి చక్రం ఉచితమా?",
+                        "a": "అవును. చక్రం పూర్తిగా ఉచితం, సైనప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా. మీరు ఎన్నిసార్లు కావాలంటే అన్నిసార్లు తిప్పవచ్చు."
                   }
             ]
       }
@@ -17407,112 +17409,112 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "यादृचिक आहारं व्हील्",
-            "subtitle": "एमै इंचुकोवडि निर्णुतुन् ओर्का।",
+            "title": "యాదృచ్ఛిక ఆహార చక్రం",
+            "subtitle": "మీ తదుపరి భోజనాన్ని ఎంచుకోండి.",
             "howToUse": {
-                  "title": "How to Use the Random Food Wheel",
-                  "intro": "The random food wheel is ready to pick your next meal in seconds. Here is how it works:",
+                  "title": "యాదృచ్ఛిక ఆహార చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "యాదృచ్ఛిక ఆహార చక్రం సెకన్లలో మీ తదుపరి భోజనాన్ని ఎంచుకోవడానికి సిద్ధంగా ఉంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Review the Food Options",
-                              "desc": "The wheel starts with 8 common food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
+                              "title": "ఆహార ఎంపికలను సమీక్షించండి",
+                              "desc": "చక్రం 8 సాధారణ ఆహార ఎంపికలతో ప్రారంభమవుతుంది: పిజ్జా, సుషీ, బర్గర్, టాకోస్, పాస్తా, సలాడ్, స్టేక్ మరియు శాండ్విచ్. వీటిని ఉంచండి లేదా మీ స్వంత ఫేవరెట్లను జోడించండి."
                         },
                         {
-                              "title": "Customize Your List",
-                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The wheel updates in real time."
+                              "title": "మీ జాబితాను అనుకూలించండి",
+                              "desc": "రెస్టారెంట్లు, వంటకాలు లేదా నిర్దిష్ట వంటకాలను జోడించడానికి సైడ్‌బార్ ఉపయోగించండి. మీకు కావలసిన ఎంపికలను తీసివేయండి. చక్రం రియల్ టైమ్‌లో నవీకరించబడుతుంది."
                         },
                         {
-                              "title": "Spin and Order",
-                              "desc": "Press the spin button and watch the food options rotate. When the wheel stops, the winning dish appears. Use the result to order, cook, or decide."
+                              "title": "తిప్పండి మరియు ఆర్డర్ చేయండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు ఆహార ఎంపికలు తిరగడం చూడండి. చక్రం ఆగినప్పుడు, విజేత వంటకం కనిపిస్తుంది. ఆర్డర్ చేయడానికి, వంట చేయడానికి లేదా నిర్ణయించడానికి ఫలితాన్ని ఉపయోగించండి."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Random Food Wheel?",
+                        "title": "యాదృచ్ఛిక ఆహార చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The random food wheel is a meal decision tool that spins through a list of food options and picks one at random. It solves the everyday problem of deciding what to eat.",
-                              "The tool comes pre-loaded with 8 common food choices. These defaults work for quick decisions, but the real power comes from customization.",
-                              "The wheel uses the same physics-based randomization as every other spinner on the site."
+                              "యాదృచ్ఛిక ఆహార చక్రం అనేది ఆహార ఎంపికల జాబితా ద్వారా తిరిగి ఒకదాన్ని యాదృచ్ఛికంగా ఎంచుకునే భోజన నిర్ణయ సాధనం. ఇది ఏమి తినాలి అనే ప్రతిరోజూ సమస్యను పరిష్కరిస్తుంది.",
+                              "సాధనం 8 సాధారణ ఆహార ఎంపికలతో ముందే లోడ్ చేయబడి ఉంటుంది. ఈ డిఫాల్ట్‌లు త్వరిత నిర్ణయాలకు పనిచేస్తాయి, కానీ నిజమైన శక్తి అనుకూలనం నుండి వస్తుంది.",
+                              "చక్రం సైట్‌లోని ప్రతి ఇతర స్పిన్నర్ వలె అదే భౌతికశాస్త్ర-ఆధారిత యాదృచ్ఛికీకరణను ఉపయోగిస్తుంది."
                         ]
                   },
                   {
-                        "title": "How to Customize Your Food List",
+                        "title": "మీ ఆహార జాబితాను ఎలా అనుకూలించాలి",
                         "content": [
-                              "The customization sidebar provides full control over the wheel entries."
+                              "అనుకూలన సైడ్‌బార్ చక్ర ఎంట్రీలపై పూర్తి నియంత్రణను అందిస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Adding Custom Entries",
-                                    "content": "Open the sidebar and type new food entries into the add field. Each entry becomes a new segment on the wheel."
+                                    "title": "అనుకూలిత ఎంట్రీలను జోడించడం",
+                                    "content": "సైడ్‌బార్ తెరిచి జోడించే ఫీల్డ్‌లో కొత్త ఆహార ఎంట్రీలను టైప్ చేయండి. ప్రతి ఎంట్రీ చక్రంపై కొత్త విభాగంగా మారుతుంది."
                               },
                               {
-                                    "title": "Removing Unwanted Options",
-                                    "content": "If the default list includes foods you do not eat, remove them through the sidebar."
+                                    "title": "అనవసరమైన ఎంపికలను తీసివేయడం",
+                                    "content": "డిఫాల్ట్ జాబితాలో మీరు తినని ఆహారాలు ఉంటే, సైడ్‌బార్ ద్వారా వాటిని తీసివేయండి."
                               },
                               {
-                                    "title": "Creating Theme Lists",
-                                    "content": "For variety, create different food lists for different situations. A Quick Lunch list might include sandwiches and salads."
+                                    "title": "థీమ్ జాబితాలను సృష్టించడం",
+                                    "content": "వైవిధ్యం కోసం, విభిన్న పరిస్థితుల కోసం విభిన్న ఆహార జాబితాలను సృష్టించండి. క్విక్ లంచ్ జాబితాలో శాండ్విచ్‌లు మరియు సలాడ్‌లు ఉండవచ్చు."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Food Wheel",
+                        "title": "ఆహార చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The food wheel works best when you face the what should I eat paralysis."
+                              "ఏమి తినాలి అనే పక్షవాతంతో మీరు ఎదుర్కొన్నప్పుడు ఆహార చక్రం ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "Solo Dining Decisions",
-                                    "content": "When eating alone, the decision fatigue of choosing a meal can be surprisingly draining."
+                                    "title": "సోలో డైనింగ్ నిర్ణయాలు",
+                                    "content": "ఒంటరిగా తినేటప్పుడు, భోజనాన్ని ఎంచుకునే నిర్ణయ అలసట ఆశ్చర్యకరంగా అలసిపోయేదిగా ఉంటుంది."
                               },
                               {
-                                    "title": "Group Meal Planning",
-                                    "content": "When multiple people cannot agree on what to eat, the food wheel provides a fair, transparent random selection."
+                                    "title": "సమూహ భోజన ప్లానింగ్",
+                                    "content": "బహుళ మంది ఏమి తినాలో ఏకీభవించలేకపోతే, ఆహార చక్రం సమానమైన, పారదర్శక యాదృచ్ఛిక ఎంపికను అందిస్తుంది."
                               },
                               {
-                                    "title": "Meal Prep and Cooking Challenges",
-                                    "content": "For meal prep sessions, the food wheel determines which dishes to cook for the week."
+                                    "title": "భోజన ప్రిప్ మరియు వంట సవాళ్లు",
+                                    "content": "భోజన ప్రిప్ సెషన్ల కోసం, ఆహార చక్రం వారం కోసం ఏ వంటకాలు వంట చేయాలో నిర్ణయిస్తుంది."
                               },
                               {
-                                    "title": "Date Night and Special Occasions",
-                                    "content": "For date nights or celebrations, the food wheel can narrow down restaurant choices."
+                                    "title": "డేట్ నైట్ మరియు ప్రత్యేక సందర్భాలు",
+                                    "content": "డేట్ నైట్లు లేదా వేడుకల కోసం, ఆహార చక్రం రెస్టారెంట్ ఎంపికలను తగ్గించగలదు."
                               },
                               {
-                                    "title": "Dietary Rotation and Variety",
-                                    "content": "People following specific diets often cycle through the same handful of meals. The food wheel breaks this pattern."
+                                    "title": "ఆహారం భ్రమణం మరియు వైవిధ్యం",
+                                    "content": "నిర్దిష్ట ఆహారాలను అనుసరించే ప్రజలు తరచుగా అదే కొన్ని భోజనాల ద్వారా తిరుగుతారు. ఆహార చక్రం ఈ నమూనాను విచ్ఛిన్నం చేస్తుంది."
                               }
                         ]
                   },
                   {
-                        "title": "Food Wheel vs Other Decision Tools",
+                        "title": "ఆహార చక్రం vs ఇతర నిర్ణయ సాధనాలు",
                         "content": [
-                              "The yes or no wheel handles binary decisions but cannot choose between multiple restaurant options.",
-                              "The word wheel can be loaded with food entries, but it requires manual setup. The food wheel comes pre-loaded.",
-                              "The country wheel can inspire cuisine choices. The rainbow wheel assigns colors randomly but the food wheel gives direct control over entries."
+                              "అవును/కాదు చక్రం బైనరీ నిర్ణయాలను నిర్వహిస్తుంది కానీ బహుళ రెస్టారెంట్ ఎంపికల మధ్య ఎంచుకోలేదు.",
+                              "పద చక్రం ఆహార ఎంట్రీలతో లోడ్ చేయబడవచ్చు, కానీ మాన్యువల్ సెటప్ అవసరం. ఆహార చక్రం ముందే లోడ్ చేయబడి ఉంటుంది.",
+                              "దేశ చక్రం వంటకాల ఎంపికలకు ప్రేరణ ఇవ్వగలదు. ఇంద్రధనస్సు చక్రం రంగులను యాదృచ్ఛికంగా కేటాయిస్తుంది కానీ ఆహార చక్రం ఎంట్రీలపై ప్రత్యక్ష నియంత్రణను ఇస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the random food wheel?",
-                        "a": "The random food wheel is a meal decision tool that spins through food options and picks one at random."
+                        "q": "యాదృచ్ఛిక ఆహార చక్రం అంటే ఏమిటి?",
+                        "a": "యాదృచ్ఛిక ఆహార చక్రం అనేది ఆహార ఎంపికల ద్వారా తిరిగి ఒకదాన్ని యాదృచ్ఛికంగా ఎంచుకునే భోజన నిర్ణయ సాధనం."
                   },
                   {
-                        "q": "Can I add my own food options?",
-                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry."
+                        "q": "నేను నా స్వంత ఆహార ఎంపికలను జోడించవచ్చా?",
+                        "a": "అవును. అనుకూలన సైడ్‌బార్ మీకు ఏదైనా ఎంట్రీని జోడించడానికి, తీసివేయడానికి మరియు పేరు మార్చడానికి అనుమతిస్తుంది."
                   },
                   {
-                        "q": "What foods come pre-loaded?",
-                        "a": "The default list includes Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich."
+                        "q": "ఏ ఆహారాలు ముందే లోడ్ చేయబడతాయి?",
+                        "a": "డిఫాల్ట్ జాబితాలో పిజ్జా, సుషీ, బర్గర్, టాకోస్, పాస్తా, సలాడ్, స్టేక్ మరియు శాండ్విచ్ ఉన్నాయి."
                   },
                   {
-                        "q": "Can I use this for group decisions?",
-                        "a": "Yes. The food wheel works well for groups because everyone can see the wheel spin and land on a result."
+                        "q": "నేను దీనిని సమూహ నిర్ణయాల కోసం ఉపయోగించవచ్చా?",
+                        "a": "అవును. ఆహార చక్రం సమూహాలకు బాగా పనిచేస్తుంది ఎందుకంటే అందరూ చక్రం తిరగడం మరియు ఫలితంపై దిగడం చూడగలరు."
                   },
                   {
-                        "q": "Is the food wheel free?",
-                        "a": "The food wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "ఆహార చక్రం ఉచితమా?",
+                        "a": "ఆహార చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
@@ -19161,120 +19163,120 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     te: {
-            "title": "जुट्त रंगु व्हील्",
-            "subtitle": "यादृचिक जुट्त रंगु ऎरा ओर्का।",
+            "title": "జుట్టు రంగు చక్రం",
+            "subtitle": "యాదృచ్ఛిక జుట్టు రంగు ఎంపిక.",
             "howToUse": {
-                  "title": "How to Use the Hair Color Wheel",
-                  "intro": "The hair color wheel picks a random shade in seconds. Here is how it works:",
+                  "title": "జుట్టు రంగు చక్రాన్ని ఎలా ఉపయోగించాలి",
+                  "intro": "జుట్టు రంగు చక్రం సెకన్లలో యాదృచ్ఛిక షేడ్‌ను ఎంచుకుంటుంది. ఇది ఎలా పనిచేస్తుందో ఇక్కడ ఉంది:",
                   "steps": [
                         {
-                              "title": "Browse the Color Palette",
-                              "desc": "The color grid shows all available hair colors organized by category. Browse through natural shades like blonde, brunette, and black, or explore fashion colors."
+                              "title": "రంగు ప్యాలెట్‌ను బ్రౌజ్ చేయండి",
+                              "desc": "రంగు గ్రిడ్ వర్గం ద్వారా సంఘటించబడిన అందుబాటులో ఉన్న అన్ని జుట్టు రంగులను చూపిస్తుంది. బ్లాండ్, బ్రౌనెట్ మరియు నలుపు వంటి సహజ షేడ్ల ద్వారా బ్రౌజ్ చేయండి లేదా ఫ్యాషన్ రంగులను అన్వేషించండి."
                         },
                         {
-                              "title": "Filter by Category",
-                              "desc": "Use the category buttons above the grid to filter colors by type. Select Natural for everyday shades, Fashion for bold colors, or Red for warm tones."
+                              "title": "వర్గం ద్వారా ఫిల్టర్ చేయండి",
+                              "desc": "రంగులను రకం ద్వారా ఫిల్టర్ చేయడానికి గ్రిడ్ పైన వర్గ బటన్లను ఉపయోగించండి. ప్రతిరోజూ షేడ్ల కోసం సహజం, ధైర్యమైన రంగుల కోసం ఫ్యాషన్ లేదా వెచ్చని టోన్ల కోసం ఎరుపు ఎంచుకోండి."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the selected colors rotate. When the wheel stops, the winning color appears with its hex code and a swatch preview."
+                              "title": "చక్రాన్ని తిప్పండి",
+                              "desc": "స్పిన్ బటన్ నొక్కండి మరియు ఎంచుకున్న రంగులు తిరగడం చూడండి. చక్రం ఆగినప్పుడు, విజేత రంగు దాని హెక్స్ కోడ్ మరియు స్వాచ్ ప్రివ్యూతో కనిపిస్తుంది."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Hair Color Wheel?",
+                        "title": "జుట్టు రంగు చక్రం అంటే ఏమిటి?",
                         "content": [
-                              "The hair color wheel is a random hair color picker that spins through a customizable palette of shades.",
-                              "The wheel comes loaded with 16 popular hair colors spanning natural tones and fashion shades.",
-                              "The hex code display makes the result practical for online shopping. Copy the hex value to find exact product matches."
+                              "జుట్టు రంగు చక్రం అనేది అనుకూలిత షేడ్ల ప్యాలెట్ ద్వారా తిరిగి యాదృచ్ఛిక జుట్టు రంగు ఎంపిక.",
+                              "చక్రం సహజ టోన్లు మరియు ఫ్యాషన్ షేడ్లలో విస్తరించిన 16 ప్రజాదరణ పొందిన జుట్టు రంగులతో లోడ్ చేయబడి ఉంటుంది.",
+                              "హెక్స్ కోడ్ ప్రదర్శన ఫలితాన్ని ఆన్‌లైన్ షాపింగ్ కోసం ఆచరణాత్మకంగా చేస్తుంది. ఖచ్చితమైన ఉత్పత్తి మ్యాచ్‌లను కనుగొనడానికి హెక్స్ విలువను కాపీ చేయండి."
                         ]
                   },
                   {
-                        "title": "Understanding Hair Color Categories",
+                        "title": "జుట్టు రంగు వర్గాలను అర్థం చేసుకోవడం",
                         "content": [
-                              "Hair colors fall into distinct categories based on tone, saturation, and origin."
+                              "జుట్టు రంగులు టోన్, సేచురేషన్ మరియు మూలం ఆధారంగా వేర్వేరు వర్గాలలో పడతాయి."
                         ],
                         "subsections": [
                               {
-                                    "title": "Natural Hair Colors",
-                                    "content": "Natural shades mimic colors that occur in human hair without artificial dyeing. These include various depths of blonde, brown, black, and red."
+                                    "title": "సహజ జుట్టు రంగులు",
+                                    "content": "సహజ షేడ్లు కృత్రిమ డైయింగ్ లేకుండా మానవ జుట్టులో సంభవించే రంగులను అనుకరిస్తాయి. ఇవి బ్లాండ్, బ్రౌన్, నలుపు మరియు ఎరుపు యొక్క వివిధ లోతులను కలిగి ఉంటాయి."
                               },
                               {
-                                    "title": "Fashion and Fantasy Colors",
-                                    "content": "Fashion colors include pastels, vivid brights, and unnatural shades like blue, green, purple, and pink."
+                                    "title": "ఫ్యాషన్ మరియు ఫాంటసీ రంగులు",
+                                    "content": "ఫ్యాషన్ రంగులలో పాస్టెల్స్, తీవ్రమైన ప్రకాశవంతమైనవి మరియు నీలం, ఆకుపచ్చ, ఊదా మరియు గులాబీ వంటి అసహజ షేడ్లు ఉన్నాయి."
                               },
                               {
-                                    "title": "Red and Warm Tones",
-                                    "content": "Red hair colors span a wide range from subtle auburn and copper to bright strawberry and deep burgundy."
+                                    "title": "ఎరుపు మరియు వెచ్చని టోన్లు",
+                                    "content": "ఎరుపు జుట్టు రంగులు సూక్ష్మమైన ఆబర్న్ మరియు కాపర్ నుండి ప్రకాశవంతమైన స్ట్రాబెర్రీ మరియు లోతైన బర్గండీ వరకు విస్తృత పరిధిని కవర్ చేస్తాయి."
                               },
                               {
-                                    "title": "Custom and Mixed Colors",
-                                    "content": "The custom color input lets you add any shade by name. Type it directly into the wheel."
+                                    "title": "అనుకూల మరియు మిశ్రిత రంగులు",
+                                    "content": "అనుకూల రంగు ఇన్‌పుట్ మీకు పేరు ద్వారా ఏదైనా షేడ్‌ను జోడించడానికి అనుమతిస్తుంది. దీనిని చక్రంలో నేరుగా టైప్ చేయండి."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Hair Color Wheel",
+                        "title": "జుట్టు రంగు చక్రాన్ని ఎప్పుడు ఉపయోగించాలి",
                         "content": [
-                              "The hair color wheel works best when you want to explore hair color options without committing to a single shade."
+                              "ఒకే షేడ్‌కు కట్టుబడకుండా జుట్టు రంగు ఎంపికలను అన్వేషించాలనుకున్నప్పుడు జుట్టు రంగు చక్రం ఉత్తమంగా పనిచేస్తుంది."
                         ],
                         "subsections": [
                               {
-                                    "title": "First-Time Hair Dye Decisions",
-                                    "content": "If you have never dyed your hair before, the sheer number of available colors can be overwhelming."
+                                    "title": "మొదటిసారి జుట్టు డై నిర్ణయాలు",
+                                    "content": "మీరు ముందు ఎప్పుడూ జుట్టును డై చేయకపోతే, అందుబాటులో ఉన్న రంగుల సంఖ్య అధికంగా ఉండవచ్చు."
                               },
                               {
-                                    "title": "Salon Consultations",
-                                    "content": "Before a salon appointment, use the hair color wheel to generate ideas. Spin several times and save the results."
+                                    "title": "సలూన్ సంప్రదింపులు",
+                                    "content": "సలూన్ అపాయింట్‌మెంట్ ముందు, ఆలోచనలను రూపొందించడానికి జుట్టు రంగు చక్రాన్ని ఉపయోగించండి. అనేకసార్లు స్పిన్ చేసి ఫలితాలను సేవ్ చేయండి."
                               },
                               {
-                                    "title": "Costume and Cosplay Planning",
-                                    "content": "Cosplayers and costume designers use the hair color wheel to assign hair colors to characters."
+                                    "title": "కాస్ట్యూమ్ మరియు కాస్ప్లే ప్లానింగ్",
+                                    "content": "కాస్ప్లేయర్లు మరియు కాస్ట్యూమ్ డిజైనర్లు పాత్రలకు జుట్టు రంగులను కేటాయించడానికి జుట్టు రంగు చక్రాన్ని ఉపయోగిస్తారు."
                               },
                               {
-                                    "title": "Creative Projects and Mood Boards",
-                                    "content": "Designers and artists use hair color wheels to generate color palettes for illustrations and character designs."
+                                    "title": "సృజనాత్మక ప్రాజెక్టులు మరియు మూడ్ బోర్డులు",
+                                    "content": "డిజైనర్లు మరియు కళాకారులు చిత్రాలు మరియు పాత్ర డిజైన్ల కోసం రంగు ప్యాలెట్లను రూపొందించడానికి జుట్టు రంగు చక్రాలను ఉపయోగిస్తారు."
                               },
                               {
-                                    "title": "Fun with Friends",
-                                    "content": "Groups of friends can use the hair color wheel for entertainment."
+                                    "title": "మిత్రులతో వినోదం",
+                                    "content": "మిత్రుల సమూహాలు వినోదం కోసం జుట్టు రంగు చక్రాన్ని ఉపయోగించవచ్చు."
                               }
                         ]
                   },
                   {
-                        "title": "Hair Color Wheel vs Other Randomizers",
+                        "title": "జుట్టు రంగు చక్రం vs ఇతర రాండమైజర్లు",
                         "content": [
-                              "The yes or no wheel handles binary choices but cannot help you choose which color.",
-                              "The DTI theme wheel assigns fashion themes. The hair color wheel provides the specific color value you need.",
-                              "The rainbow wheel assigns colors randomly but the hair color wheel uses actual hair color names and hex codes."
+                              "అవును/కాదు చక్రం బైనరీ ఎంపికలను నిర్వహిస్తుంది కానీ ఏ రంగు ఎంచుకోవాలో మీకు సహాయం చేయలేదు.",
+                              "DTI థీమ్ చక్రం ఫ్యాషన్ థీమ్‌లను కేటాయిస్తుంది. జుట్టు రంగు చక్రం మీకు అవసరమైన నిర్దిష్ట రంగు విలువను అందిస్తుంది.",
+                              "ఇంద్రధనస్సు చక్రం రంగులను యాదృచ్ఛికంగా కేటాయిస్తుంది కానీ జుట్టు రంగు చక్రం వాస్తవ జుట్టు రంగు పేర్లు మరియు హెక్స్ కోడ్‌లను ఉపయోగిస్తుంది."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the hair color wheel?",
-                        "a": "The hair color wheel is a random hair color picker that spins through a customizable palette of shades."
+                        "q": "జుట్టు రంగు చక్రం అంటే ఏమిటి?",
+                        "a": "జుట్టు రంగు చక్రం అనేది అనుకూలిత షేడ్ల ప్యాలెట్ ద్వారా తిరిగి యాదృచ్ఛిక జుట్టు రంగు ఎంపిక."
                   },
                   {
-                        "q": "Can I add my own hair colors?",
-                        "a": "Yes. Type any color name into the custom input field and click Add."
+                        "q": "నేను నా స్వంత జుట్టు రంగులను జోడించవచ్చా?",
+                        "a": "అవును. అనుకూల ఇన్‌పుట్ ఫీల్డ్‌లో ఏదైనా రంగు పేరును టైప్ చేసి జోడించండి క్లిక్ చేయండి."
                   },
                   {
-                        "q": "How many colors come pre-loaded?",
-                        "a": "The wheel starts with 16 popular hair colors spanning natural shades, fashion colors, and warm tones."
+                        "q": "ఎన్ని రంగులు ముందే లోడ్ చేయబడతాయి?",
+                        "a": "చక్రం సహజ షేడ్లు, ఫ్యాషన్ రంగులు మరియు వెచ్చని టోన్లలో విస్తరించిన 16 ప్రజాదరణ పొందిన జుట్టు రంగులతో ప్రారంభమవుతుంది."
                   },
                   {
-                        "q": "What does the hex code mean?",
-                        "a": "The hex code is a six-character color value used in digital color representation."
+                        "q": "హెక్స్ కోడ్ అంటే ఏమిటి?",
+                        "a": "హెక్స్ కోడ్ డిజిటల్ రంగు ప్రతినిధానంలో ఉపయోగించే ఆరు-క్యారెక్టర్ రంగు విలువ."
                   },
                   {
-                        "q": "Can I filter colors by category?",
-                        "a": "Yes. The category buttons above the color grid let you filter by Natural, Fashion, Red, or other categories."
+                        "q": "నేను వర్గం ద్వారా రంగులను ఫిల్టర్ చేయవచ్చా?",
+                        "a": "అవును. రంగు గ్రిడ్ పైన వర్గ బటన్లు మిమ్మల్ని సహజం, ఫ్యాషన్, ఎరుపు లేదా ఇతర వర్గాల ద్వారా ఫిల్టర్ చేయడానికి అనుమతిస్తాయి."
                   },
                   {
-                        "q": "Is the hair color wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "జుట్టు రంగు చక్రం ఉచితమా?",
+                        "a": "చక్రం సైన్‌అప్, ప్రకటనలు లేదా వినియోగ పరిమితులు లేకుండా పూర్తిగా ఉచితం."
                   }
             ]
       }
