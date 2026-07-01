@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
-import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getStaticPageContent, getWheelSharedText } from '../js/i18n.js';
+import { LOCALES, buildLocalizedPath, getHomeText, getLocalizedRouteContent, getStaticPageContent, getWheelSharedText, getUiText } from '../js/i18n.js';
 
 const SITE_URL = 'https://yesandnowheel.com';
 const DEFAULT_LOCALE = 'en';
@@ -32,6 +32,7 @@ const ROUTE_TITLES_EN = {
   'random-food': 'Random Food Wheel | Food Decision Spinner',
   'oracle': 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
   'tarot': 'Yes No Tarot | Free Yes or No Tarot Reading',
+  'yes-and-no-dice': 'Yes and No Dice — Free 3D Physics Decision Maker',
   'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
   'blog/cant-decide-what-to-eat': "Can't Decide What to Eat for Dinner? | YesAndNoWheel Blog",
   'blog/should-i-let-fate-decide': 'Should I Let Fate Decide? 5 Life Questions | YesAndNoWheel Blog',
@@ -61,6 +62,7 @@ const ROUTE_DESCRIPTIONS_EN = {
   'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
   'oracle': 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.',
   'tarot': 'Draw a free Yes No Tarot card to instantly find answers. Our interactive card drawer reveals your fate with precise meanings and esoteric guidance.',
+  'yes-and-no-dice': 'Roll the Yes and No Dice for a random answer. 3D physics, probability control, and streak tracking. Free, no signup.',
   'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
   'blog/cant-decide-what-to-eat': "End the dinner debate! Spin the Random Food Wheel and let fate pick your meal. Decision-making tips and fun ideas.",
   'blog/should-i-let-fate-decide': 'Fate vs free will — 5 life dilemmas to spin the Wheel of Fate. Real scenarios, real decisions, real fun.',
@@ -70,8 +72,8 @@ const ROUTE_DESCRIPTIONS_EN = {
   'blog/hair-color-wheel-bold-choice': 'Should you dye your hair? Spin the Hair Color Wheel for classic and fantasy colors. Take a screenshot for your stylist.'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'yes-and-no-dice', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'yes-and-no-dice']);
 
 const templatePath = resolve(projectRoot, 'index.html');
 const template = readFileSync(templatePath, 'utf8');
@@ -260,6 +262,7 @@ function getBreadcrumbSchema(locale, route) {
 function getLocalizedNav(locale, activeRoute) {
   const homePath = buildLocalizedPath(locale, '');
   const isActive = (route) => (activeRoute || '') === route ? ' active' : '';
+  const uiText = getUiText(locale);
 
   const navLinks = {
     home: buildLocalizedPath(locale, ''),
@@ -308,7 +311,7 @@ function getLocalizedNav(locale, activeRoute) {
           <!-- Wheels Dropdown -->
           <li class="nav-dropdown" id="wheelsDropdown">
             <button class="nav-link dropdown-trigger" id="wheelsDropdownBtn">
-              🎡 <span id="navWheelsLabel">${getWheelSharedText(locale).navWheelsLabel || 'Decision Wheels'}</span>
+              🎡 <span id="navWheelsLabel">${uiText.wheelsHeading || 'Decision Wheels'}</span>
               <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
@@ -331,7 +334,7 @@ function getLocalizedNav(locale, activeRoute) {
           <!-- Tarot & Oracle Dropdown -->
           <li class="nav-dropdown" id="tarotDropdown">
             <button class="nav-link dropdown-trigger" id="tarotDropdownBtn">
-              🃏 <span id="navTarotOracleLabel">${getWheelSharedText(locale).navTarotOracleLabel || 'Tarot & Oracle'}</span>
+              🃏 <span id="navTarotOracleLabel">${uiText.tarotAndOracleHeading || 'Tarot & Oracle'}</span>
               <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <polyline points="6 9 12 15 18 9" />
@@ -359,7 +362,7 @@ function getLocalizedNav(locale, activeRoute) {
         </ul>`;
 }
 
-function getLocalizedFooter(locale) {
+function getLocalizedFooter(locale, route) {
   const homePath = buildLocalizedPath(locale, '');
   const aboutPath = buildLocalizedPath(locale, 'about-us');
   const faqPath = buildLocalizedPath(locale, 'faq');
@@ -371,8 +374,21 @@ function getLocalizedFooter(locale) {
 
   const t = (key) => getLocalizedRouteContent(locale, key).title;
   const staticContent = getStaticPageContent(locale);
+  const uiText = getUiText(locale);
+
+  const allLocales = [{ code: 'en', label: 'English' }, ...LOCALES.filter(l => l.code !== 'en')];
+  const languageOptions = allLocales.map(l => {
+    const langPath = buildLocalizedPath(l.code, route || '');
+    const isSelected = l.code === locale ? ' selected' : '';
+    return `<option value="${langPath}"${isSelected}>${l.label}</option>`;
+  }).join('');
+
+  const langSelectHtml = `<select class="footer-lang-select" onchange="if(this.value) window.location.href=this.value">
+    ${languageOptions}
+  </select>`;
 
   return `
+      <div class="footer-col footer-brand-col">
         <a href="${homePath}" class="nav-brand footer-brand-link" aria-label="YesAndNoWheel home">
           <img class="nav-brand-mark" src="/images/brand/yes-and-no-wheel-mark.svg" alt="Yes and No Wheel logo"
             width="42" height="42">
@@ -382,7 +398,7 @@ function getLocalizedFooter(locale) {
             <span>No Wheel</span>
           </span>
         </a>
-        <p class="footer-desc" id="footerDescription">${staticContent.footerDescription || 'Fast decision wheels for quick choices, party games, classrooms, and creative prompts.'}</p>
+        <p class="footer-desc" id="footerDescription">${uiText.footerDescription || 'Fast decision wheels for quick choices, party games, classrooms, and creative prompts.'}</p>
         <div class="footer-socials">
           <a href="https://www.facebook.com/yesandnowheel/" target="_blank" rel="noopener" aria-label="Facebook"
             title="Follow us on Facebook" class="social-icon">
@@ -406,9 +422,10 @@ function getLocalizedFooter(locale) {
             </svg>
           </a>
         </div>
+      </div>
 
       <div class="footer-col footer-links-col">
-        <h3 id="footerPagesHeading">${staticContent.footerLinksHeading || 'Links'}</h3>
+        <h3 id="footerPagesHeading">${uiText.pagesHeading || 'Links'}</h3>
         <a href="${aboutPath}" id="footerAboutLink">${t('about-us')}</a>
         <a href="${faqPath}" id="footerFaqLink">${t('faq')}</a>
         <a href="${dicePath}">${t('yes-and-no-dice')}</a>
@@ -416,6 +433,11 @@ function getLocalizedFooter(locale) {
         <a href="${termsPath}" id="footerTermsLink">${t('terms')}</a>
         <a href="${privacyPath}" id="footerPrivacyLink">${t('privacy')}</a>
         <a href="${sitemapPath}" id="footerSitemapLink">${t('sitemap')}</a>
+      </div>
+
+      <div class="footer-col footer-lang-col">
+        <h3 id="footerLangHeading">${uiText.language || 'Languages'}</h3>
+        ${langSelectHtml}
       </div>`;
 }
 
@@ -429,7 +451,8 @@ for (const locale of locales) {
     const url = `${SITE_URL}${canonicalPath}`;
 
     const localizedNav = getLocalizedNav(locale, route);
-    const localizedFooter = getLocalizedFooter(locale);
+    const localizedFooter = getLocalizedFooter(locale, route);
+    const uiText = getUiText(locale);
 
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
@@ -466,7 +489,7 @@ for (const locale of locales) {
       )
       .replace(
         /<footer class="site-footer">[\s\S]*?<\/footer>/,
-        `<footer class="site-footer">\n    <div class="footer-container">${localizedFooter}\n\n      <div class="footer-col footer-contact-col">\n        <h3 id="footerContactHeading">${getStaticPageContent(locale).footerContactHeading || 'Contact'}</h3>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path d="M4 4h16v16H4z"></path>\n              <path d="M22 6l-10 7L2 6"></path>\n            </svg>\n          </span>\n          <span>contact@yesandnowheel.com</span>\n        </p>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path\n                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.39 2.57a2 2 0 0 1-.57 1.7l-1.28 1.28a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 1.7-.57l2.57.39A2 2 0 0 1 22 16.92z">\n              </path>\n            </svg>\n          </span>\n          <span>+1 (415) 555-0199</span>\n        </p>\n      </div>\n    </div>\n    <div class="footer-bottom">\n      <p>&copy; 2025 YesAndNoWheel.com. All rights reserved.</p>\n    </div>\n  </footer>`
+        `<footer class="site-footer">\n    <div class="footer-container">${localizedFooter}\n\n      <div class="footer-col footer-contact-col">\n        <h3 id="footerContactHeading">${uiText.contact || 'Contact'}</h3>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path d="M4 4h16v16H4z"></path>\n              <path d="M22 6l-10 7L2 6"></path>\n            </svg>\n          </span>\n          <span>contact@yesandnowheel.com</span>\n        </p>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path\n                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.39 2.57a2 2 0 0 1-.57 1.7l-1.28 1.28a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 1.7-.57l2.57.39A2 2 0 0 1 22 16.92z">\n              </path>\n            </svg>\n          </span>\n          <span>+1 (415) 555-0199</span>\n        </p>\n      </div>\n    </div>\n    <div class="footer-bottom">\n      <p>&copy; 2025 YesAndNoWheel.com. All rights reserved.</p>\n    </div>\n  </footer>`
       );
 
     html = setHtmlLang(html, locale);

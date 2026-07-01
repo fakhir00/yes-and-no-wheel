@@ -54,6 +54,7 @@ export const UI_TRANSLATIONS = {
   hi: {
     home: 'होम', wheels: 'व्हील', about: 'जानकारी', contact: 'संपर्क',
     wheelsHeading: 'व्हील', moreWheelsHeading: 'और व्हील', pagesHeading: 'पेज',
+    tarotAndOracleHeading: 'टैरो और ऑरेकल',
     aboutUs: 'हमारे बारे में', contactUs: 'संपर्क करें', terms: 'सेवा की शर्तें', privacy: 'गोपनीयता नीति',
     sitemap: 'साइटमैप', contactInfo: 'संपर्क जानकारी', builtWith: 'साथ बनाया गया', language: 'भाषा',
     footerDescription: 'तेज़ फैसलों, पार्टी गेम्स, कक्षा गतिविधियों और क्रिएटिव प्रॉम्प्ट्स के लिए फास्ट डिसीजन व्हील्स।',
@@ -61,6 +62,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'सभी अधिकार सुरक्षित हैं।'
   },
   es: {
+    tarotAndOracleHeading: 'Tarot y Oráculo',
     home: 'Inicio',
     wheels: 'Ruletas',
     about: 'Acerca de',
@@ -81,6 +83,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Todos los derechos reservados.'
   },
   ar: {
+    tarotAndOracleHeading: 'التاروت والعراف',
     home: 'الرئيسية', wheels: 'العجلات', about: 'حول', contact: 'اتصل',
     wheelsHeading: 'العجلات', moreWheelsHeading: 'مزيد من العجلات', pagesHeading: 'الصفحات',
     aboutUs: 'من نحن', contactUs: 'اتصل بنا', terms: 'شروط الخدمة', privacy: 'سياسة الخصوصية',
@@ -90,6 +93,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'جميع الحقوق محفوظة.'
   },
   fr: {
+    tarotAndOracleHeading: 'Tarot & Oracle',
     home: 'Accueil',
     wheels: 'Roulettes',
     about: 'A propos',
@@ -110,6 +114,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Tous droits reserves.'
   },
   bn: {
+    tarotAndOracleHeading: 'ট্যারো এবং ওরাকল',
     home: 'হোম', wheels: 'চাকা', about: 'সম্পর্কে', contact: 'যোগাযোগ',
     wheelsHeading: 'চাকা', moreWheelsHeading: 'আরও চাকা', pagesHeading: 'পাতা',
     aboutUs: 'আমাদের সম্পর্কে', contactUs: 'যোগাযোগ করুন', terms: 'সেবার শর্তাবলি', privacy: 'গোপনীয়তা নীতি',
@@ -119,6 +124,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'সমস্ত অধিকার সংরক্ষিত।'
   },
   pt: {
+    tarotAndOracleHeading: 'Tarô e Oráculo',
     home: 'Inicio', wheels: 'Roletas', about: 'Sobre', contact: 'Contato',
     wheelsHeading: 'Roletas', moreWheelsHeading: 'Mais roletas', pagesHeading: 'Paginas',
     aboutUs: 'Sobre nos', contactUs: 'Contato', terms: 'Termos de servico', privacy: 'Politica de privacidade',
@@ -128,6 +134,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Todos os direitos reservados.'
   },
   ru: {
+    tarotAndOracleHeading: 'Таро и Оракул',
     home: 'Главная', wheels: 'Колеса', about: 'О сайте', contact: 'Контакты',
     wheelsHeading: 'Колеса', moreWheelsHeading: 'Еще колеса', pagesHeading: 'Страницы',
     aboutUs: 'О нас', contactUs: 'Связаться', terms: 'Условия использования', privacy: 'Политика конфиденциальности',
@@ -137,6 +144,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Все права защищены.'
   },
   ur: {
+    tarotAndOracleHeading: 'ٹیرو اور اوریکل',
     home: 'ہوم', wheels: 'ویلز', about: 'متعلق', contact: 'رابطہ',
     wheelsHeading: 'ویلز', moreWheelsHeading: 'مزید ویلز', pagesHeading: 'صفحات',
     aboutUs: 'ہمارے بارے میں', contactUs: 'رابطہ کریں', terms: 'سروس کی شرائط', privacy: 'رازداری پالیسی',
@@ -146,6 +154,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'جملہ حقوق محفوظ ہیں۔'
   },
   id: {
+    tarotAndOracleHeading: 'Tarot & Oracle',
     home: 'Beranda', wheels: 'Roda', about: 'Tentang', contact: 'Kontak',
     wheelsHeading: 'Roda', moreWheelsHeading: 'Roda lainnya', pagesHeading: 'Halaman',
     aboutUs: 'Tentang kami', contactUs: 'Hubungi kami', terms: 'Syarat layanan', privacy: 'Kebijakan privasi',
@@ -155,6 +164,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Hak cipta dilindungi.'
   },
   de: {
+    tarotAndOracleHeading: 'Tarot & Orakel',
     home: 'Start',
     wheels: 'Raeder',
     about: 'Info',
@@ -175,6 +185,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'Alle Rechte vorbehalten.'
   },
   ja: {
+    tarotAndOracleHeading: 'タロット＆オラクル',
     home: 'ホーム', wheels: 'ルーレット', about: '概要', contact: '連絡先',
     wheelsHeading: 'ルーレット', moreWheelsHeading: 'その他', pagesHeading: 'ページ',
     aboutUs: '私たちについて', contactUs: 'お問い合わせ', terms: '利用規約', privacy: 'プライバシーポリシー',
@@ -184,6 +195,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: '全著作権所有。'
   },
   mr: {
+    tarotAndOracleHeading: 'टॅरो आणि ऑरेकल',
     home: 'मुख्यपृष्ठ', wheels: 'व्हील्स', about: 'माहिती', contact: 'संपर्क',
     wheelsHeading: 'व्हील्स', moreWheelsHeading: 'अधिक व्हील्स', pagesHeading: 'पृष्ठे',
     aboutUs: 'आमच्याबद्दल', contactUs: 'संपर्क करा', terms: 'सेवा अटी', privacy: 'गोपनीयता धोरण',
@@ -193,6 +205,7 @@ export const UI_TRANSLATIONS = {
     rightsReserved: 'सर्व हक्क राखीव.'
   },
   te: {
+    tarotAndOracleHeading: 'టారో & ఒరాకిల్',
     home: 'హోమ్', wheels: 'వీళ్లు', about: 'గురించి', contact: 'సంప్రదించండి',
     wheelsHeading: 'వీళ్లు', moreWheelsHeading: 'ఇంకా వీళ్లు', pagesHeading: 'పేజీలు',
     aboutUs: 'మా గురించి', contactUs: 'సంప్రదించండి', terms: 'సేవా నిబంధనలు', privacy: 'గోప్యతా విధానం',
@@ -305,9 +318,10 @@ const ROUTE_NAMES = {
     zodiac: 'ज़ोडिएक व्हील',
     'hair-color': 'हेयर कलर व्हील',
     'random-food': 'रैंडम फूड व्हील',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'यस और नो डाइस'
+    'oracle': 'यस नो ऑरेकल',
+    'tarot': 'यस नो टैरो',
+    'yes-and-no-dice': 'यस और नो डाइस',
+    blog: 'ब्लॉग'
   },
   es: {
     home: 'Ruleta de Si y No',
@@ -327,9 +341,10 @@ const ROUTE_NAMES = {
     zodiac: 'Ruleta del Zodiaco',
     'hair-color': 'Ruleta de Color de Cabello',
     'random-food': 'Ruleta de Comida Aleatoria',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Dados de Sí y No'
+    'oracle': 'Oráculo Sí o No',
+    'tarot': 'Tarot Sí o No',
+    'yes-and-no-dice': 'Dados de Sí y No',
+    blog: 'Blog'
   },
   ar: {
     home: 'عجلة نعم ولا',
@@ -349,9 +364,10 @@ const ROUTE_NAMES = {
     zodiac: 'عجلة الابراج',
     'hair-color': 'عجلة لون الشعر',
     'random-food': 'عجلة الطعام العشوائي',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'نرد نعم ولا'
+    'oracle': 'Oráculo Sí o No',
+    'tarot': 'Tarot Sí o No',
+    'yes-and-no-dice': 'نرد نعم ولا',
+    blog: 'المدونة'
   },
   fr: {
     home: 'Roue Oui Non',
@@ -371,9 +387,10 @@ const ROUTE_NAMES = {
     zodiac: 'Roue du Zodiaque',
     'hair-color': 'Roue de Couleur de Cheveux',
     'random-food': 'Roue de Nourriture Aléatoire',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Dés Oui Non'
+    'oracle': 'عراف نعم أو لا',
+    'tarot': 'تاروت نعم أو لا',
+    'yes-and-no-dice': 'Dés Oui Non',
+    blog: 'Blog'
   },
   bn: {
     home: 'হ্যাঁ না চাকা',
@@ -393,9 +410,10 @@ const ROUTE_NAMES = {
     zodiac: 'রাশিচক্র চাকা',
     'hair-color': 'চুলের রঙ চাকা',
     'random-food': 'র্যান্ডম ফুড চাকা',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'হ্যাঁ না পাশা'
+    'oracle': 'Oracle Oui Non',
+    'tarot': 'Tarot Oui Non',
+    'yes-and-no-dice': 'হ্যাঁ না পাশা',
+    blog: 'ব্লগ'
   },
   pt: {
     home: 'Roda Sim ou Nao',
@@ -415,9 +433,10 @@ const ROUTE_NAMES = {
     zodiac: 'Roda do Zodiaco',
     'hair-color': 'Roda de Cor de Cabelo',
     'random-food': 'Roleta de Comida Aleatória',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Dados Sim ou Não'
+    'oracle': 'ইয়েস নো ওরাকল',
+    'tarot': 'ইয়েস নো ট্যারো',
+    'yes-and-no-dice': 'Dados Sim ou Não',
+    blog: 'Blog'
   },
   ru: {
     home: 'Колесо Да Нет',
@@ -437,9 +456,10 @@ const ROUTE_NAMES = {
     zodiac: 'Колесо Зодиака',
     'hair-color': 'Колесо Цвета Волос',
     'random-food': 'Колесо Случайной Еды',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Кубик Да Нет'
+    'oracle': 'Oráculo Sim ou Não',
+    'tarot': 'Tarô Sim ou Não',
+    'yes-and-no-dice': 'Кубик Да Нет',
+    blog: 'Блог'
   },
   ur: {
     home: 'ہاں یا نہیں ویل',
@@ -459,9 +479,10 @@ const ROUTE_NAMES = {
     zodiac: 'زائچہ ویل',
     'hair-color': 'بالوں کے رنگ کا ویل',
     'random-food': 'رینڈم فوڈ ویل',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'ہاں یا نہیں ڈائస్'
+    'oracle': 'Оракул Да или Нет',
+    'tarot': 'Таро Да или Нет',
+    'yes-and-no-dice': 'ہاں یا نہیں ڈائస్',
+    blog: 'بلاگ'
   },
   id: {
     home: 'Roda Ya Tidak',
@@ -481,9 +502,10 @@ const ROUTE_NAMES = {
     zodiac: 'Roda Zodiak',
     'hair-color': 'Roda Warna Rambut',
     'random-food': 'Roda Makanan Acak',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Dadu Ya Tidak'
+    'oracle': 'یس نو اوریکل',
+    'tarot': 'یس نو ٹیرو',
+    'yes-and-no-dice': 'Dadu Ya Tidak',
+    blog: 'Blog'
   },
   de: {
     home: 'Ja Nein Rad',
@@ -503,9 +525,10 @@ const ROUTE_NAMES = {
     zodiac: 'Zodiakrad',
     'hair-color': 'Haarfarbenrad',
     'random-food': 'Zufälliges Essensrad',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'Ja Nein Würfel'
+    'oracle': 'Oracle Ya atau Tidak',
+    'tarot': 'Tarot Ya atau Tidak',
+    'yes-and-no-dice': 'Ja Nein Würfel',
+    blog: 'Blog'
   },
   ja: {
     home: 'はい いいえ ルーレット',
@@ -525,9 +548,10 @@ const ROUTE_NAMES = {
     zodiac: '星座ルーレット',
     'hair-color': 'ヘアカラールーレット',
     'random-food': 'ランダムフードルーレット',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'はい いいえ ダイス'
+    'oracle': 'Ja Nein Orakel',
+    'tarot': 'Ja Nein Tarot',
+    'yes-and-no-dice': 'はい いいえ ダイス',
+    blog: 'ブログ'
   },
   mr: {
     home: 'होय नाही व्हील',
@@ -547,9 +571,10 @@ const ROUTE_NAMES = {
     zodiac: 'राशी व्हील',
     'hair-color': 'केसांच्या रंगाचे व्हील',
     'random-food': 'रँडम फूड व्हील',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
-    'yes-and-no-dice': 'होय नाही डाइस'
+    'oracle': 'イエス・ノー・オラクル',
+    'tarot': 'イエス・ノー・タロット',
+    'yes-and-no-dice': 'होय नाही डाइस',
+    blog: 'ब्लॉग'
   },
   te: {
     home: 'అవును కాదు వీల్',
@@ -569,8 +594,8 @@ const ROUTE_NAMES = {
     zodiac: 'రాశిచక్ర వీల్',
     'hair-color': 'జుట్టు రంగు వీల్',
     'random-food': 'రాండమ్ ఫుడ్ వీల్',
-    'oracle': 'Yes No Oracle',
-    'tarot': 'Yes No Tarot',
+    'oracle': 'येस नो ऑरेकल',
+    'tarot': 'येस नो टॅरो',
     'yes-and-no-dice': 'అవును కాదు పాచికలు'
   }
 };

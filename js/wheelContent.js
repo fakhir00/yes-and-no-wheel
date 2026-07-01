@@ -4792,51 +4792,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "इस रीडिंग में मेजर आर्काना कार्ड",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "मेजर आर्काना में 22 कार्ड होते हैं। यह टूल 21 कार्ड्स का उपयोग करता है।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "कार्ड जो हां कहते हैं",
+                                    "content": "द फूल, द मैजिशियन, द एम्प्रेस आदि सकारात्मक उत्तर देते हैं।"
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "कार्ड जो ना कहते हैं",
+                                    "content": "द हरमिट, डेथ, द टावर आदि नकारात्मक या सावधानी का संकेत देते हैं।"
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "कार्ड जो शायद कहते हैं",
+                                    "content": "द हाई प्रीस्टेस, जस्टिस आदि मध्य मार्ग का संकेत देते हैं।"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "निर्णयों के लिए टैरो रीडिंग का उपयोग कब करें",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "जब आपको केवल रैंडम परिणाम की बजाय विचारशील उत्तर चाहिए, तब यह सबसे अच्छा है।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "अस्पष्ट भावनाओं को स्पष्ट करना",
+                                    "content": "जब आप किसी विकल्प के बारे में अनिश्चित हों, तो टैरो आपकी छिपी हुई चिंताओं को सामने ला सकता है।"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "रचनात्मक लेखन और विचार-मंथन",
+                                    "content": "लेखक इसे कहानी या पात्रों के लिए विचारों के रूप में उपयोग कर सकते हैं।"
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "समूह चर्चा",
+                                    "content": "दोस्तों के साथ यह चर्चा शुरू करने का एक मजेदार तरीका हो सकता है।"
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "टैरो बनाम अन्य निर्णय टूल",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "हां या ना व्हील सबसे तेज़ है, लेकिन टैरो गहराई और अर्थ जोड़ता है।",
+                              "यस नो ऑरेकल हां/ना/शायद के साथ संदेश देता है, जबकि टैरो अधिक विस्तृत है।",
+                              "व्हील ऑफ फेट संभावनाओं पर आधारित है, जबकि टैरो में हर कार्ड की समान संभावना होती है।"
                         ]
                   }
             ],
@@ -4896,51 +4896,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Cartas del Arcano Mayor",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "El Arcano Mayor tiene 22 cartas. Esta herramienta usa las 21 cartas principales."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Cartas que responden Sí",
+                                    "content": "El Loco, El Mago y La Estrella indican respuestas afirmativas."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Cartas que responden No",
+                                    "content": "El Ermitaño, La Muerte y La Torre sugieren precaución o rechazo."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Cartas que responden Tal vez",
+                                    "content": "La Sacerdotisa y La Justicia apuntan a un punto intermedio."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Cuándo usar el Tarot para decisiones",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Es ideal cuando necesitas reflexionar y no solo una respuesta aleatoria."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Aclarar dudas",
+                                    "content": "Ayuda a entender por qué te sientes inseguro ante una opción."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Escritura creativa",
+                                    "content": "Útil para imaginar el destino de personajes en una historia."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Dinámicas de grupo",
+                                    "content": "Excelente para iniciar conversaciones interesantes con amigos."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Tarot vs Otras herramientas",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "La ruleta de sí o no es más rápida, pero el tarot añade significado.",
+                              "El Oráculo Sí o No da mensajes filosóficos, pero el tarot es más profundo.",
+                              "La ruleta del destino usa probabilidades; en el tarot todas las cartas tienen la misma."
                         ]
                   }
             ],
@@ -5000,51 +5000,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Les cartes des Arcanes Majeurs",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "Les Arcanes Majeurs comptent 22 cartes. Cet outil utilise 21 cartes."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Cartes qui répondent Oui",
+                                    "content": "Le Fou et Le Magicien indiquent des réponses affirmatives."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Cartes qui répondent Non",
+                                    "content": "L'Ermite et La Mort suggèrent la prudence ou la fin."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Cartes qui répondent Peut-être",
+                                    "content": "La Papesse et La Justice indiquent un terrain d'entente."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Quand utiliser le Tarot",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Idéal pour réfléchir plutôt que d'avoir un résultat mécanique."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Clarifier les doutes",
+                                    "content": "Aide à comprendre vos préoccupations sous-jacentes."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Écriture créative",
+                                    "content": "Utile pour imaginer le destin des personnages."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Discussions de groupe",
+                                    "content": "Crée une expérience partagée amusante."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Le Tarot vs Autres outils",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "La roue est plus rapide, mais le tarot a plus de sens.",
+                              "L'Oracle donne des messages, le tarot est plus profond.",
+                              "La roue du destin utilise des probabilités variables, le tarot est équitable."
                         ]
                   }
             ],
@@ -5104,51 +5104,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Die Großen Arkana-Karten",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "Dieses Tool verwendet 21 Karten der Großen Arkana."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Karten, die Ja sagen",
+                                    "content": "Der Narr und Der Magier deuten auf eine positive Antwort hin."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Karten, die Nein sagen",
+                                    "content": "Der Tod und Der Turm deuten auf Vorsicht hin."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Karten, die Vielleicht sagen",
+                                    "content": "Die Gerechtigkeit deutet auf einen Mittelweg hin."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Wann man Tarot verwenden sollte",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Ideal für tiefes Nachdenken statt nur schnelle Antworten."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Gefühle klären",
+                                    "content": "Hilft dabei, versteckte Sorgen zu verstehen."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Kreatives Schreiben",
+                                    "content": "Nützlich für die Entwicklung von Charakteren."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Gruppendiskussionen",
+                                    "content": "Toller Einstieg in Gespräche mit Freunden."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Tarot vs Andere Tools",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "Das Rad ist schneller, aber Tarot bietet mehr Bedeutung.",
+                              "Das Orakel gibt philosophische Nachrichten, Tarot ist tiefer.",
+                              "Das Schicksalsrad nutzt Wahrscheinlichkeiten, Tarot nicht."
                         ]
                   }
             ],
@@ -5208,51 +5208,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Cartas dos Arcanos Maiores",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "Os Arcanos Maiores têm 22 cartas. Esta ferramenta usa as 21 principais."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Cartas que respondem Sim",
+                                    "content": "O Louco e O Mago indicam respostas afirmativas."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Cartas que respondem Não",
+                                    "content": "O Eremita e A Morte sugerem cautela."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Cartas que respondem Talvez",
+                                    "content": "A Sacerdotisa e A Justiça apontam para um meio-termo."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Quando usar o Tarô",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Ideal quando você precisa refletir sobre uma decisão."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Esclarecer sentimentos",
+                                    "content": "Ajuda a descobrir por que você está inseguro."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Escrita criativa",
+                                    "content": "Útil para imaginar histórias."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Dinâmicas de grupo",
+                                    "content": "Ótimo para iniciar conversas."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Tarô vs Outras ferramentas",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "A roleta é mais rápida, mas o tarô adiciona profundidade.",
+                              "O Oráculo dá mensagens curtas, o tarô é mais detalhado.",
+                              "A roleta do destino usa probabilidades, o tarô não."
                         ]
                   }
             ],
@@ -5314,51 +5314,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "بطاقات أركانا الكبرى في هذه القراءة",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "تتكون أركانا الكبرى من 22 بطاقة. تستخدم هذه الأداة 21 بطاقة."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "بطاقات تجيب بنعم",
+                                    "content": "بعض البطاقات تميل للإيجابية، مثل الأحمق والساحر."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "بطاقات تجيب بلا",
+                                    "content": "تشير بطاقات أخرى إلى الحذر، مثل الناسك والموت."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "بطاقات تجيب بربما",
+                                    "content": "بعض البطاقات تحتل منطقة وسطى، مثل الكاهنة والعدالة."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "متى تستخدم قراءة التاروت للقرارات",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "عندما تحتاج إلى التفكير العميق وليس مجرد نتيجة عشوائية."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "توضيح المشاعر الغامضة",
+                                    "content": "تساعدك البطاقات على فهم مخاوفك الخفية."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "الكتابة الإبداعية",
+                                    "content": "يستخدمها الكتاب لإلهام الشخصيات."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "المناقشات الجماعية",
+                                    "content": "تجربة مشتركة ممتعة مع الأصدقاء."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "التاروت مقابل أدوات القرار الأخرى",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "العجلة أسرع، لكن التاروت يضيف المعنى.",
+                              "العراف يقدم رسائل فلسفية، لكن التاروت أعمق.",
+                              "عجلة القدر تعتمد على الاحتمالات، في التاروت كل البطاقات متساوية الاحتمال."
                         ]
                   }
             ],
@@ -5420,51 +5420,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "本次解读中的大阿尔卡那牌",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "大阿尔卡那由22张牌组成。此工具使用从愚者到世界的所有21张非数字牌。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "回答“是”的牌",
+                                    "content": "一些大阿尔卡那牌倾向于肯定的答案。愚者代表新的开始，魔术师象征足智多谋。"
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "回答“否”的牌",
+                                    "content": "其他牌暗示谨慎或衰退。隐士呼吁独处，死神代表结束。"
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "回答“也许”的牌",
+                                    "content": "一些牌占据中间立场。女祭司指向直觉，正义要求公平。"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "何时使用塔罗牌占卜进行决策",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "当你需要一个反思的提示而不是纯粹的机械随机结果时，是或否塔罗牌最适用。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "澄清模棱两可的感觉",
+                                    "content": "当你不确定某个选择但又说不出原因时，抽一张塔罗牌可以浮现潜在的担忧。"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "创意写作和头脑风暴",
+                                    "content": "作家使用塔罗牌作为角色提示。"
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "小组讨论和破冰",
+                                    "content": "在社交场合，抽塔罗牌创造了共同的体验。"
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "塔罗牌与其他决策工具",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "是或否轮盘是最快的决策工具。塔罗牌通过牌意增加叙事深度。",
+                              "神谕提供中间立场的答案。塔罗牌更有层次感。",
+                              "命运之轮使用加权结果，而塔罗牌给每张牌相同的概率。"
                         ]
                   }
             ],
@@ -5526,51 +5526,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Карты Старших Арканов",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "В Старших Арканах 22 карты. Этот инструмент использует 21 карту."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Карты, отвечающие Да",
+                                    "content": "Шут и Маг указывают на положительный ответ."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Карты, отвечающие Нет",
+                                    "content": "Отшельник и Смерть предполагают осторожность."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Карты, отвечающие Может быть",
+                                    "content": "Жрица и Справедливость указывают на золотую середину."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Когда использовать Таро для решений",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Идеально для глубоких размышлений, а не просто случайных ответов."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Прояснение чувств",
+                                    "content": "Помогает понять скрытые опасения."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Творческое письмо",
+                                    "content": "Полезно для писателей и создания персонажей."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Групповые обсуждения",
+                                    "content": "Отличный способ начать разговор в компании."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Таро против других инструментов",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "Колесо быстрее, но таро добавляет смысл.",
+                              "Оракул дает сообщения, а таро глубже.",
+                              "Колесо судьбы использует вероятности, в таро шансы равны."
                         ]
                   }
             ],
@@ -5632,51 +5632,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "大アルカナカードについて",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "このツールは21枚の大アルカナカードを使用します。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "「はい」と答えるカード",
+                                    "content": "「愚者」や「魔術師」は肯定的な結果を示します。"
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "「いいえ」と答えるカード",
+                                    "content": "「死神」や「塔」は否定的な結果を示唆します。"
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "「たぶん」と答えるカード",
+                                    "content": "「正義」などは中立的な結果を示します。"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "タロットを使用するタイミング",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "単なるランダムな結果ではなく、熟考したい時に最適です。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "感情の整理",
+                                    "content": "言葉にできない不安を表面化するのに役立ちます。"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "クリエイティブな執筆",
+                                    "content": "キャラクターの行動を決めるのに役立ちます。"
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "グループでの会話",
+                                    "content": "友人たちとの楽しいコミュニケーションのきっかけになります。"
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "タロット vs 他のツール",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "ルーレットは早いですが、タロットには意味があります。",
+                              "オラクルはメッセージを出し、タロットはより深みがあります。",
+                              "運命の輪は確率を使用しますが、タロットのカードはすべて平等です。"
                         ]
                   }
             ],
@@ -5738,51 +5738,51 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "মেজর আরকানা কার্ডস",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "এই রিডিং ২১টি মেজর আরকানা কার্ড ব্যবহার করে।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "যে কার্ডগুলো হ্যাঁ বলে",
+                                    "content": "দ্য ফুল বা দ্য স্টার ইতিবাচক উত্তর দেয়।"
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "যে কার্ডগুলো না বলে",
+                                    "content": "দ্য টাওয়ার বা ডেথ নেতিবাচক উত্তর দেয়।"
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "যে কার্ডগুলো হয়তো বলে",
+                                    "content": "জাস্টিস বা হাই প্রিস্টেস মাঝামাঝি অবস্থান নেয়।"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "ট্যারো কখন ব্যবহার করবেন",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "গভীর চিন্তার জন্য এটি ব্যবহার করুন।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "অস্পষ্ট অনুভূতি পরিষ্কার করা",
+                                    "content": "আপনার ভেতরের উদ্বেগগুলো বুঝতে সাহায্য করে।"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "সৃজনশীল লেখা",
+                                    "content": "গল্পের চরিত্রদের জন্য দারুণ।"
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "গ্রুপ আড্ডা",
+                                    "content": "বন্ধুদের সাথে আলোচনার ভালো মাধ্যম।"
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "ট্যারো বনাম অন্যান্য টুল",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "চাকা অনেক দ্রুত, কিন্তু ট্যারো অর্থবহ।",
+                              "ওরাকল শুধু বার্তা দেয়, ট্যারো দেয় গভীরতা।",
+                              "ভাগ্যের চাকায় সম্ভাবনা ভিন্ন, কিন্তু ট্যারোতে সবার সম্ভাবনা সমান।"
                         ]
                   }
             ],
