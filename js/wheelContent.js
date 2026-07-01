@@ -3411,50 +3411,50 @@ const WHEEL_PAGE_CONTENT = {
                   ]
             },
             "sections": [
-                  {
+                   {
                         "title": "¿Qué es el Oráculo Sí No?",
                         "content": [
                               "Herramienta de adivinación digital."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "Cómo funciona el Oráculo",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "El oráculo sigue un flujo de tres pasos. Primero, escribes tu pregunta en el área de texto. Cuando haces clic en Buscar sabiduría, el área de entrada desaparece y es reemplazada por una pantalla de contemplación.",
+                              "Después de un retraso de 2,5 segundos, el oráculo revela su respuesta. El resultado incluye una píldora de sí, no o tal vez, un emoji, un mensaje citado, texto de sabiduría y una etiqueta de energía.",
+                              "El botón Hacer otra pregunta reinicia el flujo, borra el resultado y vuelve a la pantalla de entrada. Puedes hacer preguntas ilimitadas."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Cuándo usar el Oráculo",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "El oráculo funciona mejor cuando quieres más que un simple sí o no. El contexto adicional en cada respuesta te da algo en qué reflexionar."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Decisiones que ya conoces la respuesta",
+                                    "content": "A menudo, la gente le pregunta al oráculo sobre decisiones que ya ha tomado pero quiere confirmación. Si el oráculo dice No y te sientes decepcionado, esa reacción te dice algo sobre lo que realmente quieres."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Escritura creativa y narrativa",
+                                    "content": "Los escritores usan el oráculo para romper bloqueos creativos. Las etiquetas de energía y el texto de sabiduría pueden generar nuevas ideas que un simple sí o no no podría."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Actividades grupales divertidas",
+                                    "content": "En entornos sociales, el oráculo añade drama que un girador no tiene. El retraso de contemplación, el mensaje temático y la etiqueta de energía le dan al grupo algo de qué discutir."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Reflexión personal",
+                                    "content": "Algunas personas usan el oráculo como estímulo para escribir en un diario. Escriben una pregunta, reciben una respuesta y escriben sobre cómo la respuesta resonó con sus sentimientos reales."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "Oráculo vs otras herramientas de decisión",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "La rueda sí o no te da un resultado binario sin contexto adicional. El oráculo toma un enfoque diferente con entrada de texto, retraso de contemplación y salida temática.",
+                              "El lector de cartas del tarot añade aún más profundidad narrativa con cartas, significados y orientación. El oráculo es más simple con respuestas de sí, no o tal vez.",
+                              "La rueda del destino ofrece resultados ponderados con un tema dramático. El oráculo es mejor para preguntas personales de sí/no donde quieres una respuesta con peso filosófico."
                         ]
                   }
             ],
@@ -3514,43 +3514,43 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "Comment fonctionne l'Oracle",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "L'oracle suit un processus en trois étapes. D'abord, vous tapez votre question dans la zone de texte. Lorsque vous cliquez sur Chercher la sagesse, la zone de saisie disparaît et est remplacée par un écran de contemplation.",
+                              "Après un délai de 2,5 secondes, l'oracle dévoile sa réponse. Le résultat comprend un comprimé oui, non ou peut-être, un emoji, un message cité, un texte de sagesse et une étiquette d'énergie.",
+                              "Le bouton Poser une autre question réinitialise le flux, efface le résultat et revient à l'écran de saisie. Vous pouvez poser un nombre illimité de questions."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Quand utiliser l'Oracle",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "L'oracle fonctionne mieux lorsque vous souhaitez plus qu'un simple oui ou non. Le contexte supplémentaire dans chaque réponse vous donne matière à réfléchir."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Décisions dont vous connaissez déjà la réponse",
+                                    "content": "Souvent, les gens posent des questions à l'oracle sur des décisions qu'ils ont déjà prises mais pour lesquelles ils cherchent une réassurance. Si l'oracle dit Non et que vous êtes déçu, cette réaction vous en dit long sur ce que vous voulez vraiment."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Écriture créative et narration",
+                                    "content": "Les écrivains utilisent l'oracle pour briser les blocages créatifs. Les étiquettes d'énergie et le texte de sagesse peuvent inspirer de nouvelles idées qu'un simple oui ou non ne pourrait pas fournir."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Activités de groupe amusantes",
+                                    "content": "En contexte social, l'oracle ajoute du drame qu'un tourniquet ne peut offrir. Le délai de contemplation, le message thématique et l'étiquette d'énergie donnent tous au groupe quelque chose à discuter."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Réflexion personnelle",
+                                    "content": "Certaines personnes utilisent l'oracle comme un support d'écriture. Elles posent une question, reçoivent une réponse et écrivent sur la manière dont la réponse résonne avec leurs sentiments réels."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "L'Oracle vs Autres Outils de Décision",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "La roue oui ou non vous donne un résultat binaire sans contexte supplémentaire. L'oracle adopte une approche différente avec une saisie de texte, un délai de contemplation et une sortie thématique.",
+                              "Le lecteur de cartes de tarot ajoute encore plus de profondeur narrative avec des cartes, des significances et des conseils. L'oracle est plus simple avec des réponses oui, non ou peut-être.",
+                              "La roue de la fate propose des résultats pondérés avec un thème dramatique. L'oracle est meilleur pour les questions personnelles oui/non où vous souhaitez une réponse unique avec un poids philosophique."
                         ]
                   }
             ],
@@ -3610,43 +3610,43 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "So funktioniert das Orakel",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "Das Orakel folgt einem dreistufigen Ablauf. Zuerst geben Sie Ihre Frage in das Textfeld ein. Wenn Sie auf Weisheit suchen klicken, verschwindet der Eingabebereich und wird durch einen Kontemplationsbildschirm ersetzt.",
+                              "Nach einer Verzögerung von 2,5 Sekunden enthüllt das Orakel seine Antwort. Das Ergebnis enthält eine Ja-, Nein- oder Vielleicht-Kapsel, ein Emoji, eine zitierte Nachricht, einen Weisheitstext und ein Energietag.",
+                              "Die Schaltfläche Eine weitere Frage stellen setzt den Ablauf zurück, löscht das Ergebnis und kehrt zum Eingabebildschirm zurück. Sie können unbegrenzt viele Fragen stellen."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Wann Sie das Orakel verwenden sollten",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "Das Orakel eignet sich am besten, wenn Sie mehr als ein einfaches Ja oder Nein möchten. Der zusätzliche Kontext in jeder Antwort gibt Ihnen etwas zum Nachdenken."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Entscheidungen, bei denen Sie die Antwort bereits kennen",
+                                    "content": "Oft stellen Menschen dem Orakel Fragen zu Entscheidungen, die sie bereits getroffen haben, aber Bestätigung suchen. Wenn das Orakel Nein sagt und Sie enttäuscht sind, sagt Ihnen diese Reaktion etwas darüber, was Sie eigentlich wollen."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Kreatives Schreiben und Storytelling",
+                                    "content": "Schriftsteller nutzen das Orakel, um kreative Blockaden zu überwinden. Die Energietags und der Weisheitstext können neue Ideen anregen, die ein einfaches Ja oder Nein nicht liefern würde."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Spaßige Gruppenaktivitäten",
+                                    "content": "In sozialen Settings fügt das Orakel mehr Drama hinzu als ein Drehkreisel. Die Kontemplationsverzögerung, die thematische Nachricht und das Energietag geben der Gruppe allesamt Gesprächsstoff."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Persönliche Reflexion",
+                                    "content": "Manche Menschen verwenden das Orakel als Journaling-Prompt. Sie stellen eine Frage, erhalten eine Antwort und schreiben darüber, wie die Antwort mit ihren tatsächlichen Gefühlen übereinstimmt."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "Orakel vs. andere Entscheidungswerkzeuge",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "Das Ja-Nein-Rad liefert ein binäres Ergebnis ohne zusätzlichen Kontext. Das Orakel geht einen anderen Weg mit Texteingabe, Kontemplationsverzögerung und thematischer Ausgabe.",
+                              "Der Tarotkartenleser bietet noch mehr erzählerische Tiefe mit Karten, Bedeutungen und Anleitung. Das Orakel ist einfacher mit Ja-, Nein- oder Vielleicht-Antworten.",
+                              "Das Schicksalsrad bietet gewichtete Ergebnisse mit dramatischer Gestaltung. Das Orakel ist besser für persönliche Ja/Nein-Fragen geeignet, bei denen Sie eine einzige Antwort mit philosophischem Gewicht möchten."
                         ]
                   }
             ],
@@ -3706,43 +3706,43 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "Como o Oráculo Funciona",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "O oráculo segue um fluxo de três etapas. Primeiro, você digita sua pergunta na área de texto. Quando clica em Buscar Sabedoria, a área de entrada desaparece e é substituída por uma tela de contemplação.",
+                              "Após um atraso de 2,5 segundos, o oráculo revela sua resposta. O resultado inclui um indicador de sim, não ou talvez, um emoji, uma mensagem citada, texto de sabedoria e uma etiqueta de energia.",
+                              "O botão Outra Pergunta reinicia o fluxo, limpa o resultado e retorna à tela de entrada. Você pode fazer perguntas ilimitadas."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Quando Usar o Oráculo",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "O oráculo funciona melhor quando você quer mais do que um simples sim ou não. O contexto adicional em cada resposta oferece algo para refletir."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Decisões Que Você Já Sabe a Resposta",
+                                    "content": "Muitas vezes, as pessoas perguntam ao oráculo sobre decisões que já tomaram mas querem confirmação. Se o oráculo diz Não e você se sente desapreendido, essa reação revela algo sobre o que você realmente deseja."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Escrita Criativa e Narrativa",
+                                    "content": "Escritores usam o oráculo para quebrar bloqueios criativos. As etiquetas de energia e o texto de sabedoria podem gerar novas ideias que um simples sim ou não não traria."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Atividades Divertidas em Grupo",
+                                    "content": "Em ambientes sociais, o oráculo adiciona drama que um girador não possui. O atraso de contemplação, a mensagem temática e a etiqueta de energia oferecem ao grupo algo para discutir."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Reflexão Pessoal",
+                                    "content": "Algumas pessoas usam o oráculo como prompt de escrita. Digitam uma pergunta, recebem uma resposta e escrevem sobre como a resposta ressoou com seus sentimentos reais."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "Oráculo vs Outras Ferramentas de Decisão",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "A roda de sim ou não oferece um resultado binário sem contexto adicional. O oráculo adota uma abordagem diferente com entrada de texto, atraso de contemplação e saída temática.",
+                              "O leitor de cartas de tarô adiciona ainda mais profundidade narrativa com cartas, significados e orientação. O oráculo é mais simples com respostas de sim, não ou talvez.",
+                              "A roda do destino oferece resultados ponderados com temática dramática. O oráculo é melhor para perguntas pessoais sim/não onde você quer uma resposta com peso filosófico."
                         ]
                   }
             ],
@@ -3777,97 +3777,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "عراف نعم لا",
             "subtitle": "اكتب سؤالاً واحصل على إجابة عشوائية.",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "كيف تستخدم عراف نعم لا",
+                  "intro": "العراف جاهز للإجابة على أسئلتك. إليك كيف يعمل:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "اكتب سؤالك",
+                              "desc": "أدخل سؤالاً بنعم أو لا في مربع النص. يعمل العراف بشكل أفضل مع الأسئلة الواضحة والمحددة حول القرارات التي تواجهها."
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "ابحث عن الحكمة",
+                              "desc": "انقر على زر ابحث عن الحكمة وانتظر بينما يتأمل العراف في سؤالك. يخلق التأخير القصير الترقب قبل الكشف عن الإجابة."
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "اقرأ الإجابة",
+                              "desc": "يكشف العراف عن إجابة نعم أو لا أو ربما مع رسالة موضوعية ونص حكمة وعلامة طاقة. تأمل في شعورك تجاه قرارك بناءً على الإجابة."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "ما هو عراف نعم لا؟",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "العراف نعم لا هو أداة رقمية للتنبؤ تجيب على أسئلة نعم أو لا من خلال عملية منظمة من ثلاث خطوات. تكتب سؤالاً في حقل الإدخال، وانتظر بينما يتأمل العراف، وتحصل على إجابة عشوائية من بين ثمانية نتائج ممكنة.",
+                              "على عكس عجلة دوارة أو رمي عملة معدنية، يضيف العراف طبقة سردية إلى العشوائية. يخلق التأخير التأملي الترقب، وتعطي الرسائل الموضوعية كل إجابة شعوراً بالمعنى، وتوفر علامات الطاقة اختصاراً لتفسير النتيجة.",
+                              "تعمل الأداة بالكامل في متصفحك. لا يتم تخزين أي أسئلة أو نقلها أو تسجيلها. ينتج العراف إجابته باستخدام العشوائية من جانب العميل."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "كيف يعمل العراف",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "يتبع العراف تدفقاً من ثلاث خطوات. أولاً، تكتب سؤالك في مربع النص. عندما تنقر على ابحث عن الحكمة، يختفي منطقة الإدخال ويحل محلها شاشة تأمل.",
+                              "بعد تأخير مدته 2.5 ثانية، يكشف العراف عن إجابته. تتضمن النتيجة قرصاً بنعم أو لا أو ربما، ورمزاً تعبيرياً، ورسالة مقتبسة، ونص حكمة، وعلامة طاقة.",
+                              "يعيد زر اطرح سؤالاً آخر تدفق العمل، ويحذف النتيجة ويعود إلى شاشة الإدخال. يمكنك طرح أسئلة غير محدودة."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "متى تستخدم العراف",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "يعمل العراف بشكل أفضل عندما تريدة أكثر من مجرد نعم أو لا. يمنحك السياق الإضافي في كل إجابة شيئاً للتأمل فيه."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "القرارات التي تعرف إجابتها بالفعل",
+                                    "content": "غالباً ما يسأل الناس العراف عن قرارات اتخذوها بالفعل لكنهم يريدون التأكد منها. إذا قال العراف لا وأحسنت بخيبة أمل، فإن رد فعلك هذا يخبرك بشيء عما تريده حقاً."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "الكتابة الإبداعية وسرد القصص",
+                                    "content": "يستخدم الكتاب العراف لكسر الجمود الإبداعي. يمكن لعلامات الطاقة ونص الحكمة أن تزرع أفكاراً جديدة لن يمنحها نعم أو لا عادي."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "أنشطة جماعية ممتعة",
+                                    "content": "في الأجواء الاجتماعية، يضيف العراف دراما يفتقر إليها الدوار. يمنح التأخير التأملي والرسالة الموضوعية وعلامة الطاقة المجموعة شيئاً للحديث عنه."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "التأمل الشخصي",
+                                    "content": "بعض الناس يستخدمون العراف كمحفز للكتابة اليومية. يكتبون سؤالاً، ويحصلون على إجابة، ويكتبون عن مدى تفاعل الاستجابة مع مشاعرهم الحقيقية."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "العراف مقابل أدوات قرار أخرى",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "تعطيك عجلة نعم أو لا نتيجة ثنائية دون سياق إضافي. يتبنى العراف نهجاً مختلفاً مع إدخال النص وتأخير التأمل والمخرجات الموضوعية.",
+                              "يضيف قارئ بطاقات التاروت عمقاً سردياً إضافياً مع البطاقات والمعنى والتوجيه. العراف أبسط مع إجابات نعم أو لا أو ربما.",
+                              "تُقدم عجلة المصير نتائج مرجحة مع سرد درامي. العراف أفضل للأسئلة الشخصية نعم/لا حيث تريد إجابة واحدة ذات وزن فلسفي."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "ما هو عراف نعم لا؟",
+                        "a": "العراف نعم لا هو أداة قرار قائمة على النص توفر إجابات نعم أو لا أو ربما لأسئلتك مع رسائل مرفقة ونص حكمة."
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "كيف يختلف العراف عن عجلة نعم أو لا؟",
+                        "a": "يستخدم العراف إدخال النص وتأثير التأمل بدلاً من عجلة دوارة. ينتج ثلاث إجابات ممكنة بدلاً من اثنتين، وتتضمن كل إجابة رسالة فلسفية."
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "هل العراف عشوائي؟",
+                        "a": "نعم. يختار العراف نتيجة عشوائية من بين ثمانية نتائج ممكنة باستخدام العشوائية من جانب المتصفح."
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "هل يمكنني سؤال العراف عن أي نوع من الأسئلة؟",
+                        "a": "يعمل العراف بشكل أفضل مع أسئلة نعم أو لا — القرارات التي تريد فيها إجابة ثنائية أو شبه ثنائية."
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "ماذا تعني علامة الطاقة؟",
+                        "a": "تتضمن كل نتيجة للعراف علامة طاقة مثل الولادة الصبر أو الغموض. هذه علامات موضوعية تصف النبرة العامة للإجابة."
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "هل العراف مجاني الاستخدام؟",
+                        "a": "العراف نعم لا مجاني تماماً بدون تسجيل وبدون إعلانات وبدون حدود استخدام."
                   }
             ]
       },
@@ -3875,97 +3875,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "是非神谕",
             "subtitle": "输入问题，获得随机答案。",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "如何使用是非神谕",
+                  "intro": "神谕已经准备好回答你的问题了。以下是它的使用方法：",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "输入你的问题",
+                              "desc": "在文本框中输入一个是或否的问题。神谕最适合回答关于你面临的选择的清晰、具体的问题。"
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "寻求智慧",
+                              "desc": "点击「寻求智慧」按钮，等待神谕思考你的问题。在答案揭晓之前，短暂的延迟会营造出期待感。"
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "阅读答案",
+                              "desc": "神谕会显示一个是、否或也许的答案，以及主题信息、智慧文字和能量标签。反思这个答案让你对自己的决定产生了怎样的感受。"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "什么是否是非神谕？",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "是非神谕是一个数字占卜工具，通过结构化的三步流程回答是或否的问题。你在输入框中输入问题，等待神谕思考，然后从八种可能的结果中获得一个随机答案。",
+                              "与转盘或抛硬币不同，神谕在随机化的基础上增加了一层叙事。思考延迟营造出期待感，主题信息赋予每个答案以意义，而能量标签则提供了解读结果的简要方式。",
+                              "该工具完全在你的浏览器中运行。没有任何问题被存储、传输或记录。神谕使用客户端随机化来生成答案。"
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "神谕的工作原理",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "神谕遵循三步流程。首先，你在文本框中输入问题。当你点击「寻求智慧」时，输入区域消失，取而代之的是一个思考界面。",
+                              "经过 2.5 秒的延迟后，神谕会揭晓答案。结果包括一个是、否或也许的标签、一个表情符号、一条引用信息、智慧文字和一个能量标签。",
+                              "「再问一个问题」按钮会重置流程，清除结果并返回到输入界面。你可以提出不限数量的问题。"
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "何时使用神谕",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "当你不仅仅想要一个是或否的简单答案时，神谕效果最好。每个答案中的额外内容能给你提供一些值得思考的东西。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "你心中已有答案的决定",
+                                    "content": "通常，人们会询问神谕关于他们已经做出但希望得到确认的决定。如果神谕说「否」而你感到失望，这种反应会告诉你内心真正想要的是什么。"
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "创意写作与讲故事",
+                                    "content": "作家们使用神谕来打破创作僵局。能量标签和智慧文字能激发新的灵感，这是单纯的是或否无法做到的。"
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "有趣的团体活动",
+                                    "content": "在社交场合中，神谕增加了转盘所缺乏的戏剧性。思考延迟、主题信息和能量标签都能给团队提供讨论的话题。"
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "个人反思",
+                                    "content": "有些人将神谕用作日记的引子。他们输入一个问题，获得一个答案，然后写下这个回答如何与他们的真实感受产生共鸣。"
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "神谕与其他决策工具的比较",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "是非转盘给出的是没有额外背景的二元结果。神谕则采取了不同的方式，结合了文字输入、思考延迟和主题化输出。",
+                              "塔罗牌解读器通过卡片、含义和指导增加了更多的叙事深度。神谕则更简单，提供是、否或也许的答案。",
+                              "命运之轮提供带有戏剧性主题的加权结果。神谕更适合个人的是非问题，当你想要一个带有哲学深度的单一答案时。"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "什么是否是非神谕？",
+                        "a": "是非神谕是一个基于文字的决策工具，为你提供是、否或也许的答案，以及附带的信息和智慧文字。"
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "神谕与是非转盘有什么不同？",
+                        "a": "神谕使用文字输入和思考动画，而不是旋转转盘。它提供三种可能的答案，而不是两种，每个答案都包含一条富有哲理的信息。"
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "神谕是随机的吗？",
+                        "a": "是的。神谕使用基于浏览器的随机化技术，从八种可能的结果中随机选择一个。"
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "我可以问神谕任何类型的问题吗？",
+                        "a": "神谕最适合回答是或否的问题——那些你希望得到二元或接近二元答案的决定。"
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "能量标签是什么意思？",
+                        "a": "每个神谕结果都包含一个能量标签，如「重生」、「耐心」或「神秘」。这些是描述答案总体基调的主题标签。"
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "使用神谕需要付费吗？",
+                        "a": "是非神谕完全免费，无需注册，没有广告，也没有使用限制。"
                   }
             ]
       },
@@ -3973,195 +3973,195 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Да Нет Оракул",
             "subtitle": "Введите вопрос получите случайный ответ.",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "Как пользоваться Да Нет Оракулом",
+                  "intro": "Оракул готов ответить на ваши вопросы. Вот как это работает:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "Введите свой вопрос",
+                              "desc": "Введите вопрос с ответом «да» или «нет» в текстовое поле. Оракул лучше всего работает с чёткими и конкретными вопросами о решениях, которые вы принимаете."
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "Обретите мудрость",
+                              "desc": "Нажмите кнопку «Обрести мудрость» и подождите, пока оракул размышляет над вашим вопросом. Короткая пауза создаёт ожидание перед появлением ответа."
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "Прочитайте ответ",
+                              "desc": "Оракул раскрывает ответ — «да», «нет» или «может быть» — вместе с тематическим сообщением, текстом мудрости и энергетическим тегом. Подумайте о том, как ответ заставляет вас чувствовать себя в отношении вашего решения."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "Что такое Да Нет Оракул?",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "Да Нет Оракул — это цифровой инструмент гадания, который отвечает на вопросы с ответом «да» или «нет» с помощью структурированного трёхэтапного процесса. Вы вводите вопрос в поле ввода, ждёте, пока оракул размышляет, и получаете случайный ответ из восьми возможных исходов.",
+                              "В отличие от вращающегося колеса или подбрасывания монеты, оракул добавляет нарративный слой к процессу случайного выбора. Задержка размышления создаёт ожидание, тематические сообщения придают каждому ответу смысл, а энергетические теги служат кратким ключом для интерпретации результата.",
+                              "Инструмент работает целиком в вашем браузере. Ни один вопрос не хранится, не передаётся и не записывается. Оракул генерирует ответ с помощью клиентской рандомизации."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "Как работает оракул",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "Оракул следует трёхэтапному процессу. Сначала вы вводите свой вопрос в текстовое поле. Когда вы нажимаете «Обрести мудрость», область ввода исчезает и заменяется экраном размышления.",
+                              "После задержки в 2,5 секунды оракул раскрывает свой ответ. Результат включает табличку «да», «нет» или «может быть», эмодзи, цитату, текст мудрости и энергетический тег.",
+                              "Кнопка «Задать ещё один вопрос» сбрасывает процесс, очищая результат и возвращая к экрану ввода. Вы можете задавать неограниченное количество вопросов."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Когда стоит пользоваться оракулом",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "Оракул лучше всего работает, когда вам нужно нечто большее, чем простое «да» или «нет». Дополнительный контекст в каждом ответе даёт вам пищу для размышлений."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Решения, ответ на которые вы уже знаете",
+                                    "content": "Часто люди обращаются к оракулу с вопросами о решениях, которые уже принято, но хотят получить подтверждение. Если оракул говорит «Нет», а вы чувствуете разочарование, эта реакция говорит вам о том, чего вы на самом деле хотите."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Творческое письмо и повествование",
+                                    "content": "Писатели используют оракул для преодоления творческих блоков. Энергетические теги и текст мудрости могут породить новые идеи, которые простое «да» или «нет» не дало бы."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Весёлые групповые занятия",
+                                    "content": "В общественной обстановке оракул добавляет драматизма, которого не хватает простому вращению. Задержка размышления, тематическое сообщение и энергетический тег — всё это даёт группе повод для обсуждения."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Личные размышления",
+                                    "content": "Некоторые люди используют оракул как стимул для ведения дневника. Они вводят вопрос, получают ответ и записывают, как этот ответ перекликается с их истинными чувствами."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "Оракул vs другие инструменты принятия решений",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "Колесо «да или нет» даёт бинарный результат без дополнительного контекста. Оракул использует другой подход: текстовый ввод, задержку размышления и тематический вывод.",
+                              "Читатель таро добавляет ещё больше нарративной глубины с помощью карт, значений и руководств. Оракул проще — с ответами «да», «нет» или «может быть».",
+                              "Колесо судьбы предлагает взвешенные исходы с драматическим оформлением. Оракул лучше подходит для личных вопросов, где вам нужен один ответ с философским весом."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "Что такое Да Нет Оракул?",
+                        "a": "Да Нет Оракул — это текстовый инструмент для принятия решений, который даёт ответы «да», «нет» или «может быть» на ваши вопросы с сопровождающими сообщениями и текстом мудрости."
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "Чем оракул отличается от колеса «да или нет»?",
+                        "a": "Оракул использует текстовый ввод и анимацию размышления вместо вращающегося колеса. Он генерирует три возможных ответа вместо двух, и каждый ответ включает философское сообщение."
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "Оракул выдаёт случайные ответы?",
+                        "a": "Да. Оракул выбирает случайный результат из восьми возможных исходов с помощью рандомизации на стороне браузера."
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "Можно ли задавать оракулу любой тип вопроса?",
+                        "a": "Оракул лучше всего работает с вопросами, предполагающими ответ «да» или «нет» — решениями, где вам нужен бинарный или почти бинарный ответ."
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "Что означает энергетический тег?",
+                        "a": "Каждый результат оракула включает энергетический тег, например «Перерождение», «Терпение» или «Тайна». Это тематические метки, описывающие общий тон ответа."
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "Оракул бесплатный?",
+                        "a": "Да Нет Оракул абсолютно бесплатен — без регистрации, без рекламы и без ограничений на использование."
                   }
             ]
       },
     ja: {
-            "title": "イエンー・オラクル",
-            "subtitle": "質問を入力してランダムな回答を受け取る。",
+            "title": "イエス・ノー・オラクル",
+            "subtitle": "イエスまたはノーの質問を入力して、知恵と導きとともにランダムな回答を受け取りましょう。オラクルはブラウザベースのランダム化を通じて8つの可能な結果を提供します。",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "イエス・ノー・オラクルの使い方",
+                  "intro": "オラクルはあなたの質問に答える準備ができています。以下に使い方を説明します：",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "質問を入力",
+                              "desc": "テキストエリアにイエスまたはノーの質問を入力してください。オラクルは、直面している決断に関する明確で具体的な質問に最も適しています。"
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "叡智を探す",
+                              "desc": "「叡智を探す」ボタンをクリックし、オラクルがあなたの質問を考察するのを待ちましょう。回答が表示されるまでの短い待ち時間が期待感を高めます。"
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "回答を読む",
+                              "desc": "オラクルはイエス、ノー、またはもしかしない回答を、テーマ付きメッセージ、叡智のテキスト、エネルギータグとともに表示します。回答が決断についてどう感じさせるか考えてみましょう。"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "イエス・ノー・オラクルとは？",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "イエス・ノー・オラクルは、構造化された3段階のプロセスを通じてイエスまたはノーの質問に答えるデジタル占術ツールです。入力フィールドに質問を入力し、オラクルが考察するのを待ってから、8つの可能な結果からランダムな回答を受け取ります。",
+                              "コインを投げたりホイールを回したりするのとは異なり、オラクルはランダム化に物語性を加えます。考察の待ち時間が期待感を生み、テーマ付きメッセージが各回答に意味の感覚を与え、エネルギータグが結果を解釈するための手がかりを提供します。",
+                              "このツールは完全にブラウザ内で動作します。質問は保存、送信、ログに記録されません。オラクルはクライアント側のランダム化を使用して回答を生成します。"
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "オラクルの仕組み",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "オラクルは3段階のフローに従います。まず、テキストエリアに質問を入力します。「叡智を探す」をクリックすると、入力エリアが消えて考察画面に置き換えられます。",
+                              "2.5秒の待ち時間の後、オラクルは回答を表示します。結果にはイエス・ノー・またはもしかしないのパッジ、絵文字、引用されたメッセージ、叡智のテキスト、エネルギータグが含まれます。",
+                              "「別の質問をする」ボタンはフローをリセットし、結果をクリアして入力画面に戻します。質問は無制限にできます。"
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "オラクルの使い時",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "オラクルは、単純なイエスやノー以上のものを求めたい場合に最も効果的です。各回答の追加コンテキストは、考察する材料を提供します。"
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "すでに答えを知っている決断",
+                                    "content": "多くの人は、すでに下した決断についてオラクルに質問しますが、安心感を求めています。オラクルがノーと言い、あなたががっかりした場合、その反応はあなたが本当に何を望んでいるかを教えてくれます。"
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "クリエイティブな執筆とストーリーテリング",
+                                    "content": "作家はクリエイティブな停滞を打ち破るためにオラクルを使います。エネルギータグと叡智のテキストは、単純なイエスやノーでは生み出せない新しいアイデアを生むことがあります。"
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "楽しいグループアクティビティ",
+                                    "content": "ソーシャルな場面で、オラクルはスピナーに欠けるドラマを加えます。考察の待ち時間、テーマ付きメッセージ、エネルギータグがすべてグループに議論する材料を提供します。"
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "個人の内省",
+                                    "content": "ある人々はオラクルを日記の書き出しとして使います。質問を入力し、回答を受け取り、その回答が実際の気持ちとどう共鳴したかを書きます。"
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "オラクル vs その他の意思決定ツール",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "イエス・ノー・ホイールは追加のコンテキストなしにバイナリ結果を提供します。オラクルはテキスト入力、考察の待ち時間、テーマ付き出力で異なるアプローチを採用しています。",
+                              "タロットカードリーダーはカード、意味、ガイダンスによってさらに深い物語性を加えます。オラクルはイエス、ノー、またはもしかしない回答でシンプルです。",
+                              "運命のホイールは劇的なテーマで加重された結果を提供します。オラクルは、哲学的な重みを持つ一つの回答を求めたい個人的なイエス／ノーの質問に最適です。"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "イエス・ノー・オラクルとは？",
+                        "a": "イエス・ノー・オラクルは、質問に対してイエス、ノー、またはもしかしない回答を、付随するメッセージと叡智のテキストとともに提供するテキストベースの意思決定ツールです。"
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "オラクルはイエス・ノー・ホイールとどう違うの？",
+                        "a": "オラクルは回転するホイールの代わりにテキスト入力と考察アニメーションを使用します。2つではなく3つの可能な回答を生成し、各回答には哲学的なメッセージが含まれます。"
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "オラクルはランダムですか？",
+                        "a": "はい。オラクルはブラウザベースのランダム化を使用して、8つの可能な結果からランダムな結果を選択します。"
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "どんな種類の質問でもオラクルに質問できますか？",
+                        "a": "オラクルはイエスまたはノーの質問に最も適しています。バイナリまたはほぼバイナリの回答を求めたい決断です。"
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "エネルギータグとは何ですか？",
+                        "a": "各オラクルの結果には、再生、忍耐、または神秘などのエネルギータグが含まれます。これらは回答の一般的なトーンを説明するテーマ付きラベルです。"
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "オラクルは無料で使えますか？",
+                        "a": "イエス・ノー・オラクルは完全に無料で、登録不要、広告なし、使用制限なしです。"
                   }
             ]
       },
@@ -4169,97 +4169,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "হ্যাছ না ওরাকল",
             "subtitle": "ডাকার্ট প্রশ্ন টাইপ করুন এবং এলোমেলো উত্তর পান।",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "হ্যাঁ না ওরাকল কীভাবে ব্যবহার করবেন",
+                  "intro": "ওরাকল আপনার প্রশ্নের উত্তর দেওয়ার জন্য প্রস্তুত। এটি কীভাবে কাজ করে:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "আপনার প্রশ্ন টাইপ করুন",
+                              "desc": "টেক্সট এলাকায় একটি হ্যাঁ বা না প্রশ্ন লিখুন। ওরাকল স্পষ্ট, নির্দিষ্ট প্রশ্নের সাথে সবচেয়ে ভালো কাজ করে যা আপনার সামনে থাকা সিদ্ধান্তগুলোর সাথে সম্পর্কিত।"
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "জ্ঞান খুঁজুন",
+                              "desc": "জ্ঞান খুঁজুন বোতামে ক্লিক করুন এবং ওরাকল আপনার প্রশ্ন নিয়ে চিন্তা করার সময় অপেক্ষা করুন। উত্তর প্রকাশের আগে একটি সংক্ষিপ্ত বিরতি প্রত্যাশা তৈরি করে।"
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "উত্তর পড়ুন",
+                              "desc": "ওরাকল একটি হ্যাঁ, না, বা হয়তো উত্তর প্রকাশ করে যার সাথে থাকে একটি থিমড বার্তা, জ্ঞানের টেক্সট, এবং একটি শক্তি ট্যাগ। আপনার সিদ্ধান্ত সম্পর্কে উত্তরটি আপনাকে কেমন অনুভব করায় তা নিয়ে চিন্তা করুন।"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "হ্যাঁ না ওরাকল কী?",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "হ্যাঁ না ওরাকল একটি ডিজিটল ভবিষ্যদ্বাণী টুল যা একটি সংগঠিত তিন-ধাপের প্রক্রিয়ার মাধ্যমে হ্যাঁ বা না প্রশ্নের উত্তর দেয়। আপনি ইনপুট ফিল্ডে একটি প্রশ্ন টাইপ করেন, ওরাকল চিন্তা করার সময় অপেক্ষা করেন, এবং আটটি সম্ভাব্য ফলাফলের মধ্য থেকে একটি এলোমেলো উত্তর পান।",
+                              "একটি ঘুর্ণায়মান চাকা বা মুদ্রা লাফানোর বিপরীতে, ওরাকল এলোমেলোকরণে একটি বর্ণনামূলক স্তর যোগ করে। চিন্তার বিরতি প্রত্যাশা তৈরি করে, থিমড বার্তাগুলো প্রতিটি উত্তরকে অর্থের অনুভূতি দেয়, এবং শক্তি ট্যাগগুলো ফলাফল ব্যাখ্যা করার জন্য একটি সংক্ষিপ্ত পথ প্রদান করে।",
+                              "টুলটি সম্পূর্ণরূপে আপনার ব্রাউজারে চলে। কোনো প্রশ্ন সংরক্ষিত, প্রেরিত, বা লগ করা হয় না। ওরাকল ক্লায়েন্ট-সাইড এলোমেলোকরণ ব্যবহার করে তার উত্তর তৈরি করে।"
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "ওরাকল কীভাবে কাজ করে",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "ওরাকল একটি তিন-ধাপের প্রবাহ অনুসরণ করে। প্রথমে, আপনি টেক্সটএরিয়ায় আপনার প্রশ্ন টাইপ করেন। যখন আপনি জ্ঞান খুঁজুন-তে ক্লিক করেন, তখন ইনপুট এলাকা অদৃশ্য হয়ে যায় এবং একটি চিন্তার স্ক্রিন দিয়ে প্রতিস্থাপিত হয়।",
+                              "২.৫ সেকেন্ডের বিরতির পরে, ওরাকল তার উত্তর প্রকাশ করে। ফলাফলে থাকে একটি হ্যাঁ, না, বা হয়তো পিল, একটি ইমোজি, একটি উদ্ধৃত বার্তা, জ্ঞানের টেক্সট, এবং একটি শক্তি ট্যাগ।",
+                              "আরেকটি প্রশ্ন করুন বোতাম প্রবাহটি রিসেট করে, ফলাফল মুছে দেয় এবং ইনপুট স্ক্রিনে ফিরিয়ে দেয়। আপনি অসীমিত প্রশ্ন করতে পারেন।"
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "ওরাকল কখন ব্যবহার করবেন",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "ওরাকল সবচেয়ে ভালো কাজ করে যখন আপনি একটি সাধারণ হ্যাঁ বা না-র চেয়ে বেশি কিছু চান। প্রতিটি উত্তরে অতিরিক্ত প্রসঙ্গ আপনাকে চিন্তা করার জন্য কিছু দেয়।"
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "সিদ্ধান্ত যা আপনি আগেই জানেন",
+                                    "content": "প্রায়শই, লোকেরা ওরাকলের কাছে এমন সিদ্ধান্ত সম্পর্কে জিজ্ঞাসা করে যা তারা ইতিমধ্যে নিয়েছে কিন্তু নিশ্চিততা চায়। যদি ওরাকল না বলে এবং আপনি হতাশ বোধ করেন, তাহলে সেই প্রতিক্রিয়া আপনাকে বলে যে আপনি প্রকৃতপক্ষে কী চান।"
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "সৃজনশীল লেখা এবং গল্প বলা",
+                                    "content": "লেখকরা সৃজনশীল অচলাবস্থা ভাঙতে ওরাকল ব্যবহার করেন। শক্তি ট্যাগ এবং জ্ঞানের টেক্সট নতুন ধারণা জন্ম দিতে পারে যা একটি সাধারণ হ্যাঁ বা না দিতে পারে না।"
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "মজার গোষ্ঠী কার্যক্রম",
+                                    "content": "সামাজিক পরিবেশে, ওরাকল স্পিনারে যা কমে সেই নাটক যোগ করে। চিন্তার বিরতি, থিমড বার্তা, এবং শক্তি ট্যাগ সব গোষ্ঠীকে আলোচনা করার জন্য কিছু দেয়।"
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "ব্যক্তিগত প্রতিফলন",
+                                    "content": "কিছু লোক জার্নালিং প্রম্পট হিসাবে ওরাকল ব্যবহার করে। তারা একটি প্রশ্ন টাইপ করে, উত্তর পায়, এবং তাদের প্রকৃত অনুভূতির সাথে উত্তরটি কীভাবে সাড়া দিয়েছে তা নিয়ে লেখে।"
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "ওরাকল বনাম অন্যান্য সিদ্ধান্ত টুল",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "হ্যাঁ বা না চাকা আপনাকে কোনো অতিরিক্ত প্রসঙ্ছ ছাড়াই একটি দ্বিবিভাগী ফলাফল দেয়। ওরাকল টেক্সট ইনপুট, চিন্তার বিরতি, এবং থিমড আউটপুটের সাথে একটি ভিন্ন পদ্ধতি অবলম্বন করে।",
+                              "ট্যারো কার্ড রিডার কার্ড, অর্থ, এবং নির্দেশনার সাথে আরও বেশি বর্ণনামূলক গভীরতা যোগ করে। ওরাকল হ্যাঁ, না, বা হয়তো উত্তরের সাথে সরল।",
+                              "ভাগ্যের চাকা নাটকীয় থিমিংয়ের সাথে ওজনযুক্ত ফলাফল প্রদান করে। ওরাকল ব্যক্তিগত হ্যাঁ/না প্রশ্নের জন্য ভালো যেখানে আপনি দার্শনিক ওজন সহ একটি উত্তর চান।"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "হ্যাঁ না ওরাকল কী?",
+                        "a": "হ্যাঁ না ওরাকল একটি টেক্সট-ভিত্তিক সিদ্ধান্ত টুল যা আপনার প্রশ্নের সাথে সংশ্লিষ্ট বার্তা এবং জ্ঞানের টেক্সট সহ হ্যাঁ, না, বা হয়তো উত্তর প্রদান করে।"
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "ওরাকল একটি হ্যাঁ বা না চাকা থেকে কীভাবে আলাদা?",
+                        "a": "ওরাকল একটি ঘুর্ণায়মান চাকার পরিবর্তে টেক্সট ইনপুট এবং চিন্তার অ্যানিমেশন ব্যবহার করে। এটি দুটির পরিবর্তে তিনটি সম্ভাব্য উত্তর তৈরি করে, এবং প্রতিটি উত্তরে একটি দার্শনিক বার্তা থাকে।"
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "ওরাকল কি এলোমেলো?",
+                        "a": "হ্যাঁ। ওরাকল ব্রাউজার-ভিত্তিক এলোমেলোকরণ ব্যবহার করে আটটি সম্ভাব্য ফলাফলের মধ্য থেকে একটি এলোমেলো ফলাফল নির্বাচন করে।"
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "আমি কি ওরাকলে যেকোনো ধরনের প্রশ্ন জিজ্ঞাসা করতে পারি?",
+                        "a": "ওরাকল হ্যাঁ বা না প্রশ্নের সাথে সবচেয়ে ভালো কাজ করে — সিদ্ধান্ত যেখানে আপনি একটি দ্বিবিভাগী বা প্রায় দ্বিবিভাগী উত্তর চান।"
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "শক্তি ট্যাগের অর্থ কী?",
+                        "a": "প্রতিটি ওরাকল ফলাফলে পুনর্জন্ম, ধৈর্য, বা রহস্যের মতো একটি শক্তি ট্যাগ থাকে। এগুলো থিমিং লেবেল যা উত্তরের সাধারণ স্বর বর্ণনা করে।"
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "ওরাকল কি বিনামূল্যে ব্যবহারযোগ্য?",
+                        "a": "হ্যাঁ না ওরাকল সম্পূর্ণ বিনামূল্যে, কোনো সাইনআপ নেই, কোনো বিজ্ঞাপন নেই, এবং কোনো ব্যবহারের সীমা নেই।"
                   }
             ]
       },
@@ -4317,7 +4317,7 @@ const WHEEL_PAGE_CONTENT = {
                               },
                               {
                                     "title": "تفریحی گروپ سرگرمیاں",
-                                    "content": "سماجی ترتیبات میں، اوراکل اس ناٹک کا اضافہ کرتا ہے جو اسپنر میں نہیں ہوتا۔ غور کرنے میں تاخیر، تھیم شدہ پیغام، اور توانائی ٹیگ سب گروپ کو讨论 کرنے کے لیے کچھ دیتے ہیں۔"
+                                    "content": "سماجی ترتیبات میں، اوراکل اس ناٹک کا اضافہ کرتا ہے جو اسپنر میں نہیں ہوتا۔ غور کرنے میں تاخیر، تھیم شدہ پیغام، اور توانائی ٹیگ سب گروپ کو بحث کرنے کے لیے کچھ دیتے ہیں۔"
                               },
                               {
                                     "title": "ذاتی غور و فکر",
@@ -4326,7 +4326,7 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "اوراکل بنام دیگر فیصلہ ساز اbles",
+                        "title": "اوراکل بنام دیگر فیصلہ ساز ٹول",
                         "content": [
                               "ہاں یا نہیں کا پہیوو آپ کو کسی اضافی سیاق و سباق کے بغیر ایک دوہرا نتیجہ دیتا ہے۔ اوراکل ٹیکسٹ ان پٹ، غور کرنے میں تاخیر، اور تھیم شدہ آؤٹ پٹ کے ساتھ مختلف نقطہ نظر اختیار کرتا ہے۔",
                               "ٹارو کارڈ ریڈر کارڈوں، معانی، اور رہنمائی کے ساتھ مزید کہانی کی گہرائی اضافہ کرتا ہے۔ اوراکل ہاں، نہیں، یا شاید کے جوابات کے ساتھ سادہ ہے۔",
