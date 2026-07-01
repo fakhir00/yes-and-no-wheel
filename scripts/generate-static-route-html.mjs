@@ -257,6 +257,168 @@ function getBreadcrumbSchema(locale, route) {
   }, null, 2);
 }
 
+function getLocalizedNav(locale, activeRoute) {
+  const homePath = buildLocalizedPath(locale, '');
+  const isActive = (route) => (activeRoute || '') === route ? ' active' : '';
+
+  const navLinks = {
+    home: buildLocalizedPath(locale, ''),
+    rainbow: buildLocalizedPath(locale, 'rainbow'),
+    wheelOfFate: buildLocalizedPath(locale, 'wheel-of-fate'),
+    word: buildLocalizedPath(locale, 'word'),
+    truthOrDare: buildLocalizedPath(locale, 'spin-the-wheel-truth-or-dare'),
+    dtiTheme: buildLocalizedPath(locale, 'dti-theme'),
+    country: buildLocalizedPath(locale, 'country'),
+    zodiac: buildLocalizedPath(locale, 'zodiac'),
+    hairColor: buildLocalizedPath(locale, 'hair-color'),
+    randomFood: buildLocalizedPath(locale, 'random-food'),
+    tarot: buildLocalizedPath(locale, 'tarot'),
+    oracle: buildLocalizedPath(locale, 'oracle'),
+    dice: buildLocalizedPath(locale, 'yes-and-no-dice'),
+    aboutUs: buildLocalizedPath(locale, 'about-us'),
+    contact: buildLocalizedPath(locale, 'contact'),
+    blog: buildLocalizedPath(locale, 'blog')
+  };
+
+  const t = (key) => getLocalizedRouteContent(locale, key).title;
+
+  return `
+        <a href="${homePath}" class="nav-brand">
+          <img class="nav-brand-mark" src="/images/brand/yes-and-no-wheel-mark.svg" alt="Yes and No Wheel logo"
+            width="42" height="42">
+          <span class="brand-wordmark" aria-label="Yes and No Wheel">
+            <span>Yes</span>
+            <span class="brand-wordmark-amp">&amp;</span>
+            <span>No Wheel</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="${navLinks.home}" class="nav-link${isActive('')}">🏠 <span id="navHomeLabel">${t('home')}</span></a></li>
+
+          <!-- Wheels Dropdown -->
+          <li class="nav-dropdown" id="wheelsDropdown">
+            <button class="nav-link dropdown-trigger" id="wheelsDropdownBtn">
+              🎡 <span id="navWheelsLabel">${getWheelSharedText(locale).navWheelsLabel || 'Decision Wheels'}</span>
+              <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="wheelsDropdownMenu">
+              <a href="${navLinks.rainbow}" class="dropdown-link">🌈 <span id="navRainbowWheelLabel">${t('rainbow')}</span></a>
+              <a href="${navLinks.wheelOfFate}" class="dropdown-link">⚔️ <span id="navWheelOfFateLabel">${t('wheel-of-fate')}</span></a>
+              <a href="${navLinks.word}" class="dropdown-link">📖 <span id="navWordWheelLabel">${t('word')}</span></a>
+              <a href="${navLinks.truthOrDare}" class="dropdown-link">🎉 <span
+                  id="navTruthOrDareWheelLabel">${t('spin-the-wheel-truth-or-dare')}</span></a>
+              <a href="${navLinks.dtiTheme}" class="dropdown-link">👗 <span id="navDTIWheelLabel">${t('dti-theme')}</span></a>
+              <a href="${navLinks.country}" class="dropdown-link">🌍 <span id="navCountryWheelLabel">${t('country')}</span></a>
+              <a href="${navLinks.zodiac}" class="dropdown-link">✨ <span id="navZodiacWheelLabel">${t('zodiac')}</span></a>
+              <a href="${navLinks.hairColor}" class="dropdown-link">💇 <span id="navHairColorWheelLabel">${t('hair-color')}</span></a>
+              <a href="${navLinks.randomFood}" class="dropdown-link">🍔 <span id="navFoodWheelLabel">${t('random-food')}</span></a>
+            </div>
+          </li>
+
+          <!-- Tarot & Oracle Dropdown -->
+          <li class="nav-dropdown" id="tarotDropdown">
+            <button class="nav-link dropdown-trigger" id="tarotDropdownBtn">
+              🃏 <span id="navTarotOracleLabel">${getWheelSharedText(locale).navTarotOracleLabel || 'Tarot & Oracle'}</span>
+              <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="tarotDropdownMenu">
+              <a href="${navLinks.tarot}" class="dropdown-link">🃏 <span id="navYesNoTarotLabel">${t('tarot')}</span></a>
+              <a href="${navLinks.oracle}" class="dropdown-link">🔮 <span id="navYesNoOracleLabel">${t('oracle')}</span></a>
+            </div>
+          </li>
+
+          <li><a href="${navLinks.dice}" class="nav-link">🎲 <span id="navYesNoDiceLabel">${t('yes-and-no-dice')}</span></a>
+          </li>
+
+          <li><a href="${navLinks.aboutUs}" class="nav-link">ℹ️ <span id="navAboutLabel">${t('about-us')}</span></a></li>
+          <li><a href="${navLinks.contact}" class="nav-link">📧 <span id="navContactLabel">${t('contact')}</span></a></li>
+          <li><a href="${navLinks.blog}" class="nav-link">📝 <span id="navBlogLabel">${t('blog')}</span></a></li>
+          <li>
+            <button class="theme-toggle-btn" id="headerThemeBtn" title="Toggle Dark/Light Mode"
+              aria-label="Toggle Dark/Light Mode">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </button>
+          </li>
+        </ul>`;
+}
+
+function getLocalizedFooter(locale) {
+  const homePath = buildLocalizedPath(locale, '');
+  const aboutPath = buildLocalizedPath(locale, 'about-us');
+  const faqPath = buildLocalizedPath(locale, 'faq');
+  const dicePath = buildLocalizedPath(locale, 'yes-and-no-dice');
+  const contactPath = buildLocalizedPath(locale, 'contact');
+  const termsPath = buildLocalizedPath(locale, 'terms');
+  const privacyPath = buildLocalizedPath(locale, 'privacy');
+  const sitemapPath = buildLocalizedPath(locale, 'sitemap');
+
+  const t = (key) => getLocalizedRouteContent(locale, key).title;
+  const staticContent = getStaticPageContent(locale);
+
+  return `
+        <a href="${homePath}" class="nav-brand footer-brand-link" aria-label="YesAndNoWheel home">
+          <img class="nav-brand-mark" src="/images/brand/yes-and-no-wheel-mark.svg" alt="Yes and No Wheel logo"
+            width="42" height="42">
+          <span class="brand-wordmark" aria-label="Yes and No Wheel">
+            <span>Yes</span>
+            <span class="brand-wordmark-amp">&amp;</span>
+            <span>No Wheel</span>
+          </span>
+        </a>
+        <p class="footer-desc" id="footerDescription">${staticContent.footerDescription || 'Fast decision wheels for quick choices, party games, classrooms, and creative prompts.'}</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/yesandnowheel/" target="_blank" rel="noopener" aria-label="Facebook"
+            title="Follow us on Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/yes-and-no-wheel/" target="_blank" rel="noopener"
+            aria-label="LinkedIn" title="Follow us on LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.5 9.75h2.88V18H5.5V9.75Zm4.69 0h2.76v1.13h.04c.39-.73 1.33-1.5 2.75-1.5 2.94 0 3.48 1.94 3.48 4.46V18h-2.88v-3.67c0-.88-.02-2-.01-2 0-1.02-.73-1.49-1.42-1.49-.78 0-1.26.53-1.46 1.05-.08.18-.1.43-.1.68V18H10.2V9.75Z" />
+            </svg>
+          </a>
+          <a href="https://www.pinterest.com/yesandnowheel/" target="_blank" rel="noopener" aria-label="Pinterest"
+            title="Follow us on Pinterest" class="social-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 4 5.93 4 9.21c0 2.27.86 4.29 2.71 5.04.3.12.57 0 .66-.33.06-.23.2-.8.26-1.04.09-.33.06-.45-.19-.75-.54-.63-.88-1.45-.88-2.61 0-3.37 2.52-6.39 6.56-6.39 3.58 0 5.54 2.19 5.54 5.11 0 3.84-1.7 7.08-4.23 7.08-1.39 0-2.43-1.15-2.09-2.56.4-1.67 1.17-3.47 1.17-4.67 0-1.08-.58-1.98-1.78-1.98-1.41 0-2.54 1.46-2.54 3.42 0 1.25.42 2.09.42 2.09l-1.7 7.21c-.5 2.12-.07 4.72-.04 4.98.02.15.21.19.29.07.12-.16 1.63-2.02 2.14-3.89.14-.53.81-3.12.81-3.12.4.77 1.57 1.44 2.82 1.44 3.71 0 6.22-3.38 6.22-7.9C20 5.18 16.78 2 12.04 2Z" />
+            </svg>
+          </a>
+        </div>
+
+      <div class="footer-col footer-links-col">
+        <h3 id="footerPagesHeading">${staticContent.footerLinksHeading || 'Links'}</h3>
+        <a href="${aboutPath}" id="footerAboutLink">${t('about-us')}</a>
+        <a href="${faqPath}" id="footerFaqLink">${t('faq')}</a>
+        <a href="${dicePath}">${t('yes-and-no-dice')}</a>
+        <a href="${contactPath}" id="footerContactLink">${t('contact')}</a>
+        <a href="${termsPath}" id="footerTermsLink">${t('terms')}</a>
+        <a href="${privacyPath}" id="footerPrivacyLink">${t('privacy')}</a>
+        <a href="${sitemapPath}" id="footerSitemapLink">${t('sitemap')}</a>
+      </div>`;
+}
+
 const locales = [DEFAULT_LOCALE, ...LOCALES.map((locale) => locale.code).filter((code) => code !== DEFAULT_LOCALE)];
 
 for (const locale of locales) {
@@ -265,6 +427,9 @@ for (const locale of locales) {
     const description = ensureMetaDescription(rawDescription, locale, route);
     const canonicalPath = getCanonicalPath(locale, route);
     const url = `${SITE_URL}${canonicalPath}`;
+
+    const localizedNav = getLocalizedNav(locale, route);
+    const localizedFooter = getLocalizedFooter(locale);
 
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
@@ -294,6 +459,14 @@ for (const locale of locales) {
       .replace(
         /<div id="app">[\s\S]*?<\/div>\s*<\/div>\s*<\/main>\s*<!-- Footer -->/,
         `<div id="app"><div class="source-route-copy" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"><article class="source-route-article"><header><h1 class="source-route-h1">${escapeHtml(getSourceH1(locale, route))}</h1></header><section>${getSourceBodyHtml(locale, route)}</section></article></div></div>\n  </main>\n\n  <!-- Footer -->`
+      )
+      .replace(
+        /<header class="site-header">[\s\S]*?<\/header>/,
+        `<header class="site-header">\n    <nav class="main-nav" id="mainNav">\n      <div class="nav-container">${localizedNav}\n      </div>\n    </nav>\n  </header>`
+      )
+      .replace(
+        /<footer class="site-footer">[\s\S]*?<\/footer>/,
+        `<footer class="site-footer">\n    <div class="footer-container">${localizedFooter}\n\n      <div class="footer-col footer-contact-col">\n        <h3 id="footerContactHeading">${getStaticPageContent(locale).footerContactHeading || 'Contact'}</h3>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path d="M4 4h16v16H4z"></path>\n              <path d="M22 6l-10 7L2 6"></path>\n            </svg>\n          </span>\n          <span>contact@yesandnowheel.com</span>\n        </p>\n        <p class="footer-contact-item">\n          <span class="footer-contact-icon" aria-hidden="true">\n            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"\n              stroke-linecap="round" stroke-linejoin="round">\n              <path\n                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72l.39 2.57a2 2 0 0 1-.57 1.7l-1.28 1.28a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 1.7-.57l2.57.39A2 2 0 0 1 22 16.92z">\n              </path>\n            </svg>\n          </span>\n          <span>+1 (415) 555-0199</span>\n        </p>\n      </div>\n    </div>\n    <div class="footer-bottom">\n      <p>&copy; 2025 YesAndNoWheel.com. All rights reserved.</p>\n    </div>\n  </footer>`
       );
 
     html = setHtmlLang(html, locale);
