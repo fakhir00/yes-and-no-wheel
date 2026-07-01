@@ -1182,110 +1182,106 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     ur: {
-            "title": "قوس قزح کا پہیۇۇۇ",
-            "subtitle": "رنگین گھومنے والا پہیۇۇۇلۇں؄",
+            "title": "قوس قزح کا پہیوو",
+            "subtitle": "رنگین گھومنے والا پہیوو۔",
             "howToUse": {
-                  "title": "How to Use the Rainbow Wheel",
-                  "intro": "The rainbow wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "قوس قزح کا پہیوو کیسے استعمال کریں",
+                  "intro": "قوس قزح کا پہیوو سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Review the Entries",
-                              "desc": "Look at the default entries on the wheel. Each segment has a label and a distinct rainbow color. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "انٹریز کا جائزہ لیں",
+                              "desc": "پہیوو پر ڈیفالٹ انٹریز کو دیکھیں۔ ہر سیگمنٹ کی ایک لیبل اور الگ رنگ ہوتا ہے۔ جو آپ کو چاہیے انہیں رکھیں، یا اپنی انٹریز شامل کرنے کے لیے تخصیص سائیڈ بار کھولیں۔"
                         },
                         {
-                              "title": "Customize If Needed",
-                              "desc": "Use the sidebar to rename entries, change colors, or adjust the number of segments. The auto-gradient button regenerates the color distribution to keep all segments visually distinct."
+                              "title": "ضرورت پر تخصیص کریں",
+                              "desc": "انٹریز کا نام تبدیل کرنے، رنگ بدلنے، یا سیگمنٹس کی تعداد کو ایڈجسٹ کرنے کے لیے سائیڈ بار استعمال کریں۔ آٹو گریڈینٹ بٹن رنگ کی تقسیم کو دوبارہ بناتا ہے تاکہ تمام سیگمنٹس بصری طور پر الگ رہیں۔"
                         },
                         {
-                              "title": "Spin and See the Result",
-                              "desc": "Press the spin button and watch the rainbow colors blur as the wheel rotates. When it stops, the winning segment appears with a fanfare. Use the result to make your decision."
+                              "title": "گھمائیں اور نتیجہ دیکھیں",
+                              "desc": "سپن بٹن دبائیں اور رنگین رنگوں کو دھندلا ہوتے دیکھیں جب پہیوو گھومتا ہے۔ جب یہ رکتا ہے، تو جیتنے والا سیگمنٹ نمائش کے ساتھ ظاہر ہوتا ہے۔ اپنا فیصلہ کرنے کے لیے نتیجہ استعمال کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Rainbow Wheel?",
+                        "title": "قوس قزح کا پہیوو کیا ہے؟",
                         "content": [
-                              "A rainbow wheel is a colorful variation of the classic spinning wheel that assigns a distinct color from the visible light spectrum to each segment. Where a standard yes or no wheel might use two solid colors, a rainbow wheel distributes hues like red, orange, yellow, green, blue, indigo, and violet across the entire wheel, creating a visually striking spinning experience.",
-                              "The concept behind the rainbow wheel draws from the same principle that makes rainbow gradients popular in design, art, and nature. Each color occupies an equal portion of the wheel, so the visual variety does not affect the randomness of the outcome. The result is still determined by physics-based simulation, not by color preference or segment size.",
-                              "Rainbow wheels are popular with educators, event organizers, and anyone who finds a plain two-color spinner too plain. The spectrum of colors makes each spin feel more lively, which is especially useful when you need to hold attention in a group setting or make a decision feel more fun than it actually is."
+                              "قوس قزح کا پہیوو کلاسکک گھومنے والے پہیوو کا ایک رنگین تغییر ہے جو مرئی روشنی کی طیف سے ہر سیگمنٹ کو ایک الگ رنگ دیتا ہے۔ جہاں ایک معیاری ہاں یا نہیں کا پہیوو دو ثابت رنگ استعمال کر سکتا ہے، وہیں قوس قزح کا پہیوو سرخ، نارنجی، پیلا، ہرا، نیلا، جامنی اور بینجی جیسے رنگوں کو پورے پہیوو پر تقسیم کرتا ہے، ایک بصری طور پر شاندار گھومنے کا تجربہ بناتا ہے۔",
+                              "قوس قزح کے پہیوو کے پیچھے کا تصور وہی اصول ہے جو ڈیزائن، فن اور قدرت میں قوس قزح گریڈینٹس کو مقبول بناتا ہے۔ ہر رنگ پہیوو کے برابر حصے پر قبضہ کرتا ہے، اس لیے بصری تنوع کے نتیجے کی بے ترتیبی کو متاثر نہیں کرتا۔ نتیجہ ابھی بھی فزکس پر مبنی نقل و حرکت سے طے ہوتا ہے، رنگ کی ترجیح یا سیگمنٹ کے سائز سے نہیں۔",
+                              "قوس قزح کے پہیوو تعلیم دہندگان، تقریب کے منظم کنندگان، اور ہر اس شخص کے درمیان مقبول ہیں جو ایک سادہ دو رنگ کے سپنر کو بہت سادہ سمجھتا ہے۔ رنگوں کا طیف ہر سپن کو زیادہ زندہ محسوس کراتا ہے، جو خاص طور پر اس وقت مفید ہوتا ہے جب آپ کو گروپ کے ماحول میں توجہ برقرار رکھنی ہو یا فیصلے کو اصل سے زیادہ تفریحی محسوس کرانا ہو۔"
                         ]
                   },
                   {
-                        "title": "How the Rainbow Wheel Works",
+                        "title": "قوس قزح کا پہیوو کیسے کام کرتا ہے",
                         "content": [
-                              "The rainbow wheel uses the same randomization engine as every other spinner on this site. When you click the spin button, the wheel receives a random starting velocity and begins rotating. Browser-based physics simulate friction and deceleration until the wheel comes to a complete stop on a random segment.",
-                              "What makes the rainbow version visually different is the color distribution. Each segment is assigned a hue from a circular color gradient, typically based on the HSL color model. This means adjacent segments always have distinct, high-contrast colors, making it easy to see where the wheel lands even at high speed.",
-                              "The auto-gradient feature regenerates the color distribution based on the current number of entries. If you add or remove segments, the wheel recalculates the spacing to keep colors evenly distributed."
+                              "قوس قزح کا پہیوو اس سائٹ کے ہر دوسرے سپنر کے جیسے ہی بے ترتیبی کا انجن استعمال کرتا ہے۔ جب آپ سپن بٹن کلک کرتے ہیں، تو پہیوو کو ایک بے ترتیب شروعی رفتار ملتی ہے اور گھومنا شروع کرتا ہے۔ براوزر پر مبنی فزکس رگڑ اور ماندگی کی نقل و حرکت کرتے ہیں جب تک پہیوو ایک بے ترتیب سیگمنٹ پر مکمل طور پر نہیں رکتا۔",
+                              "جو قوس قزح ورژن کو بصری طور پر مختلف بناتا ہے وہ رنگ کی تقسیم ہے۔ ہر سیگمنٹ کو ایک دائرہ گرد رنگ گریڈینٹ سے ایک رنگ دیا جاتا ہے، عام طور پر HSL رنگ ماڈل پر مبنی۔ اس کا مطلب ہے کہ آس پاس کے سیگمنٹس ہمیشہ الگ، اعلیٰ کنٹراسٹ والے رنگ رکھتے ہیں، جس سے تیز رفتاری پر بھی دیکھنا آسان ہوتا ہے کہ پہیوو کہاں اترتا ہے۔",
+                              "آٹو گریڈینٹ فیچر موجودہ انٹریز کی تعداد کی بنیاد پر رنگ کی تقسیم کو دوبارہ بناتا ہے۔ اگر آپ سیگمنٹس شامل یا ہٹاتے ہیں، تو پہیوو رنگوں کو یکساں تقسیم کرنے کے لیے فاصلے کا حساب دوبارہ لگاتا ہے۔"
                         ]
                   },
                   {
-                        "title": "When to Use a Rainbow Wheel",
+                        "title": "قوس قزح کا پہیوو کب استعمال کریں",
                         "content": [
-                              "Rainbow wheels work best in situations where visual engagement matters as much as the random outcome. Here are the most common scenarios where a colorful spinner adds value:"
+                              "قوس قزح کے پہیوو ان صورتوں میں سب سے اچھا کام کرتے ہیں جہاں بصری مشغولیت بے ترتیب نتیجے کے برابر اہم ہوتی ہے۔ یہاں سب سے عام صورتحال ہیں جہاں رنگین سپنر فائدہ مند ہوتا ہے:"
                         ],
                         "subsections": [
                               {
-                                    "title": "Classroom and Educational Settings",
-                                    "content": "Teachers use rainbow wheels to pick students for activities, assign groups, or make lesson transitions more exciting. The bright colors hold children's attention better than a plain spinner, and the visual variety makes repeated spins feel fresh throughout a school day."
+                                    "title": "کلاس روم اور تعلیمی ترتیبات",
+                                    "content": "استاد قوس قزح کے پہیوو استعمال کرتے ہیں تعلیمی سرگرمیوں کے لیے طلباء کا انتخاب کرنے، گروپ بنانے، یا اسباق کی تبدیلیوں کو زیادہ دلچسپ بنانے کے لیے۔ چمکدار رنگ بچوں کی توجہ سادہ سپنر سے بہتر رکھتے ہیں، اور بصری تنوع مکرر سپن کو سکول کے دن بھر تازہ محسوس کراتا ہے۔"
                               },
                               {
-                                    "title": "Party Games and Social Gatherings",
-                                    "content": "At parties, a rainbow wheel adds flair to decision-making games. Whether you are deciding who goes next, picking a challenge, or choosing a snack, the colorful display makes the moment feel more like a game and less like a random assignment."
+                                    "title": "پارٹی کھیلیں اور سماجی اجتماعات",
+                                    "content": "پارٹیوں میں، قوس قزح کا پہیوو فیصلہ کرنے والی کھیلوں میں شان اضافہ کرتا ہے۔ چاہے آپ فیصلہ کر رہے ہوں کہ اگلا کون جائے گا، کوئی چیلنج چن رہے ہوں، یا ایک کھانے کا انتخاب کر رہے ہوں، رنگین ڈسپلے لمحے کو ایک کھیل کی طرح محسوس کراتا ہے۔"
                               },
                               {
-                                    "title": "Creative Projects and Design Inspiration",
-                                    "content": "Designers and artists sometimes use a rainbow wheel to pick color palettes, assign themes, or make random creative decisions. The fact that the wheel itself displays a full spectrum makes it a natural fit for creative contexts."
+                                    "title": "تخلیقی پروجیکٹس اور ڈیزائن کی ترغیب",
+                                    "content": "ڈیزائنر اور فنکار کبھی کبھی رنگ کی پیٹریاں چننے، تھیمز مقرر کرنے، یا بے ترتیب تخلیقی فیصلے کرنے کے لیے قوس قزح کا پہیوو استعمال کرتے ہیں۔ اس حقیقت کہ پہیوو خود مکمل طیف ظاہر کرتا ہے اسے تخلیقی سیاق و سباق کے لیے قدرتی فٹ بناتا ہے۔"
                               },
                               {
-                                    "title": "Daily Decisions That Need a Fun Twist",
-                                    "content": "For personal use, the rainbow wheel turns mundane choices into small moments of entertainment. Picking what to eat, deciding which errand to run first, or choosing a weekend activity all become slightly more enjoyable when the wheel brings a burst of color to the process."
+                                    "title": "روزمرہ فیصلے جنہیں تفریحی مود کی ضرورت ہے",
+                                    "content": "ذاتی استعمال کے لیے، قوس قزح کا پہیوو عام انتخابات کو معمولی تفریح کے لمحوں میں بدل دیتا ہے۔ کیا کھانا ہے چننا، پہلے کون سا کام کرنا ہے، یا ہفتے کے آخر میں کیا کرنا ہے یہ سب تھوڑا سا زیادہ لذت مند ہو جاتا ہے جب پہیوو عمل میں رنگوں کا شعلہ لاتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Rainbow Wheel vs Standard Yes or No Wheel",
+                        "title": "قوس قزح کا پہیوو بنام معیاری ہاں یا نہیں کا پہیوو",
                         "content": [
-                              "Both tools use the same underlying randomization. The difference is entirely visual. A standard yes or no wheel displays two segments with solid contrasting colors. A rainbow wheel applies a spectrum gradient across all segments, regardless of how many there are.",
-                              "Choose the standard wheel when you want a clean, minimal look and do not need extra visual stimulation. Choose the rainbow wheel when you want the spin to feel more like an event."
+                              "دونوں اbles حالت میں ایک ہی بنیادی بے ترتیبی استعمال کرتے ہیں۔ فرق مکمل طور پر بصری ہے۔ ایک معیاری ہاں یا نہیں کا پہیوو دو سیگمنٹس کو ثابت متضاد رنگوں میں دکھاتا ہے۔ قوس قزح کا پہیوو تمام سیگمنٹس پر ایک طیف گریڈینٹ لاگو کرتا ہے، چاہے وہ کتنے ہی ہوں۔",
+                              "معیاری پہیوو چنیں جب آپ ایک صاف، کم از کم لوک ایجے اور زیادہ بصری حوصلہ افزائی نہ چاہیں۔ قوس قزح کا پہیوو چنیں جب آپ چاہیں کہ سپن کو زیادہ ایونٹ جیسا محسوس ہو۔"
                         ]
                   },
                   {
-                        "title": "Customizing the Rainbow Wheel",
+                        "title": "قوس قزح کے پہیوو کی تخصیص",
                         "content": [
-                              "The customization panel lets you change almost everything about the wheel. You can add or remove entries, rename segments, and adjust colors. The auto-gradient button regenerates the color distribution so that all segments remain visually distinct even as the count changes.",
-                              "For users who want more control, the sidebar panel provides entry management, visual styling, and physics settings. You can adjust spin duration, friction, and result display behavior."
+                              "تخصیص پینل آپ کو پہیوو کے تقریباً ہر چیز کو بدلنے دیتا ہے۔ آپ انٹریز شامل یا ہٹا سکتے ہیں، سیگمنٹس کا نام بدل سکتے ہیں، اور رنگ ایڈجسٹ کر سکتے ہیں۔ آٹو گریڈینٹ بٹن رنگ کی تقسیم کو دوبارہ بناتا ہے تاکہ تمام سیگمنٹس بصری طور پر الگ رہیں چاہے تعداد کتنی بھی ہو۔",
+                              "ان صارفین کے لیے جو مزید کنٹرول چاہتے ہیں، سائیڈ بار پینل انٹری مینجمنٹ، بصری اسٹائلنگ، اور فزکس کی ترتیبات فراہم کرتا ہے۔ آپ سپن کی مدت، رگڑ، اور نتیجے کی ڈسپلے کی حالت ایڈجسٹ کر سکتے ہیں۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a rainbow wheel?",
-                        "a": "A rainbow wheel is a colorful spinning tool that assigns a rainbow gradient to each segment. Instead of plain text labels, every slice gets a distinct hue from the visible light spectrum, making the spin more visually engaging while keeping the same probability as a standard spinner."
+                        "q": "قوس قزح کا پہیوو کیا ہے؟",
+                        "a": "قوس قزح کا پہیوو ایک رنگین گھومنے والا ٹول ہے جو ہر سیگمنٹ کو ایک قوس قزح گریڈینٹ دیتا ہے۔ سادہ ٹیکسٹ لیبلز کے بجائے، ہر ٹکڑے کو مرئی روشنی کی طیف سے ایک الگ رنگ ملتا ہے، جو اسے زیادہ بصری طور پر دلکش بناتا ہے جبکہ معیاری سپنر کے جیسی ہی ممکنہ خصوصیت برقرار رہتی ہے۔"
                   },
                   {
-                        "q": "How is a rainbow wheel different from a regular yes or no wheel?",
-                        "a": "A regular yes or no wheel uses two segments with solid colors. A rainbow wheel distributes multiple colors evenly around the wheel, so even when the outcome is the same, the visual presentation is more dynamic. The randomization logic is identical."
+                        "q": "قوس قزح کا پہیوو باقی عام ہاں یا نہیں کے پہیوو سے کیسے مختلف ہے؟",
+                        "a": "ایک عام ہاں یا نہیں کا پہیوو دو سیگمنٹس کو ثابت رنگوں کے ساتھ استعمال کرتا ہے۔ قوس قزح کا پہیوو متعدد رنگوں کو پہیوو کے گرد برابر تقسیم کرتا ہے، اس لیے نتیجہ ایک ہی ہونے پر بھی، بصری تعارف زیادہ متحرک ہوتا ہے۔ بے ترتیبی کا منطق بالکل ویسے ہی ہے۔"
                   },
                   {
-                        "q": "Is the rainbow wheel truly random?",
-                        "a": "Yes. The wheel uses browser-based physics simulation with randomized starting velocity, friction, and angle. Each spin produces an unpredictable result because the initial conditions vary every time."
+                        "q": "کیا قوس قزح کا پہیوو واقعی بے ترتیب ہے؟",
+                        "a": "ہاں۔ پہیوو براوزر پر مبنی فزکس سیمیولیشن استعمال کرتا ہے جس میں بے ترتیب شروعی رفتار، رگڑ، اور زاویہ ہوتا ہے۔ ہر سپن ایک غیر متوقع نتیجہ پیدا کرتا ہے کیونکہ ابتدائی شرائط ہر بار مختلف ہوتی ہیں۔"
                   },
                   {
-                        "q": "Can kids use the rainbow wheel?",
-                        "a": "The rainbow wheel is well-suited for children. The bright colors make it visually appealing for classroom activities, and the simple spin mechanic requires no reading or setup."
+                        "q": "کیا بچے قوس قزح کا پہیوو استعمال کر سکتے ہیں؟",
+                        "a": "قوس قزح کا پہیوو بچوں کے لیے بہت مناسب ہے۔ چمکدار رنگ اسے تعلیمی سرگرمیوں کے لیے بصری طور پر پسندیدہ بناتے ہیں، اور سادہ سپن میکانک کو پڑھنے یا ترتیب کی ضرورت نہیں ہوتی۔"
                   },
                   {
-                        "q": "Can I add my own entries to the rainbow wheel?",
-                        "a": "Yes. The customization sidebar lets you add, remove, or rename any entry on the wheel. You can type custom labels, change segment colors, and adjust the number of slices."
+                        "q": "کیا میں قوس قزح کے پہیوو میں اپنی انٹریز شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ تخصیص سائیڈ بار آپ کو پہیوو پر کسی بھی انٹری کو شامل، ہٹا یا نام بدلنے دیتا ہے۔ آپ حسب ضرورت لیبلز ٹائپ کر سکتے ہیں، سیگمنٹ کے رنگ بدل سکتے ہیں، اور ٹکڑوں کی تعداد ایڈجسٹ کر سکتے ہیں۔"
                   },
                   {
-                        "q": "Is the rainbow wheel free to use?",
-                        "a": "The rainbow wheel is completely free with no signup, no ads covering the tool, and no usage limits."
-                  },
-                  {
-                        "q": "Does the rainbow wheel work on mobile?",
-                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport, and the spin button and result display adjust for touch interaction."
+                        "q": "کیا قوس قزح کا پہیوو استعمال کرنے کے لیے مفت ہے؟",
+                        "a": "قوس قزح کا پہیوو سائن اپ، اشتہارات، یا استعمال کی حدود کے بغیر مکمل طور پر مفت ہے۔"
                   }
             ]
       },
@@ -2772,108 +2768,108 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     ur: {
-            "title": "تقدیر کا پہیۇۇۇ",
-            "subtitle": "تقدیر کی تھیم والا اسپنروں؄",
+            "title": "تقدیر کا پہیوو",
+            "subtitle": "تقدیر کی تھیم والا اسپنر۔",
             "howToUse": {
-                  "title": "How to Use the Wheel of Fate",
-                  "intro": "The wheel of fate is ready to spin in seconds. Here is how it works:",
+                  "title": "تقدیر کے پہیوو کیسے استعمال کریں",
+                  "intro": "تقدیر کا پہیوو سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Review the Outcomes",
-                              "desc": "Look at the default outcomes on the wheel. Each segment represents a possible fate. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "نتائج کا جائزہ لیں",
+                              "desc": "پہیوو پر ڈیفالٹ نتائج کو دیکھیں۔ ہر سیگمنٹ ایک ممکنہ تقدیر کی نمائندگی کرتا ہے۔ جو آپ کو چاہیے انہیں رکھیں، یا اپنے نتائج شامل کرنے کے لیے تخصیص سائیڈ بار کھولیں۔"
                         },
                         {
-                              "title": "Adjust the Weights",
-                              "desc": "Use the weight sliders below the wheel to make certain outcomes more or less likely. A weight of 3x makes an outcome three times more probable than a 1x weight."
+                              "title": "وزن ایڈجسٹ کریں",
+                              "desc": "پہیوو کے نیچے وزن اسٹائیڈرز کا استعمال کر کے کچھ نتائج کو زیادہ یا کم ممکن بنائیں۔ 3x وزن نتیجے کو 1x وزن سے تین گنا زیادہ ممکن بناتا ہے۔"
                         },
                         {
-                              "title": "Spin and Accept the Result",
-                              "desc": "Press the spin button and watch the cosmic wheel rotate. When it stops, the winning fate appears with a dramatic reveal. Accept what the fates have chosen."
+                              "title": "گھمائیں اور نتیجہ قبول کریں",
+                              "desc": "سپن بٹن دبائیں اور کائناتی پہیوو کو گھومتے دیکھیں۔ جب یہ رکتا ہے، تو جیتنے والی تقدیر نمائش کے ساتھ ظاہر ہوتی ہے۔ جو تقدیر نے چنا اسے قبول کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Wheel of Fate?",
+                        "title": "تقدیر کا پہیوو کیا ہے؟",
                         "content": [
-                              "The wheel of fate is a decision spinner built around the idea of destiny. Where a standard random wheel presents neutral choices, the wheel of fate frames outcomes as dramatic turning points — moments where the course of events shifts in an unexpected direction. The dark cosmic visual theme, weighted probability system, and thematic default entries all reinforce this sense of gravity.",
-                              "The concept draws from centuries of cultural storytelling about fate, destiny, and the forces that shape human experience. From the Greek Moirai who spun the thread of life, to the medieval Rota Fortunae that symbolized the rise and fall of kings, the idea of a spinning wheel determining outcomes has deep roots in mythology and philosophy.",
-                              "This digital version translates that mythology into a practical tool. The wheel of fate gives users a way to let chance decide between multiple outcomes while retaining control over how likely each outcome is."
+                              "تقدیر کا پہیوو نصیب کے خیال کے گرد بنایا گیا ایک فیصلہ ساز اسپنر ہے۔ جہاں ایک معیاری بے ترتیب پہیوو غیر جانبدار انتخابات پیش کرتا ہے، وہیں تقدیر کا پہیوو نتائج کو ناٹکی مل بندیوں کے طور پر پیش کرتا ہے — وہ لمحے جب واقعات کا رخ غیر متوقع سمتوں میں بدلتا ہے۔ اندھیری کائناتی بصری تھیم، وزنی ممکنہ خصوصیت نظام، اور تھیمی ڈیفالٹ انٹریز سب اس گہرائی کے احساس کو تقویت دیتے ہیں۔",
+                              "یہ تصور قرنوں سے تقدیر، نصیب اور معاشرے کی شکل دینے والی طاقتوں کے بارے میں ثقافتی کہانیوں سے لیا گیا ہے۔ یونانی مائرائی سے جنہوں نے زندگی کا دھاگا سپن کیا، قرون وسطی کے روٹا فورچونے سے جو بادشاہوں کی بقا و زوال کی علامت تھی، نتائج کا فیصلہ کرنے والے گھومنے والے پہیوو کا خیال پورانی اور فلسفے میں گہری جڑیں رکھتا ہے۔",
+                              "یہ ڈیجیٹل ورژن اس پورانی کہانی کو ایک عملی ٹول میں بدل دیتا ہے۔ تقدیر کا پہیوو صارفین کو ممکنہ نتائج کے درمیان صبر کو فیصلہ کرنے دیتا ہے جبکہ ہر نتیجے کی ممکنہ خصوصیت پر کنٹرول برقرار رکھتا ہے۔"
                         ]
                   },
                   {
-                        "title": "The History Behind the Wheel of Fate",
+                        "title": "تقدیر کے پہیوو کے پیچھے تاریخ",
                         "content": [
-                              "The idea of fate as a spinning wheel appears across many cultures. In Greek mythology, the three Moirai — Clotho, Lachesis, and Atropos — controlled the thread of human life. Clotho spun it, Lachesis measured it, and Atropos cut it.",
-                              "The Roman concept of Fortuna expanded this idea. Fortuna was the goddess of chance, and her wheel — the Rota Fortunae — could raise a person to power or cast them into ruin without warning.",
-                              "In modern culture, the wheel of fate appears in video games, fantasy literature, and tabletop RPGs as a mechanic for determining random outcomes with narrative weight."
+                              "گھومنے والے پہیوو کے طور پر تقدیر کا خیال بہت سی ثقافتوں میں پایا جاتا ہے۔ یونانی پورانی کہانیوں میں، تین مائرائی — کلائتھو، لاخیسیس، اور اٹروپس — نے انسانی زندگی کا دھاگا کنٹرول کیا۔ کلائتھو نے اسے سپن کیا، لاخیسیس نے اسے ناپا، اور اٹروپس نے اسے کاٹا۔",
+                              "رومن فورچونا کے تصور نے اس خیال کو وسعت دی۔ فورچونا قسمت کی دیوی تھی، اور اس کا پہیوو — روٹا فورچونے — کسی شخص کو بغیر خبردار کیے طاقت پر اٹھا سکتا تھا یا تباہی میں گرا سکتا تھا۔",
+                              "جدید ثقافت میں، تقدیر کا پہیوو ویڈیو گیمز، فنتیزی ادب، اور ٹیبل ٹاپ آر پی جیز میں بے ترتیب نتائج کو کہانی بوجھ کے ساتھ طے کرنے کے طور پر پایا جاتا ہے۔"
                         ]
                   },
                   {
-                        "title": "How the Weighted System Works",
+                        "title": "وزنی نظام کیسے کام کرتا ہے",
                         "content": [
-                              "Unlike a standard spinner where every outcome has equal probability, the wheel of fate includes a weight editor. Each segment has a slider that ranges from 1x to 5x. A weight of 1x gives the segment normal probability.",
-                              "This system is useful when you want certain outcomes to be rare while others are common. For example, in an RPG scenario, you might set Victory to 4x and Betrayal to 1x.",
-                              "The customization sidebar also lets you add or remove entries entirely. When you change the entry list, the weight editor resets to even distribution across all new segments."
+                              "ایک معیاری اسپنر کے برعکس جہاں ہر نتیجے کی مساوی ممکنہ خصوصیت ہوتی ہے، تقدیر کے پہیوو میں ایک وزن ایڈیٹر ہوتا ہے۔ ہر سیگمنٹ کی 1x سے 5x تک ایک اسٹائیڈر ہوتی ہے۔ 1x وزن سیگمنٹ کو نارمل ممکنہ خصوصیت دیتا ہے۔",
+                              "یہ نظام اس وقت مفید ہوتا ہے جب آپ چاہتے ہیں کہ کچھ نتائج نایاب ہوں جبکہ دوسرے عام ہوں۔ مثال کے طور پر، ایک آر پی جی منظر میں، آپ فتح کو 4x اور دھوکہ دہی کو 1x سیٹ کر سکتے ہیں۔",
+                              "تخصیص سائیڈ بار آپ کو انٹریز کو مکمل طور پر شامل یا ہٹانے بھی دیتا ہے۔ جب آپ انٹری کی فہرست بدلتے ہیں، تو وزن ایڈیٹر تمام نئے سیگمنٹس میں یکساں تقسیم کے لیے ری سیٹ ہو جاتا ہے۔"
                         ]
                   },
                   {
-                        "title": "When to Use the Wheel of Fate",
+                        "title": "تقدیر کے پہیوو کب استعمال کریں",
                         "content": [
-                              "The wheel of fate works best when the decision carries emotional weight or when the framing matters as much as the outcome itself."
+                              "تقدیر کا پہیوو اس وقت سب سے اچھا کام کرتا ہے جب فیصلے میں جذباتی بوجھ ہو یا جب فریمنگ نتیجے کے برابر اہم ہو۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Tabletop RPGs and Storytelling",
-                                    "content": "Dungeon masters and game masters use the wheel of fate to resolve dramatic moments in their campaigns. The weighted system lets the GM calibrate odds to match the narrative."
+                                    "title": "ٹیبل ٹاپ آر پی جیز اور کہانی سنا",
+                                    "content": "ڈنجن ماسٹرز اور گیم ماسٹرز تقدیر کے پہیوو کا استعمال اپنے مہم میں ناٹکی لمحوں کو حل کرنے کے لیے کرتے ہیں۔ وزنی نظام گیم ماسٹر کو کہانی کے مطابق امکانات کو ترتیب دینے دیتا ہے۔"
                               },
                               {
-                                    "title": "Writing and Creative Decisions",
-                                    "content": "Authors facing writer's block or looking for plot twists can spin the wheel to determine a character's next move. The fate-themed framing turns a random selection into a creative prompt."
+                                    "title": "لکھنی اور تخلیقی فیصلے",
+                                    "content": "لکھنے میں رکاوٹ کا سامنا کرنے والے مصنفین یا پلاٹ ٹویسٹ کی تلاش میں کردار کی اگلی چال طے کرنے کے لیے پہیوو گھما سکتے ہیں۔ تقدیر کی تھیم والی فریمنگ بے ترتیب انتخاب کو تخلیقی پرامپٹ میں بدل دیتی ہے۔"
                               },
                               {
-                                    "title": "Personal Crossroads",
-                                    "content": "When facing a real decision that feels significant — a career change, a move to a new city, whether to take a risk — the wheel of fate adds a sense of ceremony to the process."
+                                    "title": "ذاتی تقاطع",
+                                    "content": "ایک اہم فیصلے کا سامنا کرتے وقت — کیریئر میں تبدیلی، نئے شہر میں تبدیلی، یا خطرہ مول لینا ہے یا نہیں — تقدیر کا پہیوو عمل میں رسم کا احساس اضافہ کرتا ہے۔"
                               },
                               {
-                                    "title": "Group Games and Activities",
-                                    "content": "For party games or group activities, the wheel of fate adds drama that a standard spinner lacks. The dark aesthetic and thematic outcomes make each spin feel like an event."
+                                    "title": "گروپ کھیلیں اور سرگرمیاں",
+                                    "content": "پارٹی کھیلوں یا گروپ سرگرمیوں کے لیے، تقدیر کا پہیوو اس ناٹک کا اضافہ کرتا ہے جو معیاری اسپنر میں نہیں ہوتا۔ اندھیری خوبصورتی اور تھیمی نتائج ہر سپن کو ایک ایونٹ کی طرح محسوس کراتے ہیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "Wheel of Fate vs Other Decision Tools",
+                        "title": "تقدیر کا پہیوو بنام دیگر فیصلہ ساز اbles",
                         "content": [
-                              "The yes or no wheel is the simplest decision tool — two outcomes, equal probability, instant result. The wheel of fate adds complexity through multiple outcomes and adjustable weights.",
-                              "The oracle tool takes a different approach entirely. Instead of spinning a wheel, you type a question and receive a cryptic answer. The wheel of fate gives you a concrete outcome to act on.",
-                              "For RPG players, the yes and no dice tool offers a different physical metaphor. Rolling dice feels different from spinning a wheel."
+                              "ہاں یا نہیں کا پہیوو سب سے سادہ فیصلہ ساز ٹول ہے — دو نتائج، مساوی ممکنہ خصوصیت، فوری نتیجہ۔ تقدیر کا پہیوو متعدد نتائج اور قابل ترمیم وزن کے ذریعے پیچیدگی اضافہ کرتا ہے۔",
+                              "اوراکل ٹول بالکل الگ نقطہ نظر اختیار کرتا ہے۔ پہیوو گھمانے کے بجائے، آپ سوال ٹائپ کرتے ہیں اور ایک پراسرار جواب ملتا ہے۔ تقدیر کا پہیوو آپ کو عمل کرنے کے لیے ایک یقینی نتیجہ دیتا ہے۔",
+                              "آر پی جی کھلاڑیوں کے لیے، ہاں اور نہیں کے پاسے ٹول ایک مختلف فزیکل استعارہ پیش کرتا ہے۔ پاسے پھینکنا پہیوو گھمانے سے مختلف محسوس ہوتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the wheel of fate?",
-                        "a": "The wheel of fate is a destiny-themed decision spinner that uses weighted outcomes and a dark cosmic visual design. Each segment represents a possible fate or outcome."
+                        "q": "تقدیر کا پہیوو کیا ہے؟",
+                        "a": "تقدیر کا پہیوو نصیب کی تھیم والا ایک فیصلہ ساز اسپنر ہے جو وزنی نتائج اور اندھیری کائناتی بصری ڈیزائن استعمال کرتا ہے۔ ہر سیگمنٹ ایک ممکنہ تقدیر یا نتیجے کی نمائندگی کرتا ہے۔"
                   },
                   {
-                        "q": "How is the wheel of fate different from a yes or no wheel?",
-                        "a": "A yes or no wheel presents two equally likely outcomes. The wheel of fate offers multiple outcomes with adjustable probability weights."
+                        "q": "تقدیر کا پہیوو ہاں یا نہیں کے پہیوو سے کیسے مختلف ہے؟",
+                        "a": "ہاں یا نہیں کا پہیوو دو مساوی ممکنہ نتائج پیش کرتا ہے۔ تقدیر کا پہیوو قابل ترمیم ممکنہ خصوصیت وزن کے ساتھ متعدد نتائج پیش کرتا ہے۔"
                   },
                   {
-                        "q": "What are outcome weights?",
-                        "a": "Outcome weights let you adjust the probability of each segment appearing as the result. A weight of 1x means normal probability. Setting a segment to 3x makes it three times more likely to win."
+                        "q": "نتائج کے وزن کیا ہیں؟",
+                        "a": "نتائج کے وزن آپ کو نتیجے کے طور پر ظاہر ہونے والے ہر سیگمنٹ کی ممکنہ خصوصیت ایڈجسٹ کرنے دیتے ہیں۔ 1x وزن کا مطلب نارمل ممکنہ خصوصیت ہے۔ سیگمنٹ کو 3x پر سیٹ کرنا اسے تین گنا زیادہ جیتنے والا بناتا ہے۔"
                   },
                   {
-                        "q": "Can I use the wheel of fate for RPGs?",
-                        "a": "The wheel of fate is designed with tabletop RPG players in mind. The default entries include dramatic outcomes like Destiny, Redemption, Sacrifice, and Betrayal."
+                        "q": "کیا میں تقدیر کے پہیوو کا آر پی جیز کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "تقدیر کا پہیوو ٹیبل ٹاپ آر پی جی کھلاڑیوں کو مخاطب رکھ کر ڈیزائن کیا گیا ہے۔ ڈیفالٹ انٹریز میں نصیب، کفارہ، قربانی، اور دھوکہ جیسے ناٹکی نتائج شامل ہیں۔"
                   },
                   {
-                        "q": "Is the wheel of fate random?",
-                        "a": "Yes. The wheel uses browser-based physics with randomized starting conditions. Weighted entries affect the probability distribution but do not guarantee outcomes."
+                        "q": "کیا تقدیر کا پہیوو بے ترتیب ہے؟",
+                        "a": "ہاں۔ پہیوو براوزر پر مبنی فزکس استعمال کرتا ہے جس میں بے ترتیب شروعی شرائط ہوتی ہیں۔ وزنی انٹریز ممکنہ خصوصیت کی تقسیم کو متاثر کرتی ہیں لیکن نتائج کی ضمانت نہیں دیتیں۔"
                   },
                   {
-                        "q": "Can I add my own fates to the wheel?",
-                        "a": "Yes. Open the customization sidebar to add, remove, or rename any entry. After changing entries, reset the weight sliders to distribute probability evenly."
+                        "q": "کیا میں اپنی تقدیریں پہیوو میں شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ تخصیص سائیڈ بار کھولیں تاکہ کسی بھی انٹری کو شامل، ہٹا یا نام بدل سکیں۔ انٹریز بدلنے کے بعد، وزن اسٹائیڈرز کو ری سیٹ کریں تاکہ ممکنہ خصوصیت کو یکساں تقسیم کیا جا سکے۔"
                   }
             ]
       },
@@ -4266,100 +4262,100 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     ur: {
-            "title": "ہان نہین اوراکل",
-            "subtitle": "سوال طائپ کریں و بے ترتیب جواب حاصل کریں؄",
+            "title": "ہاں نہیں اوراکل",
+            "subtitle": "سوال ٹائپ کریں اور بے ترتیب جواب حاصل کریں۔",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "ہاں نہیں اوراکل کیسے استعمال کریں",
+                  "intro": "اوراکل آپ کے سوالات کا جواب دینے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "اپنا سوال ٹائپ کریں",
+                              "desc": "ٹیکسٹ ایریا میں ہاں یا نہیں کا سوال درج کریں۔ اوراکل صاف، مخصوص سوالات کے ساتھ سب سے اچھا کام کرتا ہے جو آپ کے سامنے فیصلوں کے بارے میں ہیں۔"
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "دانش کی تلاش کریں",
+                              "desc": "دانش کی تلاش کریں بٹن کلک کریں اور جب اوراکل آپ کے سوال پر غور کرے انتظار کریں۔ جواب ظاہر ہونے سے پہلے مختصر تاخیر توقع کو بڑھاتی ہے۔"
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "جواب پڑھیں",
+                              "desc": "اوراکل ایک تھیم شدہ پیغام، دانش کے متن، اور توانائی ٹیگ کے ساتھ ہاں، نہیں، یا شاید کا جواب ظاہر کرتا ہے۔ اس بارے میں غور کریں کہ جواب آپ کو اپنے فیصلے کے بارے میں کیسا محسوس کراتا ہے۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "ہاں نہیں اوراکل کیا ہے؟",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "ہاں نہیں اوراکل ایک ڈیجیٹل غیب دانی کا ٹول ہے جو ایک منظور شدہ تین مرحلہ کے عمل کے ذریعے ہاں یا نہیں کے سوالات کا جواب دیتا ہے۔ آپ ان پٹ فیلڈ میں سوال ٹائپ کرتے ہیں، جب اوراکل غور کرے انتظار کرتے ہیں، اور آٹ ممکنہ نتائج سے بے ترتیب جواب حاصل کرتے ہیں۔",
+                              "گھومنے والے پہیوو یا سکے پھینکنے کے برعکس، اوراکل بے ترتیبی میں ایک کہانی کی پوشش اضافہ کرتا ہے۔ غور کرنے میں تاخیر توقع پیدا کرتی ہے، تھیم شدہ پیغام ہر جواب کو معنی کا احساس دیتے ہیں، اور توانائی ٹیگ نتیجے کی تشریح کے لیے مختصر راستہ فراہم کرتے ہیں۔",
+                              "ٹول مکمل طور پر آپ کے براوزر میں چلتا ہے۔ کوئی سوالات محفوظ، منتقل یا لاگ نہیں کیے جاتے۔ اوراکل کلائنٹ سائیڈ بے ترتیبی کا استعمال کر کے اپنا جواب پیدا کرتا ہے۔"
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "اوراکل کیسے کام کرتا ہے",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "اوراکل ایک تین مرحلہ کے بہاؤ کی پیروی کرتا ہے۔ پہلے، آپ اپنا سوال ٹیکسٹ ایریا میں ٹائپ کرتے ہیں۔ جب آپ دانش کی تلاش کریں کلک کرتے ہیں، تو ان پٹ ایریا غائب ہو جاتا ہے اور ایک غور کرنے والی اسکرین سے بدل دیا جاتا ہے۔",
+                              "2.5 سیکنڈ کی تاخیر کے بعد، اوراکل اپنا جواب ظاہر کرتا ہے۔ نتیجے میں ہاں، نہیں، یا شاید پل، ایک ایموجی، نقل کردہ پیغام، دانش کا متن، اور ایک توانائی ٹیگ شامل ہوتا ہے۔",
+                              "ایک اور سوال پوچھیں بٹن بہاؤ کو ری سیٹ کرتا ہے، نتیجہ صاف کرتا ہے اور ان پٹ اسکرین پر واپس آتا ہے۔ آپ غیر محدود سوالات پوچھ سکتے ہیں۔"
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "اوراکل کب استعمال کریں",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "اوراکل اس وقت سب سے اچھا کام کرتا ہے جب آپ ایک سادہ ہاں یا نہیں سے زیادہ چاہتے ہیں۔ ہر جواب میں اضافی سیاق و سباق آپ کو غور کرنے کے لیے کچھ دیتا ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "فیصلے جو آپ پہلے سے جانتے ہیں",
+                                    "content": "اکثر لوگ اوراکل سے ان فیصلوں کے بارے میں پوچھتے ہیں جو وہ پہلے سے کر چکے ہیں لیکن یقین چاہتے ہیں۔ اگر اوراکل نہیں کہتا ہے اور آپ مایوس ہوتے ہیں، تو یہ رد عمل آپ کو بتاتا ہے کہ آپ واقعی کیا چاہتے ہیں۔"
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "تخلیقی لکھائی اور کہانی سنا",
+                                    "content": "لکھنے والے تخلیقی ڈیڈلاک کو توڑنے کے لیے اوراکل استعمال کرتے ہیں۔ توانائی ٹیگ اور دانش کا متن نئی تصورات پیدا کر سکتے ہیں جو ایک سادہ ہاں یا نہیں نہیں کر سکتا۔"
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "تفریحی گروپ سرگرمیاں",
+                                    "content": "سماجی ترتیبات میں، اوراکل اس ناٹک کا اضافہ کرتا ہے جو اسپنر میں نہیں ہوتا۔ غور کرنے میں تاخیر، تھیم شدہ پیغام، اور توانائی ٹیگ سب گروپ کو讨论 کرنے کے لیے کچھ دیتے ہیں۔"
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "ذاتی غور و فکر",
+                                    "content": "کچھ لوگ اوراکل کا استعمال جرنلنگ پرامپٹ کے طور پر کرتے ہیں۔ وہ سوال ٹائپ کرتے ہیں، جواب ملتے ہیں، اور اس بارے میں لکھتے ہیں کہ جواب ان کی اصلی احساسات سے کیسے ملا جلتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "اوراکل بنام دیگر فیصلہ ساز اbles",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "ہاں یا نہیں کا پہیوو آپ کو کسی اضافی سیاق و سباق کے بغیر ایک دوہرا نتیجہ دیتا ہے۔ اوراکل ٹیکسٹ ان پٹ، غور کرنے میں تاخیر، اور تھیم شدہ آؤٹ پٹ کے ساتھ مختلف نقطہ نظر اختیار کرتا ہے۔",
+                              "ٹارو کارڈ ریڈر کارڈوں، معانی، اور رہنمائی کے ساتھ مزید کہانی کی گہرائی اضافہ کرتا ہے۔ اوراکل ہاں، نہیں، یا شاید کے جوابات کے ساتھ سادہ ہے۔",
+                              "تقدیر کا پہیوو ناٹکی تھیم کے ساتھ وزنی نتائج پیش کرتا ہے۔ اوراکل ذاتی ہاں/نہیں کے سوالات کے لیے بہتر ہے جہاں آپ فلسفیانہ بوجھ کے ساتھ ایک واحد جواب چاہتے ہیں۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "ہاں نہیں اوراکل کیا ہے؟",
+                        "a": "ہاں نہیں اوراکل ایک متن پر مبنی فیصلہ ساز ٹول ہے جو آپ کے سوالات کو ان کے ساتھ ہم نام پیغامات اور دانش کے متن کے ساتھ ہاں، نہیں، یا شاید کے جوابات فراہم کرتا ہے۔"
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "اوراکل ہاں یا نہیں کے پہیوو سے کیسے مختلف ہے؟",
+                        "a": "اوراکل گھومنے والے پہیوو کے بجائے ٹیکسٹ ان پٹ اور غور کرنے والی انیمیشن استعمال کرتا ہے۔ یہ دو کے بجائے تین ممکنہ جوابات پیدا کرتا ہے، اور ہر جواب میں ایک فلسفیانہ پیغام شامل ہوتا ہے۔"
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "کیا اوراکل بے ترتیب ہے؟",
+                        "a": "ہاں۔ اوراکل آٹ ممکنہ نتائج سے براوزر پر مبنی بے ترتیبی کا استعمال کر کے بے ترتیب نتیجہ منتخب کرتا ہے۔"
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "کیا میں اوراکل سے کسی بھی قسم کا سوال پوچھ سکتا ہوں؟",
+                        "a": "اوراکل ہاں یا نہیں کے سوالات کے ساتھ سب سے اچھا کام کرتا ہے — فیصلے جہاں آپ ایک دوہرا یا تقریباً دوہرا جواب چاہتے ہیں۔"
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "توانائی ٹیگ کا کیا مطلب ہے؟",
+                        "a": "ہر اوراکل نتیجے میں پنرجن، صبر، یا راز جیسا ایک توانائی ٹیگ شامل ہوتا ہے۔ یہ تھیمی لیبلز ہیں جو جواب کے عمومی لہجے کی وضاحت کرتے ہیں۔"
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا اوراکل استعمال کرنے کے لیے مفت ہے؟",
+                        "a": "ہاں نہیں اوراکل سائن اپ، اشتہارات، یا استعمال کی حدود کے بغیر مکمل طور پر مفت ہے۔"
                   }
             ]
       },
