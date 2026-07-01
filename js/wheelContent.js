@@ -1289,215 +1289,215 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Pelangi",
             "subtitle": "Roda pemutar warna-warni yang memberikan nuansa pelangi berbeda.",
             "howToUse": {
-                  "title": "How to Use the Rainbow Wheel",
-                  "intro": "The rainbow wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Pelangi",
+                  "intro": "Roda pelangi siap diputar dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Review the Entries",
-                              "desc": "Look at the default entries on the wheel. Each segment has a label and a distinct rainbow color. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "Periksa Entri",
+                              "desc": "Lihat entri default pada roda. Setiap segmen memiliki label dan warna pelangi yang berbeda. Pertahankan yang Anda inginkan, atau buka panel kustomisasi untuk menambahkan entri sendiri."
                         },
                         {
-                              "title": "Customize If Needed",
-                              "desc": "Use the sidebar to rename entries, change colors, or adjust the number of segments. The auto-gradient button regenerates the color distribution to keep all segments visually distinct."
+                              "title": "Kustomisasi Jika Diperlukan",
+                              "desc": "Gunakan panel untuk mengganti nama entri, mengubah warna, atau menyesuaikan jumlah segmen. Tombol gradien otomatis memperbarui distribusi warna agar semua segmen tetap terlihat berbeda."
                         },
                         {
-                              "title": "Spin and See the Result",
-                              "desc": "Press the spin button and watch the rainbow colors blur as the wheel rotates. When it stops, the winning segment appears with a fanfare. Use the result to make your decision."
+                              "title": "Putar dan Lihat Hasilnya",
+                              "desc": "Tekan tombol putar dan saksikan warna pelangi bergerak saat roda berputar. Ketika berhenti, segmen pemenang muncul dengan suara sorakan. Gunakan hasilnya untuk membuat keputusan Anda."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Rainbow Wheel?",
+                        "title": "Apa Itu Roda Pelangi?",
                         "content": [
-                              "A rainbow wheel is a colorful variation of the classic spinning wheel that assigns a distinct color from the visible light spectrum to each segment. Where a standard yes or no wheel might use two solid colors, a rainbow wheel distributes hues like red, orange, yellow, green, blue, indigo, and violet across the entire wheel, creating a visually striking spinning experience.",
-                              "The concept behind the rainbow wheel draws from the same principle that makes rainbow gradients popular in design, art, and nature. Each color occupies an equal portion of the wheel, so the visual variety does not affect the randomness of the outcome. The result is still determined by physics-based simulation, not by color preference or segment size.",
-                              "Rainbow wheels are popular with educators, event organizers, and anyone who finds a plain two-color spinner too plain. The spectrum of colors makes each spin feel more lively, which is especially useful when you need to hold attention in a group setting or make a decision feel more fun than it actually is."
+                              "Roda pelangi adalah variasi berwarna dari roda pemutar klasik yang memberikan warna berbeda dari spektrum cahaya tampak ke setiap segmen. Di mana roda ya atau tidak standar mungkin menggunakan dua warna solid, roda pelangi mendistribusikan nuansa seperti merah, oranye, kuning, hijau, biru, nila, dan ungu ke seluruh roda, menciptakan pengalaman memutar yang menarik secara visual.",
+                              "Konsep di balik roda pelangi mengambil prinsip yang sama yang membuat gradien pelangi populer dalam desain, seni, dan alam. Setiap warna menempati bagian yang sama dari roda, sehingga variasi visual tidak memengaruhi keacakan hasil. Hasilnya masih ditentukan oleh simulasi berbasis fisika, bukan oleh preferensi warna atau ukuran segmen.",
+                              "Roda pelangi populer di kalangan pendidik, penyelenggara acara, dan siapa saja yang merasa roda pemutar dua warna polos terlalu sederhana. Spektrum warna membuat setiap putaran terasa lebih hidup, yang sangat berguna saat Anda perlu mempertahankan perhatian dalam pengaturan kelompok atau membuat keputusan terasa lebih menyenangkan dari kenyataannya."
                         ]
                   },
                   {
-                        "title": "How the Rainbow Wheel Works",
+                        "title": "Cara Kerja Roda Pelangi",
                         "content": [
-                              "The rainbow wheel uses the same randomization engine as every other spinner on this site. When you click the spin button, the wheel receives a random starting velocity and begins rotating. Browser-based physics simulate friction and deceleration until the wheel comes to a complete stop on a random segment.",
-                              "What makes the rainbow version visually different is the color distribution. Each segment is assigned a hue from a circular color gradient, typically based on the HSL color model. This means adjacent segments always have distinct, high-contrast colors, making it easy to see where the wheel lands even at high speed.",
-                              "The auto-gradient feature regenerates the color distribution based on the current number of entries. If you add or remove segments, the wheel recalculates the spacing to keep colors evenly distributed."
+                              "Roda pelangi menggunakan mesin pengacakan yang sama dengan setiap pemutar lain di situs ini. Saat Anda mengklik tombol putar, roda menerima kecepatan awal acak dan mulai berputar. Fisika berbasis browser mensimulasikan gesekan dan perlambatan hingga roda berhenti sempurna pada segmen acak.",
+                              "Yang membuat versi pelangi berbeda secara visual adalah distribusi warnanya. Setiap segmen diberi nuansa dari gradien warna melingkar, biasanya berdasarkan model warna HSL. Artinya segmen yang bersebelahan selalu memiliki warna yang berbeda dengan kontras tinggi, sehingga mudah dilihat ke mana roda mendarat bahkan pada kecepatan tinggi.",
+                              "Fitur gradien otomatis memperbarui distribusi warna berdasarkan jumlah entri saat ini. Jika Anda menambahkan atau menghapus segmen, roda menghitung ulang jarak untuk menjaga warna tetap terdistribusi merata."
                         ]
                   },
                   {
-                        "title": "When to Use a Rainbow Wheel",
+                        "title": "Kapan Menggunakan Roda Pelangi",
                         "content": [
-                              "Rainbow wheels work best in situations where visual engagement matters as much as the random outcome. Here are the most common scenarios where a colorful spinner adds value:"
+                              "Roda pelangi paling efektif dalam situasi di mana keterlibatan visual sama pentingnya dengan hasil acak. Berikut skenario paling umum di mana pemutar berwarna menambah nilai:"
                         ],
                         "subsections": [
                               {
-                                    "title": "Classroom and Educational Settings",
-                                    "content": "Teachers use rainbow wheels to pick students for activities, assign groups, or make lesson transitions more exciting. The bright colors hold children's attention better than a plain spinner, and the visual variety makes repeated spins feel fresh throughout a school day."
+                                    "title": "Pengaturan Kelas dan Pendidikan",
+                                    "content": "Guru menggunakan roda pelangi untuk memilih siswa dalam aktivitas, membagi kelompok, atau membuat transisi pelajaran lebih menarik. Warna-warna cerah menarik perhatian anak-anak lebih baik daripada pemutar polos, dan variasi visual membuat putaran berulang terasa segar sepanjang hari sekolah."
                               },
                               {
-                                    "title": "Party Games and Social Gatherings",
-                                    "content": "At parties, a rainbow wheel adds flair to decision-making games. Whether you are deciding who goes next, picking a challenge, or choosing a snack, the colorful display makes the moment feel more like a game and less like a random assignment."
+                                    "title": "Permainan Pesta dan Pertemuan Sosial",
+                                    "content": "Di pesta, roda pelangi menambah kemeriahan pada permainan pengambilan keputusan. Entah Anda sedang memutuskan siapa yang berikutnya, memilih tantangan, atau memilih camilan, tampilan berwarna-warni membuat momen terasa lebih seperti permainan dan kurang seperti penugasan acak."
                               },
                               {
-                                    "title": "Creative Projects and Design Inspiration",
-                                    "content": "Designers and artists sometimes use a rainbow wheel to pick color palettes, assign themes, or make random creative decisions. The fact that the wheel itself displays a full spectrum makes it a natural fit for creative contexts."
+                                    "title": "Proyek Kreatif dan Inspirasi Desain",
+                                    "content": "Desainer dan seniman terkadang menggunakan roda pelangi untuk memilih palet warna, menetapkan tema, atau membuat keputusan kreatif secara acak. Fakta bahwa roda itu sendiri menampilkan spektrum penuh membuatnya cocok secara alami untuk konteks kreatif."
                               },
                               {
-                                    "title": "Daily Decisions That Need a Fun Twist",
-                                    "content": "For personal use, the rainbow wheel turns mundane choices into small moments of entertainment. Picking what to eat, deciding which errand to run first, or choosing a weekend activity all become slightly more enjoyable when the wheel brings a burst of color to the process."
+                                    "title": "Keputusan Sehari-hari yang Perlu Sentuhan Menyenangkan",
+                                    "content": "Untuk penggunaan pribadi, roda pelangi mengubah pilihan sehari-hari menjadi momen hiburan kecil. Memilih makanan, memutuskan urutan menjalankan tugas, atau memilih aktivitas akhir pekan menjadi sedikit lebih menyenangkan ketika roda membawa ledakan warna ke dalam prosesnya."
                               }
                         ]
                   },
                   {
-                        "title": "Rainbow Wheel vs Standard Yes or No Wheel",
+                        "title": "Roda Pelangi vs Roda Ya atau Tidak Standar",
                         "content": [
-                              "Both tools use the same underlying randomization. The difference is entirely visual. A standard yes or no wheel displays two segments with solid contrasting colors. A rainbow wheel applies a spectrum gradient across all segments, regardless of how many there are.",
-                              "Choose the standard wheel when you want a clean, minimal look and do not need extra visual stimulation. Choose the rainbow wheel when you want the spin to feel more like an event."
+                              "Kedua alat menggunakan pengacakan yang sama di bawahnya. Perbedaannya sepenuhnya visual. Roda ya atau tidak standar menampilkan dua segmen dengan warna kontras solid. Roda pelangi menerapkan gradien spektrum ke semua segmen, tanpa memperhatikan jumlahnya.",
+                              "Pilih roda standar saat Anda ingin tampilan bersih, minimalis, dan tidak memerlukan stimulasi visual tambahan. Pilih roda pelangi saat Anda ingin putaran terasa lebih seperti sebuah acara."
                         ]
                   },
                   {
-                        "title": "Customizing the Rainbow Wheel",
+                        "title": "Mengkustomisasi Roda Pelangi",
                         "content": [
-                              "The customization panel lets you change almost everything about the wheel. You can add or remove entries, rename segments, and adjust colors. The auto-gradient button regenerates the color distribution so that all segments remain visually distinct even as the count changes.",
-                              "For users who want more control, the sidebar panel provides entry management, visual styling, and physics settings. You can adjust spin duration, friction, and result display behavior."
+                              "Panel kustomisasi memungkinkan Anda mengubah hampir semua hal tentang roda. Anda dapat menambah atau menghapus entri, mengganti nama segmen, dan menyesuaikan warna. Tombol gradien otomatis memperbarui distribusi warna sehingga semua segmen tetap terlihat berbeda meskipun jumlahnya berubah.",
+                              "Untuk pengguna yang menginginkan kontrol lebih, panel sidebar menyediakan manajemen entri, pengaturan visual, dan pengaturan fisika. Anda dapat menyesuaikan durasi putar, gesekan, dan perilaku tampilan hasil."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a rainbow wheel?",
-                        "a": "A rainbow wheel is a colorful spinning tool that assigns a rainbow gradient to each segment. Instead of plain text labels, every slice gets a distinct hue from the visible light spectrum, making the spin more visually engaging while keeping the same probability as a standard spinner."
+                        "q": "Apa itu roda pelangi?",
+                        "a": "Roda pelangi adalah alat pemutar berwarna yang memberikan gradien pelangi ke setiap segmen. Alih-alih label teks polos, setiap irisan mendapatkan nuansa berbeda dari spektrum cahaya tampak, membuat putaran lebih menarik secara visual sambil mempertahankan probabilitas yang sama dengan pemutar standar."
                   },
                   {
-                        "q": "How is a rainbow wheel different from a regular yes or no wheel?",
-                        "a": "A regular yes or no wheel uses two segments with solid colors. A rainbow wheel distributes multiple colors evenly around the wheel, so even when the outcome is the same, the visual presentation is more dynamic. The randomization logic is identical."
+                        "q": "Bagaimana roda pelangi berbeda dari roda ya atau tidak biasa?",
+                        "a": "Roda ya atau tidak biasa menggunakan dua segmen dengan warna solid. Roda pelangi mendistribusikan beberapa warna secara merata di sekitar roda, sehingga meskipun hasilnya sama, presentasi visualnya lebih dinamis. Logika pengacakannya identik."
                   },
                   {
-                        "q": "Is the rainbow wheel truly random?",
-                        "a": "Yes. The wheel uses browser-based physics simulation with randomized starting velocity, friction, and angle. Each spin produces an unpredictable result because the initial conditions vary every time."
+                        "q": "Apakah roda pelangi benar-benar acak?",
+                        "a": "Ya. Roda menggunakan simulasi fisika berbasis browser dengan kecepatan awal, gesekan, dan sudut yang diacak. Setiap putaran menghasilkan hasil yang tidak dapat diprediksi karena kondisi awal bervariasi setiap kali."
                   },
                   {
-                        "q": "Can kids use the rainbow wheel?",
-                        "a": "The rainbow wheel is well-suited for children. The bright colors make it visually appealing for classroom activities, and the simple spin mechanic requires no reading or setup."
+                        "q": "Bisakah anak-anak menggunakan roda pelangi?",
+                        "a": "Roda pelangi sangat cocok untuk anak-anak. Warna-warna cerah membuatnya menarik secara visual untuk aktivitas kelas, dan mekanisme putar sederhana tidak memerlukan membaca atau pengaturan."
                   },
                   {
-                        "q": "Can I add my own entries to the rainbow wheel?",
-                        "a": "Yes. The customization sidebar lets you add, remove, or rename any entry on the wheel. You can type custom labels, change segment colors, and adjust the number of slices."
+                        "q": "Bisakah saya menambahkan entri sendiri ke roda pelangi?",
+                        "a": "Ya. Panel kustomisasi memungkinkan Anda menambah, menghapus, atau mengganti nama entri apa pun pada roda. Anda dapat mengetik label kustom, mengubah warna segmen, dan menyesuaikan jumlah irisan."
                   },
                   {
-                        "q": "Is the rainbow wheel free to use?",
-                        "a": "The rainbow wheel is completely free with no signup, no ads covering the tool, and no usage limits."
+                        "q": "Apakah roda pelangi gratis digunakan?",
+                        "a": "Roda pelangi sepenuhnya gratis tanpa pendaftaran, tanpa iklan yang menutupi alat, dan tanpa batasan penggunaan."
                   },
                   {
-                        "q": "Does the rainbow wheel work on mobile?",
-                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport, and the spin button and result display adjust for touch interaction."
+                        "q": "Apakah roda pelangi berfungsi di ponsel?",
+                        "a": "Roda menyesuaikan dengan ukuran layar apa pun. Di ponsel dan tablet, kanvas menyesuaikan untuk memuat viewport, dan tombol putar serta tampilan hasil menyesuaikan untuk interaksi sentuh."
                   }
             ]
       },
     mr: {
-            "title": "इंद्धनुष चाक",
+            "title": "इंद्रधनुष चाक",
             "subtitle": "रंगीन फिरक्या.",
             "howToUse": {
-                  "title": "How to Use the Rainbow Wheel",
-                  "intro": "The rainbow wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "इंद्रधनुष चाक कसे वापरावे",
+                  "intro": "इंद्रधनुष चाक सेकंदात फिरण्यासाठी तयार आहे. तो कसे काम करते ते पुढे आहे:",
                   "steps": [
                         {
-                              "title": "Review the Entries",
-                              "desc": "Look at the default entries on the wheel. Each segment has a label and a distinct rainbow color. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "प्रविष्टी पहा",
+                              "desc": "चाकावरील डीफॉल्ट प्रविष्टी पहा. प्रत्येक विभागाला एक लेबल आणि एक वेगळा इंद्रधनुष रंग आहे. तुम्हाला हव्या त्या ठेवा, किंवा तुमच्या स्वतःच्या प्रविष्टी जोडण्यासाठी कस्टमायझेशन साइडबार उघडा."
                         },
                         {
-                              "title": "Customize If Needed",
-                              "desc": "Use the sidebar to rename entries, change colors, or adjust the number of segments. The auto-gradient button regenerates the color distribution to keep all segments visually distinct."
+                              "title": "आवश्यक असल्यास कस्टमाइज़ करा",
+                              "desc": "प्रविष्टींचे नाव बदलण्यासाठी, रंग बदलण्यासाठी किंवा विभागांची संख्या समायोजित करण्यासाठी साइडबारचा वापर करा. ऑटो-ग्रेडिएंट बटण सर्व विभाग दृश्यपरपणे वेगळे राहतील यासाठी रंग वितरण पुन्हा तयार करते."
                         },
                         {
-                              "title": "Spin and See the Result",
-                              "desc": "Press the spin button and watch the rainbow colors blur as the wheel rotates. When it stops, the winning segment appears with a fanfare. Use the result to make your decision."
+                              "title": "फिरवा आणि परिणाम पहा",
+                              "desc": "स्पिन बटण दाबा आणि चाक फिरताना इंद्रधनुष रंग अस्पष्ट होताना पहा. ते थांबल्यावर, विजेता विभाग फॅनफेअरसह दिसतो. तुमचा निर्णय घेण्यासाठी परिणामाचा वापर करा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Rainbow Wheel?",
+                        "title": "इंद्रधनुष चाक म्हणजे काय?",
                         "content": [
-                              "A rainbow wheel is a colorful variation of the classic spinning wheel that assigns a distinct color from the visible light spectrum to each segment. Where a standard yes or no wheel might use two solid colors, a rainbow wheel distributes hues like red, orange, yellow, green, blue, indigo, and violet across the entire wheel, creating a visually striking spinning experience.",
-                              "The concept behind the rainbow wheel draws from the same principle that makes rainbow gradients popular in design, art, and nature. Each color occupies an equal portion of the wheel, so the visual variety does not affect the randomness of the outcome. The result is still determined by physics-based simulation, not by color preference or segment size.",
-                              "Rainbow wheels are popular with educators, event organizers, and anyone who finds a plain two-color spinner too plain. The spectrum of colors makes each spin feel more lively, which is especially useful when you need to hold attention in a group setting or make a decision feel more fun than it actually is."
+                              "इंद्रधनुष चाक हा क्लासिक स्पिनिंग व्हीलचा एक रंगीन विकल्प आहे जो प्रत्येक विभागाला दृश्यमान प्रकाश स्पेक्ट्रममधील एक वेगळा रंग देतो. जिथे मानक हो किंवा नाही चाक दोन गट रंग वापरू शकतो, तिथे इंद्रधनुष चाक लाल, नारिंगी, पिवळा, हिरवा, निळा, इंडिगो आणि जांभळा रंग संपूर्ण चाकावर वितरित करतो, ज्यामुळे एक दृश्यपरपणे प्रभावी स्पिनिंग अनुभव निर्माण होतो.",
+                              "इंद्रधनुष चाकामागील संकल्पना त्याच सिद्धांतावरून आली आहे ज्यामुळे डिझाइन, कला आणि निसर्गात इंद्रधनुष ग्रेडिएंट्स लोकप्रिय आहेत. प्रत्येक रंग चाकाच्या समान भागात असतो, त्यामुळे दृश्य विविधता यादृच्छिकतेवर परिणाम करत नाही. परिणाम अजूनह भौतिक-आधारित अनुकरणाद्वारे ठरवला जातो, रंग प्राधान्य किंवा विभाग आकाराद्वारे नाही.",
+                              "इंद्रधनुष चाक शिक्षक, कार्यक्रम आयोजक आणि साधे दोन-रंग स्पिनर खूप साधे वाटते अशा कोणालाही यांत्र लोकप्रिय आहेत. रंगांचे स्पेक्ट्रम प्रत्येक स्पिनला अधिक उत्तेजक वाटते, जे गट सेटिंगमध्ये लक्ष केंद्रित ठेवावे लागते किंवा निर्णय वास्तवापेक्षा अधिक मजेदार वाटावा लागते तेव्हा विशेषतः उपयुक्त असते."
                         ]
                   },
                   {
-                        "title": "How the Rainbow Wheel Works",
+                        "title": "इंद्रधनुष चाक कसे काम करते",
                         "content": [
-                              "The rainbow wheel uses the same randomization engine as every other spinner on this site. When you click the spin button, the wheel receives a random starting velocity and begins rotating. Browser-based physics simulate friction and deceleration until the wheel comes to a complete stop on a random segment.",
-                              "What makes the rainbow version visually different is the color distribution. Each segment is assigned a hue from a circular color gradient, typically based on the HSL color model. This means adjacent segments always have distinct, high-contrast colors, making it easy to see where the wheel lands even at high speed.",
-                              "The auto-gradient feature regenerates the color distribution based on the current number of entries. If you add or remove segments, the wheel recalculates the spacing to keep colors evenly distributed."
+                              "इंद्रधनुष चाक या साइटवरील प्रत्येक इतर स्पिनरप्रमाणेच त्याच यादृच्छिकीकरण इंजिन वापरतो. तुम्ही स्पिन बटण क्लिक केल्यावर, चाकाला एक यादृच्छिक सुरुवातीचा वेग मिळतो आणि फिरू लागतो. ब्राउझर-आधारित भौतिकशास्त्र चाक एका यादृच्छिक विभागावर पूर्णपणे थांबेपर्यंत घर्षण आणि मंदगती अनुकरणित करते.",
+                              "इंद्रधनुष आवृत्तीला दृश्यपरपणे भिन्न बनवणारे हे रंग वितरण आहे. प्रत्येक विभागाला एका वृत्ताकार रंग ग्रेडिएंटमधून एक रंग दिला जातो, सामान्यतः HSL रंग मॉडेलवर आधारित. याचा अर्थ जवळच्या विभागांना नेहमी भिन्न, उच्च-प्रतिबिंब रंग असतात, ज्यामुळे उच्च वेगावरही चाक कुठे पडते ते पाहणे सोपे होते.",
+                              "ऑटो-ग्रेडिएंट वैशिष्ट्य सध्याच्या प्रविष्टींच्या संख्येवर आधारित रंग वितरण पुन्हा तयार करते. तुम्ही विभाग जोडले किंवा काढले तरी, चाक रंग समानपणे वितरित राहतील यासाठी स्पेसिंग पुन्हा मोजतो."
                         ]
                   },
                   {
-                        "title": "When to Use a Rainbow Wheel",
+                        "title": "इंद्रधनुष चाक कधी वापरावा",
                         "content": [
-                              "Rainbow wheels work best in situations where visual engagement matters as much as the random outcome. Here are the most common scenarios where a colorful spinner adds value:"
+                              "इंद्रधनुष चाक अशा परिस्थितींमध्ये सर्वोत्तम काम करतो जिथे दृश्य संलग्नता यादृच्छिक परिणामाप्रमाणेच महत्त्वाची असते. रंगीन स्पिनर मूल्य जोडत अशा सर्वात सामान्य परिस्थिती पुढे आहेत:"
                         ],
                         "subsections": [
                               {
-                                    "title": "Classroom and Educational Settings",
-                                    "content": "Teachers use rainbow wheels to pick students for activities, assign groups, or make lesson transitions more exciting. The bright colors hold children's attention better than a plain spinner, and the visual variety makes repeated spins feel fresh throughout a school day."
+                                    "title": "शाळा आणि शैक्षणिक सेटिंग्ज",
+                                    "content": "शिक्षक क्रियाकलापांसाठी विद्यार्थ्यांनी निवडण्यासाठी, गट वाटण्यासाठी किंवा अभ्यास संक्रमण अधिक उत्तेजक बनवण्यासाठी इंद्रधनुष चाक वापरतात. उजळ रंग मुलांचे लक्ष साध्या स्पिनरपेक्षा चांगले ठेवतात, आणि दृश्य विविधता शाळेतील दिवसभरात वारंवार स्पिन ताजे वाटते."
                               },
                               {
-                                    "title": "Party Games and Social Gatherings",
-                                    "content": "At parties, a rainbow wheel adds flair to decision-making games. Whether you are deciding who goes next, picking a challenge, or choosing a snack, the colorful display makes the moment feel more like a game and less like a random assignment."
+                                    "title": "पार्टी खेळ आणि सामाजिक एकत्रित",
+                                    "content": "पार्टीमध्ये, इंद्रधनुष चाक निर्णय घेण्याच्या खेळांमध्ये फ्लेअर जोडतो. तुम्ही पुढचा कोण जाणार ते ठरवत असाल, आव्हान निवडत असाल, किंवा स्नॅक निवडत असाल, रंगीन प्रदर्शन त्या क्षणाला खेळासारखे वाटते आणि यादृच्छिक वाटण्यापेक्षा कमी वाटते."
                               },
                               {
-                                    "title": "Creative Projects and Design Inspiration",
-                                    "content": "Designers and artists sometimes use a rainbow wheel to pick color palettes, assign themes, or make random creative decisions. The fact that the wheel itself displays a full spectrum makes it a natural fit for creative contexts."
+                                    "title": "सर्जनशील प्रकल्प आणि डिझाइन प्रेरणा",
+                                    "content": "डिझाइनर आणि कलाकार कधी कधी रंग पॅलेट निवडण्यासाठी, थीम निवडण्यासाठी किंवा यादृच्छिक सर्जनशील निर्णय घेण्यासाठी इंद्रधनुष चाक वापरतात. स्वतः चाक संपूर्ण स्पेक्ट्रम दर्शवतो हे तथ्य सर्जनशील संदर्भांसाठी नैसर्गिक जुळणी देते."
                               },
                               {
-                                    "title": "Daily Decisions That Need a Fun Twist",
-                                    "content": "For personal use, the rainbow wheel turns mundane choices into small moments of entertainment. Picking what to eat, deciding which errand to run first, or choosing a weekend activity all become slightly more enjoyable when the wheel brings a burst of color to the process."
+                                    "title": "मजेदार आव्हान आवश्यक असलेले दैनंदिन निर्णय",
+                                    "content": "वैयक्तिक वापरासाठी, इंद्रधनुष चाक सामान्य निवडींना थोड्या मनोरंजनाच्या क्षणांमध्ये बदलतो. काय खायचे ते निवडणे, कोणता काम प्रथम करायचा ते ठरवणे किंवा वीकेंडची क्रिया निवडणे हे सर्व चाक प्रक्रियेत रंगांचा उडान आणतो तेव्हा किंचित अधिक आनंददायी होतात."
                               }
                         ]
                   },
                   {
-                        "title": "Rainbow Wheel vs Standard Yes or No Wheel",
+                        "title": "इंद्रधनुष चाक विरुद्ध मानक हो किंवा नाही चाक",
                         "content": [
-                              "Both tools use the same underlying randomization. The difference is entirely visual. A standard yes or no wheel displays two segments with solid contrasting colors. A rainbow wheel applies a spectrum gradient across all segments, regardless of how many there are.",
-                              "Choose the standard wheel when you want a clean, minimal look and do not need extra visual stimulation. Choose the rainbow wheel when you want the spin to feel more like an event."
+                              "दोन्ही साधने त्याच अंतर्गत यादृच्छिकीकरण वापरतात. फरक पूर्णपणे दृश्यावर आहे. मानक हो किंवा नाही चाक स्थिर विरुद्ध रंगांसह दोन विभाग दर्शवतो. इंद्रधनुष चाक कितीही विभाग असले तरी सर्व विभागांवर स्पेक्ट्रम ग्रेडिएंट लागू करतो.",
+                              "तुम्हाला स्वच्छ, किमान दृश्य हवे आणि अतिरिक्त दृश्य उत्तेजना आवश्यक नसेल तेव्हा मानक चाक निवडा. तुम्हाला स्पिन अधिक कार्यक्रमासारखे वाटावे लागते तेव्हा इंद्रधनुष चाक निवडा."
                         ]
                   },
                   {
-                        "title": "Customizing the Rainbow Wheel",
+                        "title": "इंद्रधनुष चाक कस्टमाइज़ करणे",
                         "content": [
-                              "The customization panel lets you change almost everything about the wheel. You can add or remove entries, rename segments, and adjust colors. The auto-gradient button regenerates the color distribution so that all segments remain visually distinct even as the count changes.",
-                              "For users who want more control, the sidebar panel provides entry management, visual styling, and physics settings. You can adjust spin duration, friction, and result display behavior."
+                              "कस्टमायझेशन पॅनेल तुम्हाला चाकाबद्दल जवळजवळ सर्व काही बदलू देते. तुम्ही प्रविष्टी जोडू शकता, काढू शकता, विभागांचे नाव बदलू शकता आणि रंग समायोजित करू शकता. ऑटो-ग्रेडिएंट बटण रंग वितरण पुन्हा तयार करते ज्यामुळे गिनती बदलली तरी सर्व विभाग दृश्यपरपणे वेगळे राहतात.",
+                              "ज्या वापरकर्त्याला अधिक नियंत्रण हवे आहे त्यांच्यासाठी, साइडबार पॅनेल प्रविष्टी व्यवस्थापन, दृश्य स्टाइलिंग आणि भौतिकशास्त्र सेटिंग्ज प्रदान करते. तुम्ही स्पिन कालावधी, घर्षण आणि परिणाम प्रदर्शन वर्तन समायोजित करू शकता."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a rainbow wheel?",
-                        "a": "A rainbow wheel is a colorful spinning tool that assigns a rainbow gradient to each segment. Instead of plain text labels, every slice gets a distinct hue from the visible light spectrum, making the spin more visually engaging while keeping the same probability as a standard spinner."
+                        "q": "इंद्रधनुष चाक म्हणजे काय?",
+                        "a": "इंद्रधनुष चाक हा एक रंगीन स्पिनिंग साधन आहे जो प्रत्येक विभागाला इंद्रधनुष ग्रेडिएंट देतो. साध्या मजकूर लेबल्सऐवजी, प्रत्येक स्लाइसला दृश्यमान प्रकाश स्पेक्ट्रममधील एक वेगळा रंग मिळतो, ज्यामुळे स्पिन अधिक दृश्यपरपणे आकर्षक होतो आणि मानक स्पिनरसारखीच शक्यता राहते."
                   },
                   {
-                        "q": "How is a rainbow wheel different from a regular yes or no wheel?",
-                        "a": "A regular yes or no wheel uses two segments with solid colors. A rainbow wheel distributes multiple colors evenly around the wheel, so even when the outcome is the same, the visual presentation is more dynamic. The randomization logic is identical."
+                        "q": "इंद्रधनुष चाक नियमित हो किंवा नाही चाकापेक्षा कसा भिन्न आहे?",
+                        "a": "नियमित हो किंवा नाही चाक स्थिर रंगांसह दोन विभाग वापरतो. इंद्रधनुष चाक अनेक रंग समानपणे चाकाभर वितरित करतो, त्यामुळे परिणाम एखाद्या असला तरी दृश्य सादरीकरण अधिक गतिशील असते. यादृच्छिकीकरण तर्क एकच आहे."
                   },
                   {
-                        "q": "Is the rainbow wheel truly random?",
-                        "a": "Yes. The wheel uses browser-based physics simulation with randomized starting velocity, friction, and angle. Each spin produces an unpredictable result because the initial conditions vary every time."
+                        "q": "इंद्रधनुष चाक खरोखर यादृच्छिक आहे का?",
+                        "a": "हो. चाक ब्राउझर-आधारित भौतिकशास्त्र अनुकरण वापरतो ज्यात यादृच्छिक सुरुवातीचा वेग, घर्षण आणि कोन असतो. प्रत्येक स्पिन अनपेक्षित परिणाम निर्माण करतो कारण सुरुवातीच्या परिस्थिती दर वेळी बदलतात."
                   },
                   {
-                        "q": "Can kids use the rainbow wheel?",
-                        "a": "The rainbow wheel is well-suited for children. The bright colors make it visually appealing for classroom activities, and the simple spin mechanic requires no reading or setup."
+                        "q": "मुले इंद्रधनुष चाक वापरू शकतात का?",
+                        "a": "इंद्रधनुष चाक मुलांसाठी खूप योग्य आहे. उजळ रंग शाळेतील क्रियाकलापांसाठी ते दृश्यपरपणे आकर्षक बनवतात, आणि सोपी स्पिन प्रक्रिया वाचन किंवा सेटिंग्जची गरज नाही ठेवत."
                   },
                   {
-                        "q": "Can I add my own entries to the rainbow wheel?",
-                        "a": "Yes. The customization sidebar lets you add, remove, or rename any entry on the wheel. You can type custom labels, change segment colors, and adjust the number of slices."
+                        "q": "मी माझ्या स्वतःच्या प्रविष्टी इंद्रधनुष चाकात जोडू शकतो का?",
+                        "a": "हो. कस्टमायझेशन साइडबार तुम्हाला चाकावरील कोणत्याही प्रविष्टी जोडण्यासाठी, काढण्यासाठी किंवा पुनर्नामित करण्यासाठी देतो. तुम्ही स्वतःचे लेबल टाइप करू शकता, विभाग रंग बदलू शकता आणि विभागांची संख्या समायोजित करू शकता."
                   },
                   {
-                        "q": "Is the rainbow wheel free to use?",
-                        "a": "The rainbow wheel is completely free with no signup, no ads covering the tool, and no usage limits."
+                        "q": "इंद्रधनुष चाक वापरण्यासाठी मोफत आहे का?",
+                        "a": "इंद्रधनुष चाक पूर्णपणे मोफत आहे, कोणतीही साइनअप नाही, कोणत्याही जाहिराती साधन झाकू नका आणि कोणत्याही वापर मर्यादा नाहीत."
                   },
                   {
-                        "q": "Does the rainbow wheel work on mobile?",
-                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport, and the spin button and result display adjust for touch interaction."
+                        "q": "इंद्रधनुष चाक मोबाइलवर काम करते का?",
+                        "a": "चाक कोणत्याही स्क्रीन आकाराजुळ जुळवून घेतो. फोन आणि टॅब्लेटवर, कॅनव्ह व्ह्यूपोर्ट बरोबर बसवले जाते, आणि स्पिन बटण व परिणाम प्रदर्शन टच इंटरॅक्शनसाठी जुळवून घेतले जाते."
                   }
             ]
       },
@@ -2877,105 +2877,105 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Takdir",
             "subtitle": "Pemutar bertema takdir.",
             "howToUse": {
-                  "title": "How to Use the Wheel of Fate",
-                  "intro": "The wheel of fate is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Takdir",
+                  "intro": "Roda takdir siap berputar dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Review the Outcomes",
-                              "desc": "Look at the default outcomes on the wheel. Each segment represents a possible fate. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "Tinjau Hasil",
+                              "desc": "Lihat hasil default pada roda. Setiap segmen mewakili sebuah takdir yang mungkin. Pertahankan yang Anda inginkan, atau buka sidebar kustomisasi untuk menambahkan milik Anda sendiri."
                         },
                         {
-                              "title": "Adjust the Weights",
-                              "desc": "Use the weight sliders below the wheel to make certain outcomes more or less likely. A weight of 3x makes an outcome three times more probable than a 1x weight."
+                              "title": "Sesuaikan Bobot",
+                              "desc": "Gunakan slider bobot di bawah roda untuk membuat hasil tertentu lebih atau kurang mungkin. Bobot 3x membuat hasil tiga kali lebih mungkin dibandingkan bobot 1x."
                         },
                         {
-                              "title": "Spin and Accept the Result",
-                              "desc": "Press the spin button and watch the cosmic wheel rotate. When it stops, the winning fate appears with a dramatic reveal. Accept what the fates have chosen."
+                              "title": "Putar dan Terima Hasil",
+                              "desc": "Tekan tombol putar dan perhatikan roda kosmik berputar. Ketika berhenti, takdir yang menang muncul dengan pengungkapan dramatis. Terima apa yang telah ditentukan oleh takdir."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Wheel of Fate?",
+                        "title": "Apa Itu Roda Takdir?",
                         "content": [
-                              "The wheel of fate is a decision spinner built around the idea of destiny. Where a standard random wheel presents neutral choices, the wheel of fate frames outcomes as dramatic turning points — moments where the course of events shifts in an unexpected direction. The dark cosmic visual theme, weighted probability system, and thematic default entries all reinforce this sense of gravity.",
-                              "The concept draws from centuries of cultural storytelling about fate, destiny, and the forces that shape human experience. From the Greek Moirai who spun the thread of life, to the medieval Rota Fortunae that symbolized the rise and fall of kings, the idea of a spinning wheel determining outcomes has deep roots in mythology and philosophy.",
-                              "This digital version translates that mythology into a practical tool. The wheel of fate gives users a way to let chance decide between multiple outcomes while retaining control over how likely each outcome is."
+                              "Roda takdir adalah pemutar keputusan yang dibangun di sekitar gagasan takdir. Di mana roda acak standar menampilkan pilihan netral, roda takdir menggambarkan hasil sebagai titik balik dramatis — momen di mana jalannya peristiwa berubah ke arah yang tidak terduga. Tema visual kosmik yang gelap, sistem probabilitas berbobot, dan entri default bertema semuanya memperkuat rasa keseriusan ini.",
+                              "Gagasan ini diambil dari berabad-abad penceritaan budaya tentang takdir, nasib, dan kekuatan yang membentuk pengalaman manusia. Dari Moirai Yunani yang memutar benang kehidupan, hingga Rota Fortunae abad pertengahan yang melambangkan kejatuhan dan kebangkitan raja, gagasan roda berputar yang menentukan hasil memiliki akar yang mendalam dalam mitologi dan filsafat.",
+                              "Versi digital ini menerjemahkan mitologi tersebut menjadi alat yang praktis. Roda takdir memberi pengguna cara untuk membiarkan keberuntungan memutuskan di antara beberapa hasil sambil mempertahankan kendali atas seberapa mungkin setiap hasil tersebut."
                         ]
                   },
                   {
-                        "title": "The History Behind the Wheel of Fate",
+                        "title": "Sejarah di Balik Roda Takdir",
                         "content": [
-                              "The idea of fate as a spinning wheel appears across many cultures. In Greek mythology, the three Moirai — Clotho, Lachesis, and Atropos — controlled the thread of human life. Clotho spun it, Lachesis measured it, and Atropos cut it.",
-                              "The Roman concept of Fortuna expanded this idea. Fortuna was the goddess of chance, and her wheel — the Rota Fortunae — could raise a person to power or cast them into ruin without warning.",
-                              "In modern culture, the wheel of fate appears in video games, fantasy literature, and tabletop RPGs as a mechanic for determining random outcomes with narrative weight."
+                              "Gagasan takdir sebagai roda berputar muncul di berbagai budaya. Dalam mitologi Yunani, tiga Moirai — Clotho, Lachesis, dan Atropos — mengendalikan benang kehidupan manusia. Clotho memutarnya, Lachesis mengukurnya, dan Atropos memotongnya.",
+                              "Konsep Romawi tentang Fortuna memperluas gagasan ini. Fortuna adalah dewi keberuntungan, dan rodanya — Rota Fortunae — dapat mengangkat seseorang ke tampuk kekuasaan atau menjatuhkan mereka ke dalam kehancuran tanpa peringatan.",
+                              "Dalam budaya modern, roda takdir muncul dalam video game, sastra fantasi, dan RPG tabletop sebagai mekanisme untuk menentukan hasil acak dengan bobot naratif."
                         ]
                   },
                   {
-                        "title": "How the Weighted System Works",
+                        "title": "Cara Kerja Sistem Bobot",
                         "content": [
-                              "Unlike a standard spinner where every outcome has equal probability, the wheel of fate includes a weight editor. Each segment has a slider that ranges from 1x to 5x. A weight of 1x gives the segment normal probability.",
-                              "This system is useful when you want certain outcomes to be rare while others are common. For example, in an RPG scenario, you might set Victory to 4x and Betrayal to 1x.",
-                              "The customization sidebar also lets you add or remove entries entirely. When you change the entry list, the weight editor resets to even distribution across all new segments."
+                              "Berbeda dengan pemutar standar di mana setiap hasil memiliki probabilitas yang sama, roda takdir menyertakan editor bobot. Setiap segmen memiliki slider yang berkisar dari 1x hingga 5x. Bobot 1x memberikan segmen probabilitas normal.",
+                              "Sistem ini berguna ketika Anda menginginkan hasil tertentu menjadi jarang sementara yang lain umum. Sebagai contoh, dalam skenario RPG, Anda dapat mengatur Kemenangan ke 4x dan Pengkhianatan ke 1x.",
+                              "Sidebar kustomisasi juga memungkinkan Anda menambahkan atau menghapus entri sepenuhnya. Ketika Anda mengubah daftar entri, editor bobot diatur ulang ke distribusi merata di semua segmen baru."
                         ]
                   },
                   {
-                        "title": "When to Use the Wheel of Fate",
+                        "title": "Kapan Menggunakan Roda Takdir",
                         "content": [
-                              "The wheel of fate works best when the decision carries emotional weight or when the framing matters as much as the outcome itself."
+                              "Roda takdir bekerja paling baik ketika keputusan membawa bobot emosional atau ketika kerangka pemikiran sama pentingnya dengan hasil itu sendiri."
                         ],
                         "subsections": [
                               {
-                                    "title": "Tabletop RPGs and Storytelling",
-                                    "content": "Dungeon masters and game masters use the wheel of fate to resolve dramatic moments in their campaigns. The weighted system lets the GM calibrate odds to match the narrative."
+                                    "title": "RPG Tabletop dan Bercerita",
+                                    "content": "Para dungeon master dan game master menggunakan roda takdir untuk mengatasi momen-momen dramatis dalam kampanye mereka. Sistem bobot memungkinkan GM mengkalibrasi peluang agar sesuai dengan narasi."
                               },
                               {
-                                    "title": "Writing and Creative Decisions",
-                                    "content": "Authors facing writer's block or looking for plot twists can spin the wheel to determine a character's next move. The fate-themed framing turns a random selection into a creative prompt."
+                                    "title": "Menulis dan Keputusan Kreatif",
+                                    "content": "Penulis yang mengalami writer's block atau mencari plot twist dapat memutar roda untuk menentukan langkah karakter selanjutnya. Kerangka bertema takdir mengubah pilihan acak menjadi prompt kreatif."
                               },
                               {
-                                    "title": "Personal Crossroads",
-                                    "content": "When facing a real decision that feels significant — a career change, a move to a new city, whether to take a risk — the wheel of fate adds a sense of ceremony to the process."
+                                    "title": "Persimpangan Pribadi",
+                                    "content": "Ketika menghadapi keputusan nyata yang terasa signifikan — perubahan karir, pindah ke kota baru, atau mengambil risiko — roda takdir menambahkan rasa upacara pada proses tersebut."
                               },
                               {
-                                    "title": "Group Games and Activities",
-                                    "content": "For party games or group activities, the wheel of fate adds drama that a standard spinner lacks. The dark aesthetic and thematic outcomes make each spin feel like an event."
+                                    "title": "Permainan dan Aktivitas Kelompok",
+                                    "content": "Untuk permainan pesta atau aktivitas kelompok, roda takdir menambahkan drama yang tidak dimiliki pemutar standar. Estetika gelap dan hasil bertema membuat setiap putaran terasa seperti sebuah peristiwa."
                               }
                         ]
                   },
                   {
-                        "title": "Wheel of Fate vs Other Decision Tools",
+                        "title": "Roda Takdir vs Alat Keputusan Lain",
                         "content": [
-                              "The yes or no wheel is the simplest decision tool — two outcomes, equal probability, instant result. The wheel of fate adds complexity through multiple outcomes and adjustable weights.",
-                              "The oracle tool takes a different approach entirely. Instead of spinning a wheel, you type a question and receive a cryptic answer. The wheel of fate gives you a concrete outcome to act on.",
-                              "For RPG players, the yes and no dice tool offers a different physical metaphor. Rolling dice feels different from spinning a wheel."
+                              "Roda ya atau tidak adalah alat keputusan yang paling sederhana — dua hasil, probabilitas yang sama, hasil instan. Roda takdir menambahkan kerumitan melalui beberapa hasil dan bobot yang dapat disesuaikan.",
+                              "Alat orakul mengambil pendekatan yang sama sekali berbeda. Alih-alih memutar roda, Anda mengetik pertanyaan dan menerima jawaban yang samar. Roda takdir memberi Anda hasil konkret untuk ditindaklanjuti.",
+                              "Untuk pemain RPG, alat dadu ya dan tidak menawarkan metafora fisik yang berbeda. Melempar dadu terasa berbeda dari memutar roda."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the wheel of fate?",
-                        "a": "The wheel of fate is a destiny-themed decision spinner that uses weighted outcomes and a dark cosmic visual design. Each segment represents a possible fate or outcome."
+                        "q": "Apa itu roda takdir?",
+                        "a": "Roda takdir adalah pemutar keputusan bertema takdir yang menggunakan hasil berbobot dan desain visual kosmik yang gelap. Setiap segmen mewakili sebuah takdir atau hasil yang mungkin."
                   },
                   {
-                        "q": "How is the wheel of fate different from a yes or no wheel?",
-                        "a": "A yes or no wheel presents two equally likely outcomes. The wheel of fate offers multiple outcomes with adjustable probability weights."
+                        "q": "Bagaimana roda takdir berbeda dari roda ya atau tidak?",
+                        "a": "Roda ya atau tidak menampilkan dua hasil yang sama-sama mungkin. Roda takdir menawarkan beberapa hasil dengan bobot probabilitas yang dapat disesuaikan."
                   },
                   {
-                        "q": "What are outcome weights?",
-                        "a": "Outcome weights let you adjust the probability of each segment appearing as the result. A weight of 1x means normal probability. Setting a segment to 3x makes it three times more likely to win."
+                        "q": "Apa itu bobot hasil?",
+                        "a": "Bobot hasil memungkinkan Anda menyesuaikan probabilitas setiap segmen muncul sebagai hasil. Bobot 1x berarti probabilitas normal. Mengatur segmen ke 3x membuatnya tiga kali lebih mungkin untuk menang."
                   },
                   {
-                        "q": "Can I use the wheel of fate for RPGs?",
-                        "a": "The wheel of fate is designed with tabletop RPG players in mind. The default entries include dramatic outcomes like Destiny, Redemption, Sacrifice, and Betrayal."
+                        "q": "Bisakah saya menggunakan roda takdir untuk RPG?",
+                        "a": "Roda takdir dirancang dengan mempertimbangkan pemain RPG tabletop. Entri default mencakup hasil dramatis seperti Takdir, Penebusan, Pengorbanan, dan Pengkhianatan."
                   },
                   {
-                        "q": "Is the wheel of fate random?",
-                        "a": "Yes. The wheel uses browser-based physics with randomized starting conditions. Weighted entries affect the probability distribution but do not guarantee outcomes."
+                        "q": "Apakah roda takdir benar-benar acak?",
+                        "a": "Ya. Roda menggunakan simulasi fisik berbasis browser dengan kondisi awal yang diacak. Entri berbobot mempengaruhi distribusi probabilitas tetapi tidak menjamin hasil."
                   },
                   {
-                        "q": "Can I add my own fates to the wheel?",
-                        "a": "Yes. Open the customization sidebar to add, remove, or rename any entry. After changing entries, reset the weight sliders to distribute probability evenly."
+                        "q": "Bisakah saya menambahkan takdir saya sendiri ke roda?",
+                        "a": "Ya. Buka sidebar kustomisasi untuk menambahkan, menghapus, atau mengubah nama entri apa pun. Setelah mengubah entri, atur ulang slider bobot untuk mendistribusikan probabilitas secara merata."
                   }
             ]
       },
@@ -2983,105 +2983,105 @@ const WHEEL_PAGE_CONTENT = {
             "title": "नशीबाचे चाक",
             "subtitle": "नशीब-थीम्ड फिरक्या.",
             "howToUse": {
-                  "title": "How to Use the Wheel of Fate",
-                  "intro": "The wheel of fate is ready to spin in seconds. Here is how it works:",
+                  "title": "नशीबाचे चाक कसे वापरावे",
+                  "intro": "नशीबाचे चाक थोड्या सेकंदांमध्ये फिरण्यासाठी तयार आहे. हे कसे काम करते ते खालीलप्रमाणे आहे:",
                   "steps": [
                         {
-                              "title": "Review the Outcomes",
-                              "desc": "Look at the default outcomes on the wheel. Each segment represents a possible fate. Keep the ones you want, or open the customization sidebar to add your own."
+                              "title": "परिणाम पहा",
+                              "desc": "चाकावरील मुळ परिणाम पहा. प्रत्येक विभाग एक शक्य नशीब दर्शवतो. तुम्हाला हवे ते ठेवा, किंवा स्वतःचे परिणाम जोडण्यासाठी सानुकूलन बाजूपट्टी उघडा."
                         },
                         {
-                              "title": "Adjust the Weights",
-                              "desc": "Use the weight sliders below the wheel to make certain outcomes more or less likely. A weight of 3x makes an outcome three times more probable than a 1x weight."
+                              "title": "वजन समायोजित करा",
+                              "desc": "चाकाखालील वजन स्लायडर्सचा वापर करून काही परिणाम अधिक किंवा कमी शक्य बनवा. 3x वजन परिणामाला 1x वजनापेक्षा तीन पट अधिक शक्य बनवते."
                         },
                         {
-                              "title": "Spin and Accept the Result",
-                              "desc": "Press the spin button and watch the cosmic wheel rotate. When it stops, the winning fate appears with a dramatic reveal. Accept what the fates have chosen."
+                              "title": "फिरवा आणि परिणाम स्वीकारा",
+                              "desc": "फिरवा बटण दाबा आणि ब्रह्मांडीय चाक फिरत जाण्याचा आढावा घ्या. थांबल्यावर, विजयी नशीब नाट्यमय प्रकटीकरणासह दिसते. नशीबाने निवडलेले कबूल करा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Wheel of Fate?",
+                        "title": "नशीबाचे चाक म्हणजे काय?",
                         "content": [
-                              "The wheel of fate is a decision spinner built around the idea of destiny. Where a standard random wheel presents neutral choices, the wheel of fate frames outcomes as dramatic turning points — moments where the course of events shifts in an unexpected direction. The dark cosmic visual theme, weighted probability system, and thematic default entries all reinforce this sense of gravity.",
-                              "The concept draws from centuries of cultural storytelling about fate, destiny, and the forces that shape human experience. From the Greek Moirai who spun the thread of life, to the medieval Rota Fortunae that symbolized the rise and fall of kings, the idea of a spinning wheel determining outcomes has deep roots in mythology and philosophy.",
-                              "This digital version translates that mythology into a practical tool. The wheel of fate gives users a way to let chance decide between multiple outcomes while retaining control over how likely each outcome is."
+                              "नशीबाचे चाक हा नियतीच्या कल्पनेभोवती बांधलेला एक निर्णय स्पिनर आहे. जेथे सामान्य यादृच्छिक चाक तटस्थ पर्याय सादर करते, तेथे नशीबाचे चाक परिणामांना नाट्यमय वळण म्हणून मांडतो — अशा क्षणी जेथे घटनांचा मार्ग अनपेक्षित दिशेने बदलतो. गडद ब्रह्मांडीय दृश्य थीम, वजनाची शक्यता प्रणाली, आणि थीम-आधारित मुळ नोंदी या सर्वांना या गांभीर्याचा अनुभव मजबूत करतात.",
+                              "हा संकल्प शताब्द्यांपासूनच्या नशीब, नियती आणि मानवी अनुभवाला रूप देणाऱ्या शक्तींबद्दलच्या सांस्कृतिक कथनांकडून घेतला गेला आहे. जीवनाचा धागा कोरडा करणाऱ्या ग्रीक मोइराइला, राज्यांच्या उन्नती आणि पतनाचे प्रतीक असलेल्या मध्ययुगीन रोटा फोर्चुनेपर्यंत, परिणाम निश्चित करणारे फिरणारे चाक हा विचार पौराणिक कथा आणि तत्त्वज्ञानात खोल मुळे रुखलेला आहे.",
+                              "हा डिजिटल व्हर्शन त्या पौराणिक कथेला एका व्यावहारिक साधनात रूपांतरित करतो. नशीबाचे चाक वापरकर्त्यांना अनेक परिणामांमध्ये शक्यता ठरवू देतो, तरीही प्रत्येक परिणाम किती शक्य आहे यावर नियंत्रण ठेवतो."
                         ]
                   },
                   {
-                        "title": "The History Behind the Wheel of Fate",
+                        "title": "नशीबाच्या चाकामागील इतिहास",
                         "content": [
-                              "The idea of fate as a spinning wheel appears across many cultures. In Greek mythology, the three Moirai — Clotho, Lachesis, and Atropos — controlled the thread of human life. Clotho spun it, Lachesis measured it, and Atropos cut it.",
-                              "The Roman concept of Fortuna expanded this idea. Fortuna was the goddess of chance, and her wheel — the Rota Fortunae — could raise a person to power or cast them into ruin without warning.",
-                              "In modern culture, the wheel of fate appears in video games, fantasy literature, and tabletop RPGs as a mechanic for determining random outcomes with narrative weight."
+                              "नशीब हा फिरणारे चाक म्हणून हा विचार अनेक संस्कृतींमध्ये दिसून येतो. ग्रीक पौराणिक कथांमध्ये, तीन मोइराइ — क्लोथो, लाचेसिस, आणि अट्रोपोस — यांनी मानवी जीवनाचा धागा नियंत्रित केला. क्लोथोने त्याला फिरवले, लाचेसिसने त्याला मोजले, आणि अट्रोपोसने त्याला कापले.",
+                              "रोमन फोर्चुनाच्या संकल्पनेने हा विचार विस्तारित केला. फोर्चुना ही संयोगाची देवी होती, आणि तिचे चाक — रोटा फोर्चुने — एखाद्या व्यक्तीला चेतावणी न देता अधिकारावर नेऊ शकते किंवा विनाशात ढकलू शकते.",
+                              "आधुनिक संस्कृतीमध्ये, नशीबाचे चाक व्हिडिओ गेम्स, फंटेसी साहित्य, आणि टेबलटॉप आरपीजीमध्ये कथानक बोजासह यादृच्छिक परिणाम निश्चित करण्याच्या मेकॅनिक्स म्हणून दिसून येतो."
                         ]
                   },
                   {
-                        "title": "How the Weighted System Works",
+                        "title": "वजन प्रणाली कसे काम करते",
                         "content": [
-                              "Unlike a standard spinner where every outcome has equal probability, the wheel of fate includes a weight editor. Each segment has a slider that ranges from 1x to 5x. A weight of 1x gives the segment normal probability.",
-                              "This system is useful when you want certain outcomes to be rare while others are common. For example, in an RPG scenario, you might set Victory to 4x and Betrayal to 1x.",
-                              "The customization sidebar also lets you add or remove entries entirely. When you change the entry list, the weight editor resets to even distribution across all new segments."
+                              "प्रत्येक परिणामाला समान शक्यता असलेल्या मानक स्पिनर्च्या उलट, नशीबाच्या चाकात एक वजन संपादक असतो. प्रत्येक विभागाला 1x ते 5x पर्यंतचा स्लायडर असतो. 1x वजन विभागाला सामान्य शक्यता देते.",
+                              "जेव्हा तुम्हाला काही परिणाम दुर्मिळ असू देऊन इतर सामान्य असू देऊ इच्छित असतात, तेव्हा ही प्रणाली उपयुक्त असते. उदाहरणार्थ, एका आरपीजी दृश्यात, तुम्ही विजयाला 4x आणि दगडावरून फेकणे 1x वर सेट करू शकता.",
+                              "सानुकूलन बाजूपट्टी तुम्हाला नोंदी पूर्णपणे जोडण्यास किंवा काढण्यासह देखील देते. जेव्हा तुम्ही नोंदींची यादी बदलता, तेव्हा वजन संपादक सर्व नवीन विभागांमध्ये समान वितरणासाठी रीसेट होतो."
                         ]
                   },
                   {
-                        "title": "When to Use the Wheel of Fate",
+                        "title": "नशीबाचा चाक कधी वापरावा",
                         "content": [
-                              "The wheel of fate works best when the decision carries emotional weight or when the framing matters as much as the outcome itself."
+                              "निर्णयात भावनिक बोजा असतो किंवा स्वरूपण परिणामाएवढेच महत्त्वाचे असते तेव्हा नशीबाचे चाक सर्वोत्तम काम करतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Tabletop RPGs and Storytelling",
-                                    "content": "Dungeon masters and game masters use the wheel of fate to resolve dramatic moments in their campaigns. The weighted system lets the GM calibrate odds to match the narrative."
+                                    "title": "टेबलटॉप आरपीजी आणि कथन",
+                                    "content": "डंजन मास्टर्स आणि गेम मास्टर्स त्यांच्या मोहिमांमधील नाट्यमय क्षणांना सोडवण्यासाठी नशीबाचा चाक वापरतात. वजन प्रणाली जीएमला कथनाशी जुळवून शक्यता कॅलिब्रेट करू देते."
                               },
                               {
-                                    "title": "Writing and Creative Decisions",
-                                    "content": "Authors facing writer's block or looking for plot twists can spin the wheel to determine a character's next move. The fate-themed framing turns a random selection into a creative prompt."
+                                    "title": "लेखन आणि सर्जनशील निर्णय",
+                                    "content": "लेखकत्वातील अडचणी सामोरे जाणारे किंवा प्लॉट ट्विस्ट शोधणारे लेखक पात्राची पुढची हालचाल निश्चित करण्यासाठी चाक फिरवू शकतात. नशीब-थीम्ड स्वरूपण एक यादृच्छिक निवडला सर्जनशील प्रॉम्प्टमध्ये रूपांतरित करते."
                               },
                               {
-                                    "title": "Personal Crossroads",
-                                    "content": "When facing a real decision that feels significant — a career change, a move to a new city, whether to take a risk — the wheel of fate adds a sense of ceremony to the process."
+                                    "title": "वैयक्तिक वेगळे मार्ग",
+                                    "content": "एक महत्त्वपूर्ण निर्णयाचा सामना करताना — करिअरमधील बदल, नवीन शहरात स्थलांतर, धोका घेणे की नाही — नशीबाचे चाक प्रक्रियेला एक विधीसारखी भावना जोडते."
                               },
                               {
-                                    "title": "Group Games and Activities",
-                                    "content": "For party games or group activities, the wheel of fate adds drama that a standard spinner lacks. The dark aesthetic and thematic outcomes make each spin feel like an event."
+                                    "title": "गट खेळ आणि क्रियाकलाप",
+                                    "content": "पार्टी खेळ किंवा गट क्रियाकलापांसाठी, नशीबाचे चाक मानक स्पिनरला नसलेला नाट्य जोडतो. गडद सौंदर्य आणि थीम्ड परिणाम प्रत्येक फिरवणीला एक कार्यक्रमाप्रमाणे जाणवू देतात."
                               }
                         ]
                   },
                   {
-                        "title": "Wheel of Fate vs Other Decision Tools",
+                        "title": "नशीबाचे चाक बनाम इतर निर्णय साधने",
                         "content": [
-                              "The yes or no wheel is the simplest decision tool — two outcomes, equal probability, instant result. The wheel of fate adds complexity through multiple outcomes and adjustable weights.",
-                              "The oracle tool takes a different approach entirely. Instead of spinning a wheel, you type a question and receive a cryptic answer. The wheel of fate gives you a concrete outcome to act on.",
-                              "For RPG players, the yes and no dice tool offers a different physical metaphor. Rolling dice feels different from spinning a wheel."
+                              "हो किंवा नाही चाक हे सर्वात सोपे निर्णय साधन आहे — दोन परिणाम, समान शक्यता, तत्काळ परिणाम. नशीबाचे चाक अनेक परिणाम आणि समायोज्य वजनांद्वारे गुंतागुंत जोडतो.",
+                              "ओरॅकल साधन पूर्णपणे वेगळा मार्ग घेतो. चाक फिरवण्याऐवजी, तुम्ही एक प्रश्न टाइप करता आणि एक रहस्यमय उत्तर मिळवता. नशीबाचे चाक तुम्हाला कृती करण्यासाठी एक ठोस परिणाम देते.",
+                              "आरपीजी खेळाडूंसाठी, हो आणि नाही पासे साधन एक वेगळे भौतिक रूपक देते. पासे फेकणे चाक फिरवण्यापेक्षा वेगळे जाणवते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the wheel of fate?",
-                        "a": "The wheel of fate is a destiny-themed decision spinner that uses weighted outcomes and a dark cosmic visual design. Each segment represents a possible fate or outcome."
+                        "q": "नशीबाचे चाक म्हणजे काय?",
+                        "a": "नशीबाचे चाक हा नशीब-थीम्ड निर्णय स्पिनर आहे जो वजनाचे परिणाम आणि गडद ब्रह्मांडीय दृश्य डिझाइन वापरतो. प्रत्येक विभाग एक शक्य नशीब किंवा परिणाम दर्शवतो."
                   },
                   {
-                        "q": "How is the wheel of fate different from a yes or no wheel?",
-                        "a": "A yes or no wheel presents two equally likely outcomes. The wheel of fate offers multiple outcomes with adjustable probability weights."
+                        "q": "नशीबाचे चाक हो किंवा नाही चाकापेक्षा कसे वेगळे आहे?",
+                        "a": "हो किंवा नाही चाक दोन समानपणे शक्य परिणाम सादर करतो. नशीबाचे चाक समायोज्य शक्यता वजनांसह अनेक परिणाम देतो."
                   },
                   {
-                        "q": "What are outcome weights?",
-                        "a": "Outcome weights let you adjust the probability of each segment appearing as the result. A weight of 1x means normal probability. Setting a segment to 3x makes it three times more likely to win."
+                        "q": "परिणामांची वजने म्हणजे काय?",
+                        "a": "परिणामांची वजने तुम्हाला निकाल म्हणून दिसणाऱ्या प्रत्येक विभागाची शक्यता समायोजित करू देतात. 1x वजनाचा अर्थ सामान्य शक्यता. विभागाला 3x वर सेट केल्यास तो तीन पट विजयी होण्याची शक्यता वाढते."
                   },
                   {
-                        "q": "Can I use the wheel of fate for RPGs?",
-                        "a": "The wheel of fate is designed with tabletop RPG players in mind. The default entries include dramatic outcomes like Destiny, Redemption, Sacrifice, and Betrayal."
+                        "q": "मी नशीबाचा चाक आरपीजीसाठी वापरू शकतो का?",
+                        "a": "नशीबाचे चाक टेबलटॉप आरपीजी खेळाडूंना लक्षात ठेवून डिझाइन केला गेला आहे. मुळ नोंदींमध्ये नियती, उद्धार, बलिदान आणि दगडावरून फेकणे यांसारखे नाट्यमय परिणाम समाविष्ट आहेत."
                   },
                   {
-                        "q": "Is the wheel of fate random?",
-                        "a": "Yes. The wheel uses browser-based physics with randomized starting conditions. Weighted entries affect the probability distribution but do not guarantee outcomes."
+                        "q": "नशीबाचे चाक यादृच्छिक आहे का?",
+                        "a": "होय. चाक ब्राउझर-आधारित भौतिकशास्त्र वापरतो ज्यात यादृच्छिक सुरुवातीच्या परिस्थिती असतात. वजनाच्या नोंदी शक्यता वितरणावर परिणाम करतात पण परिणामांची हमी देत नाहीत."
                   },
                   {
-                        "q": "Can I add my own fates to the wheel?",
-                        "a": "Yes. Open the customization sidebar to add, remove, or rename any entry. After changing entries, reset the weight sliders to distribute probability evenly."
+                        "q": "मी माझी नशीबे चाकात जोडू शकतो का?",
+                        "a": "होय. कोणत्याही नोंदी जोडण्यासाठी, काढण्यासाठी किंवा नाव बदलण्यासाठी सानुकूलन बाजूपट्टी उघडा. नोंदी बदलल्यानंतर, शक्यता समानपणे वितरित करण्यासाठी वजन स्लायडर्स रीसेट करा."
                   }
             ]
       },
@@ -4363,97 +4363,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Oracle Ya Tidak",
             "subtitle": "Ketik pertanyaan dan dapatkan jawaban acak.",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "Cara Menggunakan Yes No Oracle",
+                  "intro": "Oracle siap menjawab pertanyaan Anda. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "Ketik Pertanyaan Anda",
+                              "desc": "Masukkan pertanyaan ya atau tidak ke dalam area teks. Oracle bekerja paling baik dengan pertanyaan yang jelas dan spesifik tentang keputusan yang Anda hadapi."
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "Mencari Kebijaksanaan",
+                              "desc": "Klik tombol Cari Kebijaksanaan dan tunggu saat oracle merenungkan pertanyaan Anda. Jeda singkat membangun antisipasi sebelum jawaban diungkapkan."
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "Baca Jawaban",
+                              "desc": "Oracle menampilkan jawaban ya, tidak, atau mungkin beserta pesan bertema, teks kebijaksanaan, dan tag energi. Renungkan bagaimana jawaban tersebut membuat Anda merasa tentang keputusan Anda."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "Apa Itu Yes No Oracle?",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "Yes No Oracle adalah alat ramalan digital yang menjawab pertanyaan ya atau tidak melalui proses tiga langkah yang terstruktur. Anda mengetik pertanyaan ke dalam kolom input, menunggu saat oracle merenungkan, dan menerima jawaban acak yang diambil dari delapan kemungkinan hasil.",
+                              "Berbeda dengan roda berputar atau lemparan koin, oracle menambahkan lapisan narasi pada pengacakan. Jeda kontemplasi menciptakan antisipasi, pesan bertema memberikan rasa makna pada setiap jawaban, dan tag energi menyediakan cara singkat untuk menafsirkan hasil.",
+                              "Alat ini berjalan sepenuhnya di browser Anda. Tidak ada pertanyaan yang disimpan, ditransmisikan, atau dicatat. Oracle menghasilkan jawabannya menggunakan pengacakan di sisi klien."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "Bagaimana Oracle Bekerja",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "Oracle mengikuti alur tiga langkah. Pertama, Anda mengetik pertanyaan Anda ke dalam area teks. Saat Anda mengklik Cari Kebijaksanaan, area input menghilang dan digantikan oleh layar kontemplasi.",
+                              "Setelah jeda 2,5 detik, oracle menampilkan jawabannya. Hasilnya mencakup pil ya, tidak, atau mungkin, emoji, pesan kutipan, teks kebijaksanaan, dan tag energi.",
+                              "Tombol Ajukan Pertanyaan Lain mengatur ulang alur, menghapus hasil, dan kembali ke layar input. Anda dapat mengajukan pertanyaan tanpa batas."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "Kapan Menggunakan Oracle",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "Oracle bekerja paling baik ketika Anda menginginkan lebih dari sekadar ya atau tidak. Konteks tambahan dalam setiap jawaban memberikan Anda sesuatu untuk direnungkan."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "Keputusan yang Sudah Anda Ketahui Jawabannya",
+                                    "content": "Seringkali, orang bertanya kepada oracle tentang keputusan yang sudah mereka buat tetapi ingin mendapatkan keyakinan. Jika oracle mengatakan Tidak dan Anda merasa kecewa, reaksi tersebut memberitahu Anda tentang apa yang sebenarnya Anda inginkan."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "Penulisan Kreatif dan Penceritaan",
+                                    "content": "Penulis menggunakan oracle untuk memecahkan kebuntuan kreatif. Tag energi dan teks kebijaksanaan dapat menumbuhkan ide-ide baru yang tidak bisa diberikan oleh ya atau tidak biasa."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "Kegiatan Kelompok yang Menyenangkan",
+                                    "content": "Dalam pengaturan sosial, oracle menambahkan drama yang tidak dimiliki oleh pemutar. Jeda kontemplasi, pesan bertema, dan tag energi semuanya memberikan kelompok sesuatu untuk dibicarakan."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "Refleksi Pribadi",
+                                    "content": "Beberapa orang menggunakan oracle sebagai prompt jurnal. Mereka mengetik pertanyaan, menerima jawaban, dan menulis tentang bagaimana respons tersebut resonansi dengan perasaan mereka yang sebenarnya."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "Oracle vs Alat Keputusan Lainnya",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "Roda ya atau tidak memberikan Anda hasil biner tanpa konteks tambahan. Oracle mengambil pendekatan berbeda dengan input teks, jeda kontemplasi, dan output bertema.",
+                              "Pembaca kartu tarot menambahkan kedalaman narasi yang lebih besar dengan kartu, makna, dan panduan. Oracle lebih sederhana dengan jawaban ya, tidak, atau mungkin.",
+                              "Roda nasib menawarkan hasil berbobot dengan tema dramatis. Oracle lebih baik untuk pertanyaan pribadi ya/tidak di mana Anda menginginkan satu jawaban dengan bobot filosofis."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "Apa itu Yes No Oracle?",
+                        "a": "Yes No Oracle adalah alat pengambilan keputusan berbasis teks yang memberikan jawaban ya, tidak, atau mungkin kepada pertanyaan Anda beserta pesan pendamping dan teks kebijaksanaan."
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "Bagaimana oracle berbeda dari roda ya atau tidak?",
+                        "a": "Oracle menggunakan input teks dan animasi kontemplasi alih-alih roda berputar. Oracle menghasilkan tiga kemungkinan jawaban alih-alih dua, dan setiap jawaban mencakup pesan filosofis."
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "Apakah oracle acak?",
+                        "a": "Ya. Oracle memilih hasil acak dari delapan kemungkinan hasil menggunakan pengacakan berbasis browser."
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "Bisakah saya bertanya kepada oracle jenis pertanyaan apa pun?",
+                        "a": "Oracle bekerja paling baik dengan pertanyaan ya atau tidak — keputusan di mana Anda menginginkan jawaban biner atau hampir biner."
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "Apa arti tag energi?",
+                        "a": "Setiap hasil oracle mencakup tag energi seperti Kelahiran Baru, Kesabaran, atau Misteri. Ini adalah label tematik yang menggambarkan nada umum jawaban."
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah oracle gratis digunakan?",
+                        "a": "Yes No Oracle sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
@@ -4461,97 +4461,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "हो नाही ओरेकल",
             "subtitle": "प्रश्न टाइप करा आणि यादृच्झिक उत्तर मिळवाना.",
             "howToUse": {
-                  "title": "How to Use the Yes No Oracle",
-                  "intro": "The oracle is ready to answer your questions. Here is how it works:",
+                  "title": "हो नाही ओरेकल कसे वापरावे",
+                  "intro": "तुमच्या प्रश्नांना उत्तर देण्यासाठी ओरेकल तयार आहे. ते कसे काम करते ते येथे आहे:",
                   "steps": [
                         {
-                              "title": "Type Your Question",
-                              "desc": "Enter a yes or no question into the text area. The oracle works best with clear, specific questions about decisions you are facing."
+                              "title": "तुमचा प्रश्न टाइप करा",
+                              "desc": "मजकुरा क्षेत्रात हो किंवा नाही प्रश्न प्रविष्ट करा. ओरेकल तुमच्यासाठी स्पष्ट, विशिष्ट प्रश्नांसोबत सर्वोत्तम काम करते."
                         },
                         {
-                              "title": "Seek Wisdom",
-                              "desc": "Click the Seek Wisdom button and wait as the oracle contemplates your question. A brief delay builds anticipation before the answer is revealed."
+                              "title": "ज्ञान शोधा",
+                              "desc": "ज्ञान शोधा बटण क्लिक करा आणि ओरेकल तुमच्या प्रश्नाचा विचार करत असताना थांबा. उत्तर उघडण्यापूर्वी एक छोटा विलंब उत्सुकता निर्माण करतो."
                         },
                         {
-                              "title": "Read the Answer",
-                              "desc": "The oracle reveals a yes, no, or maybe answer along with a themed message, wisdom text, and energy tag. Reflect on how the answer makes you feel about your decision."
+                              "title": "उत्तर वाचा",
+                              "desc": "ओरेकल हो, नाही किंवा कदाचित उत्तर थीम केलेला संदेश, ज्ञान मजकूर आणि ऊर्जा टॅगसह उघडतो. उत्तर तुमच्या निर्णयाबद्दल तुम्हाला कसे वाटते यावर विचार करा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes No Oracle?",
+                        "title": "हो नाही ओरेकल म्हणजे काय?",
                         "content": [
-                              "The Yes No Oracle is a digital divination tool that answers yes or no questions through a structured three-step process. You type a question into the input field, wait while the oracle contemplates, and receive a random answer drawn from eight possible outcomes.",
-                              "Unlike a spinning wheel or coin flip, the oracle adds a narrative layer to the randomization. The contemplation delay creates anticipation, the themed messages give each answer a sense of meaning, and the energy tags provide a shorthand for interpreting the result.",
-                              "The tool runs entirely in your browser. No questions are stored, transmitted, or logged. The oracle produces its answer using client-side randomization."
+                              "हो नाही ओरेकल हा एक डिजिटल भविष्यवाणी साधन आहे जो एक संघटित तिन-टप्प्यांच्या प्रक्रियेद्वारे हो किंवा नाही प्रश्नांना उत्तर देतो. तुम इनपुट फील्डमध्ये प्रश्न टाइप करता, ओरेकल विचार करताना थांबता आणि आठ शक्य असलेल्या परिणामांमधून एक यादृच्छिक उत्तर प्राप्त करता.",
+                              "फिरणाऱ्या चाक किंवा नाणे उफलण्यापेक्षा वेगळे, ओरेकल यादृच्छिकीकरणाला एक कथा स्तर जोडतो. विचार विलंब उत्सुकता निर्माण करतो, थीम केलेले संदेश प्रत्येक उत्तराला अर्थाची भावना देतात आणि ऊर्जा टॅग परिणाम समजून घेण्यासाठी एक संक्षिप्त पद्धत प्रदान करतात.",
+                              "हे साधन पूर्णपणे तुमच्या ब्राउझरमध्ये चालते. कोणतेही प्रश्न साठवले, प्रसारित किंवा लॉग केले जात नाहीत. ओरेकल क्लायंट-साइड यादृच्छिकीकरण वापरून त्याचे उत्तर तयार करतो."
                         ]
                   },
                   {
-                        "title": "How the Oracle Works",
+                        "title": "ओरेकल कसे काम करते",
                         "content": [
-                              "The oracle follows a three-step flow. First, you type your question into the textarea. When you click Seek Wisdom, the input area disappears and is replaced by a contemplation screen.",
-                              "After a 2.5-second delay, the oracle reveals its answer. The result includes a yes, no, or maybe pill, an emoji, a quoted message, wisdom text, and an energy tag.",
-                              "The Ask Another Question button resets the flow, clearing the result and returning to the input screen. You can ask unlimited questions."
+                              "ओरेकल एका तिन-टप्प्यांच्या प्रवाहाचे पालन करतो. प्रथम, तुम टेक्स्टएरियामध्ये तुमचा प्रश्न टाइप करता. जेव्हा तुम ज्ञान शोधा क्लिक करता, तेव्हा इनपुट क्षेत्र अदृश्य होते आणि त्याऐवजी एक विचार स्क्रीन येते.",
+                              "2.5 सेकंदांच्या विलंबानंतर, ओरेकल त्याचे उत्तर उघडतो. परिणामामध्ये हो, नाही किंवा कदाचित पिल, इमोजी, उल्लेख केलेला संदेश, ज्ञान मजकूर आणि ऊर्जा टॅग असतो.",
+                              "आणखी एक प्रश्न विचारा बटण प्रवाह रीसेट करते, परिणान साफ करते आणि इनपुट स्क्रीनवर परत जाते. तुम अमर्याद प्रश्न विचारू शकता."
                         ]
                   },
                   {
-                        "title": "When to Use the Oracle",
+                        "title": "ओरेकल कधी वापरावा",
                         "content": [
-                              "The oracle works best when you want more than a simple yes or no. The additional context in each answer gives you something to reflect on."
+                              "साध्या हो किंवा नाहीपेक्षा अधिक काही हवे असताना ओरेकल सर्वोत्तम काम करतो. प्रत्येक उत्तरातील अतिरिक्त संदर्भ तुम्हाला विचार करण्यासाठी काहीतरी देतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Decisions You Already Know the Answer To",
-                                    "content": "Often, people ask the oracle about decisions they have already made but want reassurance on. If the oracle says No and you feel disappointed, that reaction tells you something about what you actually want."
+                                    "title": "तुम्हाला आधीच उत्तर माहीत असलेले निर्णय",
+                                    "content": "बऱ्याच वेळा, लोक आधीच केलेल्या पण पुनर्विश्वासासाठी हवे असलेल्या निर्णयांबद्दल ओरेकलला विचारतात. जर ओरेकल नाही म्हणे आणि तुम्हाला निराशा वाटे, तर ती प्रतिक्रिया तुम्हाला तुम्हाला खरोखर काय हवे आहे ते सांगते."
                               },
                               {
-                                    "title": "Creative Writing and Storytelling",
-                                    "content": "Writers use the oracle to break creative deadlocks. The energy tags and wisdom text can seed new ideas that a plain yes or no would not."
+                                    "title": "सर्जनशील लेखन आणि कथन",
+                                    "content": "लेखक सर्जनशील अडचणी तोडण्यासाठी ओरेकलचा वापर करतात. ऊर्जा टॅग आणि ज्ञान मजकूर साध्या हो किंवा नाही करू न शकणाऱ्या नवीन कल्पना निर्माण करू शकतात."
                               },
                               {
-                                    "title": "Fun Group Activities",
-                                    "content": "In social settings, the oracle adds drama that a spinner lacks. The contemplation delay, the themed message, and the energy tag all give the group something to discuss."
+                                    "title": "मजेदार गट क्रियाकलाप",
+                                    "content": "सामाजिक वातावरणात, ओरेकल स्पिनरला नसलेला नाटकीयपणा जोडतो. विचार विलंब, थीम केलेला संदेश आणि ऊर्जा टॅग या सर्वांना गटाला चर्चा करण्यासाठी काहीतरी देतात."
                               },
                               {
-                                    "title": "Personal Reflection",
-                                    "content": "Some people use the oracle as a journaling prompt. They type a question, receive an answer, and write about how the response resonated with their actual feelings."
+                                    "title": "वैयक्तिक प्रतिबिंब",
+                                    "content": "काही लोक ओरेकलचा जर्नलिंग प्रॉम्प्ट म्हणून वापर करतात. ते प्रश्न टाइप करतात, उत्तर मिळवतात आणि प्रतिसाद त्यांच्या प्रत्यक्ष भावनांशी कशा प्रतिध्वनित झाला त्याबद्दल लिहितात."
                               }
                         ]
                   },
                   {
-                        "title": "Oracle vs Other Decision Tools",
+                        "title": "ओरेकल विरुद्ध इतर निर्णय साधने",
                         "content": [
-                              "The yes or no wheel gives you a binary result with no additional context. The oracle takes a different approach with text input, contemplation delay, and themed output.",
-                              "The tarot card reader adds even more narrative depth with cards, meanings, and guidance. The oracle is simpler with yes, no, or maybe answers.",
-                              "The wheel of fate offers weighted outcomes with dramatic theming. The oracle is better for personal yes/no questions where you want a single answer with philosophical weight."
+                              "हो किंवा नाही चाक अतिरिक्त संदर्भाशिवाय एक द्विआधारी परिणान देते. ओरेकल मजकूर इनपुट, विचार विलंब आणि थीम केलेला आउटपुटसह भिन्न दृष्टिकोन घेतो.",
+                              "टॅरो कार्ड रीडर कार्ड, अर्थ आणि मार्गदर्शनासह अधिक कथा खोली जोडतो. ओरेकल हो, नाही किंवा कदाचित उत्तरांसह सोपा असतो.",
+                              "भाग्य चाक नाटकीय थीमिंगसह वजनदार परिणान देते. ओरेकल तत्त्वज्ञान वजनासह एक उत्तर हवे असलेल्या वैयक्तिक हो/नाही प्रश्नांसाठी अधिक योग्य आहे."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the Yes No Oracle?",
-                        "a": "The Yes No Oracle is a text-based decision tool that provides yes, no, or maybe answers to your questions with accompanying messages and wisdom text."
+                        "q": "हो नाही ओरेकल म्हणजे काय?",
+                        "a": "हो नाही ओरेकल हा एक मजकूर-आधारित निर्णय साधन आहे जो तुमच्या प्रश्नांना संगत संदेश आणि ज्ञान मजकूरसह हो, नाही किंवा कदाचित उत्तरे प्रदान करतो."
                   },
                   {
-                        "q": "How is the oracle different from a yes or no wheel?",
-                        "a": "The oracle uses a text input and contemplation animation instead of a spinning wheel. It produces three possible answers instead of two, and each answer includes a philosophical message."
+                        "q": "ओरेकल हो किंवा नाही चाकापेक्षा कसे भिन्न आहे?",
+                        "a": "ओरेकल फिरणाऱ्या चाकाऐवजी मजकूर इनपुट आणि विचार अॅनिमेशन वापरतो. तो द्विआधारी ऐवजी तीन शक्य उत्तरे निर्माण करतो आणि प्रत्येक उत्तरामध्ये एक तत्त्वज्ञान संदेश असतो."
                   },
                   {
-                        "q": "Is the oracle random?",
-                        "a": "Yes. The oracle selects a random result from eight possible outcomes using browser-based randomization."
+                        "q": "ओरेकल यादृच्छिक आहे का?",
+                        "a": "हो. ओरेकल ब्राउझर-आधारित यादृच्छिकीकरण वापरून आठ शक्य परिणामांमधून एक यादृच्छिक परिणान निवडतो."
                   },
                   {
-                        "q": "Can I ask the oracle any type of question?",
-                        "a": "The oracle works best with yes or no questions — decisions where you want a binary or near-binary answer."
+                        "q": "मी ओरेकलला कोणताही प्रकारचा प्रश्न विचारू शकतो का?",
+                        "a": "ओरेकल हो किंवा नाही प्रश्नांसोबत सर्वोत्तम काम करतो — जिथे तुम्हाला द्विआधारी किंवा जवळपास द्विआधारी उत्तर हवे आहे."
                   },
                   {
-                        "q": "What does the energy tag mean?",
-                        "a": "Each oracle result includes an energy tag like Rebirth, Patience, or Mystery. These are thematic labels that describe the general tone of the answer."
+                        "q": "ऊर्जा टॅग म्हणजे काय?",
+                        "a": "प्रत्येक ओरेकल परिणामामध्ये पुनर्जन्म, धैर्य किंवा रहस्य यांसारखा एक ऊर्जा टॅग असतो. हे उत्तराचा सामान्य स्वर वर्णवणारे थीम लेबल आहेत."
                   },
                   {
-                        "q": "Is the oracle free to use?",
-                        "a": "The Yes No Oracle is completely free with no signup, no ads, and no usage limits."
+                        "q": "ओरेकल विनामूल्य वापरता येतो का?",
+                        "a": "हो नाही ओरेकल पूर्णपणे विनामूल्य आहे, कोणतीही साइनअप, जाहिरात किंवा वापर मर्यादा नाही."
                   }
             ]
       },
@@ -5815,211 +5815,211 @@ const WHEEL_PAGE_CONTENT = {
             "title": "ہان نہین ٹارو ریدنگ",
             "subtitle": "میجر آرکانا کارد کھینڈیں؄",
             "howToUse": {
-                  "title": "How to Use the Tarot Card Drawer",
-                  "intro": "The tarot card drawer follows a simple flow:",
+                  "title": "ٹارو کا کارڈ کھینچنے کا طریقہ",
+                  "intro": "ٹارو کا کارڈ کھینچنے کا عمل سادہ ہے:",
                   "steps": [
                         {
-                              "title": "Focus on Your Question",
-                              "desc": "Think of a clear yes or no question. The clearer and more specific your question, the more useful the card's guidance text will be."
+                              "title": "اپنے سوال پر توجہ دیں",
+                              "desc": "ایک صاف اور صریح ہاں یا نہیں کا سوال سوچیں۔ آپ کا سوال جتنا صاف اور مخصوص ہوگا، کارڈ کی رہنمائی کا متن اتنا مفید ہوگا۔"
                         },
                         {
-                              "title": "Choose or Let the Universe Pick",
-                              "desc": "Select one of six face-down cards in the grid, or click Let the Universe Choose to have a card selected randomly. The card flip animation reveals the drawn card."
+                              "title": "چنا کریں یا کائنات کو چننے دیں",
+                              "desc": "گرڈ میں سے چھ پیچھے کی طرف رخ کردنے والے کارڈز میں سے ایک منتخب کریں، یا \"کائنات کو چننے دیں\" پر کلک کریں تاکہ بے ترتیب طور پر ایک کارڈ منتخب ہو جائے۔ کارڈ پلٹنے کے انیمیشن سے کھینچا گیا کارڈ ظاہر ہوتا ہے۔"
                         },
                         {
-                              "title": "Read the Guidance",
-                              "desc": "Read the guidance text carefully. It often provides nuance that the yes or no answer alone does not capture. The guidance adds the interpretive layer that makes tarot more than a coin flip."
+                              "title": "رہنمائی پڑھیں",
+                              "desc": "رہنمائی کے متن کو غور سے پڑھیں۔ یہ اکثر ایسی تفصیلات فراہم کرتا ہے جو صرف ہاں یا نہیں کے جواب سے زیر نہیں آتیں۔ رہنمائی وہ تشریحی پڑتا شامل کرتی ہے جو ٹارو کو صرف سکہ پھینکنے سے زیادہ بناتی ہے۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "ہاں نہیں ٹارو ریڈنگ کیا ہے؟",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
-                              "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
-                              "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
+                              "ہاں نہیں ٹارو ریڈنگ ایک سادہ فال گیری کا طریقہ ہے جو ٹارو کارڈز کا استعمال کر کے ایک двоی یا تقریباً двوی جواب پیدا کرتا ہے۔ پورے دس کارڈوں کی پھیلائش کی بجائے، آپ میجر آرکانا سے ایک واحد کارڈ کھینچتے ہیں اور اس کا جواب کلیدی لفظ تشریح کرتے ہیں۔",
+                              "یہ شکل تیز ٹارو مشاورت کے طریقوں سے ماخوذ ہے جو ان قاریوں کے ذریعہ استعمال ہوتی ہے جنہیں مکمل ریڈنگ کی پیچیدگی کے بغیر تیز جواب چاہیے۔",
+                              "اس صفحے پر ٹول 21 میجر آرکانا کارڈز استعمال کرتا ہے، ہر ایک کو پہلے سے ایک جواب، مفہوم، رہنمائی کا متن، اور عناصری تعلق مقرر کیا گیا ہے۔"
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "اس ریڈنگ میں میجر آرکانا کارڈز",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "میجر آرکانا 22 کارڈوں کا ایک مجموعہ ہے جو 0 سے 21 نمبرلے ہوئے ہیں۔ یہ ٹول 21 غیر عددی کارڈز استعمال کرتا ہے، دی فول سے لے کر دی ورلڈ تک۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "جواب ہاں دینے والے کارڈ",
+                                    "content": "کئی میجر آرکانا کارڈز مثبت جوابوں کی طرف جھکتے ہیں۔ دی فول نئی شروعات کی نمائندگی کرتا ہے۔ دی میجشن حکمت عملی کی علامت ہے۔ دی ایمپریس فراوانی کی تجویز کرتی ہے۔ دی چیریٹ فتح کی نمائندگی کرتا ہے۔ دی ستارہ امید کی علامت ہے۔"
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "جواب نہیں دینے والے کارڈ",
+                                    "content": "دیگر کارڈز احتیاط یا زوال کی تجویز کرتے ہیں۔ دی ہرمٹ تنہائی کا مطالبہ کرتا ہے۔ موت ختم ہونے کی نمائندگی کرتی ہے۔ دی ٹاور بدلاؤ کی علامت ہے۔ دی چاند وہم کی تجویز کرتی ہے۔"
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "جواب شاید دینے والے کارڈ",
+                                    "content": "کچھ کارڈز درمیانی مقام پر قبضہ کرتے ہیں۔ دی ہائی پریسٹیس شعور کی طرف اشارہ کرتی ہے۔ دی ہائیروفنت روایت کی نشاندہی کرتا ہے۔ جسٹس انصاف کا مطالبہ کرتا ہے۔ ٹیمپرنس اعتدال کا مطالبہ کرتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "فیصلوں کے لیے ٹارو ریڈنگ کب استعمال کریں",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "ہاں نہیں ٹارو ان فیصلوں کے لیے سب سے اچھا کام کرتا ہے جہاں آپ خالص میکانیکی بے ترتیب نتیجے کے بجائے ایک غور و فکر کی ترغیب چاہتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "مبہم احساسات کی وضاحت",
+                                    "content": "جب آپ کسی انتخاب کے بارے میں غیر یقینی ہوتے ہیں لیکن بیان نہیں کر سکتے کیوں، تو ٹارو کا کارڈ کھینچنا بنیادی فکر کو ظاہر کر سکتا ہے۔"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "تخلیقی تحریر اور برین اسٹارمنگ",
+                                    "content": "لکھاری ٹارو کارڈز کو کردار کی ترغیب کے طور پر استعمال کرتے ہیں۔ کسی فکشنل کرڈ کے لیے کھینچا گیا کارڈ ان کی اگلی حرکت یا جذباتی حالت طے کر سکتا ہے۔"
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "گروپ گفتگو اور آئس بریکرز",
+                                    "content": "سماجی ماحول میں، ٹارو کارڈز کھینچنا ایک مشترکہ تجربہ بناتا ہے۔ ہر شخص ایک کارڈ کھینچتا ہے، رہنمائی بلند آواز سے پڑھتا ہے، اور اس پر بحث کرتا ہے کہ یہ ان کی صورتحال سے کیسے ملتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "ٹارو بنسبت دیگر فیصلہ کرنے والے ٹولز",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "ہاں نہیں کا پہیوو سب سے تیز فیصلہ کرنے والا ٹول ہے۔ ٹارو ریڈنگ کارڈوں کے مفاهیم اور رہنمائی کے متن کے ذریعے بیاناتی گہرائی شامل کرتی ہے۔",
+                              "یس نو اوراکل ہاں/نہیں/شاید کے جوابات اور فلسفانہ پیغامات کے ساتھ ایک درمیانی مقام فراہم کرتا ہے۔ ٹارو زیادہ تہوں والا ہے۔",
+                              "تقدیر کا پہیوو ان صورتوں کے لیے وزن والے نتائج استعمال کرتا ہے جہاں امکان اہم ہے۔ ٹارو ریڈنگ ہر کارڈ کو مساوی امکان دیتی ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "ہاں نہیں ٹارو ریڈنگ کیا ہے؟",
+                        "a": "ہاں نہیں ٹارو ریڈنگ ٹارو کی ایک سادہ شکل ہے جو پیچیدہ پھیلائش کے بجائے ہاں، نہیں، یا شاید کا جواب پیدا کرتی ہے۔"
                   },
                   {
-                        "q": "How does the card draw work?",
-                        "a": "When you click a card or press Let the Universe Choose, the tool randomly selects one of 21 Major Arcana cards with a pre-assigned answer."
+                        "q": "کارڈ کھینچنا کیسے کام کرتا ہے؟",
+                        "a": "جب آپ کارڈ پر کلک کرتے ہیں یا \"کائنات کو چننے دیں\" دباتے ہیں، تو ٹول بے ترتیب طور پر 21 میجر آرکانا کارڈز میں سے ایک منتخب کرتا ہے جس کا پہلے سے جواب مقرر ہوتا ہے۔"
                   },
                   {
-                        "q": "What are the Major Arcana?",
-                        "a": "The Major Arcana is a set of 22 cards in a standard tarot deck that represent major life themes and archetypes."
+                        "q": "میجر آرکانا کیا ہیں؟",
+                        "a": "میجر آرکانا ایک معیاری ٹارو ڈیک میں 22 کارڈوں کا ایک مجموعہ ہے جو اہم زندگی کے موضوعات اور اراکائن کی نمائندگی کرتے ہیں۔"
                   },
                   {
-                        "q": "Can I trust the tarot reading?",
-                        "a": "The tarot reading is random — it does not predict the future. It is a tool for reflection and creative thinking."
+                        "q": "کیا میں ٹارو ریڈنگ پر بھروسہ کر سکتا ہوں؟",
+                        "a": "ٹارو ریڈنگ بے ترتیب ہوتی ہے — یہ مستقبل کی پیشگوئی نہیں کرتی۔ یہ غور و فکر اور تخلیقی سوچ کا ایک ذریعہ ہے۔"
                   },
                   {
-                        "q": "Is this a real tarot reading?",
-                        "a": "This tool uses the Major Arcana from traditional tarot, but it does not follow established tarot reading practices like full spreads."
+                        "q": "کیا یہ ایک اصلی ٹارو ریڈنگ ہے؟",
+                        "a": "یہ ٹول روایتی ٹارو سے میجر آرکانا استعمال کرتا ہے، لیکن یہ مکمل پھیلائش جیسی مقرر شدہ ٹارو ریڈنگ کی عمل کی پیروی نہیں کرتا۔"
                   },
                   {
-                        "q": "Can I use this for serious decisions?",
-                        "a": "The tarot reading can prompt reflection on a decision, but it should not be the sole basis for important choices."
+                        "q": "کیا میں اسے اہم فیصلوں کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "ٹارو ریڈنگ کسی فیصلے پر غور و فکر کی ترغیب دے سکتی ہے، لیکن اہم انتخابوں کے لیے یہ واحد بنیاد نہیں ہونی چاہیے۔"
                   }
             ]
       },
     id: {
             "title": "Taruhan Kartu Tarot Ya Tidak",
-            "subtitle": "Tarik kartu Arcana Mayor.",
+            "subtitle": "Tarik kartu Arcana Mayor untuk panduan ya atau tidak instan. Setiap kartu dilengkapi makna dan interpretasi untuk membantu Anda merenungkan pertanyaan.",
             "howToUse": {
-                  "title": "How to Use the Tarot Card Drawer",
-                  "intro": "The tarot card drawer follows a simple flow:",
+                  "title": "Cara Menggunakan Pengambil Kartu Tarot",
+                  "intro": "Pengambil kartu tarot mengikuti alur sederhana:",
                   "steps": [
                         {
-                              "title": "Focus on Your Question",
-                              "desc": "Think of a clear yes or no question. The clearer and more specific your question, the more useful the card's guidance text will be."
+                              "title": "Fokus pada Pertanyaan Anda",
+                              "desc": "Pikirkan pertanyaan ya atau tidak yang jelas. Semakin jelas dan spesifik pertanyaan Anda, semakin berguna teks panduan kartu tersebut."
                         },
                         {
-                              "title": "Choose or Let the Universe Pick",
-                              "desc": "Select one of six face-down cards in the grid, or click Let the Universe Choose to have a card selected randomly. The card flip animation reveals the drawn card."
+                              "title": "Pilih atau Biarkan Alam Semesta Memilih",
+                              "desc": "Pilih salah satu dari enam kartu telungkup di kisi, atau klik Biarkan Alam Semesta Memilih agar kartu dipilih secara acak. Animasi membalik kartu mengungkapkan kartu yang ditarik."
                         },
                         {
-                              "title": "Read the Guidance",
-                              "desc": "Read the guidance text carefully. It often provides nuance that the yes or no answer alone does not capture. The guidance adds the interpretive layer that makes tarot more than a coin flip."
+                              "title": "Baca Panduan",
+                              "desc": "Baca teks panduan dengan saksama. Teks ini sering memberikan nuansa yang tidak ditangkap oleh jawaban ya atau tidak saja. Panduan menambahkan lapisan interpretatif yang membuat tarot lebih dari sekadar lempar koin."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "Apa Itu Tarot Ya Tidak?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
-                              "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
-                              "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
+                              "Tarot ya tidak adalah metode ramalan yang disederhanakan yang menggunakan kartu tarot untuk menghasilkan jawaban biner atau hampir biner. Alih-alih menyebarkan kartu penuh sepuluh kartu, Anda menarik satu kartu dari Arcana Mayor dan menginterpretasikan kata kunci jawabannya.",
+                              "Format ini berakar pada metode konsultasi tarot cepat yang digunakan oleh para pembaca yang membutuhkan jawaban tanpa kerumitan penuh.",
+                              "Alat di halaman ini menggunakan 21 kartu Arcana Mayor, masing-masing telah ditetapkan jawaban, makna, teks panduan, dan asosiasi elemen."
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "Kartu Arcana Mayor dalam Pembacaan Ini",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "Arcana Mayor terdiri dari 22 kartu bernomor 0 hingga 21. Alat ini menggunakan semua 21 kartu non-numeral, dari Sang Bodoh hingga Sang Dunia."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "Kartu yang Menjawab Ya",
+                                    "content": "Beberapa kartu Arcana Mayor cenderung memberikan jawaban afirmatif. Sang Bodoh melambangkan awal baru. Sang Penyihir menandakan kreativitas. Sang Permaisuri menunjukkan kelimpahan. Sang Kereta melambangkan kemenangan. Sang Bintang menandakan harapan."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "Kartu yang Menjawab Tidak",
+                                    "content": "Kartu lain menunjukkan kehati-hatian atau penurunan. Sang Pertapa meminta kesendirian. Kematian melambangkan akhir. Menara menandakan kekacauan. Bulan menunjukkan ilusi."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "Kartu yang Menjawab Mungkin",
+                                    "content": "Beberapa kartu menempati posisi tengah. Sang Im Besar menunjukkan intuisi. Sang Imam Agung menunjukkan tradisi. Keadilan menuntut kesederhanaan. Temperansi menyerukan moderasi."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "Kapan Menggunakan Tarot untuk Keputusan",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "Tarot ya tidak paling baik digunakan untuk keputusan di mana Anda menginginkan petunjuk reflektif alih-alih hasil acak yang sepenuhnya mekanis."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "Menjelaskan Perasaan yang Tidak Jelas",
+                                    "content": "Ketika Anda ragu tentang sebuah pilihan tetapi tidak dapat menjelaskan alasannya, menarik kartu tarot dapat mengungkap kekhawatiran yang mendasari."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "Penulisan Kreatif dan Brainstorming",
+                                    "content": "Penulis menggunakan kartu tarot sebagai petunjuk karakter. Kartu yang ditarik untuk karakter fiksi dapat menentukan tindakan atau kondisi emosional mereka selanjutnya."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "Diskusi Kelompok dan Pemanasan",
+                                    "content": "Dalam pengaturan sosial, menarik kartu tarot menciptakan pengalaman bersama. Setiap orang menarik kartu, membacakan panduan, dan mendiskusikan bagaimana hal itu berkaitan dengan situasi mereka."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "Tarot vs Alat Keputusan Lainnya",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "Roda ya atau tidak adalah alat keputusan tercepat. Tarot menambahkan kedalaman naratif melalui makna kartu dan teks panduan.",
+                              "Oracle Ya Tidak memberikan keseimbangan dengan jawaban ya/tidak/mungkin dan pesan filosofis. Tarot lebih berlapis.",
+                              "Roda nasib menggunakan hasil berbobot untuk skenario di mana probabilitas penting. Tarot memberikan setiap kartu probabilitas yang sama."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "Apa itu tarot ya tidak?",
+                        "a": "Tarot ya tidak adalah bentuk sederhana ramalan tarot yang menghasilkan jawaban ya, tidak, atau mungkin alih-alih penyebaran yang kompleks."
                   },
                   {
-                        "q": "How does the card draw work?",
-                        "a": "When you click a card or press Let the Universe Choose, the tool randomly selects one of 21 Major Arcana cards with a pre-assigned answer."
+                        "q": "Bagaimana cara pengambilan kartu?",
+                        "a": "Ketika Anda mengklik kartu atau menekan Biarkan Alam Semesta Memilih, alat ini secara acak memilih salah satu dari 21 kartu Arcana Mayor dengan jawaban yang telah ditentukan."
                   },
                   {
-                        "q": "What are the Major Arcana?",
-                        "a": "The Major Arcana is a set of 22 cards in a standard tarot deck that represent major life themes and archetypes."
+                        "q": "Apa itu Arcana Mayor?",
+                        "a": "Arcana Mayor adalah sekumpulan 22 kartu dalam set tarot standar yang merepresentasikan tema kehidupan besar dan arketipe."
                   },
                   {
-                        "q": "Can I trust the tarot reading?",
-                        "a": "The tarot reading is random — it does not predict the future. It is a tool for reflection and creative thinking."
+                        "q": "Bisakah saya mempercayai tarot?",
+                        "a": "Tarot bersifat acak — ia tidak meramalkan masa depan. Ini adalah alat untuk reflektif dan pemikiran kreatif."
                   },
                   {
-                        "q": "Is this a real tarot reading?",
-                        "a": "This tool uses the Major Arcana from traditional tarot, but it does not follow established tarot reading practices like full spreads."
+                        "q": "Apakah ini tarot yang nyata?",
+                        "a": "Alat ini menggunakan Arcana Mayor dari tarot tradisional, tetapi tidak mengikuti praktik pembacaan tarot yang telah ditetapkan seperti penyebaran penuh."
                   },
                   {
-                        "q": "Can I use this for serious decisions?",
-                        "a": "The tarot reading can prompt reflection on a decision, but it should not be the sole basis for important choices."
+                        "q": "Bisakah saya menggunakan ini untuk keputusan serius?",
+                        "a": "Tarot dapat mendorong refleksi atas sebuah keputusan, tetapi tidak boleh menjadi satu-satunya dasar untuk pilihan penting."
                   }
             ]
       },
@@ -6027,105 +6027,105 @@ const WHEEL_PAGE_CONTENT = {
             "title": "हो नाही टैरो रीडिंग",
             "subtitle": "मेजर आर्काना कार्ड काढा.",
             "howToUse": {
-                  "title": "How to Use the Tarot Card Drawer",
-                  "intro": "The tarot card drawer follows a simple flow:",
+                  "title": "टैरो कार्ड काढण्याचा उपयोग कशा करावा",
+                  "intro": "टैरो कार्ड काढणे एका सोप्या प्रक्रियेचे अनुसरण करते:",
                   "steps": [
                         {
-                              "title": "Focus on Your Question",
-                              "desc": "Think of a clear yes or no question. The clearer and more specific your question, the more useful the card's guidance text will be."
+                              "title": "तुमच्या प्रश्नावर लक्ष केंद्रित करा",
+                              "desc": "एक स्पष्ट हो किंवा नाही प्रश्न विचार करा. तुमचा प्रश्न जितका स्पष्ट आणि विशिष्ट असेल, कार्डचा मार्गदर्शक मजकूर तितका उपयुक्त असील."
                         },
                         {
-                              "title": "Choose or Let the Universe Pick",
-                              "desc": "Select one of six face-down cards in the grid, or click Let the Universe Choose to have a card selected randomly. The card flip animation reveals the drawn card."
+                              "title": "निवडा किंवा विश्वाला निवडू द्या",
+                              "desc": "ग्रिडमधील छह पाठकडे वळलेल्या कार्डमधून एक निवडा, किंवा विश्वाला निवडू द्या दाबून एक कार्ड यादृच्छिकरित्या निवडले जाऊ द्या. कार्ड उलटवण्याच्या ऍनिमेशनमूळ खेचलेले कार्ड दिसू लागते."
                         },
                         {
-                              "title": "Read the Guidance",
-                              "desc": "Read the guidance text carefully. It often provides nuance that the yes or no answer alone does not capture. The guidance adds the interpretive layer that makes tarot more than a coin flip."
+                              "title": "मार्गदर्शन वाचा",
+                              "desc": "मार्गदर्शक मजकूर काळजीपूर्वक वाचा. तो अनेकदा अशा सूक्ष्मतेचा समावेश करतो जी हो किंवा नाही या उत्तरामध्ये एकट्याने सामावलेली नाही. मार्गदर्शन त्या व्याख्यात्मक स्तराचा समावेश करते जो टैरोला फक्त नाणे उडी मारण्यापेक्षा जास्त बनवतो."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "हो नाही टैरो रीडिंग म्हणजे काय?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
-                              "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
-                              "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
+                              "हो नाही टैरो रीडिंग ही एक सरलीकृत भविष्यवाणी पद्धत आहे जी टैरो कार्ड्सचा वापर करून द्वैध किंवा जवळजवळ द्वैध उत्तर निर्माण करते. संपूर्ण दहा कार्ड स्प्रेड विस्तारण्याऐवजी, तुम्ही मेजर आर्कानामधून एकच कार्ड खेचता आणि त्याचे उत्तर कीवर्ड समजून घेता.",
+                              "हा स्वरूप जलद टैरो सल्लामसलत पद्धतींमधून आला आहे जे वाचकांनी संपूर्ण रीडिंगच्या गोंधळाशिवाय जलद उत्तर हवे असल्यास वापरल्या जातील.",
+                              "या पृष्ठावरील साधन 21 मेजर आर्काना कार्ड्स वापरते, प्रत्येकाला आधीच उत्तर, अर्थ, मार्गदर्शक मजकूर आणि मूलद्रव्य संबंध नियुक्त करण्यात आला आहे."
                         ]
                   },
                   {
-                        "title": "The Major Arcana Cards in This Reading",
+                        "title": "या रीडिंगमधील मेजर आर्काना कार्ड्स",
                         "content": [
-                              "The Major Arcana consists of 22 cards numbered 0 through 21. This tool uses all 21 non-numeral cards, from The Fool to The World."
+                              "मेजर आर्काना हे 0 ते 21 नंबर असलेल्या 22 कार्ड्सचा समूह आहे. हे साधन सर्व 21 गैर-अंकीय कार्ड्स वापरते, मूर्खापासून जगापर्यंत."
                         ],
                         "subsections": [
                               {
-                                    "title": "Cards That Answer Yes",
-                                    "content": "Several Major Arcana cards lean toward affirmative answers. The Fool represents new beginnings. The Magician signifies resourcefulness. The Empress suggests abundance. The Chariot represents victory. The Star signals hope."
+                                    "title": "हो उत्तर देणारे कार्ड्स",
+                                    "content": "अनेक मेजर आर्काना कार्ड्स प्रतिबद्ध उत्तरांकडे झुकतात. मूर्ख नवीन सुरुवातींचे प्रतिनिधित्व करतो. जादूगर उपायुक्ततेचे प्रतीक आहे. साम्राज्ञी समृद्धीचा सुचवते. रथ विजयाचे प्रतिनिधित्व करतो. तारा आशेचे संकेत देतो."
                               },
                               {
-                                    "title": "Cards That Answer No",
-                                    "content": "Other cards suggest caution or decline. The Hermit calls for solitude. Death represents endings. The Tower signals upheaval. The Moon suggests illusion."
+                                    "title": "नाही उत्तर देणारे कार्ड्स",
+                                    "content": "इतर कार्ड्स सावधानता किंवा पतनाचा सुचवतात. साधू एकांताची मागणी करतो. मृत्यू दिसे संपण्याचे प्रतिनिधित्व करतो. गोपूर भूकंपाचा संकेत देतो. चंद्र भ्रमाचा सुचवतो."
                               },
                               {
-                                    "title": "Cards That Answer Maybe",
-                                    "content": "Some cards occupy a middle ground. The High Priestess points to intuition. The Hierophant indicates tradition. Justice demands fairness. Temperance calls for moderation."
+                                    "title": "कदाचित उत्तर देणारे कार्ड्स",
+                                    "content": "काही कार्ड्स मध्यवर्ती स्थान घेतात. महापुरोहिती अंतर्ज्ञानाकडे निर्देश करतात. सर्वोच्च पुरोहित परंपरेची निर्देश करतात. न्याय योग्यतेची मागणी करतो. संयम मध्यमार्गाची मागणी करतो."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "निर्णयांसाठी टैरो रीडिंग कधी वापरावी",
                         "content": [
-                              "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
+                              "हो नाही टैरो त्या निर्णयांसाठी सर्वोत्तम काम करतो जिथे तुम्हाला शुद्ध यांत्रिक यादृच्छिक परिणामाऐवजी चिंतनशील प्रॉम्प्ट हवा असते."
                         ],
                         "subsections": [
                               {
-                                    "title": "Clarifying Ambiguous Feelings",
-                                    "content": "When you are uncertain about a choice but cannot articulate why, drawing a tarot card can surface the underlying concern."
+                                    "title": "अस्पष्ट भावना स्पष्ट करणे",
+                                    "content": "जेव्हा तुम्ही एखाद्या पर्यायाबद्दल अनिश्चित असता पण का ते स्पष्ट करू शकत नाही, तेव्हा एक टैरो कार्ड खेचल्यास अंतर्निहित चिंता सतही येऊ शकते."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers use tarot cards as character prompts. A card drawn for a fictional character can determine their next action or emotional state."
+                                    "title": "सर्जनशील लेखन आणि ब्रेनस्टॉर्मिंग",
+                                    "content": "लेखक टैरो कार्ड्सना पात्र प्रॉम्प्ट म्हणून वापरतात. काल्पनिक पात्रासाठी खेचलेले कार्ड त्याच्या पुढच्या कृती किंवा भावनिक स्थिती ठरवू शकते."
                               },
                               {
-                                    "title": "Group Discussions and Icebreakers",
-                                    "content": "In social settings, drawing tarot cards creates a shared experience. Each person draws a card, reads the guidance aloud, and discusses how it relates to their situation."
+                                    "title": "गट चर्चा आणि आयसब्रेकर्स",
+                                    "content": "सामाजिक वातावरणात, टैरो कार्ड्स खेचल्याने एक शेअरड अनुभव निर्माण होतो. प्रत्येक व्यक्ती एक कार्ड खेचते, मार्गदर्शन जोरात वाचते आणि ते त्यांच्या परिस्थितीशी कसे संबंधित आहे यावर चर्चा करते."
                               }
                         ]
                   },
                   {
-                        "title": "Tarot vs Other Decision Tools",
+                        "title": "टैरो विरुद्ध इतर निर्णय साधने",
                         "content": [
-                              "The yes or no wheel is the fastest decision tool. The tarot reading adds narrative depth through card meanings and guidance text.",
-                              "The Yes No Oracle provides a middle ground with yes/no/maybe answers and philosophical messages. The tarot is more layered.",
-                              "The wheel of fate uses weighted outcomes for scenarios where probability matters. The tarot reading gives every card equal probability."
+                              "हो किंवा नाही पहिया हे सर्वात जलद निर्णय साधन आहे. टैरो रीडिंग कार्ड्सच्या अर्थांद्वारे आणि मार्गदर्शक मजकूराद्वारे कथात्मक खोली जोडते.",
+                              "हो नाही ओरॅकल हो/नाही/कदाचित उत्तरे आणि तात्त्विक संदेशांसह मध्यमार्ग प्रदान करतो. टैरो अधिक स्तरित आहे.",
+                              "विधीचा पहिया प्रायोगिकता महत्त्वाच्या परिस्थितींसाठी वजनदार परिणाम वापरतो. टैरो रीडिंग प्रत्येक कार्डला समान प्रायोगिकता देते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "हो नाही टैरो रीडिंग म्हणजे काय?",
+                        "a": "हो नाही टैरो रीडिंग ही टैरो भविष्यवाणीची एक सरलीकृत स्वरूप आहे जी गोंधळाच्या स्प्रेडऐवजी हो, नाही किंवा कदाचित हे उत्तर निर्माण करते."
                   },
                   {
-                        "q": "How does the card draw work?",
-                        "a": "When you click a card or press Let the Universe Choose, the tool randomly selects one of 21 Major Arcana cards with a pre-assigned answer."
+                        "q": "कार्ड खेचणे कसे काम करते?",
+                        "a": "जेव्हा तुम्ही कार्डवर क्लिक करता किंवा विश्वाला निवडू द्या दाबता, तेव्हा साधन आधीच नियुक्त उत्तरासह 21 मेजर आर्काना कार्ड्समधून एक यादृच्छिकरित्या निवडते."
                   },
                   {
-                        "q": "What are the Major Arcana?",
-                        "a": "The Major Arcana is a set of 22 cards in a standard tarot deck that represent major life themes and archetypes."
+                        "q": "मेजर आर्काना म्हणजे काय?",
+                        "a": "मेजर आर्काना ही मानक टैरो डेकमधील 22 कार्ड्सचा एक समूह आहे जो प्रमुख जीवन विषय आणि आर्केटाइप्सचे प्रतिनिधित्व करतो."
                   },
                   {
-                        "q": "Can I trust the tarot reading?",
-                        "a": "The tarot reading is random — it does not predict the future. It is a tool for reflection and creative thinking."
+                        "q": "मी टैरो रीडिंगवर विश्वास ठेवू शकतो?",
+                        "a": "टैरो रीडिंग यादृच्छिक आहे — ती भविष्य भाकीत करत नाही. ती चिंतन आणि सर्जनशील विचारांसाठी एक साधन आहे."
                   },
                   {
-                        "q": "Is this a real tarot reading?",
-                        "a": "This tool uses the Major Arcana from traditional tarot, but it does not follow established tarot reading practices like full spreads."
+                        "q": "ही खरी टैरो रीडिंग आहे?",
+                        "a": "हे साधन पारंपरिक टैरोतील मेजर आर्काना वापरते, पण ते संपूर्ण स्प्रेड यांसारख्या स्थापित टैरो वाचन प्रथांचे पालन करत नाही."
                   },
                   {
-                        "q": "Can I use this for serious decisions?",
-                        "a": "The tarot reading can prompt reflection on a decision, but it should not be the sole basis for important choices."
+                        "q": "मी याचा गंभीर निर्णयांसाठी वापर करू शकतो?",
+                        "a": "टैरो रीडिंग एखाद्या निर्णयावर चिंतन करण्यास प्रेरित करू शकते, पण महत्त्वाच्या निवडींसाठी ती एकमेव आधार असू नये."
                   }
             ]
       },
@@ -7353,101 +7353,101 @@ const WHEEL_PAGE_CONTENT = {
             "title": "ہان اور نہین پاسے",
             "subtitle": "انٹرائکٹو 3D پاسے پھینکیں؄",
             "howToUse": {
-                  "title": "How to Use the Yes and No Dice",
-                  "intro": "The dice tool is ready to roll in seconds. Here is how it works:",
+                  "title": "ہاں اور نہیں پاسوں کا استعمال کیسے کریں",
+                  "intro": "پاسوں کا ٹول سیکنڈوں میں پھینکنے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Set Your Preferences",
-                              "desc": "Choose between Single, Best of 3, or Best of 5 mode. Adjust the probability slider to weight Yes versus No outcomes. Toggle auto-roll if you want continuous results."
+                              "title": "اپنی ترجیحات مقرر کریں",
+                              "desc": "واحد، 3 میں سے بہترین، یا 5 میں سے بہترین موڈ کا انتخاب کریں۔ امکانات اسکیڈر کا استعمال کر کے ہاں بمقابلہ نہیں کے نتائج کو وزن دیں۔ خودکار پھینکنے کو فعال کریں اگر آپ مسلسل نتائج چاہتے ہیں۔"
                         },
                         {
-                              "title": "Roll the Dice",
-                              "desc": "Click the Roll Dice button or press the spacebar. Watch the 3D die tumble through space, bounce off surfaces, and settle on a random result."
+                              "title": "پاسے پھینکیں",
+                              "desc": "پاسے پھینکیں بٹن کلک کریں یا اسپیس بار دبائیں۔ دیکھیں کیسے 3D پاسا فضائی میں گرتا ہے، سطحوں سے اڑتا ہے، اور بے ترتیب نتیجے پر آرام کرتا ہے۔"
                         },
                         {
-                              "title": "Review Your Statistics",
-                              "desc": "The statistics dashboard tracks your total rolls, Yes count, No count, current streak, and win rate. Stats persist across sessions."
+                              "title": "اپنے اعداد و شمار کا جائزہ لیں",
+                              "desc": "اعداد و شمار ڈیش بورڈ آپ کل پھینکنے، ہاں گننے، نہیں گننے، موجودہ لہر، اور جیتنے کی شرح کو ٹریک کرتا ہے۔ اعداد و شمار سیشنز میں برقرار رہتے ہیں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes and No Dice Tool?",
+                        "title": "ہاں اور نہیں پاسوں کا ٹول کیا ہے؟",
                         "content": [
-                              "The Yes and No Dice tool is a 3D physics-based decision maker that rolls a virtual die with Yes and No faces. Instead of clicking a spinner or flipping a coin, you watch a realistic 3D die tumble through space, bounce off surfaces, and settle on a random result.",
-                              "Each die face shows either Yes or No in bold text on a colored background — green for Yes, red for No. The probability slider lets you adjust how many faces show Yes versus No.",
-                              "The tool runs entirely in your browser using Three.js for 3D rendering and Cannon.js for physics simulation. No server communication happens during a roll."
+                              "ہاں اور نہیں پاسوں کا ٹول ایک 3D فزکس پر مبنی فیصلہ ساز ہے جو ہاں اور نہیں کے چہرے والے ورچوئل پاسے کو پھینکتا ہے۔ اسپنر کلک کرنے یا سکہ اچھالنے کے بجائے، آپ ایک حقیقی 3D پاسے کو فضائی میں گرتے، سطحوں سے اڑتے، اور بے ترتیب نتیجے پر آرام کرتے دیکھتے ہیں۔",
+                              "ہر پاسے کا چہرہ ہاں یا نہیں کو رنگین پس منظر پر بولڈ ٹیکسٹ میں دکھاتا ہے — ہاں کے لیے سبز، نہیں کے لیے سرخ۔ امکانات اسکیڈر آپ کو ہاں بمقابلہ نہیں کے کتنے چہرے دکھاتے ہیں یہ ایڈجسٹ کرنے دیتا ہے۔",
+                              "یہ ٹول مکمل طور پر آپ کے براؤزر میں چلتا ہے جس میں 3D رینڈرنگ کے لیے Three.js اور فزکس نقل و حرکت کے لیے Cannon.js استعمال ہوتا ہے۔ پھینکنے کے دوران کوئی سرور مواصلت نہیں ہوتی۔"
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "3D فزکس انجن کیسے کام کرتا ہے",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "جب آپ پاسے پھینکیں بٹن کلک کرتے ہیں، تو فزکس انجن پاسے کو فرش سے اوپر بے ترتیب پوزیشن سے پھینکتا ہے۔ پاسے کو تین ابعاد میں بے ترتیب رفتار اور گھماؤ کے لیے بے ترتیب کونی رفتار ملتی ہے۔",
+                              "انجن پاسے کی سمت کو کوارٹرنیئنز کا استعمال کر کے ٹریک کرتا ہے — یہ ایک ریاضیاتی نمائندگی ہے جو گمل لاک سے بچاتی ہے اور ہموار گھماؤ کی درمیانی پیداوار فراہم کرتی ہے۔",
+                              "نتیجہ معلوم کرنے کے لیے، انجن چیک کرتا ہے کہ پاسے کا کون سا چہرہ سب سے زیادہ براہ راست اوپر کی طرف نشاندہی کر رہا ہے، ہر چہرے کے نارمل ویکٹر کا دنیا کی اوپر کی سمت سے موازنہ کر کے۔"
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "گیم موڈز اور امکانات کنٹرول",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "پاسوں کا ٹول تین گیم موڈز پیش کرتا ہے جو آخری جواب طے کرنے کے لیے کتنی پھینکیں استعمال کرتے ہیں یہ بدلتا ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "واحد پھینکنے کا موڈ",
+                                    "content": "واحد موڈ میں، ایک پھینکنے سے آخری نتیجہ ملتا ہے۔ یہ سب سے تیز آپشن ہے اور سادہ ہاں یا نہیں کے سوالات کے لیے اچھا کام کرتا ہے۔"
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "3 میں سے بہترین موڈ",
+                                    "content": "3 میں سے بہترین کے لیے فیصلہ کرنے کے لیے تین میں سے دو پھینکیں درکار ہیں۔ یہ موڈ ڈرامہ شامل کرتا ہے اور پاسے کو مزید مواقع دیتا ہے۔"
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "5 میں سے بہترین موڈ",
+                                    "content": "5 میں سے بہترین کے لیے جیتنے کے لیے پانچ میں سے تین پھینکیں درکار ہیں۔ یہ موڈ ان فیصلوں کے لیے سب سے اچھا ہے جو کافی اہم محسوس ہوتے ہیں تاکہ لمبے عمل کی ضرورت ہو۔"
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "امکانات اسکیڈر",
+                                    "content": "امکانات اسکیڈر پاسے کے چہرے کی تقسیم کو 0% ہاں سے 100% ہاں تک ایڈجسٹ کرتا ہے۔ 50% پر، پاسا متوازن ہوتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
+                        "title": "پاسوں کا استعمال کب کریں بمقابلہ گھومنے والا پہیوو",
                         "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
+                              "ہاں یا نہیں پہیوو اور ہاں اور نہیں پاسے دونوں بے ترتیب دوہرے نتائج پیدا کرتے ہیں۔ فرق تجربہ اور فیصلے کے سیاق و سباق میں ہے۔",
+                              "گھومنے والا پہیوو بصری اور مسلسل ہے — آپ دیکھتے ہیں کہ یہ گھومتا ہے اور سست پڑتا ہے۔ پاسوں کا ٹول چھو کر محسوس کرنے اور فزیکل ہے۔ 3D انیمیشن، اڑنے کی فزکس، اور بے ترتیب گرتا ہوا حقیقی پاسا پھینکنے جیسا محسوس ہوتا ہے۔",
+                              "ان فیصلوں کے لیے جہاں آپ کو ہاں اور نہیں کے علاوہ متعدد نتائج چاہتے ہیں، بے ترتیب کھانے کا پہیوو یا ملک کا پہیوو غور کریں۔"
                         ]
                   },
                   {
-                        "title": "Tracking Your Roll Statistics",
+                        "title": "اپنے پھینکنے کے اعداد و شمار کی نگرانی",
                         "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
+                              "پاسوں کا ٹول ہر پھینکنے کو آپ کے براؤزر کے مقامی اسٹوریج میں ریکارڈ کرتا ہے۔ اعداد و شمار ڈیش بورڈ آپ کل پھینکنے، ہاں گننے، نہیں گننے، موجودہ لہر، اور جیتنے کی شرح دکھاتا ہے۔",
+                              "اعداد و شمار سیشنز میں برقرار رہتے ہیں، تو آپ براؤزر بند کر سکتے ہیں اور بعد میں اپنا مجموعیاتی تاریخ دیکھنے کے لیے واپس آ سکتے ہیں۔",
+                              "نفسیاتی خصوصیت خود نگرانی کا ایک اور پہلہ شامل کرتی ہے۔ تقریباً ہر پانچواں واحد پھینکنے کے بعد، ٹول پوچھتا ہے کہ کیا آپ نتیجے سے خوش ہیں۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes and no dice?",
-                        "a": "A yes and no dice is a digital decision-making tool that simulates rolling a physical dice. Instead of numbers, the faces show Yes or No."
+                        "q": "ہاں اور نہیں پاسہ کیا ہے؟",
+                        "a": "ہاں اور نہیں پاسہ ایک ڈیجیٹل فیصلہ ساز ٹول ہے جو فزیکل پاسہ پھینکنے کی نقل و حرکت کرتا ہے۔ اعداد و شمار کے بجائے، چہرے ہاں یا نہیں دکھاتے ہیں۔"
                   },
                   {
-                        "q": "Is yes and no dice truly random?",
-                        "a": "Yes, the dice uses a real-time 3D physics simulation with randomized spin, velocity, and position for each roll."
+                        "q": "کیا ہاں اور نہیں پاسہ واقعی بے ترتیب ہے؟",
+                        "a": "ہاں، پاسہ ہر پھینکنے کے لیے بے ترتیب گھماؤ، رفتار، اور پوزیشن کے ساتھ ریئل ٹائم 3D فزکس نقل و حرکت استعمال کرتا ہے۔"
                   },
                   {
-                        "q": "Can I use yes and no dice for decisions?",
-                        "a": "Absolutely. The yes and no dice is perfect for everyday decisions like what to eat, whether to go out, or choosing between two options."
+                        "q": "کیا میں ہاں اور نہیں پاسوں کا استعمال فیصلوں کے لیے کر سکتا ہوں؟",
+                        "a": "بالکل۔ ہاں اور نہیں پاسہ روزمرہ کے فیصلوں کے لیے بالکل مناسب ہے جیسے کہ کیا کھانا ہے، باہر جانا ہے، یا دو آپشنز میں سے انتخاب کرنا۔"
                   },
                   {
-                        "q": "How does this dice generator work?",
-                        "a": "The tool uses Three.js for 3D rendering and Cannon.js for physics simulation. When you click Roll, the dice is launched with random force and spin."
+                        "q": "یہ پاسہ جنریٹر کیسے کام کرتا ہے؟",
+                        "a": "یہ ٹول 3D رینڈرنگ کے لیے Three.js اور فزکس نقل و حرکت کے لیے Cannon.js استعمال کرتا ہے۔ جب آپ پھینکیں کلک کرتے ہیں، تو پاسہ بے ترتیب قوت اور گھماؤ کے ساتھ پھینکا جاتا ہے۔"
                   },
                   {
-                        "q": "Is this better than a coin flip?",
-                        "a": "The yes and no dice offers adjustable probability weighting, multi-round modes, streak tracking, visual statistics, and a psychology feature."
+                        "q": "کیا یہ سکہ اچھالنے سے بہتر ہے؟",
+                        "a": "ہاں اور نہیں پاسہ ایڈجسٹ کرنے والی امکانات وزن، کئی دور کے موڈز، لہر نگرانی، بصری اعداد و شمار، اور نفسیاتی خصوصیت پیش کرتا ہے۔"
                   }
             ]
       },
@@ -7455,101 +7455,101 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Dadu Ya dan Tidak",
             "subtitle": "Lempar dadu 3D interaktif.",
             "howToUse": {
-                  "title": "How to Use the Yes and No Dice",
-                  "intro": "The dice tool is ready to roll in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Dadu Ya dan Tidak",
+                  "intro": "Alat dadu siap digunakan dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Set Your Preferences",
-                              "desc": "Choose between Single, Best of 3, or Best of 5 mode. Adjust the probability slider to weight Yes versus No outcomes. Toggle auto-roll if you want continuous results."
+                              "title": "Atur Preferensi Anda",
+                              "desc": "Pilih antara mode Satu Kali, Terbaik dari 3, atau Terbaik dari 5. Atur slider probabilitas untuk memberatkan hasil Ya versus Tidak. Aktifkan putar otomatis jika Anda ingin hasil yang berkelanjutan."
                         },
                         {
-                              "title": "Roll the Dice",
-                              "desc": "Click the Roll Dice button or press the spacebar. Watch the 3D die tumble through space, bounce off surfaces, and settle on a random result."
+                              "title": "Lempar Dadu",
+                              "desc": "Klik tombol Lempar Dadu atau tekan spasi. Amati dadu 3D berputar melalui ruang, memantul dari permukaan, dan berhenti pada hasil acak."
                         },
                         {
-                              "title": "Review Your Statistics",
-                              "desc": "The statistics dashboard tracks your total rolls, Yes count, No count, current streak, and win rate. Stats persist across sessions."
+                              "title": "Tinjau Statistik Anda",
+                              "desc": "Dasbor statistik melacak total lemparan Anda, jumlah Ya, jumlah Tidak, rentetan saat ini, dan tingkat kemenangan. Statistik tetap tersimpan antar sesi."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes and No Dice Tool?",
+                        "title": "Apa Itu Alat Dadu Ya dan Tidak?",
                         "content": [
-                              "The Yes and No Dice tool is a 3D physics-based decision maker that rolls a virtual die with Yes and No faces. Instead of clicking a spinner or flipping a coin, you watch a realistic 3D die tumble through space, bounce off surfaces, and settle on a random result.",
-                              "Each die face shows either Yes or No in bold text on a colored background — green for Yes, red for No. The probability slider lets you adjust how many faces show Yes versus No.",
-                              "The tool runs entirely in your browser using Three.js for 3D rendering and Cannon.js for physics simulation. No server communication happens during a roll."
+                              "Alat Dadu Ya dan Tidak adalah pembuat keputusan berbasis fisika 3D yang melempar dadu virtual dengan sisi Ya dan Tidak. Alih-alih mengklik pemintal atau melempar koin, Anda menyaksikan dadu 3D yang realistis berputar melalui ruang, memantul dari permukaan, dan berhenti pada hasil acak.",
+                              "Setiap sisi dadu menampilkan Ya atau Tidak dalam teks tebal pada latar belakang berwarna — hijau untuk Ya, merah untuk Tidak. Slider probabilitas memungkinkan Anda menyesuaikan berapa banyak sisi yang menampilkan Ya versus Tidak.",
+                              "Alat ini berjalan seluruhnya di browser Anda menggunakan Three.js untuk rendering 3D dan Cannon.js untuk simulasi fisika. Tidak ada komunikasi server selama lemparan."
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "Cara Kerja Mesin Fisika 3D",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "Ketika Anda mengklik tombol Lempar Dadu, mesin fisika meluncurkan dadu dari posisi acak di atas lantai. Dadu menerima kecepatan acak dalam tiga dimensi dan kecepatan sudut acak untuk putaran.",
+                              "Mesin melacak orientasi dadu menggunakan kuaternion — representasi matematika yang menghindari gimbal lock dan memberikan interpolasi rotasi yang halus.",
+                              "Untuk menemukan hasilnya, mesin memeriksa sisi mana dari dadu yang menghadap paling lurus ke atas dengan membandingkan vektor normal setiap sisi terhadap arah atas dunia."
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "Mode Permainan dan Kontrol Probabilitas",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "Alat dadu menawarkan tiga mode permainan yang mengubah berapa banyak lemparan yang menentukan jawaban akhir."
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "Mode Satu Kali Lempar",
+                                    "content": "Dalam mode Satu Kali, satu lemparan menghasilkan hasil akhir. Ini adalah opsi tercepat dan cocok untuk pertanyaan ya atau tidak sederhana."
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "Mode Terbaik dari 3",
+                                    "content": "Terbaik dari 3 membutuhkan dua dari tiga lemparan untuk menentukan pemenang. Mode ini menambah keseruan dan memberikan dadu lebih banyak peluang."
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "Mode Terbaik dari 5",
+                                    "content": "Terbaik dari 5 membutuhkan tiga dari lima lemparan untuk menang. Mode ini paling cocok untuk keputusan yang terasa cukup penting untuk membutuhkan proses yang lebih panjang."
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "Slider Probabilitas",
+                                    "content": "Slider probabilitas menyesuaikan distribusi sisi dadu dari 0% Ya hingga 100% Ya. Pada 50%, dadu seimbang."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
+                        "title": "Kapan Menggunakan Dadu vs Roda Pemintal",
                         "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
+                              "Baik roda ya atau tidak maupun dadu ya dan tidak menghasilkan hasil biner acak. Perbedaannya terletak pada pengalaman dan konteks keputusan.",
+                              "Roda pemintal bersifat visual dan berkelanjutan — Anda menyaksikannya berputar dan melambat. Alat dadu bersifat tactile dan fisik. Animasi 3D, fisika pantulan, dan guncangan acak terasa lebih seperti melempar dadu sungguhan.",
+                              "Untuk keputusan yang membutuhkan hasil lebih dari sekadar ya dan tidak, pertimbangkan roda makanan acak atau roda negara."
                         ]
                   },
                   {
-                        "title": "Tracking Your Roll Statistics",
+                        "title": "Melacak Statistik Lemparan Anda",
                         "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
+                              "Alat dadu mencatat setiap lemparan di penyimpanan lokal browser Anda. Dasbor statistik menampilkan total lemparan, jumlah Ya, jumlah Tidak, rentetan saat ini, dan tingkat kemenangan.",
+                              "Statistik tetap tersimpan antar sesi, sehingga Anda dapat menutup browser dan kembali nanti untuk melihat riwayat kumulatif Anda.",
+                              "Fitur psikologi menambahkan lapisan pelacakan diri lainnya. Setelah sekitar satu dari lima lemparan tunggal, alat menanyakan apakah Anda puas dengan hasilnya."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes and no dice?",
-                        "a": "A yes and no dice is a digital decision-making tool that simulates rolling a physical dice. Instead of numbers, the faces show Yes or No."
+                        "q": "Apa itu dadu ya dan tidak?",
+                        "a": "Dadu ya dan tidak adalah alat pembuat keputusan digital yang mensimulasikan pelemparan dadu fisik. Alih-alih angka, sisi-sisinya menampilkan Ya atau Tidak."
                   },
                   {
-                        "q": "Is yes and no dice truly random?",
-                        "a": "Yes, the dice uses a real-time 3D physics simulation with randomized spin, velocity, and position for each roll."
+                        "q": "Apakah dadu ya dan tidak benar-benar acak?",
+                        "a": "Ya, dadu menggunakan simulasi fisika 3D real-time dengan putaran, kecepatan, dan posisi yang diacak untuk setiap lemparan."
                   },
                   {
-                        "q": "Can I use yes and no dice for decisions?",
-                        "a": "Absolutely. The yes and no dice is perfect for everyday decisions like what to eat, whether to go out, or choosing between two options."
+                        "q": "Bisakah saya menggunakan dadu ya dan tidak untuk keputusan?",
+                        "a": "Tentu saja. Dadu ya dan tidak sangat cocok untuk keputusan sehari-hari seperti makan apa, mau keluar atau tidak, atau memilih di antara dua opsi."
                   },
                   {
-                        "q": "How does this dice generator work?",
-                        "a": "The tool uses Three.js for 3D rendering and Cannon.js for physics simulation. When you click Roll, the dice is launched with random force and spin."
+                        "q": "Bagaimana generator dadu ini bekerja?",
+                        "a": "Alat ini menggunakan Three.js untuk rendering 3D dan Cannon.js untuk simulasi fisika. Ketika Anda mengklik Lempar, dadu diluncurkan dengan kekuatan dan putaran acak."
                   },
                   {
-                        "q": "Is this better than a coin flip?",
-                        "a": "The yes and no dice offers adjustable probability weighting, multi-round modes, streak tracking, visual statistics, and a psychology feature."
+                        "q": "Apakah ini lebih baik dari lemparan koin?",
+                        "a": "Dadu ya dan tidak menawarkan pembobotan probabilitas yang dapat disesuaikan, mode multi-ronde, pelacakan rentetan, statistik visual, dan fitur psikologi."
                   }
             ]
       },
@@ -7557,101 +7557,101 @@ const WHEEL_PAGE_CONTENT = {
             "title": "हो नाही पासे",
             "subtitle": "इंटरैक्टिव 3D पासे फेका.",
             "howToUse": {
-                  "title": "How to Use the Yes and No Dice",
-                  "intro": "The dice tool is ready to roll in seconds. Here is how it works:",
+                  "title": "हो आणि नाही पासे कसे वापरावेत",
+                  "intro": "पासे साधन सेकंदांत फेकण्यासाठी तयार आहे. ते कसे काम करते ते येथे आहे:",
                   "steps": [
                         {
-                              "title": "Set Your Preferences",
-                              "desc": "Choose between Single, Best of 3, or Best of 5 mode. Adjust the probability slider to weight Yes versus No outcomes. Toggle auto-roll if you want continuous results."
+                              "title": "तुमची प्राधान्ये सेट करा",
+                              "desc": "एकल, 3 मधील सर्वोत्तम किंवा 5 मधील सर्वोत्तम मोड निवडा. होय विरुद्ध नाही परिणामांना वजन देण्यासाठी शक्यता स्लायडर समायोजित करा. सतत परिणाम हवे असल्यास ऑटो-रोल टॉगल करा."
                         },
                         {
-                              "title": "Roll the Dice",
-                              "desc": "Click the Roll Dice button or press the spacebar. Watch the 3D die tumble through space, bounce off surfaces, and settle on a random result."
+                              "title": "पासे फेका",
+                              "desc": "पासे फेका बटण क्लिक करा किंवा स्पेसबार दाबा. 3D पासा जागेतून पडताना, पृष्ठभागांवरून उडी मारताना आणि यादृच्छिक परिणामावर थांबताना पहा."
                         },
                         {
-                              "title": "Review Your Statistics",
-                              "desc": "The statistics dashboard tracks your total rolls, Yes count, No count, current streak, and win rate. Stats persist across sessions."
+                              "title": "तुमची आकडेवारी पहा",
+                              "desc": "आकडेवारी डॅशबोर्ड तुमच्या एकूण फेकी, होय संख्या, नाही संख्या, सध्याची मालिका आणि विजय दर नोंदवतो. सत्रे ओलांडून आकडेवारी टिकवली जाते."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Yes and No Dice Tool?",
+                        "title": "हो आणि नाही पासे साधन काय आहे?",
                         "content": [
-                              "The Yes and No Dice tool is a 3D physics-based decision maker that rolls a virtual die with Yes and No faces. Instead of clicking a spinner or flipping a coin, you watch a realistic 3D die tumble through space, bounce off surfaces, and settle on a random result.",
-                              "Each die face shows either Yes or No in bold text on a colored background — green for Yes, red for No. The probability slider lets you adjust how many faces show Yes versus No.",
-                              "The tool runs entirely in your browser using Three.js for 3D rendering and Cannon.js for physics simulation. No server communication happens during a roll."
+                              "हो आणि नाही पासे साधन हे होय आणि नाही चेहऱ्यांसह व्हर्च्युअल पासा फेकणारे 3D भौतिकशास्त्र-आधारित निर्णय निर्माता आहे. स्पिनर दाबण्याऐवजी किंवा नाणे उलटवण्याऐवजी, तुम्ही एक वास्तविक 3D पासा जागेतून पडताना, पृष्ठभागांवरून उडी मारताना आणि यादृच्छिक परिणामावर थांबताना पाहता.",
+                              "प्रत्येक पासा चेहरा रंगीत पार्श्वभूमीवर मोठ्या अक्षरांत होय किंवा नाही दर्शवतो — होयसाठी हिरवा, नाहीसाठी लाल. शक्यता स्लायडर तुम्हाला किती चेहरे होय विरुद्ध नाही दर्शवतात ते समायोजित करू देतो.",
+                              "हे साधन Three.js वापरून 3D रेंडरिंग आणि Cannon.js वापरून भौतिकशास्त्र चित्रणासाठी पूर्णपणे तुमच्या ब्राउझरमध्ये चालते. फेकीच्या वेळी कोणतीही सर्व्हर संवाद होत नाही."
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "3D भौतिकशास्त्र इंजिन कसे काम करते",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "तुम्ही पासे फेका बटण क्लिक करता, तेव्हा भौतिकशास्त्र इंजिन जमिनीवरील यादृच्छिक स्थानावरून पासा सुरू करते. पासाला तीन आयामांमध्ये यादृच्छिक वेग आणि फिरण्यासाठी यादृच्छिक कोणीय वेग मिळतो.",
+                              "इंजिन क्वॅटर्नियन्स वापरून पासा अभिमुखता नोंदवते — गिंबल लॉक टाळणारे आणि सुलभ फिरण्याचे अंतर्गत असलेले गणितीय प्रतिनिधित्व.",
+                              "परिणाम शोधण्यासाठी, इंजिन प्रत्येक पासा चेहऱ्याच्या नॉर्मल व्हेक्टरला जगाच्या वरच्या दिशेशी तुलना करून कोणता चेहरा सर्वाधिक थेट वर दर्शवतो ते तपासते."
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "खेळ मोड आणि शक्यता नियंत्रण",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "पासे साधन अंतिम उत्तर निश्चित करण्यासाठी किती फेकी होतात ते बदलणारे तीन खेळ मोड देते."
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "एकल फेकी मोड",
+                                    "content": "एकल मोडमध्ये, एक फेकी अंतिम परिणाम देते. हा सर्वात जलद पर्याय आहे आणि सोप्या होय किंवा नाही प्रश्नांसाठी चांगला आहे."
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "3 मधील सर्वोत्तम मोड",
+                                    "content": "3 मधील सर्वोत्तम विजेता ठरवण्यासाठी तीनमधील दोन फेकी आवश्यक आहेत. हा मोड नाटक जोडतो आणि पासाला अधिक संधी देतो."
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "5 मधील सर्वोत्तम मोड",
+                                    "content": "5 मधील सर्वोत्तम जिंकण्यासाठी पाचमधील तीन फेकी आवश्यक आहेत. हा मोड इतके महत्त्वाचे वाटते की जास्त प्रक्रिया लागेल अशा निर्णयांसाठी सर्वोत्तम आहे."
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "शक्यता स्लायडर",
+                                    "content": "शक्यता स्लायडर 0% होय ते 100% होय यांच्या दरम्यान पासा चेहऱ्यांचे वितरण समायोजित करते. 50% वर, पासा संतुलित असते."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
+                        "title": "पासे विरुद्ध फिरणारे चक्र कधी वापरावे",
                         "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
+                              "होय/नाही चक्र आणि होय आणि नाही पासे दोन्ही यादृच्छिक बायनरी परिणाम देतात. फरक अनुभव आणि निर्णय संदर्भात आहे.",
+                              "फिरणारे चक्र दृश्यमान आणि सतत असते — तुम्ही ते फिरताना आणि हळूहळू थांबताना पाहता. पासे साधन स्पर्शजन्य आणि भौतिक असते. 3D अ‍ॅनिमेशन, उडीची भौतिकशास्त्रे आणि यादृच्छिक पडणे खरोखरच पासा फेकण्यासारखे वाटते.",
+                              "होय आणि नाहीपेक्षा अधिक परिणाम हवे अशा निर्णयांसाठी, यादृच्छिक अन्न चक्र किंवा देश चक्र विचारात घ्या."
                         ]
                   },
                   {
-                        "title": "Tracking Your Roll Statistics",
+                        "title": "तुमच्या फेकी आकडेवारीचा मागोवा घ्या",
                         "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
+                              "पासे साधन तुमच्या ब्राउझरच्या स्थानिक स्टोरेजमध्ये प्रत्येक फेकी नोंदवते. आकडेवारी डॅशबोर्ड तुमच्या एकूण फेकी, होय संख्या, नाही संख्या, सध्याची मालिका आणि विजय दर दर्शवते.",
+                              "आकडेवारी सत्रे ओलांडून टिकवल्या जातात, त्यामुळे तुम्ही ब्राउझर बंद करू शकता आणि तुमचा एकत्रित इतिहास पाहण्यासाठी नंतर परत येऊ शकता.",
+                              "मनोविज्ञान वैशिष्ट्य स्वतःच्या मागोव्याचा आणखी एक स्तर जोडते. सुमारे पाचमधील एका एकल फेकीनंतर, साधन तुम्ही परिणामाशी समाधान आहात का विचारते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is a yes and no dice?",
-                        "a": "A yes and no dice is a digital decision-making tool that simulates rolling a physical dice. Instead of numbers, the faces show Yes or No."
+                        "q": "हो आणि नाही पासे म्हणजे काय?",
+                        "a": "हो आणि नाही पासे हे भौतिक पासे फेकण्याचे अनुकरण करणारे डिजिटल निर्णय निर्माता साधन आहे. संख्यांऐवजी, चेहरे होय किंवा नाही दर्शवतात."
                   },
                   {
-                        "q": "Is yes and no dice truly random?",
-                        "a": "Yes, the dice uses a real-time 3D physics simulation with randomized spin, velocity, and position for each roll."
+                        "q": "हो आणि नाही पासे खरोखर यादृच्छिक आहेत का?",
+                        "a": "होय, पासे प्रत्येक फेकीसाठी यादृच्छिक केलेल्या फिरणे, वेग आणि स्थानासह रिअल-टाइम 3D भौतिकशास्त्र चित्रण वापरतात."
                   },
                   {
-                        "q": "Can I use yes and no dice for decisions?",
-                        "a": "Absolutely. The yes and no dice is perfect for everyday decisions like what to eat, whether to go out, or choosing between two options."
+                        "q": "मी निर्णयांसाठी हो आणि नाही पासे वापरू शकतो का?",
+                        "a": "अर्शिवाद. हो आणि नाही पासे काय खावे, बाहेर जायचे की नाही, किंवा दोन पर्यायांमध्ये निवड करणे यांसारख्या दैनंदिन निर्णयांसाठी योग्य आहेत."
                   },
                   {
-                        "q": "How does this dice generator work?",
-                        "a": "The tool uses Three.js for 3D rendering and Cannon.js for physics simulation. When you click Roll, the dice is launched with random force and spin."
+                        "q": "हे पासे जनरेटर कसे काम करते?",
+                        "a": "हे साधन 3D रेंडरिंगसाठी Three.js आणि भौतिकशास्त्र चित्रणासाठी Cannon.js वापरते. तुम्ही फेका क्लिक करता, तेव्हा पासे यादृच्छिक बल आणि फिरण्यासह सुरू केले जाते."
                   },
                   {
-                        "q": "Is this better than a coin flip?",
-                        "a": "The yes and no dice offers adjustable probability weighting, multi-round modes, streak tracking, visual statistics, and a psychology feature."
+                        "q": "हे नाणे उलटवण्यापेक्षा चांगले आहे का?",
+                        "a": "हो आणि नाही पासे समायोज्य शक्यता वजन, बहु-फेकी मोड, मालिका मागोवा, दृश्य आकडेवारी आणि मनोविज्ञान वैशिष्ट्य देते."
                   }
             ]
       },
@@ -8831,97 +8831,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "ملک کا پہیۇۇۇ",
             "subtitle": "193 ملکوں میں سے بے ترتیب انتخابں؄",
             "howToUse": {
-                  "title": "How to Use the Country Wheel",
-                  "intro": "The country wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "ملک کا پہیوو کیسے استعمال کریں",
+                  "intro": "ملک کا پہیوو سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Select Continents",
-                              "desc": "Use the continent checkboxes above the wheel to choose which regions to include. All continents are selected by default."
+                              "title": "مہادیپ منتخب کریں",
+                              "desc": "پہیوو کے اوپر مہادیپ چیک باکس استعمال کر کے منتخب کریں کہ کون سے علاقے شامل کرنے ہیں۔ ڈیفالٹ پر تمام مہادیپ منتخب ہوتے ہیں۔"
                         },
                         {
-                              "title": "Review the Country Pool",
-                              "desc": "The region summary shows how many countries are currently selected. The wheel reshuffles countries from your selected continents each time you spin."
+                              "title": "ملکوں کے پول کا جائزہ لیں",
+                              "desc": "خطے کا خلاصہ دکھاتا ہے کہ فی الحال کتنے ملک منتخب ہیں۔ پہیوو ہر بار آپ کے منتخب مہادیپوں سے ملکوں کو دوبارہ ملاتا ہے۔"
                         },
                         {
-                              "title": "Spin and Discover",
-                              "desc": "Press the spin button and watch the flags rotate. When the wheel stops, the winning country appears with its flag, name, and continent."
+                              "title": "گھمائیں اور دریافت کریں",
+                              "desc": "سپن بٹن دبائیں اور جھنڈوں کو گھومتے دیکھیں۔ جب پہیوو رکتا ہے، تو جیتنے والا ملک اپنے جھنڈے، نام اور مہادیپ کے ساتھ ظاہر ہوتا ہے۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Country Wheel?",
+                        "title": "ملک کا پہیوو کیا ہے؟",
                         "content": [
-                              "The country wheel is a geographic decision tool that randomly selects from 199 countries using a spinning wheel interface. Each segment displays a country's flag emoji and name.",
-                              "Unlike a simple random country generator that produces a text result, the wheel shows all available countries simultaneously. Watching the flags blur past as the wheel spins creates anticipation.",
-                              "The country database includes all 199 countries recognized by the United Nations, organized by continent."
+                              "ملک کا پہیوو ایک جغرافیائی فیصلہ ساز ٹول ہے جو گھومنے والے پہیوو کے انٹرفیس کے ذریعے 199 ملکوں میں سے بے ترتیب انتخاب کرتا ہے۔ ہر سیگمنٹ ایک ملک کی جھنڈے کی ایموجی اور نام دکھاتا ہے۔",
+                              "سادہ بے ترتیب ملک جنریٹر کے برعکس جو صرف ٹیکسٹ نتیجہ پیدا کرتا ہے، پہیوو تمام دستیاب ملکوں کو ایک ساتھ دکھاتا ہے۔ جب پہیوو گھومتا ہے تو جھنڈوں کو دھندلا ہوتے دیکھنا تجربے میں تنتا اضافہ کرتا ہے۔",
+                              "ملکوں کا ڈیٹابیس یونائیٹڈ نیشنز کی طرف سے تسلیم شدہ تمام 199 ملکوں کو شامل کرتا ہے، جو مہادیپوں کے مطابق منظم ہیں۔"
                         ]
                   },
                   {
-                        "title": "How the Country Filters Work",
+                        "title": "ملکوں کے فلٹرز کیسے کام کرتے ہیں",
                         "content": [
-                              "Above the wheel, the continent filter section displays checkboxes for each of the seven continents. By default, all continents are selected.",
-                              "The region summary counter updates in real time as you toggle continents. The wheel reshuffles its entries whenever the filter changes.",
-                              "You can also use the customization sidebar to add, remove, or rename individual countries."
+                              "پہیوو کے اوپر، مہادیپ فلٹر سیکشن ساتوں مہادیپوں کے لیے چیک باکس دکھاتا ہے۔ ڈیفالٹ پر تمام مہادیپ منتخب ہوتے ہیں۔",
+                              "خطے کا خلاصہ کاؤنٹر مہادیپوں کو ٹوگل کرتے وقت ریئل ٹائم میں اپ ڈیٹ ہوتا ہے۔ فلٹر تبدیل ہونے پر پہیوو اپنی انٹریز دوبارہ ملاتا ہے۔",
+                              "آپ انفرادی ملکوں کو شامل کرنے، ہٹانے یا نام بدلنے کے لیے تخصیص سائیڈ بار بھی استعمال کر سکتے ہیں۔"
                         ]
                   },
                   {
-                        "title": "When to Use the Country Wheel",
+                        "title": "ملک کا پہیوو کب استعمال کریں",
                         "content": [
-                              "The country wheel works best when you need to make a random geographic selection."
+                              "ملک کا پہیوو تب سب سے اچھا کام کرتا ہے جب آپ کو بے ترتیب جغرافیائی انتخاب کرنے کی ضرورت ہو۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Travel Planning and Dream Destinations",
-                                    "content": "When you want to travel but cannot decide where, the country wheel removes the paradox of choice. Spin the wheel and let it pick a destination."
+                                    "title": "سفر کی منصوبہ بندی اور خوابوں کی منزلیں",
+                                    "content": "جب آپ سفر کرنا چاہتے ہیں لیکن یہ طے نہیں کر پاتے کہ کہاں جائیں، تو ملک کا پہیوو انتخاب کے اضطرار کو دور کرتا ہے۔ پہیوو گھمائیں اور اسے منزل چننے دیں۔"
                               },
                               {
-                                    "title": "Educational Activities and Geography Games",
-                                    "content": "Teachers use the country wheel for geography lessons, cultural studies, and classroom games."
+                                    "title": "تعلیمی سرگرمیاں اور جغرافیا کی کھیلیں",
+                                    "content": "استاد جغرافیا کے اسباق، ثقافتی مطالعات اور کلاس روم کی کھیلوں کے لیے ملک کا پہیوو استعمال کرتے ہیں۔"
                               },
                               {
-                                    "title": "Cultural Exploration and Food Challenges",
-                                    "content": "Group challenges where each person cooks a dish from a randomly selected country work well with the wheel."
+                                    "title": "ثقافتی دریافت اور کھانے کی چیلنجز",
+                                    "content": "گروہی چیلنجز جہاں ہر شخص بے ترتیب منتخب ملک سے کوئی پکوان پکاتا ہے، پہیوو کے ساتھ اچھا کام کرتی ہیں۔"
                               },
                               {
-                                    "title": "Decision Making and Random Selection",
-                                    "content": "For personal decisions where geography is a factor — choosing where to study abroad, picking a language to learn."
+                                    "title": "فیصلہ سازی اور بے ترتیب انتخاب",
+                                    "content": "ذاتی فیصلوں کے لیے جہاں جغرافیا ایک عنصر ہے — بیرون ملک تعلیم کے لیے کہاں جانا ہے، کون سی زبان سیکھنی ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Country Wheel vs Other Randomizers",
+                        "title": "ملک کا پہیوو بنام دیگر بے ترتیب کنندگان",
                         "content": [
-                              "The yes or no wheel handles binary decisions with two outcomes. The country wheel handles geographic decisions with 199 outcomes.",
-                              "For random selections that are not geographic, the word wheel lets you upload custom text entries. The random food wheel handles meal decisions.",
-                              "If you want a different kind of geographic randomizer, the zodiac wheel uses astrological signs instead of countries."
+                              "ہاں یا نہیں کا پہیوو دو نتائج کے ساتھ دوہرے فیصلوں کو سنبھالتا ہے۔ ملک کا پہیوو 199 نتائج کے ساتھ جغرافیائی فیصلوں کو سنبھالتا ہے۔",
+                              "بے ترتیب انتخابوں کے لیے جو جغرافیائی نہیں ہیں، لفظ کا پہیوو آپ کو حسب ضرورت ٹیکسٹ انٹریز اپلوڈ کرنے دیتا ہے۔ بے ترتیب کھانے کا پہیوو کھانے کے فیصلوں کو سنبھالتا ہے۔",
+                              "اگر آپ کسی مختلف قسم کے جغرافیائی بے ترتیب کنندہ کی تلاش میں ہیں، تو برج کا پہیوو ملکوں کے بجائے منجیقی علامات استعمال کرتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the country wheel?",
-                        "a": "The country wheel is a spinning tool that randomly selects from 199 countries. Each country displays its flag emoji and name."
+                        "q": "ملک کا پہیوو کیا ہے؟",
+                        "a": "ملک کا پہیوو ایک گھومنے والا ٹول ہے جو 199 ملکوں میں سے بے ترتیب انتخاب کرتا ہے۔ ہر ملک اپنی جھنڈے کی ایموجی اور نام دکھاتا ہے۔"
                   },
                   {
-                        "q": "How many countries are on the wheel?",
-                        "a": "The wheel includes 199 countries from all seven continents."
+                        "q": "پہیوو پر کتنے ملک ہیں؟",
+                        "a": "پہیوو میں ساتوں مہادیپوں سے 199 ملک شامل ہیں۔"
                   },
                   {
-                        "q": "Can I filter by continent?",
-                        "a": "Yes. The continent filter section shows checkboxes for Africa, Asia, Europe, North America, South America, Oceania, and Antarctica."
+                        "q": "کیا میں مہادیپ کے مطابق فلٹر کر سکتا ہوں؟",
+                        "a": "ہاں۔ مہادیپ فلٹر سیکشن افریقہ، ایشیا، یورپ، شمالی امریکہ، جنوبی امریکہ، اوشینیا اور انٹارکٹیکا کے لیے چیک باکس دکھاتا ہے۔"
                   },
                   {
-                        "q": "How does the country randomizer work?",
-                        "a": "The wheel uses browser-based physics simulation with randomized starting velocity and friction."
+                        "q": "ملک کا بے ترتیب کنندہ کیسے کام کرتا ہے؟",
+                        "a": "پہیوو براوزر پر مبنی فزکس سیمیولیشن استعمال کرتا ہے جس میں بے ترتیب شروعی رفتار اور رگڑ ہوتا ہے۔"
                   },
                   {
-                        "q": "Can I use this for travel planning?",
-                        "a": "The country wheel is useful for picking a random travel destination when you are open to anywhere."
+                        "q": "کیا میں اسے سفر کی منصوبہ بندی کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "ملک کا پہیوو بے ترتیب سفر کی منزل چننے کے لیے مفید ہے جب آپ کہیں بھی جانے کے لیے تیار ہوں۔"
                   },
                   {
-                        "q": "Is the country wheel free?",
-                        "a": "The country wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا ملک کا پہیوو مفت ہے؟",
+                        "a": "ملک کا پہیوو سائن اپ، اشتہارات یا استعمال کی حدود کے بغیر مکمل طور پر مفت ہے۔"
                   }
             ]
       },
@@ -8929,97 +8929,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Negara",
             "subtitle": "Pilihan acak dari 193 negara.",
             "howToUse": {
-                  "title": "How to Use the Country Wheel",
-                  "intro": "The country wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Negara",
+                  "intro": "Roda negara siap diputar dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Select Continents",
-                              "desc": "Use the continent checkboxes above the wheel to choose which regions to include. All continents are selected by default."
+                              "title": "Pilih Benua",
+                              "desc": "Gunakan kotak centang benua di atas roda untuk memilih wilayah mana yang akan dimasukkan. Semua benua dipilih secara default."
                         },
                         {
-                              "title": "Review the Country Pool",
-                              "desc": "The region summary shows how many countries are currently selected. The wheel reshuffles countries from your selected continents each time you spin."
+                              "title": "Tinjau Kumpulan Negara",
+                              "desc": "Ringkasan wilayah menunjukkan berapa banyak negara yang saat ini dipilih. Roda mengacak ulang negara dari benua yang dipilih setiap kali Anda memutar."
                         },
                         {
-                              "title": "Spin and Discover",
-                              "desc": "Press the spin button and watch the flags rotate. When the wheel stops, the winning country appears with its flag, name, and continent."
+                              "title": "Putar dan Temukan",
+                              "desc": "Tekan tombol putar dan saksikan bendera berputar. Ketika roda berhenti, negara pemenang muncul dengan bendera, nama, dan benuanya."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Country Wheel?",
+                        "title": "Apa Itu Roda Negara?",
                         "content": [
-                              "The country wheel is a geographic decision tool that randomly selects from 199 countries using a spinning wheel interface. Each segment displays a country's flag emoji and name.",
-                              "Unlike a simple random country generator that produces a text result, the wheel shows all available countries simultaneously. Watching the flags blur past as the wheel spins creates anticipation.",
-                              "The country database includes all 199 countries recognized by the United Nations, organized by continent."
+                              "Roda negara adalah alat pengambilan keputusan geografis yang memilih secara acak dari 199 negara menggunakan antarmuka roda berputar. Setiap segmen menampilkan emoji bendera dan nama negara.",
+                              "Berbeda dari generator negara acak sederhana yang menghasilkan teks, roda ini menampilkan semua negara yang tersedia secara bersamaan. Menyaksikan bendera berlalu saat roda berputar menciptakan antisipasi.",
+                              "Basis data negara mencakup semua 199 negara yang diakui oleh Perserikatan Bangsa-Bangsa, diorganisir berdasarkan benua."
                         ]
                   },
                   {
-                        "title": "How the Country Filters Work",
+                        "title": "Cara Kerja Filter Negara",
                         "content": [
-                              "Above the wheel, the continent filter section displays checkboxes for each of the seven continents. By default, all continents are selected.",
-                              "The region summary counter updates in real time as you toggle continents. The wheel reshuffles its entries whenever the filter changes.",
-                              "You can also use the customization sidebar to add, remove, or rename individual countries."
+                              "Di atas roda, bagian filter benua menampilkan kotak centang untuk masing-masing dari tujuh benua. Secara default, semua benua dipilih.",
+                              "Penghitung ringkasan wilayah diperbarui secara real time saat Anda mengaktifkan atau menonaktifkan benua. Roda mengacak ulang entri setiap kali filter berubah.",
+                              "Anda juga dapat menggunakan panel sisi kustomisasi untuk menambahkan, menghapus, atau mengubah nama negara individu."
                         ]
                   },
                   {
-                        "title": "When to Use the Country Wheel",
+                        "title": "Kapan Menggunakan Roda Negara",
                         "content": [
-                              "The country wheel works best when you need to make a random geographic selection."
+                              "Roda negara bekerja paling baik ketika Anda perlu membuat pilihan geografis secara acak."
                         ],
                         "subsections": [
                               {
-                                    "title": "Travel Planning and Dream Destinations",
-                                    "content": "When you want to travel but cannot decide where, the country wheel removes the paradox of choice. Spin the wheel and let it pick a destination."
+                                    "title": "Perencanaan Perjalanan dan Destinasi Impian",
+                                    "content": "Ketika Anda ingin bepergian tetapi tidak dapat memutuskan ke mana, roda negara menghilangkan paradoks pilihan. Putar roda dan biarkan ia memilih destinasi."
                               },
                               {
-                                    "title": "Educational Activities and Geography Games",
-                                    "content": "Teachers use the country wheel for geography lessons, cultural studies, and classroom games."
+                                    "title": "Kegiatan Edukatif dan Permainan Geografi",
+                                    "content": "Guru menggunakan roda negara untuk pelajaran geografi, studi budaya, dan permainan kelas."
                               },
                               {
-                                    "title": "Cultural Exploration and Food Challenges",
-                                    "content": "Group challenges where each person cooks a dish from a randomly selected country work well with the wheel."
+                                    "title": "Eksplorasi Budaya dan Tantangan Kuliner",
+                                    "content": "Tantangan kelompok di mana setiap orang memasak hidangan dari negara yang dipilih secara acak sangat cocok dengan roda ini."
                               },
                               {
-                                    "title": "Decision Making and Random Selection",
-                                    "content": "For personal decisions where geography is a factor — choosing where to study abroad, picking a language to learn."
+                                    "title": "Pengambilan Keputusan dan Pilihan Acak",
+                                    "content": "Untuk keputusan pribadi di mana geografi menjadi faktor — memilih tempat belajar di luar negeri, memilih bahasa untuk dipelajari."
                               }
                         ]
                   },
                   {
-                        "title": "Country Wheel vs Other Randomizers",
+                        "title": "Roda Negara vs Pengacak Lainnya",
                         "content": [
-                              "The yes or no wheel handles binary decisions with two outcomes. The country wheel handles geographic decisions with 199 outcomes.",
-                              "For random selections that are not geographic, the word wheel lets you upload custom text entries. The random food wheel handles meal decisions.",
-                              "If you want a different kind of geographic randomizer, the zodiac wheel uses astrological signs instead of countries."
+                              "Roda ya atau tidak menangani keputusan biner dengan dua hasil. Roda negara menangani keputusan geografis dengan 199 hasil.",
+                              "Untuk pilihan acak yang tidak bersifat geografis, roda kata memungkinkan Anda mengunggah entri teks kustom. Roda makanan acak menangani keputusan makan.",
+                              "Jika Anda menginginkan jenis pengacak geografis yang berbeda, roda zodiac menggunakan tanda astrologi alih-alih negara."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the country wheel?",
-                        "a": "The country wheel is a spinning tool that randomly selects from 199 countries. Each country displays its flag emoji and name."
+                        "q": "Apa itu roda negara?",
+                        "a": "Roda negara adalah alat putar yang memilih secara acak dari 199 negara. Setiap negara menampilkan emoji bendera dan namanya."
                   },
                   {
-                        "q": "How many countries are on the wheel?",
-                        "a": "The wheel includes 199 countries from all seven continents."
+                        "q": "Berapa banyak negara yang ada di roda?",
+                        "a": "Roda ini mencakup 199 negara dari semua tujuh benua."
                   },
                   {
-                        "q": "Can I filter by continent?",
-                        "a": "Yes. The continent filter section shows checkboxes for Africa, Asia, Europe, North America, South America, Oceania, and Antarctica."
+                        "q": "Bisakah saya menyaring berdasarkan benua?",
+                        "a": "Ya. Bagian filter benua menampilkan kotak centang untuk Afrika, Asia, Eropa, Amerika Utara, Amerika Selatan, Oseania, dan Antartika."
                   },
                   {
-                        "q": "How does the country randomizer work?",
-                        "a": "The wheel uses browser-based physics simulation with randomized starting velocity and friction."
+                        "q": "Bagaimana cara kerja pengacak negara?",
+                        "a": "Roda ini menggunakan simulasi fisika berbasis browser dengan kecepatan awal dan gesekan yang diacak."
                   },
                   {
-                        "q": "Can I use this for travel planning?",
-                        "a": "The country wheel is useful for picking a random travel destination when you are open to anywhere."
+                        "q": "Bisakah saya menggunakan ini untuk perencanaan perjalanan?",
+                        "a": "Roda negara berguna untuk memilih destinasi perjalanan acak ketika Anda terbuka ke mana saja."
                   },
                   {
-                        "q": "Is the country wheel free?",
-                        "a": "The country wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda negara gratis?",
+                        "a": "Roda negara sepenuhnya gratis tanpa pendaftaran, iklan, atau batasan penggunaan."
                   }
             ]
       },
@@ -9027,97 +9027,97 @@ const WHEEL_PAGE_CONTENT = {
             "title": "देशांचे चाक",
             "subtitle": "193 देशांमध्तून यादृच्झिक निवड.",
             "howToUse": {
-                  "title": "How to Use the Country Wheel",
-                  "intro": "The country wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "देशांच्या चाकाचा वापर कसा करावा",
+                  "intro": "देशांचे चाक सेकंदांमध्ये फिरण्यासाठी तयार आहे. ते कसे काम करते ते येथे आहे:",
                   "steps": [
                         {
-                              "title": "Select Continents",
-                              "desc": "Use the continent checkboxes above the wheel to choose which regions to include. All continents are selected by default."
+                              "title": "खंड निवडा",
+                              "desc": "चाकावरील खंड तपासणी बॉक्स वापरून कोणत्या प्रदेशांना समाविष्ट करायचे ते निवडा. मुळास्वरूपात सर्व खंड निवडलेले असतात."
                         },
                         {
-                              "title": "Review the Country Pool",
-                              "desc": "The region summary shows how many countries are currently selected. The wheel reshuffles countries from your selected continents each time you spin."
+                              "title": "देशांचा पूल पहा",
+                              "desc": "प्रदेश सारांश दर्शवितो की सध्या किती देश निवडलेले आहेत. तुम्ही दर फेरी स्पिन करताना चाक तुमच्या निवडलेल्या खंडांतील देशांना पुन्हा मिसळते."
                         },
                         {
-                              "title": "Spin and Discover",
-                              "desc": "Press the spin button and watch the flags rotate. When the wheel stops, the winning country appears with its flag, name, and continent."
+                              "title": "स्पिन करा आणि शोधा",
+                              "desc": "स्पिन बटन दाबा आणि झंडे फिरत आहेत ते पहा. चाक थांबताच, विजेता देश त्याच्या झंड्यासह, नावासह आणि खंडासह दिसतो."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Country Wheel?",
+                        "title": "देशांचे चाक म्हणजे काय?",
                         "content": [
-                              "The country wheel is a geographic decision tool that randomly selects from 199 countries using a spinning wheel interface. Each segment displays a country's flag emoji and name.",
-                              "Unlike a simple random country generator that produces a text result, the wheel shows all available countries simultaneously. Watching the flags blur past as the wheel spins creates anticipation.",
-                              "The country database includes all 199 countries recognized by the United Nations, organized by continent."
+                              "देशांचे चाक हे एक भौगोलिक निर्णय साधन आहे जे फिरणाऱ्या चाक इंटरफेसचा वापर करून 199 देशांमधून यादृच्छिक निवड करते. प्रत्येक विभाग देशाचे झंडे इमोजी आणि नाव प्रदर्शित करतो.",
+                              "साध्या यादृच्छिक देश जनरेटरपेक्षा वेगळे, जो फक्त मजकूर परिणाम तयार करते, त्यापेक्षा चाक उपलब्ध सर्व देश एकाच वेळी दर्शविते. चाक फिरताना झंडे झटपट जाताने पाहणे उत्सुकता निर्माण करते.",
+                              "देश डेटाबेसमध्ये संयुक्त राष्ट्रांनी मान्यता दिलेले सर्व 199 देश समाविष्ट आहेत, जे खंडानुसार व्यवस्थित आहेत."
                         ]
                   },
                   {
-                        "title": "How the Country Filters Work",
+                        "title": "देश फिल्टर कसे काम करतात",
                         "content": [
-                              "Above the wheel, the continent filter section displays checkboxes for each of the seven continents. By default, all continents are selected.",
-                              "The region summary counter updates in real time as you toggle continents. The wheel reshuffles its entries whenever the filter changes.",
-                              "You can also use the customization sidebar to add, remove, or rename individual countries."
+                              "चाकावर, खंड फिल्टर विभाग सातही खंडांप्रत्येकासाठी तपासणी बॉक्स दर्शवितो. मुळास्वरूपात सर्व खंड निवडलेले असतात.",
+                              "तुम्ही खंड टॉगल करताना प्रदेश सारांश काउंटर रिअल टाइममध्ये अपडेट होतो. फिल्टर बदलताना चाक त्याच्या नोंदी पुन्हा मिसळते.",
+                              "तुम्ही वैयक्तिक देश जोडण्यासाठी, काढण्यासाठी किंवा नाव बदलण्यासाठी कस्टमाइजेशन साइडबारचाही वापरू शकता."
                         ]
                   },
                   {
-                        "title": "When to Use the Country Wheel",
+                        "title": "देशांचे चाक कधी वापरावे",
                         "content": [
-                              "The country wheel works best when you need to make a random geographic selection."
+                              "तुम्हाला यादृच्छिक भौगोलिक निवड करायची असल्यास देशांचे चाक सर्वोत्तम काम करते."
                         ],
                         "subsections": [
                               {
-                                    "title": "Travel Planning and Dream Destinations",
-                                    "content": "When you want to travel but cannot decide where, the country wheel removes the paradox of choice. Spin the wheel and let it pick a destination."
+                                    "title": "प्रवास आयोजना आणि स्वप्न गंतव्ये",
+                                    "content": "तुम्हाला प्रवास करायचा असतो पण कुठे जायचे ते ठरवू न शकता, अशा वेळी देशांचे चाक निवडीचा विरोधाभास काढून टाकते. चाक फिरवा आणि गंतव्य निवडू द्या."
                               },
                               {
-                                    "title": "Educational Activities and Geography Games",
-                                    "content": "Teachers use the country wheel for geography lessons, cultural studies, and classroom games."
+                                    "title": "शैक्षणिक क्रियाकलाप आणि भूगोल खेळ",
+                                    "content": "शिक्षक भूगोल शिकवणी, सांस्कृतिक अभ्यास आणि वर्गखोलीतील खेळांसाठी देशांचे चाक वापरतात."
                               },
                               {
-                                    "title": "Cultural Exploration and Food Challenges",
-                                    "content": "Group challenges where each person cooks a dish from a randomly selected country work well with the wheel."
+                                    "title": "सांस्कृतिक शोध आणि अन्न आव्हाने",
+                                    "content": "प्रत्येक व्यक्ती यादृच्छिकपणे निवडलेल्या देशातून पदार्थ बनवते असे सामूहिक आव्हाने चाकासोबत चांगली काम करतात."
                               },
                               {
-                                    "title": "Decision Making and Random Selection",
-                                    "content": "For personal decisions where geography is a factor — choosing where to study abroad, picking a language to learn."
+                                    "title": "निर्णय घेणे आणि यादृच्छिक निवड",
+                                    "content": "भौगोलिकता एक घटक असलेल्या वैयक्तिक निर्णयांसाठी — विदेशात शिकण्यासाठी कुठे जायचे, शिकण्यासाठी भाषा निवडणे."
                               }
                         ]
                   },
                   {
-                        "title": "Country Wheel vs Other Randomizers",
+                        "title": "देशांचे चाक बनाम इतर यादृच्छिकीकरण साधने",
                         "content": [
-                              "The yes or no wheel handles binary decisions with two outcomes. The country wheel handles geographic decisions with 199 outcomes.",
-                              "For random selections that are not geographic, the word wheel lets you upload custom text entries. The random food wheel handles meal decisions.",
-                              "If you want a different kind of geographic randomizer, the zodiac wheel uses astrological signs instead of countries."
+                              "हो किंवा नाही चाक दोन परिणामांसह द्विआधारी निर्णय हाताळते. देशांचे चाक 199 परिणामांसह भौगोलिक निर्णय हाताळते.",
+                              "भौगोलिक नसलेल्या यादृच्छिक निवडींसाठी, शब्द चाक तुम्हाला सानुकूल मजकूर नोंदी अपलोड करू देते. यादृच्छिक अन्न चाक जेवण निर्णय हाताळते.",
+                              "तुम्हाला वेगळ्या प्रकारचे भौगोलिक यादृच्छिकीकरण साधन हवे असल्यास, राशीचक्र देशांऐवजी ज्योतिषीय चिन्हे वापरते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the country wheel?",
-                        "a": "The country wheel is a spinning tool that randomly selects from 199 countries. Each country displays its flag emoji and name."
+                        "q": "देशांचे चाक म्हणजे काय?",
+                        "a": "देशांचे चाक हे एक स्पिनिंग साधन आहे जे 199 देशांमधून यादृच्छिक निवड करते. प्रत्येक देश त्याचे झंडे इमोजी आणि नाव दर्शवितो."
                   },
                   {
-                        "q": "How many countries are on the wheel?",
-                        "a": "The wheel includes 199 countries from all seven continents."
+                        "q": "चाकावर किती देश आहेत?",
+                        "a": "चाकात सातही खंडांतील 199 देश समाविष्ट आहेत."
                   },
                   {
-                        "q": "Can I filter by continent?",
-                        "a": "Yes. The continent filter section shows checkboxes for Africa, Asia, Europe, North America, South America, Oceania, and Antarctica."
+                        "q": "मी खंडानुसार फिल्टर करू शकतो का?",
+                        "a": "होय. खंड फिल्टर विभाग आफ्रिका, आशिया, युरोप, उत्तर अमेरिका, दक्षिण अमेरिका, ओशनिया आणि अंटार्कटिकासाठी तपासणी बॉक्स दर्शवितो."
                   },
                   {
-                        "q": "How does the country randomizer work?",
-                        "a": "The wheel uses browser-based physics simulation with randomized starting velocity and friction."
+                        "q": "देश यादृच्छिकीकरण साधन कसे काम करते?",
+                        "a": "चाक यादृच्छिकीकृत सुरुवातीच्या वेग आणि घर्षणासह ब्राउझर-आधारित भौतिकशास्त्र सिम्युलेशन वापरते."
                   },
                   {
-                        "q": "Can I use this for travel planning?",
-                        "a": "The country wheel is useful for picking a random travel destination when you are open to anywhere."
+                        "q": "मी हे प्रवास आयोजनासाठी वापरू शकतो का?",
+                        "a": "तुम्ही कुठेही तयार असताना यादृच्छिक प्रवास गंतव्य निवडण्यासाठी देशांचे चाक उपयुक्त आहे."
                   },
                   {
-                        "q": "Is the country wheel free?",
-                        "a": "The country wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "देशांचे चाक मोफत आहे का?",
+                        "a": "देशांचे चाक साइन अप, जाहिराती किंवा वापर मर्यादांशिवाय पूर्णपणे मोफत आहे."
                   }
             ]
       },
@@ -10422,112 +10422,112 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     ur: {
-            "title": "لفظ کا پہیۇۇۇ",
-            "subtitle": "بے ترتیب لفظ انتخاب کنندهں؄",
+            "title": "لفظ کا پہیہ",
+            "subtitle": "بے ترتیب لفظ چننے والا۔",
             "howToUse": {
-                  "title": "How to Use the Word Wheel",
-                  "intro": "The word wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "لفظ کا پہیہ کیسے استعمال کریں",
+                  "intro": "لفظ کا پہیہ سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ اس طرح کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Load Your Words",
-                              "desc": "Type words into the quick-paste textarea, upload a CSV or text file, or add entries through the customization sidebar. Each word or phrase becomes a segment on the wheel."
+                              "title": "اپنے الفاظ لوڈ کریں",
+                              "desc": "تیز پیسٹ ٹیکسٹ اریا میں الفاظ ٹائپ کریں، CSV یا ٹیکسٹ فائل اپلوڈ کریں، یا حسب ضرورت سائیڈ بار کے ذریعے اندراجات شامل کریں۔ ہر لفظ یا جملہ پہیے پر ایک حصہ بن جاتا ہے۔"
                         },
                         {
-                              "title": "Review and Adjust",
-                              "desc": "Check that all entries loaded correctly. Use the sidebar to remove duplicates, fix typos, or add missing entries. The wheel updates in real time."
+                              "title": "جائزہ لیں اور درست کریں",
+                              "desc": "چیک کریں کہ تمام اندراجات صحیح طریقے سے لوڈ ہوئے۔ دہرائی ہوئی اندراجات ہٹانے، غلطیاں درست کرنے، یا غائب اندراجات شامل کرنے کے لیے سائیڈ بار استعمال کریں۔ پہیہ حقیقی وقت میں اپ ڈیٹ ہوتا ہے۔"
                         },
                         {
-                              "title": "Spin and Select",
-                              "desc": "Press the spin button and watch the words rotate. When the wheel stops, the winning entry appears. Use the result for your activity, game, or decision."
+                              "title": "گھمائیں اور نتیجہ دیکھیں",
+                              "desc": "گھمانے کا بٹن دبائیں اور الفاظ کو گھومتے دیکھیں۔ جب پہیہ رکتا ہے، تو فاتح اندراج ظاہر ہوتا ہے۔ اپنی سرگرمی، کھیل، یا فیصلے کے لیے نتیجہ استعمال کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Word Wheel?",
+                        "title": "لفظ کا پہیہ کیا ہے؟",
                         "content": [
-                              "The word wheel is a random text picker that spins a wheel of custom entries. Unlike the yes or no wheel which has two fixed outcomes, the word wheel accepts any text you provide.",
-                              "The tool supports three input methods: manual entry through a textarea, file upload via CSV or text files, and direct editing through the customization sidebar.",
-                              "Each entry gets a distinct color on the wheel, and the segments are sized proportionally to the total number of entries."
+                              "لفظ کا پہیہ ایک بے ترتیب متن چننے والا ہے جو حسب ضرورت اندراجات کا پہیہ گھماتا ہے۔ ہا یا نہ کے پہیے کے برعکس جس میں دو طے شدہ نتائج ہوتے ہیں، لفظ کا پہیہ آپ کے فراہم کردہ کوئی بھی متن قبول کرتا ہے۔",
+                              "یہ ٹول تین ان پٹ طریقے فراہم کرتا ہے: ٹیکسٹ اریا کے ذریعے دستی اندراج، CSV یا ٹیکسٹ فائلوں کے ذریے فائل اپلوڈ، اور حسب ضرورت سائیڈ بار کے ذریعے براہ راست ترمیم۔",
+                              "ہر اندراج کو پہیے پر ایک منفرد رنگ ملتا ہے، اور حصے کل اندراجات کی تعداد کے تناسب سے بناے جاتے ہیں۔"
                         ]
                   },
                   {
-                        "title": "How to Load Words Into the Wheel",
+                        "title": "پہیے میں الفاظ کیسے لوڈ کریں",
                         "content": [
-                              "The word wheel provides three ways to get your entries onto the wheel."
+                              "لفظ کا پہیہ آپ کے اندراجات کو پہیے پر لانے کے تین طریقے فراہم کرتا ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Quick Paste Method",
-                                    "content": "The quick-paste textarea sits below the wheel. Type or paste one word or phrase per line, then click the Load Words button."
+                                    "title": "تیز پیسٹ طریقہ",
+                                    "content": "تیز پیسٹ ٹیکسٹ اریا پہیے کے نیچے واقع ہے۔ فی لائن ایک لفظ یا جملہ ٹائپ یا پیسٹ کریں، پھر الفاظ لوڈ کریں بٹن پر کلک کریں۔"
                               },
                               {
-                                    "title": "File Upload Method",
-                                    "content": "The file upload zone supports CSV, TXT, and XLSX formats. Click Browse Files or drag a file onto the drop zone."
+                                    "title": "فائل اپلوڈ طریقہ",
+                                    "content": "فائل اپلوڈ زون CSV، TXT، اور XLSX فارمیٹس کی حمایت کرتا ہے۔ فائلیں تلاش کریں پر کلک کریں یا فائل کو ڈراپ زون پر گھسیٹ کریں۔"
                               },
                               {
-                                    "title": "Customization Sidebar",
-                                    "content": "The sidebar panel provides a form-based interface for adding, editing, and removing individual entries."
+                                    "title": "حسب ضرورت سائیڈ بار",
+                                    "content": "سائیڈ بار پینل انفرادی اندراجات شامل کرنے، ترمیم کرنے، اور ہٹانے کے لیے فارم پر مبنی انٹرفیس فراہم کرتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Use Cases for the Word Wheel",
+                        "title": "لفظ کا پہیہ کے استعمال کے منصوبے",
                         "content": [
-                              "The word wheel handles any scenario where you need to randomly select from a custom list."
+                              "لفظ کا پہیہ کسی بھی صورتحال کو سنبھالتا ہے جہاں آپ کو حسب ضرورت فہرست سے بے ترتیب انتخاب کرنے کی ضرورت ہوتی ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Name Picking and Random Selection",
-                                    "content": "The most common use is picking a random name from a list. Teachers use it to select students for activities."
+                                    "title": "نام چننا اور بے ترتیب انتخاب",
+                                    "content": "سب سے عام استعمال فہرست سے بے ترتیب نام چننا ہے۔ اساتذہ سرگرمیوں کے لیے طلباء کا انتخاب کرنے کے لیے اس کا استعمال کرتے ہیں۔"
                               },
                               {
-                                    "title": "Classroom and Educational Activities",
-                                    "content": "Educators use the word wheel for vocabulary practice, spelling bee preparation, and language learning exercises."
+                                    "title": "کلاس روم اور تعلیمی سرگرمیاں",
+                                    "content": "تعلیم دینے والے الفاظ کی مشق، املا مسابقتہ کی تیاری، اور زبان سیکھنے کی مشقوں کے لیے لفظ کا پہیہ استعمال کرتے ہیں۔"
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers load word lists with character names, plot prompts, or theme keywords. Spinning the wheel produces a random combination."
+                                    "title": "تخلیقی تحریر اور خیالات کا ازالہ",
+                                    "content": "لکھارے کرداروں کے نام، پلاٹ کے اشارے، یا موضوع کلیدی الفاظ کے ساتھ الفاظ کی فہرستیں لوڈ کرتے ہیں۔ پہیہ گھمانے سے ایک بے ترتیب کمبو تیار ہوتا ہے۔"
                               },
                               {
-                                    "title": "Party Games and Social Activities",
-                                    "content": "For group games, load a list of challenges, topics, or categories. The wheel determines who goes next."
+                                    "title": "پارٹی کھیل اور سماجی سرگرمیاں",
+                                    "content": "گروپ کھیلوں کے لیے، چیلنجز، موضوعات، یا زمرہ جات کی فہرست لوڈ کریں۔ پہیہ طے کرتا ہے کہ اگلا کون جائے گا۔"
                               }
                         ]
                   },
                   {
-                        "title": "Word Wheel vs Other Random Pickers",
+                        "title": "لفظ کا پہیہ بنام دیگر بے ترتیب چننے والے",
                         "content": [
-                              "The country wheel includes a pre-loaded database of 199 countries. The word wheel starts empty and requires you to provide entries.",
-                              "The random food wheel comes pre-loaded with common meal options. The word wheel handles any text, making it the most versatile random picker.",
-                              "For binary decisions, the yes and no dice tool provides a different visual experience with 3D physics."
+                              "ملک کا پہیہ 199 ممالک کے پیشگی لوڈ ڈیٹابیس کا شامل ہے۔ لفظ کا پہیہ خالی شروع ہوتا ہے اور آپ کو اندراجات فراہم کرنے کی ضرورت ہوتی ہے۔",
+                              "random food wheel عام کھانے کے اختیارات کے ساتھ پیشگی لوڈ آتا ہے۔ لفظ کا پہیہ کوئی بھی متن سنبھالتا ہے، جس سے یہ سب سے زیادہ قابلِ استعمال بے ترتیب چننے والا بن جاتا ہے۔",
+                              "binomial فیصلوں کے لیے، ہا اور نہ کا پیسے کا ٹول 3D فزیکس کے ساتھ ایک مختلف بصری تجربہ فراہم کرتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the word wheel?",
-                        "a": "The word wheel is a random word picker that spins a wheel of custom text entries."
+                        "q": "لفظ کا پہیہ کیا ہے؟",
+                        "a": "لفظ کا پہیہ ایک بے ترتیب لفظ چننے والا ہے جو حسب ضرورت متن اندراجات کا پہیہ گھماتا ہے۔"
                   },
                   {
-                        "q": "How do I add my own words?",
-                        "a": "Three methods are available: type words into the textarea, upload a CSV or text file, or use the customization sidebar."
+                        "q": "میں اپنے الفاظ کیسے شامل کر سکتا ہوں؟",
+                        "a": "تین طریقے دستیاب ہیں: ٹیکسٹ اریا میں الفاظ ٹائپ کریں، CSV یا ٹیکسٹ فائل اپلوڈ کریں، یا حسب ضرورت سائیڈ بار استعمال کریں۔"
                   },
                   {
-                        "q": "What file formats are supported?",
-                        "a": "The word wheel accepts CSV, TXT, and XLSX files."
+                        "q": "کون سے فائل فارمیٹس تعاون یابتا ہیں؟",
+                        "a": "لفظ کا پہیہ CSV، TXT، اور XLSX فائلوں کو قبول کرتا ہے۔"
                   },
                   {
-                        "q": "Can I use this for classroom activities?",
-                        "a": "The word wheel works well for classrooms. Teachers use it to pick student names and assign groups."
+                        "q": "کیا میں اسے کلاس روم کی سرگرمیوں کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "لفظ کا پہیہ کلاس روموں کے لیے اچھا کام کرتا ہے۔ اساتذہ طلباء کے نام چننے اور گروپ بنانے کے لیے اس کا استعمال کرتے ہیں۔"
                   },
                   {
-                        "q": "Is there a limit to how many words I can add?",
-                        "a": "There is no hard limit, but the wheel becomes harder to read with more than about 50 entries."
+                        "q": "کیا میں کتنے الفاظ شامل کر سکتا ہوں؟",
+                        "a": "کوئی سخت حد نہیں ہے، لیکن 50 سے زیادہ اندراجات کے ساتھ پہیہ پڑھنا مشکل ہو جاتا ہے۔"
                   },
                   {
-                        "q": "Is the word wheel free?",
-                        "a": "The word wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا لفظ کا پہیہ مفت ہے؟",
+                        "a": "لفظ کا پہیہ مکمل طور پر مفت ہے، کوئی سائن اپ نہیں، کوئی اشتہارات نہیں، اور کوئی استعمال کی حد نہیں۔"
                   }
             ]
       },
@@ -10535,109 +10535,109 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Kata",
             "subtitle": "Pemilih kata acak.",
             "howToUse": {
-                  "title": "How to Use the Word Wheel",
-                  "intro": "The word wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Kata",
+                  "intro": "Roda kata siap berputar dalam hitungan detik. Berikut cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Load Your Words",
-                              "desc": "Type words into the quick-paste textarea, upload a CSV or text file, or add entries through the customization sidebar. Each word or phrase becomes a segment on the wheel."
+                              "title": "Muat Kata-Kata Anda",
+                              "desc": "Ketik kata-kata ke dalam area teks tempel cepat, ungah file CSV atau teks, atau tambahkan entri melalui sidebar kustomisasi. Setiap kata atau frasa menjadi segmen pada roda."
                         },
                         {
-                              "title": "Review and Adjust",
-                              "desc": "Check that all entries loaded correctly. Use the sidebar to remove duplicates, fix typos, or add missing entries. The wheel updates in real time."
+                              "title": "Tinjau dan Sesuaikan",
+                              "desc": "Periksa apakah semua entri telah dimuat dengan benar. Gunakan sidebar untuk menghapus duplikat, memperbaiki kesalahan ketik, atau menambahkan entri yang hilang. Roda diperbarui secara real-time."
                         },
                         {
-                              "title": "Spin and Select",
-                              "desc": "Press the spin button and watch the words rotate. When the wheel stops, the winning entry appears. Use the result for your activity, game, or decision."
+                              "title": "Putar dan Pilih",
+                              "desc": "Tekan tombol putar dan perhatikan kata-kata berputar. Ketika roda berhenti, entri pemenang muncul. Gunakan hasil untuk aktivitas, permainan, atau keputusan Anda."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Word Wheel?",
+                        "title": "Apa Itu Roda Kata?",
                         "content": [
-                              "The word wheel is a random text picker that spins a wheel of custom entries. Unlike the yes or no wheel which has two fixed outcomes, the word wheel accepts any text you provide.",
-                              "The tool supports three input methods: manual entry through a textarea, file upload via CSV or text files, and direct editing through the customization sidebar.",
-                              "Each entry gets a distinct color on the wheel, and the segments are sized proportionally to the total number of entries."
+                              "Roda kata adalah pemilih teks acak yang memutar roda entri kustom. Berbeda dengan roda ya atau tidak yang memiliki dua hasil tetap, roda kata menerima teks apa pun yang Anda berikan.",
+                              "Alat ini mendukung tiga metode input: entri manual melalui area teks, unggahan file melalui CSV atau file teks, dan pengeditan langsung melalui sidebar kustomisasi.",
+                              "Setiap entri mendapatkan warna yang berbeda pada roda, dan segmen diukur sebanding dengan jumlah total entri."
                         ]
                   },
                   {
-                        "title": "How to Load Words Into the Wheel",
+                        "title": "Cara Memuat Kata-Kata ke Dalam Roda",
                         "content": [
-                              "The word wheel provides three ways to get your entries onto the wheel."
+                              "Roda kata menyediakan tiga cara untuk membawa entri Anda ke roda."
                         ],
                         "subsections": [
                               {
-                                    "title": "Quick Paste Method",
-                                    "content": "The quick-paste textarea sits below the wheel. Type or paste one word or phrase per line, then click the Load Words button."
+                                    "title": "Metode Tempel Cepat",
+                                    "content": "Area teks tempel cepat terletak di bawah roda. Ketik atau tempel satu kata atau frasa per baris, lalu klik tombol Muat Kata."
                               },
                               {
-                                    "title": "File Upload Method",
-                                    "content": "The file upload zone supports CSV, TXT, and XLSX formats. Click Browse Files or drag a file onto the drop zone."
+                                    "title": "Metode Unggah File",
+                                    "content": "Zona unggah file mendukung format CSV, TXT, dan XLSX. Klik Telusuri File atau seret file ke zona seret."
                               },
                               {
-                                    "title": "Customization Sidebar",
-                                    "content": "The sidebar panel provides a form-based interface for adding, editing, and removing individual entries."
+                                    "title": "Sidebar Kustomisasi",
+                                    "content": "Panel sidebar menyediakan antarmuka berbasis formulir untuk menambahkan, mengedit, dan menghapus entri individual."
                               }
                         ]
                   },
                   {
-                        "title": "Use Cases for the Word Wheel",
+                        "title": "Kasus Penggunaan Roda Kata",
                         "content": [
-                              "The word wheel handles any scenario where you need to randomly select from a custom list."
+                              "Roda kata menangani setiap skenario di mana Anda perlu memilih secara acak dari daftar kustom."
                         ],
                         "subsections": [
                               {
-                                    "title": "Name Picking and Random Selection",
-                                    "content": "The most common use is picking a random name from a list. Teachers use it to select students for activities."
+                                    "title": "Pemilihan Nama dan Seleksi Acak",
+                                    "content": "Penggunaan paling umum adalah memilih nama acak dari daftar. Guru menggunakannya untuk memilih siswa dalam aktivitas."
                               },
                               {
-                                    "title": "Classroom and Educational Activities",
-                                    "content": "Educators use the word wheel for vocabulary practice, spelling bee preparation, and language learning exercises."
+                                    "title": "Kelas dan Aktivitas Pendidikan",
+                                    "content": "Pendidik menggunakan roda kata untuk latihan kosakata, persiapan lomba ejaan, dan latihan pembelajaran bahasa."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers load word lists with character names, plot prompts, or theme keywords. Spinning the wheel produces a random combination."
+                                    "title": "Penulisan Kreatif dan Brainstorming",
+                                    "content": "Penulis memuat daftar kata dengan nama karakter, petunjuk plot, atau kata kunci tema. Memutar roda menghasilkan kombinasi acak."
                               },
                               {
-                                    "title": "Party Games and Social Activities",
-                                    "content": "For group games, load a list of challenges, topics, or categories. The wheel determines who goes next."
+                                    "title": "Permainan Pesta dan Aktivitas Sosial",
+                                    "content": "Untuk permainan kelompok, muat daftar tantangan, topik, atau kategori. Roda menentukan siapa yang berikutnya."
                               }
                         ]
                   },
                   {
-                        "title": "Word Wheel vs Other Random Pickers",
+                        "title": "Roda Kata vs Pemilih Acak Lainnya",
                         "content": [
-                              "The country wheel includes a pre-loaded database of 199 countries. The word wheel starts empty and requires you to provide entries.",
-                              "The random food wheel comes pre-loaded with common meal options. The word wheel handles any text, making it the most versatile random picker.",
-                              "For binary decisions, the yes and no dice tool provides a different visual experience with 3D physics."
+                              "Roda negara mencakup database 199 negara yang sudah dimuat sebelumnya. Roda kata dimulai kosong dan mengharuskan Anda menyediakan entri.",
+                              "Roda makanan acak sudah dimuat dengan opsi makanan umum. Roda kata menangani teks apa pun, menjadikannya pemilih acak yang paling serbaguna.",
+                              "Untuk keputusan biner, alat dadu ya dan tidak memberikan pengalaman visual yang berbeda dengan fisika 3D."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the word wheel?",
-                        "a": "The word wheel is a random word picker that spins a wheel of custom text entries."
+                        "q": "Apa itu roda kata?",
+                        "a": "Roda kata adalah pemilih kata acak yang memutar roda entri teks kustom."
                   },
                   {
-                        "q": "How do I add my own words?",
-                        "a": "Three methods are available: type words into the textarea, upload a CSV or text file, or use the customization sidebar."
+                        "q": "Bagaimana cara menambahkan kata saya sendiri?",
+                        "a": "Tiga metode tersedia: ketik kata ke dalam area teks, unggah file CSV atau teks, atau gunakan sidebar kustomisasi."
                   },
                   {
-                        "q": "What file formats are supported?",
-                        "a": "The word wheel accepts CSV, TXT, and XLSX files."
+                        "q": "Format file apa yang didukung?",
+                        "a": "Roda kata menerima file CSV, TXT, dan XLSX."
                   },
                   {
-                        "q": "Can I use this for classroom activities?",
-                        "a": "The word wheel works well for classrooms. Teachers use it to pick student names and assign groups."
+                        "q": "Bisakah saya menggunakan ini untuk aktivitas kelas?",
+                        "a": "Roda kata bekerja dengan baik untuk kelas. Guru menggunakannya untuk memilih nama siswa dan menentukan kelompok."
                   },
                   {
-                        "q": "Is there a limit to how many words I can add?",
-                        "a": "There is no hard limit, but the wheel becomes harder to read with more than about 50 entries."
+                        "q": "Apakah ada batasan berapa banyak kata yang bisa saya tambahkan?",
+                        "a": "Tidak ada batasan ketat, tetapi roda menjadi lebih sulit dibaca dengan lebih dari sekitar 50 entri."
                   },
                   {
-                        "q": "Is the word wheel free?",
-                        "a": "The word wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda kata gratis?",
+                        "a": "Roda kata sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
@@ -10645,109 +10645,109 @@ const WHEEL_PAGE_CONTENT = {
             "title": "शब्दांचे चाक",
             "subtitle": "यादृच्झिक शब्द निवडका.",
             "howToUse": {
-                  "title": "How to Use the Word Wheel",
-                  "intro": "The word wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "शब्द चाक कसे वापरावे",
+                  "intro": "शब्द चाक सेकंदांत फिरायला तयार आहे. ते कसे काम करते ते येथे आहे:",
                   "steps": [
                         {
-                              "title": "Load Your Words",
-                              "desc": "Type words into the quick-paste textarea, upload a CSV or text file, or add entries through the customization sidebar. Each word or phrase becomes a segment on the wheel."
+                              "title": "तुमचे शब्द लोड करा",
+                              "desc": "झटपट-पेस्ट टेक्स्टएरियामध्ये शब्द टाइप करा, CSV किंवा टेक्स्ट फाइल अपलोड करा, किंवा कस्टमायझेशन साइडबारद्वारे प्रविष्टी जोडा. प्रत्येक शब्द किंवा वाक्य चाकावरील एक विभाग बनतो."
                         },
                         {
-                              "title": "Review and Adjust",
-                              "desc": "Check that all entries loaded correctly. Use the sidebar to remove duplicates, fix typos, or add missing entries. The wheel updates in real time."
+                              "title": "तपासा आणि समायोजित करा",
+                              "desc": "सर्व प्रविष्टी योग्यरित्या लोड झाल्या ते तपासा. डुप्लिकेट काढण्यासाठी, चुका दुरुस्त करण्यासाठी, किंवा गमावलेल्या प्रविष्टी जोडण्यासाठी साइडबार वापरा. चाक रिअल-टाइममध्ये अद्ययावत होते."
                         },
                         {
-                              "title": "Spin and Select",
-                              "desc": "Press the spin button and watch the words rotate. When the wheel stops, the winning entry appears. Use the result for your activity, game, or decision."
+                              "title": "फिरवा आणि निवडा",
+                              "desc": "स्पिन बटन दाबा आणि शब्द फिरताना पहा. जेव्हा चाक थांबते, तेव्हा विजेता प्रविष्टी दिसते. तुमच्या क्रिया, खेळ किंवा निर्णयासाठी या परिणामाचा वापर करा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Word Wheel?",
+                        "title": "शब्द चाक म्हणजे काय?",
                         "content": [
-                              "The word wheel is a random text picker that spins a wheel of custom entries. Unlike the yes or no wheel which has two fixed outcomes, the word wheel accepts any text you provide.",
-                              "The tool supports three input methods: manual entry through a textarea, file upload via CSV or text files, and direct editing through the customization sidebar.",
-                              "Each entry gets a distinct color on the wheel, and the segments are sized proportionally to the total number of entries."
+                              "शब्द चाक हा एक यादृच्छिक मजकूर निवडका आहे जो सानुकूल प्रविष्टींचे चाक फिरवतो. होय किंवा नाही चाकापेक्षा भिन्न, ज्यात दोन निश्चित परिणाम असतात, शब्द चाक तुम्ही दिलेला कोणताही मजकूर स्वीकारतो.",
+                              "हे साधन तीन प्रविष्टी पद्धती समर्थित करते: टेक्स्टएरियाद्वारे मॅन्युअल प्रविष्टी, CSV किंवा टेक्स्ट फाइल्सद्वारे फाइल अपलोड, आणि कस्टमायझेशन साइडबारद्वारे थेट संपादन.",
+                              "प्रत्येक प्रविष्टीला चाकावर एक वेगळा रंग मिळतो, आणि विभाग प्रविष्टींच्या एकूण संख्येनुसार प्रमाणित असतात."
                         ]
                   },
                   {
-                        "title": "How to Load Words Into the Wheel",
+                        "title": "चाकात शब्द कसे लोड करावेत",
                         "content": [
-                              "The word wheel provides three ways to get your entries onto the wheel."
+                              "शब्द चाक तुमच्या प्रविष्टी चाकावर आणण्यासाठी तीन मार्ग प्रदान करतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Quick Paste Method",
-                                    "content": "The quick-paste textarea sits below the wheel. Type or paste one word or phrase per line, then click the Load Words button."
+                                    "title": "झटपट-पेस्ट पद्धत",
+                                    "content": "झटपट-पेस्ट टेक्स्टएरिया चाखाखाली असतो. प्रत्येक ओळीवर एक शब्द किंवा वाक्य टाइप किंवा पेस्ट करा, मग 'शब्द लोड करा' बटन क्लिक करा."
                               },
                               {
-                                    "title": "File Upload Method",
-                                    "content": "The file upload zone supports CSV, TXT, and XLSX formats. Click Browse Files or drag a file onto the drop zone."
+                                    "title": "फाइल अपलोड पद्धत",
+                                    "content": "फाइल अपलोड झोना CSV, TXT, आणि XLSX स्वरूपांना समर्थन देतो. 'फाइल्स ब्राउज करा' क्लिक करा किंवा फाइल ड्रॉप झोनावर ओढा आणि सोडा."
                               },
                               {
-                                    "title": "Customization Sidebar",
-                                    "content": "The sidebar panel provides a form-based interface for adding, editing, and removing individual entries."
+                                    "title": "कस्टमायझेशन साइडबार",
+                                    "content": "साइडबार पॅनेल व्यक्तिगत प्रविष्टी जोडण्यासाठी, संपादित करण्यासाठी आणि काढण्यासाठी फॉर्म-आधारित संवाद प्रदान करतो."
                               }
                         ]
                   },
                   {
-                        "title": "Use Cases for the Word Wheel",
+                        "title": "शब्द चाकाचे वापर प्रकरणे",
                         "content": [
-                              "The word wheel handles any scenario where you need to randomly select from a custom list."
+                              "शब्द चाक सानुकूल यादीतून यादृच्छिकपणे निवड करण्याच्या कोणत्याही परिस्थितीवर कार्य करतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Name Picking and Random Selection",
-                                    "content": "The most common use is picking a random name from a list. Teachers use it to select students for activities."
+                                    "title": "नाव निवड आणि यादृच्छिक निवड",
+                                    "content": "सर्वाधिक सामान्य वापर म्हणजे यादीतून यादृच्छिक नाव निवडणे. शिक्षक क्रियांसाठी विद्यार्थ्यांनी निवडण्यासाठी याचा वापर करतात."
                               },
                               {
-                                    "title": "Classroom and Educational Activities",
-                                    "content": "Educators use the word wheel for vocabulary practice, spelling bee preparation, and language learning exercises."
+                                    "title": "वर्ग आणि शैक्षणिक क्रिया",
+                                    "content": "शिक्षक शब्दभंडार सराव, स्पेलिंग बी तयारी, आणि भाषा शिक्षणासाठी शब्द चाकाचा वापर करतात."
                               },
                               {
-                                    "title": "Creative Writing and Brainstorming",
-                                    "content": "Writers load word lists with character names, plot prompts, or theme keywords. Spinning the wheel produces a random combination."
+                                    "title": "सर्जनशील लेखन आणि ब्रेनस्टॉर्मिंग",
+                                    "content": "लेखक पात्र नावे, प्लॉट प्रॉम्प्ट्स, किंवा थीम कीवर्ड्ससह शब्द याद्या लोड करतात. चाक फिरवणे यादृच्छिक संयोजन तयार करते."
                               },
                               {
-                                    "title": "Party Games and Social Activities",
-                                    "content": "For group games, load a list of challenges, topics, or categories. The wheel determines who goes next."
+                                    "title": "पार्टी खेळ आणि सामाजिक क्रिया",
+                                    "content": "गट खेळांसाठी, आव्हाने, विषय किंवा श्रेण्यांची यादी लोड करा. चाक पुढचा कोण ते ठरवतो."
                               }
                         ]
                   },
                   {
-                        "title": "Word Wheel vs Other Random Pickers",
+                        "title": "शब्द चाक vs इतर यादृच्छिक निवडके",
                         "content": [
-                              "The country wheel includes a pre-loaded database of 199 countries. The word wheel starts empty and requires you to provide entries.",
-                              "The random food wheel comes pre-loaded with common meal options. The word wheel handles any text, making it the most versatile random picker.",
-                              "For binary decisions, the yes and no dice tool provides a different visual experience with 3D physics."
+                              "देश चाकामध्ये 199 देशांचा पूर्व-लोड डेटाबेस असतो. शब्द चाक रिकामा सुरू होतो आणि तुम्हाला प्रविष्टी प्रदान करण्याची आवश्यकता असते.",
+                              "यादृच्छिक अन्न चाक सामान्य जेवण पर्यायांसह पूर्व-लोड केलेला असतो. शब्द चाक कोणताही मजकूर हाताळतो, ज्यामुळे तो सर्वात बहुमुखी यादृच्छिक निवडका बनतो.",
+                              "द्विआधारी निर्णयांसाठी, होय आणि नाही पासा साधन 3D भौतिकशास्त्रासह भिन्न दृश्य अनुभव प्रदान करते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the word wheel?",
-                        "a": "The word wheel is a random word picker that spins a wheel of custom text entries."
+                        "q": "शब्द चाक म्हणजे काय?",
+                        "a": "शब्द चाक हा एक यादृच्छिक शब्द निवडका आहे जो सानुकूल मजकूर प्रविष्टींचे चाक फिरवतो."
                   },
                   {
-                        "q": "How do I add my own words?",
-                        "a": "Three methods are available: type words into the textarea, upload a CSV or text file, or use the customization sidebar."
+                        "q": "मी माझे स्वतःचे शब्द कसे जोडू?",
+                        "a": "तीन पद्धती उपलब्ध आहेत: टेक्स्टएरियामध्ये शब्द टाइप करा, CSV किंवा टेक्स्ट फाइल अपलोड करा, किंवा कस्टमायझेशन साइडबार वापरा."
                   },
                   {
-                        "q": "What file formats are supported?",
-                        "a": "The word wheel accepts CSV, TXT, and XLSX files."
+                        "q": "कोणत्या फाइल स्वरूपांना समर्थन आहे?",
+                        "a": "शब्द चाक CSV, TXT, आणि XLSX फाइल्स स्वीकारतो."
                   },
                   {
-                        "q": "Can I use this for classroom activities?",
-                        "a": "The word wheel works well for classrooms. Teachers use it to pick student names and assign groups."
+                        "q": "मी याचा वापर वर्ग क्रियांसाठी करू शकतो का?",
+                        "a": "शब्द चाक वर्गांसाठी चांगला काम करतो. शिक्षक विद्यार्थ्यांची नावे निवडण्यासाठी आणि गट ठरवण्यासाठी याचा वापर करतात."
                   },
                   {
-                        "q": "Is there a limit to how many words I can add?",
-                        "a": "There is no hard limit, but the wheel becomes harder to read with more than about 50 entries."
+                        "q": "मी किती शब्द जोडू शकतो यावर कोणतीही मर्यादा आहे का?",
+                        "a": "कोणतीही कडक मर्यादा नाही, परंतु सुमारे 50 प्रविष्टींपेक्षा जास्त असल्यास चाक वाचणे कठीण होते."
                   },
                   {
-                        "q": "Is the word wheel free?",
-                        "a": "The word wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "शब्द चाक मोफत आहे का?",
+                        "a": "शब्द चाक पूर्णपणे मोफत आहे, कोणतीही साइन-अप नाही, कोणतीही जाहिरात नाही आणि वापर मर्यादा नाहीत."
                   }
             ]
       },
@@ -12001,103 +12001,103 @@ const WHEEL_PAGE_CONTENT = {
             "title": "سچائی یا جرت کا پہیۇۇۇ",
             "subtitle": "دو قدمی پارٹی پہیۇۇں؄",
             "howToUse": {
-                  "title": "How to Play Truth or Dare",
-                  "intro": "The Truth or Dare wheel runs in two steps. Here is how each round works:",
+                  "title": "سچائی یا جرت کیسے کھیلیں",
+                  "intro": "سچائی یا جرت کا پہیا دو قدم میں چلتا ہے۔ ہر راؤنڈ اس طرح کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Enter Player Names",
-                              "desc": "Type player names into the textarea, one per line. Click Load Players to update the wheel. If you skip this step, the tool uses default placeholder names."
+                              "title": "کھلاڑیوں کے نام درج کریں",
+                              "desc": "ٹیکسٹ ایریا میں کھلاڑیوں کے نام ٹائپ کریں، فی خط ایک۔ پہیا اپ ڈیٹ کرنے کے لیے کھلاڑی لوڈ پر کلک کریں۔ اگر آپ یہ قدم چھوڑتے ہیں تو ٹول ڈیفالٹ پلیس ہولڈر نام استعمال کرتا ہے۔"
                         },
                         {
-                              "title": "Spin to Pick a Player",
-                              "desc": "Press the spin button to randomly select a player. The wheel displays all names and stops on the chosen player."
+                              "title": "کھلاڑی چننے کے لیے گھمائیں",
+                              "desc": "کسی کھلاڑی کو بے ترتیب طریقے سے منتخب کرنے کے لیے گھمانے کا بٹن دبائیں۔ پہیا تمام ناموں کو دکھاتا ہے اور منتخب کھلاڑی پر رکتا ہے۔"
                         },
                         {
-                              "title": "Spin for Truth or Dare",
-                              "desc": "The wheel reloads with Truth and Dare segments. Spin again to determine the challenge type. A random prompt from the selected category is displayed."
+                              "title": "سچائی یا جرت کے لیے گھمائیں",
+                              "desc": "پہیا سچائی اور جرت کے حصوں کے ساتھ دوبارہ لوڈ ہوتا ہے۔ چیلنج کی قسم طے کرنے کے لیے دوبارہ گھمائیں۔ منتخب زمرے سے ایک بے ترتیب پرامپٹ دکھایا جاتا ہے۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Truth or Dare Wheel?",
+                        "title": "سچائی یا جرت کا پہیا کیا ہے؟",
                         "content": [
-                              "The Truth or Dare wheel is a two-step party game spinner that randomly assigns truths and dares to players. The wheel operates in two distinct phases: first selecting a player, then choosing between Truth and Dare.",
-                              "The tool includes a built-in database of over 200 prompts — roughly evenly split between truths and dares. The neon-themed visual design with glowing colors sets the mood for a party atmosphere.",
-                              "The wheel segments display player names during step one and the Truth/Dare choice during step two, making the selection process visible to everyone."
+                              "سچائی یا جرت کا پہیا ایک دو قدمی پارٹی گیم اسپنر ہے جو بے ترتیب طریقے سے کھلاڑیوں کو سچائی اور جرت تفویض کرتا ہے۔ پہیا دو الگ الگ مراحل میں کام کرتا ہے: پہلے کھلاڑی منتخب کرتا ہے، پھر سچائی اور جرت میں سے منتخب کرتا ہے۔",
+                              "اس ٹول میں 200 سے زیادہ پرامپٹس کا ایک بلٹ ان ڈیٹابیس شامل ہے — تقریباً سچائی اور جرتوں کے درمیان برابر تقسیم۔ نیون تھیمڈ بصری ڈیزائن چمکتے ہوئے رنگوں کے ساتھ پارٹی کے ماحول کے لیے ماحول بناتا ہے۔",
+                              "پہیا کے حصے قدم ایک کے دوران کھلاڑیوں کے نام اور قدم دو کے دوران سچائی/جرت کا انتخاب دکھاتے ہیں، جو انتخاب کے عمل کو سب کے لیے نظر آنے والی بناتا ہے۔"
                         ]
                   },
                   {
-                        "title": "How the Two-Step Process Works",
+                        "title": "دو قدمی عمل کیسے کام کرتا ہے",
                         "content": [
-                              "The Truth or Dare wheel uses a sequential spinning system that determines both the player and the challenge type through separate spins."
+                              "سچائی یا جرت کا پہیا ایک ترتیبی گھمانے کا نظام استعمال کرتا ہے جو کھلاڑی اور چیلنج کی قسم کو الگ الگ گھمانے کے ذریعے متعین کرتا ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Step 1: Player Selection",
-                                    "content": "The first spin selects a random player from your list. The wheel displays all player names as segments. After a brief pause, the wheel automatically transitions to step two."
+                                    "title": "قدم ۱: کھلاڑی کا انتخاب",
+                                    "content": "پہلی گھمائش آپ کی فہرست سے ایک بے ترتیب کھلاڑی منتخب کرتی ہے۔ پہیا تمام کھلاڑیوں کے ناموں کو حصوں کے طور پر دکھاتا ہے۔ مختصر وقفے کے بعد، پہیا خود بخود دوسرے قدم پر منتقل ہو جاتا ہے۔"
                               },
                               {
-                                    "title": "Step 2: Truth or Dare Selection",
-                                    "content": "The second spin chooses between Truth and Dare. The wheel reloads with just two segments. When this spin completes, a random prompt from the corresponding category is displayed."
+                                    "title": "قدم ۲: سچائی یا جرت کا انتخاب",
+                                    "content": "دوسرا گھمانہ سچائی اور جرت میں سے منتخب کرتا ہے۔ پہیا صرف دو حصوں کے ساتھ دوبارہ لوڈ ہوتا ہے۔ جب یہ گھمائش مکمل ہوتی ہے، تو مربوط زمرے سے ایک بے ترتیب پرامپٹ دکھایا جاتا ہے۔"
                               },
                               {
-                                    "title": "Customization and Control",
-                                    "content": "The customization sidebar lets you modify the wheel entries, colors, and behavior. You can add or remove player names and adjust the visual theme."
+                                    "title": "حسب ضرورت اصلاح اور کنٹرول",
+                                    "content": "حسب ضرورت سائیڈبار آپ کو پہیا کی اندراجات، رنگوں اور رویے میں ترمیم کرنے دیتا ہے۔ آپ کھلاڑیوں کے نام شامل یا ہٹا سکتے ہیں اور بصری تھیم کو ایڈجسٹ کر سکتے ہیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Play Truth or Dare",
+                        "title": "سچائی یا جرت کب کھیلیں",
                         "content": [
-                              "The Truth or Dare wheel works best in social settings where people are comfortable sharing personal information."
+                              "سچائی یا جرت کا پہیا سماجی ماحول میں سب سے اچھا کام کرتا ہے جہاں لوگ ذاتی معلومات بانٹنے میں محفوظ محسوس کرتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "House Parties and Sleepovers",
-                                    "content": "The classic Truth or Dare scenario. The wheel adds structure by removing the debate over whose turn it is."
+                                    "title": "گھر کی پارٹیاں اور سلیپ اوور",
+                                    "content": "کلاسک سچائی یا جرت کا منظر۔ پہیا کس کی باری ہے اس پر بحث کو ختم کرکے ڈھانچہ شامل کرتا ہے۔"
                               },
                               {
-                                    "title": "Birthday Parties and Celebrations",
-                                    "content": "At birthday parties, the Truth or Dare wheel serves as an icebreaker that gets guests interacting."
+                                    "title": "سالگرہ کی پارٹیاں اور جشن",
+                                    "content": "سالگرہ کی پارٹیوں میں، سچائی یا جرت کا پہیا آئس بریکر کا کام کرتا ہے جو مہمانوں کو باہم تعلقات قائم کرنے کا باعث بنتا ہے۔"
                               },
                               {
-                                    "title": "Remote Gatherings and Video Calls",
-                                    "content": "The wheel works on any device with a browser, making it suitable for remote parties."
+                                    "title": "ریموت گیٹھنگز اور ویڈیو کالز",
+                                    "content": "پہیا کسی بھی ڈیوائس پر براؤزر کے ساتھ کام کرتا ہے، جس سے یہ ریموت پارٹیوں کے لیے مناسب ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Truth or Dare vs Other Party Games",
+                        "title": "سچائی یا جرت بنسبت دیگر پارٹی گیمز",
                         "content": [
-                              "The yes or no wheel handles binary decisions but does not include the social interaction element. The random food wheel solves a different problem. The Truth or Dare wheel combines randomization with social interaction, making it the most engaging party tool on the site."
+                              "ہا یا نہ پہیا دوہرے فیصلوں کو سنبھالتا ہے لیکن سماجی تعامل کا عنصر شامل نہیں کرتا۔ رینڈم فوڈ پہیا مختلف مسئلہ حل کرتا ہے۔ سچائی یا جرت کا پہیا بے ترتیبی کو سماجی تعامل کے ساتھ جوڑتا ہے، جو اسے سائٹ پر سب سے زیادہ مشغول کنندہ پارٹی ٹول بناتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "How does the Truth or Dare wheel work?",
-                        "a": "The wheel operates in two steps. First, it picks a random player. Then it spins again to choose between Truth and Dare."
+                        "q": "سچائی یا جرت کا پہیا کیسے کام کرتا ہے؟",
+                        "a": "پہیا دو قدم میں کام کرتا ہے۔ پہلے، یہ ایک بے ترتیب کھلاڑی منتخب کرتا ہے۔ پھر سچائی اور جرت میں سے منتخب کرنے کے لیے دوبارہ گھماتا ہے۔"
                   },
                   {
-                        "q": "How many truth and dare prompts are included?",
-                        "a": "The tool includes over 200 curated prompts — roughly 100 truths and 100 dares."
+                        "q": "کتنے سچائی اور جرت کے پرامپٹس شامل ہیں؟",
+                        "a": "اس ٹول میں 200 سے زیادہ منتخب پرامپٹس شامل ہیں — تقریباً 100 سچائی اور 100 جرٹیں۔"
                   },
                   {
-                        "q": "Can I add custom player names?",
-                        "a": "Yes. The player setup textarea accepts one name per line."
+                        "q": "کیا میں حسب ضرورت کھلاڑیوں کے نام شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ کھلاڑی سیٹ اپ ٹیکسٹ ایریا فی خط ایک نام قبول کرتا ہے۔"
                   },
                   {
-                        "q": "Is this appropriate for kids?",
-                        "a": "The prompt database includes a mix of difficulty levels. Review the prompts before playing with younger children."
+                        "q": "کیا یہ بچوں کے لیے مناسب ہے؟",
+                        "a": "پرامپٹ ڈیٹابیس میں مشکل کی سطح کا ایک مرکب شامل ہے۔ چھوٹے بچوں کے ساتھ کھیلنے سے پہلے پرامپٹس کا جائزہ لیں۔"
                   },
                   {
-                        "q": "Can I use this for remote parties?",
-                        "a": "The Truth or Dare wheel works on any device with a browser. Share the URL with friends on a video call."
+                        "q": "کیا میں اسے ریموت پارٹیوں کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "سچائی یا جرت کا پہیا کسی بھی ڈیوائس پر براؤزر کے ساتھ کام کرتا ہے۔ ویڈیو کال پر دوستوں کے ساتھ یو آر ال شیئر کریں۔"
                   },
                   {
-                        "q": "Is the Truth or Dare wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا سچائی یا جرت کا پہیا مفت ہے؟",
+                        "a": "پہیا مکمل طور پر مفت ہے، کوئی سائن اپ، کوئی اشتہارات، اور کوئی استعمال کی حد نہیں۔"
                   }
             ]
       },
@@ -12105,103 +12105,103 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Truth or Dare",
             "subtitle": "Roda pesta dua langkah.",
             "howToUse": {
-                  "title": "How to Play Truth or Dare",
-                  "intro": "The Truth or Dare wheel runs in two steps. Here is how each round works:",
+                  "title": "Cara Bermain Truth or Dare",
+                  "intro": "Roda Truth or Dare berjalan dalam dua langkah. Berikut cara setiap putaran:",
                   "steps": [
                         {
-                              "title": "Enter Player Names",
-                              "desc": "Type player names into the textarea, one per line. Click Load Players to update the wheel. If you skip this step, the tool uses default placeholder names."
+                              "title": "Masukkan Nama Pemain",
+                              "desc": "Ketik nama pemain ke dalam kolom teks, satu nama per baris. Klik Muat Pemain untuk memperbarui roda. Jika Anda melewati langkah ini, alat menggunakan nama placeholder default."
                         },
                         {
-                              "title": "Spin to Pick a Player",
-                              "desc": "Press the spin button to randomly select a player. The wheel displays all names and stops on the chosen player."
+                              "title": "Putar untuk Memilih Pemain",
+                              "desc": "Tekan tombol putar untuk memilih pemain secara acak. Roda menampilkan semua nama dan berhenti pada pemain yang dipilih."
                         },
                         {
-                              "title": "Spin for Truth or Dare",
-                              "desc": "The wheel reloads with Truth and Dare segments. Spin again to determine the challenge type. A random prompt from the selected category is displayed."
+                              "title": "Putar untuk Truth atau Dare",
+                              "desc": "Roda memuat ulang dengan segmen Truth dan Dare. Putar lagi untuk menentukan jenis tantangan. Prompt acak dari kategori yang dipilih akan ditampilkan."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Truth or Dare Wheel?",
+                        "title": "Apa Itu Roda Truth or Dare?",
                         "content": [
-                              "The Truth or Dare wheel is a two-step party game spinner that randomly assigns truths and dares to players. The wheel operates in two distinct phases: first selecting a player, then choosing between Truth and Dare.",
-                              "The tool includes a built-in database of over 200 prompts — roughly evenly split between truths and dares. The neon-themed visual design with glowing colors sets the mood for a party atmosphere.",
-                              "The wheel segments display player names during step one and the Truth/Dare choice during step two, making the selection process visible to everyone."
+                              "Roda Truth or Dare adalah roda permainan pesta dua langkah yang secara acak memberikan truth (kebenaran) dan dare (tantangan) kepada pemain. Roda beroperasi dalam dua fase berbeda: pertama memilih pemain, lalu memilih antara Truth atau Dare.",
+                              "Alat ini menyertakan database lebih dari 200 prompt — kira-kira terbagi rata antara truth dan dare. Desain visual bertema neon dengan warna-warna bercahaya menciptakan suasana pesta.",
+                              "Segmen roda menampilkan nama pemain pada langkah pertama dan pilihan Truth/Dare pada langkah kedua, membuat proses pemilihan terlihat oleh semua orang."
                         ]
                   },
                   {
-                        "title": "How the Two-Step Process Works",
+                        "title": "Cara Kerja Proses Dua Langkah",
                         "content": [
-                              "The Truth or Dare wheel uses a sequential spinning system that determines both the player and the challenge type through separate spins."
+                              "Roda Truth or Dare menggunakan sistem putaran berurutan yang menentukan pemain dan jenis tantangan melalui putaran terpisah."
                         ],
                         "subsections": [
                               {
-                                    "title": "Step 1: Player Selection",
-                                    "content": "The first spin selects a random player from your list. The wheel displays all player names as segments. After a brief pause, the wheel automatically transitions to step two."
+                                    "title": "Langkah 1: Pemilihan Pemain",
+                                    "content": "Putaran pertama memilih pemain secara acak dari daftar Anda. Roda menampilkan semua nama pemain sebagai segmen. Setelah jeda singkat, roda secara otomatis beralih ke langkah kedua."
                               },
                               {
-                                    "title": "Step 2: Truth or Dare Selection",
-                                    "content": "The second spin chooses between Truth and Dare. The wheel reloads with just two segments. When this spin completes, a random prompt from the corresponding category is displayed."
+                                    "title": "Langkah 2: Pemilihan Truth atau Dare",
+                                    "content": "Putaran kedua memilih antara Truth dan Dare. Roda memuat ulang dengan hanya dua segmen. Ketika putaran ini selesai, prompt acak dari kategori yang sesuai ditampilkan."
                               },
                               {
-                                    "title": "Customization and Control",
-                                    "content": "The customization sidebar lets you modify the wheel entries, colors, and behavior. You can add or remove player names and adjust the visual theme."
+                                    "title": "Kustomisasi dan Pengaturan",
+                                    "content": "Panel sidebar kustomisasi memungkinkan Anda mengubah entri roda, warna, dan perilaku. Anda dapat menambah atau menghapus nama pemain dan menyesuaikan tema visual."
                               }
                         ]
                   },
                   {
-                        "title": "When to Play Truth or Dare",
+                        "title": "Kapan Bermain Truth or Dare",
                         "content": [
-                              "The Truth or Dare wheel works best in social settings where people are comfortable sharing personal information."
+                              "Roda Truth or Dare paling cocok digunakan dalam situasi sosial di mana orang merasa nyaman berbagi informasi pribadi."
                         ],
                         "subsections": [
                               {
-                                    "title": "House Parties and Sleepovers",
-                                    "content": "The classic Truth or Dare scenario. The wheel adds structure by removing the debate over whose turn it is."
+                                    "title": "Pesta Rumah dan Sleepover",
+                                    "content": "Skenario Truth or Dare klasik. Roda menambahkan struktur dengan menghilangkan diskusi tentang giliran siapa."
                               },
                               {
-                                    "title": "Birthday Parties and Celebrations",
-                                    "content": "At birthday parties, the Truth or Dare wheel serves as an icebreaker that gets guests interacting."
+                                    "title": "Pesta Ulang Tahun dan Perayaan",
+                                    "content": "Di pesta ulang tahun, roda Truth or Dare berfungsi sebagai pemecah kebekuan yang membuat tamu berinteraksi."
                               },
                               {
-                                    "title": "Remote Gatherings and Video Calls",
-                                    "content": "The wheel works on any device with a browser, making it suitable for remote parties."
+                                    "title": "Pertemuan Daring dan Panggilan Video",
+                                    "content": "Roda berfungsi di perangkat apa pun dengan browser, sehingga cocok untuk pesta daring."
                               }
                         ]
                   },
                   {
-                        "title": "Truth or Dare vs Other Party Games",
+                        "title": "Truth or Dare vs Permainan Pesta Lainnya",
                         "content": [
-                              "The yes or no wheel handles binary decisions but does not include the social interaction element. The random food wheel solves a different problem. The Truth or Dare wheel combines randomization with social interaction, making it the most engaging party tool on the site."
+                              "Roda yes or no menangani keputusan biner tetapi tidak menyertakan elemen interaksi sosial. Roda makanan acak menyelesaikan masalah yang berbeda. Roda Truth or Dare menggabungkan keacakan dengan interaksi sosial, menjadikannya alat pesta paling menarik di situs ini."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "How does the Truth or Dare wheel work?",
-                        "a": "The wheel operates in two steps. First, it picks a random player. Then it spins again to choose between Truth and Dare."
+                        "q": "Bagaimana cara kerja roda Truth or Dare?",
+                        "a": "Roda beroperasi dalam dua langkah. Pertama, memilih pemain secara acak. Lalu memutar lagi untuk memilih antara Truth atau Dare."
                   },
                   {
-                        "q": "How many truth and dare prompts are included?",
-                        "a": "The tool includes over 200 curated prompts — roughly 100 truths and 100 dares."
+                        "q": "Berapa banyak prompt truth dan dare yang disertakan?",
+                        "a": "Alat ini menyertakan lebih dari 200 prompt pilihan — kira-kira 100 truth dan 100 dare."
                   },
                   {
-                        "q": "Can I add custom player names?",
-                        "a": "Yes. The player setup textarea accepts one name per line."
+                        "q": "Bisakah saya menambahkan nama pemain kustom?",
+                        "a": "Ya. Kolom teks pengaturan pemain menerima satu nama per baris."
                   },
                   {
-                        "q": "Is this appropriate for kids?",
-                        "a": "The prompt database includes a mix of difficulty levels. Review the prompts before playing with younger children."
+                        "q": "Apakah ini cocok untuk anak-anak?",
+                        "a": "Database prompt mencakup berbagai tingkat kesulitan. Tinjau prompt sebelum bermain dengan anak-anak yang lebih kecil."
                   },
                   {
-                        "q": "Can I use this for remote parties?",
-                        "a": "The Truth or Dare wheel works on any device with a browser. Share the URL with friends on a video call."
+                        "q": "Bisakah saya menggunakan ini untuk pesta daring?",
+                        "a": "Roda Truth or Dare berfungsi di perangkat apa pun dengan browser. Bagikan URL dengan teman dalam panggilan video."
                   },
                   {
-                        "q": "Is the Truth or Dare wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda Truth or Dare gratis?",
+                        "a": "Roda ini sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
@@ -12209,103 +12209,103 @@ const WHEEL_PAGE_CONTENT = {
             "title": "सत्य किंवा धाडस चाक",
             "subtitle": "द्वि-पायरी पार्टी चाक।",
             "howToUse": {
-                  "title": "How to Play Truth or Dare",
-                  "intro": "The Truth or Dare wheel runs in two steps. Here is how each round works:",
+                  "title": "सत्य किंवा धाडस कसे खेळावे",
+                  "intro": "सत्य किंवा धाडस चाक दोन टप्प्यांमध्ये चालते. प्रत्येक फेरी कसे काम करते ते खालीलप्रमाणे आहे:",
                   "steps": [
                         {
-                              "title": "Enter Player Names",
-                              "desc": "Type player names into the textarea, one per line. Click Load Players to update the wheel. If you skip this step, the tool uses default placeholder names."
+                              "title": "खेळाडूंची नावे प्रविष्ट करा",
+                              "desc": "खेळाडूंची नावे टेक्स्टएरियामध्ये टाइप करा, प्रत्येक ओळीवर एक नाव. चाक अद्ययावत करण्यासाठी 'खेळाडू लोड करा' वर क्लिक करा. हा टप्पा वगळल्यास, साधन डीफॉल्ट प्लेसहोल्डर नावे वापरते."
                         },
                         {
-                              "title": "Spin to Pick a Player",
-                              "desc": "Press the spin button to randomly select a player. The wheel displays all names and stops on the chosen player."
+                              "title": "खेळाडू निवडण्यासाठी फिरवा",
+                              "desc": "खेळाडूला यादृच्छिकरित्या निवडण्यासाठी स्पिन बटन दाबा. चाक सर्व नावे दर्शवते आणि निवडलेल्या खेळाडूवर थांबते."
                         },
                         {
-                              "title": "Spin for Truth or Dare",
-                              "desc": "The wheel reloads with Truth and Dare segments. Spin again to determine the challenge type. A random prompt from the selected category is displayed."
+                              "title": "सत्य किंवा धाडसासाठी फिरवा",
+                              "desc": "चाक सत्य आणि धाडस विभागांसह पुन्हा लोड होते. सवालाचा प्रकार ठरवण्यासाठी पुन्हा फिरवा. निवडलेल्या श्रेणीतून एक यादृच्छिक प्रॉम्प्ट दर्शवला जातो."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Truth or Dare Wheel?",
+                        "title": "सत्य किंवा धाडस चाक म्हणजे काय?",
                         "content": [
-                              "The Truth or Dare wheel is a two-step party game spinner that randomly assigns truths and dares to players. The wheel operates in two distinct phases: first selecting a player, then choosing between Truth and Dare.",
-                              "The tool includes a built-in database of over 200 prompts — roughly evenly split between truths and dares. The neon-themed visual design with glowing colors sets the mood for a party atmosphere.",
-                              "The wheel segments display player names during step one and the Truth/Dare choice during step two, making the selection process visible to everyone."
+                              "सत्य किंवा धाडस चाक हा एक द्वि-टप्प्यांचा पार्टी गेम स्पिनर आहे जो खेळाडूंना यादृच्छिकरित्या सत्य आणि धाडस नियुक्त करतो. चाक दोन वेगवेगळ्या टप्प्यांमध्ये काम करतो: प्रथम खेळाडू निवडतो, मग सत्य आणि धाडस यांच्या दरम्यान निवड करतो.",
+                              "या साधनात 200 हून अधिक प्रॉम्प्ट्सचा अंतर्भूत डेटाबेस आहे — सुमारे सत्य आणि धाडस यांच्यात समान प्रमाणात विभागलेले. निऑन-थीम व्हिज्युअल डिझाइन पार्टीच्या वातावरणाला मूड सेट करते.",
+                              "चाकाचे विभाग पहिल्या टप्प्यात खेळाडूंची नावे आणि दुसऱ्या टप्प्यात सत्य/धाडस निवड दर्शवतात, ज्यामुळे निवड प्रक्रिया सर्वांना दिसते."
                         ]
                   },
                   {
-                        "title": "How the Two-Step Process Works",
+                        "title": "द्वि-टप्प्यांची प्रक्रिया कसे काम करते",
                         "content": [
-                              "The Truth or Dare wheel uses a sequential spinning system that determines both the player and the challenge type through separate spins."
+                              "सत्य किंवा धाडस चाक एक क्रमबद्ध स्पिनिंग सिस्टम वापरतो जो वेगवेगळ्या स्पिन्सद्वारे खेळाडू आणि सवालाचा प्रकार दोन्ही ठरवतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Step 1: Player Selection",
-                                    "content": "The first spin selects a random player from your list. The wheel displays all player names as segments. After a brief pause, the wheel automatically transitions to step two."
+                                    "title": "टप्पा 1: खेळाडू निवड",
+                                    "content": "पहिला स्पिन तुमच्या यादीतून एक यादृच्छिक खेळाडू निवडतो. चाक सर्व खेळाडूंची नावे विभाग म्हणून दर्शवतो. थोड्या विरामानंतर, चाक आपोआप दुसऱ्या टप्प्यावर जातो."
                               },
                               {
-                                    "title": "Step 2: Truth or Dare Selection",
-                                    "content": "The second spin chooses between Truth and Dare. The wheel reloads with just two segments. When this spin completes, a random prompt from the corresponding category is displayed."
+                                    "title": "टप्पा 2: सत्य किंवा धाडस निवड",
+                                    "content": "दुसरा स्पिन सत्य आणि धाडस यांच्या दरम्यान निवड करतो. चाक केवळ दोन विभागांसह पुन्हा लोड होतो. हा स्पिन पूर्ण झाल्यावर, संबंधित श्रेणीतून एक यादृच्छिक प्रॉम्प्ट दर्शवला जातो."
                               },
                               {
-                                    "title": "Customization and Control",
-                                    "content": "The customization sidebar lets you modify the wheel entries, colors, and behavior. You can add or remove player names and adjust the visual theme."
+                                    "title": "सानुकूलन आणि नियंत्रण",
+                                    "content": "सानुकूलन साइडबार तुम्हाला चाकाच्या प्रविष्टी, रंग आणि वर्तन बदलू देतो. तुम्ही खेळाडूंची नावे जोडू शकता किंवा काढू शकता आणि दृश्य थीम समायोजित करू शकता."
                               }
                         ]
                   },
                   {
-                        "title": "When to Play Truth or Dare",
+                        "title": "सत्य किंवा धाडस कधी खेळावे",
                         "content": [
-                              "The Truth or Dare wheel works best in social settings where people are comfortable sharing personal information."
+                              "सत्य किंवा धाडस चाक अशा सामाजिक सामूहिकांमध्ये सर्वोत्तम काम करतो जिथे लोक वैयक्तिक माहिती शेअर करण्यात सहज असतात."
                         ],
                         "subsections": [
                               {
-                                    "title": "House Parties and Sleepovers",
-                                    "content": "The classic Truth or Dare scenario. The wheel adds structure by removing the debate over whose turn it is."
+                                    "title": "घरगुती पार्टी आणि स्लीपओव्हर",
+                                    "content": "क्लासिक सत्य किंवा धाडस दृश्य. कोणाची वारी आहे यावरील वाद दूर करून चाक रचना जोडतो."
                               },
                               {
-                                    "title": "Birthday Parties and Celebrations",
-                                    "content": "At birthday parties, the Truth or Dare wheel serves as an icebreaker that gets guests interacting."
+                                    "title": "वाढदिवसाच्या पार्टी आणि उत्सव",
+                                    "content": "वाढदिवसाच्या पार्टींमध्ये, सत्य किंवा धाडस चाक हा अतिथींना एकमेकांशी संवाद साधण्यास प्रेरित करणारा आइसब्रेकर म्हणून काम करतो."
                               },
                               {
-                                    "title": "Remote Gatherings and Video Calls",
-                                    "content": "The wheel works on any device with a browser, making it suitable for remote parties."
+                                    "title": "रिमोट जमाव आणि व्हिडिओ कॉल",
+                                    "content": "चाक ब्राउझर असलेल्या कोणत्याही उपकरणावर काम करतो, ज्यामुळे तो रिमोट पार्टींसाठी योग्य ठरतो."
                               }
                         ]
                   },
                   {
-                        "title": "Truth or Dare vs Other Party Games",
+                        "title": "सत्य किंवा धाडस vs इतर पार्टी गेम्स",
                         "content": [
-                              "The yes or no wheel handles binary decisions but does not include the social interaction element. The random food wheel solves a different problem. The Truth or Dare wheel combines randomization with social interaction, making it the most engaging party tool on the site."
+                              "हो किंवा नाही चाक बायनरी निर्णय हाताळतो परंतु सामाजिक संवादाचा घटक समाविष्ट करत नाही. यादृच्छिक अन्न चाक भिन्न समस्या सोडवतो. सत्य किंवा धाडस चाक यादृच्छिकीकरणाला सामाजिक संवादाशी जोडतो, ज्यामुळे हा साइटवरील सर्वात आकर्षक पार्टी साधन बनतो."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "How does the Truth or Dare wheel work?",
-                        "a": "The wheel operates in two steps. First, it picks a random player. Then it spins again to choose between Truth and Dare."
+                        "q": "सत्य किंवा धाडस चाक कसे काम करतो?",
+                        "a": "चाक दोन टप्प्यांमध्ये काम करतो. प्रथम, तो एक यादृच्छिक खेळाडू निवडतो. मग सत्य आणि धाडस यांच्या दरम्यान निवड करण्यासाठी पुन्हा फिरवतो."
                   },
                   {
-                        "q": "How many truth and dare prompts are included?",
-                        "a": "The tool includes over 200 curated prompts — roughly 100 truths and 100 dares."
+                        "q": "किती सत्य आणि धाडस प्रॉम्प्ट्स समाविष्ट आहेत?",
+                        "a": "साधनात 200 हून अधिक क्युरेटेड प्रॉम्प्ट्स आहेत — सुमारे 100 सत्य आणि 100 धाडस."
                   },
                   {
-                        "q": "Can I add custom player names?",
-                        "a": "Yes. The player setup textarea accepts one name per line."
+                        "q": "मी सानुकूलित खेळाडूंची नावे जोडू शकतो का?",
+                        "a": "हो. खेळाडू सेटअप टेक्स्टएरिया प्रत्येक ओळीवर एक नाव स्वीकारतो."
                   },
                   {
-                        "q": "Is this appropriate for kids?",
-                        "a": "The prompt database includes a mix of difficulty levels. Review the prompts before playing with younger children."
+                        "q": "हे मुलांसाठी योग्य आहे का?",
+                        "a": "प्रॉम्प्ट डेटाबेसमध्ये विविध कठीणता स्तरांचे मिश्रण आहे. लहान मुलांसोबत खेळण्यापूर्वी प्रॉम्प्ट्स तपासा."
                   },
                   {
-                        "q": "Can I use this for remote parties?",
-                        "a": "The Truth or Dare wheel works on any device with a browser. Share the URL with friends on a video call."
+                        "q": "मी हे रिमोट पार्टींसाठी वापरू शकतो का?",
+                        "a": "सत्य किंवा धाडस चाक ब्राउझर असलेल्या कोणत्याही उपकरणावर काम करतो. व्हिडिओ कॉलवर मित्रांसह URL शेअर करा."
                   },
                   {
-                        "q": "Is the Truth or Dare wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "सत्य किंवा धाडस चाक मोफत आहे का?",
+                        "a": "चाक पूर्णपणे मोफत आहे, कोणतीही साइनअप नाही, कोणतीही जाहिरात नाही आणि कोणत्याही वापर मर्यादा नाहीत."
                   }
             ]
       },
@@ -13572,108 +13572,108 @@ const WHEEL_PAGE_CONTENT = {
             ]
       },
     ur: {
-            "title": "DTI تھیم کا پہیۇۇۇ",
+            "title": "DTI تھیم کا پہیووو",
             "subtitle": "بے ترتیب تھیم جنریٹرں؄",
             "howToUse": {
-                  "title": "How to Use the DTI Theme Wheel",
-                  "intro": "The DTI Theme Wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "DTI تھیم کے پہیے کا استعمال کیسے کریں",
+                  "intro": "DTI تھیم کا پہیہ سیکنڈوں میں گھومنے کے لیے تیار ہے۔ یہ کیسے کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Browse the Theme Library",
-                              "desc": "Scroll through the theme grid above the wheel. Each theme has a category tag. Use the category filters to narrow the selection."
+                              "title": "تھیم لائبریری براؤز کریں",
+                              "desc": "پہیے اوپر تھیم گرڈ میں سکرول کریں۔ ہر تھیم کا ایک زمرہ ٹیگ ہے۔ انتخاب کو محدود کرنے کے لیے زمرہ فلٹرز استعمال کریں۔"
                         },
                         {
-                              "title": "Enable Your Favorites",
-                              "desc": "Toggle themes on or off using the checkboxes. Only enabled themes appear on the wheel. Use Select All or Deselect All to manage the full list."
+                              "title": "اپنی پسندیدہ فعال کریں",
+                              "desc": "چیک باکسز کا استعمال کرکے تھیمز کو آن یا آف کریں۔ صرف فعال تھیمز پہیے پر دکھائے جاتے ہیں۔ مکمل فہرست کے انتظام کے لیے سب منتخب کریں یا سب غیر منتخب کریں۔"
                         },
                         {
-                              "title": "Spin for Your Theme",
-                              "desc": "Press the spin button and watch the themes rotate. When the wheel stops, the winning theme appears. Use it as your outfit inspiration."
+                              "title": "اپنی تھیم کے لیے گھمائیں",
+                              "desc": "سپن بٹن دبائیں اور تھیمز کو گھومتے دیکھیں۔ جب پہیہ رکتا ہے، تو فاتح تھیم ظاہر ہوتی ہے۔ اسے اپنی لباس کی ترغیب کے طور پر استعمال کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the DTI Theme Wheel?",
+                        "title": "DTI تھیم کا پہیہ کیا ہے؟",
                         "content": [
-                              "The DTI Theme Wheel is a random theme generator designed for players of Dress To Impress, a popular fashion styling game.",
-                              "The tool includes over 180 themes organized into categories like Fantasy, Vintage, Streetwear, Formal, Casual, and more.",
-                              "The wheel randomly selects up to 20 enabled themes per spin, ensuring variety across multiple rounds."
+                              "DTI تھیم کا پہیہ ڈریس ٹو امپریس کے کھلاڑیوں کے لیے ڈیزائن کردہ ایک بے ترتیب تھیم جنریٹر ہے، جو ایک مقبول فیشن فیشن اسٹائلنگ گیم ہے۔",
+                              "اس ٹول میں 180 سے زائد تھیمز ہیں جو فیڈی، ونٹیج، سٹریٹ ویئر، رسمی، کیژوئل، اور مزید جیسے زمروں میں منظم ہیں۔",
+                              "پہیہ فی سپن 20 تک فعال تھیمز کا بے ترتیب انتخاب کرتا ہے، جو متعدد راؤنڈز میں تنوع کو یقینی بناتا ہے۔"
                         ]
                   },
                   {
-                        "title": "How the Theme Library Works",
+                        "title": "تھیم لائبریری کیسے کام کرتی ہے",
                         "content": [
-                              "The theme library sits above the wheel and displays all available themes in a scrollable grid."
+                              "تھیم لائبریری پہیے کے اوپر بیٹھی ہے اور اسکرول کرنے والی گرڈ میں تمام دستیاب تھیمز دکھاتی ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Category Filtering",
-                                    "content": "The category buttons include All plus every category in the theme database. Clicking a category filters the grid."
+                                    "title": "زمرہ فلٹرنگ",
+                                    "content": "زمرہ بٹن میں تمام اور تھیم ڈیٹابیس میں ہر زمرہ شامل ہے۔ کسی زمرے پر کلک کرنے سے گرڈ فلٹر ہو جاتی ہے۔"
                               },
                               {
-                                    "title": "Theme Selection",
-                                    "content": "Each theme has a checkbox that toggles it on or off. Enabled themes appear on the wheel; disabled themes do not."
+                                    "title": "تھیم کا انتخاب",
+                                    "content": "ہر تھیم میں ایک چیک باکس ہوتا ہے جو اسے آن یا آف کرتا ہے۔ فعال تھیمز پہیے پر دکھائے جاتے ہیں؛ غیر فعال نہیں۔"
                               },
                               {
-                                    "title": "Random Theme Sampling",
-                                    "content": "When you spin, the wheel randomly samples up to 20 from the enabled pool. This ensures the wheel remains readable."
+                                    "title": "بے ترتیب تھیم نمونہ",
+                                    "content": "جب آپ گھماتے ہیں، تو پہیہ فعال پول سے 20 تک کا بے ترتیب نمونہ لیتا ہے۔ اس سے پہیہ پڑھنے میں آسان رہتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the DTI Theme Wheel",
+                        "title": "DTI تھیم کے پہیے کب استعمال کریں",
                         "content": [
-                              "The DTI Theme Wheel works best when you need outfit inspiration for Dress To Impress challenges."
+                              "DTI تھیم کا پہیہ تب سب سے اچھا کام کرتا ہے جب آپ کو ڈریس ٹو امپریس چیلنجز کے لیے لباس کی ترغیب درکار ہو۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Daily Challenge Practice",
-                                    "content": "DTI daily challenges assign a theme. The wheel lets you practice with random themes before the daily challenge drops."
+                                    "title": "روزانہ چیلنج کی مشق",
+                                    "content": "DTI روزانہ چیلنجز ایک تھیم ترتیب دیتے ہیں۔ پہیہ آپ کو روزانہ چیلنج سے پہلے بے ترتیب تھیمز کے ساتھ مشق کرنے دیتا ہے۔"
                               },
                               {
-                                    "title": "Party Games and Group Challenges",
-                                    "content": "Friends who play DTI together can use the wheel for competitive styling sessions."
+                                    "title": "پارٹی گیمز اور گروپ چیلنجز",
+                                    "content": "دوست جو مل کر DTI کھیلتے ہیں وہ مسابقتی اسٹائلنگ سیشنز کے لیے پہیے کا استعمال کر سکتے ہیں۔"
                               },
                               {
-                                    "title": "Creative Fashion Exploration",
-                                    "content": "Even outside of DTI, the theme wheel serves as a fashion brainstorming tool."
+                                    "title": "تخلیقی فیشن دریافت",
+                                    "content": "DTI کے باہر بھی، تھیم کا پہیہ فیشن برین اسٹارمنگ ٹول کے طور پر کام کرتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "DTI Theme Wheel vs Other Spinners",
+                        "title": "DTI تھیم کا پہیہ بمقابلہ دیگر اسپنرز",
                         "content": [
-                              "The yes or no wheel handles binary decisions. The DTI Theme Wheel handles selecting from a large, categorized database of fashion themes.",
-                              "The hair color wheel shares the fashion context but focuses specifically on hair dye colors.",
-                              "The zodiac wheel offers a different kind of themed randomization with astrological signs."
+                              "ہاں یا نہیں کا پہیہ دوہرے فیصلوں کو سنبھالتا ہے۔ DTI تھیم کا پہیہ فیشن تھیمز کے بڑے، زمرہ بند ڈیٹابیس سے انتخاب کو سنبھالتا ہے۔",
+                              "بالوں کے رنگ کا پہیہ فیشن کے ماحول کو شریک کرتا ہے لیکن مخصوص طور پر بالوں کے رنگ پر مرکوز ہے۔",
+                              "برج کا پہیہ برج کے علامات کے ساتھ ایک مختلف قسم کی تھیمیڈ بے ترتیبی پیش کرتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the DTI Theme Wheel?",
-                        "a": "The DTI Theme Wheel is a random theme generator for Dress To Impress players with over 180 themes."
+                        "q": "DTI تھیم کا پہیہ کیا ہے؟",
+                        "a": "DTI تھیم کا پہیہ ڈریس ٹو امپریس کے کھلاڑیوں کے لیے 180 سے زائد تھیمز والا ایک بے ترتیب تھیم جنریٹر ہے۔"
                   },
                   {
-                        "q": "How many themes are included?",
-                        "a": "The wheel includes over 180 themes across multiple categories."
+                        "q": "کتنی تھیمز شامل ہیں؟",
+                        "a": "پہیے میں متعدد زمروں میں 180 سے زائد تھیمز شامل ہیں۔"
                   },
                   {
-                        "q": "Can I filter by category?",
-                        "a": "Yes. The category filter buttons let you view themes from specific categories."
+                        "q": "کیا میں زمرے کے مطابق فلٹر کر سکتا ہوں؟",
+                        "a": "ہاں۔ زمرہ فلٹر بٹن آپ کو مخصوص زمروں سے تھیمز دیکھنے دیتے ہیں۔"
                   },
                   {
-                        "q": "How does the random sampling work?",
-                        "a": "When you spin, the wheel randomly selects up to 20 enabled themes from your full list."
+                        "q": "بے ترتیب نمونہ کیسے کام کرتا ہے؟",
+                        "a": "جب آپ گھماتے ہیں، تو پہیہ آپ کی مکمل فہرست سے 20 تک فعال تھیمز کا بے ترتیب انتخاب کرتا ہے۔"
                   },
                   {
-                        "q": "Can I add custom themes?",
-                        "a": "Yes. The customization sidebar lets you add, edit, or remove themes."
+                        "q": "کیا میں حسب ضرورت تھیمز شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ تخصیص سائیڈبار آپ کو تھیمز شامل، ترمیم، یا ہٹانے دیتی ہے۔"
                   },
                   {
-                        "q": "Is the DTI Theme Wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا DTI تھیم کا پہیہ مفت ہے؟",
+                        "a": "پہیہ مکمل طور پر مفت ہے، کوئی سائن اپ، کوئی اشتہارات، اور کوئی استعمال کی حد نہیں ہے۔"
                   }
             ]
       },
@@ -13681,105 +13681,105 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Tema DTI",
             "subtitle": "Pembuat tema acak untuk Dress To Impress.",
             "howToUse": {
-                  "title": "How to Use the DTI Theme Wheel",
-                  "intro": "The DTI Theme Wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Tema DTI",
+                  "intro": "Roda Tema DTI siap berputar dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Browse the Theme Library",
-                              "desc": "Scroll through the theme grid above the wheel. Each theme has a category tag. Use the category filters to narrow the selection."
+                              "title": "Jelajahi Koleksi Tema",
+                              "desc": "Gulir melalui grid tema di atas roda. Setiap tema memiliki tag kategori. Gunakan filter kategori untuk mempersempit pilihan."
                         },
                         {
-                              "title": "Enable Your Favorites",
-                              "desc": "Toggle themes on or off using the checkboxes. Only enabled themes appear on the wheel. Use Select All or Deselect All to manage the full list."
+                              "title": "Aktifkan Favorit Anda",
+                              "desc": "Nyalakan atau matikan tema menggunakan kotak centang. Hanya tema yang diaktifkan yang muncul di roda. Gunakan Pilih Semua atau Batalkan Pilihan Semua untuk mengelola daftar lengkap."
                         },
                         {
-                              "title": "Spin for Your Theme",
-                              "desc": "Press the spin button and watch the themes rotate. When the wheel stops, the winning theme appears. Use it as your outfit inspiration."
+                              "title": "Putar untuk Tema Anda",
+                              "desc": "Tekan tombol putar dan lihat tema-tema berputar. Ketika roda berhenti, tema pemenang muncul. Gunakan sebagai inspirasi outfit Anda."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the DTI Theme Wheel?",
+                        "title": "Apa Itu Roda Tema DTI?",
                         "content": [
-                              "The DTI Theme Wheel is a random theme generator designed for players of Dress To Impress, a popular fashion styling game.",
-                              "The tool includes over 180 themes organized into categories like Fantasy, Vintage, Streetwear, Formal, Casual, and more.",
-                              "The wheel randomly selects up to 20 enabled themes per spin, ensuring variety across multiple rounds."
+                              "Roda Tema DTI adalah pembuat tema acak yang dirancang untuk pemain Dress To Impress, game styling fashion yang populer.",
+                              "Alat ini mencakup lebih dari 180 tema yang disusun dalam kategori seperti Fantasi, Vintage, Streetwear, Formal, Kasual, dan lainnya.",
+                              "Roda secara acak memilih hingga 20 tema yang diaktifkan per putaran, memastikan variasi di beberapa ronde."
                         ]
                   },
                   {
-                        "title": "How the Theme Library Works",
+                        "title": "Cara Kerja Koleksi Tema",
                         "content": [
-                              "The theme library sits above the wheel and displays all available themes in a scrollable grid."
+                              "Koleksi tema terletak di atas roda dan menampilkan semua tema yang tersedia dalam grid yang dapat digulir."
                         ],
                         "subsections": [
                               {
-                                    "title": "Category Filtering",
-                                    "content": "The category buttons include All plus every category in the theme database. Clicking a category filters the grid."
+                                    "title": "Filter Kategori",
+                                    "content": "Tombol kategori mencakup Semua ditambah setiap kategori dalam database tema. Mengklik kategori memfilter grid."
                               },
                               {
-                                    "title": "Theme Selection",
-                                    "content": "Each theme has a checkbox that toggles it on or off. Enabled themes appear on the wheel; disabled themes do not."
+                                    "title": "Pilihan Tema",
+                                    "content": "Setiap tema memiliki kotak centang yang mengaktifkan atau menonaktifkannya. Tema yang diaktifkan muncul di roda; tema yang dinonaktifkan tidak."
                               },
                               {
-                                    "title": "Random Theme Sampling",
-                                    "content": "When you spin, the wheel randomly samples up to 20 from the enabled pool. This ensures the wheel remains readable."
+                                    "title": "Pengambilan Sampel Tema Acak",
+                                    "content": "Ketika Anda memutar, roda secara acak mengambil hingga 20 dari kumpulan tema yang diaktifkan. Ini memastikan roda tetap dapat dibaca."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the DTI Theme Wheel",
+                        "title": "Kapan Menggunakan Roda Tema DTI",
                         "content": [
-                              "The DTI Theme Wheel works best when you need outfit inspiration for Dress To Impress challenges."
+                              "Roda Tema DTI paling efektif ketika Anda membutuhkan inspirasi outfit untuk tantangan Dress To Impress."
                         ],
                         "subsections": [
                               {
-                                    "title": "Daily Challenge Practice",
-                                    "content": "DTI daily challenges assign a theme. The wheel lets you practice with random themes before the daily challenge drops."
+                                    "title": "Latihan Tantangan Harian",
+                                    "content": "Tantangan harian DTI menetapkan sebuah tema. Roda memungkinkan Anda berlatih dengan tema acak sebelum tantangan harian dimulai."
                               },
                               {
-                                    "title": "Party Games and Group Challenges",
-                                    "content": "Friends who play DTI together can use the wheel for competitive styling sessions."
+                                    "title": "Permainan Pesta dan Tantangan Grup",
+                                    "content": "Teman-teman yang bermain DTI bersama dapat menggunakan roda untuk sesi styling kompetitif."
                               },
                               {
-                                    "title": "Creative Fashion Exploration",
-                                    "content": "Even outside of DTI, the theme wheel serves as a fashion brainstorming tool."
+                                    "title": "Eksplorasi Fashion Kreatif",
+                                    "content": "Bahkan di luar DTI, roda tema berfungsi sebagai alat brainstorming fashion."
                               }
                         ]
                   },
                   {
-                        "title": "DTI Theme Wheel vs Other Spinners",
+                        "title": "Roda Tema DTI vs Pemutar Acak Lainnya",
                         "content": [
-                              "The yes or no wheel handles binary decisions. The DTI Theme Wheel handles selecting from a large, categorized database of fashion themes.",
-                              "The hair color wheel shares the fashion context but focuses specifically on hair dye colors.",
-                              "The zodiac wheel offers a different kind of themed randomization with astrological signs."
+                              "Roda ya atau tidak menangani keputusan biner. Roda Tema DTI menangani pemilihan dari database tema fashion yang besar dan terkategorisasi.",
+                              "Roda warna rambut berbagi konteks fashion namun berfokus secara spesifik pada warna cat rambut.",
+                              "Roda zodiak menawarkan jenis randomisasi bertema yang berbeda dengan tanda-tanda astrologi."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the DTI Theme Wheel?",
-                        "a": "The DTI Theme Wheel is a random theme generator for Dress To Impress players with over 180 themes."
+                        "q": "Apa itu Roda Tema DTI?",
+                        "a": "Roda Tema DTI adalah pembuat tema acak untuk pemain Dress To Impress dengan lebih dari 180 tema."
                   },
                   {
-                        "q": "How many themes are included?",
-                        "a": "The wheel includes over 180 themes across multiple categories."
+                        "q": "Berapa banyak tema yang disertakan?",
+                        "a": "Roda mencakup lebih dari 180 tema dalam berbagai kategori."
                   },
                   {
-                        "q": "Can I filter by category?",
-                        "a": "Yes. The category filter buttons let you view themes from specific categories."
+                        "q": "Bisakah saya memfilter berdasarkan kategori?",
+                        "a": "Ya. Tombol filter kategori memungkinkan Anda melihat tema dari kategori tertentu."
                   },
                   {
-                        "q": "How does the random sampling work?",
-                        "a": "When you spin, the wheel randomly selects up to 20 enabled themes from your full list."
+                        "q": "Bagaimana pengambilan sampel acak bekerja?",
+                        "a": "Ketika Anda memutar, roda secara acak memilih hingga 20 tema yang diaktifkan dari daftar lengkap Anda."
                   },
                   {
-                        "q": "Can I add custom themes?",
-                        "a": "Yes. The customization sidebar lets you add, edit, or remove themes."
+                        "q": "Bisakah saya menambahkan tema kustom?",
+                        "a": "Ya. Sidebar kustomisasi memungkinkan Anda menambahkan, mengedit, atau menghapus tema."
                   },
                   {
-                        "q": "Is the DTI Theme Wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah Roda Tema DTI gratis?",
+                        "a": "Roda ini sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
@@ -13787,105 +13787,105 @@ const WHEEL_PAGE_CONTENT = {
             "title": "DTI थीम चाक",
             "subtitle": "यादृच्झिक थीम जेनरेटर।",
             "howToUse": {
-                  "title": "How to Use the DTI Theme Wheel",
-                  "intro": "The DTI Theme Wheel is ready to spin in seconds. Here is how it works:",
+                  "title": "DTI थीम चाक कसे वापरावे",
+                  "intro": "DTI थीम चाक सेकंदात फिरण्यासाठी तयार आहे. तो कसे काम करते ते पहा:",
                   "steps": [
                         {
-                              "title": "Browse the Theme Library",
-                              "desc": "Scroll through the theme grid above the wheel. Each theme has a category tag. Use the category filters to narrow the selection."
+                              "title": "थीम लायब्रेरी ब्राउझ करा",
+                              "desc": "चाकावरील थीम ग्रिड स्क्रोल करा. प्रत्येक थीमला एक श्रेणी टॅग आहे. निवड मर्यादित करण्यासाठी श्रेणी फिल्टर वापरा."
                         },
                         {
-                              "title": "Enable Your Favorites",
-                              "desc": "Toggle themes on or off using the checkboxes. Only enabled themes appear on the wheel. Use Select All or Deselect All to manage the full list."
+                              "title": "तुमचे आवडते सक्षम करा",
+                              "desc": "चेकबॉक्स वापरून थीम चालू किंवा बंद करा. फक्त सक्षम केलेल्या थीमच चाकावर दिसतात. संपूर्ण यादी व्यवस्थापित करण्यासाठी सर्व निवडा किंवा सर्व निवडा हटवा वापरा."
                         },
                         {
-                              "title": "Spin for Your Theme",
-                              "desc": "Press the spin button and watch the themes rotate. When the wheel stops, the winning theme appears. Use it as your outfit inspiration."
+                              "title": "तुमच्या थीमसाठी फिरा",
+                              "desc": "फिरा बटन दाबा आणि थीम फिरताना बघा. चाक थांबल्यावर विजेता थीम दिसते. तिला तुमच्या वस्त्र प्रेरणेसाठी वापरा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the DTI Theme Wheel?",
+                        "title": "DTI थीम चाक म्हणजे काय?",
                         "content": [
-                              "The DTI Theme Wheel is a random theme generator designed for players of Dress To Impress, a popular fashion styling game.",
-                              "The tool includes over 180 themes organized into categories like Fantasy, Vintage, Streetwear, Formal, Casual, and more.",
-                              "The wheel randomly selects up to 20 enabled themes per spin, ensuring variety across multiple rounds."
+                              "DTI थीम चाक हा Dress To Impress या लोकप्रिय फॅशन स्टायलिंग गेमच्या खेळाडूंसाठी तयार केलेला एक यादृच्छिक थीम जेनरेटर आहे.",
+                              "या साधनात फॅन्टसी, व्हिंटेज, स्ट्रीटवेअर, फॉर्मल, कॅज्युअल इत्यादी श्रेणींमध्ये व्यवस्थित 180 हून अधिक थीम आहेत.",
+                              "चाक प्रत्येक फिरणासाठी सक्षम केलेल्या 20 पर्यंत थीम यादृच्छिकरित्या निवदते, ज्यामुळे अनेक फेरींमध्ये विविधता सुनिश्चित होते."
                         ]
                   },
                   {
-                        "title": "How the Theme Library Works",
+                        "title": "थीम लायब्रेरी कसे काम करते",
                         "content": [
-                              "The theme library sits above the wheel and displays all available themes in a scrollable grid."
+                              "थीम लायब्रेरी चाकावर असते आणि उपलब्ध सर्व थीम स्क्रोल करता येतील ग्रिडमध्ये दर्शवते."
                         ],
                         "subsections": [
                               {
-                                    "title": "Category Filtering",
-                                    "content": "The category buttons include All plus every category in the theme database. Clicking a category filters the grid."
+                                    "title": "श्रेणी फिल्टरिंग",
+                                    "content": "श्रेणी बटणे सर्व आणि थीम डेटाबेसमधील प्रत्येक श्रेणी समाविष्ट करतात. श्रेणीवर क्लिक केल्यास ग्रिड फिल्टर होतो."
                               },
                               {
-                                    "title": "Theme Selection",
-                                    "content": "Each theme has a checkbox that toggles it on or off. Enabled themes appear on the wheel; disabled themes do not."
+                                    "title": "थीम निवड",
+                                    "content": "प्रत्येक थीमला एक चेकबॉक्स असतो जो तिला चालू किंवा बंद करतो. सक्षम केलेल्या थीम चाकावर दिसतात; बंद केलेल्या थीम दिसत नाहीत."
                               },
                               {
-                                    "title": "Random Theme Sampling",
-                                    "content": "When you spin, the wheel randomly samples up to 20 from the enabled pool. This ensures the wheel remains readable."
+                                    "title": "यादृच्छिक थीम नमुना",
+                                    "content": "तुम्ही फिरताना, चाक तुमच्या संपूर्ण यादीतून सक्षम पूलमधून 20 पर्यंत यादृच्छिकरित्या नमुना घेते. यामुळे चाक वाचता येते तसे राहते."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the DTI Theme Wheel",
+                        "title": "DTI थीम चाक कधी वापरावा",
                         "content": [
-                              "The DTI Theme Wheel works best when you need outfit inspiration for Dress To Impress challenges."
+                              "Dress To Impress च्या आव्हानांसाठी तुम्हाला वस्त्र प्रेरणा हवी असता तेव्हा DTI थीम चाक सर्वोत्तम काम करतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Daily Challenge Practice",
-                                    "content": "DTI daily challenges assign a theme. The wheel lets you practice with random themes before the daily challenge drops."
+                                    "title": "दैनंदिन आव्हान सराव",
+                                    "content": "DTI दैनंदिन आव्हाने थीम नियुक्त करतात. दैनंदिन आव्हान पडण्यापूर्वी चाक यादृच्छिक थीमसह सराव करण्याची संधी देते."
                               },
                               {
-                                    "title": "Party Games and Group Challenges",
-                                    "content": "Friends who play DTI together can use the wheel for competitive styling sessions."
+                                    "title": "पार्टी खेळ आणि गट आव्हाने",
+                                    "content": "DTI खेळणारे मित्र स्पर्धात्मक स्टायलिंग सत्रांसाठी चाक वापरू शकतात."
                               },
                               {
-                                    "title": "Creative Fashion Exploration",
-                                    "content": "Even outside of DTI, the theme wheel serves as a fashion brainstorming tool."
+                                    "title": "सर्जनशील फॅशन शोध",
+                                    "content": "DTI बाहेरही, थीम चाक एका फॅशन ब्रेनस्टॉर्मिंग साधनांप्रमाणे काम करतो."
                               }
                         ]
                   },
                   {
-                        "title": "DTI Theme Wheel vs Other Spinners",
+                        "title": "DTI थीम चाक vs इतर स्पिनर्स",
                         "content": [
-                              "The yes or no wheel handles binary decisions. The DTI Theme Wheel handles selecting from a large, categorized database of fashion themes.",
-                              "The hair color wheel shares the fashion context but focuses specifically on hair dye colors.",
-                              "The zodiac wheel offers a different kind of themed randomization with astrological signs."
+                              "होय/नाही चाक बायनरी निर्णय हाताळतो. DTI थीम चाक फॅशन थीम्सच्या मोठ्या, श्रेणीबद्ध डेटाबेसमधून निवड हाताळतो.",
+                              "केसांचा रंग चाक फॅशन संदर्भ सामायिक करतो परंतु विशेषतः केस डाई रंगांवर लक्ष केंद्रित करतो.",
+                              "राशीचक्र ज्योतिषीय चिन्हांसह वेगळ्या प्रकारची थीमयुक्त यादृच्छिकीकरण देतो."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the DTI Theme Wheel?",
-                        "a": "The DTI Theme Wheel is a random theme generator for Dress To Impress players with over 180 themes."
+                        "q": "DTI थीम चाक म्हणजे काय?",
+                        "a": "DTI थीम चाक हा 180 हून अधिक थीम्ससह Dress To Impress खेळाडूंसाठी एक यादृच्छिक थीम जेनरेटर आहे."
                   },
                   {
-                        "q": "How many themes are included?",
-                        "a": "The wheel includes over 180 themes across multiple categories."
+                        "q": "किती थीम समाविष्ट आहेत?",
+                        "a": "चाकात अनेक श्रेणींमध्ये 180 हून अधिक थीम आहेत."
                   },
                   {
-                        "q": "Can I filter by category?",
-                        "a": "Yes. The category filter buttons let you view themes from specific categories."
+                        "q": "मी श्रेणीनुसार फिल्टर करू शकतो का?",
+                        "a": "होय. श्रेणी फिल्टर बटणे तुम्हाला विशिष्ट श्रेणींतील थीम पाहण्याची परवानगी देतात."
                   },
                   {
-                        "q": "How does the random sampling work?",
-                        "a": "When you spin, the wheel randomly selects up to 20 enabled themes from your full list."
+                        "q": "यादृच्छिक नमुना कसे काम करते?",
+                        "a": "तुम्ही फिरताना, चाक तुमच्या संपूर्ण यादीतून 20 पर्यंत सक्षम थीम यादृच्छिकरित्या निवदतो."
                   },
                   {
-                        "q": "Can I add custom themes?",
-                        "a": "Yes. The customization sidebar lets you add, edit, or remove themes."
+                        "q": "मी सानुकूल थीम जोडू शकतो का?",
+                        "a": "होय. सानुकूलन साइडबार तुम्हाला थीम जोडण्यास, संपादित करण्यास किंवा काढण्यास देतो."
                   },
                   {
-                        "q": "Is the DTI Theme Wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "DTI थीम चाक मोफत आहे का?",
+                        "a": "चाक साइन अप, जाहिराती किंवा वापर मर्यादा नसलेला पूर्णपणे मोफत आहे."
                   }
             ]
       },
@@ -17078,109 +17078,109 @@ const WHEEL_PAGE_CONTENT = {
             "title": "بے ترتیب کھانے کا پہیۇۇۇ",
             "subtitle": "کیا کھائیں؄ یے منتخاب کریں؄",
             "howToUse": {
-                  "title": "How to Use the Random Food Wheel",
-                  "intro": "The random food wheel is ready to pick your next meal in seconds. Here is how it works:",
+                  "title": "بے ترتیب کھانے کے پہیے کا استعمال کیسے کریں",
+                  "intro": "بے ترتیب کھانے کا پہیو اگلے کھانے کا انتخاب سیکنڈوں میں کرنے کے لیے تیار ہے۔ یہ کام کیسے کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Review the Food Options",
-                              "desc": "The wheel starts with 8 common food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
+                              "title": "کھانے کے اختیارات کا جائزہ لیں",
+                              "desc": "پہیے میں 8 عام کھانے کے اختیارات ہیں: پیزا، سوشی، برگر، ٹاکوز، پاستا، سلاد، اسٹیک، اور سینڈوچ۔ انہیں رکھیں یا اپنی پسندیدہ اشیاء شامل کریں۔"
                         },
                         {
-                              "title": "Customize Your List",
-                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The wheel updates in real time."
+                              "title": "اپنی فہرست کو تخصیص دیں",
+                              "desc": "سائیڈ بار کا استعمال کرکے ریستوران، کھانوں کی اقسام، یا مخصوص پکوان شامل کریں۔ ناپسندیدہ اختیارات ہٹائیں۔ پہیا حقیقت میں اپ ڈیٹ ہوتا ہے۔"
                         },
                         {
-                              "title": "Spin and Order",
-                              "desc": "Press the spin button and watch the food options rotate. When the wheel stops, the winning dish appears. Use the result to order, cook, or decide."
+                              "title": "گھمائیں اور آرڈر کریں",
+                              "desc": "گھمانے کے بٹن کو دبائیں اور کھانے کے اختیارات گھومتے دیکھیں۔ جب پہیا رکتا ہے، تو کامیاب پکوان نظر آتا ہے۔ آرڈر کرنے، پکانے، یا فیصلہ کرنے کے لیے نتیجے کا استعمال کریں۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Random Food Wheel?",
+                        "title": "بے ترتیب کھانے کا پہیو کیا ہے؟",
                         "content": [
-                              "The random food wheel is a meal decision tool that spins through a list of food options and picks one at random. It solves the everyday problem of deciding what to eat.",
-                              "The tool comes pre-loaded with 8 common food choices. These defaults work for quick decisions, but the real power comes from customization.",
-                              "The wheel uses the same physics-based randomization as every other spinner on the site."
+                              "بے ترتیب کھانے کا پہیو ایک کھانے کا فیصلہ کرنے کا ایک ٹول ہے جو کھانے کے اختیارات کی فہرست میں سے ایک کو بے ترتیب طور پر چنتا ہے۔ یہ کھانا کیا کھائیں کے روزمرہ کے مسئلے کو حل کرتا ہے۔",
+                              "اس ٹول میں پہلے سے 8 عام کھانوں کے اختیارات لود ہیں۔ یہ ڈیفالٹس تیز فیصلوں کے لیے کام کرتی ہیں، لیکن اصل طاقت تخصیص سے آتی ہے۔",
+                              "پہیا سائٹ کے ہر دوسرے اسپنر کی طرح فیزکس پر مبنی بے ترتیب کا استعمال کرتا ہے۔"
                         ]
                   },
                   {
-                        "title": "How to Customize Your Food List",
+                        "title": "اپنی کھانے کی فہرست کو تخصیص کیسے دیں",
                         "content": [
-                              "The customization sidebar provides full control over the wheel entries."
+                              "تخصیص سائیڈ بار پہیے کے اندراج پر مکمل کنٹرول فراہم کرتی ہے۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Adding Custom Entries",
-                                    "content": "Open the sidebar and type new food entries into the add field. Each entry becomes a new segment on the wheel."
+                                    "title": "حسب ضرورت اندراجات شامل کریں",
+                                    "content": "سائیڈ بار کھولیں اور شامل کرنے کے فیلڈ میں نئے کھانے کے اندراجات ٹائپ کریں۔ ہر اندراج پہیے پر ایک نیا حصہ بن جاتا ہے۔"
                               },
                               {
-                                    "title": "Removing Unwanted Options",
-                                    "content": "If the default list includes foods you do not eat, remove them through the sidebar."
+                                    "title": "نارڈ پسندیدہ اختیارات ہٹائیں",
+                                    "content": "اگر ڈیفالٹ فہرست میں ایسے کھانے ہیں جو آپ نہیں کھاتے، تو سائیڈ بار کے ذریعے انہیں ہٹائیں۔"
                               },
                               {
-                                    "title": "Creating Theme Lists",
-                                    "content": "For variety, create different food lists for different situations. A Quick Lunch list might include sandwiches and salads."
+                                    "title": "تھیم فہرستیں بنائیں",
+                                    "content": "تنوع کے لیے، مختلف صورتحال کے لیے مختلف کھانے کی فہرستیں بنائیں۔ تیز دوپہر کے کھانے کی فہرست میں سینڈوچ اور سلاد شامل ہو سکتے ہیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Food Wheel",
+                        "title": "کھانے کے پہیے کا استعمال کب کریں",
                         "content": [
-                              "The food wheel works best when you face the what should I eat paralysis."
+                              "کھانے کا پہیو تب سب سے اچھا کام کرتا ہے جب آپ کھانا کیا کھائیں کی فیصلہ سے قائل ہو جاتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Solo Dining Decisions",
-                                    "content": "When eating alone, the decision fatigue of choosing a meal can be surprisingly draining."
+                                    "title": "تنہا کھانے کے فیصلے",
+                                    "content": "جب آکیلے کھانا کھاتے ہیں، تو کھانے کا انتخاب کرنے کی تھکاوٹ حیران کن طور پر تکلیف دہ ہو سکتی ہے۔"
                               },
                               {
-                                    "title": "Group Meal Planning",
-                                    "content": "When multiple people cannot agree on what to eat, the food wheel provides a fair, transparent random selection."
+                                    "title": "گروپ کھانے کی منصوبہ بندی",
+                                    "content": "جب کئی لوگ اس بات پر اتفاق نہیں کر سکتے کہ کیا کھائیں، تو کھانے کا پہیو ایک مناسب، شفاف بے ترتیب انتخاب فراہم کرتا ہے۔"
                               },
                               {
-                                    "title": "Meal Prep and Cooking Challenges",
-                                    "content": "For meal prep sessions, the food wheel determines which dishes to cook for the week."
+                                    "title": "کھانے کی تیاری اور پکانے کی چیلنجز",
+                                    "content": "کھانے کی تیاری کے لیے، کھانے کا پہیو طے کرتا ہے کہ ہفتے کے لیے کون سے پکوان پکنے ہیں۔"
                               },
                               {
-                                    "title": "Date Night and Special Occasions",
-                                    "content": "For date nights or celebrations, the food wheel can narrow down restaurant choices."
+                                    "title": "ڈیٹ نائٹ اور خصوصی مواقع",
+                                    "content": "ڈیٹ نائٹ یا جشن کے لیے، کھانے کا پہیو ریستوران کے انتخاب کو محدود کر سکتا ہے۔"
                               },
                               {
-                                    "title": "Dietary Rotation and Variety",
-                                    "content": "People following specific diets often cycle through the same handful of meals. The food wheel breaks this pattern."
+                                    "title": "غذائی چکری اور تنوع",
+                                    "content": "خصوصی غذاؤں پر عمل کرنے والے اکثر ایک ہی تھوڑے سے کھانوں سے گزرتے ہیں۔ کھانے کا پہیو اس پیٹرن کو توڑتا ہے۔"
                               }
                         ]
                   },
                   {
-                        "title": "Food Wheel vs Other Decision Tools",
+                        "title": "کھانے کا پہیو دیگر فیصلہ ٹولز کے مقابلے",
                         "content": [
-                              "The yes or no wheel handles binary decisions but cannot choose between multiple restaurant options.",
-                              "The word wheel can be loaded with food entries, but it requires manual setup. The food wheel comes pre-loaded.",
-                              "The country wheel can inspire cuisine choices. The rainbow wheel assigns colors randomly but the food wheel gives direct control over entries."
+                              "ہاں یا نہ پہیو دوہرے فیصلوں کو سنبھالتا ہے لیکن متعدد ریستوران کے اختیارات میں سے نہیں چن سکتا۔",
+                              "الفاظ کا پہیو کھانے کے اندراجات سے لود ہو سکتا ہے، لیکن اسے دستی ترتیب کی ضرورت ہوتی ہے۔ کھانے کا پہیو پہلے سے لود ہوتا ہے۔",
+                              "ملک کا پہیو کھانوں کی اقسام سے متاثر کر سکتا ہے۔ رنگین پہیا رنگ بے ترتیب طور پر مختص کرتا ہے لیکن کھانے کا پہیو اندراجات پر براہ راست کنٹرول دیتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the random food wheel?",
-                        "a": "The random food wheel is a meal decision tool that spins through food options and picks one at random."
+                        "q": "بے ترتیب کھانے کا پہیو کیا ہے؟",
+                        "a": "بے ترتیب کھانے کا پہیو ایک کھانے کا فیصلہ کرنے کا ٹول ہے جو کھانے کے اختیارات میں سے ایک کو بے ترتیب طور پر چنتا ہے۔"
                   },
                   {
-                        "q": "Can I add my own food options?",
-                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry."
+                        "q": "کیا میں اپنے کھانے کے اختیارات شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ تخصیص سائیڈ بار آپ کو کسی بھی اندراج کو شامل کرنے، ہٹانے، اور نام بدلنے دیتی ہے۔"
                   },
                   {
-                        "q": "What foods come pre-loaded?",
-                        "a": "The default list includes Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich."
+                        "q": "کون سے کھانے پہلے سے لود ہیں؟",
+                        "a": "ڈیوالٹ فہرست میں پیزا، سوشی، برگر، ٹاکوز، پاستا، سلاد، اسٹیک، اور سینڈوچ شامل ہیں۔"
                   },
                   {
-                        "q": "Can I use this for group decisions?",
-                        "a": "Yes. The food wheel works well for groups because everyone can see the wheel spin and land on a result."
+                        "q": "کیا میں اسے گروپ فیصلوں کے لیے استعمال کر سکتا ہوں؟",
+                        "a": "ہاں۔ کھانے کا پہیو گروپس کے لیے اچھا کام کرتا ہے کیونکہ ہر کوئی پہیے کو گھومتے اور نتیجے پر آنے دیکھ سکتا ہے۔"
                   },
                   {
-                        "q": "Is the food wheel free?",
-                        "a": "The food wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا کھانے کا پہیو مفت ہے؟",
+                        "a": "کھانے کا پہیو مکمل طور پر مفت ہے، بغیر سائن اپ، بغیر اشتہارات، اور بغیر استعمال کی حدود کے۔"
                   }
             ]
       },
@@ -17188,219 +17188,219 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Makanan Acak",
             "subtitle": "Pilih apa yang dimakan.",
             "howToUse": {
-                  "title": "How to Use the Random Food Wheel",
-                  "intro": "The random food wheel is ready to pick your next meal in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Makanan Acak",
+                  "intro": "Roda makanan acak siap memilih makanan Anda berikutnya dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Review the Food Options",
-                              "desc": "The wheel starts with 8 common food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
+                              "title": "Tinjau Opsi Makanan",
+                              "desc": "Roda dimulai dengan 8 opsi makanan umum: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, dan Sandwich. Pertahankan ini atau tambahkan favorit Anda sendiri."
                         },
                         {
-                              "title": "Customize Your List",
-                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The wheel updates in real time."
+                              "title": "Sesuaikan Daftar Anda",
+                              "desc": "Gunakan sidebar untuk menambahkan restoran, masakan, atau hidangan spesifik. Hapus opsi yang tidak Anda inginkan. Roda memperbarui secara real time."
                         },
                         {
-                              "title": "Spin and Order",
-                              "desc": "Press the spin button and watch the food options rotate. When the wheel stops, the winning dish appears. Use the result to order, cook, or decide."
+                              "title": "Putar dan Pesan",
+                              "desc": "Tekan tombol putar dan perhatikan opsi makanan berputar. Saat roda berhenti, hidangan pemenang muncul. Gunakan hasilnya untuk memesan, memasak, atau memutuskan."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Random Food Wheel?",
+                        "title": "Apa Itu Roda Makanan Acak?",
                         "content": [
-                              "The random food wheel is a meal decision tool that spins through a list of food options and picks one at random. It solves the everyday problem of deciding what to eat.",
-                              "The tool comes pre-loaded with 8 common food choices. These defaults work for quick decisions, but the real power comes from customization.",
-                              "The wheel uses the same physics-based randomization as every other spinner on the site."
+                              "Roda makanan acak adalah alat keputusan makanan yang memutar daftar opsi makanan dan memilih satu secara acak. Ini menyelesaikan masalah sehari-hari dalam memutuskan apa yang dimakan.",
+                              "Alat ini dilengkapi dengan 8 pilihan makanan umum sebagai default. Default ini cocok untuk keputusan cepat, tetapi kekuatan sebenarnya datang dari kustomisasi.",
+                              "Roda menggunakan pengacakan berbasis fisika yang sama dengan spinner lain di situs."
                         ]
                   },
                   {
-                        "title": "How to Customize Your Food List",
+                        "title": "Cara Menyesuaikan Daftar Makanan Anda",
                         "content": [
-                              "The customization sidebar provides full control over the wheel entries."
+                              "Sidebar kustomisasi memberikan kendali penuh atas entri roda."
                         ],
                         "subsections": [
                               {
-                                    "title": "Adding Custom Entries",
-                                    "content": "Open the sidebar and type new food entries into the add field. Each entry becomes a new segment on the wheel."
+                                    "title": "Menambahkan Entri Kustom",
+                                    "content": "Buka sidebar dan ketik entri makanan baru ke bidang tambahan. Setiap entri menjadi segmen baru pada roda."
                               },
                               {
-                                    "title": "Removing Unwanted Options",
-                                    "content": "If the default list includes foods you do not eat, remove them through the sidebar."
+                                    "title": "Menghapus Opsi yang Tidak Diinginkan",
+                                    "content": "Jika daftar default mencakup makanan yang tidak Anda makan, hapus melalui sidebar."
                               },
                               {
-                                    "title": "Creating Theme Lists",
-                                    "content": "For variety, create different food lists for different situations. A Quick Lunch list might include sandwiches and salads."
+                                    "title": "Membuat Daftar Tema",
+                                    "content": "Untuk variasi, buat daftar makanan berbeda untuk situasi berbeda. Daftar Makan Siang Cepat mungkin termasuk sandwich dan salad."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Food Wheel",
+                        "title": "Kapan Menggunakan Roda Makanan",
                         "content": [
-                              "The food wheel works best when you face the what should I eat paralysis."
+                              "Roda makanan paling efektif saat Anda menghadapi kelumpuhan 'apa yang harus saya makan'."
                         ],
                         "subsections": [
                               {
-                                    "title": "Solo Dining Decisions",
-                                    "content": "When eating alone, the decision fatigue of choosing a meal can be surprisingly draining."
+                                    "title": "Keputusan Makan Sendirian",
+                                    "content": "Saat makan sendirian, kelelahan keputusan dalam memilih makanan bisa sangat melelahkan."
                               },
                               {
-                                    "title": "Group Meal Planning",
-                                    "content": "When multiple people cannot agree on what to eat, the food wheel provides a fair, transparent random selection."
+                                    "title": "Perencanaan Makan Bersama",
+                                    "content": "Ketika beberapa orang tidak setuju tentang apa yang dimakan, roda makanan menyediakan pemilihan acak yang adil dan transparan."
                               },
                               {
-                                    "title": "Meal Prep and Cooking Challenges",
-                                    "content": "For meal prep sessions, the food wheel determines which dishes to cook for the week."
+                                    "title": "Persiapan Makan dan Tantangan Memasak",
+                                    "content": "Untuk sesi persiapan makan, roda makanan menentukan hidangan mana yang dimasak untuk minggu ini."
                               },
                               {
-                                    "title": "Date Night and Special Occasions",
-                                    "content": "For date nights or celebrations, the food wheel can narrow down restaurant choices."
+                                    "title": "Malam Kencan dan Acara Khusus",
+                                    "content": "Untuk malam kencan atau perayaan, roda makanan dapat mempersempit pilihan restoran."
                               },
                               {
-                                    "title": "Dietary Rotation and Variety",
-                                    "content": "People following specific diets often cycle through the same handful of meals. The food wheel breaks this pattern."
+                                    "title": "Rotasi Diet dan Variasi",
+                                    "content": "Orang yang mengikuti diet spesifik sering berputar melalui handful makanan yang sama. Roda makanan memecah pola ini."
                               }
                         ]
                   },
                   {
-                        "title": "Food Wheel vs Other Decision Tools",
+                        "title": "Roda Makanan vs Alat Keputusan Lain",
                         "content": [
-                              "The yes or no wheel handles binary decisions but cannot choose between multiple restaurant options.",
-                              "The word wheel can be loaded with food entries, but it requires manual setup. The food wheel comes pre-loaded.",
-                              "The country wheel can inspire cuisine choices. The rainbow wheel assigns colors randomly but the food wheel gives direct control over entries."
+                              "Roda ya atau tidak menangani keputusan biner tetapi tidak dapat memilih antara beberapa opsi restoran.",
+                              "Roda kata dapat dimuat dengan entri makanan, tetapi memerlukan pengaturan manual. Roda makanan sudah dimuat sebelumnya.",
+                              "Roda negara dapat menginspirasi pilihan masakan. Roda pelangi menetapkan warna secara acak tetapi roda makanan memberikan kendali langsung atas entri."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the random food wheel?",
-                        "a": "The random food wheel is a meal decision tool that spins through food options and picks one at random."
+                        "q": "Apa itu roda makanan acak?",
+                        "a": "Roda makanan acak adalah alat keputusan makanan yang memutar opsi makanan dan memilih satu secara acak."
                   },
                   {
-                        "q": "Can I add my own food options?",
-                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry."
+                        "q": "Bisakah saya menambahkan opsi makanan saya sendiri?",
+                        "a": "Ya. Sidebar kustomisasi memungkinkan Anda menambahkan, menghapus, dan mengganti nama entri apa pun."
                   },
                   {
-                        "q": "What foods come pre-loaded?",
-                        "a": "The default list includes Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich."
+                        "q": "Makanan apa yang dimuat sebelumnya?",
+                        "a": "Daftar default mencakup Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, dan Sandwich."
                   },
                   {
-                        "q": "Can I use this for group decisions?",
-                        "a": "Yes. The food wheel works well for groups because everyone can see the wheel spin and land on a result."
+                        "q": "Bisakah saya menggunakan ini untuk keputusan kelompok?",
+                        "a": "Ya. Roda makanan cocok untuk kelompok karena semua orang dapat melihat roda berputar dan mendarat pada hasil."
                   },
                   {
-                        "q": "Is the food wheel free?",
-                        "a": "The food wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda makanan gratis?",
+                        "a": "Roda makanan sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
-    mr: {
-            "title": "यादृच्झिक खाबारेर चाक",
-            "subtitle": "क्या खात्ािएन् ते निवडवा प्रत्ये.",
+     mr: {
+            "title": "यादृच्छिक अन्न पहिया",
+            "subtitle": "काय खायचे हे निवडा.",
             "howToUse": {
-                  "title": "How to Use the Random Food Wheel",
-                  "intro": "The random food wheel is ready to pick your next meal in seconds. Here is how it works:",
+                  "title": "यादृच्छिक अन्न पहिया कसा वापरावा",
+                  "intro": "यादृच्छिक अन्न पहिया तुमचे पुढील जेवण सेकंदात निवडण्यासाठी तयार आहे. तो कसे काम करते ते येथे आहे:",
                   "steps": [
                         {
-                              "title": "Review the Food Options",
-                              "desc": "The wheel starts with 8 common food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
+                              "title": "अन्न पर्याय पहा",
+                              "desc": "पहिया 8 सामान्य अन्न पर्यायांसह सुरू होतो: पिझ्झा, सुशी, बर्गर, टॅकोस, पास्ता, सलाड, स्टेक आणि सँडविच. यांचा आधी ठेवा किंवा आपले आवडते जोडा."
                         },
                         {
-                              "title": "Customize Your List",
-                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The wheel updates in real time."
+                              "title": "तुमची यादी कस्टमाइज़ करा",
+                              "desc": "रेस्टॉरंट, पदार्थ किंवा विशिष्ट व्यंजने जोडण्यासाठी साइडबार वापरा. अनावश्यक पर्याय काढा. पहिया प्रत्यक्ष वेळी अद्ययावत होतो."
                         },
                         {
-                              "title": "Spin and Order",
-                              "desc": "Press the spin button and watch the food options rotate. When the wheel stops, the winning dish appears. Use the result to order, cook, or decide."
+                              "title": "फिरवा आणि ऑर्डर करा",
+                              "desc": "स्पिन बटन दाबा आणि अन्न पर्याय फिरताना पहा. पहिया थांबल्यावर, विजेता पदार्ष्ट दिसतो. ऑर्डर करण्यासाठी, स्वयंपाक करण्यासाठी किंवा निर्णय घेण्यासाठी परिणाम वापरा."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Random Food Wheel?",
+                        "title": "यादृच्छिक अन्न पहिया म्हणजे काय?",
                         "content": [
-                              "The random food wheel is a meal decision tool that spins through a list of food options and picks one at random. It solves the everyday problem of deciding what to eat.",
-                              "The tool comes pre-loaded with 8 common food choices. These defaults work for quick decisions, but the real power comes from customization.",
-                              "The wheel uses the same physics-based randomization as every other spinner on the site."
+                              "यादृच्छिक अन्न पहिया हा अन्न पर्यायांच्या यादीमधून फिरून एक यादृच्छिकरित्या निवडणारा जेवण निर्णय साधन आहे. तो काय खायचे हे ठरवण्याच्या दैनंदिन समस्येचे उपाय देतो.",
+                              "हे साधन 8 सामान्य अन्न पर्यायांसह पूर्व-लोड केलेले आहे. हे डीफॉल्ट्स जलद निर्णयांसाठी काम करतात, परंतु खऱ्या शक्ती कस्टमाइजेशनमधून येते.",
+                              "पहिया या साइटवरील प्रत्येक इतर स्पिनरसारखा तोच भौतिकशास्त्र-आधारित र्‍यांडमायझेशन वापरतो."
                         ]
                   },
                   {
-                        "title": "How to Customize Your Food List",
+                        "title": "तुमची अन्न यादी कसे कस्टमाइज़ करायची",
                         "content": [
-                              "The customization sidebar provides full control over the wheel entries."
+                              "कस्टमाइजेशन साइडबार चाक प्रविष्टींवर संपूर्ण नियंत्रण देतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Adding Custom Entries",
-                                    "content": "Open the sidebar and type new food entries into the add field. Each entry becomes a new segment on the wheel."
+                                    "title": "कस्टम प्रविष्टी जोडणे",
+                                    "content": "साइडबार उघडा आणि जोडण्याच्या क्षेत्रात नवीन अन्न प्रविष्टी टाइप करा. प्रत्येक प्रविष्टी पहियावर एका नवीन विभागात बदलते."
                               },
                               {
-                                    "title": "Removing Unwanted Options",
-                                    "content": "If the default list includes foods you do not eat, remove them through the sidebar."
+                                    "title": "अनावश्यक पर्याय काढणे",
+                                    "content": "डीफॉल्ट यादीमध्ये तुम्ही न खाणारी अन्ने असल्यास, त्यांना साइडबारमधून काढून टाका."
                               },
                               {
-                                    "title": "Creating Theme Lists",
-                                    "content": "For variety, create different food lists for different situations. A Quick Lunch list might include sandwiches and salads."
+                                    "title": "थीम यादी तयार करणे",
+                                    "content": "विविधतेसाठी, वेगवेगळ्या परिस्थितींसाठी वेगवेगळ्या अन्न यादी तयार करा. झटपट लंच यादीमध्ये सँडविच आणि सलाड असू शकतात."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Food Wheel",
+                        "title": "अन्न पहियाचा वापर कधी करावा",
                         "content": [
-                              "The food wheel works best when you face the what should I eat paralysis."
+                              "काय खायचे हे पक्षघात तुम्हाला भेटत असतानी अन्न पहिया सर्वोत्तम काम करतो."
                         ],
                         "subsections": [
                               {
-                                    "title": "Solo Dining Decisions",
-                                    "content": "When eating alone, the decision fatigue of choosing a meal can be surprisingly draining."
+                                    "title": "एकटे जेवण निर्णय",
+                                    "content": "एकट्याने जेवताना, जेवण निवडण्याचा निर्णय थकवा विस्मयकारकरीत्या थकवा देणारा असू शकतो."
                               },
                               {
-                                    "title": "Group Meal Planning",
-                                    "content": "When multiple people cannot agree on what to eat, the food wheel provides a fair, transparent random selection."
+                                    "title": "गट जेवण नियोजन",
+                                    "content": "अनेक लोक काय खायचे यावर सहमत होऊ न शकल्यास, अन्न पहिया योग्य, पारदर्शक यादृच्छिक निवड देतो."
                               },
                               {
-                                    "title": "Meal Prep and Cooking Challenges",
-                                    "content": "For meal prep sessions, the food wheel determines which dishes to cook for the week."
+                                    "title": "जेवण प्रिप आणि स्वयंपाक आव्हाने",
+                                    "content": "जेवण प्रिप सत्रांसाठी, अन्न पहिया आठवड्यासाठी कोणती व्यंजने स्वयंपाक करायची ते ठरवतो."
                               },
                               {
-                                    "title": "Date Night and Special Occasions",
-                                    "content": "For date nights or celebrations, the food wheel can narrow down restaurant choices."
+                                    "title": "डेट नाईट आणि विशेष प्रसंग",
+                                    "content": "डेट नाईट किंवा उत्सवांसाठी, अन्न पहिया रेस्टॉरंट पर्याय कमी करू शकतो."
                               },
                               {
-                                    "title": "Dietary Rotation and Variety",
-                                    "content": "People following specific diets often cycle through the same handful of meals. The food wheel breaks this pattern."
+                                    "title": "आहार फेरबदल आणि विविधता",
+                                    "content": "विशिष्ट आहारांचे पालन करणारे लोक प्रायोगिकरित्या त्याच थोड्या जेवणांमधून फिरतात. अन्न पहिया हा नमुना मोडतो."
                               }
                         ]
                   },
                   {
-                        "title": "Food Wheel vs Other Decision Tools",
+                        "title": "अन्न पहिया विरुद्ध इतर निर्णय साधने",
                         "content": [
-                              "The yes or no wheel handles binary decisions but cannot choose between multiple restaurant options.",
-                              "The word wheel can be loaded with food entries, but it requires manual setup. The food wheel comes pre-loaded.",
-                              "The country wheel can inspire cuisine choices. The rainbow wheel assigns colors randomly but the food wheel gives direct control over entries."
+                              "होय किंवा नाही पहिया द्विआधारी निर्णय हाताळतो परंतु अनेक रेस्टॉरंट पर्यायांमध्ये निवडू शकत नाही.",
+                              "शब्द पहिया अन्न प्रविष्टींसह लोड करता येतो, परंतु त्यास मॅन्युअल सेटअप आवश्यक आहे. अन्न पहिया पूर्व-लोड केलेला आहे.",
+                              "देश पहिया पदार्थ पर्यायांना प्रेरणा देऊ शकतो. इंद्रधनुषी पहिया रंग यादृच्छिकरित्या वाटतो परंतु अन्न पहिया प्रविष्टींवर थेट नियंत्रण देतो."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the random food wheel?",
-                        "a": "The random food wheel is a meal decision tool that spins through food options and picks one at random."
+                        "q": "यादृच्छिक अन्न पहिया म्हणजे काय?",
+                        "a": "यादृच्छिक अन्न पहिया हा अन्न पर्यायांमधून फिरून एक यादृच्छिकरित्या निवडणारा जेवण निर्णय साधन आहे."
                   },
                   {
-                        "q": "Can I add my own food options?",
-                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry."
+                        "q": "मी माझे स्वतःचे अन्न पर्याय जोडू शकतो का?",
+                        "a": "होय. कस्टमाइजेशन साइडबार तुम्हाला कोणतीही प्रविष्टी जोडण्यास, काढण्यास आणि पुनर्नावित करण्यास देतो."
                   },
                   {
-                        "q": "What foods come pre-loaded?",
-                        "a": "The default list includes Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich."
+                        "q": "कोणती अन्ने पूर्व-लोड केलेली आहेत?",
+                        "a": "डीफॉल्ट यादीमध्ये पिझ्झा, सुशी, बर्गर, टॅकोस, पास्ता, सलाड, स्टेक आणि सँडविच आहेत."
                   },
                   {
-                        "q": "Can I use this for group decisions?",
-                        "a": "Yes. The food wheel works well for groups because everyone can see the wheel spin and land on a result."
+                        "q": "मी याचा वापर गट निर्णयांसाठी करू शकतो का?",
+                        "a": "होय. अन्न पहिया गटांसाठी चांगला काम करतो कारण प्रत्येक जण पहिया फिरताना आणि परिणामावर थांबताना पाहू शकतो."
                   },
                   {
-                        "q": "Is the food wheel free?",
-                        "a": "The food wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "अन्न पहिया मोफत आहे का?",
+                        "a": "अन्न पहिया साइन-अप, जाहिराती किंवा वापर मर्यादा नसलेला पूर्णपणे मोफत आहे."
                   }
             ]
       },
@@ -18808,117 +18808,117 @@ const WHEEL_PAGE_CONTENT = {
             "title": "بالوں کے رنگ کا پہیۇۇۇ",
             "subtitle": "بے ترتیب بالوں کا رنگ منتخاب کریں؄",
             "howToUse": {
-                  "title": "How to Use the Hair Color Wheel",
-                  "intro": "The hair color wheel picks a random shade in seconds. Here is how it works:",
+                  "title": "بالوں کے رنگ کے پہیے کا استعمال کیسے کریں",
+                  "intro": "بالوں کا رنگ پہیہ لمحات میں ایک بے ترتیب شیڈ منتخب کرتا ہے۔ یہ اس طرح کام کرتا ہے:",
                   "steps": [
                         {
-                              "title": "Browse the Color Palette",
-                              "desc": "The color grid shows all available hair colors organized by category. Browse through natural shades like blonde, brunette, and black, or explore fashion colors."
+                              "title": "رنگ پیلیٹ براؤز کریں",
+                              "desc": "رنگ گرڈ تمام دستیاب بالوں کے رنگوں کو شریneroں کے مطابق منظم کر کے دکھاتا ہے۔ قدرتی شیڈز جیسے بلونڈ، براؤن، اور کالے رنگوں کو براؤز کریں، یا فیشن رنگوں کو دریافت کریں۔"
                         },
                         {
-                              "title": "Filter by Category",
-                              "desc": "Use the category buttons above the grid to filter colors by type. Select Natural for everyday shades, Fashion for bold colors, or Red for warm tones."
+                              "title": "شریneroں کے مطابق فلٹر کریں",
+                              "desc": "گرڈ کے اوپر شریneroں کے بٹنوں کا استعمال کر کے رنگوں کو قسم کے مطابق فلٹر کریں۔ روزمرہ کے شیڈز کے لیے قدرتی، بولڈ رنگوں کے لیے فیشن، یا گرم ٹونز کے لیے سرخ منتخب کریں۔"
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the selected colors rotate. When the wheel stops, the winning color appears with its hex code and a swatch preview."
+                              "title": "پہیہ گمائیں",
+                              "desc": "اسپن بٹن دبائیں اور منتخب رنگوں کو گھومتے دیکھیں۔ جب پہیہ رک جائے، فاتح رنگ اپنے ہیکس کوڈ اور سویچ پیش نماؤ کے ساتھ ظاہر ہوتا ہے۔"
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Hair Color Wheel?",
+                        "title": "بالوں کے رنگ کا پہیہ کیا ہے؟",
                         "content": [
-                              "The hair color wheel is a random hair color picker that spins through a customizable palette of shades.",
-                              "The wheel comes loaded with 16 popular hair colors spanning natural tones and fashion shades.",
-                              "The hex code display makes the result practical for online shopping. Copy the hex value to find exact product matches."
+                              "بالوں کا رنگ پہیہ ایک بے ترتیب بالوں کا رنگ منتخب کرنے والا ہے جو قابل ترمیم شیڈز کی پیلیٹ میں گھومتا ہے۔",
+                              "پہیہ قدرتی ٹونز اور فیشن شیڈز میں پھیلے 16 مقبول بالوں کے رنگوں سے لدا ہوا ہے۔",
+                              "ہیکس کوڈ ڈسپلے نتیجے کو آن لائن شاپنگ کے لیے عملی بناتا ہے۔ درست مصنوعات کے میچز تلاش کرنے کے لیے ہیکس ویلی کاپی کریں۔"
                         ]
                   },
                   {
-                        "title": "Understanding Hair Color Categories",
+                        "title": "بالوں کے رنگ کی شریneroں کو سمجھنا",
                         "content": [
-                              "Hair colors fall into distinct categories based on tone, saturation, and origin."
+                              "بالوں کے رنگ ٹون، اشباع، اور ماخذ کی بنیاد پر مختلف شریneroں میں آتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "Natural Hair Colors",
-                                    "content": "Natural shades mimic colors that occur in human hair without artificial dyeing. These include various depths of blonde, brown, black, and red."
+                                    "title": "قدرتی بالوں کے رنگ",
+                                    "content": "قدرتی شیڈز بغیر مصنوعی رنگنے کے انسانی بالوں میں پائے جانے والے رنگوں کی نقل کرتے ہیں۔ ان میں بلونڈ، براؤن، کالا، اور لال کی مختلف گہرائیاں شامل ہیں۔"
                               },
                               {
-                                    "title": "Fashion and Fantasy Colors",
-                                    "content": "Fashion colors include pastels, vivid brights, and unnatural shades like blue, green, purple, and pink."
+                                    "title": "فیشن اور خیالی رنگ",
+                                    "content": "فیشن رنگوں میں پاسٹل، شuddh رنگ، اور نیلے، سبز، جامنی، اور گلابی جیسے غیر فطری شیڈز شامل ہیں۔"
                               },
                               {
-                                    "title": "Red and Warm Tones",
-                                    "content": "Red hair colors span a wide range from subtle auburn and copper to bright strawberry and deep burgundy."
+                                    "title": "لال اور گرم ٹونز",
+                                    "content": "بالوں کے لال رنگ ہلکی ابریگوں اور تامبے سے لے کر چمکدار اسٹرابیری اور گہرے بورگنڈی تک ایک وسیع حد تک پھیلے ہوئے ہیں۔"
                               },
                               {
-                                    "title": "Custom and Mixed Colors",
-                                    "content": "The custom color input lets you add any shade by name. Type it directly into the wheel."
+                                    "title": "حسب ضرورت اور ملاپیٹ رنگ",
+                                    "content": "حسب ضرورت رنگ انپٹ آپ کو کسی بھی شیڈ کو نام سے شامل کرنے دیتا ہے۔ اسے براہ راست پہیے میں ٹائپ کریں۔"
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Hair Color Wheel",
+                        "title": "بالوں کے رنگ کے پہیے کا استعمال کب کریں",
                         "content": [
-                              "The hair color wheel works best when you want to explore hair color options without committing to a single shade."
+                              "بالوں کا رنگ پہیہ تب سب سے اچھا کام کرتا ہے جب آپ کسی ایک شیڈ کا عزم کیے بغیر بالوں کے رنگ کے اختیارات کو دریافت کرنا چاہتے ہیں۔"
                         ],
                         "subsections": [
                               {
-                                    "title": "First-Time Hair Dye Decisions",
-                                    "content": "If you have never dyed your hair before, the sheer number of available colors can be overwhelming."
+                                    "title": "پہلی بار بالوں کو رنگنے کے فیصلے",
+                                    "content": "اگر آپ نے پہلے کبھی اپنے بالوں کو رنگا نہیں ہے، تو دستیاب رنگوں کی بھاری تعداد طاقتور ہو سکتی ہے۔"
                               },
                               {
-                                    "title": "Salon Consultations",
-                                    "content": "Before a salon appointment, use the hair color wheel to generate ideas. Spin several times and save the results."
+                                    "title": "سیلون مشاورت",
+                                    "content": "سیلون کی ملاقات سے پہلے، آئیڈیا بنانے کے لیے بالوں کے رنگ کے پہیے کا استعمال کریں۔ کئی بار گمائیں اور نتائج محفوظ کریں۔"
                               },
                               {
-                                    "title": "Costume and Cosplay Planning",
-                                    "content": "Cosplayers and costume designers use the hair color wheel to assign hair colors to characters."
+                                    "title": "لباس اور کازپلے کی منصوبہ بندی",
+                                    "content": "کازپلیئرز اور لباس ڈیزائنر بالوں کے رنگ کے پہیے کا استعمال کرداروں کو بالوں کے رنگ تفویض کرنے کے لیے کرتے ہیں۔"
                               },
                               {
-                                    "title": "Creative Projects and Mood Boards",
-                                    "content": "Designers and artists use hair color wheels to generate color palettes for illustrations and character designs."
+                                    "title": "تخلیقی منصوبے اور موڈ بورڈز",
+                                    "content": "ڈیزائنرز اور آرٹسٹ اشکال اور کردار ڈیزائن کے لیے رنگ پیلیٹ بنانے کے لیے بالوں کے رنگ کے پہیے استعمال کرتے ہیں۔"
                               },
                               {
-                                    "title": "Fun with Friends",
-                                    "content": "Groups of friends can use the hair color wheel for entertainment."
+                                    "title": "دوستوں کے ساتھ تفریح",
+                                    "content": "دوستوں کے گروپ تفریح کے لیے بالوں کے رنگ کے پہیے کا استعمال کر سکتے ہیں۔"
                               }
                         ]
                   },
                   {
-                        "title": "Hair Color Wheel vs Other Randomizers",
+                        "title": "بالوں کے رنگ کا پہیہ بنام دیگر بے ترتیب کاروں کے مقابلے میں",
                         "content": [
-                              "The yes or no wheel handles binary choices but cannot help you choose which color.",
-                              "The DTI theme wheel assigns fashion themes. The hair color wheel provides the specific color value you need.",
-                              "The rainbow wheel assigns colors randomly but the hair color wheel uses actual hair color names and hex codes."
+                              "ہاں یا نہ کا پہیہ دوہرے فیصلوں کو سنبھالتا ہے لیکن آپ کو رنگ منتخب کرنے میں مدد نہیں کر سکتا۔",
+                              "ڈیٹی آئی تھیم پہیہ فیشن تھیمز تفویض کرتا ہے۔ بالوں کے رنگ کا پہیہ وہ مخصوص رنگ ویلی فراہم کرتا ہے جو آپ کو چاہیے۔",
+                               "رینبو پہیہ بے ترتیب رنگ تفویض کرتا ہے لیکن بالوں کے رنگ کا پہیہ اصل بالوں کے رنگوں کے نام اور ہیکس کوڈ استعمال کرتا ہے۔"
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the hair color wheel?",
-                        "a": "The hair color wheel is a random hair color picker that spins through a customizable palette of shades."
+                        "q": "بالوں کے رنگ کا پہیہ کیا ہے؟",
+                        "a": "بالوں کا رنگ پہیہ ایک بے ترتیب بالوں کا رنگ منتخب کرنے والا ہے جو قابل ترمیم شیڈز کی پیلیٹ میں گھومتا ہے۔"
                   },
                   {
-                        "q": "Can I add my own hair colors?",
-                        "a": "Yes. Type any color name into the custom input field and click Add."
+                        "q": "کیا میں اپنے بالوں کے رنگ شامل کر سکتا ہوں؟",
+                        "a": "ہاں۔ کسی بھی رنگ کا نام حسب ضورت انپٹ فیلڈ میں ٹائپ کریں اور شامل پر کلک کریں۔"
                   },
                   {
-                        "q": "How many colors come pre-loaded?",
-                        "a": "The wheel starts with 16 popular hair colors spanning natural shades, fashion colors, and warm tones."
+                        "q": "پہلے سے لوڈ کیے گئے کتنے رنگ ہیں؟",
+                        "a": "پہیہ قدرتی شیڈز، فیشن رنگوں، اور گرم ٹونز میں پھیلے 16 مقبول بالوں کے رنگوں سے شروع ہوتا ہے۔"
                   },
                   {
-                        "q": "What does the hex code mean?",
-                        "a": "The hex code is a six-character color value used in digital color representation."
+                        "q": "ہیکس کوڈ کا کیا مطلب ہے؟",
+                        "a": "ہیکس کوڈ ڈیجیٹل رنگ کی نمائندگی میں استعمال ہونے والا چھ حروف کا رنگ ویلی ہے۔"
                   },
                   {
-                        "q": "Can I filter colors by category?",
-                        "a": "Yes. The category buttons above the color grid let you filter by Natural, Fashion, Red, or other categories."
+                        "q": "کیا میں رنگوں کو شریneroں کے مطابق فلٹر کر سکتا ہوں؟",
+                        "a": "ہاں۔ رنگ گرڈ کے اوپر شریneroں کے بٹن آپ کو قدرتی، فیشن، لال، یا دیگر شریneroں کے مطابق فلٹر کرنے دیتے ہیں۔"
                   },
                   {
-                        "q": "Is the hair color wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "کیا بالوں کے رنگ کا پہیہ مفت ہے؟",
+                        "a": "پہیہ مکمل طور پر مفت ہے، کوئی سائن اپ نہیں، کوئی اشتہارات نہیں، اور کوئی استعمال کی حدود نہیں۔"
                   }
             ]
       },
@@ -18926,117 +18926,117 @@ const WHEEL_PAGE_CONTENT = {
             "title": "Roda Warna Rambut",
             "subtitle": "Pilihan acak warna rambut.",
             "howToUse": {
-                  "title": "How to Use the Hair Color Wheel",
-                  "intro": "The hair color wheel picks a random shade in seconds. Here is how it works:",
+                  "title": "Cara Menggunakan Roda Warna Rambut",
+                  "intro": "Roda warna rambut memilih warna secara acak dalam hitungan detik. Begini cara kerjanya:",
                   "steps": [
                         {
-                              "title": "Browse the Color Palette",
-                              "desc": "The color grid shows all available hair colors organized by category. Browse through natural shades like blonde, brunette, and black, or explore fashion colors."
+                              "title": "Jelajahi Palet Warna",
+                              "desc": "Grip warna menampilkan semua warna rambut yang tersedia yang dikelompokkan berdasarkan kategori. Jelajahi warna alami seperti pirang, cokelat, dan hitam, atau eksplorasi warna fashion."
                         },
                         {
-                              "title": "Filter by Category",
-                              "desc": "Use the category buttons above the grid to filter colors by type. Select Natural for everyday shades, Fashion for bold colors, or Red for warm tones."
+                              "title": "Filter Berdasarkan Kategori",
+                              "desc": "Gunakan tombol kategori di atas grip untuk memfilter warna berdasarkan jenis. Pilih Alami untuk warna sehari-hari, Fashion untuk warna berani, atau Merah untuk nada hangat."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the selected colors rotate. When the wheel stops, the winning color appears with its hex code and a swatch preview."
+                              "title": "Putar Roda",
+                              "desc": "Tekan tombol putar dan perhatikan warna yang dipilih berputar. Ketika roda berhenti, warna pemenang muncul dengan kode heks dan pratinjau swatch."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Hair Color Wheel?",
+                        "title": "Apa Itu Roda Warna Rambut?",
                         "content": [
-                              "The hair color wheel is a random hair color picker that spins through a customizable palette of shades.",
-                              "The wheel comes loaded with 16 popular hair colors spanning natural tones and fashion shades.",
-                              "The hex code display makes the result practical for online shopping. Copy the hex value to find exact product matches."
+                              "Roda warna rambut adalah pemilih warna rambut acak yang memutar melalui palet warna yang dapat disesuaikan.",
+                              "Roda ini dilengkapi dengan 16 warna rambut populer yang mencakup nada alami dan warna fashion.",
+                              "Tampilan kode heks membuat hasil ini praktis untuk belanja online. Salin nilai heks untuk menemukan produk yang cocok."
                         ]
                   },
                   {
-                        "title": "Understanding Hair Color Categories",
+                        "title": "Memahami Kategori Warna Rambut",
                         "content": [
-                              "Hair colors fall into distinct categories based on tone, saturation, and origin."
+                              "Warna rambut terbagi menjadi kategori berbeda berdasarkan nada, saturasi, dan asal."
                         ],
                         "subsections": [
                               {
-                                    "title": "Natural Hair Colors",
-                                    "content": "Natural shades mimic colors that occur in human hair without artificial dyeing. These include various depths of blonde, brown, black, and red."
+                                    "title": "Warna Rambut Alami",
+                                    "content": "Warna alami meniru warna yang muncul pada rambut manusia tanpa pewarnaan buatan. Ini mencakup berbagai kedalaman pirang, cokelat, hitam, dan merah."
                               },
                               {
-                                    "title": "Fashion and Fantasy Colors",
-                                    "content": "Fashion colors include pastels, vivid brights, and unnatural shades like blue, green, purple, and pink."
+                                    "title": "Warna Fashion dan Fantasi",
+                                    "content": "Warna fashion mencakup pastel, warna cerah yang vivid, dan warna tidak alami seperti biru, hijau, ungu, dan pink."
                               },
                               {
-                                    "title": "Red and Warm Tones",
-                                    "content": "Red hair colors span a wide range from subtle auburn and copper to bright strawberry and deep burgundy."
+                                    "title": "Nada Merah dan Hangat",
+                                    "content": "Warna rambut merah mencakup berbagai rentang dari auburn dan tembaga yang halus hingga stroberi cerah dan burgundy gelap."
                               },
                               {
-                                    "title": "Custom and Mixed Colors",
-                                    "content": "The custom color input lets you add any shade by name. Type it directly into the wheel."
+                                    "title": "Warna Kustom dan Campuran",
+                                    "content": "Input warna kustom memungkinkan Anda menambahkan warna apa pun dengan nama. Ketik langsung ke dalam roda."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Hair Color Wheel",
+                        "title": "Kapan Menggunakan Roda Warna Rambut",
                         "content": [
-                              "The hair color wheel works best when you want to explore hair color options without committing to a single shade."
+                              "Roda warna rambut bekerja paling baik ketika Anda ingin menjelajahi opsi warna rambut tanpa berkomitmen pada satu warna."
                         ],
                         "subsections": [
                               {
-                                    "title": "First-Time Hair Dye Decisions",
-                                    "content": "If you have never dyed your hair before, the sheer number of available colors can be overwhelming."
+                                    "title": "Keputusan Pewarnaan Pertama Kali",
+                                    "content": "Jika Anda belum pernah mewarnai rambut sebelumnya, jumlah warna yang tersedia bisa sangat banyak."
                               },
                               {
-                                    "title": "Salon Consultations",
-                                    "content": "Before a salon appointment, use the hair color wheel to generate ideas. Spin several times and save the results."
+                                    "title": "Konsultasi Salon",
+                                    "content": "Sebelum janji salon, gunakan roda warna rambut untuk menghasilkan ide. Putar beberapa kali dan simpan hasilnya."
                               },
                               {
-                                    "title": "Costume and Cosplay Planning",
-                                    "content": "Cosplayers and costume designers use the hair color wheel to assign hair colors to characters."
+                                    "title": "Perencanaan Kostum dan Cosplay",
+                                    "content": "Cosplayer dan perancang kostum menggunakan roda warna rambut untuk menetapkan warna rambut pada karakter."
                               },
                               {
-                                    "title": "Creative Projects and Mood Boards",
-                                    "content": "Designers and artists use hair color wheels to generate color palettes for illustrations and character designs."
+                                    "title": "Proyek Kreatif dan Mood Board",
+                                    "content": "Desainer dan seniman menggunakan roda warna rambut untuk menghasilkan palet warna untuk ilustrasi dan desain karakter."
                               },
                               {
-                                    "title": "Fun with Friends",
-                                    "content": "Groups of friends can use the hair color wheel for entertainment."
+                                    "title": "Bersenang-senang dengan Teman",
+                                    "content": "Sekelompok teman dapat menggunakan roda warna rambut untuk hiburan."
                               }
                         ]
                   },
                   {
-                        "title": "Hair Color Wheel vs Other Randomizers",
+                        "title": "Roda Warna Rambut vs Pengacak Lainnya",
                         "content": [
-                              "The yes or no wheel handles binary choices but cannot help you choose which color.",
-                              "The DTI theme wheel assigns fashion themes. The hair color wheel provides the specific color value you need.",
-                              "The rainbow wheel assigns colors randomly but the hair color wheel uses actual hair color names and hex codes."
+                              "Roda ya atau tidak menangani pilihan biner tetapi tidak dapat membantu Anda memilih warna.",
+                              "Roda tema DTI menetapkan tema fashion. Roda warna rambut memberikan nilai warna spesifik yang Anda butuhkan.",
+                              "Roda pelangi menetapkan warna secara acak tetapi roda warna rambut menggunakan nama warna rambut asli dan kode heks."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the hair color wheel?",
-                        "a": "The hair color wheel is a random hair color picker that spins through a customizable palette of shades."
+                        "q": "Apa itu roda warna rambut?",
+                        "a": "Roda warna rambut adalah pemilih warna rambut acak yang memutar melalui palet warna yang dapat disesuaikan."
                   },
                   {
-                        "q": "Can I add my own hair colors?",
-                        "a": "Yes. Type any color name into the custom input field and click Add."
+                        "q": "Bisakah saya menambahkan warna rambut saya sendiri?",
+                        "a": "Bisa. Ketik nama warna apa pun ke dalam input kustom dan klik Tambah."
                   },
                   {
-                        "q": "How many colors come pre-loaded?",
-                        "a": "The wheel starts with 16 popular hair colors spanning natural shades, fashion colors, and warm tones."
+                        "q": "Berapa banyak warna yang sudah ada?",
+                        "a": "Roda dimulai dengan 16 warna rambut populer yang mencakup warna alami, warna fashion, dan nada hangat."
                   },
                   {
-                        "q": "What does the hex code mean?",
-                        "a": "The hex code is a six-character color value used in digital color representation."
+                        "q": "Apa arti kode heks?",
+                        "a": "Kode heks adalah nilai warna enam karakter yang digunakan dalam representasi warna digital."
                   },
                   {
-                        "q": "Can I filter colors by category?",
-                        "a": "Yes. The category buttons above the color grid let you filter by Natural, Fashion, Red, or other categories."
+                        "q": "Bisakah saya memfilter warna berdasarkan kategori?",
+                        "a": "Bisa. Tombol kategori di atas grip warna memungkinkan Anda memfilter berdasarkan Alami, Fashion, Merah, atau kategori lainnya."
                   },
                   {
-                        "q": "Is the hair color wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Apakah roda warna rambut gratis?",
+                        "a": "Roda ini sepenuhnya gratis tanpa pendaftaran, tanpa iklan, dan tanpa batasan penggunaan."
                   }
             ]
       },
@@ -19044,117 +19044,117 @@ const WHEEL_PAGE_CONTENT = {
             "title": "चुलेरांचे रहत चाक",
             "subtitle": "यादृच्झिक चुल रंग निवड।",
             "howToUse": {
-                  "title": "How to Use the Hair Color Wheel",
-                  "intro": "The hair color wheel picks a random shade in seconds. Here is how it works:",
+                  "title": "केसांच्या रंग चक्राचा वापर कसा करावा",
+                  "intro": "केसांचे रंग चक्र देखील एक यादृच्छिक रंग निवडतो. तो कसा काम करतो ते पहा:",
                   "steps": [
                         {
-                              "title": "Browse the Color Palette",
-                              "desc": "The color grid shows all available hair colors organized by category. Browse through natural shades like blonde, brunette, and black, or explore fashion colors."
+                              "title": "रंग पॅलेट ब्राउझ करा",
+                              "desc": "रंग ग्रिडमध्ये वर्गानुसार व्यवस्थित सर्व उपलब्ध केसांचे रंग दिसतात. नैसर्गिक रंग जसे की पिंगट, तपकिरी आणि काळे, किंवा फॅशन रंग ब्राउझ करा."
                         },
                         {
-                              "title": "Filter by Category",
-                              "desc": "Use the category buttons above the grid to filter colors by type. Select Natural for everyday shades, Fashion for bold colors, or Red for warm tones."
+                              "title": "वर्गानुसार फिल्टर करा",
+                              "desc": "रंगांना प्रकारानुसार फिल्टर करण्यासाठी ग्रिडवरील वर्ग बटणे वापरा. रोजच्या रंगांसाठी नैसर्गिक, मोठ्या रंगांसाठी फॅशन, किंवा उबदार टोन्ससाठी लाल निवडा."
                         },
                         {
-                              "title": "Spin the Wheel",
-                              "desc": "Press the spin button and watch the selected colors rotate. When the wheel stops, the winning color appears with its hex code and a swatch preview."
+                              "title": "चक्र फिरवा",
+                              "desc": "स्पिन बटण दाबा आणि निवडलेले रंग फिरत आहेत ते पहा. जेव्हा चक्र थांबते, तेव्हा विजेता रंग त्याच्या हेक्स कोड आणि स्वॅच पूर्वावलोकनासह दिसतो."
                         }
                   ]
             },
             "sections": [
                   {
-                        "title": "What Is the Hair Color Wheel?",
+                        "title": "केसांचे रंग चक्र म्हणजे काय?",
                         "content": [
-                              "The hair color wheel is a random hair color picker that spins through a customizable palette of shades.",
-                              "The wheel comes loaded with 16 popular hair colors spanning natural tones and fashion shades.",
-                              "The hex code display makes the result practical for online shopping. Copy the hex value to find exact product matches."
+                              "केसांचे रंग चक्र हे एक यादृच्छिक केसांचा रंग निवडक आहे जो सानुकूल रंगांच्या पॅलेटमधून फिरतो.",
+                              "चक्रात स्वाभाविक टोन्स आणि फॅशन रंगांमध्ये विस्तारलेले 16 लोकप्रिय केसांचे रंग आहेत.",
+                              "हेक्स कोड प्रदर्शन परिणामाला ऑनलाइन खरेदीसाठी उपयुक्त बनवते. अचूक उत्पादन मॅच शोधण्यासाठी हेक्स मूल्य कॉपी करा."
                         ]
                   },
                   {
-                        "title": "Understanding Hair Color Categories",
+                        "title": "केसांच्या रंग वर्गांचे ज्ञान",
                         "content": [
-                              "Hair colors fall into distinct categories based on tone, saturation, and origin."
+                              "केसांचे रंग टोन, संतृप्ती आणि मूळ आधारित वेगवेगळ्या वर्गांमध्ये आढळतात."
                         ],
                         "subsections": [
                               {
-                                    "title": "Natural Hair Colors",
-                                    "content": "Natural shades mimic colors that occur in human hair without artificial dyeing. These include various depths of blonde, brown, black, and red."
+                                    "title": "नैसर्गिक केसांचे रंग",
+                                    "content": "नैसर्गिक रंग कृत्रिम रंग न दिल्यास मानवी केसांमध्ये आढळणाऱ्या रंगांचे अनुकरण करतात. यात पिंगट, तपकिरी, काळे आणि लाल यांचे विविध खोल रंग समाविष्ट आहेत."
                               },
                               {
-                                    "title": "Fashion and Fantasy Colors",
-                                    "content": "Fashion colors include pastels, vivid brights, and unnatural shades like blue, green, purple, and pink."
+                                    "title": "फॅशन आणि फॅन्टसी रंग",
+                                    "content": "फॅशन रंगांमध्ये पेस्टल, तीव्र चमकदार रंग आणि निळा, हिरवा, जांभळा आणि गुलाबी यांसारखे अप्राकृतिक रंग समाविष्ट आहेत."
                               },
                               {
-                                    "title": "Red and Warm Tones",
-                                    "content": "Red hair colors span a wide range from subtle auburn and copper to bright strawberry and deep burgundy."
+                                    "title": "लाल आणि उबदार टोन्स",
+                                    "content": "लाल केसांचे रंग सूक्ष्म ऑबर्न आणि कॉपरपासून चमकदार स्ट्रॉबेरी आणि खोल बरगंडी यांपर्यंत विस्तारलेले आहेत."
                               },
                               {
-                                    "title": "Custom and Mixed Colors",
-                                    "content": "The custom color input lets you add any shade by name. Type it directly into the wheel."
+                                    "title": "सानुकूल आणि मिश्रित रंग",
+                                    "content": "सानुकूल रंग इनपुट तुम्हाला नावाने कोणताही रंग जोडण्याची परवानगी देते. तो थेट चक्रात टाइप करा."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Hair Color Wheel",
+                        "title": "केसांच्या रंग चक्राचा वापर कधी करावा",
                         "content": [
-                              "The hair color wheel works best when you want to explore hair color options without committing to a single shade."
+                              "जेव्हा तुम्ही एका विशिष्ट रंगाप्रत बांधी न राहता केसांच्या रंग पर्यायांचा शोध घेऊ इच्छिता, तेव्हा केसांचे रंग चक्र सर्वोत्तम काम करते."
                         ],
                         "subsections": [
                               {
-                                    "title": "First-Time Hair Dye Decisions",
-                                    "content": "If you have never dyed your hair before, the sheer number of available colors can be overwhelming."
+                                    "title": "पहिल्यांदा केस रंगवण्याचे निर्णय",
+                                    "content": "तुम्ही आधी कधी केस रंगवले नसतील, तर उपलब्ध रंगांची संख्या अत्यंत मोठी वाटू शकते."
                               },
                               {
-                                    "title": "Salon Consultations",
-                                    "content": "Before a salon appointment, use the hair color wheel to generate ideas. Spin several times and save the results."
+                                    "title": "सलून सल्लामसलत",
+                                    "content": "सलून अपॉइंटमेंटपूर्वी, कल्पना तयार करण्यासाठी केसांचे रंग चक्र वापरा. अनेकदा स्पिन करा आणि परिणाम जतन करा."
                               },
                               {
-                                    "title": "Costume and Cosplay Planning",
-                                    "content": "Cosplayers and costume designers use the hair color wheel to assign hair colors to characters."
+                                    "title": "पोशाख आणि कॉसप्ले नियोजन",
+                                    "content": "कॉसप्लेअर्स आणि पोशाख डिझायनर्स पात्रांना केसांचे रंग देण्यासाठी केसांचे रंग चक्र वापरतात."
                               },
                               {
-                                    "title": "Creative Projects and Mood Boards",
-                                    "content": "Designers and artists use hair color wheels to generate color palettes for illustrations and character designs."
+                                    "title": "सर्जनशील प्रकल्प आणि मूड बोर्ड",
+                                    "content": "डिझायनर्स आणि कलाकार चित्रे आणि पात्र डिझाइन्ससाठी रंग पॅलेट तयार करण्यासाठी केसांच्या रंग चक्र वापरतात."
                               },
                               {
-                                    "title": "Fun with Friends",
-                                    "content": "Groups of friends can use the hair color wheel for entertainment."
+                                    "title": "मित्रांसोबत आनंद",
+                                    "content": "मित्रांचे गट आनंदासाठी केसांचे रंग चक्र वापरू शकतात."
                               }
                         ]
                   },
                   {
-                        "title": "Hair Color Wheel vs Other Randomizers",
+                        "title": "केसांचे रंग चक्र बनाम इतर यादृच्छिक निवडक",
                         "content": [
-                              "The yes or no wheel handles binary choices but cannot help you choose which color.",
-                              "The DTI theme wheel assigns fashion themes. The hair color wheel provides the specific color value you need.",
-                              "The rainbow wheel assigns colors randomly but the hair color wheel uses actual hair color names and hex codes."
+                              "हो/नाही चक्र बायनरी निवडी हाताळते परंतु कोणता रंग निवडायचा ते तुम्हाला मदत करू शकत नाही.",
+                              "DTI थीम चक्र फॅशन थीम्स नियुक्त करते. केसांचे रंग चक्र तुम्हाला आवश्यक विशिष्ट रंग मूल्य प्रदान करते.",
+                              "इंद्रधनुष्य चक्र रंग यादृच्छिकरित्या नियुक्त करते परंतु केसांचे रंग चक्र वास्तविक केसांचे रंग नावे आणि हेक्स कोड वापरते."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the hair color wheel?",
-                        "a": "The hair color wheel is a random hair color picker that spins through a customizable palette of shades."
+                        "q": "केसांचे रंग चक्र म्हणजे काय?",
+                        "a": "केसांचे रंग चक्र हे एक यादृच्छिक केसांचा रंग निवडक आहे जो सानुकूल रंगांच्या पॅलेटमधून फिरतो."
                   },
                   {
-                        "q": "Can I add my own hair colors?",
-                        "a": "Yes. Type any color name into the custom input field and click Add."
+                        "q": "मी माझे स्वतःचे केसांचे रंग जोडू शकतो?",
+                        "a": "हो. सानुकूल इनपुट फील्डमध्ये कोणताही रंग नाव टाइप करा आणि जोडा दाबा."
                   },
                   {
-                        "q": "How many colors come pre-loaded?",
-                        "a": "The wheel starts with 16 popular hair colors spanning natural shades, fashion colors, and warm tones."
+                        "q": "किती रंग पूर्व-लोड केलेले आहेत?",
+                        "a": "चक्र नैसर्गिक रंग, फॅशन रंग आणि उबदार टोन्समध्ये विस्तारलेले 16 लोकप्रिय केसांचे रंगांसह सुरू होते."
                   },
                   {
-                        "q": "What does the hex code mean?",
-                        "a": "The hex code is a six-character color value used in digital color representation."
+                        "q": "हेक्स कोड म्हणजे काय?",
+                        "a": "हेक्स कोड हा डिजिटल रंग प्रतिनिधित्वात वापरला जाणारा सह-अक्षरीय रंग मूल्य आहे."
                   },
                   {
-                        "q": "Can I filter colors by category?",
-                        "a": "Yes. The category buttons above the color grid let you filter by Natural, Fashion, Red, or other categories."
+                        "q": "मी रंग वर्गानुसार फिल्टर करू शकतो?",
+                        "a": "हो. रंग ग्रिडवरील वर्ग बटणे तुम्हाला नैसर्गिक, फॅशन, लाल किंवा इतर वर्गांनुसार फिल्टर करण्याची परवानगी देतात."
                   },
                   {
-                        "q": "Is the hair color wheel free?",
-                        "a": "The wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "केसांचे रंग चक्र मोफत आहे?",
+                        "a": "चक्र साइनअप, जाहिरात किंवा वापर मर्यादा नसलेले पूर्णपणे मोफत आहे."
                   }
             ]
       },

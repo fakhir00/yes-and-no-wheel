@@ -118,18 +118,11 @@ function ensureMetaDescription(description, locale, route) {
   const base = String(description || '').replace(/\s+/g, ' ').trim();
   const fallback = locale === DEFAULT_LOCALE
     ? `${routeInfo.title} on YesAndNoWheel.com with fast access to related wheels and tools.`
-    : `${routeInfo.title} on YesAndNoWheel.com.`;
+    : `${routeInfo.title} — ${routeInfo.subtitle}`;
   let value = base || fallback;
-  const additions = [' Learn more.', ' Try now.', ' Online.', ' Fast.', ' Now.', '.'];
 
-  if (charLength(value) > 155) {
-    value = `${sliceChars(value, 152).trim().replace(/[,\-;: ]+$/g, '')}...`;
-  }
-
-  while (charLength(value) < 150) {
-    const room = 155 - charLength(value);
-    const addition = additions.find((item) => charLength(item) <= room) || '.';
-    value += addition;
+  if (charLength(value) > 160) {
+    value = `${sliceChars(value, 157).trim().replace(/[,\-;: ]+$/g, '')}...`;
   }
 
   return value;
@@ -148,6 +141,17 @@ function getOutputPath(locale, route) {
 
 function getCanonicalPath(locale, route) {
   return buildLocalizedPath(locale, route || '');
+}
+
+function getHreflangTags(locale, route) {
+  const allLocales = [DEFAULT_LOCALE, ...LOCALES.map((l) => l.code).filter((c) => c !== DEFAULT_LOCALE)];
+  const tags = allLocales.map((l) => {
+    const path = buildLocalizedPath(l, route || '');
+    const langAttr = l === 'zh-CN' ? 'zh-Hans-CN' : l;
+    return `<link rel="alternate" hreflang="${langAttr}" href="${SITE_URL}${path}">`;
+  });
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}${buildLocalizedPath(DEFAULT_LOCALE, route || '')}">`);
+  return tags.join('\n  ');
 }
 
 function getSourceH1(locale, route) {
@@ -265,7 +269,7 @@ for (const locale of locales) {
     let html = template
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`)
       .replace(/<meta name="description" content="[\s\S]*?">/, `<meta name="description" content="${description}">`)
-      .replace(/<link rel="canonical" href="[\s\S]*?">/, `<link rel="canonical" href="${url}">`)
+      .replace(/<link rel="canonical" href="[\s\S]*?">/, `<link rel="canonical" href="${url}">\n  ${getHreflangTags(locale, route)}`)
       .replace(/<meta property="og:title" content="[\s\S]*?">/, `<meta property="og:title" content="${title}">`)
       .replace(/<meta property="og:description" content="[\s\S]*?">/, `<meta property="og:description" content="${description}">`)
       .replace(/<meta property="og:url" content="[\s\S]*?">/, `<meta property="og:url" content="${url}">`)
