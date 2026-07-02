@@ -364,8 +364,8 @@ const ROUTE_NAMES = {
     zodiac: 'عجلة الابراج',
     'hair-color': 'عجلة لون الشعر',
     'random-food': 'عجلة الطعام العشوائي',
-    'oracle': 'Oráculo Sí o No',
-    'tarot': 'Tarot Sí o No',
+    'oracle': 'عراف نعم أو لا',
+    'tarot': 'تاروت نعم أو لا',
     'yes-and-no-dice': 'نرد نعم ولا',
     blog: 'المدونة'
   },
@@ -387,8 +387,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roue du Zodiaque',
     'hair-color': 'Roue de Couleur de Cheveux',
     'random-food': 'Roue de Nourriture Aléatoire',
-    'oracle': 'عراف نعم أو لا',
-    'tarot': 'تاروت نعم أو لا',
+    'oracle': 'Oracle Oui Non',
+    'tarot': 'Tarot Oui Non',
     'yes-and-no-dice': 'Dés Oui Non',
     blog: 'Blog'
   },
@@ -410,8 +410,8 @@ const ROUTE_NAMES = {
     zodiac: 'রাশিচক্র চাকা',
     'hair-color': 'চুলের রঙ চাকা',
     'random-food': 'র্যান্ডম ফুড চাকা',
-    'oracle': 'Oracle Oui Non',
-    'tarot': 'Tarot Oui Non',
+    'oracle': 'হ্যাঁ না ওরাকল',
+    'tarot': 'হ্যাঁ না ট্যারো',
     'yes-and-no-dice': 'হ্যাঁ না পাশা',
     blog: 'ব্লগ'
   },
@@ -433,8 +433,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roda do Zodiaco',
     'hair-color': 'Roda de Cor de Cabelo',
     'random-food': 'Roleta de Comida Aleatória',
-    'oracle': 'ইয়েস নো ওরাকল',
-    'tarot': 'ইয়েস নো ট্যারো',
+    'oracle': 'Oráculo Sim ou Não',
+    'tarot': 'Tarô Sim ou Não',
     'yes-and-no-dice': 'Dados Sim ou Não',
     blog: 'Blog'
   },
@@ -456,8 +456,8 @@ const ROUTE_NAMES = {
     zodiac: 'Колесо Зодиака',
     'hair-color': 'Колесо Цвета Волос',
     'random-food': 'Колесо Случайной Еды',
-    'oracle': 'Oráculo Sim ou Não',
-    'tarot': 'Tarô Sim ou Não',
+    'oracle': 'Оракул Да или Нет',
+    'tarot': 'Таро Да или Нет',
     'yes-and-no-dice': 'Кубик Да Нет',
     blog: 'Блог'
   },
@@ -479,8 +479,8 @@ const ROUTE_NAMES = {
     zodiac: 'زائچہ ویل',
     'hair-color': 'بالوں کے رنگ کا ویل',
     'random-food': 'رینڈم فوڈ ویل',
-    'oracle': 'Оракул Да или Нет',
-    'tarot': 'Таро Да или Нет',
+    'oracle': 'ہاں یا نہ اوریکل',
+    'tarot': 'ہاں یا نہ ٹیرو',
     'yes-and-no-dice': 'ہاں یا نہیں ڈائస్',
     blog: 'بلاگ'
   },
@@ -502,8 +502,8 @@ const ROUTE_NAMES = {
     zodiac: 'Roda Zodiak',
     'hair-color': 'Roda Warna Rambut',
     'random-food': 'Roda Makanan Acak',
-    'oracle': 'یس نو اوریکل',
-    'tarot': 'یس نو ٹیرو',
+    'oracle': 'Oracle Ya atau Tidak',
+    'tarot': 'Tarot Ya atau Tidak',
     'yes-and-no-dice': 'Dadu Ya Tidak',
     blog: 'Blog'
   },
@@ -525,8 +525,8 @@ const ROUTE_NAMES = {
     zodiac: 'Zodiakrad',
     'hair-color': 'Haarfarbenrad',
     'random-food': 'Zufälliges Essensrad',
-    'oracle': 'Oracle Ya atau Tidak',
-    'tarot': 'Tarot Ya atau Tidak',
+    'oracle': 'Ja Nein Orakel',
+    'tarot': 'Ja Nein Tarot',
     'yes-and-no-dice': 'Ja Nein Würfel',
     blog: 'Blog'
   },
@@ -548,8 +548,8 @@ const ROUTE_NAMES = {
     zodiac: '星座ルーレット',
     'hair-color': 'ヘアカラールーレット',
     'random-food': 'ランダムフードルーレット',
-    'oracle': 'Ja Nein Orakel',
-    'tarot': 'Ja Nein Tarot',
+    'oracle': 'イエスノーオラクル',
+    'tarot': 'イエスノータロット',
     'yes-and-no-dice': 'はい いいえ ダイス',
     blog: 'ブログ'
   },
@@ -571,8 +571,8 @@ const ROUTE_NAMES = {
     zodiac: 'राशी व्हील',
     'hair-color': 'केसांच्या रंगाचे व्हील',
     'random-food': 'रँडम फूड व्हील',
-    'oracle': 'イエス・ノー・オラクル',
-    'tarot': 'イエス・ノー・タロット',
+    'oracle': 'होय नाही ओरेकल',
+    'tarot': 'होय नाही टॅरो',
     'yes-and-no-dice': 'होय नाही डाइस',
     blog: 'ब्लॉग'
   },
@@ -594,8 +594,8 @@ const ROUTE_NAMES = {
     zodiac: 'రాశిచక్ర వీల్',
     'hair-color': 'జుట్టు రంగు వీల్',
     'random-food': 'రాండమ్ ఫుడ్ వీల్',
-    'oracle': 'येस नो ऑरेकल',
-    'tarot': 'येस नो टॅरो',
+    'oracle': 'అవును కాదు ఓరాకిల్',
+    'tarot': 'అవును కాదు టారో',
     'yes-and-no-dice': 'అవును కాదు పాచికలు'
   }
 };

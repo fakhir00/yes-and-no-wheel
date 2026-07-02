@@ -6564,57 +6564,43 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "Que sont les Dés Oui et Non ?",
+                        "title": "Qu'est-ce que l'outil Dés Oui Non ?",
                         "content": [
-                              "Prise de décision basée sur la physique 3D."
+                              "L'outil Dés Oui Non est un décideur basé sur la physique 3D qui lance un dé virtuel avec des faces Oui et Non. Au lieu de cliquer sur une roulette ou de tirer à pile ou face, vous regardez un dé 3D réaliste culbuter dans l'espace, rebondir sur des surfaces et s'arrêter sur un résultat aléatoire.",
+                              "Chaque face du dé affiche un Oui ou un Non en texte gras sur un fond coloré — vert pour Oui, rouge pour Non. Le curseur de probabilité vous permet d'ajuster combien de faces affichent Oui par rapport à Non.",
+                              "L'outil fonctionne entièrement dans votre navigateur en utilisant Three.js pour le rendu 3D et Cannon.js pour la simulation physique. Aucune communication avec le serveur ne se produit pendant un lancer."
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "Comment fonctionne le moteur physique 3D",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "Lorsque vous cliquez sur le bouton Lancer le dé, le moteur physique lance le dé depuis une position aléatoire au-dessus du sol. Le dé reçoit une vélocité aléatoire en trois dimensions et une vélocité angulaire aléatoire pour la rotation.",
+                              "Le moteur suit l'orientation du dé en utilisant des quaternions — une représentation mathématique qui évite le blocage de cardan et fournit une interpolation de rotation fluide.",
+                              "Pour trouver le résultat, le moteur vérifie quelle face du dé pointe le plus directement vers le haut en comparant le vecteur normal de chaque face par rapport à la direction haut du monde."
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "Modes de jeu et contrôle de probabilité",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "L'outil de dés propose trois modes de jeu qui changent combien de lancers déterminent la réponse finale."
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "Mode lancer unique",
+                                    "content": "En mode Unique, un seul lancer produit le résultat final. C'est l'option la plus rapide et fonctionne bien pour les questions oui ou non simples."
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "Mode meilleur des 3",
+                                    "content": "Le meilleur des 3 nécessite deux des trois lancers pour déterminer un gagnant. Ce mode ajoute du suspense et donne plus d'opportunités au dé."
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "Mode meilleur des 5",
+                                    "content": "Le meilleur des 5 nécessite trois des cinq lancers pour gagner. Ce mode est le meilleur pour les décisions qui semblent assez importantes pour justifier un processus plus long."
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "Curseur de probabilité",
+                                    "content": "Le curseur de probabilité ajuste la distribution des faces du dé de 0% Oui à 100% Oui. À 50%, le dé est équilibré."
                               }
-                        ]
-                  },
-                  {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
-                        "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
-                        ]
-                  },
-                  {
-                        "title": "Tracking Your Roll Statistics",
-                        "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
                         ]
                   }
             ],
@@ -6670,51 +6656,50 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "How the 3D Physics Engine Works",
+                        "title": "Comment fonctionne le moteur physique 3D",
                         "content": [
-                              "When you click the Roll Dice button, the physics engine launches the die from a randomized position above the floor. The die receives random velocity in three dimensions and random angular velocity for spin.",
-                              "The engine tracks the die's orientation using quaternions — a mathematical representation that avoids gimbal lock and provides smooth rotation interpolation.",
-                              "To find the result, the engine checks which face of the die is pointing most directly upward by comparing each face's normal vector against the world's up direction."
+                              "Lorsque vous cliquez sur le bouton Lancer le dé, le moteur physique lance le dé depuis une position aléatoire au-dessus du sol. Le dé reçoit une vélocité aléatoire en trois dimensions et une vélocité angulaire aléatoire pour la rotation.",
+                              "Le moteur suit l'orientation du dé en utilisant des quaternions — une représentation mathématique qui évite le blocage de cardan et fournit une interpolation de rotation fluide.",
+                              "Pour trouver le résultat, le moteur vérifie quelle face du dé pointe le plus directement vers le haut en comparant le vecteur normal de chaque face par rapport à la direction haut du monde."
                         ]
                   },
                   {
-                        "title": "Game Modes and Probability Control",
+                        "title": "Modes de jeu et contrôle de probabilité",
                         "content": [
-                              "The dice tool offers three game modes that change how many rolls determine the final answer."
+                              "L'outil de dés propose trois modes de jeu qui changent combien de lancers déterminent la réponse finale."
                         ],
                         "subsections": [
                               {
-                                    "title": "Single Roll Mode",
-                                    "content": "In Single mode, one roll produces the final result. This is the fastest option and works well for simple yes or no questions."
+                                    "title": "Mode lancer unique",
+                                    "content": "En mode Unique, un seul lancer produit le résultat final. C'est l'option la plus rapide et fonctionne bien pour les questions oui ou non simples."
                               },
                               {
-                                    "title": "Best of 3 Mode",
-                                    "content": "Best of 3 requires two out of three rolls to determine a winner. This mode adds drama and gives the die more opportunities."
+                                    "title": "Mode meilleur des 3",
+                                    "content": "Le meilleur des 3 nécessite deux des trois lancers pour déterminer un gagnant. Ce mode ajoute du suspense et donne plus d'opportunités au dé."
                               },
                               {
-                                    "title": "Best of 5 Mode",
-                                    "content": "Best of 5 requires three out of five rolls to win. This mode is best for decisions that feel significant enough to warrant a longer process."
+                                    "title": "Mode meilleur des 5",
+                                    "content": "Le meilleur des 5 nécessite trois des cinq lancers pour gagner. Ce mode est le meilleur pour les décisions qui semblent assez importantes pour justifier un processus plus long."
                               },
                               {
-                                    "title": "Probability Slider",
-                                    "content": "The probability slider adjusts the die's face distribution from 0% Yes to 100% Yes. At 50%, the die is balanced."
+                                    "title": "Curseur de probabilité",
+                                    "content": "Le curseur de probabilité ajuste la distribution des faces du dé de 0% Oui à 100% Oui. À 50%, le dé est équilibré."
                               }
                         ]
                   },
                   {
-                        "title": "When to Use the Dice vs a Spinning Wheel",
+                        "title": "Quand utiliser les dés vs une roulette",
                         "content": [
-                              "Both the yes or no wheel and the yes and no dice produce random binary results. The difference is in the experience and the decision context.",
-                              "The spinning wheel is visual and continuous — you watch it rotate and slow down. The dice tool is tactile and physical. The 3D animation, bounce physics, and random tumble feel more like rolling a real die.",
-                              "For decisions where you want multiple outcomes beyond yes and no, consider the random food wheel or the country wheel."
+                              "La roue oui ou non et les dés oui et non produisent tous deux des résultats binaires aléatoires. La différence réside dans l'expérience et le contexte de la décision.",
+                              "La roue qui tourne est visuelle et continue — vous la regardez tourner et ralentir. L'outil de dés est tactile et physique. L'animation 3D, la physique des rebonds et la chute aléatoire ressemblent davantage au lancer d'un vrai dé.",
+                              "Pour les décisions où vous souhaitez plusieurs résultats au-delà de oui et non, envisagez la roue de nourriture aléatoire ou la roue des pays."
                         ]
                   },
                   {
-                        "title": "Tracking Your Roll Statistics",
+                        "title": "Suivi de vos statistiques de lancer",
                         "content": [
-                              "The dice tool records every roll in your browser's local storage. The statistics dashboard shows your total rolls, Yes count, No count, current streak, and win rate.",
-                              "The stats persist across sessions, so you can close the browser and return later to see your cumulative history.",
-                              "The psychology feature adds another layer of self-tracking. After approximately one in five single rolls, the tool asks whether you are happy with the result."
+                              "L'outil de dés suit automatiquement vos statistiques de session. Il compte vos lancers totaux, votre série actuelle de résultats identiques, et calcule votre taux de victoire basé sur le côté que vous considérez comme une victoire.",
+                              "Ces statistiques sont stockées dans le stockage local de votre navigateur et persistent entre les sessions, afin que vous puissiez suivre votre chance au fil du temps."
                         ]
                   }
             ],
