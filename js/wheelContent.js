@@ -15862,19 +15862,19 @@ const WHEEL_PAGE_CONTENT = {
   },
   'random-food': {
     en: {
-            "title": "Random Food Wheel",
-            "subtitle": "A meal decision spinner that picks what to eat. Load your own food options or use the defaults.",
+            "title": "Food Spin Wheel - Random Food Picker",
+            "subtitle": "Randomly decide what to eat with our Food Spin Wheel. Perfect for dinner dilemmas, restaurant choices, and meal planning.",
             "howToUse": {
-                  "title": "How to Use the Random Food Wheel",
-                  "intro": "The random food wheel is ready to pick your next meal in seconds. Here is how it works:",
+                  "title": "How to Use the Food Spin Wheel",
+                  "intro": "The Food Spin Wheel is ready to pick your next meal in seconds. Here is how it works:",
                   "steps": [
                         {
                               "title": "Review the Food Options",
-                              "desc": "The wheel starts with 8 common food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
+                              "desc": "The wheel starts with 8 popular food options: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Keep these or add your own favorites."
                         },
                         {
                               "title": "Customize Your List",
-                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The wheel updates in real time."
+                              "desc": "Use the sidebar to add restaurants, cuisines, or specific dishes. Remove options you do not want. The Food Spin Wheel updates in real time."
                         },
                         {
                               "title": "Spin and Order",
@@ -15884,78 +15884,30 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is the Random Food Wheel?",
+                        "title": "Why Use a Food Spin Wheel for Decision Making",
                         "content": [
-                              "The random food wheel is a meal decision tool that spins through a list of food options and picks one at random. It solves the everyday problem of deciding what to eat.",
-                              "The tool comes pre-loaded with 8 common food choices. These defaults work for quick decisions, but the real power comes from customization.",
-                              "The wheel uses the same physics-based randomization as every other spinner on the site."
+                              "A Food Spin Wheel takes the guesswork out of deciding what to eat. When you are facing dinner dilemmas, restaurant choices, or group meal planning, the wheel spins through your options and picks one at random so you can stop debating and start eating.",
+                              "It works well for solo dining decisions, group meal planning when no one can agree, meal prep sessions, date nights, and dietary rotation. Because the result is generated randomly and shown on the screen, everyone can see that the pick is fair.",
+                              "The Food Spin Wheel uses the same physics-based randomization as every other spinner on the site, and it handles many options at once instead of forcing a binary choice."
                         ]
                   },
                   {
-                        "title": "How to Customize Your Food List",
+                        "title": "Popular Food Options on the Spin Wheel",
                         "content": [
-                              "The customization sidebar provides full control over the wheel entries."
-                        ],
-                        "subsections": [
-                              {
-                                    "title": "Adding Custom Entries",
-                                    "content": "Open the sidebar and type new food entries into the add field. Each entry becomes a new segment on the wheel."
-                              },
-                              {
-                                    "title": "Removing Unwanted Options",
-                                    "content": "If the default list includes foods you do not eat, remove them through the sidebar."
-                              },
-                              {
-                                    "title": "Creating Theme Lists",
-                                    "content": "For variety, create different food lists for different situations. A Quick Lunch list might include sandwiches and salads."
-                              }
-                        ]
-                  },
-                  {
-                        "title": "When to Use the Food Wheel",
-                        "content": [
-                              "The food wheel works best when you face the what should I eat paralysis."
-                        ],
-                        "subsections": [
-                              {
-                                    "title": "Solo Dining Decisions",
-                                    "content": "When eating alone, the decision fatigue of choosing a meal can be surprisingly draining."
-                              },
-                              {
-                                    "title": "Group Meal Planning",
-                                    "content": "When multiple people cannot agree on what to eat, the food wheel provides a fair, transparent random selection."
-                              },
-                              {
-                                    "title": "Meal Prep and Cooking Challenges",
-                                    "content": "For meal prep sessions, the food wheel determines which dishes to cook for the week."
-                              },
-                              {
-                                    "title": "Date Night and Special Occasions",
-                                    "content": "For date nights or celebrations, the food wheel can narrow down restaurant choices."
-                              },
-                              {
-                                    "title": "Dietary Rotation and Variety",
-                                    "content": "People following specific diets often cycle through the same handful of meals. The food wheel breaks this pattern."
-                              }
-                        ]
-                  },
-                  {
-                        "title": "Food Wheel vs Other Decision Tools",
-                        "content": [
-                              "The yes or no wheel handles binary decisions but cannot choose between multiple restaurant options.",
-                              "The word wheel can be loaded with food entries, but it requires manual setup. The food wheel comes pre-loaded.",
-                              "The country wheel can inspire cuisine choices. The rainbow wheel assigns colors randomly but the food wheel gives direct control over entries."
+                              "The Food Spin Wheel comes pre-loaded with popular choices: Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. These defaults work for quick decisions, but the real power comes from customization.",
+                              "Use the sidebar to add restaurants, cuisines, or specific dishes and remove options you do not eat. Each entry becomes a new segment on the wheel, and the tool updates in real time.",
+                              "For variety, create themed lists for different situations. A quick lunch list might include sandwiches and salads, while a family dinner list can hold everyone's favorites."
                         ]
                   }
             ],
             "faq": [
                   {
-                        "q": "What is the random food wheel?",
-                        "a": "The random food wheel is a meal decision tool that spins through food options and picks one at random."
+                        "q": "What is the Food Spin Wheel?",
+                        "a": "The Food Spin Wheel is a random food decision picker that spins through food options and picks one at random, so you never have to argue about what to eat again."
                   },
                   {
                         "q": "Can I add my own food options?",
-                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry."
+                        "a": "Yes. The customization sidebar lets you add, remove, and rename any entry on the wheel."
                   },
                   {
                         "q": "What foods come pre-loaded?",
@@ -15963,11 +15915,11 @@ const WHEEL_PAGE_CONTENT = {
                   },
                   {
                         "q": "Can I use this for group decisions?",
-                        "a": "Yes. The food wheel works well for groups because everyone can see the wheel spin and land on a result."
+                        "a": "Yes. The Food Spin Wheel works well for groups because everyone can watch the wheel spin and land on a result."
                   },
                   {
-                        "q": "Is the food wheel free?",
-                        "a": "The food wheel is completely free with no signup, no ads, and no usage limits."
+                        "q": "Is the Food Spin Wheel free?",
+                        "a": "The Food Spin Wheel is completely free with no signup, no ads, and no usage limits."
                   }
             ]
       },

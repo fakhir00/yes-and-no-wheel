@@ -52,7 +52,7 @@ const routeTitles = {
   'country': 'Country Wheel — Random Country Picker With Flags',
   'zodiac': 'Zodiac Wheel — Free Random Star Sign Picker',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
-  'random-food': 'Random Food Wheel | Food Decision Spinner',
+  'random-food': 'Food Spin Wheel - Random Food Decision Picker',
   'oracle': 'Yes No Oracle — Free Online Decision Maker With Wisdom',
   'tarot': 'Yes No Tarot Reading — Free Online Card Draw',
   'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
@@ -60,7 +60,7 @@ const routeTitles = {
   'tod': 'Spin the Wheel Truth or Dare — Fun Party Game',
   'dti': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
   'hair': 'Hair Color Wheel — Find Your Next Hair Dye Color',
-  'food': 'Random Food Wheel | Food Decision Spinner',
+  'food': 'Food Spin Wheel - Random Food Decision Picker',
   'yes-and-no-dice': 'Yes and No Dice — Free 3D Physics Decision Maker',
 };
 
@@ -78,7 +78,7 @@ const routeDescriptions = {
   'country': 'Spin the Country Wheel to pick a random country from 199 options. Filter by continent. Free, no signup.',
   'zodiac': 'Spin the Zodiac Wheel to randomly pick a star sign. 12 signs with traits and compatibility. Free, no signup.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
-  'random-food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
+  'random-food': 'Use our Food Spin Wheel to randomly decide what to eat. Perfect for dinner dilemmas, restaurants, and meal planning. Spin now!',
   'oracle': 'Ask the Yes No Oracle a question and get a random answer with wisdom and guidance. Free, private, no signup required.',
   'tarot': 'Draw a Major Arcana card for a yes or no answer with meaning and guidance. Free, private, no signup.',
   'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
@@ -86,7 +86,7 @@ const routeDescriptions = {
   'tod': 'Spin the Wheel Truth or Dare for parties! 200+ curated prompts with player picker. Free neon-themed game.',
   'dti': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   'hair': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
-  'food': 'Spin the Random Food Wheel to decide what to eat! Free online food spinner with custom entries. Try it now!',
+  'food': 'Use our Food Spin Wheel to randomly decide what to eat. Perfect for dinner dilemmas, restaurants, and meal planning. Spin now!',
   'yes-and-no-dice': 'Roll the Yes and No Dice for a random answer. 3D physics, probability control, and streak tracking. Free, no signup.',
 };
 const OG_IMAGE_URL = 'https://yesandnowheel.com/og-image.svg?v=20260501-dicefix';
