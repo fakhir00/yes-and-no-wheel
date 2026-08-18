@@ -4658,10 +4658,10 @@ const WHEEL_PAGE_CONTENT = {
   },
   'yes-no-tarot': {
     en: {
-            "title": "Yes No Tarot Reading",
-            "subtitle": "Draw a Major Arcana card for instant yes or no guidance. Each card includes a meaning and interpretation to help you reflect on your question.",
+            "title": "Yes or No Tarot Wheel",
+            "subtitle": "Spin the Yes or No Tarot Wheel and draw a Major Arcana card for an instant yes or no answer. Every card includes a meaning and guidance to help you reflect on your question.",
             "howToUse": {
-                  "title": "How to Use the Tarot Card Drawer",
+                  "title": "How to Use the Yes or No Tarot Wheel",
                   "intro": "The tarot card drawer follows a simple flow:",
                   "steps": [
                         {
@@ -4680,9 +4680,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -4708,7 +4708,7 @@ const WHEEL_PAGE_CONTENT = {
                         ]
                   },
                   {
-                        "title": "When to Use a Tarot Reading for Decisions",
+                        "title": "When to Use the Yes or No Tarot Wheel",
                         "content": [
                               "Yes no tarot works best for decisions where you want a reflective prompt rather than a purely mechanical random result."
                         ],
@@ -4738,8 +4738,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",
@@ -5306,9 +5306,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -5364,8 +5364,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",
@@ -5412,9 +5412,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -5470,8 +5470,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",
@@ -5518,9 +5518,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -5576,8 +5576,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",
@@ -5624,9 +5624,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -5682,8 +5682,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",
@@ -5730,9 +5730,9 @@ const WHEEL_PAGE_CONTENT = {
             },
             "sections": [
                   {
-                        "title": "What Is a Yes No Tarot Reading?",
+                        "title": "What Is a Yes or No Tarot Wheel?",
                         "content": [
-                              "A yes no tarot reading is a simplified divination method that uses tarot cards to produce a binary or near-binary answer. Instead of laying out a full ten-card spread, you draw a single card from the Major Arcana and interpret its answer keyword.",
+                              "A yes or no tarot wheel is a fast, card-based take on the classic yes or no wheel. Instead of a two-slice spinner, it draws a single Major Arcana card and turns its pre-assigned answer keyword into your yes, no, or maybe result.",
                               "This format has roots in quick tarot consultation methods used by readers who need a fast answer without the complexity of a full reading.",
                               "The tool on this page uses 21 Major Arcana cards, each pre-assigned an answer, meaning, guidance text, and elemental association."
                         ]
@@ -5788,8 +5788,8 @@ const WHEEL_PAGE_CONTENT = {
             ],
             "faq": [
                   {
-                        "q": "What is a yes no tarot reading?",
-                        "a": "A yes no tarot reading is a simplified form of tarot divination that produces a yes, no, or maybe answer instead of a complex spread."
+                        "q": "What is a yes or no tarot wheel?",
+                        "a": "A yes or no tarot wheel is a simplified tarot divination tool that draws a single Major Arcana card and produces a yes, no, or maybe answer instead of a complex spread."
                   },
                   {
                         "q": "How does the card draw work?",

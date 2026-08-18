@@ -32,7 +32,7 @@ const ROUTE_TITLES_EN = {
   'random-food': 'Food Spin Wheel - Random Food Decision Picker',
   'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online',
   'oracle': 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
-  'tarot': 'Yes No Tarot | Free Yes or No Tarot Reading',
+  'tarot': 'Yes or No Tarot Wheel — Free Online Card Draw',
   'yes-and-no-dice': 'Yes and No Dice — Free 3D Physics Decision Maker',
   'blog': 'Blog — Tips, Tricks & Wheel Wisdom | YesAndNoWheel.com',
   'blog/cant-decide-what-to-eat': "Can't Decide What to Eat for Dinner? | YesAndNoWheel Blog",
@@ -63,7 +63,7 @@ const ROUTE_DESCRIPTIONS_EN = {
   'random-food': 'Use our Food Spin Wheel to randomly decide what to eat. Perfect for dinner dilemmas, restaurants, and meal planning. Spin now!',
   'chance-fortune-wheel': 'Spin the Chance and Fortune Wheel to see what luck has in store. Free fortune spinner with yes/no, lucky numbers, and custom entries. Try it now!',
   'oracle': 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.',
-  'tarot': 'Draw a free Yes No Tarot card to instantly find answers. Our interactive card drawer reveals your fate with precise meanings and esoteric guidance.',
+  'tarot': 'Spin the Yes or No Tarot Wheel for a free one-card reading. Draw a Major Arcana card for an instant yes or no answer with meaning and guidance. No signup.',
   'yes-and-no-dice': 'Roll the Yes and No Dice for a random answer. 3D physics, probability control, and streak tracking. Free, no signup.',
   'blog': 'Read decision-making tips, party game ideas, and creative prompts powered by our spinning wheels. Free blog articles.',
   'blog/cant-decide-what-to-eat': "End the dinner debate! Spin the Random Food Wheel and let fate pick your meal. Decision-making tips and fun ideas.",
@@ -80,7 +80,8 @@ const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-
 // English source-copy overrides for crawler-visible static shells (keyed by route slug).
 const SOURCE_H1_OVERRIDES_EN = {
   'random-food': 'Food Spin Wheel - Random Food Picker',
-  'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online'
+  'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online',
+  'tarot': 'Yes or No Tarot Wheel — Free Online Card Draw'
 };
 
 const SOURCE_BODY_SECTIONS_EN = {
@@ -93,6 +94,11 @@ const SOURCE_BODY_SECTIONS_EN = {
     { heading: 'How to Use the Chance and Fortune Wheel', body: 'Pick between Fortune messages, a Yes / No decision, or Lucky Numbers, then press the spin button. When the Chance and Fortune Wheel stops, the winning segment appears so you can follow your luck, settle a choice, or just enjoy the result.' },
     { heading: 'Why Use a Chance and Fortune Wheel for Decisions', body: 'A chance and fortune wheel removes the stress of small decisions by turning them into a game of luck. It is perfect for daily fortunes, quick yes or no answers, lucky numbers, party dares, and group turn-taking. Because the result is random and visible to everyone, it feels fair and ends the debate fast.' },
     { heading: 'Popular Modes on the Chance and Fortune Wheel', body: 'The Chance and Fortune Wheel comes with three presets: Fortune messages like Great Fortune and Lucky Day, a simple Yes / No mode, and Lucky Numbers one through eight. Use the sidebar to add your own fortunes and outcomes, and spin again for a different result every time.' }
+  ],
+  'tarot': [
+    { heading: 'How to Use the Yes or No Tarot Wheel', body: 'Focus on a clear yes or no question, choose one of the six face-down cards, or press Let the Universe Choose. The Yes or No Tarot Wheel then reveals a Major Arcana card with a yes, no, or maybe answer, its meaning, and guidance text.' },
+    { heading: 'Why Use a Yes or No Tarot Wheel for Decisions', body: 'A yes or no tarot wheel adds narrative depth to a simple decision. Instead of a bare random pick, you get a yes or no answer plus card meaning and guidance, so every draw gives you something to reflect on. It is perfect for quick guidance, creative writing prompts, and group icebreakers.' },
+    { heading: 'Cards on the Yes or No Tarot Wheel', body: 'The Yes or No Tarot Wheel draws from 21 Major Arcana cards, from The Fool to The World. Each card is pre-assigned a Yes, No, or Maybe answer along with a meaning and guidance text, so every draw delivers a complete, self-contained reading.' }
   ]
 };
 

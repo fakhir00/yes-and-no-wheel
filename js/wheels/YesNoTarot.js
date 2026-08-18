@@ -87,7 +87,7 @@ export function renderYesNoTarot(container) {
       </div>
 
       <div class="tarot-instruction-box">
-        <strong>Yes or No Tarot Reading</strong>
+        <strong>Yes or No Tarot Wheel</strong>
         <p>Focus on your question and select a card, or let the universe choose for you.</p>
       </div>
 
