@@ -4,6 +4,7 @@ import { audioManager } from '../engine/AudioManager.js';
 import { confetti } from '../engine/ConfettiEngine.js';
 import { buildLocalizedPath, getHomeText, splitLocaleFromPath } from '../i18n.js?v=20260408-brand1';
 import { createResultOnlyMode } from '../wheels/resultOnlyMode.js';
+import { renderWheelSilo } from '../wheels/WheelSilo.js';
 import { EN_HOME_HERO_FALLBACK, extractHomeHero, renderHomeMarkdownToHtml, getLocalizedHomeMarkdownFile } from '../utils/homeMarkdown.js';
 
 export function renderHomePage(container) {
@@ -82,6 +83,8 @@ export function renderHomePage(container) {
       </section>
 
       <div class="home-rich-content page-content" id="homeRichContent"></div>
+
+      ${renderWheelSilo(locale, 'home')}
     </div>`;
 
   hydrateLocalizedHomeMarkdown(container, locale, t);
