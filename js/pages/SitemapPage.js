@@ -24,6 +24,7 @@ export function renderSitemapPage(container) {
     { title: `🌍 ${getLocalizedRouteContent(locale, 'country').title}`, path: buildLocalizedPath(locale, 'country') },
     { title: `✨ ${getLocalizedRouteContent(locale, 'zodiac').title}`, path: buildLocalizedPath(locale, 'zodiac') },
     { title: `💇 ${getLocalizedRouteContent(locale, 'hair-color').title}`, path: buildLocalizedPath(locale, 'hair-color') },
+    { title: `🍀 ${getLocalizedRouteContent(locale, 'chance-fortune-wheel').title}`, path: buildLocalizedPath(locale, 'chance-fortune-wheel') },
     { title: `🎲 ${getLocalizedRouteContent(locale, 'yes-and-no-dice').title}`, path: buildLocalizedPath(locale, 'yes-and-no-dice') },
   ];
 

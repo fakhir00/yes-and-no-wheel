@@ -977,6 +977,10 @@ a:hover {
   background: linear-gradient(90deg, #ff4757, #ff9f43, #feca57);
 }
 
+.fortune-spin-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706, #b45309);
+}
+
 .fate-spin-btn {
   background: linear-gradient(135deg, #1a0a3e, #4b0e4e, #6b2d8b);
 }
@@ -1028,6 +1032,47 @@ a:hover {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: auto;
+}
+
+.preset-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.preset-picker-title {
+  width: 100%;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.preset-chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-glass);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preset-chip:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.preset-chip.is-active {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: var(--shadow-glow);
 }
 
 .wheel-layout.result-only-active {

@@ -11,6 +11,7 @@ const WHEEL_META = {
   zodiac: { icon: '✨', accent: '#a78bfa' },
   'hair-color': { icon: '💇', accent: '#06b6d4' },
   'random-food': { icon: '🍔', accent: '#ff4757' },
+  'chance-fortune-wheel': { icon: '🍀', accent: '#f59e0b' },
   'tarot': { icon: '🃏', accent: '#7b2cbf' },
   'oracle': { icon: '🔮', accent: '#415a77' }
 };
@@ -26,6 +27,7 @@ const WHEEL_ORDER = [
   'zodiac',
   'hair-color',
   'random-food',
+  'chance-fortune-wheel',
   'tarot',
   'oracle'
 ];

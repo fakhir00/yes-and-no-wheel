@@ -19216,6 +19216,119 @@ const WHEEL_PAGE_CONTENT = {
             ]
       }
   },
+
+  'chance-fortune-wheel': {
+    en: {
+            "title": "Chance and Fortune Wheel",
+            "subtitle": "Spin the Chance and Fortune Wheel to see what luck has in store. A free interactive fortune spinner with yes/no, lucky number, and custom modes.",
+            "presets": {
+                  "fortunes": "Fortunes",
+                  "decision": "Yes / No",
+                  "luckyNumbers": "Lucky Numbers"
+            },
+            "presetTitle": "Choose a Mode",
+            "howToUse": {
+                  "title": "How to Use the Chance and Fortune Wheel",
+                  "intro": "The chance and fortune wheel is ready to spin in seconds. Pick a mode, set your entries, and let fate decide.",
+                  "steps": [
+                        {
+                              "title": "Pick Your Mode",
+                              "desc": "Choose between Fortune messages, a simple Yes / No decision, or Lucky Numbers. Each preset instantly reloads the wheel with a themed set of segments."
+                        },
+                        {
+                              "title": "Customize the Entries",
+                              "desc": "Open the sidebar to add, remove, or rename any segment. You can mix fortunes, outcomes, and custom options to build your own chance and fortune wheel."
+                        },
+                        {
+                              "title": "Spin and Read Your Fortune",
+                              "desc": "Press the spin button and watch the golden wheel blur. When it stops, the winning segment lights up with a fanfare. Use the result to guide your decision or just enjoy the moment."
+                        }
+                  ]
+            },
+            "sections": [
+                  {
+                        "title": "What Is a Chance and Fortune Wheel?",
+                        "content": [
+                              "A chance and fortune wheel is a themed spinning wheel that turns everyday decisions into a game of luck. Unlike a plain yes or no wheel, it blends chance with a sense of fortune, fate, and good luck, making each spin feel like a small ritual rather than a cold calculation.",
+                              "The chance and fortune wheel works on the same fair physics as every other spinner on this site. Each segment gets an equal slice of the wheel, so the outcome is decided by a randomized starting velocity, friction, and final angle rather than by any hidden bias or preference.",
+                              "It is built for entertainment and light decision making. Whether you want a playful fortune for the day, a quick yes or no answer, or a lucky number, the chance and fortune wheel delivers an instant, visually engaging result with no signup and no cost."
+                        ]
+                  },
+                  {
+                        "title": "How the Chance and Fortune Wheel Works",
+                        "content": [
+                              "When you press the spin button, the wheel receives a random starting velocity and begins to rotate. Browser physics simulate friction and deceleration until the wheel settles on a single winning segment.",
+                              "The chance and fortune wheel ships with three preset modes. The Fortune mode loads messages like Great Fortune, Good Luck, and Lucky Day. The Yes / No mode turns the wheel into a fast decision tool. The Lucky Numbers mode fills the segments with numbers one through eight.",
+                              "Every mode stays fully customizable through the sidebar, so you can replace the default fortune messages with your own outcomes, names, or options whenever you like."
+                        ]
+                  },
+                  {
+                        "title": "When to Use a Chance and Fortune Wheel",
+                        "content": [
+                              "The chance and fortune wheel shines in moments where a little luck makes the decision more fun. Here are the most common ways people use it:"
+                        ],
+                        "subsections": [
+                              {
+                                    "title": "Daily Fortune and Fun",
+                                    "content": "Start your day with a quick spin for a fun fortune or a lucky number. It adds a light, playful ritual to your routine without taking any more time than a coin toss."
+                              },
+                              {
+                                    "title": "Quick Decisions and Tie Breakers",
+                                    "content": "When two options feel equally good, switch to the Yes / No mode and let the wheel settle it. The visible, random result feels fair to everyone in the room and ends the debate instantly."
+                              },
+                              {
+                                    "title": "Party Games and Social Gatherings",
+                                    "content": "At parties and game nights, a chance and fortune wheel adds suspense. Load custom dares, rewards, or challenges and let luck decide who does what next."
+                              },
+                              {
+                                    "title": "Classroom and Group Activities",
+                                    "content": "Teachers and facilitators use the wheel to pick students, assign turns, or choose activities. The fortune theme keeps the moment upbeat and engaging for any age group."
+                              }
+                        ]
+                  },
+                  {
+                        "title": "Chance and Fortune Wheel vs a Regular Yes or No Wheel",
+                        "content": [
+                              "Both tools use the same unbiased randomization engine. The difference is the theme and the preset content. A standard yes or no wheel shows two fixed outcomes, while a chance and fortune wheel offers fortune messages, a yes or no mode, and lucky numbers in one place.",
+                              "Choose the chance and fortune wheel when you want a richer, luck-themed experience. Choose the standard wheel when you only need a fast, minimal yes or no answer."
+                        ]
+                  },
+                  {
+                        "title": "Customizing the Chance and Fortune Wheel",
+                        "content": [
+                              "The customization sidebar gives you full control over the wheel. Add or remove segments, rename labels, and let the auto-coloring keep every slice visually distinct.",
+                              "Because your entries and settings are saved in your browser, your custom chance and fortune wheel is ready the next time you visit. Spin as many times as you like with no signup and no usage limits."
+                        ]
+                  }
+            ],
+            "faq": [
+                  {
+                        "q": "What is a chance and fortune wheel?",
+                        "a": "A chance and fortune wheel is a luck-themed spinning wheel that randomly picks a result from a set of segments. It includes fortune messages, a yes or no mode, and lucky number mode, and every segment can be customized."
+                  },
+                  {
+                        "q": "Is the chance and fortune wheel truly random?",
+                        "a": "Yes. The wheel uses browser-based physics simulation with a randomized starting velocity, friction, and angle. Each segment has an equal slice, so every spin produces an unpredictable result."
+                  },
+                  {
+                        "q": "Can I add my own entries to the chance and fortune wheel?",
+                        "a": "Yes. The customization sidebar lets you add, remove, or rename any entry. You can type your own fortunes, outcomes, names, or challenges and spin with your custom list."
+                  },
+                  {
+                        "q": "What preset modes are available?",
+                        "a": "The chance and fortune wheel includes three presets: Fortune messages, a Yes / No decision mode, and Lucky Numbers one through eight. Switching modes reloads the wheel instantly."
+                  },
+                  {
+                        "q": "Does the chance and fortune wheel work on mobile?",
+                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport and the spin button and preset picker are optimized for touch."
+                  },
+                  {
+                        "q": "Is the chance and fortune wheel free?",
+                        "a": "The chance and fortune wheel is completely free with no signup, no ads covering the tool, and no usage limits."
+                  }
+            ]
+      }
+  },
 };
 
 export function getWheelPageContent(locale, slug) {

@@ -30,6 +30,7 @@ const ROUTE_TITLES_EN = {
   zodiac: 'Zodiac Wheel — Spin For Your Best Star Sign Destiny',
   'hair-color': 'Hair Color Wheel — Find Your Next Hair Dye Color',
   'random-food': 'Food Spin Wheel - Random Food Decision Picker',
+  'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online',
   'oracle': 'Yes No Oracle | Accurate Yes or No Oracle Free Online',
   'tarot': 'Yes No Tarot | Free Yes or No Tarot Reading',
   'yes-and-no-dice': 'Yes and No Dice — Free 3D Physics Decision Maker',
@@ -60,6 +61,7 @@ const ROUTE_DESCRIPTIONS_EN = {
   zodiac: 'Spin the Zodiac Wheel to reveal your star sign destiny. 12 signs with traits and compatibility. Free spinner.',
   'hair-color': 'Spin the Hair Color Wheel to find your next dye color! Classic and fantasy palettes with hex codes. Try now!',
   'random-food': 'Use our Food Spin Wheel to randomly decide what to eat. Perfect for dinner dilemmas, restaurants, and meal planning. Spin now!',
+  'chance-fortune-wheel': 'Spin the Chance and Fortune Wheel to see what luck has in store. Free fortune spinner with yes/no, lucky numbers, and custom entries. Try it now!',
   'oracle': 'Need clarity? Consult our free Yes No Oracle. This accurate yes or no spinner helps you make decisions quickly. Just focus on your yes or no question and spin the oracle for instant answers. Perfect for when you are stuck and need divine intervention.',
   'tarot': 'Draw a free Yes No Tarot card to instantly find answers. Our interactive card drawer reveals your fate with precise meanings and esoteric guidance.',
   'yes-and-no-dice': 'Roll the Yes and No Dice for a random answer. 3D physics, probability control, and streak tracking. Free, no signup.',
@@ -72,12 +74,13 @@ const ROUTE_DESCRIPTIONS_EN = {
   'blog/hair-color-wheel-bold-choice': 'Should you dye your hair? Spin the Hair Color Wheel for classic and fantasy colors. Take a screenshot for your stylist.'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'yes-and-no-dice', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'oracle', 'tarot', 'yes-and-no-dice']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice']);
 
 // English source-copy overrides for crawler-visible static shells (keyed by route slug).
 const SOURCE_H1_OVERRIDES_EN = {
-  'random-food': 'Food Spin Wheel - Random Food Picker'
+  'random-food': 'Food Spin Wheel - Random Food Picker',
+  'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online'
 };
 
 const SOURCE_BODY_SECTIONS_EN = {
@@ -85,6 +88,11 @@ const SOURCE_BODY_SECTIONS_EN = {
     { heading: 'How to Use the Food Spin Wheel', body: 'Review the default food options, customize your list with favorites or local restaurants, then press the spin button. When the Food Spin Wheel stops, the winning dish appears so you can order, cook, or decide what to eat.' },
     { heading: 'Why Use a Food Spin Wheel for Decision Making', body: 'A Food Spin Wheel removes decision fatigue when choosing a meal. It is perfect for dinner dilemmas, group meal planning, restaurant picks, meal prep, and dietary rotation. Because the result is random and visible to everyone, the choice feels fair and the debate ends fast.' },
     { heading: 'Popular Food Options on the Spin Wheel', body: 'The Food Spin Wheel comes pre-loaded with popular choices like Pizza, Sushi, Burger, Tacos, Pasta, Salad, Steak, and Sandwich. Use the sidebar to add your own dishes and cuisines, and spin again for a different result every time.' }
+  ],
+  'chance-fortune-wheel': [
+    { heading: 'How to Use the Chance and Fortune Wheel', body: 'Pick between Fortune messages, a Yes / No decision, or Lucky Numbers, then press the spin button. When the Chance and Fortune Wheel stops, the winning segment appears so you can follow your luck, settle a choice, or just enjoy the result.' },
+    { heading: 'Why Use a Chance and Fortune Wheel for Decisions', body: 'A chance and fortune wheel removes the stress of small decisions by turning them into a game of luck. It is perfect for daily fortunes, quick yes or no answers, lucky numbers, party dares, and group turn-taking. Because the result is random and visible to everyone, it feels fair and ends the debate fast.' },
+    { heading: 'Popular Modes on the Chance and Fortune Wheel', body: 'The Chance and Fortune Wheel comes with three presets: Fortune messages like Great Fortune and Lucky Day, a simple Yes / No mode, and Lucky Numbers one through eight. Use the sidebar to add your own fortunes and outcomes, and spin again for a different result every time.' }
   ]
 };
 
@@ -305,6 +313,7 @@ function getLocalizedNav(locale, activeRoute) {
     zodiac: buildLocalizedPath(locale, 'zodiac'),
     hairColor: buildLocalizedPath(locale, 'hair-color'),
     randomFood: buildLocalizedPath(locale, 'random-food'),
+    chanceFortune: buildLocalizedPath(locale, 'chance-fortune-wheel'),
     tarot: buildLocalizedPath(locale, 'tarot'),
     oracle: buildLocalizedPath(locale, 'oracle'),
     dice: buildLocalizedPath(locale, 'yes-and-no-dice'),
@@ -358,6 +367,7 @@ function getLocalizedNav(locale, activeRoute) {
               <a href="${navLinks.zodiac}" class="dropdown-link">✨ <span id="navZodiacWheelLabel">${t('zodiac')}</span></a>
               <a href="${navLinks.hairColor}" class="dropdown-link">💇 <span id="navHairColorWheelLabel">${t('hair-color')}</span></a>
               <a href="${navLinks.randomFood}" class="dropdown-link">🍔 <span id="navFoodWheelLabel">${t('random-food')}</span></a>
+              <a href="${navLinks.chanceFortune}" class="dropdown-link">🍀 <span id="navChanceFortuneWheelLabel">${t('chance-fortune-wheel')}</span></a>
             </div>
           </li>
 
