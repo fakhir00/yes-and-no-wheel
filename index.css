@@ -989,6 +989,10 @@ a:hover {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
 }
 
+.letter-spin-btn {
+  background: linear-gradient(135deg, #6366f1, #0ea5e9);
+}
+
 .tod-spin-btn {
   background: linear-gradient(135deg, #ff006e, #fb5607, #ffbe0b);
 }

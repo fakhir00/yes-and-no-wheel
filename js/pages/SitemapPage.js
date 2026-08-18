@@ -19,6 +19,7 @@ export function renderSitemapPage(container) {
     { title: `🌈 ${getLocalizedRouteContent(locale, 'rainbow').title}`, path: buildLocalizedPath(locale, 'rainbow') },
     { title: `⚔️ ${getLocalizedRouteContent(locale, 'wheel-of-fate').title}`, path: buildLocalizedPath(locale, 'wheel-of-fate') },
     { title: `📖 ${getLocalizedRouteContent(locale, 'word').title}`, path: buildLocalizedPath(locale, 'word') },
+    { title: `🔤 ${getLocalizedRouteContent(locale, 'letter-picker-wheel').title}`, path: buildLocalizedPath(locale, 'letter-picker-wheel') },
     { title: `🎉 ${getLocalizedRouteContent(locale, 'spin-the-wheel-truth-or-dare').title}`, path: buildLocalizedPath(locale, 'spin-the-wheel-truth-or-dare') },
     { title: `👗 ${getLocalizedRouteContent(locale, 'dti-theme').title}`, path: buildLocalizedPath(locale, 'dti-theme') },
     { title: `🌍 ${getLocalizedRouteContent(locale, 'country').title}`, path: buildLocalizedPath(locale, 'country') },

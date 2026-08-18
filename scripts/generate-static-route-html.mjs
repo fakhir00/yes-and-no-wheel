@@ -24,6 +24,7 @@ const ROUTE_TITLES_EN = {
   rainbow: 'Rainbow Wheel — #1 Free Color Picker Spinner Wheel',
   'wheel-of-fate': 'Wheel of Fate — The Best Custom RPG Story Spinner',
   word: 'Word Wheel — #1 Free Random Name Picker Spinner',
+  'letter-picker-wheel': 'Letter Picker Wheel — Free Random Letter Spinner Online',
   'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare — Fun Party Game',
   'dti-theme': 'DTI Theme Wheel — Spin For 180+ DTI Outfit Themes',
   country: 'Country Wheel — Pick Randomly From Top 199 Countries',
@@ -55,6 +56,7 @@ const ROUTE_DESCRIPTIONS_EN = {
   rainbow: 'Spin the Rainbow Wheel and let ROYGBIV colors decide. Free online color spinner with custom entries. Try it now!',
   'wheel-of-fate': 'Spin the Wheel of Fate for dramatic outcomes. Perfect for writers and RPG players. Weighted entries and cosmic design.',
   word: 'Use the Word Wheel to randomly pick names. Upload CSV, paste names, and spin. Perfect for classrooms and raffles.',
+  'letter-picker-wheel': 'Spin the Letter Picker Wheel to choose a random letter from A to Z. Free alphabet spinner for games, classrooms, and word challenges. No signup.',
   'spin-the-wheel-truth-or-dare': 'Spin the Wheel Truth or Dare for parties! 200+ curated prompts with player picker. Free neon-themed game.',
   'dti-theme': 'Spin the DTI Theme Wheel for Dress To Impress inspiration! 180+ themes by category. Free random theme generator.',
   country: 'Spin the Country Wheel to pick from 199 countries! Filter by continent with flags. Great for geography games.',
@@ -74,14 +76,15 @@ const ROUTE_DESCRIPTIONS_EN = {
   'blog/hair-color-wheel-bold-choice': 'Should you dye your hair? Spin the Hair Color Wheel for classic and fantasy colors. Take a screenshot for your stylist.'
 };
 
-const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
-const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice']);
+const ROUTES = ['', 'about-us', 'contact', 'terms', 'privacy', 'faq', 'languages', 'sitemap', 'rainbow', 'wheel-of-fate', 'word', 'letter-picker-wheel', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice', 'blog', 'blog/cant-decide-what-to-eat', 'blog/should-i-let-fate-decide', 'blog/word-of-the-day-word-wheel', 'blog/truth-or-dare-spin-the-wheel', 'blog/random-country-wheel-travel', 'blog/hair-color-wheel-bold-choice'];
+const WHEEL_ROUTES = new Set(['', 'rainbow', 'wheel-of-fate', 'word', 'letter-picker-wheel', 'spin-the-wheel-truth-or-dare', 'dti-theme', 'country', 'zodiac', 'hair-color', 'random-food', 'chance-fortune-wheel', 'oracle', 'tarot', 'yes-and-no-dice']);
 
 // English source-copy overrides for crawler-visible static shells (keyed by route slug).
 const SOURCE_H1_OVERRIDES_EN = {
   'random-food': 'Food Spin Wheel - Random Food Picker',
   'chance-fortune-wheel': 'Chance and Fortune Wheel — Spin the Wheel of Luck Online',
-  'tarot': 'Yes or No Tarot Wheel — Free Online Card Draw'
+  'tarot': 'Yes or No Tarot Wheel — Free Online Card Draw',
+  'letter-picker-wheel': 'Letter Picker Wheel — Free Random Letter Spinner Online'
 };
 
 const SOURCE_BODY_SECTIONS_EN = {
@@ -99,6 +102,11 @@ const SOURCE_BODY_SECTIONS_EN = {
     { heading: 'How to Use the Yes or No Tarot Wheel', body: 'Focus on a clear yes or no question, choose one of the six face-down cards, or press Let the Universe Choose. The Yes or No Tarot Wheel then reveals a Major Arcana card with a yes, no, or maybe answer, its meaning, and guidance text.' },
     { heading: 'Why Use a Yes or No Tarot Wheel for Decisions', body: 'A yes or no tarot wheel adds narrative depth to a simple decision. Instead of a bare random pick, you get a yes or no answer plus card meaning and guidance, so every draw gives you something to reflect on. It is perfect for quick guidance, creative writing prompts, and group icebreakers.' },
     { heading: 'Cards on the Yes or No Tarot Wheel', body: 'The Yes or No Tarot Wheel draws from 21 Major Arcana cards, from The Fool to The World. Each card is pre-assigned a Yes, No, or Maybe answer along with a meaning and guidance text, so every draw delivers a complete, self-contained reading.' }
+  ],
+  'letter-picker-wheel': [
+    { heading: 'How to Use the Letter Picker Wheel', body: 'Review the A to Z alphabet, remove any letters you do not need, then press the spin button. When the Letter Picker Wheel stops, the winning letter appears so you can use it for your game, word challenge, or activity.' },
+    { heading: 'Why Use a Letter Picker Wheel', body: 'A letter picker wheel gives an unbiased random letter in seconds. It is perfect for classroom phonics and spelling games, party games like Scattergories and Pictionary, and creative writing prompts. Because the result is random and visible to everyone, it feels fair and keeps every round moving.' },
+    { heading: 'Letters on the Picker Wheel', body: 'The Letter Picker Wheel comes loaded with the full A to Z alphabet. Use the sidebar to remove letters and build a vowel-only wheel, a consonant wheel, or any custom set, and spin again for a different letter every time.' }
   ]
 };
 
@@ -313,6 +321,7 @@ function getLocalizedNav(locale, activeRoute) {
     rainbow: buildLocalizedPath(locale, 'rainbow'),
     wheelOfFate: buildLocalizedPath(locale, 'wheel-of-fate'),
     word: buildLocalizedPath(locale, 'word'),
+    letterPicker: buildLocalizedPath(locale, 'letter-picker-wheel'),
     truthOrDare: buildLocalizedPath(locale, 'spin-the-wheel-truth-or-dare'),
     dtiTheme: buildLocalizedPath(locale, 'dti-theme'),
     country: buildLocalizedPath(locale, 'country'),
@@ -366,6 +375,7 @@ function getLocalizedNav(locale, activeRoute) {
               <a href="${navLinks.rainbow}" class="dropdown-link">🌈 <span id="navRainbowWheelLabel">${t('rainbow')}</span></a>
               <a href="${navLinks.wheelOfFate}" class="dropdown-link">⚔️ <span id="navWheelOfFateLabel">${t('wheel-of-fate')}</span></a>
               <a href="${navLinks.word}" class="dropdown-link">📖 <span id="navWordWheelLabel">${t('word')}</span></a>
+              <a href="${navLinks.letterPicker}" class="dropdown-link">🔤 <span id="navLetterPickerWheelLabel">${t('letter-picker-wheel')}</span></a>
               <a href="${navLinks.truthOrDare}" class="dropdown-link">🎉 <span
                   id="navTruthOrDareWheelLabel">${t('spin-the-wheel-truth-or-dare')}</span></a>
               <a href="${navLinks.dtiTheme}" class="dropdown-link">👗 <span id="navDTIWheelLabel">${t('dti-theme')}</span></a>

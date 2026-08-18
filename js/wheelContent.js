@@ -19329,6 +19329,113 @@ const WHEEL_PAGE_CONTENT = {
             ]
       }
   },
+
+  'letter-picker-wheel': {
+    en: {
+            "title": "Letter Picker Wheel",
+            "subtitle": "Spin the Letter Picker Wheel to land on a random letter from A to Z. A free, customizable alphabet spinner for games, classrooms, and word challenges.",
+            "howToUse": {
+                  "title": "How to Use the Letter Picker Wheel",
+                  "intro": "The letter picker wheel is ready to spin in seconds. Here is how it works:",
+                  "steps": [
+                        {
+                              "title": "Review the Letters",
+                              "desc": "The wheel loads the full A to Z alphabet by default. Keep every letter, or use the sidebar to remove the letters you do not need."
+                        },
+                        {
+                              "title": "Customize If Needed",
+                              "desc": "Use the sidebar to remove letters, add your own characters, or trim the wheel down to a smaller set. The wheel recolors automatically so every segment stays distinct."
+                        },
+                        {
+                              "title": "Spin and Get a Letter",
+                              "desc": "Press the spin button and watch the letters blur as the wheel rotates. When it stops, the winning letter appears with a fanfare. Use it for your game, word challenge, or decision."
+                        }
+                  ]
+            },
+            "sections": [
+                  {
+                        "title": "What Is a Letter Picker Wheel?",
+                        "content": [
+                              "A letter picker wheel is a spinning tool that randomly selects a letter of the alphabet. It turns the full A to Z into equal segments on a wheel, so each spin lands on one letter at random and displays it instantly.",
+                              "Unlike drawing from a hat or flipping through flashcards, the letter picker wheel adds a visual spinning animation and a satisfying fanfare. It works on the same fair physics as every other spinner on this site, so no letter is favored over another.",
+                              "It is designed as a lightweight utility rather than a piece of content. You open the page, spin the wheel, and get a letter in under a second, with no signup and no cost."
+                        ]
+                  },
+                  {
+                        "title": "How the Letter Picker Wheel Works",
+                        "content": [
+                              "When you press the spin button, the wheel receives a random starting velocity and begins to rotate. Browser-based physics simulate friction and deceleration until the wheel stops on a single random letter.",
+                              "The default wheel contains all 26 letters from A to Z. Each letter occupies an equal slice, so the outcome is decided purely by randomized initial conditions rather than by segment size or position.",
+                              "The customization sidebar lets you remove any letter, so you can build a vowel-only wheel, a consonant wheel, or any custom set for a specific activity."
+                        ]
+                  },
+                  {
+                        "title": "When to Use a Letter Picker Wheel",
+                        "content": [
+                              "The letter picker wheel is useful whenever a random letter adds structure or fun to an activity. Here are the most common scenarios:"
+                        ],
+                        "subsections": [
+                              {
+                                    "title": "Classroom Activities",
+                                    "content": "Teachers use the letter picker wheel for phonics drills, spelling games, and turn-taking. Spin a letter and ask students to name a word that starts with it."
+                              },
+                              {
+                                    "title": "Word and Party Games",
+                                    "content": "Games like Scattergories, Pictionary, and alphabet challenges start with a random letter. The wheel gives an unbiased starting letter for any round."
+                              },
+                              {
+                                    "title": "Creative Brainstorming",
+                                    "content": "Writers and artists spin for a letter to spark ideas. Use the result as the first letter of a character name, a story prompt, or a drawing challenge."
+                              },
+                              {
+                                    "title": "Learning the Alphabet",
+                                    "content": "Young learners can spin to practice letter recognition, letter sounds, and handwriting in a way that feels more like play than a drill."
+                              }
+                        ]
+                  },
+                  {
+                        "title": "Letter Picker Wheel vs Other Spinners",
+                        "content": [
+                              "A standard yes or no wheel gives a binary answer, while the letter picker wheel selects from a full alphabet. Both use the same unbiased randomization engine, but the letter picker wheel is purpose-built for word games and alphabet activities.",
+                              "If you need a random word instead of a single letter, the Word Wheel lets you load a custom list of words. If you need a number, a lucky number wheel or dice tool is a better fit."
+                        ]
+                  },
+                  {
+                        "title": "Customizing the Letter Picker Wheel",
+                        "content": [
+                              "The customization sidebar gives you full control. Remove letters, re-add them, or type your own characters to build a custom set for any lesson or game.",
+                              "Your entries and settings are saved in your browser, so your custom letter picker wheel is ready the next time you visit. Spin as many times as you like with no signup and no usage limits."
+                        ]
+                  }
+            ],
+            "faq": [
+                  {
+                        "q": "What is a letter picker wheel?",
+                        "a": "A letter picker wheel is a spinning tool that randomly selects a letter from the alphabet. It loads A to Z by default and lets you remove or add letters to customize the set."
+                  },
+                  {
+                        "q": "Is the letter picker wheel truly random?",
+                        "a": "Yes. The wheel uses browser-based physics simulation with a randomized starting velocity, friction, and angle. Each letter has an equal slice, so every spin produces an unpredictable result."
+                  },
+                  {
+                        "q": "Can I remove letters from the wheel?",
+                        "a": "Yes. The customization sidebar lets you remove any letter, so you can spin a vowel-only wheel, a consonant wheel, or any custom set you need."
+                  },
+                  {
+                        "q": "Can I add my own entries?",
+                        "a": "Yes. You can type custom characters, symbols, or labels into the sidebar to build a personalized letter picker wheel for any activity."
+                  },
+                  {
+                        "q": "Does the letter picker wheel work on mobile?",
+                        "a": "The wheel adapts to any screen size. On phones and tablets, the canvas scales to fit the viewport and the spin button is optimized for touch."
+                  },
+                  {
+                        "q": "Is the letter picker wheel free?",
+                        "a": "The letter picker wheel is completely free with no signup, no ads covering the tool, and no usage limits."
+                  }
+            ]
+      }
+  },
 };
 
 export function getWheelPageContent(locale, slug) {
